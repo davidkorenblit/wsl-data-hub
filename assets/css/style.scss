@@ -1,0 +1,72 @@
+---
+# Only needed to tell Jekyll this file is a Sass/SCSS stylesheet
+---
+
+/* RTL and Hebrew support */
+html {
+  direction: rtl;
+  text-align: right;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #222;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+/* Tables for football metrics */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: right; /* RTL alignment */
+}
+
+table th {
+  background: #f5f5f5;
+}
+
+/* Blockquotes */
+blockquote {
+  border-right: 4px solid #007bff;
+  border-left: none;
+  margin: 1.5em 0;
+  padding: 0.5em 1em 0.5em 0;
+  color: #555;
+  background-color: #f9f9f9;
+}
+
+/* Responsive tables */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  tr { margin-bottom: 1rem; }
+  td {
+    text-align: right;
+    padding-right: 50%;
+    position: relative;
+  }
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    right: 0;
+    width: 45%;
+    padding-right: 0.5rem;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+}
