@@ -12,7 +12,10 @@ title: "WSL Data Hub | ניתוחי כדורגל נשים מבוססי דאטא"
 
 לקראת העונה הקרובה, נסקור את הקבוצות הבולטות בליגה:
 
-- **[London City Lionesses – תצוגה מקדימה](previews/lcl-preview.html)**
+{% for post in site.posts %}
+- **[{{ post.title }}]({{ post.url | relative_url }})**
+{% endfor %}
+
 - **Manchester City** _(בקרוב)_
 - **Arsenal** _(בקרוב)_
 - **Chelsea** _(בקרוב)_

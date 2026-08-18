@@ -1,4 +1,11 @@
-# Jekyll artifacts
+# Ignore raw data dumps, but track .gitkeep
+data/raw/*
+!data/raw/.gitkeep
+
+# Track processed team data
+!data/teams/
+
+# Jekyll build artifacts
 _site/
 .sass-cache/
 .jekyll-cache/
@@ -17,12 +24,6 @@ __pycache__/
 .venv/
 venv/
 
-# Local Data Dumps
-*.csv
-*.tsv
-*.xlsx
-*.json
-
-# OS files
+# Local OS files
 .DS_Store
 Thumbs.db

@@ -1,9 +1,11 @@
 ---
 layout: default
-title: "London City Lionesses - תצוגה מקדימה"
+title: "London City Lionesses – תצוגה מקדימה לעונה"
+date: 2026-08-18
+categories: [previews, wsl]
 ---
 
-# London City Lionesses – תצוגה מקדימה לעונה
+# London City Lionesses – תצוגה מקדימה לעונה 🦁
 
 קבוצת London City Lionesses מתכוננת לעונה מאתגרת. בפוסט זה ננתח את ביצועי העבר, מדדי ה-xG, ומה אפשר לצפות מהן.
 
@@ -14,4 +16,4 @@ title: "London City Lionesses - תצוגה מקדימה"
 | שחקנית א' | חלוצה | 5.2 |
 | שחקנית ב' | קשרית | 2.1 |
 
-(המשך הניתוח יפורסם בקרוב...)
+(המשך הניתוח והגרפים יפורסמו בקרוב...)
