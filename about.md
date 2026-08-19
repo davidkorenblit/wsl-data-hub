@@ -33,30 +33,28 @@ permalink: /about/
   <!-- Article Body -->
   <div class="bg-surface-800 rounded-2xl border border-surface-700 p-8 sm:p-10 shadow-xl space-y-6 text-slate-300 text-base sm:text-lg leading-relaxed">
     
-    <p class="text-xl font-medium text-white leading-normal">
-      היי! אם הגעתם לכאן, אתם כנראה חברים שלי שחייבתי להיכנס, או שאתם אוהבים כדורגל נשים ובפרט את ליגת ה-WSL.
+    <p>
+      היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שהWSL בפרט או כדורגל נשים בפרט מעניין אתכם.
     </p>
 
-    <div class="p-4 bg-surface-700/50 rounded-xl border-r-4 border-brand-500 text-slate-200 my-6">
-      <p class="italic text-base">
-        "אין הרבה תוכן מעמיק בעברית על הענף שאנחנו כל כך אוהבים, וחשבתי שהגיע הזמן ליצור לו בית אנליטי."
-      </p>
-    </div>
-
-    <p>
-      בהכשרתי אני איש מדעי המחשב ונתונים. לכן, הסיקורים בבלוג הזה יהיו <strong>מבוססי דאטא ומודלים מתקדמים</strong> (כמו xG, xGA, רשתות מסירה ומדדי יצירתיות), לצד ניתוחים טקטיים. 
+    <p class="text-xl font-semibold text-white">
+      איזה כיף. באמת כיף.
     </p>
 
     <p>
-      יהיו גם פוסטים שקשורים ישירות לקבוצה שאני אוהד, <strong>Tottenham Hotspur</strong> – אותם תזהו בקלות לפי הטון האוהד.
+      כמו שאתם.ן יודעים.ות מצויין, אין הרבה תוכן בעברית על הענף שאנחנו אוהבים ואוהבות, וחשבתי שהגיע הזמן ליצור מקום כזה.
     </p>
 
     <p>
-      הענף בצמיחה פנומנלית, והגיע הזמן שיהיה לו ניתוח ברמה הגבוהה ביותר בעברית על הליגה הטובה בעולם.
+      בהכשרתי, אני איש מדעי המחשב והנתונים, ועל כן, לפחות חלק מהסיקורים בבלוג הזה, יהיו מבוססי נתונים. יהיו גם כאלה שלא. יהיו גם כאלה שקשורות באופן ישיר לקבוצה שאני אוהד, טוטנהאם הוטספר, את אלו תזהו בקלות כי הטקסט יהיה הרבה יותר אוהדי מאשר מקצועי.
+    </p>
+
+    <p>
+      תודה שאתם.ן כאן, ואם אהבת, תשתפו כי הענף בצמיחה מטורפת, והגיע הזמן שיהיה תוכן בעברית על הליגה הטובה בעולם (כן, זה הוק בשביל שנוכל לריב על הWSL מול ה-NWSL).
     </p>
 
     <div class="pt-6 border-t border-surface-700 flex justify-between items-center text-sm text-slate-400">
-      <span>תודה שבאתם לבקר 🙌</span>
+      <span class="font-medium text-slate-300">תודה שבאת לבקר, דוד.</span>
       <a href="{{ '/' | relative_url }}" class="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1">
         לטבלת הליגה והקבוצות ←
       </a>
