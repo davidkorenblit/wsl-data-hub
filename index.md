@@ -12,20 +12,20 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
 
 <!-- League Table -->
 <div class="bg-surface-800 rounded-2xl shadow-xl overflow-hidden border border-surface-700">
-  <div class="overflow-x-auto">
-    <table class="w-full text-sm text-right">
+  <div class="overflow-x-auto" dir="ltr">
+    <table class="w-full text-sm text-left">
       <thead>
         <tr class="bg-surface-700 text-slate-400 uppercase text-xs tracking-wider">
           <th class="px-4 py-3 text-center w-10">#</th>
-          <th class="px-4 py-3">קבוצה</th>
-          <th class="px-4 py-3 text-center">מש'</th>
-          <th class="px-4 py-3 text-center">נצ'</th>
-          <th class="px-4 py-3 text-center">תיק'</th>
-          <th class="px-4 py-3 text-center">הפ'</th>
-          <th class="px-4 py-3 text-center">שש'</th>
-          <th class="px-4 py-3 text-center">ספ'</th>
-          <th class="px-4 py-3 text-center">הפרש</th>
-          <th class="px-4 py-3 text-center font-bold text-white">נק'</th>
+          <th class="px-4 py-3">Team</th>
+          <th class="px-4 py-3 text-center">MP</th>
+          <th class="px-4 py-3 text-center">W</th>
+          <th class="px-4 py-3 text-center">D</th>
+          <th class="px-4 py-3 text-center">L</th>
+          <th class="px-4 py-3 text-center">GF</th>
+          <th class="px-4 py-3 text-center">GA</th>
+          <th class="px-4 py-3 text-center">GD</th>
+          <th class="px-4 py-3 text-center font-bold text-white">Pts</th>
         </tr>
       </thead>
       <tbody class="divide-y divide-surface-700">
