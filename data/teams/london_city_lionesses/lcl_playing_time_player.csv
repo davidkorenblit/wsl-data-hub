@@ -1,0 +1,33 @@
+﻿rk,player,nation,pos,squad,age,born,playing_time_mp,playing_time_min,playing_time_mn/mp,playing_time_min%,playing_time_90s,starts,starts_mn/start,starts_compl,subs,subs_mn/sub,subs_unsub,team_success_ppm,team_success_ong,team_success_onga,team_success_+/-,team_success_+/-90,team_success_on-off,matches,player_id_
+8,Kosovare Asllani,se SWE,"MF,FW",Lionesses,36,1989,19,1457,77,73.6,16.2,16,86,10,3,26,0,1.11,17,28,-11,-0.68,-1.37,Matches,1d994521
+40,Cerys Brown,eng ENG,DF,Lionesses,20,2005,1,74,74,3.7,0.8,1,74,0,0,,9,0.00,1,3,-2,-2.43,-2.20,Matches,fae2b11b
+53,Delphine Cascarino,fr FRA,"MF,FW",Lionesses,28,1997,5,292,58,14.7,3.2,3,81,2,2,24,0,1.40,7,4,+3,+0.92,+1.46,Matches,9d82fe8e
+67,Lucía Corrales,es ESP,"MF,DF",Lionesses,19,2005,17,1195,70,60.4,13.3,12,87,8,5,31,0,1.24,18,19,-1,-0.08,+0.61,Matches,9cb573ce
+78,Daniëlle van de Donk,nl NED,MF,Lionesses,33,1991,6,248,41,12.5,2.8,3,57,0,3,26,0,0.67,3,5,-2,-0.73,-0.47,Matches,6876815f
+88,Jana Fernández,es ESP,DF,Lionesses,23,2002,22,1902,86,96.1,21.1,21,90,20,1,16,0,1.23,27,32,-5,-0.24,+2.07,Matches,7ee6662f
+93,Sanni Franssi,fi FIN,FW,Lionesses,30,1995,18,423,24,21.4,4.7,3,64,0,15,15,4,1.28,5,8,-3,-0.64,-0.41,Matches,eb7a2b29
+102,Grace Geyoro,fr FRA,MF,Lionesses,28,1997,20,1357,68,68.5,15.1,16,77,5,4,31,0,1.30,15,20,-5,-0.33,-0.04,Matches,80fc50e5
+104,Freya Godfrey,eng ENG,MF,Lionesses,20,2005,18,1198,67,60.5,13.3,15,74,3,3,27,0,1.33,18,16,+2,+0.15,+1.19,Matches,36d3689e
+105,Teyah Goldie,eng ENG,DF,Lionesses,21,2004,6,95,16,4.8,1.1,1,77,0,5,4,8,1.00,0,3,-3,-2.84,-2.65,Matches,ba0058a5
+106,Isobel Goodwin,eng ENG,FW,Lionesses,22,2002,22,1659,75,83.8,18.4,18,86,12,4,29,0,1.23,24,31,-7,-0.38,-0.38,Matches,a13ec7c6
+129,Corinne Henson,eng ENG,DF,Lionesses,21,2003,0,,,,,0,,0,0,,1,,,,,,,Matches,250832f5
+132,Sophie Hillyerd,eng ENG,GK,Lionesses,22,2003,0,,,,,0,,0,0,,4,,,,,,,Matches,5c0ee435
+143,Rofiat Imuran,ng NGA,"DF,MF",Lionesses,21,2004,10,701,70,35.4,7.8,9,78,3,1,1,6,1.50,10,15,-5,-0.64,-0.50,Matches,95218f3f
+146,Sofia Jakobsson,se SWE,"FW,MF",Lionesses,35,1990,1,26,26,1.3,0.3,0,,0,1,26,3,0.00,0,2,-2,-6.92,-6.69,Matches,27a4ff80
+159,Isa Kardinaal,nl NED,DF,Lionesses,20,2005,4,299,75,15.1,3.3,3,90,3,1,29,3,1.50,8,4,+4,+1.20,+1.79,Matches,2ae44ac8
+166,Alanna Kennedy,au AUS,"DF,MF",Lionesses,30,1995,16,746,47,37.7,8.3,7,85,5,9,16,3,1.56,12,14,-2,-0.24,+0.12,Matches,8252bc62
+179,Saki Kumagai,jp JPN,"MF,DF",Lionesses,34,1990,19,1528,80,77.2,17.0,18,84,11,1,25,1,1.37,23,27,-4,-0.24,+0.36,Matches,03622b6e
+189,Elene Lete,es ESP,GK,Lionesses,23,2002,22,1980,90,100.0,22.0,22,90,22,0,,0,1.23,28,35,-7,-0.32,,Matches,f80fa3e9
+192,Elena Linari,it ITA,DF,Lionesses,31,1994,15,1288,86,65.1,14.3,15,86,12,0,,7,1.40,18,21,-3,-0.21,+0.31,Matches,8302c1bb
+193,Lotta Lindström,fi FIN,FW,Lionesses,20,2004,5,125,25,6.3,1.4,0,,0,5,25,5,1.20,3,5,-2,-1.44,-1.20,Matches,850525a6
+204,Gesa Marashi,eng ENG,MF,Lionesses,19,2006,0,,,,,0,,0,0,,2,,,,,,,Matches,114baaf0
+248,Emily Orman,eng ENG,GK,Lionesses,22,2002,0,,,,,0,,0,0,,14,,,,,,,Matches,24843ffe
+255,Nikita Parris,eng ENG,"MF,FW",Lionesses,31,1994,19,1218,64,61.5,13.5,15,77,3,4,17,2,1.21,19,21,-2,-0.15,+0.44,Matches,fa5faf19
+257,Paula Partido,es ESP,DF,Lionesses,20,2005,0,,,,,0,,0,0,,5,,,,,,,Matches,a25f1a7a
+259,Poppy Pattinson,eng ENG,DF,Lionesses,25,2000,13,734,56,37.1,8.2,9,77,5,4,9,1,1.15,8,13,-5,-0.61,-0.47,Matches,eced0e75
+265,María Pérez,es ESP,MF,Lionesses,23,2001,12,522,44,26.4,5.8,6,66,1,6,21,9,1.17,11,10,+1,+0.17,+0.67,Matches,b592c4bb
+267,Sophia Poor,eng ENG,GK,Lionesses,19,2006,0,,,,,0,,0,0,,5,,,,,,,Matches,8243958a
+281,Julia Roddar,se SWE,"MF,DF",Lionesses,33,1992,20,682,34,34.4,7.6,5,83,3,15,18,0,1.20,9,12,-3,-0.40,-0.12,Matches,917838ed
+292,Malou Rylov,dk DEN,MF,Lionesses,22,2003,7,391,56,19.7,4.3,5,72,1,2,16,0,1.14,4,7,-3,-0.69,-0.46,Matches,d9248446
+297,Wassa Sangare,fr FRA,DF,Lionesses,19,2006,18,1483,82,74.9,16.5,17,86,14,1,24,1,1.17,18,23,-5,-0.30,+0.06,Matches,4151e701
+370,Katie Zelem,eng ENG,MF,Lionesses,29,1996,8,157,20,7.9,1.7,2,50,0,6,10,4,1.13,1,7,-6,-3.44,-3.39,Matches,213a7877
