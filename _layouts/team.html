@@ -39,8 +39,7 @@
           </div>
         </a>
         <nav class="flex items-center gap-6 text-sm font-medium text-slate-300">
-          <a href="{{ '/' | relative_url }}" class="hover:text-brand-500 transition-colors">← טבלת הליגה</a>
-          <a href="{{ '/about' | relative_url }}" class="hover:text-brand-500 transition-colors">אודות</a>
+          <a href="{{ '/' | relative_url }}" class="hover:text-brand-500 transition-colors">← חזרה לליגה</a>
         </nav>
       </div>
     </header>
@@ -56,7 +55,7 @@
           {% endif %}
           <div>
             <p class="text-brand-500 text-sm font-semibold uppercase tracking-widest mb-1">WSL 2025/26</p>
-            <h1 class="text-4xl font-bold text-white">{{ page.team_name | default: page.title }}</h1>
+            <h1 class="text-4xl font-bold text-white" dir="ltr" style="text-align: right;">{{ page.team_name | default: page.title }}</h1>
             {% if page.team_meta %}
             <p class="text-slate-400 mt-2 text-sm">{{ page.team_meta }}</p>
             {% endif %}
@@ -65,9 +64,76 @@
       </div>
     </div>
 
-    <!-- Page Content -->
+    <!-- Page Content (Dashboard Grid) -->
     <main class="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-10">
-      {{ content }}
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- Main Content Area: Posts / Analysis -->
+        <div class="lg:col-span-2 space-y-8">
+          
+          {% if page.content contains "🚧" or content == "" %}
+          <!-- Placeholder if no content -->
+          <div class="bg-surface-800 rounded-2xl border border-surface-700 p-10 text-center shadow-xl">
+            <p class="text-5xl mb-4">🚧</p>
+            <h2 class="text-2xl font-bold text-white mb-2">כפרה עובדים</h2>
+            <p class="text-slate-400">הניתוח המלא של {{ page.team_name }} יפורסם בקרוב.</p>
+          </div>
+          {% else %}
+          
+          <!-- Inject markdown content -->
+          <article class="prose prose-invert prose-brand max-w-none 
+                          prose-headings:font-bold prose-h2:text-2xl prose-h2:border-b prose-h2:border-surface-700 prose-h2:pb-2
+                          prose-p:text-slate-300 prose-p:leading-relaxed prose-a:text-brand-500 hover:prose-a:text-brand-400
+                          bg-surface-800 rounded-2xl border border-surface-700 p-8 shadow-xl">
+            {{ content }}
+          </article>
+          
+          {% endif %}
+        </div>
+
+        <!-- Sidebar: Squad Roster -->
+        <div class="lg:col-span-1">
+          <div class="bg-surface-800 rounded-2xl border border-surface-700 shadow-xl overflow-hidden sticky top-6">
+            <div class="p-4 bg-surface-700 border-b border-surface-600">
+              <h3 class="font-bold text-white">סגל הקבוצה</h3>
+              <p class="text-xs text-slate-400">נתוני בסיס מהעונה</p>
+            </div>
+            
+            <div class="max-h-[600px] overflow-y-auto" dir="ltr">
+              <table class="w-full text-sm text-left">
+                <thead class="bg-surface-800 sticky top-0 shadow-md">
+                  <tr class="text-slate-400 text-xs uppercase">
+                    <th class="px-4 py-2">Player</th>
+                    <th class="px-2 py-2 text-center">Pos</th>
+                    <th class="px-2 py-2 text-center">Min</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-surface-700">
+                  {% assign squad_file = site.data.squads[page.team_slug] %}
+                  {% if squad_file %}
+                    {% for p in squad_file %}
+                    <tr class="hover:bg-surface-700 transition-colors">
+                      <td class="px-4 py-3">
+                        <div class="font-medium text-slate-200">{{ p.player }}</div>
+                        <div class="text-xs text-slate-500 uppercase">{{ p.nation | remove: "ENG " | remove: "ESP " | remove: "FRA " | remove: "USA " }}</div>
+                      </td>
+                      <td class="px-2 py-3 text-center text-slate-400 text-xs">{{ p.pos }}</td>
+                      <td class="px-2 py-3 text-center text-slate-400 font-mono text-xs">{{ p.min }}</td>
+                    </tr>
+                    {% endfor %}
+                  {% else %}
+                    <tr>
+                      <td colspan="3" class="px-4 py-8 text-center text-slate-500">No squad data available.</td>
+                    </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+      </div>
     </main>
 
     <!-- Footer -->
