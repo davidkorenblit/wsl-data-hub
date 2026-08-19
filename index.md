@@ -94,9 +94,9 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
       <h3 class="text-lg font-bold text-white">מודלים וניתוחי עומק</h3>
     </div>
     <p class="text-slate-400 text-sm leading-relaxed mb-4">
-      אנחנו משתמשים במדדי $xG$, פעולות יצירת בעיטה ($SCA$), איכות מסירות וזמני משחק מ-FBref כדי לנתח את ביצועי הקבוצות והשחקניות לעומק.
+      אנחנו משתמשים במדדי xG, פעולות יצירת בעיטה (SCA), איכות מסירות וזמני משחק מ-FBref כדי לנתח את ביצועי הקבוצות והשחקניות לעומק.
     </p>
-    <a href="{{ '/about/' | relative_url }}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">
+    <a href="{{ '/methodology/' | relative_url }}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">
       קראו עוד על מתודולוגיית הניתוח ←
     </a>
   </div>
