@@ -3,12 +3,75 @@ layout: team
 title: "London City Lionesses"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · מיקום: 14"
+team_meta: "WSL 2025/26 · עונה ראשונה"
 permalink: /teams/london-city-lionesses/
 ---
 
-<div class="bg-surface-800 rounded-2xl border border-surface-700 p-10 text-center shadow-xl">
-  <p class="text-5xl mb-4">🚧</p>
-  <h2 class="text-2xl font-bold text-white mb-2">כפרה עובדים</h2>
-  <p class="text-slate-400">הניתוח המלא של London City Lionesses יפורסם בקרוב.</p>
+<div class="space-y-6 text-slate-200 leading-relaxed text-base sm:text-lg">
+
+  <div>
+    <div class="flex items-center gap-2 mb-3">
+      <span class="px-2.5 py-0.5 bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold rounded-full">
+        שאלה 1: תמונת בסיס (Squad Baseline)
+      </span>
+      <span class="text-xs text-slate-500">עונת 2025/26</span>
+    </div>
+    <h1 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+      עונה ראשונה של לונדון סיטי
+    </h1>
+  </div>
+
+  <p>
+    ממבט ראשוני על הנתונים של העונה הראשונה של LCL, אנחנו מגלים כמה מסקנות שאולי יפתיעו את אוהדי הליגה.
+  </p>
+
+  <p>
+    ב-4 מדדי ההתקפה שסקרנו (הסבר עליהם נמצא ב<a href="{{ '/methodology/' | relative_url }}" class="text-brand-400 hover:text-brand-300 underline font-medium">מתודולוגיה</a>), היא כבשה מעט יחסית, אפילו לממוצע בליגה: 26 שערים, מקום 8 בליגה, מול ממוצע של 31.2. היא גם בעטה לשער יחסית מעט — 10.95 בעיטות ל-90 דקות, מקום 7. מצד שני, היעילות שלה בבעיטות למסגרת היא במקום ה-3, עם 38.2%. ברייטון, אגב, נמצאת במקום הראשון עם 40.9%.
+  </p>
+
+  <p>
+    יעילות הבעיטה עצמה גם היא במקום ה-7 — 0.11 שערים לבעיטה. כלומר, אפשר לדבר על תפוקה התקפית שהיא בערך בינונית-נמוכה.
+  </p>
+
+  <p>
+    לעומת זאת, במדדי ההגנה שהצלחתי לחלץ ולחקור, LCL הייתה הכי טובה בליגה (יחד עם לסטר שירדה...) במספר התיקולים המוצלחים וחטיפות הכדור — 536 פעולות, מקום 1 בליגה.
+  </p>
+
+  <p>
+    בנוסף, ביחס לבעיטות למסגרת שספגה, ההגנה של LCL נמצאת במקום טוב יותר מהממוצע בליגה: 3.73 בעיטות למסגרת למשחק, מקום 5 בליגה, מול ממוצע של 4.30. אגב, ארסנל ראשונה במדד הזה עם 2.41.
+  </p>
+
+  <p>
+    מצד שני, אחוז ההצלה של השוערת הוא מהנמוכים ביותר בליגה — 57.3%, מקום 11 מתוך 12, לעומת צ'לסי עם 74.4%. הפער גדול, וזו בהחלט נקודה למחשבה, כי היא מחזקת סתירה מסוימת בין כמות הבעיטות למסגרת שההגנה סופגת לבין אחוז ההצלות הנמוך יחסית לשאר הליגה.
+  </p>
+
+  <p>
+    ההחזקה בכדור של LCL קרובה מאוד לממוצע — 49.8%, מקום 6. כלומר, למרות שהכדור היה לא מעט אצלן ביחס לשאר הליגה, ההתקפה לא הייתה משהו, וגם יצירת המצבים לא הייתה גבוהה.
+  </p>
+
+  <p>
+    אם נחריג את ארסנל עם 59.0%, צ'לסי עם 60.0% וסיטי עם 56.6%, שעומדות יחד על ממוצע של 58.5%, שאר 9 קבוצות הליגה עומדות על 47.2% בלבד. LCL נמצאת במקום ה-3 מבין כל הקבוצות שמחוץ לשלישייה הזו.
+  </p>
+
+  <p>
+    ובכל זאת, זה לא התבטא מספיק ביצירת מצבים: LCL רשמה 18 אסיסטים בלבד — 0.82 ל-90 דקות, מקום 9 מתוך 12 בליגה.
+  </p>
+
+  <div class="p-5 bg-surface-700/40 rounded-xl border-r-4 border-brand-500 my-6 space-y-3">
+    <h3 class="font-bold text-white text-lg">אז מה כל זה מספר לנו?</h3>
+    <p>
+      כבר מהתבוננות ראשונה אנחנו מבינים ששוערת היה כדאי לרכוש, ושגם שחקניות התקפה וקישור התקפי יעזרו.
+    </p>
+    <p>
+      ההוספה של מאפי ליאון להגנה (נרד לעומק של זה בסעיף ששייך לרכש), שגם ככה הייתה מעולה, מציבה לנו תמונה של קבוצה שההגנה שלה תהיה חזקה יותר, עם יצירתיות גדולה עוד יותר.
+    </p>
+  </div>
+
+  <div class="pt-6 border-t border-surface-700 flex flex-wrap justify-between items-center text-sm text-slate-400 gap-4">
+    <span class="font-medium text-slate-300">תודה שקראתם. אפשר להשאיר תגובות ואת דעתכם.ן 🙌</span>
+    <a href="{{ '/' | relative_url }}" class="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1">
+      חזרה לטבלת הליגה ←
+    </a>
+  </div>
+
 </div>
