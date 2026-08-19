@@ -9,7 +9,7 @@ permalink: /about/
   <div class="bg-surface-800 rounded-2xl border border-surface-700 p-8 sm:p-10 shadow-xl space-y-6 text-slate-300 text-base sm:text-lg leading-relaxed">
 
     <p>
-      היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שהWSL בפרט או כדורגל נשים בפרט מעניין אתכם.
+      היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שהWSL בפרט או כדורגל נשים בכלל מעניין אתכם.
     </p>
 
     <p class="text-xl font-semibold text-white">
