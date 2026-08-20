@@ -1,0 +1,446 @@
+{
+  "arsenal": {
+    "squad": "Arsenal",
+    "team_slug": "arsenal",
+    "name_he": "ארסנל",
+    "name_en": "Arsenal",
+    "rank": 2,
+    "actual_metrics": {
+      "pts": 51,
+      "gd": 39,
+      "gf": 51,
+      "ga": 12,
+      "sota": 53,
+      "save_pct": 73.6,
+      "sot": 154,
+      "sot_pct": 38.4,
+      "ast": 45,
+      "poss": 59.0,
+      "tklw_plus_int": 395
+    },
+    "expected_benchmarks": {
+      "exp_ga": 18.3,
+      "exp_gf": 49.8,
+      "exp_ast": 37.1,
+      "exp_pts": 53.5,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -6.3,
+      "gf_delta": 1.2,
+      "ast_delta": 7.9,
+      "pts_delta": -2.5
+    }
+  },
+  "aston-villa": {
+    "squad": "Aston Villa",
+    "team_slug": "aston-villa",
+    "name_he": "אסטון וילה",
+    "name_en": "Aston Villa",
+    "rank": 9,
+    "actual_metrics": {
+      "pts": 20,
+      "gd": -20,
+      "gf": 27,
+      "ga": 47,
+      "sota": 107,
+      "save_pct": 55.1,
+      "sot": 88,
+      "sot_pct": 36.4,
+      "ast": 20,
+      "poss": 48.2,
+      "tklw_plus_int": 434
+    },
+    "expected_benchmarks": {
+      "exp_ga": 37.0,
+      "exp_gf": 28.4,
+      "exp_ast": 19.6,
+      "exp_pts": 19.5,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": 10.0,
+      "gf_delta": -1.4,
+      "ast_delta": 0.4,
+      "pts_delta": 0.5
+    }
+  },
+  "brighton": {
+    "squad": "Brighton",
+    "team_slug": "brighton",
+    "name_he": "ברייטון",
+    "name_en": "Brighton & Hove Albion",
+    "rank": 7,
+    "actual_metrics": {
+      "pts": 26,
+      "gd": 2,
+      "gf": 27,
+      "ga": 25,
+      "sota": 97,
+      "save_pct": 71.1,
+      "sot": 95,
+      "sot_pct": 40.9,
+      "ast": 19,
+      "poss": 48.7,
+      "tklw_plus_int": 442
+    },
+    "expected_benchmarks": {
+      "exp_ga": 33.5,
+      "exp_gf": 30.7,
+      "exp_ast": 19.6,
+      "exp_pts": 32.2,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -8.5,
+      "gf_delta": -3.7,
+      "ast_delta": -0.6,
+      "pts_delta": -6.2
+    }
+  },
+  "chelsea": {
+    "squad": "Chelsea",
+    "team_slug": "chelsea",
+    "name_he": "צ'לסי",
+    "name_en": "Chelsea",
+    "rank": 3,
+    "actual_metrics": {
+      "pts": 49,
+      "gd": 22,
+      "gf": 41,
+      "ga": 19,
+      "sota": 78,
+      "save_pct": 74.4,
+      "sot": 129,
+      "sot_pct": 32.8,
+      "ast": 26,
+      "poss": 60.0,
+      "tklw_plus_int": 423
+    },
+    "expected_benchmarks": {
+      "exp_ga": 26.9,
+      "exp_gf": 41.7,
+      "exp_ast": 29.8,
+      "exp_pts": 43.7,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -7.9,
+      "gf_delta": -0.7,
+      "ast_delta": -3.8,
+      "pts_delta": 5.3
+    }
+  },
+  "everton": {
+    "squad": "Everton",
+    "team_slug": "everton",
+    "name_he": "אברטון",
+    "name_en": "Everton",
+    "rank": 8,
+    "actual_metrics": {
+      "pts": 23,
+      "gd": -9,
+      "gf": 25,
+      "ga": 34,
+      "sota": 115,
+      "save_pct": 67.8,
+      "sot": 69,
+      "sot_pct": 35.9,
+      "ast": 20,
+      "poss": 45.2,
+      "tklw_plus_int": 448
+    },
+    "expected_benchmarks": {
+      "exp_ga": 39.7,
+      "exp_gf": 22.3,
+      "exp_ast": 18.2,
+      "exp_pts": 25.8,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -5.7,
+      "gf_delta": 2.7,
+      "ast_delta": 1.8,
+      "pts_delta": -2.8
+    }
+  },
+  "leicester-city": {
+    "squad": "Leicester City",
+    "team_slug": "leicester-city",
+    "name_he": "לסטר סיטי",
+    "name_en": "Leicester City",
+    "rank": 12,
+    "actual_metrics": {
+      "pts": 9,
+      "gd": -40,
+      "gf": 10,
+      "ga": 50,
+      "sota": 148,
+      "save_pct": 64.9,
+      "sot": 47,
+      "sot_pct": 29.9,
+      "ast": 7,
+      "poss": 37.0,
+      "tklw_plus_int": 536
+    },
+    "expected_benchmarks": {
+      "exp_ga": 51.1,
+      "exp_gf": 15.2,
+      "exp_ast": 7.3,
+      "exp_pts": 7.9,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -1.1,
+      "gf_delta": -5.2,
+      "ast_delta": -0.3,
+      "pts_delta": 1.1
+    }
+  },
+  "london-city-lionesses": {
+    "squad": "Lionesses",
+    "team_slug": "london-city-lionesses",
+    "name_he": "לונדון סיטי ליונסס",
+    "name_en": "London City Lionesses",
+    "rank": 6,
+    "actual_metrics": {
+      "pts": 27,
+      "gd": -9,
+      "gf": 26,
+      "ga": 35,
+      "sota": 82,
+      "save_pct": 57.3,
+      "sot": 92,
+      "sot_pct": 38.2,
+      "ast": 18,
+      "poss": 49.8,
+      "tklw_plus_int": 536
+    },
+    "expected_benchmarks": {
+      "exp_ga": 28.3,
+      "exp_gf": 29.7,
+      "exp_ast": 18.9,
+      "exp_pts": 25.8,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": 6.7,
+      "gf_delta": -3.7,
+      "ast_delta": -0.9,
+      "pts_delta": 1.2
+    }
+  },
+  "liverpool": {
+    "squad": "Liverpool",
+    "team_slug": "liverpool",
+    "name_he": "ליברפול",
+    "name_en": "Liverpool",
+    "rank": 11,
+    "actual_metrics": {
+      "pts": 17,
+      "gd": -14,
+      "gf": 19,
+      "ga": 33,
+      "sota": 98,
+      "save_pct": 65.3,
+      "sot": 57,
+      "sot_pct": 31.0,
+      "ast": 13,
+      "poss": 48.0,
+      "tklw_plus_int": 461
+    },
+    "expected_benchmarks": {
+      "exp_ga": 33.8,
+      "exp_gf": 18.4,
+      "exp_ast": 13.8,
+      "exp_pts": 22.9,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -0.8,
+      "gf_delta": 0.6,
+      "ast_delta": -0.8,
+      "pts_delta": -5.9
+    }
+  },
+  "manchester-city": {
+    "squad": "Manchester City",
+    "team_slug": "manchester-city",
+    "name_he": "מנצ'סטר סיטי",
+    "name_en": "Manchester City",
+    "rank": 1,
+    "actual_metrics": {
+      "pts": 55,
+      "gd": 41,
+      "gf": 60,
+      "ga": 19,
+      "sota": 72,
+      "save_pct": 73.6,
+      "sot": 153,
+      "sot_pct": 38.1,
+      "ast": 43,
+      "poss": 56.6,
+      "tklw_plus_int": 418
+    },
+    "expected_benchmarks": {
+      "exp_ga": 24.9,
+      "exp_gf": 49.5,
+      "exp_ast": 43.6,
+      "exp_pts": 54.6,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -5.9,
+      "gf_delta": 10.5,
+      "ast_delta": -0.6,
+      "pts_delta": 0.4
+    }
+  },
+  "manchester-united": {
+    "squad": "Manchester Utd",
+    "team_slug": "manchester-united",
+    "name_he": "מנצ'סטר יונייטד",
+    "name_en": "Manchester United",
+    "rank": 4,
+    "actual_metrics": {
+      "pts": 40,
+      "gd": 15,
+      "gf": 37,
+      "ga": 22,
+      "sota": 77,
+      "save_pct": 71.4,
+      "sot": 113,
+      "sot_pct": 36.8,
+      "ast": 27,
+      "poss": 54.9,
+      "tklw_plus_int": 433
+    },
+    "expected_benchmarks": {
+      "exp_ga": 26.6,
+      "exp_gf": 36.5,
+      "exp_ast": 26.9,
+      "exp_pts": 39.6,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": -4.6,
+      "gf_delta": 0.5,
+      "ast_delta": 0.1,
+      "pts_delta": 0.4
+    }
+  },
+  "tottenham": {
+    "squad": "Tottenham",
+    "team_slug": "tottenham",
+    "name_he": "טוטנהאם",
+    "name_en": "Tottenham Hotspur",
+    "rank": 5,
+    "actual_metrics": {
+      "pts": 36,
+      "gd": -2,
+      "gf": 33,
+      "ga": 35,
+      "sota": 101,
+      "save_pct": 62.4,
+      "sot": 94,
+      "sot_pct": 32.9,
+      "ast": 22,
+      "poss": 51.8,
+      "tklw_plus_int": 451
+    },
+    "expected_benchmarks": {
+      "exp_ga": 34.9,
+      "exp_gf": 30.4,
+      "exp_ast": 24.0,
+      "exp_pts": 29.8,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": 0.1,
+      "gf_delta": 2.6,
+      "ast_delta": -2.0,
+      "pts_delta": 6.2
+    }
+  },
+  "west-ham": {
+    "squad": "West Ham",
+    "team_slug": "west-ham",
+    "name_he": "ווסטהאם",
+    "name_en": "West Ham United",
+    "rank": 10,
+    "actual_metrics": {
+      "pts": 19,
+      "gd": -25,
+      "gf": 18,
+      "ga": 43,
+      "sota": 107,
+      "save_pct": 57.9,
+      "sot": 66,
+      "sot_pct": 30.8,
+      "ast": 12,
+      "poss": 41.7,
+      "tklw_plus_int": 532
+    },
+    "expected_benchmarks": {
+      "exp_ga": 37.0,
+      "exp_gf": 21.3,
+      "exp_ast": 13.1,
+      "exp_pts": 16.6,
+      "league_avg_save_pct": 65.5,
+      "league_avg_g_per_sot": 0.32,
+      "league_avg_ast_per_gf": 0.73,
+      "linear_slope": 0.576,
+      "linear_intercept": 31.0
+    },
+    "deltas": {
+      "ga_delta": 6.0,
+      "gf_delta": -3.3,
+      "ast_delta": -1.1,
+      "pts_delta": 2.4
+    }
+  }
+}

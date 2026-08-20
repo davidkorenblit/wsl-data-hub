@@ -152,6 +152,71 @@ permalink: /metrics/
       </div>
     </section>
 
+    <!-- 5. Mathematical Expectations & Over/Under Benchmarks -->
+    <section class="space-y-4 pt-4 border-t border-surface-700">
+      <h2 class="text-xl font-bold text-white flex items-center gap-2">
+        <span>📐</span>
+        <span>5. מודל חישוב הציפיות (Baseline Benchmarks) והערכת ביצועים</span>
+      </h2>
+      <p class="text-sm text-slate-300">
+        כדי לקבוע האם קבוצה עמדה ב-<strong>Overperformance</strong> (ביצוע עודף) או <strong>Underperformance</strong> (ביצוע חסר), פיתחנו מודל בנצ'מרק גנרי שמחשב מה הקבוצה הייתה "אמורה" להפיק מתוך הנתונים שלה ביחס לממוצע הליגה:
+      </p>
+
+      <div class="space-y-3">
+        <div class="p-4 bg-surface-700/30 rounded-xl border border-surface-700 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-brand-400">1. ספיגה צפויה (Expected GA) מתוך איומי היריבה</span>
+            <span class="text-xs bg-surface-800 px-2 py-0.5 rounded text-slate-400">שוערות והגנה</span>
+          </div>
+          <p class="text-sm text-slate-300">
+            <strong>הנוסחה:</strong> <code>xGA = SoTA × (1 - ממוצע הצלות הליגה)</code>
+          </p>
+          <p class="text-xs text-slate-400">
+            ממוצע הליגה עומד על כ-65.5% הצלות. הכפלת כמות הבעיטות למסגרת שספגה הקבוצה (SoTA) באחוז הספיגה הליגתי הממוצע (34.5%) מבודדת את תפקוד השוערת: האם ספגה יותר או פחות ממה ששוערת ממוצעת הייתה סופגת מאותם איומים בדיוק.
+          </p>
+        </div>
+
+        <div class="p-4 bg-surface-700/30 rounded-xl border border-surface-700 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-brand-400">2. הבקעה צפויה (Expected GF) מתוך בעיטות למסגרת</span>
+            <span class="text-xs bg-surface-800 px-2 py-0.5 rounded text-slate-400">התקפה וסיומת</span>
+          </div>
+          <p class="text-sm text-slate-300">
+            <strong>הנוסחה:</strong> <code>xGF = SoT × יחס שערים לבעיטה למסגרת בליגה</code>
+          </p>
+          <p class="text-xs text-slate-400">
+            יחס ההמרה הליגתי עומד על כ-0.315 שערים לכל בעיטה למסגרת. חישוב זה מודד האם חדות הסיומת של שחקניות ההתקפה הניבה יותר שערים ממה שנפח הבעיטות למסגרת אמור לספק.
+          </p>
+        </div>
+
+        <div class="p-4 bg-surface-700/30 rounded-xl border border-surface-700 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-brand-400">3. בישולים צפויים (Expected Assists)</span>
+            <span class="text-xs bg-surface-800 px-2 py-0.5 rounded text-slate-400">יצירתיות ושיתוף</span>
+          </div>
+          <p class="text-sm text-slate-300">
+            <strong>הנוסחה:</strong> <code>xAst = GF × יחס בישולים לשערים בליגה</code>
+          </p>
+          <p class="text-xs text-slate-400">
+            בליגה, כ-73% מהשערים מובקעים לאחר בישול ישיר. המדד בודק האם השערים של הקבוצה נבעו ממהלכים קבוצתיים מתוכננים ומסירות מפתח, או מטעויות יריב ומהלכים אישיים מבודדים.
+          </p>
+        </div>
+
+        <div class="p-4 bg-surface-700/30 rounded-xl border border-surface-700 space-y-2">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-brand-400">4. נקודות צפויות (xPTS) מרגרסיה ליניארית של הפרש שערים</span>
+            <span class="text-xs bg-surface-800 px-2 py-0.5 rounded text-slate-400">מאקרו ויעילות טבלה</span>
+          </div>
+          <p class="text-sm text-slate-300">
+            <strong>הנוסחה:</strong> <code>xPTS = 0.576 × GD + 31.0</code> (משוואת קו המגמה הליגתי $y = ax + b$)
+          </p>
+          <p class="text-xs text-slate-400">
+            מכיוון שהפרש שערים יכול להיות שלילי (בניגוד לנקודות), הרגרסיה הליניארית מודדת את תוחלת הנקודות שכל שער בהפרש השערים מייצר בעונת 22 משחקים. פער חיובי (Pts > xPTS) ממחיש יכולת "סחיטת נקודות" וניצחונות צמודים.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- Navigation links -->
     <div class="pt-6 border-t border-surface-700 flex flex-wrap justify-between items-center text-sm text-slate-400 gap-4">
       <a href="{{ '/methodology/' | relative_url }}" class="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1">

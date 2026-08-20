@@ -1,0 +1,62 @@
+{
+  "Lionesses": {
+    "slug": "london-city-lionesses",
+    "name_he": "לונדון סיטי ליונסס",
+    "name_en": "London City Lionesses"
+  },
+  "Arsenal": {
+    "slug": "arsenal",
+    "name_he": "ארסנל",
+    "name_en": "Arsenal"
+  },
+  "Aston Villa": {
+    "slug": "aston-villa",
+    "name_he": "אסטון וילה",
+    "name_en": "Aston Villa"
+  },
+  "Brighton": {
+    "slug": "brighton",
+    "name_he": "ברייטון",
+    "name_en": "Brighton & Hove Albion"
+  },
+  "Chelsea": {
+    "slug": "chelsea",
+    "name_he": "צ'לסי",
+    "name_en": "Chelsea"
+  },
+  "Everton": {
+    "slug": "everton",
+    "name_he": "אברטון",
+    "name_en": "Everton"
+  },
+  "Leicester City": {
+    "slug": "leicester-city",
+    "name_he": "לסטר סיטי",
+    "name_en": "Leicester City"
+  },
+  "Liverpool": {
+    "slug": "liverpool",
+    "name_he": "ליברפול",
+    "name_en": "Liverpool"
+  },
+  "Manchester City": {
+    "slug": "manchester-city",
+    "name_he": "מנצ'סטר סיטי",
+    "name_en": "Manchester City"
+  },
+  "Manchester Utd": {
+    "slug": "manchester-united",
+    "name_he": "מנצ'סטר יונייטד",
+    "name_en": "Manchester United"
+  },
+  "Tottenham": {
+    "slug": "tottenham",
+    "name_he": "טוטנהאם",
+    "name_en": "Tottenham Hotspur"
+  },
+  "West Ham": {
+    "slug": "west-ham",
+    "name_he": "ווסטהאם",
+    "name_en": "West Ham United"
+  }
+}

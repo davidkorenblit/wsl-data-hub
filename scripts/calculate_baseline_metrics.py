@@ -12,7 +12,12 @@ import argparse
 import pandas as pd
 import numpy as np
 
-def load_data(base_dir="wsl-data-hub/data/raw"):
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "raw")
+
+def load_data(base_dir=None):
+    if base_dir is None:
+        base_dir = DEFAULT_DATA_DIR
     std = pd.read_csv(os.path.join(base_dir, "wsl_standard_squad.csv"))
     std_opp = pd.read_csv(os.path.join(base_dir, "wsl_standard_opponent.csv"))
     shoot = pd.read_csv(os.path.join(base_dir, "wsl_shooting_squad.csv"))

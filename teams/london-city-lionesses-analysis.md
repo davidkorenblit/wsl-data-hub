@@ -67,6 +67,23 @@ permalink: /teams/london-city-lionesses/analysis/
     </p>
   </div>
 
+  <!-- Next Step CTA -->
+  <div class="p-6 bg-gradient-to-r from-surface-800 to-surface-700 rounded-2xl border border-brand-500/40 my-6 shadow-xl space-y-3">
+    <div class="flex items-center gap-3">
+      <span class="text-3xl">📈</span>
+      <div>
+        <h3 class="font-bold text-white text-lg">בפועל מול על הנייר: מודל הציפיות וה-Over/Under</h3>
+        <p class="text-sm text-slate-300">מעבר לגרף ההשוואתי ולשקלול הביצועים מול ממוצעי הליגה.</p>
+      </div>
+    </div>
+    <div class="pt-2">
+      <a href="{{ '/teams/london-city-lionesses/evaluation/' | relative_url }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-xl shadow-lg transition-all hover:scale-105">
+        <span>לגרף ולשקלול הביצועים</span>
+        <span>←</span>
+      </a>
+    </div>
+  </div>
+
   <div class="pt-6 border-t border-surface-700 flex flex-wrap justify-between items-center text-sm text-slate-400 gap-4">
     <a href="{{ '/teams/london-city-lionesses/' | relative_url }}" class="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1">
       → חזרה לחלק א': מבוא וזהות המועדון
