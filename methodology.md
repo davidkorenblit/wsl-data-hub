@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "מתודולוגיה | WSL Data Hub"
+title: "מתודולוגיה ושאלות המחקר | WSL Data Hub"
 permalink: /methodology/
 ---
 
@@ -15,10 +15,10 @@ permalink: /methodology/
       <span class="text-xs text-slate-500">WSL Data Hub</span>
     </div>
     <h1 class="text-3xl sm:text-4xl font-bold text-white mb-4">
-      מתודולוגיה
+      מתודולוגיה: איך אנחנו מנתחים?
     </h1>
     <p class="text-slate-300 text-lg leading-relaxed">
-      אמרנו מדען נתונים, אז בואו נדבר קצת על הנתונים והמדדים.
+      אמרנו מדען נתונים, אז בואו נעשה סדר במספרים: המטרה של סדרת הפוסטים והניתוחים היא לקחת את הביצועים של כל קבוצה בעונה החולפת, לבחון את השינויים בסגל לקראת העונה החדשה, ולענות על השאלה הגדולה — האם הקבוצה טובה יותר, שלמה יותר, ולאן היא יכולה להגיע?
     </p>
   </div>
 
@@ -29,124 +29,114 @@ permalink: /methodology/
     <section class="space-y-4">
       <h2 class="text-xl font-bold text-white flex items-center gap-2">
         <span>🎯</span>
-        <span>המטרה שלנו</span>
+        <span>נרטיב הניתוח: מאבחון לתחזית</span>
       </h2>
       <p>
-        אבל לפני זה, בואו נדבר שנייה על המטרה שלנו.
+        במקום לזרוק בליל של מספרים מנותקים, כל ניתוח של קבוצה נבנה כסיפור אנליטי שלם בעל שלושה שלבים:
       </p>
-      <p>
-        במסגרת הפוסטים, אנתח את העונה הקודמת של כל קבוצה, ואנסה לענות האם הסגל החדש טוב יותר או שלם יותר.
-      </p>
-      <p>
-        לטובת הניתוח אנסה לקבל תשובות ל-4 שאלות כלליות:
-      </p>
-    </section>
-
-    <!-- 4 Questions Section -->
-    <section class="space-y-4 pt-4 border-t border-surface-700">
-      <h2 class="text-xl font-bold text-white flex items-center gap-2">
-        <span>❓</span>
-        <span>4 שאלות המחקר</span>
-      </h2>
-      
-      <div class="space-y-3">
-        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/50">
-          <p class="font-bold text-brand-400 text-sm mb-1">שאלה 1: תמונת בסיס (Squad Baseline)</p>
-          <p class="text-sm text-slate-200">איפה הקבוצה ממוקמת ביחס לשאר הליגה באיכות ההתקפה וההגנה (xG, xGA, יצירת מצבים ושליטה)?</p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/40 text-center space-y-1">
+          <div class="text-2xl mb-1">🔍</div>
+          <div class="font-bold text-white text-sm">1. אבחון הפערים</div>
+          <div class="text-xs text-slate-400">איפה הקבוצה התקשתה בעונה שעברה?</div>
         </div>
-
-        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/50">
-          <p class="font-bold text-brand-400 text-sm mb-1">שאלה 2: רכש ויעדים (Target Signings)</p>
-          <p class="text-sm text-slate-200">האם השחקניות שהצטרפו משדרגות את נקודות התורפה של הקבוצה ביחס לעונה הקודמת?</p>
+        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/40 text-center space-y-1">
+          <div class="text-2xl mb-1">🧩</div>
+          <div class="font-bold text-white text-sm">2. מענה הרכש</div>
+          <div class="text-xs text-slate-400">האם המצטרפות עונות על הצרכים?</div>
         </div>
-
-        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/50">
-          <p class="font-bold text-brand-400 text-sm mb-1">שאלה 3: תחליפים ואיבודים (Net Replacement)</p>
-          <p class="text-sm text-slate-200">מה הקבוצה מאבדת מעזיבת שחקניות מפתח והאם המחליפות מספקות תפוקה שקולה?</p>
-        </div>
-
-        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/50">
-          <p class="font-bold text-brand-400 text-sm mb-1">שאלה 4: מאקרו ונקודות צפויות (Macro & xPTS)</p>
-          <p class="text-sm text-slate-200">כמה נקודות הקבוצה הייתה "אמורה" לצבור לפי איכות הביצועים (xPTS), והאם המיקום בטבלה שיקף את היכולת האמיתית?</p>
+        <div class="p-4 bg-surface-700/40 rounded-xl border border-surface-600/40 text-center space-y-1">
+          <div class="text-2xl mb-1">📈</div>
+          <div class="font-bold text-white text-sm">3. מודל ותחזית</div>
+          <div class="text-xs text-slate-400">כמה נקודות הקבוצה שווה העונה?</div>
         </div>
       </div>
     </section>
 
-    <!-- Metrics Section -->
-    <section class="space-y-6 pt-4 border-t border-surface-700">
+    <!-- 3 Core Research Questions -->
+    <section class="space-y-5 pt-4 border-t border-surface-700">
       <div>
         <h2 class="text-xl font-bold text-white flex items-center gap-2 mb-2">
-          <span>📊</span>
-          <span>המדדים שבהם נשתמש</span>
+          <span>❓</span>
+          <span>3 שאלות המחקר המנחות</span>
         </h2>
         <p class="text-sm text-slate-400">
-          על מנת לענות על השאלות האלה, נשתמש במדדים הבאים:
+          אלו השאלות שמובילות כל ניתוח קבוצה באתר:
         </p>
       </div>
-
-      <!-- Question 1 Metrics -->
-      <div class="space-y-5">
-        <h3 class="text-base font-bold text-brand-300 border-r-2 border-brand-500 pr-3">
-          מדדים למענה על שאלה 1 (תמונת בסיס – Squad Baseline)
-        </h3>
-
-        <!-- Attacking -->
-        <div class="bg-surface-700/30 p-4 rounded-xl space-y-2 border border-surface-700">
-          <p class="font-semibold text-white text-sm">1. התקפה ואיכות איומים (Attacking & Shot Quality)</p>
-          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5 pr-2">
-            <li><strong>xG לעומת G (והפרש G - xG):</strong> שערים צפויים מול שערים בפועל. מודד האם הקבוצה מייצרת מצבים איכותיים באופן עקבי או תלויה במזל וסיומת חריגה.</li>
-            <li><strong>npxG/90:</strong> שערים צפויים ללא פנדלים ל-90 דקות – מדד הליבה לאיכות ייצור המצבים ממשחק פתוח.</li>
-            <li><strong>Sh/90 ו-SoT%:</strong> כמות בעיטות ל-90 דקות ואחוז בעיטות למסגרת – מודד נפח איומים ויעילות הגעה למסגרת.</li>
-          </ul>
+      
+      <div class="space-y-4">
+        
+        <!-- Question 1 -->
+        <div class="p-5 bg-surface-700/40 rounded-xl border-r-4 border-brand-500 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 bg-brand-500/20 text-brand-400 text-xs font-bold rounded">שאלה 1</span>
+            <h3 class="font-bold text-white text-base">תמונת בסיס ומיפוי נקודות התורפה (Squad Baseline)</h3>
+          </div>
+          <p class="text-sm font-medium text-slate-200">
+            "כיצד תפקדה הקבוצה בעונה החולפת בשלושת חלקי המגרש (הגנה ושוערות, שליטה בקישור, והתקפה), ומהן נקודות התורפה המרכזיות שדורשות מענה?"
+          </p>
+          <div class="text-xs text-slate-400 pt-1 leading-normal">
+            <strong>על מה מסתכלים:</strong> חלוקת המגרש לשלוש גזרות — עוצמת ספיגה ואיכות השוערת, שליטה והחזקת כדור, ונפח ויעילות איומים בהתקפה. סיום השאלה מגדיר את "רשימת הצרכים" המדויקת של הקבוצה לקיץ.
+          </div>
         </div>
 
-        <!-- Creation -->
-        <div class="bg-surface-700/30 p-4 rounded-xl space-y-2 border border-surface-700">
-          <p class="font-semibold text-white text-sm">2. יצירת מצבים (Chance Creation)</p>
-          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5 pr-2">
-            <li><strong>SCA90 (Shot-Creating Actions):</strong> פעולות יוצרות בעיטה ל-90 דקות – המדד המרכזי לנפח היצירתיות של הקבוצה.</li>
-            <li><strong>GCA90 (Goal-Creating Actions):</strong> פעולות יוצרות שער ל-90 דקות – בוחן את שרשרת המהלכים שמסתיימת ברשת.</li>
-          </ul>
+        <!-- Question 2 -->
+        <div class="p-5 bg-surface-700/40 rounded-xl border-r-4 border-emerald-500 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 bg-emerald-500/20 text-emerald-400 text-xs font-bold rounded">שאלה 2</span>
+            <h3 class="font-bold text-white text-base">מענה הרכש לסגירת הפערים (Transfer Impact)</h3>
+          </div>
+          <p class="text-sm font-medium text-slate-200">
+            "האם שחקניות הרכש החדשות והשינויים בסגל נותנים מענה כירורגי לנקודות התורפה שהוגדרו?"
+          </p>
+          <div class="text-xs text-slate-400 pt-1 leading-normal">
+            <strong>על מה מסתכלים:</strong> ניתוח השחקניות שהגיעו והשחקניות שעזבו דרך הפריזמה של הצרכים שנחשפו בשאלה 1. האם הרכש סותם את החורים או יוצר עומס במקומות הלא נכונים?
+          </div>
         </div>
 
-        <!-- Defense -->
-        <div class="bg-surface-700/30 p-4 rounded-xl space-y-2 border border-surface-700">
-          <p class="font-semibold text-white text-sm">3. חוסן הגנתי וספיגה (Defensive Solidity)</p>
-          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5 pr-2">
-            <li><strong>xGA לעומת GA:</strong> ספיגות צפויות מול שערים שנספגו בפועל מתוך טבלאות היריבות.</li>
-            <li><strong>SoTA/90:</strong> בעיטות למסגרת שהיריבות מגיעות אליהן – מודד כמה ההגנה חשופה לאיומים ישירים.</li>
-            <li><strong>TklW + Int:</strong> תאקלים מוצלחים וחטיפות – מדד הפעילות ההגנתית האקטיבית.</li>
-          </ul>
-        </div>
-
-        <!-- Macro -->
-        <div class="bg-surface-700/30 p-4 rounded-xl space-y-2 border border-surface-700">
-          <p class="font-semibold text-white text-sm">4. מדד שליטה כולל (Macro Metric)</p>
-          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1.5 pr-2">
-            <li><strong>xGD (הפרש שערים צפוי, xG - xGA):</strong> הפרש השערים הצפוי ל-90 דקות – המנבא הסטטיסטי המוביל למיקום אמיתי ולצבירת נקודות לאורך עונה.</li>
-            <li><strong>Poss%:</strong> אחוז החזקה בכדור – מאפיין סגנון ושליטה בקצב המשחק.</li>
-          </ul>
+        <!-- Question 3 -->
+        <div class="p-5 bg-surface-700/40 rounded-xl border-r-4 border-purple-500 space-y-2">
+          <div class="flex items-center gap-2">
+            <span class="px-2 py-0.5 bg-purple-500/20 text-purple-400 text-xs font-bold rounded">שאלה 3</span>
+            <h3 class="font-bold text-white text-base">השורה התחתונה: מודל ביצועים ותחזית לעונה (Projections)</h3>
+          </div>
+          <p class="text-sm font-medium text-slate-200">
+            "בהתבסס על בסיס הביצועים מהעונה שעברה ושדרוג הסגל – מהי תקרת הנקודות והמיקום הצפוי של הקבוצה?"
+          </p>
+          <div class="text-xs text-slate-400 pt-1 leading-normal">
+            <strong>על מה מסתכלים:</strong> שקלול היכולת הבסיסית של הסגל (מה שהקבוצה הייתה שווה סטטיסטית) יחד עם "דלתת השדרוג" של הרכש לקראת הערכת צבירת נקודות, מאבקי מיקום ותחזית סופית.
+          </div>
         </div>
 
       </div>
+    </section>
 
-      <!-- Other Questions Placeholder -->
-      <div class="p-6 bg-surface-700/20 rounded-xl border border-dashed border-surface-600 text-center space-y-2">
-        <p class="text-2xl">🚧</p>
-        <p class="font-bold text-white text-base">מדדים לשאלות 2, 3 ו-4</p>
-        <p class="text-sm text-slate-400">כפרה עובדים</p>
+    <!-- Deep Dive Callout to Metrics Page -->
+    <section class="p-6 bg-gradient-to-r from-surface-700/60 to-surface-700/30 rounded-2xl border border-brand-500/30 space-y-3">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🤓</span>
+        <div>
+          <h3 class="font-bold text-white text-base">רוצים לרדת לפרטים הטכניים של המספרים?</h3>
+          <p class="text-xs text-slate-300">למי שרוצה להבין כל מדד ומדד לעומק — הגדרות, נוסחאות חישוב ומשמעויות.</p>
+        </div>
       </div>
-
+      <div class="pt-2">
+        <a href="{{ '/metrics/' | relative_url }}" class="inline-flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-500 text-white text-sm font-semibold rounded-lg shadow transition-colors">
+          <span>ספריית המדדים והפירוט המלא</span>
+          <span>←</span>
+        </a>
+      </div>
     </section>
 
     <!-- Scope & Notes Section -->
     <section class="space-y-4 pt-4 border-t border-surface-700">
       <div class="p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-amber-200 text-sm">
-        <strong>הערה חשובה:</strong> הליגה גדלה השנה בעוד שתי קבוצות, אשקלל גם את זה בתוך ניתוח הנתונים.
+        <strong>הערה חשובה:</strong> הליגה גדלה השנה בעוד שתי קבוצות (מ-12 ל-14), ואנו משקללים את השפעת הגדלת כמות המשחקים ושינוי מאזן הנקודות הכולל בתוך מודל החיזוי.
       </div>
 
       <p class="text-sm">
-        בשלב הראשון נעשה על קבוצות מנצ'סטר ולונדון (סיטי האלופה, יונייטד שעוברת עליה הכנה מוזרה לעונה, צ'לסי האימתנית, ארסנל (שלא נדע), ספרס המתחדשת ולונדון סיטי הסופר מסקרנת), בהמשך בעזרת השם, נעשה זאת לכל קבוצות הליגה.
+        בשלב הראשון הניתוח מתמקד בקבוצות לונדון ומנצ'סטר (צ'לסי, ארסנל, סיטי, יונייטד, טוטנהאם ולונדון סיטי ליונסס), ובהמשך יורחב לכל קבוצות ה-WSL.
       </p>
     </section>
 
