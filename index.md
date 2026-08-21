@@ -6,10 +6,10 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
 
 <!-- Page Title & Section Header -->
 <div class="mb-6">
-  <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+  <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
     WSL 2025/26 · STANDINGS
   </div>
-  <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-2">
+  <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-2">
     טבלת הליגה
   </h1>
   <p class="text-xs sm:text-sm text-neutral-500 font-sans">
@@ -78,10 +78,10 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
 <!-- Strict Clean Editorial Cards -->
 <div class="grid md:grid-cols-2 gap-4" dir="rtl">
   <div class="rounded-md border border-neutral-200 bg-white p-5">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-2">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-2">
       מתודולוגיה ומודלים
     </div>
-    <h3 class="font-serif text-lg font-semibold text-neutral-900 mb-2">מודלים וניתוחי עומק</h3>
+    <h3 class="text-lg font-bold text-neutral-900 mb-2">מודלים וניתוחי עומק</h3>
     <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-3">
       מדדי xG, פעולות יצירת בעיטה (SCA), איכות מסירות וזמני משחק מ-FBref לניתוח ביצועי הקבוצות והשחקניות.
     </p>
@@ -91,10 +91,10 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
   </div>
 
   <div class="rounded-md border border-neutral-200 bg-white p-5">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-2">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-2">
       מועדון במוקד
     </div>
-    <h3 class="font-serif text-lg font-semibold text-neutral-900 mb-2">London City Lionesses</h3>
+    <h3 class="text-lg font-bold text-neutral-900 mb-2">London City Lionesses</h3>
     <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-3">
       קבוצת המיקוד הראשונה של הבלוג. בעמוד הקבוצה תוכלו למצוא את הסגל המלא וסדרת שאלות מחקר מבוססות דאטא.
     </p>

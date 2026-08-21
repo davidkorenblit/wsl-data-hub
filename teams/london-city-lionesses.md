@@ -5,15 +5,17 @@ team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
 team_meta: "WSL 2025/26 · חלק א': מועדון, קהילה וזהות"
 permalink: /teams/london-city-lionesses/
+next_url: /teams/london-city-lionesses/analysis/
+next_title: "חלק ב': ניתוח נתונים"
 ---
 
 <div class="space-y-5 text-neutral-800 leading-relaxed text-base sm:text-lg font-sans">
 
   <div class="border-b border-neutral-200 pb-3">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
       חלק א': מבוא, תרבות וזהות המועדון
     </div>
-    <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900">
       לונדון סיטי ליונסס: על הצבע, הקהילה והמהפכה של מישל קאנג
     </h1>
   </div>
@@ -42,7 +44,7 @@ permalink: /teams/london-city-lionesses/
     אפשר וצריך לזקוף את הגדילה המסיבית של ארסנל לכך שהיא עברה לשחק תמיד באמירייטס, להצלחה באירופה ולהיותה אחת הקבוצות הכי טובות מסורתית בענף. מעניין יהיה לבחון איך מהלך דומה ישפיע על צ'לסי של העונה, אבל ללונדון סיטי ליונסס אין את כל זה.
   </p>
 
-  <p class="font-serif font-semibold text-neutral-900">
+  <p class="font-bold text-neutral-900">
     לטוב ולרע.
   </p>
 
@@ -62,26 +64,7 @@ permalink: /teams/london-city-lionesses/
     אובייקטיבית, עם כניסת העונה בקרוב, זאת הקבוצה הכי מסקרנת לצפות בה. סובייקטיבית? התשובה היא תמיד ספרס. לא משנה מה השאלה, זאת תמיד התשובה.
   </p>
 
-  <!-- Navigation Card to Part 2 -->
-  <div class="rounded-md border border-neutral-200 bg-white p-5 space-y-2">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500">
-      חלק ב': ניתוח נתונים
-    </div>
-    <h3 class="font-serif font-semibold text-neutral-900 text-lg">מוכנים לצלול לתוך המספרים?</h3>
-    <p class="text-xs sm:text-sm text-neutral-600">ניתוח עונת הבכורה, נקודות התורפה ושדרוג הרכש לפי 3 שאלות המחקר.</p>
-    <div class="pt-2">
-      <a href="{{ '/teams/london-city-lionesses/analysis/' | relative_url }}" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-900 hover:underline">
-        <span>מעבר לניתוח הנתונים המלא</span>
-        <span>←</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="pt-4 border-t border-neutral-200 flex flex-wrap justify-between items-center text-xs text-neutral-500 gap-4 font-mono">
-    <span>תודה שקראתם. אפשר להשאיר תגובות ואת דעתכם.ן 🙌</span>
-    <a href="{{ '/' | relative_url }}" class="text-neutral-700 hover:text-neutral-950 font-medium">
-      חזרה לטבלת הליגה ←
-    </a>
-  </div>
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>

@@ -2,16 +2,18 @@
 layout: default
 title: "מדריך ומילון המדדים | WSL Data Hub"
 permalink: /metrics/
+prev_url: /methodology/
+prev_title: "מתודולוגיה ושאלות מחקר"
 ---
 
 <div class="space-y-6">
 
   <!-- Header -->
   <div class="border-b border-neutral-200 pb-4">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
       DATA DICTIONARY & METRICS
     </div>
-    <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-2">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-2">
       מילון המדדים ופירוט טכני
     </h1>
     <p class="text-sm sm:text-base text-neutral-600 leading-relaxed font-sans">
@@ -29,10 +31,10 @@ permalink: /metrics/
 
     <!-- 1. Attack & Finishing -->
     <section class="space-y-3 pt-2">
-      <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+      <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
         CATEGORY 01
       </div>
-      <h2 class="font-serif text-xl font-semibold text-neutral-900">
+      <h2 class="text-xl font-bold text-neutral-900">
         1. התקפה, איומים ויעילות סיומת
       </h2>
       <div class="space-y-2.5">
@@ -72,10 +74,10 @@ permalink: /metrics/
 
     <!-- 2. Creation & Passing -->
     <section class="space-y-3 pt-4 border-t border-neutral-200">
-      <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+      <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
         CATEGORY 02
       </div>
-      <h2 class="font-serif text-xl font-semibold text-neutral-900">
+      <h2 class="text-xl font-bold text-neutral-900">
         2. יצירתיות, בישולים וייצור מצבים
       </h2>
       <div class="space-y-2.5">
@@ -99,10 +101,10 @@ permalink: /metrics/
 
     <!-- 3. Defense & Goalkeeping -->
     <section class="space-y-3 pt-4 border-t border-neutral-200">
-      <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+      <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
         CATEGORY 03
       </div>
-      <h2 class="font-serif text-xl font-semibold text-neutral-900">
+      <h2 class="text-xl font-bold text-neutral-900">
         3. הגנה, חילוצים ועבודת שוערת
       </h2>
       <div class="space-y-2.5">
@@ -142,10 +144,10 @@ permalink: /metrics/
 
     <!-- 4. Macro & Benchmarks -->
     <section class="space-y-3 pt-4 border-t border-neutral-200">
-      <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+      <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
         CATEGORY 04
       </div>
-      <h2 class="font-serif text-xl font-semibold text-neutral-900">
+      <h2 class="text-xl font-bold text-neutral-900">
         4. מודל חישוב הציפיות והערכת ביצועים (Baseline Benchmarks)
       </h2>
       <p class="text-xs sm:text-sm text-neutral-600">
@@ -184,5 +186,8 @@ permalink: /metrics/
     </section>
 
   </div>
+
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>

@@ -5,15 +5,19 @@ team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
 team_meta: "WSL 2025/26 · חלק ב': ניתוח נתונים"
 permalink: /teams/london-city-lionesses/analysis/
+prev_url: /teams/london-city-lionesses/
+prev_title: "חלק א': מבוא וזהות"
+next_url: /teams/london-city-lionesses/evaluation/
+next_title: "שלב ביניים: מודל הערכת ביצועים"
 ---
 
 <div class="space-y-5 text-neutral-800 leading-relaxed text-base sm:text-lg font-sans">
 
   <div class="border-b border-neutral-200 pb-3">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
       שאלה 1: תמונת בסיס (Squad Baseline)
     </div>
-    <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900">
       עונה ראשונה של לונדון סיטי
     </h1>
   </div>
@@ -55,10 +59,10 @@ permalink: /teams/london-city-lionesses/analysis/
   </p>
 
   <div class="p-4 bg-neutral-50 rounded border border-neutral-200 my-4 space-y-2">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider">
       סיכום שאלה 1
     </div>
-    <h3 class="font-serif font-semibold text-neutral-900 text-base">אז מה כל זה מספר לנו?</h3>
+    <h3 class="font-bold text-neutral-900 text-base">אז מה כל זה מספר לנו?</h3>
     <p class="text-sm text-neutral-700">
       כבר מהתבוננות ראשונה אנחנו מבינים ששוערת היה כדאי לרכוש, ושגם שחקניות התקפה וקישור התקפי יעזרו.
     </p>
@@ -67,28 +71,7 @@ permalink: /teams/london-city-lionesses/analysis/
     </p>
   </div>
 
-  <!-- Next Step CTA -->
-  <div class="rounded-md border border-neutral-200 bg-white p-5 space-y-2">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500">
-      שלב ביניים
-    </div>
-    <h3 class="font-serif font-semibold text-neutral-900 text-lg">בפועל מול על הנייר: מודל הציפיות וה-Over/Under</h3>
-    <p class="text-xs sm:text-sm text-neutral-600">מעבר לגרף ההשוואתי ולשקלול הביצועים מול ממוצעי הליגה.</p>
-    <div class="pt-2">
-      <a href="{{ '/teams/london-city-lionesses/evaluation/' | relative_url }}" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-neutral-900 hover:underline">
-        <span>לגרף ולשקלול הביצועים</span>
-        <span>←</span>
-      </a>
-    </div>
-  </div>
-
-  <div class="pt-4 border-t border-neutral-200 flex flex-wrap justify-between items-center text-xs text-neutral-500 gap-4 font-mono">
-    <a href="{{ '/teams/london-city-lionesses/' | relative_url }}" class="hover:text-neutral-900">
-      → חזרה לחלק א': מבוא וזהות
-    </a>
-    <a href="{{ '/' | relative_url }}" class="text-neutral-700 hover:text-neutral-950 font-medium">
-      חזרה לטבלת הליגה ←
-    </a>
-  </div>
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>

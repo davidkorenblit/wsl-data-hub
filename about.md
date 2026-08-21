@@ -8,10 +8,10 @@ permalink: /about/
 
   <!-- Header -->
   <div class="border-b border-neutral-200 pb-4">
-    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
       ABOUT & MANIFESTO
     </div>
-    <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-2">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-2">
       אודות הבלוג
     </h1>
     <p class="text-xs sm:text-sm text-neutral-500 font-mono">
@@ -25,7 +25,7 @@ permalink: /about/
       היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שה-WSL בפרט או כדורגל נשים בכלל מעניין אתכם.
     </p>
 
-    <p class="font-serif text-xl font-semibold text-neutral-900">
+    <p class="text-xl font-bold text-neutral-900">
       איזה כיף. באמת כיף.
     </p>
 
@@ -47,5 +47,8 @@ permalink: /about/
     </div>
 
   </div>
+
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>
