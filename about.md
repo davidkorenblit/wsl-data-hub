@@ -4,30 +4,28 @@ title: "אודות | WSL Data Hub"
 permalink: /about/
 ---
 
-<div class="max-w-3xl mx-auto space-y-6">
+<div class="space-y-6">
 
-  <!-- Header Card -->
-  <div class="bg-surface-900 rounded-xl border border-surface-700/80 p-6 sm:p-8">
-    <div class="flex items-center gap-2 mb-2.5">
-      <span class="px-2 py-0.5 border border-surface-700 bg-surface-850 text-neutral-400 text-[11px] font-mono rounded">
-        ABOUT & MANIFESTO
-      </span>
+  <!-- Header -->
+  <div class="border-b border-neutral-200 pb-4">
+    <div class="text-xs uppercase font-mono font-bold tracking-wider text-neutral-500 mb-1">
+      ABOUT & MANIFESTO
     </div>
-    <h1 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-2 tracking-tight">
+    <h1 class="font-serif text-2xl md:text-3xl font-semibold tracking-tight text-neutral-900 mb-2">
       אודות הבלוג
     </h1>
-    <p class="text-neutral-400 text-xs sm:text-sm font-mono">
+    <p class="text-xs sm:text-sm text-neutral-500 font-mono">
       WSL DATA HUB · ANALYTICS & INSIGHTS
     </p>
   </div>
 
-  <div class="bg-surface-900 rounded-xl border border-surface-700/80 p-6 sm:p-8 space-y-5 text-neutral-300 text-base sm:text-lg leading-relaxed font-sans">
+  <div class="rounded-md border border-neutral-200 bg-white p-6 space-y-4 text-neutral-800 text-base sm:text-lg leading-relaxed font-sans">
 
     <p>
       היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שה-WSL בפרט או כדורגל נשים בכלל מעניין אתכם.
     </p>
 
-    <p class="font-serif text-xl sm:text-2xl font-bold text-white tracking-tight">
+    <p class="font-serif text-xl font-semibold text-neutral-900">
       איזה כיף. באמת כיף.
     </p>
 
@@ -43,7 +41,7 @@ permalink: /about/
       תודה שאתם.ן כאן, ואם אהבת, תשתפו כי הענף בצמיחה מטורפת, והגיע הזמן שיהיה תוכן בעברית על הליגה הטובה בעולם (כן, זה הוק בשביל שנוכל לריב על ה-WSL מול ה-NWSL).
     </p>
 
-    <div class="pt-4 border-t border-surface-700/80 flex items-center justify-between text-xs text-neutral-500 font-mono">
+    <div class="pt-4 border-t border-neutral-200 flex items-center justify-between text-xs text-neutral-400 font-mono">
       <span>תודה שבאת לבקר, דוד.</span>
       <span>WSL DATA HUB</span>
     </div>

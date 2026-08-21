@@ -6,10 +6,10 @@
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
 
-    <!-- Google Fonts: Editorial Serif + Clean Sans + JetBrains Mono -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -21,81 +21,51 @@
               serif: ['Newsreader', 'Instrument Serif', 'Georgia', 'serif'],
               sans: ['Inter', 'Rubik', 'system-ui', '-apple-system', 'sans-serif'],
               mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
-            },
-            colors: {
-              surface: {
-                950: '#09090b',
-                900: '#121215',
-                850: '#151519',
-                800: '#18181c',
-                750: '#222228',
-                700: '#27272a',
-                600: '#3f3f46',
-                500: '#52525b',
-              },
-              brand: {
-                400: '#38bdf8',
-                500: '#0284c7',
-                600: '#0369a1',
-              }
             }
           }
         }
       }
     </script>
 
-    <!-- Custom Editorial Main CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
 
-  <body class="h-full bg-surface-950 text-neutral-200 font-sans flex flex-col min-h-screen selection:bg-neutral-800 selection:text-white">
+  <body class="h-full bg-[#F9FAFB] text-[#111827] font-sans flex flex-col min-h-screen">
 
-    <!-- Editorial Header -->
-    <header class="bg-surface-900 border-b border-surface-700/80 sticky top-0 z-30">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between">
-        <a href="{{ '/' | relative_url }}" class="flex items-center gap-3 group">
-          <div class="w-8 h-8 rounded border border-surface-700 bg-surface-800 flex items-center justify-center text-base">
-            ⚽
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-brand-400 transition-colors">
-                {{ site.title }}
-              </span>
-              <span class="text-[10px] font-mono font-medium uppercase tracking-wider px-1.5 py-0.5 rounded border border-surface-700 bg-surface-800 text-neutral-400">
-                25/26
-              </span>
-            </div>
-            <p class="text-[11px] text-neutral-400 font-sans">{{ site.description }}</p>
-          </div>
+    <!-- Minimalist Navigation Bar -->
+    <header class="border-b border-neutral-200 bg-white py-3 sticky top-0 z-30">
+      <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
+        <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
+          <span class="font-serif text-lg font-bold tracking-tight text-neutral-900">WSL Data Hub</span>
+          <span class="text-[11px] font-mono text-neutral-400">25/26</span>
         </a>
 
-        <nav class="flex items-center gap-5 sm:gap-7 text-xs sm:text-sm font-medium text-neutral-300">
-          <a href="{{ '/' | relative_url }}" class="hover:text-white transition-colors">טבלת הליגה</a>
-          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-white transition-colors">מתודולוגיה</a>
-          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-white transition-colors">מדדים</a>
-          <a href="{{ '/about/' | relative_url }}" class="hover:text-white transition-colors">אודות</a>
+        <nav class="flex items-center gap-5 text-xs sm:text-sm font-medium text-neutral-600">
+          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 transition-colors">טבלת הליגה</a>
+          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 transition-colors">מתודולוגיה</a>
+          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 transition-colors">מדדים</a>
+          <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 transition-colors">אודות</a>
         </nav>
       </div>
     </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 py-8 sm:py-10">
+    <!-- Strict Max-Width Container -->
+    <main class="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
       {{ content }}
     </main>
 
-    <!-- Editorial Minimal Footer -->
-    <footer class="bg-surface-900 border-t border-surface-700/80 mt-auto">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-neutral-500 font-sans">
+    <!-- Minimalist Editorial Footer -->
+    <footer class="border-t border-neutral-200 bg-white py-4 mt-auto text-xs text-neutral-500 font-mono">
+      <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
         <div>
-          © <span class="font-mono tabular-nums">{{ site.time | date: '%Y' }}</span> WSL Data Hub · נתוני כדורגל נשים מבוססי FBref
+          WSL Data Hub · עונת 2025/26 · מקור נתונים: FBref
         </div>
-        <div class="flex items-center gap-4 text-neutral-400">
-          <span>Editorial Sports Analytics</span>
+        <div class="flex items-center gap-3 text-neutral-400">
+          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-700">ראשי</a>
           <span>·</span>
-          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-200 transition-colors">ראשי</a>
+          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-700">מתודולוגיה</a>
           <span>·</span>
-          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-200 transition-colors">מתודולוגיה</a>
+          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-700">מדדים</a>
         </div>
       </div>
     </footer>
