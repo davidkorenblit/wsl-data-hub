@@ -9,13 +9,13 @@ next_url: /teams/london-city-lionesses/analysis/
 next_title: "חלק ב': ניתוח נתונים"
 ---
 
-<div class="space-y-5 text-neutral-800 leading-relaxed text-base sm:text-lg font-sans">
+<div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
 
-  <div class="border-b border-neutral-200 pb-3">
-    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
+  <div class="border-b border-neutral-200 dark:border-neutral-800 pb-3">
+    <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
       חלק א': מבוא, תרבות וזהות המועדון
     </div>
-    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
       לונדון סיטי ליונסס: על הצבע, הקהילה והמהפכה של מישל קאנג
     </h1>
   </div>
@@ -44,7 +44,7 @@ next_title: "חלק ב': ניתוח נתונים"
     אפשר וצריך לזקוף את הגדילה המסיבית של ארסנל לכך שהיא עברה לשחק תמיד באמירייטס, להצלחה באירופה ולהיותה אחת הקבוצות הכי טובות מסורתית בענף. מעניין יהיה לבחון איך מהלך דומה ישפיע על צ'לסי של העונה, אבל ללונדון סיטי ליונסס אין את כל זה.
   </p>
 
-  <p class="font-bold text-neutral-900">
+  <p class="font-bold text-neutral-900 dark:text-white">
     לטוב ולרע.
   </p>
 

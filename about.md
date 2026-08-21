@@ -7,25 +7,25 @@ permalink: /about/
 <div class="space-y-6">
 
   <!-- Header -->
-  <div class="border-b border-neutral-200 pb-4">
-    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
+  <div class="border-b border-neutral-200 dark:border-neutral-800 pb-4">
+    <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
       ABOUT & MANIFESTO
     </div>
-    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 mb-2">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2">
       אודות הבלוג
     </h1>
-    <p class="text-xs sm:text-sm text-neutral-500 font-mono">
+    <p class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 font-mono">
       WSL DATA HUB · ANALYTICS & INSIGHTS
     </p>
   </div>
 
-  <div class="rounded-md border border-neutral-200 bg-white p-6 space-y-4 text-neutral-800 text-base sm:text-lg leading-relaxed font-sans">
+  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-6 space-y-4 text-neutral-800 dark:text-neutral-200 text-base sm:text-lg leading-relaxed font-sans">
 
     <p>
       היי, אם הגעתם לפה אתם או חברים שלי וחייבתי אתכם לבוא לפה, או שה-WSL בפרט או כדורגל נשים בכלל מעניין אתכם.
     </p>
 
-    <p class="text-xl font-bold text-neutral-900">
+    <p class="text-xl font-bold text-neutral-900 dark:text-white">
       איזה כיף. באמת כיף.
     </p>
 
@@ -41,7 +41,7 @@ permalink: /about/
       תודה שאתם.ן כאן, ואם אהבת, תשתפו כי הענף בצמיחה מטורפת, והגיע הזמן שיהיה תוכן בעברית על הליגה הטובה בעולם (כן, זה הוק בשביל שנוכל לריב על ה-WSL מול ה-NWSL).
     </p>
 
-    <div class="pt-4 border-t border-neutral-200 flex items-center justify-between text-xs text-neutral-400 font-mono">
+    <div class="pt-4 border-t border-neutral-200 dark:border-neutral-800 flex items-center justify-between text-xs text-neutral-400 dark:text-neutral-500 font-mono">
       <span>תודה שבאת לבקר, דוד.</span>
       <span>WSL DATA HUB</span>
     </div>

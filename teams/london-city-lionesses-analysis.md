@@ -11,13 +11,13 @@ next_url: /teams/london-city-lionesses/evaluation/
 next_title: "שלב ביניים: מודל הערכת ביצועים"
 ---
 
-<div class="space-y-5 text-neutral-800 leading-relaxed text-base sm:text-lg font-sans">
+<div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
 
-  <div class="border-b border-neutral-200 pb-3">
-    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
+  <div class="border-b border-neutral-200 dark:border-neutral-800 pb-3">
+    <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
       שאלה 1: תמונת בסיס (Squad Baseline)
     </div>
-    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900">
+    <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
       עונה ראשונה של לונדון סיטי
     </h1>
   </div>
@@ -27,7 +27,7 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
   </p>
 
   <p>
-    מתוך מדדי ההתקפה שסקרנו (הסבר עליהם נמצא ב<a href="{{ '/methodology/' | relative_url }}" class="text-neutral-900 underline font-medium">מתודולוגיה</a>), גילינו כמה דברים מעניינים. היא כבשה מעט יחסית, אפילו לממוצע בליגה: 26 שערים, מקום 8 בליגה, מול ממוצע של 31.2. היא גם בעטה לשער יחסית מעט — 10.95 בעיטות ל-90 דקות, מקום 7. מצד שני, היעילות שלה בבעיטות למסגרת היא במקום ה-3, עם 38.2%. ברייטון, אגב, נמצאת במקום הראשון עם 40.9%.
+    מתוך מדדי ההתקפה שסקרנו (הסבר עליהם נמצא ב<a href="{{ '/methodology/' | relative_url }}" class="text-neutral-900 dark:text-white underline font-medium">מתודולוגיה</a>), גילינו כמה דברים מעניינים. היא כבשה מעט יחסית, אפילו לממוצע בליגה: 26 שערים, מקום 8 בליגה, מול ממוצע של 31.2. היא גם בעטה לשער יחסית מעט — 10.95 בעיטות ל-90 דקות, מקום 7. מצד שני, היעילות שלה בבעיטות למסגרת היא במקום ה-3, עם 38.2%. ברייטון, אגב, נמצאת במקום הראשון עם 40.9%.
   </p>
 
   <p>
@@ -58,15 +58,15 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
     ובכל זאת, זה לא התבטא מספיק ביצירת מצבים: LCL רשמה 18 אסיסטים בלבד — 0.82 ל-90 דקות, מקום 9 מתוך 12 בליגה.
   </p>
 
-  <div class="p-4 bg-neutral-50 rounded border border-neutral-200 my-4 space-y-2">
-    <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider">
+  <div class="p-4 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 my-4 space-y-2">
+    <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider">
       סיכום שאלה 1
     </div>
-    <h3 class="font-bold text-neutral-900 text-base">אז מה כל זה מספר לנו?</h3>
-    <p class="text-sm text-neutral-700">
+    <h3 class="font-bold text-neutral-900 dark:text-white text-base">אז מה כל זה מספר לנו?</h3>
+    <p class="text-sm text-neutral-700 dark:text-neutral-300">
       כבר מהתבוננות ראשונה אנחנו מבינים ששוערת היה כדאי לרכוש, ושגם שחקניות התקפה וקישור התקפי יעזרו.
     </p>
-    <p class="text-sm text-neutral-700">
+    <p class="text-sm text-neutral-700 dark:text-neutral-300">
       ההוספה של מאפי ליאון להגנה (נרד לעומק של זה בסעיף ששייך לרכש), שגם ככה הייתה מעולה, מציבה לנו תמונה של קבוצה שההגנה שלה תהיה חזקה יותר, עם יצירתיות גדולה עוד יותר.
     </p>
   </div>

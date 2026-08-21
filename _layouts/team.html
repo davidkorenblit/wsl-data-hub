@@ -6,15 +6,29 @@
     <title>{{ page.team_name | default: page.title }} | WSL Data Hub</title>
     <meta name="description" content="סטטיסטיקות וניתוחים עבור {{ page.team_name | default: page.title }} בעונת WSL 2025/26">
 
+    <!-- Immediate Theme Detection (Prevents FOUC) -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (storedTheme === 'dark' || (!storedTheme && systemDark)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+
     <!-- Google Fonts: Assistant + JetBrains Mono -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS CDN with Dark Mode Class -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             fontFamily: {
@@ -29,22 +43,30 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
 
-  <body class="h-full bg-[#F9FAFB] text-[#111827] font-sans flex flex-col min-h-screen">
+  <body class="h-full bg-[#F9FAFB] dark:bg-[#09090B] text-[#111827] dark:text-[#F4F4F5] font-sans flex flex-col min-h-screen transition-colors duration-150">
 
     <!-- Minimalist Navigation Bar -->
-    <header class="border-b border-neutral-200 bg-white py-3 sticky top-0 z-30">
+    <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-3 sticky top-0 z-30 transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
         <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
-          <span class="text-lg font-bold tracking-tight text-neutral-900">WSL Data Hub</span>
-          <span class="text-[11px] font-mono text-neutral-400">25/26</span>
+          <span class="text-lg font-bold tracking-tight text-neutral-900 dark:text-white">WSL Data Hub</span>
+          <span class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500">25/26</span>
         </a>
 
-        <nav class="flex items-center gap-5 text-xs sm:text-sm font-medium text-neutral-600">
-          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 transition-colors">← חזרה לליגה</a>
-          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 transition-colors">מתודולוגיה</a>
-          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 transition-colors">מדדים</a>
-          <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 transition-colors">אודות</a>
-        </nav>
+        <div class="flex items-center gap-4 sm:gap-6">
+          <nav class="flex items-center gap-4 sm:gap-5 text-xs sm:text-sm font-medium text-neutral-600 dark:text-neutral-300">
+            <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">← חזרה לליגה</a>
+            <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מתודולוגיה</a>
+            <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מדדים</a>
+            <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">אודות</a>
+          </nav>
+
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle" type="button" aria-label="החלף מצב תצוגה (Light/Dark)" class="p-1.5 rounded border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-xs">
+            <span class="dark:hidden" title="מעבר למצב לילה">🌙</span>
+            <span class="hidden dark:inline" title="מעבר למצב יום">☀️</span>
+          </button>
+        </div>
       </div>
     </header>
 
@@ -52,15 +74,15 @@
     <main class="flex-1 max-w-5xl mx-auto w-full px-4 py-8">
       
       <!-- Clean Minimal Header -->
-      <div class="mb-6 border-b border-neutral-200 pb-4">
-        <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-1">
+      <div class="mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-4">
+        <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
           WSL 2025/26 · SQUAD & ANALYSIS
         </div>
-        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900" dir="ltr" style="text-align: right;">
+        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white" dir="ltr" style="text-align: right;">
           {{ page.team_name | default: page.title }}
         </h1>
         {% if page.team_meta %}
-        <p class="text-xs sm:text-sm text-neutral-500 mt-1 font-sans">{{ page.team_meta }}</p>
+        <p class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-1 font-sans">{{ page.team_meta }}</p>
         {% endif %}
       </div>
 
@@ -73,34 +95,34 @@
 
         <!-- Sidebar: Clean Squad Table -->
         <div class="lg:col-span-1">
-          <div class="text-xs font-mono uppercase text-neutral-500 font-bold tracking-wider mb-2">
+          <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-2">
             סגל הקבוצה · דקות משחק
           </div>
-          <div class="overflow-x-auto rounded-md border border-neutral-200 bg-white" dir="ltr">
+          <div class="overflow-x-auto rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215]" dir="ltr">
             <table class="w-full text-left border-collapse">
               <thead>
                 <tr>
-                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 bg-neutral-50 py-2.5 px-3 border-b border-neutral-200 text-left">Player</th>
-                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 bg-neutral-50 py-2.5 px-2 border-b border-neutral-200 text-center">Pos</th>
-                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 bg-neutral-50 py-2.5 px-3 border-b border-neutral-200 text-right">Min</th>
+                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-3 border-b border-neutral-200 dark:border-neutral-800 text-left">Player</th>
+                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-2 border-b border-neutral-200 dark:border-neutral-800 text-center">Pos</th>
+                  <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-3 border-b border-neutral-200 dark:border-neutral-800 text-right">Min</th>
                 </tr>
               </thead>
               <tbody>
                 {% assign squad_file = site.data.squads[page.team_slug] %}
                 {% if squad_file and squad_file.size > 0 %}
                   {% for p in squad_file %}
-                  <tr class="hover:bg-neutral-50">
-                    <td class="text-sm font-sans font-medium text-neutral-900 py-2 px-3 border-b border-neutral-100 text-left">
+                  <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+                    <td class="text-sm font-sans font-medium text-neutral-900 dark:text-neutral-100 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-left">
                       <div>{{ p.player }}</div>
-                      <div class="text-[10px] font-mono text-neutral-400 uppercase">{{ p.nation | remove: "ENG " | remove: "ESP " | remove: "FRA " | remove: "USA " }}</div>
+                      <div class="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 uppercase">{{ p.nation | remove: "ENG " | remove: "ESP " | remove: "FRA " | remove: "USA " }}</div>
                     </td>
-                    <td class="text-xs font-mono text-neutral-500 py-2 px-2 border-b border-neutral-100 text-center">{{ p.pos }}</td>
-                    <td class="text-sm font-mono tabular-nums text-neutral-800 py-2 px-3 border-b border-neutral-100 text-right">{{ p.min }}</td>
+                    <td class="text-xs font-mono text-neutral-500 dark:text-neutral-400 py-2 px-2 border-b border-neutral-100 dark:border-neutral-800 text-center">{{ p.pos }}</td>
+                    <td class="text-sm font-mono tabular-nums text-neutral-800 dark:text-neutral-200 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{{ p.min }}</td>
                   </tr>
                   {% endfor %}
                 {% else %}
                   <tr>
-                    <td colspan="3" class="px-3 py-6 text-center text-xs text-neutral-400 font-mono">
+                    <td colspan="3" class="px-3 py-6 text-center text-xs text-neutral-400 dark:text-neutral-500 font-mono">
                       נתוני סגל יפורסמו בהמשך
                     </td>
                   </tr>
@@ -114,20 +136,28 @@
     </main>
 
     <!-- Minimalist Editorial Footer -->
-    <footer class="border-t border-neutral-200 bg-white py-4 mt-auto text-xs text-neutral-500 font-mono">
+    <footer class="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-4 mt-auto text-xs text-neutral-500 dark:text-neutral-400 font-mono transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
         <div dir="rtl">
           WSL Data Hub · עונת 2025/26 · מקור נתונים: FBref
         </div>
-        <div class="flex items-center gap-3 text-neutral-400">
-          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-700">ראשי</a>
+        <div class="flex items-center gap-3 text-neutral-400 dark:text-neutral-500">
+          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">ראשי</a>
           <span>/</span>
-          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-700">מתודולוגיה</a>
+          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">מתודולוגיה</a>
           <span>/</span>
-          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-700">מדדים</a>
+          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">מדדים</a>
         </div>
       </div>
     </footer>
+
+    <!-- Theme Toggle Handler -->
+    <script>
+      document.getElementById('theme-toggle')?.addEventListener('click', function() {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+      });
+    </script>
 
   </body>
 </html>
