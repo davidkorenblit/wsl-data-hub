@@ -16,10 +16,10 @@ team_meta: "WSL 2025/26 · מיקום: {team['rk']}"
 permalink: /teams/{team['slug']}/
 ---
 
-<div class="bg-surface-800 rounded-2xl border border-surface-700 p-10 text-center shadow-xl">
-  <p class="text-5xl mb-4">🚧</p>
-  <h2 class="text-2xl font-bold text-white mb-2">כפרה עובדים</h2>
-  <p class="text-slate-400">הניתוח המלא של {team['squad']} יפורסם בקרוב.</p>
+<div class="bg-surface-900 rounded-xl border border-surface-700/80 p-8 text-center">
+  <p class="text-3xl mb-3">🚧</p>
+  <h2 class="font-serif text-xl font-bold text-white mb-1">כפרה עובדים</h2>
+  <p class="text-neutral-400 text-xs sm:text-sm">הניתוח המלא של {team['squad']} יפורסם בקרוב.</p>
 </div>
 """
     path = teams_dir / f"{team['slug']}.md"

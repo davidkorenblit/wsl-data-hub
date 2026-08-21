@@ -7,16 +7,16 @@ team_meta: "WSL 2025/26 · חלק א': מועדון, קהילה וזהות"
 permalink: /teams/london-city-lionesses/
 ---
 
-<div class="space-y-6 text-slate-200 leading-relaxed text-base sm:text-lg">
+<div class="space-y-5 text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
 
-  <div>
-    <div class="flex items-center gap-2 mb-3">
-      <span class="px-2.5 py-0.5 bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold rounded-full">
+  <div class="border-b border-surface-700/80 pb-4">
+    <div class="flex items-center gap-2 mb-2">
+      <span class="px-2 py-0.5 border border-surface-700 bg-surface-850 text-neutral-400 text-[11px] font-mono rounded">
         חלק א': מבוא, תרבות וזהות המועדון
       </span>
-      <span class="text-xs text-slate-500">עונת 2025/26</span>
+      <span class="text-xs font-mono text-neutral-500">עונת 2025/26</span>
     </div>
-    <h1 class="text-2xl sm:text-3xl font-bold text-white mb-4">
+    <h1 class="font-serif text-2xl sm:text-3xl font-bold text-white tracking-tight">
       לונדון סיטי ליונסס: על הצבע, הקהילה והמהפכה של מישל קאנג
     </h1>
   </div>
@@ -66,25 +66,25 @@ permalink: /teams/london-city-lionesses/
   </p>
 
   <!-- Navigation Card to Part 2 -->
-  <div class="p-6 bg-gradient-to-r from-surface-800 to-surface-700 rounded-2xl border border-brand-500/40 my-8 shadow-xl space-y-3">
+  <div class="p-5 bg-surface-900 rounded-xl border border-surface-700/80 my-8 space-y-3" style="border-right: 3px solid #E91E63;">
     <div class="flex items-center gap-3">
-      <span class="text-3xl">📊</span>
+      <span class="text-2xl">📊</span>
       <div>
-        <h3 class="font-bold text-white text-lg sm:text-xl">מוכנים לצלול לתוך המספרים?</h3>
-        <p class="text-sm text-slate-300">חלק ב': ניתוח עונת הבכורה, נקודות התורפה ושדרוג הרכש לפי 3 שאלות המחקר.</p>
+        <h3 class="font-serif font-bold text-white text-lg">מוכנים לצלול לתוך המספרים?</h3>
+        <p class="text-xs sm:text-sm text-neutral-400">חלק ב': ניתוח עונת הבכורה, נקודות התורפה ושדרוג הרכש לפי 3 שאלות המחקר.</p>
       </div>
     </div>
-    <div class="pt-2">
-      <a href="{{ '/teams/london-city-lionesses/analysis/' | relative_url }}" class="inline-flex items-center gap-2 px-5 py-2.5 bg-brand-600 hover:bg-brand-500 text-white font-semibold rounded-xl shadow-lg transition-all hover:scale-105">
+    <div class="pt-1">
+      <a href="{{ '/teams/london-city-lionesses/analysis/' | relative_url }}" class="inline-flex items-center gap-2 px-4 py-2 border border-surface-700 bg-surface-800 hover:bg-surface-750 text-white font-mono text-xs font-medium rounded transition-colors">
         <span>מעבר לניתוח הנתונים המלא של LCL</span>
         <span>←</span>
       </a>
     </div>
   </div>
 
-  <div class="pt-6 border-t border-surface-700 flex flex-wrap justify-between items-center text-sm text-slate-400 gap-4">
-    <span class="font-medium text-slate-300">תודה שקראתם. אפשר להשאיר תגובות ואת דעתכם.ן 🙌</span>
-    <a href="{{ '/' | relative_url }}" class="text-brand-400 hover:text-brand-300 font-semibold flex items-center gap-1">
+  <div class="pt-4 border-t border-surface-700/80 flex flex-wrap justify-between items-center text-xs text-neutral-400 gap-4">
+    <span class="font-mono text-neutral-500">תודה שקראתם. אפשר להשאיר תגובות ואת דעתכם.ן 🙌</span>
+    <a href="{{ '/' | relative_url }}" class="text-neutral-300 hover:text-white font-medium flex items-center gap-1">
       חזרה לטבלת הליגה ←
     </a>
   </div>

@@ -4,79 +4,80 @@ title: "WSL Data Hub | טבלת הליגה 2025/26"
 description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL עונת 2025/26"
 ---
 
-<!-- Hero Section -->
-<div class="mb-8">
-  <div class="flex flex-wrap items-center justify-between gap-4">
+<!-- Editorial Hero Section -->
+<div class="mb-6">
+  <div class="flex flex-wrap items-end justify-between gap-4 border-b border-surface-700/80 pb-4">
     <div>
-      <div class="flex items-center gap-2 mb-2">
-        <span class="px-2.5 py-0.5 bg-brand-500/10 border border-brand-500/30 text-brand-400 text-xs font-semibold rounded-full">
-          עונת 2025/26
+      <div class="flex items-center gap-2 mb-1.5">
+        <span class="px-2 py-0.5 border border-surface-700 bg-surface-850 text-neutral-400 text-[11px] font-mono rounded">
+          WSL 2025/26
         </span>
-        <span class="text-xs text-slate-500">Women's Super League</span>
+        <span class="text-xs text-neutral-500 font-mono">STANDINGS & METRICS</span>
       </div>
-      <h2 class="text-3xl font-bold text-white tracking-tight">טבלת הליגה 🏆</h2>
+      <h1 class="font-serif text-3xl sm:text-4xl font-bold text-white tracking-tight">טבלת הליגה</h1>
     </div>
-    <p class="text-xs text-slate-400 max-w-xs text-left sm:text-right">
-      לחצו על כל קבוצה כדי לצפות בסגל המלא ובניתוחים הטקטיים
+    <p class="text-xs text-neutral-400 font-sans max-w-sm text-right">
+      לחצו על שם מועדון לצפייה בסגל השחקניות, מדדי ביצוע ומחקרי עומק טקטיים.
     </p>
   </div>
 </div>
 
-<!-- League Table Card -->
-<div class="bg-surface-800 rounded-2xl shadow-xl overflow-hidden border border-surface-700">
-  <div class="overflow-x-auto">
-    <table class="w-full text-sm text-right">
+<!-- League Table Card - High Density Editorial Standard -->
+<div class="bg-surface-900 rounded-xl overflow-hidden border border-surface-700/80">
+  <div class="overflow-x-auto" dir="ltr">
+    <table class="w-full text-xs text-left border-collapse">
       <thead>
-        <tr class="bg-surface-700/80 text-slate-400 text-xs font-semibold border-b border-surface-600">
-          <th class="px-4 py-3 text-center w-12">#</th>
-          <th class="px-4 py-3 text-right">מועדון</th>
-          <th class="px-3 py-3 text-center">מש'</th>
-          <th class="px-3 py-3 text-center">נצ'</th>
-          <th class="px-3 py-3 text-center">תיקו</th>
-          <th class="px-3 py-3 text-center">הפ'</th>
-          <th class="px-3 py-3 text-center">זכות</th>
-          <th class="px-3 py-3 text-center">חובה</th>
-          <th class="px-3 py-3 text-center">הפרש</th>
-          <th class="px-4 py-3 text-center bg-surface-600/40 text-white font-bold w-16">נק'</th>
+        <tr class="bg-surface-850 text-neutral-400 text-[11px] font-mono uppercase tracking-wider border-b border-surface-700/80">
+          <th class="px-3 py-2.5 text-center w-10 sticky-col bg-surface-850">#</th>
+          <th class="px-3 py-2.5 text-left">Club</th>
+          <th class="px-2.5 py-2.5 text-right">MP</th>
+          <th class="px-2.5 py-2.5 text-right">W</th>
+          <th class="px-2.5 py-2.5 text-right">D</th>
+          <th class="px-2.5 py-2.5 text-right">L</th>
+          <th class="px-2.5 py-2.5 text-right">GF</th>
+          <th class="px-2.5 py-2.5 text-right">GA</th>
+          <th class="px-2.5 py-2.5 text-right">GD</th>
+          <th class="px-3 py-2.5 text-right font-bold text-neutral-200 bg-surface-800/60 w-14">PTS</th>
         </tr>
       </thead>
-      <tbody class="divide-y divide-surface-700">
+      <tbody class="divide-y divide-surface-700/40">
         {% assign teams = site.data.league_table %}
         {% for team in teams %}
-        <tr class="hover:bg-surface-700/60 transition-colors duration-150 {% if team.slug == 'london-city-lionesses' %}bg-brand-900/30 font-medium{% endif %}">
+        {% assign is_lcl = (team.slug == 'london-city-lionesses') %}
+        <tr class="hover:bg-surface-800/70 transition-colors {% if is_lcl %}bg-surface-850/60{% endif %}" {% if is_lcl %}style="border-left: 3px solid #E91E63;"{% endif %}>
           
-          <!-- Rank -->
-          <td class="px-4 py-3.5 text-center text-slate-400 font-mono text-xs">{{ team.rk }}</td>
+          <!-- Rank (Sticky) -->
+          <td class="px-3 py-2 text-center text-neutral-400 font-mono text-xs sticky-col {% if is_lcl %}bg-surface-850{% else %}bg-surface-900{% endif %}">
+            {{ team.rk }}
+          </td>
           
           <!-- Team Name -->
-          <td class="px-4 py-3.5">
+          <td class="px-3 py-2">
             <a href="{{ '/teams/' | append: team.slug | relative_url }}"
-               class="font-semibold text-white hover:text-brand-400 transition-colors flex items-center gap-2.5">
-              {% if team.slug == 'london-city-lionesses' %}
-              <span class="w-2.5 h-2.5 rounded-full bg-brand-400 flex-shrink-0 animate-pulse"></span>
+               class="font-medium text-neutral-100 hover:text-brand-400 transition-colors flex items-center gap-2">
+              {% if is_lcl %}
+              <span class="w-2 h-2 rounded-full bg-[#E91E63] flex-shrink-0"></span>
               {% else %}
-              <span class="w-2 h-2 rounded-full bg-surface-600 flex-shrink-0"></span>
+              <span class="w-1.5 h-1.5 rounded-full bg-neutral-600 flex-shrink-0"></span>
               {% endif %}
-              <span dir="ltr">{{ team.squad }}</span>
+              <span class="font-sans text-xs sm:text-sm">{{ team.squad }}</span>
             </a>
           </td>
           
-          <!-- Stats -->
-          <td class="px-3 py-3.5 text-center text-slate-300">{{ team.mp }}</td>
-          <td class="px-3 py-3.5 text-center text-emerald-400 font-mono">{{ team.w }}</td>
-          <td class="px-3 py-3.5 text-center text-slate-400 font-mono">{{ team.d }}</td>
-          <td class="px-3 py-3.5 text-center text-rose-400 font-mono">{{ team.l }}</td>
-          <td class="px-3 py-3.5 text-center text-slate-300 font-mono">{{ team.gf }}</td>
-          <td class="px-3 py-3.5 text-center text-slate-400 font-mono">{{ team.ga }}</td>
-          <td class="px-3 py-3.5 text-center font-mono {% if team.gd > 0 %}text-emerald-400{% elsif team.gd < 0 %}text-rose-400{% else %}text-slate-400{% endif %}">
+          <!-- Monospace Numeric Metrics (Strictly Right Aligned) -->
+          <td class="px-2.5 py-2 text-right text-neutral-400 font-mono tabular-nums tracking-tight">{{ team.mp }}</td>
+          <td class="px-2.5 py-2 text-right text-emerald-400 font-mono tabular-nums tracking-tight">{{ team.w }}</td>
+          <td class="px-2.5 py-2 text-right text-neutral-400 font-mono tabular-nums tracking-tight">{{ team.d }}</td>
+          <td class="px-2.5 py-2 text-right text-rose-400 font-mono tabular-nums tracking-tight">{{ team.l }}</td>
+          <td class="px-2.5 py-2 text-right text-neutral-300 font-mono tabular-nums tracking-tight">{{ team.gf }}</td>
+          <td class="px-2.5 py-2 text-right text-neutral-400 font-mono tabular-nums tracking-tight">{{ team.ga }}</td>
+          <td class="px-2.5 py-2 text-right font-mono tabular-nums tracking-tight {% if team.gd > 0 %}text-emerald-400{% elsif team.gd < 0 %}text-rose-400{% else %}text-neutral-400{% endif %}">
             {% if team.gd > 0 %}+{% endif %}{{ team.gd }}
           </td>
           
-          <!-- Points (Highlighted) -->
-          <td class="px-4 py-3.5 text-center font-bold text-white text-base bg-surface-700/40">
-            <span class="inline-block min-w-[24px] px-1.5 py-0.5 rounded bg-brand-500/20 text-brand-300 border border-brand-500/30">
-              {{ team.pts }}
-            </span>
+          <!-- Points -->
+          <td class="px-3 py-2 text-right font-bold text-white font-mono tabular-nums tracking-tight text-xs sm:text-sm bg-surface-800/40">
+            {{ team.pts }}
           </td>
 
         </tr>
@@ -86,31 +87,33 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
   </div>
 </div>
 
-<!-- Info Cards (Like Kashar / Modern sports portal) -->
-<div class="mt-12 grid md:grid-cols-2 gap-6">
-  <div class="bg-surface-800 rounded-2xl p-6 border border-surface-700 shadow-lg">
-    <div class="flex items-center gap-2 mb-3">
-      <span class="text-xl">📊</span>
-      <h3 class="text-lg font-bold text-white">מודלים וניתוחי עומק</h3>
+<!-- Editorial Info Cards -->
+<div class="mt-10 grid md:grid-cols-2 gap-5" dir="rtl">
+  <div class="bg-surface-900 rounded-xl p-5 sm:p-6 border border-surface-700/80" style="border-right: 3px solid #38bdf8;">
+    <div class="flex items-center gap-2.5 mb-2.5">
+      <span class="text-lg">📊</span>
+      <h3 class="font-serif text-lg font-bold text-white">מודלים וניתוחי עומק</h3>
     </div>
-    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+    <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-4">
       אנחנו משתמשים במדדי xG, פעולות יצירת בעיטה (SCA), איכות מסירות וזמני משחק מ-FBref כדי לנתח את ביצועי הקבוצות והשחקניות לעומק.
     </p>
-    <a href="{{ '/methodology/' | relative_url }}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">
-      קראו עוד על מתודולוגיית הניתוח ←
+    <a href="{{ '/methodology/' | relative_url }}" class="text-xs font-medium text-brand-400 hover:text-brand-300 flex items-center gap-1">
+      <span>קראו עוד על מתודולוגיית הניתוח</span>
+      <span>←</span>
     </a>
   </div>
 
-  <div class="bg-surface-800 rounded-2xl p-6 border border-surface-700 shadow-lg">
-    <div class="flex items-center gap-2 mb-3">
-      <span class="text-xl">🦁</span>
-      <h3 class="text-lg font-bold text-white">פוקוס: London City Lionesses</h3>
+  <div class="bg-surface-900 rounded-xl p-5 sm:p-6 border border-surface-700/80" style="border-right: 3px solid #E91E63;">
+    <div class="flex items-center gap-2.5 mb-2.5">
+      <span class="text-lg">🦁</span>
+      <h3 class="font-serif text-lg font-bold text-white">פוקוס: London City Lionesses</h3>
     </div>
-    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+    <p class="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-4">
       קבוצת המיקוד הראשונה של הבלוג. בעמוד הקבוצה תוכלו למצוא את הסגל המלא וסדרת שאלות מחקר מבוססות דאטא.
     </p>
-    <a href="{{ '/teams/london-city-lionesses/' | relative_url }}" class="text-xs text-brand-400 hover:text-brand-300 font-medium">
-      מעבר לעמוד London City Lionesses ←
+    <a href="{{ '/teams/london-city-lionesses/' | relative_url }}" class="text-xs font-medium text-brand-400 hover:text-brand-300 flex items-center gap-1">
+      <span>מעבר לעמוד London City Lionesses</span>
+      <span>←</span>
     </a>
   </div>
 </div>

@@ -2,61 +2,73 @@
   "Lionesses": {
     "slug": "london-city-lionesses",
     "name_he": "לונדון סיטי ליונסס",
-    "name_en": "London City Lionesses"
+    "name_en": "London City Lionesses",
+    "accent_color": "#E91E63"
   },
   "Arsenal": {
     "slug": "arsenal",
     "name_he": "ארסנל",
-    "name_en": "Arsenal"
+    "name_en": "Arsenal",
+    "accent_color": "#EF0107"
   },
   "Aston Villa": {
     "slug": "aston-villa",
     "name_he": "אסטון וילה",
-    "name_en": "Aston Villa"
+    "name_en": "Aston Villa",
+    "accent_color": "#670E36"
   },
   "Brighton": {
     "slug": "brighton",
     "name_he": "ברייטון",
-    "name_en": "Brighton & Hove Albion"
+    "name_en": "Brighton & Hove Albion",
+    "accent_color": "#0057B8"
   },
   "Chelsea": {
     "slug": "chelsea",
     "name_he": "צ'לסי",
-    "name_en": "Chelsea"
+    "name_en": "Chelsea",
+    "accent_color": "#034694"
   },
   "Everton": {
     "slug": "everton",
     "name_he": "אברטון",
-    "name_en": "Everton"
+    "name_en": "Everton",
+    "accent_color": "#003399"
   },
   "Leicester City": {
     "slug": "leicester-city",
     "name_he": "לסטר סיטי",
-    "name_en": "Leicester City"
+    "name_en": "Leicester City",
+    "accent_color": "#003090"
   },
   "Liverpool": {
     "slug": "liverpool",
     "name_he": "ליברפול",
-    "name_en": "Liverpool"
+    "name_en": "Liverpool",
+    "accent_color": "#C8102E"
   },
   "Manchester City": {
     "slug": "manchester-city",
     "name_he": "מנצ'סטר סיטי",
-    "name_en": "Manchester City"
+    "name_en": "Manchester City",
+    "accent_color": "#6CABDD"
   },
   "Manchester Utd": {
     "slug": "manchester-united",
     "name_he": "מנצ'סטר יונייטד",
-    "name_en": "Manchester United"
+    "name_en": "Manchester United",
+    "accent_color": "#DA291C"
   },
   "Tottenham": {
     "slug": "tottenham",
     "name_he": "טוטנהאם",
-    "name_en": "Tottenham Hotspur"
+    "name_en": "Tottenham Hotspur",
+    "accent_color": "#132257"
   },
   "West Ham": {
     "slug": "west-ham",
     "name_he": "ווסטהאם",
-    "name_en": "West Ham United"
+    "name_en": "West Ham United",
+    "accent_color": "#7A263A"
   }
 }
