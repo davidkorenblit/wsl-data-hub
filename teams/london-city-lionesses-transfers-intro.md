@@ -3,7 +3,7 @@ layout: team
 title: "London City Lionesses - חלק ג': חלון ההעברות והרכש"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק ג': מהפכת הרכש והציפיות"
+team_meta: "WSL 2026/27 · חלק ג': מהפכת הרכש והציפיות"
 sidebar: transfers
 permalink: /teams/london-city-lionesses/transfers-intro/
 prev_url: /teams/london-city-lionesses/evaluation/
