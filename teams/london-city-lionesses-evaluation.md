@@ -24,21 +24,100 @@ prev_title: "חלק ב': ניתוח נתונים"
     </p>
   </div>
 
-  <!-- Chart 1: Performance Deltas -->
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 space-y-3">
-    <div class="flex items-center justify-between">
-      <h2 class="text-lg font-bold text-neutral-900 dark:text-white">
-        1. מפת הפערים מול הציפיות (Performance Deltas)
-      </h2>
+  <!-- Chart 1: Performance Deltas (Pure Responsive Vector Lollipop Component) -->
+  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 space-y-4">
+    <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-3">
+      <div>
+        <h2 class="text-lg font-bold text-neutral-900 dark:text-white">
+          1. מפת הפערים מול הציפיות (Performance Deltas)
+        </h2>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
+          סטיית LCL מקו האפס (הבנצ'מרק הליגתי הצפוי)
+        </p>
+      </div>
       <span class="text-[10px] font-mono border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 px-2 py-0.5 rounded text-neutral-600 dark:text-neutral-300">
         DELTA vs BASELINE
       </span>
     </div>
 
-    <div class="rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900 flex justify-center p-2">
-      <img src="{{ '/assets/images/evaluations/lcl_performance_deltas.png' | relative_url }}" 
-           alt="London City Lionesses Performance Deltas Chart" 
-           class="w-full max-w-3xl h-auto rounded">
+    <!-- Pure CSS/HTML Vector Lollipop Dashboard -->
+    <div class="bg-[#0b1329] border border-[#1e293b] rounded-lg p-4 sm:p-6 text-white font-sans space-y-5" dir="ltr">
+      <div class="text-center pb-2 border-b border-[#1e293b]/60">
+        <h3 class="text-sm sm:text-base font-bold text-slate-100">London City Lionesses · Performance vs Expected Baseline</h3>
+        <p class="text-[11px] text-slate-400 font-mono">Deviation in points, goals, assists and conceded goals</p>
+      </div>
+
+      <!-- 4 Metric Rows with Strict Zero Centerline -->
+      <div class="space-y-4">
+        
+        <!-- Row 1: Points -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-xs font-medium">
+            <span class="text-slate-200 font-semibold">Points (xPTS) <span class="text-slate-400 font-normal text-[11px]">· Winning close games</span></span>
+            <span class="font-mono font-bold text-emerald-400 text-xs sm:text-sm">+1.2 Pts (Overperformed)</span>
+          </div>
+          <div class="relative h-7 bg-[#131f3d] rounded flex items-center px-1 overflow-hidden">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400 z-10"></div>
+            <!-- Lollipop Line & Head -->
+            <div class="absolute left-1/2 h-1 bg-emerald-500 rounded-r z-0 flex items-center" style="width: 14%;">
+              <div class="absolute -right-2 w-4 h-4 rounded-full bg-emerald-400 ring-2 ring-[#0b1329] shadow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Goals Scored -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-xs font-medium">
+            <span class="text-slate-200 font-semibold">Goals Scored (GF) <span class="text-slate-400 font-normal text-[11px]">· Finishing vs shot volume</span></span>
+            <span class="font-mono font-bold text-rose-400 text-xs sm:text-sm">-3.7 Goals (Underperformed)</span>
+          </div>
+          <div class="relative h-7 bg-[#131f3d] rounded flex items-center px-1 overflow-hidden">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400 z-10"></div>
+            <!-- Lollipop Line & Head -->
+            <div class="absolute right-1/2 h-1 bg-rose-500 rounded-l z-0 flex items-center justify-start" style="width: 37%;">
+              <div class="absolute -left-2 w-4 h-4 rounded-full bg-rose-400 ring-2 ring-[#0b1329] shadow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3: Assists -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-xs font-medium">
+            <span class="text-slate-200 font-semibold">Assists (Ast) <span class="text-slate-400 font-normal text-[11px]">· Direct chance conversion</span></span>
+            <span class="font-mono font-bold text-rose-400 text-xs sm:text-sm">-0.9 Ast (Underperformed)</span>
+          </div>
+          <div class="relative h-7 bg-[#131f3d] rounded flex items-center px-1 overflow-hidden">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400 z-10"></div>
+            <!-- Lollipop Line & Head -->
+            <div class="absolute right-1/2 h-1 bg-rose-500 rounded-l z-0 flex items-center justify-start" style="width: 10%;">
+              <div class="absolute -left-2 w-4 h-4 rounded-full bg-rose-400 ring-2 ring-[#0b1329] shadow"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 4: Goals Conceded -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-xs font-medium">
+            <span class="text-slate-200 font-semibold">Goals Conceded (GA) <span class="text-slate-400 font-normal text-[11px]">· Excess goals allowed</span></span>
+            <span class="font-mono font-bold text-rose-400 text-xs sm:text-sm">+6.7 GA (Weak Goalkeeping)</span>
+          </div>
+          <div class="relative h-7 bg-[#131f3d] rounded flex items-center px-1 overflow-hidden">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400 z-10"></div>
+            <!-- Lollipop Line & Head -->
+            <div class="absolute left-1/2 h-1 bg-rose-500 rounded-r z-0 flex items-center" style="width: 67%;">
+              <div class="absolute -right-2 w-4 h-4 rounded-full bg-rose-400 ring-2 ring-[#0b1329] shadow"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Axis Labels -->
+      <div class="flex justify-between text-[11px] font-mono text-slate-400 border-t border-[#1e293b] pt-2 px-1">
+        <span>◀ Underperformed (-10)</span>
+        <span class="text-slate-200 font-bold">Expected Baseline (0)</span>
+        <span>Overperformed (+10) ▶</span>
+      </div>
     </div>
   </div>
 
