@@ -93,8 +93,42 @@
           {{ content }}
         </div>
 
-        <!-- Sidebar: Collapsible Squad Table -->
+        <!-- Sidebar: Dynamic based on page.sidebar -->
         <div class="lg:col-span-1">
+          {% if page.sidebar == 'transfers' %}
+          <!-- Transfers In/Out Sidebar -->
+          <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden space-y-3 p-4">
+            <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-2">
+              <span class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider">
+                תנועת שחקניות · קיץ 2025
+              </span>
+              <span class="text-[10px] font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 px-1.5 py-0.5 rounded font-bold">
+                TRANSFERS
+              </span>
+            </div>
+
+            <!-- In / Out Tabs / Placeholder -->
+            <div class="space-y-3 pt-1">
+              <div class="flex gap-2 text-xs font-mono">
+                <span class="px-2.5 py-1 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-bold border border-emerald-200 dark:border-emerald-800">
+                  📥 הצטרפו
+                </span>
+                <span class="px-2.5 py-1 rounded bg-rose-50 dark:bg-rose-950/40 text-rose-700 dark:text-rose-300 font-bold border border-rose-200 dark:border-rose-800">
+                  📤 עזבו
+                </span>
+              </div>
+
+              <div class="p-6 rounded border border-dashed border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 text-center space-y-2">
+                <div class="text-2xl">🚧</div>
+                <div class="text-sm font-bold text-neutral-900 dark:text-white">כפרה עובדים</div>
+                <p class="text-neutral-500 dark:text-neutral-400 text-xs">
+                  רשימת ההעברות המלאה (הצטרפו / עזבו) תפורסם כאן בהמשך.
+                </p>
+              </div>
+            </div>
+          </div>
+          {% else %}
+          <!-- Default Collapsible Squad Table -->
           <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden transition-all duration-200">
             <summary class="flex items-center justify-between p-3.5 cursor-pointer font-bold text-xs sm:text-sm text-neutral-800 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-[#18181c] select-none list-none">
               <span class="flex items-center gap-2">
@@ -142,6 +176,7 @@
               </div>
             </div>
           </details>
+          {% endif %}
         </div>
         
       </div>

@@ -4,6 +4,7 @@ title: "London City Lionesses - חלק ג': חלון ההעברות והרכש"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
 team_meta: "WSL 2025/26 · חלק ג': מהפכת הרכש והציפיות"
+sidebar: transfers
 permalink: /teams/london-city-lionesses/transfers-intro/
 prev_url: /teams/london-city-lionesses/evaluation/
 prev_title: "שלב ביניים: הערכת ביצועים"
@@ -67,29 +68,6 @@ next_title: "חלק ד': ניתוח מאפי ליאון ומארי ארפס"
       התשובות, במרחק לחיצת כפתור.
     </p>
   </article>
-
-  <!-- Transfers List (Collapsible / Placeholder) -->
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden">
-    <details class="group">
-      <summary class="flex items-center justify-between p-4 cursor-pointer font-bold text-sm text-neutral-800 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-[#18181c] select-none list-none">
-        <span class="flex items-center gap-2">
-          <span>🔄</span>
-          <span>רשימת שחקניות רכש ועוזבות (קיץ 2025)</span>
-        </span>
-        <span class="text-neutral-400 dark:text-neutral-500 text-xs transition-transform duration-200 group-open:rotate-180">▼</span>
-      </summary>
-      
-      <div class="p-6 border-t border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/50 text-center space-y-2">
-        <div class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-500/10 text-amber-500 font-bold mb-1">
-          🚧
-        </div>
-        <h3 class="text-base font-bold text-neutral-900 dark:text-white">כפרה עובדים</h3>
-        <p class="text-neutral-500 dark:text-neutral-400 text-xs sm:text-sm max-w-md mx-auto">
-          רשימת ההעברות המלאה והמאומתת של LCL תפורסם בהמשך.
-        </p>
-      </div>
-    </details>
-  </div>
 
   <!-- Standardized Post Pagination -->
   {% include post_pagination.html %}
