@@ -1,0 +1,266 @@
+{
+  "team_name": "London City Lionesses",
+  "season": "2026/27",
+  "summary": {
+    "total_new_signings": 11,
+    "total_departures": 8,
+    "total_retained": 18
+  },
+  "transfers_in": [
+    {
+      "no": 11,
+      "player": "Alexia Putellas",
+      "pos": "MF",
+      "nation": "ESP",
+      "status": "New Signing"
+    },
+    {
+      "no": 16,
+      "player": "Daniela Arques",
+      "pos": "MF",
+      "nation": "ESP",
+      "status": "New Signing"
+    },
+    {
+      "no": 19,
+      "player": "Nicole Anyomi",
+      "pos": "FW",
+      "nation": "GER",
+      "status": "New Signing"
+    },
+    {
+      "no": 21,
+      "player": "Kadidiatou Diani",
+      "pos": "FW",
+      "nation": "FRA",
+      "status": "New Signing"
+    },
+    {
+      "no": 27,
+      "player": "Mary Earps",
+      "pos": "GK",
+      "nation": "ENG",
+      "status": "New Signing"
+    },
+    {
+      "no": 28,
+      "player": "Sophie Hillyerd",
+      "pos": "GK",
+      "nation": "ENG",
+      "status": "New Signing"
+    },
+    {
+      "no": 35,
+      "player": "Sophia Poor",
+      "pos": "GK",
+      "nation": "ENG",
+      "status": "New Signing"
+    },
+    {
+      "no": 44,
+      "player": "Mapi León",
+      "pos": "DF",
+      "nation": "ESP",
+      "status": "New Signing"
+    },
+    {
+      "no": 76,
+      "player": "Rosa Kafaji",
+      "pos": "FW",
+      "nation": "SWE",
+      "status": "New Signing"
+    },
+    {
+      "no": 97,
+      "player": "Janni Thomsen",
+      "pos": "DF",
+      "nation": "DEN",
+      "status": "New Signing"
+    },
+    {
+      "no": 99,
+      "player": "Corinne Henson",
+      "pos": "DF",
+      "nation": "USA",
+      "status": "New Signing"
+    }
+  ],
+  "transfers_out": [
+    {
+      "player": "Cerys Brown",
+      "pos": "DF",
+      "min": 74,
+      "status": "Departed"
+    },
+    {
+      "player": "Sanni Franssi",
+      "pos": "FW",
+      "min": 423,
+      "status": "Departed"
+    },
+    {
+      "player": "Teyah Goldie",
+      "pos": "DF",
+      "min": 95,
+      "status": "Departed"
+    },
+    {
+      "player": "Sofia Jakobsson",
+      "pos": "FW,MF",
+      "min": 26,
+      "status": "Departed"
+    },
+    {
+      "player": "Lotta Lindström",
+      "pos": "FW",
+      "min": 125,
+      "status": "Departed"
+    },
+    {
+      "player": "Julia Roddar",
+      "pos": "MF,DF",
+      "min": 682,
+      "status": "Departed"
+    },
+    {
+      "player": "Wassa Sangare",
+      "pos": "DF",
+      "min": 1483,
+      "status": "Departed"
+    },
+    {
+      "player": "Katie Zelem",
+      "pos": "MF",
+      "min": 157,
+      "status": "Departed"
+    }
+  ],
+  "retained": [
+    {
+      "no": 2,
+      "player": "Jana Fernández",
+      "pos": "DF",
+      "nation": "ESP",
+      "status": "Retained"
+    },
+    {
+      "no": 3,
+      "player": "Poppy Pattinson",
+      "pos": "DF",
+      "nation": "ENG",
+      "status": "Retained"
+    },
+    {
+      "no": 4,
+      "player": "Isa Kardinaal",
+      "pos": "DF",
+      "nation": "NED",
+      "status": "Retained"
+    },
+    {
+      "no": 6,
+      "player": "María Pérez",
+      "pos": "MF",
+      "nation": "ESP",
+      "status": "Retained"
+    },
+    {
+      "no": 7,
+      "player": "Lucía Corrales",
+      "pos": "DF",
+      "nation": "ESP",
+      "status": "Retained"
+    },
+    {
+      "no": 8,
+      "player": "Saki Kumagai",
+      "pos": "DF",
+      "nation": "JPN",
+      "status": "Retained"
+    },
+    {
+      "no": 9,
+      "player": "Kosovare Asllani",
+      "pos": "FW",
+      "nation": "SWE",
+      "status": "Retained"
+    },
+    {
+      "no": 10,
+      "player": "Daniëlle van de Donk",
+      "pos": "MF",
+      "nation": "NED",
+      "status": "Retained"
+    },
+    {
+      "no": 13,
+      "player": "Elena Linari",
+      "pos": "DF",
+      "nation": "ITA",
+      "status": "Retained"
+    },
+    {
+      "no": 14,
+      "player": "Freya Godfrey",
+      "pos": "FW",
+      "nation": "ENG",
+      "status": "Retained"
+    },
+    {
+      "no": 17,
+      "player": "Nikita Parris",
+      "pos": "FW",
+      "nation": "ENG",
+      "status": "Retained"
+    },
+    {
+      "no": 20,
+      "player": "Delphine Cascarino",
+      "pos": "FW",
+      "nation": "FRA",
+      "status": "Retained"
+    },
+    {
+      "no": 23,
+      "player": "Isobel Goodwin",
+      "pos": "FW",
+      "nation": "ENG",
+      "status": "Retained"
+    },
+    {
+      "no": 25,
+      "player": "Rofiat Imuran",
+      "pos": "DF",
+      "nation": "NGA",
+      "status": "Retained"
+    },
+    {
+      "no": 30,
+      "player": "Malou Marcetto",
+      "pos": "MF",
+      "nation": "DEN",
+      "status": "Retained"
+    },
+    {
+      "no": 33,
+      "player": "Alanna Kennedy",
+      "pos": "DF",
+      "nation": "AUS",
+      "status": "Retained"
+    },
+    {
+      "no": 77,
+      "player": "Elene Lete",
+      "pos": "GK",
+      "nation": "ESP",
+      "status": "Retained"
+    },
+    {
+      "no": 88,
+      "player": "Grace Geyoro",
+      "pos": "MF",
+      "nation": "FRA",
+      "status": "Retained"
+    }
+  ]
+}
