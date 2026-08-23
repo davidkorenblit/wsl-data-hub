@@ -8,13 +8,9 @@ import glob
 import pandas as pd
 import matplotlib.pyplot as plt
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
-RAW_DIR = os.path.join(BASE_DIR, "data", "raw")
-LCL_DIR = os.path.join(BASE_DIR, "data", "teams", "london_city_lionesses")
-PREVIEWS_DIR = os.path.join(BASE_DIR, "assets", "images", "previews")
+from paths import RAW_DIR, TEAMS_DIR, PREVIEWS_DIR
 
-os.makedirs(PREVIEWS_DIR, exist_ok=True)
+PREVIEWS_DIR.mkdir(parents=True, exist_ok=True)
 
 def render_dataframe_to_png(df: pd.DataFrame, title: str, output_path: str, max_rows: int =40):
     """
@@ -70,17 +66,17 @@ def render_dataframe_to_png(df: pd.DataFrame, title: str, output_path: str, max_
 def main():
     print("=== Generating High-Res Table Previews (35 Rows) ===")
     
-    csv_files = glob.glob(os.path.join(RAW_DIR, "*.csv")) + glob.glob(os.path.join(LCL_DIR, "*.csv"))
+    csv_files = sorted(list(RAW_DIR.rglob("*.csv")) + list(TEAMS_DIR.rglob("*.csv")))
     print(f"Found {len(csv_files)} CSV datasets to render.")
     
     for filepath in csv_files:
         try:
-            filename = os.path.basename(filepath)
-            title = filename.replace(".csv", "")
-            out_png = os.path.join(PREVIEWS_DIR, f"{title}_preview.png")
+            filename = filepath.name
+            title = filepath.stem
+            out_png = PREVIEWS_DIR / f"{title}_preview.png"
             
             df = pd.read_csv(filepath)
-            render_dataframe_to_png(df, title, out_png, max_rows=35)
+            render_dataframe_to_png(df, title, str(out_png), max_rows=35)
             
         except Exception as e:
             print(f"❌ Error rendering {filepath}: {e}")

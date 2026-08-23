@@ -9,14 +9,16 @@ import time
 import pandas as pd
 import ScraperFC as sfc
 
-# Absolute path resolution ensuring data is saved inside wsl-data-hub/data/
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
-RAW_DATA_DIR = os.path.join(BASE_DIR, "data", "raw")
-LCL_DATA_DIR = os.path.join(BASE_DIR, "data", "teams", "london_city_lionesses")
+from paths import RAW_DIR, SQUADS_DIR, OPPONENTS_DIR, PLAYERS_DIR, LCL_DIR
 
-os.makedirs(RAW_DATA_DIR, exist_ok=True)
-os.makedirs(LCL_DATA_DIR, exist_ok=True)
+def get_target_raw_dir(key_clean: str):
+    if "squad" in key_clean:
+        return SQUADS_DIR
+    elif "opponent" in key_clean:
+        return OPPONENTS_DIR
+    elif "player" in key_clean:
+        return PLAYERS_DIR
+    return RAW_DIR
 
 def flatten_columns(df: pd.DataFrame) -> pd.DataFrame:
     """
@@ -75,8 +77,8 @@ def main():
 
     for st in stat_types:
         st_clean = st.replace(" ", "_")
-        check_file = os.path.join(RAW_DATA_DIR, f"wsl_{st_clean}_squad.csv")
-        if os.path.exists(check_file) and not OVERWRITE:
+        check_file = SQUADS_DIR / f"wsl_{st_clean}_squad.csv"
+        if check_file.exists() and not OVERWRITE:
             print(f"⏩ Skipping stat_type '{st}' - files already exist locally.")
             continue
 
@@ -94,9 +96,10 @@ def main():
                 clean_df = flatten_columns(df.copy())
                 key_clean = str(key).lower().replace(" ", "_")
                 
-                # 1. Save Full League Raw CSV
+                # 1. Save Full League Raw CSV into its appropriate category folder
+                target_raw_dir = get_target_raw_dir(key_clean)
                 raw_filename = f"wsl_{st_clean}_{key_clean}.csv"
-                raw_filepath = os.path.join(RAW_DATA_DIR, raw_filename)
+                raw_filepath = target_raw_dir / raw_filename
                 clean_df.to_csv(raw_filepath, index=False, encoding="utf-8-sig")
                 print(f" Saved Raw League File: {raw_filename} (Shape: {clean_df.shape})")
                 total_files_saved += 1
@@ -104,8 +107,9 @@ def main():
                 # 2. Filter and Save LCL Specific Subset
                 lcl_df = filter_lcl_data(clean_df)
                 if not lcl_df.empty:
+                    target_lcl_dir = LCL_SQUAD_DIR if "squad" in key_clean else (LCL_OPPONENTS_DIR if "opponent" in key_clean else LCL_PLAYERS_DIR)
                     lcl_filename = f"lcl_{st_clean}_{key_clean}.csv"
-                    lcl_filepath = os.path.join(LCL_DATA_DIR, lcl_filename)
+                    lcl_filepath = target_lcl_dir / lcl_filename
                     lcl_df.to_csv(lcl_filepath, index=False, encoding="utf-8-sig")
                     print(f"   Saved LCL Subset File: {lcl_filename} (Shape: {lcl_df.shape})")
                     total_files_saved += 1

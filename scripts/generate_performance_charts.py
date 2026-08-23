@@ -10,12 +10,11 @@ import json
 import argparse
 import matplotlib.pyplot as plt
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
-DATA_FILE = os.path.join(BASE_DIR, "_data", "performance_evaluations.json")
-CHARTS_DIR = os.path.join(BASE_DIR, "assets", "images", "evaluations")
+from paths import PERFORMANCE_EVAL_JSON, EVALUATIONS_CHARTS_DIR
 
-os.makedirs(CHARTS_DIR, exist_ok=True)
+DATA_FILE = PERFORMANCE_EVAL_JSON
+CHARTS_DIR = EVALUATIONS_CHARTS_DIR
+CHARTS_DIR.mkdir(parents=True, exist_ok=True)
 
 def render_chart(team_eval, output_path):
     fig, axes = plt.subplots(2, 2, figsize=(12, 9), facecolor="#0f172a")

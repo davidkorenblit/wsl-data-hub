@@ -12,18 +12,15 @@ import argparse
 import pandas as pd
 import numpy as np
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DEFAULT_DATA_DIR = os.path.join(os.path.dirname(SCRIPT_DIR), "data", "raw")
+from paths import SQUADS_DIR, OPPONENTS_DIR, LEAGUE_DIR, BASELINE_SUMMARY_JSON, ASSETS_DATA_DIR, SITE_DATA_DIR
 
-def load_data(base_dir=None):
-    if base_dir is None:
-        base_dir = DEFAULT_DATA_DIR
-    std = pd.read_csv(os.path.join(base_dir, "wsl_standard_squad.csv"))
-    std_opp = pd.read_csv(os.path.join(base_dir, "wsl_standard_opponent.csv"))
-    shoot = pd.read_csv(os.path.join(base_dir, "wsl_shooting_squad.csv"))
-    gk = pd.read_csv(os.path.join(base_dir, "wsl_goalkeeping_squad.csv"))
-    misc = pd.read_csv(os.path.join(base_dir, "wsl_misc_squad.csv"))
-    poss = pd.read_csv(os.path.join(base_dir, "wsl_possession_squad.csv"))
+def load_data():
+    std = pd.read_csv(LEAGUE_DIR / "wsl_standard_squad.csv")
+    std_opp = pd.read_csv(OPPONENTS_DIR / "wsl_standard_opponent.csv")
+    shoot = pd.read_csv(LEAGUE_DIR / "wsl_shooting_squad.csv")
+    gk = pd.read_csv(LEAGUE_DIR / "wsl_goalkeeping_squad.csv")
+    misc = pd.read_csv(LEAGUE_DIR / "wsl_misc_squad.csv")
+    poss = pd.read_csv(SQUADS_DIR / "wsl_possession_squad.csv")
     
     return std, std_opp, shoot, gk, misc, poss
 
@@ -154,16 +151,16 @@ def generate_report(df, target_team="Lionesses"):
         }
     }
     
-    os.makedirs("wsl-data-hub/_data", exist_ok=True)
-    os.makedirs("wsl-data-hub/assets/data", exist_ok=True)
+    SITE_DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ASSETS_DATA_DIR.mkdir(parents=True, exist_ok=True)
     
-    with open("wsl-data-hub/_data/baseline_q1_summary.json", "w", encoding="utf-8") as f:
+    with open(BASELINE_SUMMARY_JSON, "w", encoding="utf-8") as f:
         json.dump(out_data, f, ensure_ascii=False, indent=2)
         
-    with open("wsl-data-hub/assets/data/baseline_q1_summary.json", "w", encoding="utf-8") as f:
+    with open(ASSETS_DATA_DIR / "baseline_q1_summary.json", "w", encoding="utf-8") as f:
         json.dump(out_data, f, ensure_ascii=False, indent=2)
         
-    print("\nSaved summary JSON to wsl-data-hub/_data/baseline_q1_summary.json")
+    print(f"\nSaved summary JSON to {BASELINE_SUMMARY_JSON}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Calculate WSL Baseline Metrics")

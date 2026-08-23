@@ -10,17 +10,12 @@ import json
 import numpy as np
 import pandas as pd
 from calculate_baseline_metrics import load_data, calculate_metrics
+from paths import LEAGUE_TABLE_RAW_CSV, TEAMS_METADATA_JSON, PERFORMANCE_EVAL_JSON, SITE_DATA_DIR
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-BASE_DIR = os.path.dirname(SCRIPT_DIR)
-RAW_DATA_DIR = os.path.join(BASE_DIR, "data", "raw")
-DATA_DIR = os.path.join(BASE_DIR, "_data")
-
-os.makedirs(DATA_DIR, exist_ok=True)
+SITE_DATA_DIR.mkdir(parents=True, exist_ok=True)
 
 def load_team_metadata():
-    meta_path = os.path.join(DATA_DIR, "teams_metadata.json")
-    with open(meta_path, "r", encoding="utf-8") as f:
+    with open(TEAMS_METADATA_JSON, "r", encoding="utf-8") as f:
         return json.load(f)
 
 def compute_performance_evaluations():
@@ -28,8 +23,7 @@ def compute_performance_evaluations():
     df = calculate_metrics()
     
     # 2. Add League Standings / Points
-    tbl_path = os.path.join(RAW_DATA_DIR, "wsl_table_test.csv")
-    tbl_df = pd.read_csv(tbl_path)
+    tbl_df = pd.read_csv(LEAGUE_TABLE_RAW_CSV)
     df = df.merge(tbl_df[['Squad', 'Pts', 'Rk']].rename(columns={'Squad': 'squad'}), on='squad', how='left')
     
     # 3. Add Raw Counts needed for weighted benchmarks
@@ -119,10 +113,9 @@ def compute_performance_evaluations():
 
 def main():
     evaluations = compute_performance_evaluations()
-    out_file = os.path.join(DATA_DIR, "performance_evaluations.json")
-    with open(out_file, "w", encoding="utf-8") as f:
+    with open(PERFORMANCE_EVAL_JSON, "w", encoding="utf-8") as f:
         json.dump(evaluations, f, ensure_ascii=False, indent=2)
-    print(f"[OK] Saved performance evaluations to {out_file}")
+    print(f"[OK] Saved performance evaluations to {PERFORMANCE_EVAL_JSON}")
 
 if __name__ == "__main__":
     main()

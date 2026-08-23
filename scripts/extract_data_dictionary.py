@@ -7,9 +7,9 @@ import os
 import json
 import io
 import ScraperFC as sfc
-from bs4 import BeautifulSoup
+from paths import FBREF_DICTIONARY_JSON, SOURCE_FBREF_DIR
 
-OUTPUT_PATH = os.path.join("data", "raw", "fbref_data_dictionary.json")
+OUTPUT_PATH = FBREF_DICTIONARY_JSON
 
 def extract_column_tooltips() -> dict:
     print("Connecting to FBref via ScraperFC...")
