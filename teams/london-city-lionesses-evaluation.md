@@ -7,6 +7,8 @@ team_meta: "WSL 2025/26 · שלב ביניים: מודל הערכת ביצועי
 permalink: /teams/london-city-lionesses/evaluation/
 prev_url: /teams/london-city-lionesses/analysis/
 prev_title: "חלק ב': ניתוח נתונים"
+next_url: /teams/london-city-lionesses/transfers-intro/
+next_title: "חלק ג': חלון ההעברות והרכש"
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
