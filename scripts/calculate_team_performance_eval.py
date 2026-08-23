@@ -2,6 +2,13 @@
 WSL Data Hub - Performance Evaluation Engine
 ============================================
 Calculates expected baselines and Over/Under performance for all WSL teams.
+Includes:
+- Expected Goals Conceded (xGA based on shots on target faced & league save %)
+- Expected Goals (xGF based on shots on target & league conversion)
+- Expected Assists (xAst based on goals scored & league assist ratio)
+- Expected Points (xPTS based on goal difference regression)
+- Possession-Adjusted Defensive Actions (PAdj Tackles + Interceptions vs League Baseline)
+
 Saves structured JSON to `_data/performance_evaluations.json`.
 """
 
@@ -47,6 +54,11 @@ def compute_performance_evaluations():
     # Linear Regression for Expected Points (xPTS) from Goal Difference (GD)
     slope, intercept = np.polyfit(df['gd'], df['Pts'], 1)
     
+    # Possession-Adjusted Defensive Actions Benchmark
+    df['opp_poss'] = 100.0 - df['poss_pct']
+    df['padj_def_actions'] = (df['tklw_plus_int'] / (df['opp_poss'] / 50.0)).round(1)
+    league_padj_avg = round(float(df['padj_def_actions'].mean()), 1)
+
     team_meta = load_team_metadata()
     evaluations = {}
     
@@ -70,6 +82,8 @@ def compute_performance_evaluations():
         
         exp_pts = round(slope * row['gd'] + intercept, 1)
         pts_delta = round(row['Pts'] - exp_pts, 1)
+
+        def_delta = round(row['padj_def_actions'] - league_padj_avg, 1)
         
         evaluations[meta['slug']] = {
             "squad": squad_name,
@@ -88,34 +102,36 @@ def compute_performance_evaluations():
                 "sot_pct": float(row['sot_pct']),
                 "ast": int(row['ast']),
                 "poss": float(row['poss_pct']),
-                "tklw_plus_int": int(row['tklw_plus_int'])
+                "tklw_plus_int": int(row['tklw_plus_int']),
+                "padj_def_actions": float(row['padj_def_actions'])
             },
             "expected_benchmarks": {
                 "exp_ga": exp_ga,
                 "exp_gf": exp_gf,
                 "exp_ast": exp_ast,
                 "exp_pts": exp_pts,
+                "exp_padj_def": league_padj_avg,
                 "league_avg_save_pct": round(league_avg_save_pct * 100, 1),
                 "league_avg_g_per_sot": round(league_avg_g_per_sot, 2),
                 "league_avg_ast_per_gf": round(league_avg_ast_per_gf, 2),
-                "linear_slope": round(slope, 3),
-                "linear_intercept": round(intercept, 1)
+                "league_pts_slope": round(slope, 3),
+                "league_pts_intercept": round(intercept, 2)
             },
             "deltas": {
                 "ga_delta": ga_delta,
                 "gf_delta": gf_delta,
                 "ast_delta": ast_delta,
-                "pts_delta": pts_delta
+                "pts_delta": pts_delta,
+                "def_delta": def_delta
             }
         }
         
-    return evaluations
-
-def main():
-    evaluations = compute_performance_evaluations()
     with open(PERFORMANCE_EVAL_JSON, "w", encoding="utf-8") as f:
         json.dump(evaluations, f, ensure_ascii=False, indent=2)
-    print(f"[OK] Saved performance evaluations to {PERFORMANCE_EVAL_JSON}")
+        
+    print(f"[OK] Successfully computed performance evaluations for {len(evaluations)} teams.")
+    print(f"[OK] Saved to: {PERFORMANCE_EVAL_JSON}")
+    return evaluations
 
 if __name__ == "__main__":
-    main()
+    compute_performance_evaluations()

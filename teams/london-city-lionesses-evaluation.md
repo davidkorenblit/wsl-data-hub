@@ -110,13 +110,28 @@ prev_title: "חלק ב': ניתוח נתונים"
           </div>
         </div>
 
+        <!-- Row 5: Defensive Work Rate (PAdj) -->
+        <div class="space-y-1">
+          <div class="flex justify-between text-xs font-medium">
+            <span class="text-slate-200 font-semibold">Defensive Work Rate (PAdj Tkl+Int) <span class="text-slate-400 font-normal text-[11px]">· Pressing & ball recovery</span></span>
+            <span class="font-mono font-bold text-emerald-400 text-xs sm:text-sm">+70.8 Actions (Overperformed · #1 in WSL)</span>
+          </div>
+          <div class="relative h-7 bg-[#131f3d] rounded flex items-center px-1 overflow-hidden">
+            <div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-slate-400 z-10"></div>
+            <!-- Lollipop Line & Head -->
+            <div class="absolute left-1/2 h-1 bg-emerald-500 rounded-r z-0 flex items-center" style="width: 71%;">
+              <div class="absolute -right-2 w-4 h-4 rounded-full bg-emerald-400 ring-2 ring-[#0b1329] shadow"></div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- Axis Labels -->
       <div class="flex justify-between text-[11px] font-mono text-slate-400 border-t border-[#1e293b] pt-2 px-1">
-        <span>◀ Underperformed (-10)</span>
+        <span>◀ Underperformed (-10 / Negative)</span>
         <span class="text-slate-200 font-bold">Expected Baseline (0)</span>
-        <span>Overperformed (+10) ▶</span>
+        <span>Overperformed (+10 / Positive) ▶</span>
       </div>
     </div>
   </div>
@@ -227,6 +242,64 @@ prev_title: "חלק ב': ניתוח נתונים"
     </div>
   </div>
 
+  <!-- Section 3: Defensive Actions & Work Rate Table -->
+  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 space-y-4">
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-neutral-100 dark:border-neutral-800 pb-3">
+      <div>
+        <h2 class="text-lg font-bold text-neutral-900 dark:text-white">
+          3. פעולות הגנה ועצימות שדה (תיקולים, חטיפות ונירמול החזקה)
+        </h2>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5">
+          בדיקת עבודת ההגנה בשדה: נפח תיקולים וחטיפות מנוכה אחוזי החזקה בכדור (PAdj)
+        </p>
+      </div>
+      <span class="text-[10px] font-mono border border-emerald-300 dark:border-emerald-700 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 px-2 py-0.5 rounded font-bold self-start sm:self-auto">
+        LCL RANK #1 IN LEAGUE
+      </span>
+    </div>
+
+    <div class="overflow-x-auto rounded border border-neutral-200 dark:border-neutral-800" dir="ltr">
+      <table class="w-full text-left border-collapse text-xs">
+        <thead>
+          <tr class="bg-neutral-50 dark:bg-[#18181b] border-b border-neutral-200 dark:border-neutral-800 text-neutral-500 dark:text-neutral-400 font-mono uppercase tracking-wider">
+            <th class="py-2.5 px-3 font-semibold sticky left-0 bg-neutral-50 dark:bg-[#18181b] z-10">Squad</th>
+            <th class="py-2.5 px-2 text-right font-semibold">Tackles Won (TklW)</th>
+            <th class="py-2.5 px-2 text-right font-semibold">Interceptions (Int)</th>
+            <th class="py-2.5 px-2 text-right font-semibold">Total Actions (Tkl+Int)</th>
+            <th class="py-2.5 px-2 text-right font-semibold text-emerald-600 dark:text-emerald-400">PAdj Actions (50% Poss)</th>
+            <th class="py-2.5 px-3 text-right font-semibold">Delta vs Avg</th>
+          </tr>
+        </thead>
+        <tbody class="font-mono tabular-nums divide-y divide-neutral-100 dark:divide-neutral-800">
+          {% assign def_list = site.data.defensive_squad %}
+          {% if def_list %}
+            {% for row in def_list %}
+            {% assign is_lionesses = false %}
+            {% if row.squad == 'Lionesses' %}
+              {% assign is_lionesses = true %}
+            {% endif %}
+            <tr class="transition-colors {% if is_lionesses %}bg-emerald-500/10 dark:bg-emerald-500/15 font-bold text-emerald-800 dark:text-emerald-200{% else %}hover:bg-neutral-50 dark:hover:bg-[#18181c] text-neutral-800 dark:text-neutral-200{% endif %}">
+              <td class="py-2 px-3 sticky left-0 {% if is_lionesses %}bg-emerald-100 dark:bg-[#0f241a] font-bold text-emerald-800 dark:text-emerald-200{% else %}bg-white dark:bg-[#121215]{% endif %} border-r border-neutral-100 dark:border-neutral-800">
+                {{ row.squad }}
+                {% if is_lionesses %} <span class="text-[10px] uppercase font-sans font-bold bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 px-1 py-0.5 rounded mr-1">#1 WSL Leader</span>{% endif %}
+              </td>
+              <td class="py-2 px-2 text-right">{{ row.tackles_tklw }}</td>
+              <td class="py-2 px-2 text-right">{{ row.int }}</td>
+              <td class="py-2 px-2 text-right font-semibold">{{ row.tkl_plus_int }}</td>
+              <td class="py-2 px-2 text-right font-bold {% if is_lionesses %}text-emerald-600 dark:text-emerald-400{% endif %}">
+                {% if row.squad == 'Lionesses' %}533.9{% elsif row.squad == 'Chelsea' %}528.8{% elsif row.squad == 'Arsenal' %}481.7{% elsif row.squad == 'Manchester City' %}481.6{% elsif row.squad == 'Manchester Utd' %}480.0{% elsif row.squad == 'Tottenham' %}467.8{% elsif row.squad == 'West Ham' %}456.3{% elsif row.squad == 'Liverpool' %}443.3{% elsif row.squad == 'Brighton' %}430.8{% elsif row.squad == 'Leicester City' %}425.4{% elsif row.squad == 'Aston Villa' %}418.9{% else %}408.8{% endif %}
+              </td>
+              <td class="py-2 px-3 text-right font-semibold {% if is_lionesses %}text-emerald-600 dark:text-emerald-400{% endif %}">
+                {% if row.squad == 'Lionesses' %}+70.8{% elsif row.squad == 'Chelsea' %}+65.7{% elsif row.squad == 'Arsenal' %}+18.6{% elsif row.squad == 'Manchester City' %}+18.5{% elsif row.squad == 'Manchester Utd' %}+16.9{% elsif row.squad == 'Tottenham' %}+4.7{% elsif row.squad == 'West Ham' %}-6.8{% elsif row.squad == 'Liverpool' %}-19.8{% elsif row.squad == 'Brighton' %}-32.3{% elsif row.squad == 'Leicester City' %}-37.7{% elsif row.squad == 'Aston Villa' %}-44.2{% else %}-54.3{% endif %}
+              </td>
+            </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <script>
     function switchGkView(view) {
       const chartView = document.getElementById('gk-chart-view');
@@ -263,7 +336,7 @@ prev_title: "חלק ב': ניתוח נתונים"
         LCL ספגה יותר ממה שהיא הייתה "אמורה" לספוג, והצצה לנתונים של אלנה מספרת שהיא השוערת הכי גרועה בליגה בחלק מהקטוגריות (יחד עם השוערות של לסטר שירדה ווסטהאם) - וזה כבר ספויילר לשאלת האם מארי ארפס היא רכש טוב.
       </p>
       <p>
-        גם נתוני ההתקפה של הקבוצה לא מזהירים אבל גם לא מחרידים. Under performance במה שקשור בכיבוש שערים ובבישול שלהם, בשאר המדדים שדיברנו עליהם (הגנה ותיקולים) עדיין לא יודע כי לא בדקתי.
+        גם נתוני ההתקפה של הקבוצה לא מזהירים אבל גם לא מחרידים. Under performance במה שקשור בכיבוש שערים ובבישול שלהם, אך בכל הנוגע להגנה, לחץ ותיקולים – כשמנרמלים לאחוזי החזקה בכדור מתברר ש-LCL במקום ה-1 בכל הליגה בנפח פעולות הגנה (70.8+ פעולות מעל הממוצע הליגתי). זה מדגיש עוד יותר: שחקניות השדה עבדו ללא הפסקה, והבעיה המרכזית הייתה מה שקרה ברגע שהכדור עבר אותן ונבעט למסגרת השער.
       </p>
     </div>
   </div>
