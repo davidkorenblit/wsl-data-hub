@@ -1,9 +1,7 @@
 """
-WSL Data Hub - Refined Evaluation Visualizations (Fixed Layout)
-===============================================================
-Generates clean, collision-free charts for London City Lionesses evaluation:
-1. lcl_performance_deltas.png - Clean horizontal diverging bar chart with zero text overlap.
-2. lcl_goalkeeper_evaluation.png - Goalkeeper performance comparison across WSL.
+WSL Data Hub - Minimalist Lollipop Delta Chart Generator
+========================================================
+Generates a super-clean, minimalist Lollipop Chart for London City Lionesses.
 """
 
 import json
@@ -29,108 +27,78 @@ ACCENT_BLUE = "#38bdf8"
 ACCENT_GOLD = "#fbbf24"
 
 
-def generate_delta_chart():
-    """Generates the Diverging Bar / Delta Chart with titles above bars to eliminate text collisions."""
+def generate_lollipop_delta_chart():
+    """Generates an ultra-clean, minimalist Lollipop Chart with zero clutter."""
     with open(PERFORMANCE_EVAL_JSON, "r", encoding="utf-8") as f:
         evals = json.load(f)
 
     lcl = evals["london-city-lionesses"]
     deltas = lcl["deltas"]
 
-    items = [
-        {
-            "title": "1. Points Delta (xPTS vs Actual)",
-            "subtitle": "Winning close/clutch matches",
-            "val": deltas["pts_delta"],
-            "unit": "Pts",
-            "is_positive_good": True,
-            "note": "Overperformed (+1.2 Pts)"
-        },
-        {
-            "title": "2. Goals Scored Delta (GF vs xG Expected)",
-            "subtitle": "Finishing efficiency vs shot volume",
-            "val": deltas["gf_delta"],
-            "unit": "Goals",
-            "is_positive_good": True,
-            "note": "Underperformed (-3.7 Goals)"
-        },
-        {
-            "title": "3. Assists Delta (Ast vs Expected)",
-            "subtitle": "Direct playmaking & chance conversion",
-            "val": deltas["ast_delta"],
-            "unit": "Assists",
-            "is_positive_good": True,
-            "note": "Underperformed (-0.9 Ast)"
-        },
-        {
-            "title": "4. Goals Conceded Delta (GA vs xGA Expected)",
-            "subtitle": "Excess goals allowed (Goalkeeping gap)",
-            "val": deltas["ga_delta"],
-            "unit": "Goals",
-            "is_positive_good": False,
-            "note": "Excess Goals Conceded (+6.7 GA)"
-        },
+    # 4 Core Metrics
+    metrics = [
+        {"name": "Points (xPTS)", "val": deltas["pts_delta"], "is_pos_good": True, "label": f"+{deltas['pts_delta']:.1f} Pts"},
+        {"name": "Goals Scored (GF)", "val": deltas["gf_delta"], "is_pos_good": True, "label": f"{deltas['gf_delta']:.1f} Gls"},
+        {"name": "Assists (Ast)", "val": deltas["ast_delta"], "is_pos_good": True, "label": f"{deltas['ast_delta']:.1f} Ast"},
+        {"name": "Goals Conceded (GA)", "val": deltas["ga_delta"], "is_pos_good": False, "label": f"+{deltas['ga_delta']:.1f} GA (Excess)"},
     ]
 
-    fig, ax = plt.subplots(figsize=(11, 6.5), facecolor=BG_COLOR)
+    fig, ax = plt.subplots(figsize=(10, 4.8), facecolor=BG_COLOR)
     ax.set_facecolor(CARD_BG)
 
-    y_positions = [3.3, 2.2, 1.1, 0.0]
-    
-    # Draw bars
-    for y, item in zip(y_positions, items):
-        val = item["val"]
-        is_ga = not item["is_positive_good"]
+    y_pos = np.arange(len(metrics))
+    vals = [m["val"] for m in metrics]
+    labels = [m["name"] for m in metrics]
+
+    # Center baseline (Zero)
+    ax.axvline(0, color="#64748b", linewidth=1.5, linestyle="--", zorder=2)
+
+    for y, m in zip(y_pos, metrics):
+        val = m["val"]
+        is_ga = not m["is_pos_good"]
         
-        # Color decision
+        # Color: For GA, positive is bad (Red). For others, positive is good (Green).
         if is_ga:
             color = CORAL_RED if val > 0 else EMERALD_GREEN
         else:
             color = EMERALD_GREEN if val > 0 else CORAL_RED
 
-        # Bar
-        ax.barh(y, val, height=0.38, color=color, zorder=3, edgecolor="none")
+        # 1. Lollipop Stem (Thin Line)
+        ax.hlines(y=y, xmin=0, xmax=val, color=color, linewidth=3, zorder=3, alpha=0.9)
 
-        # Category title & subtitle above the bar
-        ax.text(-9.5, y + 0.32, item["title"], color=TEXT_COLOR, fontsize=12, fontweight="bold", va="center", ha="left")
-        ax.text(-9.5, y + 0.18, item["subtitle"], color=SUB_TEXT, fontsize=9.5, va="center", ha="left")
+        # 2. Lollipop Head (Circle Marker)
+        ax.scatter(val, y, color=color, s=280, zorder=4, edgecolor=BG_COLOR, linewidth=2)
 
-        # Value annotation at the tip of the bar
-        sign = "+" if val > 0 else ""
-        if val >= 0:
-            text_x = val + 0.35
-            ha = "left"
-        else:
-            text_x = val - 0.35
-            ha = "right"
-
+        # 3. Clean value label next to the circle
+        offset = 0.55 if val >= 0 else -0.55
+        ha = "left" if val >= 0 else "right"
+        
         ax.text(
-            text_x,
+            val + offset,
             y,
-            f"{sign}{val:.1f} {item['unit']} · {item['note']}",
+            m["label"],
             color=TEXT_COLOR,
-            fontsize=11,
+            fontsize=11.5,
             fontweight="bold",
             va="center",
             ha=ha,
             zorder=5
         )
 
-    # Center baseline (0)
-    ax.axvline(0, color="#64748b", linewidth=1.5, linestyle="--", zorder=4)
+    # Y-Axis Labels (Clean and well spaced)
+    ax.set_yticks(y_pos)
+    ax.set_yticklabels(labels, color=TEXT_COLOR, fontsize=12, fontweight="medium")
+    ax.invert_yaxis()
 
-    # Set limits and clean axis
-    ax.set_xlim(-10, 12)
-    ax.set_ylim(-0.4, 3.8)
-    ax.set_yticks([])  # Remove Y tick labels completely to avoid overlap!
+    ax.set_xlim(-6.5, 10.5)
+    ax.set_xlabel("Deviation from League Expected Baseline (Delta)", color=SUB_TEXT, fontsize=11, labelpad=10)
+    ax.set_title("London City Lionesses · Performance vs Baseline", color=TEXT_COLOR, fontsize=15, fontweight="bold", pad=16)
 
-    ax.set_xlabel("Deviation from League Expected Baseline (Delta)", color=SUB_TEXT, fontsize=11, labelpad=12)
-    ax.set_title("London City Lionesses · Actual Performance vs Expected Baseline", color=TEXT_COLOR, fontsize=15, fontweight="bold", pad=20)
-
-    ax.grid(axis="x", color=GRID_COLOR, linestyle=":", alpha=0.8, zorder=1)
+    # Background grid & borders
+    ax.grid(axis="x", color=GRID_COLOR, linestyle=":", alpha=0.7, zorder=1)
     ax.spines["top"].set_visible(False)
     ax.spines["right"].set_visible(False)
-    ax.spines["left"].set_visible(False)
+    ax.spines["left"].set_color(GRID_COLOR)
     ax.spines["bottom"].set_color(GRID_COLOR)
     ax.tick_params(colors=SUB_TEXT)
 
@@ -138,7 +106,7 @@ def generate_delta_chart():
     plt.tight_layout()
     plt.savefig(out_path, dpi=200, facecolor=BG_COLOR, bbox_inches="tight")
     plt.close()
-    print(f"[OK] Generated clean delta chart: {out_path}")
+    print(f"[OK] Generated Minimalist Lollipop Chart: {out_path}")
 
 
 def generate_goalkeeper_chart_and_data():
@@ -202,9 +170,9 @@ def generate_goalkeeper_chart_and_data():
     plt.tight_layout()
     plt.savefig(out_path, dpi=200, facecolor=BG_COLOR, bbox_inches="tight")
     plt.close()
-    print(f"[OK] Generated: {out_path}")
+    print(f"[OK] Generated Goalkeeper Chart: {out_path}")
 
 
 if __name__ == "__main__":
-    generate_delta_chart()
+    generate_lollipop_delta_chart()
     generate_goalkeeper_chart_and_data()
