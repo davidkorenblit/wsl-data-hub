@@ -101,8 +101,13 @@ next_title: "ספריית המדדים"
           <p class="text-sm text-neutral-700 dark:text-neutral-300">
             "בהתבסס על בסיס הביצועים מהעונה שעברה ושדרוג הסגל – מהי תקרת הנקודות והמיקום הצפוי של הקבוצה?"
           </p>
-          <div class="text-xs text-neutral-500 dark:text-neutral-400 pt-1 leading-relaxed">
-            <strong>על מה מסתכלים:</strong> שקלול היכולת הבסיסית של הסגל (מה שהקבוצה הייתה שווה סטטיסטית) יחד עם "דלתת השדרוג" של הרכש לקראת הערכת צבירת נקודות, מאבקי מיקום ותחזית סופית.
+          <div class="text-xs text-neutral-500 dark:text-neutral-400 pt-1 leading-relaxed space-y-1">
+            <p>
+              <strong>על מה מסתכלים:</strong> שקלול היכולת הבסיסית של הסגל (מה שהקבוצה הייתה שווה סטטיסטית) יחד עם "דלתת השדרוג" של הרכש (חיסכון ספיגה בשער + תוספת הבקעה ויצירה בהתקפה) לקראת הערכת צבירת נקודות צפויות (xPTS), מאבקי מיקום ותחזית סופית.
+            </p>
+            <p>
+              <strong>מודל חישוב הדלתא:</strong> <code class="font-mono text-[11px] text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 px-1 py-0.5 rounded border border-neutral-200 dark:border-neutral-700">Net Delta = סך תרומת המצטרפות - סך תרומת העוזבות</code>
+            </p>
           </div>
         </div>
 
@@ -112,7 +117,10 @@ next_title: "ספריית המדדים"
     <!-- Scope & Notes Section -->
     <section class="space-y-2 pt-4 border-t border-neutral-200 dark:border-neutral-800 text-xs sm:text-sm text-neutral-500 dark:text-neutral-400">
       <p>
-        <strong class="text-neutral-700 dark:text-neutral-300 font-mono uppercase text-[11px]">Note:</strong> הליגה גדלה השנה בעוד שתי קבוצות (מ-12 ל-14), ואנו משקללים את השפעת הגדלת כמות המשחקים ושינוי מאזן הנקודות הכולל בתוך מודל החיזוי.
+        <strong class="text-neutral-700 dark:text-neutral-300 font-mono uppercase text-[11px]">Data Feeds:</strong> הנתונים נשענים על שילוב מאגרי FBref ואירועי Opta / FotMob לכיסוי מעמיק של מדדי סיומת, יצירת מצבים (Chances Created), נגיעות ברחבה ולחץ גבוה (Possession Won Final 3rd).
+      </p>
+      <p>
+        <strong class="text-neutral-700 dark:text-neutral-300 font-mono uppercase text-[11px]">Note:</strong> הליגה גדלה השנה בעוד שתי קבוצות (מ-12 ל-14, 26 מחזורים במקום 22), ואנו משקללים את השפעת הגדלת כמות המשחקים ושינוי מאזן הנקודות הכולל בתוך מודל החיזוי.
       </p>
       <p>
         בשלב הראשון הניתוח מתמקד בקבוצות לונדון ומנצ'סטר (צ'לסי, ארסנל, סיטי, יונייטד, טוטנהאם ולונדון סיטי ליונסס), ובהמשך יורחב לכל קבוצות ה-WSL.

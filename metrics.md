@@ -26,7 +26,7 @@ prev_title: "מתודולוגיה ושאלות מחקר"
 
     <!-- Overview Note -->
     <div class="p-3.5 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">
-      <strong class="text-neutral-900 dark:text-white font-mono uppercase text-[11px]">Data Source:</strong> מאגרי FBref / Opta לעונת ה-WSL. כל הנתונים מנורמלים ל-90 דקות משחק (Per 90) להשוואה הוגנת.
+      <strong class="text-neutral-900 dark:text-white font-mono uppercase text-[11px]">Data Source:</strong> מאגרי FBref ואירועי Opta / FotMob לעונת ה-WSL והליגות הבכירות. כל הנתונים מנורמלים ל-90 דקות משחק (Per 90) לצורך השוואה אחידה ומדויקת.
     </div>
 
     <!-- 1. Attack & Finishing -->
@@ -105,39 +105,31 @@ prev_title: "מתודולוגיה ושאלות מחקר"
         CATEGORY 03
       </div>
       <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
-        3. הגנה, חילוצים ועבודת שוערת
+        3. הגנה, מניעה ואיכות שוערות
       </h2>
       <div class="space-y-2.5">
         <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
           <div class="flex items-center justify-between">
             <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">GA / GA per 90 (Goals Against)</span>
-            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">ספיגת שערים</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">שערי חובה</span>
           </div>
-          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">כמות השערים שספגה הקבוצה וממוצע הספיגה ל-90 דקות.</p>
-        </div>
-
-        <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
-          <div class="flex items-center justify-between">
-            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">SoTA per 90 (Shots on Target Against)</span>
-            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">חשיפה לאיומים</span>
-          </div>
-          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">בעיטות למסגרת שמגיעות לעבר שער הקבוצה בכל 90 דקות.</p>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">סך השערים שספגה הקבוצה וממוצע הספיגה ל-90 דקות.</p>
         </div>
 
         <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
           <div class="flex items-center justify-between">
             <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">Save% (Save Percentage)</span>
-            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">אחוז הצלות שוערת</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">אחוז הצלות</span>
           </div>
-          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">היחס בין בעיטות שנבלמו על ידי השוערת לסך הבעיטות למסגרת.</p>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">אחוז ההצלות של השוערת מתוך סך הבעיטות למסגרת שנבעטו אליה.</p>
         </div>
 
         <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
           <div class="flex items-center justify-between">
-            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">TklW + Int (Tackles Won + Interceptions)</span>
-            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">תיקולים וחטיפות</span>
+            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">PSxG +/- (Post-Shot xG Difference)</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">איכות מניעת שערים</span>
           </div>
-          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">מדד מצטבר של תיקולים מוצלחים וחטיפות כדור.</p>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">מדד מתקדם שמחשב כמה שערים השוערת מנעה ביחס למידת המסוכנות של הבעיטות שנבעטו אליה (ערך חיובי מעיד על הצלת שערים בטוחים).</p>
         </div>
       </div>
     </section>
@@ -179,8 +171,54 @@ prev_title: "מתודולוגיה ושאלות מחקר"
         <div class="p-3.5 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
           <div class="font-mono text-xs font-bold text-neutral-900 dark:text-white">4. נקודות צפויות (xPTS) מרגרסיה ליניארית של הפרש שערים</div>
           <p class="text-xs text-neutral-700 dark:text-neutral-300">
-            <strong>נוסחה:</strong> <code class="font-mono text-xs text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 px-1 py-0.5 rounded border border-neutral-200 dark:border-neutral-700">xPTS = 0.576 × GD + 31.0</code>
+            <strong>נוסחה (עונת 22 משחקים):</strong> <code class="font-mono text-xs text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 px-1 py-0.5 rounded border border-neutral-200 dark:border-neutral-700">xPTS = 0.576 × GD + 31.0</code>
           </p>
+          <p class="text-xs text-neutral-700 dark:text-neutral-300 mt-1">
+            <strong>נוסחה מותאמת (עונת 26 משחקים - 14 קבוצות):</strong> <code class="font-mono text-xs text-neutral-900 dark:text-white bg-white dark:bg-neutral-900 px-1 py-0.5 rounded border border-neutral-200 dark:border-neutral-700">xPTS_26 = 0.576 × GD + 36.6</code>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Advanced Creation & Quality Metrics (Opta / FotMob) -->
+    <section class="space-y-3 pt-4 border-t border-neutral-200 dark:border-neutral-800">
+      <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
+        CATEGORY 05
+      </div>
+      <h2 class="text-xl font-bold text-neutral-900 dark:text-white">
+        5. מדדי יצירה, עומק ואיכות מתקדמים (Opta / FotMob)
+      </h2>
+      <div class="space-y-2.5">
+        <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">Chances Created / Big Chances</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">יצירת מצבים</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">מסירות מפתח שמובילות לבעיטה לשער (Chances), והזדמנויות של מצב ודאי מול השוערת (Big Chances Created).</p>
+        </div>
+
+        <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">Touches in Opposition Box</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">נוכחות ברחבה</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">כמות הפעולות והנגיעות בכדור בתוך רחבת ה-16 של היריב — מדד קריטי לשליטה טריטוריאלית ואיום ישיר.</p>
+        </div>
+
+        <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">Possession Won Final 3rd</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">לחץ גבוה</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">חטיפות וחילוצי כדור בשליש ההתקפי של המגרש — מודד את יעילות הלחץ הגבוה (High Press) וזכייה בכדורים מסוכנים.</p>
+        </div>
+
+        <div class="p-3 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 space-y-1">
+          <div class="flex items-center justify-between">
+            <span class="font-mono text-xs font-bold text-neutral-900 dark:text-white">Positional Percentiles</span>
+            <span class="text-[10px] font-mono border border-neutral-300 dark:border-neutral-700 bg-white dark:bg-neutral-900 px-1.5 py-0.5 rounded text-neutral-600 dark:text-neutral-300">אחוזונים לפי עמדה</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300">דירוג השחקנית באחוזים מול כלל השחקניות באותה עמדה בדיוק בחמש הליגות הבכירות ובליגת האלופות (UWCL).</p>
         </div>
       </div>
     </section>
