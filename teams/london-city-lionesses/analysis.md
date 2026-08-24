@@ -63,6 +63,29 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
     ברמת יצירת המצבים (Chance Creation) והמדדים המתקדמים מתוך נתוני ה-Opta/FotMob: הקבוצה רשמה 49 הזדמנויות גדולות שנוצרו (Big Chances, מקום 5 בליגה) ו-30.1 שערים צפויים (xG, מקום 6 בליגה). הנתונים האלו מאששים שביחס לעונת בכורה ולמיקום הכללי של הקבוצה (מקום 6) מדובר בתפוקה סבירה לגמרי, אך הפער מהצמרת הגבוהה עדיין עצום (מנצ'סטר סיטי ייצרה 102 הזדמנויות גדולות ו-58.6 xG). בנוסף, כמות נמוכה של נגיעות ברחבת היריב (487 נגיעות, מקום 7 בליגה מול כ-890 בארסנל וסיטי) ונפח מסירות מדויקות של 335.2 למשחק בלבד (מקום 8 מתוך 12) ממחישים היטב שמרכז השדה ובניית המשחק הם אזורים קריטיים שבהם יש המון לאן לשאוף ולהשתפר.
   </p>
 
+  <!-- Scatter Plot Chart: Possession vs Box Touches -->
+  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-3 sm:p-5 my-6">
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
+      <div>
+        <h3 class="text-sm sm:text-base font-bold text-white">
+          החזקת כדור מול כניסה לרחבת היריב (WSL 2024/25)
+        </h3>
+        <p class="text-xs text-slate-400 font-sans">
+          שליטה במרכז השדה (#6 בליגה) מול קושי בחדירה לרחבה ואיומים ישירים (#7 בליגה)
+        </p>
+      </div>
+      <span class="text-[10px] font-mono border border-sky-500/40 bg-sky-950/40 text-sky-400 px-2 py-0.5 rounded font-bold">
+        SCATTER PLOT
+      </span>
+    </div>
+    <img 
+      src="{{ '/assets/images/evaluations/lcl_possession_vs_box_touches.png' | relative_url }}" 
+      alt="WSL 2024/25 Possession vs Box Touches Scatter Plot" 
+      class="w-full h-auto rounded shadow"
+      loading="lazy"
+    />
+  </div>
+
   <!-- Detailed Benchmark Table (Expandable for deeper drill-down) -->
   <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 my-6">
     <summary class="cursor-pointer font-bold text-base text-neutral-900 dark:text-white flex items-center justify-between select-none">
