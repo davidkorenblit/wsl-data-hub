@@ -62,18 +62,23 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
     ברמת יצירת המצבים (Chance Creation) והמדדים המתקדמים מתוך נתוני ה-Opta/FotMob: הקבוצה רשמה 49 הזדמנויות גדולות שנוצרו (Big Chances, מקום 5 בליגה) ו-30.1 שערים צפויים (xG, מקום 6 בליגה). הנתונים האלו מאששים שביחס לעונת בכורה ולמיקום הכללי של הקבוצה (מקום 6) מדובר בתפוקה סבירה לגמרי, אך הפער מהצמרת הגבוהה עדיין עצום (מנצ'סטר סיטי ייצרה 102 הזדמנויות גדולות ו-58.6 xG). בנוסף, כמות נמוכה של נגיעות ברחבת היריב (487 נגיעות, מקום 7 בליגה מול כ-890 בארסנל וסיטי) ונפח מסירות מדויקות של 335.2 למשחק בלבד (מקום 8 מתוך 12) ממחישים היטב שמרכז השדה ובניית המשחק הם אזורים קריטיים שבהם יש המון לאן לשאוף ולהשתפר.
   </p>
 
-  <!-- Detailed Benchmark Table -->
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 my-6 space-y-3">
-    <div class="border-b border-neutral-100 dark:border-neutral-800 pb-2">
-      <h3 class="text-base font-bold text-neutral-900 dark:text-white">
-        פרופיל הביצועים והדירוג של LCL ב-WSL (2025/26)
-      </h3>
-      <p class="text-xs text-neutral-500 dark:text-neutral-400">
-        השוואת מדדי הבסיס והיצירתיות של לונדון סיטי ליונסס מול שאר קבוצות הליגה
-      </p>
-    </div>
+  <!-- Detailed Benchmark Table (Expandable for deeper drill-down) -->
+  <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 my-6">
+    <summary class="cursor-pointer font-bold text-base text-neutral-900 dark:text-white flex items-center justify-between select-none">
+      <div class="space-y-0.5">
+        <span class="flex items-center gap-2">
+          <span>📊 העמקה בנתוני הליגה והדירוג של LCL (לחושקים בכך)</span>
+        </span>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400 font-normal">
+          לחצו לצפייה בטבלת ההשוואה המלאה מול שאר קבוצות הליגה (10 מדדי בסיס, יצירתיות ודירוגים)
+        </p>
+      </div>
+      <span class="text-xs font-mono text-primary-600 dark:text-primary-400 px-2.5 py-1 rounded bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700">
+        הצג / הסתר טבלה
+      </span>
+    </summary>
 
-    <div class="overflow-x-auto rounded border border-neutral-200 dark:border-neutral-800" dir="rtl">
+    <div class="pt-4 overflow-x-auto rounded" dir="rtl">
       <table class="w-full text-right border-collapse text-xs sm:text-sm">
         <thead>
           <tr class="bg-neutral-50 dark:bg-[#18181b] border-b border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 font-mono text-xs">
@@ -177,7 +182,7 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
         </tbody>
       </table>
     </div>
-  </div>
+  </details>
 
   <div class="p-4 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 my-4 space-y-2">
     <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider">
