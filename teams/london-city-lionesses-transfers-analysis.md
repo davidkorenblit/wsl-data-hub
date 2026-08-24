@@ -1,12 +1,14 @@
 ---
 layout: team
-title: "London City Lionesses - חלק ד': ניתוח שדרוג השוערת (Mary Earps)"
+title: "London City Lionesses - חלק ד': ניתוח שדרוג העמדות (ארפס & מאפי)"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק ד': שדרוג עמדת השוערת"
+team_meta: "WSL 2025/26 · חלק ד': שדרוג עמדת השוערת והבלמית"
 permalink: /teams/london-city-lionesses/transfers-analysis/
 prev_url: /teams/london-city-lionesses/transfers-intro/
 prev_title: "חלק ג': חלון ההעברות והרכש"
+next_url: /teams/london-city-lionesses/transfers-attack/
+next_title: "חלק ה': אלכסיה פוטלס וקדידיאטו דיאני"
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
@@ -218,22 +220,6 @@ prev_title: "חלק ג': חלון ההעברות והרכש"
         <li><strong>בחלק ההתקפי:</strong> היא משחקת ברמה אחרת לחלוטין. היכולת שלה לבשל מהגבהות וממצבים נייחים (7 בישולים ו-40 הגבהות ב-1,103 דקות בלבד!) יוצאת דופן עבור בלמת, והיכולת לקדם את המשחק במסירה משנה לחלוטין את היציאה של LCL קדימה.</li>
         <li><strong>באלמנט ההגנתי:</strong> סנגרה הייתה בלמת שנאלצה לבצע נפח גבוה של חילוצים (21 תיקולים ו-17 חטיפות), בעוד מאפי מביאה שליטה, ניסיון, וספיגה של 5 שערים בלבד בכל העונה בברצלונה (מדד <code>+58</code> על הדשא).</li>
       </ul>
-
-      <p>
-        רק בשביל שנבין טיפה כמה גדול הערך שמאפי ליאון מוסיפה בלי קשר כנראה לאף שחקנית אחרת בעמדתה: היא מספקת <strong>90.4 מסירות מדויקות ל-90 דקות (91.7% דיוק)</strong> ו-<strong>5.4 כדורים ארוכים מדויקים למשחק (75.9% דיוק)</strong> שמציבים אותה בטופ האירופי, לצד יכולת בישול מקרוסים ויצירת מצבים שאין להן אח ורע לבלמת – <strong>2.44 יצירת מצבים (Chances Created)</strong>, <strong>2.04 הגבהות מדויקות</strong> ו-<strong>0.57 בישולים ל-90 דקות (7 בישולים בעונה)</strong>, כולם ב<strong>אחוזון ה-100</strong> מול בלמות.
-      </p>
-
-      <p>
-        היא שדרוג עצום גם מבחינת חוכמת המשחק שלה בהגנה עם <strong>0.49 חטיפות וזכיות בכדור בחצי המגרש של היריבה (שליש התקפי) ל-90 דקות (אחוזון 97)</strong> ו-<strong>6.27 השתלטויות על כדורים חוזרים (Recoveries, אחוזון 94)</strong>, וגם לחלק ההתקפי.
-      </p>
-
-      <p>
-        לסיכום, לא צריך אותי בשביל להגיד שמאפי ליאון היא רכש טוב מקצועית ושמארי ארפס היא שוערת על ואישיות מושלמת לבניית קבוצה וזהות, אבל זה נחמד גם לראות את זה בעיניים.
-      </p>
-
-      <p class="text-sm font-medium text-primary-600 dark:text-primary-400">
-        בדף הבא נדבר על אלכסייה פותייאס ועל החלוצה שבאה מליון Kadidiatou Diani.
-      </p>
     </article>
 
     <!-- Mapi vs Sangare Comparison Tables -->
@@ -355,6 +341,30 @@ prev_title: "חלק ג': חלון ההעברות והרכש"
       
       <p class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500 text-left" dir="ltr">
         Source: FBref / Stathead Official Domestic League Player Comparison (Center Backs)
+      </p>
+    </div>
+
+    <!-- Deep Tactical & Progression Value of Mapi León (Standalone Vision Analysis) -->
+    <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-5 sm:p-7 space-y-4 text-neutral-900 dark:text-neutral-100 text-base sm:text-lg leading-relaxed">
+      <div class="border-b border-neutral-100 dark:border-neutral-800 pb-2">
+        <h3 class="text-lg font-bold text-neutral-900 dark:text-white">
+          מעבר להשוואה: הערך ההתקפי וראיית המשחק של מאפי ליאון
+        </h3>
+        <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          מדדי איכות, יצירת מצבים ופילוח פעולות מתקדמות (Opta / FotMob)
+        </p>
+      </div>
+
+      <p>
+        רק בשביל שנבין טיפה כמה גדול הערך שמאפי ליאון מוסיפה בלי קשר כנראה לאף שחקנית אחרת בעמדתה: היא מספקת <strong>90.4 מסירות מדויקות ל-90 דקות (91.7% דיוק)</strong> ו-<strong>5.4 כדורים ארוכים מדויקים למשחק (75.9% דיוק)</strong> שמציבים אותה בטופ האירופי, לצד יכולת בישול מקרוסים ויצירת מצבים שאין להן אח ורע לבלמת – <strong>2.44 יצירת מצבים (Chances Created)</strong>, <strong>2.04 הגבהות מדויקות</strong> ו-<strong>0.57 בישולים ל-90 דקות (7 בישולים בעונה)</strong>, כולם ב<strong>אחוזון ה-100</strong> מול בלמות.
+      </p>
+
+      <p>
+        היא שדרוג עצום גם מבחינת חוכמת המשחק שלה בהגנה עם <strong>0.49 חטיפות וזכיות בכדור בחצי המגרש של היריבה (שליש התקפי) ל-90 דקות (אחוזון 97)</strong> ו-<strong>6.27 השתלטויות על כדורים חוזרים (Recoveries, אחוזון 94)</strong>, וגם לחלק ההתקפי.
+      </p>
+
+      <p>
+        לסיכום, לא צריך אותי בשביל להגיד שמאפי ליאון היא רכש טוב מקצועית ושמארי ארפס היא שוערת על ואישיות מושלמת לבניית קבוצה וזהות, אבל זה נחמד גם לראות את זה בעיניים.
       </p>
     </div>
   </div>
