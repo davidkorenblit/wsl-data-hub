@@ -7,8 +7,8 @@ team_meta: "WSL 2025/26 · חלק ה': חוליית הקישור וההתקפה 
 permalink: /teams/london-city-lionesses/transfers-attack/
 prev_url: /teams/london-city-lionesses/transfers-analysis/
 prev_title: "חלק ד': שדרוג עמדת השוערת והבלמית"
-next_url: /teams/london-city-lionesses/
-next_title: "חזרה לדף הקבוצה הראשי"
+next_url: /teams/london-city-lionesses/projections/
+next_title: "חלק ו': מודל התחזית וסיכום"
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

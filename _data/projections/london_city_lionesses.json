@@ -1,0 +1,84 @@
+{
+  "team_slug": "london-city-lionesses",
+  "team_name": "London City Lionesses",
+  "baseline_2024_25": {
+    "matches": 22,
+    "points": 27,
+    "rank": 6,
+    "gf": 26,
+    "ga": 33,
+    "gd": -7,
+    "shots_on_target_for": 91,
+    "shots_on_target_against": 96,
+    "save_pct": 64.9,
+    "assists": 18
+  },
+  "baseline_scaled_26": {
+    "matches": 26,
+    "gf": 30.7,
+    "ga": 39.0,
+    "gd": -8.3,
+    "points": 31.9
+  },
+  "transfer_deltas": {
+    "ga_reduction": 12.0,
+    "gf_increase": 18.5,
+    "earps_ga_saved": 8.5,
+    "mapi_def_savings": 3.5,
+    "alexia_goals_projected": 11.5,
+    "diani_goals_projected": 10.0,
+    "alexia_assists_projected": 7.5,
+    "diani_assists_projected": 4.5,
+    "mapi_assists_projected": 3.5
+  },
+  "projections_2025_26": {
+    "matches": 26,
+    "projected_gf": 49.2,
+    "projected_ga": 27.0,
+    "projected_gd": 22.2,
+    "projected_xpts": 49.4,
+    "xpts_range": [
+      47,
+      52
+    ],
+    "projected_rank": "3-4 (UWCL Qualification Contender)"
+  },
+  "league_landscape": [
+    {
+      "team": "Chelsea",
+      "proj_xpts": 58,
+      "proj_rank": 1,
+      "tier": "Title Contender"
+    },
+    {
+      "team": "Arsenal",
+      "proj_xpts": 53,
+      "proj_rank": 2,
+      "tier": "Title Contender / UWCL"
+    },
+    {
+      "team": "Manchester City",
+      "proj_xpts": 51,
+      "proj_rank": 3,
+      "tier": "UWCL Spot"
+    },
+    {
+      "team": "London City Lionesses (Projected)",
+      "proj_xpts": 49,
+      "proj_rank": 3.5,
+      "tier": "UWCL Battle (Top 3-4)"
+    },
+    {
+      "team": "Manchester United",
+      "proj_xpts": 41,
+      "proj_rank": 5,
+      "tier": "Upper Midtable"
+    },
+    {
+      "team": "Tottenham",
+      "proj_xpts": 33,
+      "proj_rank": 6,
+      "tier": "Midtable"
+    }
+  ]
+}
