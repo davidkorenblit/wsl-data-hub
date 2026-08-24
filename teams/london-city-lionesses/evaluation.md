@@ -4,6 +4,7 @@ title: "London City Lionesses - שלב ביניים: ביצועים מול צי�
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
 team_meta: "WSL 2025/26 · שלב ביניים: מודל הערכת ביצועים"
+hide_sidebar: true
 permalink: /teams/london-city-lionesses/evaluation/
 prev_url: /teams/london-city-lionesses/analysis/
 prev_title: "חלק ב': ניתוח נתונים"

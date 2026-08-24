@@ -86,6 +86,12 @@
         {% endif %}
       </div>
 
+      {% if page.hide_sidebar or page.sidebar == 'none' %}
+      <!-- Full Width Content (No Sidebar) -->
+      <div class="w-full space-y-6">
+        {{ content }}
+      </div>
+      {% else %}
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
         
         <!-- Main Column: Analysis / Content -->
@@ -155,18 +161,18 @@
           </div>
           {% else %}
           <!-- Default Collapsible Squad Table -->
-          <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden transition-all duration-200">
+          <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden transition-all duration-200" open>
             <summary class="flex items-center justify-between p-3.5 cursor-pointer font-bold text-xs sm:text-sm text-neutral-800 dark:text-neutral-200 hover:bg-neutral-50 dark:hover:bg-[#18181c] select-none list-none">
               <span class="flex items-center gap-2">
                 <span>📋</span>
-                <span>הצג את סגל הקבוצה</span>
+                <span>סגל הקבוצה לעונת 2025/26</span>
               </span>
               <span class="text-neutral-400 dark:text-neutral-500 text-xs transition-transform duration-200 group-open:rotate-180">▼</span>
             </summary>
             
             <div class="border-t border-neutral-200 dark:border-neutral-800">
               <div class="text-[10px] font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider px-3 pt-2.5 pb-1">
-                סגל הקבוצה · דקות משחק
+                סגל רשמי (שחקניות נשארות ורכש חדש)
               </div>
               <div class="overflow-x-auto max-h-[600px] overflow-y-auto" dir="ltr">
                 <table class="w-full text-left border-collapse">
@@ -174,7 +180,7 @@
                     <tr>
                       <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-3 border-b border-neutral-200 dark:border-neutral-800 text-left">Player</th>
                       <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-2 border-b border-neutral-200 dark:border-neutral-800 text-center">Pos</th>
-                      <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-3 border-b border-neutral-200 dark:border-neutral-800 text-right">Min</th>
+                      <th class="text-xs uppercase font-mono font-medium text-neutral-400 dark:text-neutral-500 bg-neutral-50 dark:bg-[#18181b] py-2.5 px-3 border-b border-neutral-200 dark:border-neutral-800 text-right">No</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -184,10 +190,10 @@
                       <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
                         <td class="text-sm font-sans font-medium text-neutral-900 dark:text-neutral-100 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-left">
                           <div>{{ p.player }}</div>
-                          <div class="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 uppercase">{{ p.nation | remove: "ENG " | remove: "ESP " | remove: "FRA " | remove: "USA " }}</div>
+                          <div class="text-[10px] font-mono text-neutral-400 dark:text-neutral-500 uppercase">{{ p.nation }}</div>
                         </td>
                         <td class="text-xs font-mono text-neutral-500 dark:text-neutral-400 py-2 px-2 border-b border-neutral-100 dark:border-neutral-800 text-center">{{ p.pos }}</td>
-                        <td class="text-sm font-mono tabular-nums text-neutral-800 dark:text-neutral-200 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{{ p.min }}</td>
+                        <td class="text-sm font-mono tabular-nums text-neutral-800 dark:text-neutral-200 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{% if p.no %}#{{ p.no }}{% else %}-{% endif %}</td>
                       </tr>
                       {% endfor %}
                     {% else %}
@@ -206,6 +212,7 @@
         </div>
         
       </div>
+      {% endif %}
     </main>
 
     <!-- Minimalist Editorial Footer -->
