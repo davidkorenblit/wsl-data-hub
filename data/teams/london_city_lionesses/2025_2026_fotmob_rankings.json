@@ -1,0 +1,278 @@
+{
+  "team_name": "London City Lionesses",
+  "league_id": 9227,
+  "season": "2025/2026",
+  "season_id": 27506,
+  "metrics": [
+    {
+      "stat_key": "possession_percentage_team",
+      "title": "Average Possession (%)",
+      "category": "Possession & Buildup",
+      "rank": 6,
+      "total_teams": 12,
+      "team_value": 49.8,
+      "league_average": 50.01,
+      "league_leader": {
+        "team": "Chelsea",
+        "value": 59.9
+      },
+      "gap_to_leader": -10.1,
+      "percentile": 58.3
+    },
+    {
+      "stat_key": "accurate_pass_team",
+      "title": "Accurate Passes / Match",
+      "category": "Possession & Buildup",
+      "rank": 8,
+      "total_teams": 12,
+      "team_value": 335.2,
+      "league_average": 354.22,
+      "league_leader": {
+        "team": "Arsenal",
+        "value": 452.1
+      },
+      "gap_to_leader": -116.9,
+      "percentile": 41.7
+    },
+    {
+      "stat_key": "accurate_long_balls_team",
+      "title": "Accurate Long Balls / Match",
+      "category": "Possession & Buildup",
+      "rank": 4,
+      "total_teams": 12,
+      "team_value": 20.3,
+      "league_average": 19.86,
+      "league_leader": {
+        "team": "Chelsea",
+        "value": 23.5
+      },
+      "gap_to_leader": -3.2,
+      "percentile": 75.0
+    },
+    {
+      "stat_key": "accurate_cross_team",
+      "title": "Accurate Crosses / Match",
+      "category": "Possession & Buildup",
+      "rank": 4,
+      "total_teams": 12,
+      "team_value": 5.2,
+      "league_average": 4.17,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 7.1
+      },
+      "gap_to_leader": -1.9,
+      "percentile": 75.0
+    },
+    {
+      "stat_key": "expected_goals_team",
+      "title": "Expected Goals (xG)",
+      "category": "Chance Creation",
+      "rank": 6,
+      "total_teams": 12,
+      "team_value": 30.1,
+      "league_average": 32.08,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 58.6
+      },
+      "gap_to_leader": -28.5,
+      "percentile": 58.3
+    },
+    {
+      "stat_key": "_xg_diff_team",
+      "title": "xG Difference",
+      "category": "Chance Creation",
+      "rank": 6,
+      "total_teams": 12,
+      "team_value": -1.1,
+      "league_average": -0.0,
+      "league_leader": {
+        "team": "Arsenal",
+        "value": 33.0
+      },
+      "gap_to_leader": -34.1,
+      "percentile": 58.3
+    },
+    {
+      "stat_key": "big_chance_team",
+      "title": "Big Chances Created",
+      "category": "Chance Creation",
+      "rank": 5,
+      "total_teams": 12,
+      "team_value": 49.0,
+      "league_average": 48.5,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 102.0
+      },
+      "gap_to_leader": -53.0,
+      "percentile": 66.7
+    },
+    {
+      "stat_key": "touches_in_opp_box_team",
+      "title": "Touches in Opp Box",
+      "category": "Chance Creation",
+      "rank": 7,
+      "total_teams": 12,
+      "team_value": 487.0,
+      "league_average": 547.58,
+      "league_leader": {
+        "team": "Arsenal",
+        "value": 897.0
+      },
+      "gap_to_leader": -410.0,
+      "percentile": 50.0
+    },
+    {
+      "stat_key": "ontarget_scoring_att_team",
+      "title": "Shots on Target / Match",
+      "category": "Chance Creation",
+      "rank": 7,
+      "total_teams": 12,
+      "team_value": 4.2,
+      "league_average": 4.38,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 7.0
+      },
+      "gap_to_leader": -2.8,
+      "percentile": 50.0
+    },
+    {
+      "stat_key": "goals_team_match",
+      "title": "Goals / Match",
+      "category": "Chance Creation",
+      "rank": 6,
+      "total_teams": 12,
+      "team_value": 1.3,
+      "league_average": 1.48,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 2.8
+      },
+      "gap_to_leader": -1.5,
+      "percentile": 58.3
+    },
+    {
+      "stat_key": "big_chance_missed_team",
+      "title": "Big Chances Missed",
+      "category": "Chance Creation",
+      "rank": 5,
+      "total_teams": 12,
+      "team_value": 32.0,
+      "league_average": 31.17,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 67.0
+      },
+      "gap_to_leader": 35.0,
+      "percentile": 41.7
+    },
+    {
+      "stat_key": "poss_won_att_3rd_team",
+      "title": "Possession Won Final 3rd / Match",
+      "category": "Pressing & Defense",
+      "rank": 7,
+      "total_teams": 12,
+      "team_value": 6.0,
+      "league_average": 6.52,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 8.6
+      },
+      "gap_to_leader": -2.6,
+      "percentile": 50.0
+    },
+    {
+      "stat_key": "total_tackle_team",
+      "title": "Tackles / Match",
+      "category": "Pressing & Defense",
+      "rank": 3,
+      "total_teams": 12,
+      "team_value": 21.5,
+      "league_average": 18.72,
+      "league_leader": {
+        "team": "West Ham United",
+        "value": 22.6
+      },
+      "gap_to_leader": -1.1,
+      "percentile": 83.3
+    },
+    {
+      "stat_key": "interception_team",
+      "title": "Interceptions / Match",
+      "category": "Pressing & Defense",
+      "rank": 1,
+      "total_teams": 12,
+      "team_value": 10.7,
+      "league_average": 9.07,
+      "league_leader": {
+        "team": "London City Lionesses",
+        "value": 10.7
+      },
+      "gap_to_leader": 0.0,
+      "percentile": 100.0
+    },
+    {
+      "stat_key": "effective_clearance_team",
+      "title": "Clearances / Match",
+      "category": "Pressing & Defense",
+      "rank": 9,
+      "total_teams": 12,
+      "team_value": 19.9,
+      "league_average": 23.1,
+      "league_leader": {
+        "team": "Leicester City",
+        "value": 32.1
+      },
+      "gap_to_leader": -12.2,
+      "percentile": 33.3
+    },
+    {
+      "stat_key": "expected_goals_conceded_team",
+      "title": "xG Conceded",
+      "category": "Pressing & Defense",
+      "rank": 7,
+      "total_teams": 12,
+      "team_value": 31.2,
+      "league_average": 32.09,
+      "league_leader": {
+        "team": "Arsenal",
+        "value": 15.4
+      },
+      "gap_to_leader": -15.8,
+      "percentile": 58.3
+    },
+    {
+      "stat_key": "clean_sheet_team",
+      "title": "Clean Sheets",
+      "category": "Pressing & Defense",
+      "rank": 10,
+      "total_teams": 12,
+      "team_value": 3.0,
+      "league_average": 5.83,
+      "league_leader": {
+        "team": "Arsenal",
+        "value": 11.0
+      },
+      "gap_to_leader": -8.0,
+      "percentile": 25.0
+    },
+    {
+      "stat_key": "rating_team",
+      "title": "FotMob Team Rating",
+      "category": "Overall Performance",
+      "rank": 7,
+      "total_teams": 12,
+      "team_value": 6.75,
+      "league_average": 6.85,
+      "league_leader": {
+        "team": "Manchester City",
+        "value": 7.34
+      },
+      "gap_to_leader": -0.59,
+      "percentile": 50.0
+    }
+  ]
+}

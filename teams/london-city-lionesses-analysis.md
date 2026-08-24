@@ -58,6 +58,127 @@ next_title: "שלב ביניים: מודל הערכת ביצועים"
     ובכל זאת, זה לא התבטא מספיק ביצירת מצבים: LCL רשמה 18 אסיסטים בלבד — 0.82 ל-90 דקות, מקום 9 מתוך 12 בליגה.
   </p>
 
+  <p>
+    ברמת יצירת המצבים (Chance Creation) והמדדים המתקדמים מתוך נתוני ה-Opta/FotMob: הקבוצה רשמה 49 הזדמנויות גדולות שנוצרו (Big Chances, מקום 5 בליגה) ו-30.1 שערים צפויים (xG, מקום 6 בליגה). הנתונים האלו מאששים שביחס לעונת בכורה ולמיקום הכללי של הקבוצה (מקום 6) מדובר בתפוקה סבירה לגמרי, אך הפער מהצמרת הגבוהה עדיין עצום (מנצ'סטר סיטי ייצרה 102 הזדמנויות גדולות ו-58.6 xG). בנוסף, כמות נמוכה של נגיעות ברחבת היריב (487 נגיעות, מקום 7 בליגה מול כ-890 בארסנל וסיטי) ונפח מסירות מדויקות של 335.2 למשחק בלבד (מקום 8 מתוך 12) ממחישים היטב שמרכז השדה ובניית המשחק הם אזורים קריטיים שבהם יש המון לאן לשאוף ולהשתפר.
+  </p>
+
+  <!-- Detailed Benchmark Table -->
+  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-4 sm:p-5 my-6 space-y-3">
+    <div class="border-b border-neutral-100 dark:border-neutral-800 pb-2">
+      <h3 class="text-base font-bold text-neutral-900 dark:text-white">
+        פרופיל הביצועים והדירוג של LCL ב-WSL (2025/26)
+      </h3>
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        השוואת מדדי הבסיס והיצירתיות של לונדון סיטי ליונסס מול שאר קבוצות הליגה
+      </p>
+    </div>
+
+    <div class="overflow-x-auto rounded border border-neutral-200 dark:border-neutral-800" dir="rtl">
+      <table class="w-full text-right border-collapse text-xs sm:text-sm">
+        <thead>
+          <tr class="bg-neutral-50 dark:bg-[#18181b] border-b border-neutral-200 dark:border-neutral-800 text-neutral-600 dark:text-neutral-400 font-mono text-xs">
+            <th class="py-2.5 px-3 font-semibold">מדד</th>
+            <th class="py-2.5 px-3 font-semibold text-center text-primary-600 dark:text-primary-400">ערך LCL</th>
+            <th class="py-2.5 px-3 font-semibold text-center">דירוג (מתוך 12)</th>
+            <th class="py-2.5 px-3 font-semibold text-center">ממוצע ליגה</th>
+            <th class="py-2.5 px-3 font-semibold">מובילת הליגה</th>
+            <th class="py-2.5 px-3 font-semibold text-center">פער מהפסגה</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-neutral-100 dark:divide-neutral-800">
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c] bg-emerald-50/40 dark:bg-emerald-950/20 font-medium">
+            <td class="py-2 px-3">חטיפות + תיקולים (פעולות הגנה)</td>
+            <td class="py-2 px-3 text-center font-bold font-mono text-emerald-600 dark:text-emerald-400">536</td>
+            <td class="py-2 px-3 text-center font-mono font-bold">#1 🥇</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">459.1</td>
+            <td class="py-2 px-3">Lionesses (536)</td>
+            <td class="py-2 px-3 text-center font-mono text-emerald-600 dark:text-emerald-400">מובילה</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">כדורים ארוכים מדויקים / 90</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">20.3</td>
+            <td class="py-2 px-3 text-center font-mono">#4</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">19.9</td>
+            <td class="py-2 px-3">צ'לסי (23.5)</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-600 dark:text-neutral-400">-3.2</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">הזדמנויות גדולות שנוצרו (Big Chances)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">49.0</td>
+            <td class="py-2 px-3 text-center font-mono">#5</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">48.5</td>
+            <td class="py-2 px-3">מנצ'סטר סיטי (102.0)</td>
+            <td class="py-2 px-3 text-center font-mono text-rose-600 dark:text-rose-400">-53.0</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">שערים צפויים (xG)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">30.1</td>
+            <td class="py-2 px-3 text-center font-mono">#6</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">32.1</td>
+            <td class="py-2 px-3">מנצ'סטר סיטי (58.6)</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-600 dark:text-neutral-400">-28.5</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">החזקת כדור ממוצעת (%)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">49.8%</td>
+            <td class="py-2 px-3 text-center font-mono">#6</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">50.1%</td>
+            <td class="py-2 px-3">צ'לסי (60.0%)</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-600 dark:text-neutral-400">-10.2%</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">נגיעות ברחבת היריב</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">487</td>
+            <td class="py-2 px-3 text-center font-mono">#7</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">547.6</td>
+            <td class="py-2 px-3">ארסנל (897)</td>
+            <td class="py-2 px-3 text-center font-mono text-rose-600 dark:text-rose-400">-410</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">שערים שהובקעו (GF)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">26</td>
+            <td class="py-2 px-3 text-center font-mono">#8</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">31.2</td>
+            <td class="py-2 px-3">מנצ'סטר סיטי (60)</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-600 dark:text-neutral-400">-34</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">מסירות מדויקות / 90</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">335.2</td>
+            <td class="py-2 px-3 text-center font-mono">#8</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">354.2</td>
+            <td class="py-2 px-3">ארסנל (452.1)</td>
+            <td class="py-2 px-3 text-center font-mono text-rose-600 dark:text-rose-400">-116.9</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">שערים שספגו (GA)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold text-rose-600 dark:text-rose-400">35</td>
+            <td class="py-2 px-3 text-center font-mono">#8</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">31.2</td>
+            <td class="py-2 px-3">ארסנל (12 בלבד)</td>
+            <td class="py-2 px-3 text-center font-mono text-rose-600 dark:text-rose-400">+23</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
+            <td class="py-2 px-3">בישולים (Assists)</td>
+            <td class="py-2 px-3 text-center font-mono font-semibold">18</td>
+            <td class="py-2 px-3 text-center font-mono">#9</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">22.7</td>
+            <td class="py-2 px-3">ארסנל (45)</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-600 dark:text-neutral-400">-27</td>
+          </tr>
+          <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c] bg-rose-50/30 dark:bg-rose-950/20">
+            <td class="py-2 px-3">אחוז הצלות שוערת (Save%)</td>
+            <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">57.3%</td>
+            <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">#11</td>
+            <td class="py-2 px-3 text-center font-mono text-neutral-500">66.2%</td>
+            <td class="py-2 px-3">צ'לסי (74.4%)</td>
+            <td class="py-2 px-3 text-center font-mono text-rose-600 dark:text-rose-400">-17.1%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <div class="p-4 bg-neutral-50 dark:bg-[#18181b] rounded border border-neutral-200 dark:border-neutral-800 my-4 space-y-2">
     <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider">
       סיכום שאלה 1

@@ -20,6 +20,10 @@ SQUADS_DIR = RAW_DIR / "squads"
 OPPONENTS_DIR = RAW_DIR / "opponents"
 PLAYERS_DIR = RAW_DIR / "players"
 SOURCE_FBREF_DIR = RAW_DIR / "source_fbref"
+FOTMOB_RAW_DIR = RAW_DIR / "fotmob"
+FOTMOB_LEAGUES_DIR = FOTMOB_RAW_DIR / "leagues"
+FOTMOB_TEAMS_DIR = FOTMOB_RAW_DIR / "teams"
+FOTMOB_PLAYERS_DIR = FOTMOB_RAW_DIR / "players"
 TEAMS_DIR = DATA_DIR / "teams"
 LCL_DIR = TEAMS_DIR / "london_city_lionesses"
 LCL_SQUAD_DIR = LCL_DIR / "squad"
@@ -53,6 +57,10 @@ def ensure_all_directories():
         OPPONENTS_DIR,
         PLAYERS_DIR,
         SOURCE_FBREF_DIR,
+        FOTMOB_RAW_DIR,
+        FOTMOB_LEAGUES_DIR,
+        FOTMOB_TEAMS_DIR,
+        FOTMOB_PLAYERS_DIR,
         TEAMS_DIR,
         LCL_DIR,
         SITE_DATA_DIR,
