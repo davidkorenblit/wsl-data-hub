@@ -60,6 +60,12 @@ LEAGUES_TO_FETCH = [
             {"season": "2024/2025", "season_id": 24233},
             {"season": "2023/2024", "season_id": 21127}
         ]
+    },
+    {
+        "id": 9134,
+        "name": "NWSL",
+        "slug": "nwsl",
+        "topstats_seasons": []
     }
 ]
 

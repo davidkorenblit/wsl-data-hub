@@ -1,0 +1,62 @@
+{
+  "2024": {
+    "season": "2024",
+    "num_teams": 14,
+    "matches": 26,
+    "shield_winner": "Orlando Pride",
+    "record": "18W-6D-2L",
+    "pts": 60,
+    "max_pts": 78,
+    "ppg": 2.31,
+    "pts_pct": 76.9,
+    "runner_up": "Washington Spirit (56 pts)"
+  },
+  "2023": {
+    "season": "2023",
+    "num_teams": 12,
+    "matches": 22,
+    "shield_winner": "San Diego Wave FC",
+    "record": "11W-4D-7L",
+    "pts": 37,
+    "max_pts": 66,
+    "ppg": 1.68,
+    "pts_pct": 56.1,
+    "runner_up": "Portland Thorns (35 pts)"
+  },
+  "2022": {
+    "season": "2022",
+    "num_teams": 12,
+    "matches": 22,
+    "shield_winner": "Seattle Reign FC",
+    "record": "11W-7D-4L",
+    "pts": 40,
+    "max_pts": 66,
+    "ppg": 1.82,
+    "pts_pct": 60.6,
+    "runner_up": "Portland Thorns (39 pts)"
+  },
+  "2021": {
+    "season": "2021",
+    "num_teams": 10,
+    "matches": 24,
+    "shield_winner": "Portland Thorns",
+    "record": "13W-5D-6L",
+    "pts": 44,
+    "max_pts": 72,
+    "ppg": 1.83,
+    "pts_pct": 61.1,
+    "runner_up": "Seattle Reign FC (42 pts)"
+  },
+  "2019": {
+    "season": "2019",
+    "num_teams": 9,
+    "matches": 24,
+    "shield_winner": "North Carolina Courage",
+    "record": "15W-4D-5L",
+    "pts": 49,
+    "max_pts": 72,
+    "ppg": 2.04,
+    "pts_pct": 68.1,
+    "runner_up": "Chicago Stars (44 pts)"
+  }
+}
