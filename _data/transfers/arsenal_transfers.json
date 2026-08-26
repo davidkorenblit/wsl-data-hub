@@ -1,0 +1,71 @@
+{
+  "team": "Arsenal Women",
+  "season": "2025/26",
+  "transfers_in": [
+    {
+      "name": "ג'ורג'יה סטאנוויי (Georgia Stanway)",
+      "name_en": "Georgia Stanway",
+      "position": "קשרית מרכז / 50-50 (CM/DM)",
+      "from_club": "באיירן מינכן (Bayern Munich)",
+      "role": "מנוע הקישור, עוצמה פיזית, ניהול משחק וניסיון בינלאומי ברמות הגבוהות ביותר."
+    },
+    {
+      "name": "קלואי קלי (Chloe Kelly)",
+      "name_en": "Chloe Kelly",
+      "position": "שחקנית כנף (RW/LW)",
+      "from_club": "מנצ'סטר סיטי (Manchester City)",
+      "role": "דריבל איכותי, יצירת מצבים מהאגף, ווינרית מוכחת ברגעי מאני-טיים."
+    },
+    {
+      "name": "אוליביה סמית' (Olivia Smith)",
+      "name_en": "Olivia Smith",
+      "position": "חלוצה / כנף (FW/W)",
+      "from_club": "ליברפול (Liverpool)",
+      "role": "כישרון התקפי צעיר ונפיץ, סיומת חדה ומהירות גבוהה במעברים."
+    },
+    {
+      "name": "טיילור היינדס (Taylor Hinds)",
+      "name_en": "Taylor Hinds",
+      "position": "מגנה שמאלית (LB)",
+      "from_club": "ליברפול (Liverpool)",
+      "role": "מחליפה ישירה ויציבה בעמדת המגן השמאלי, הצטרפות להתקפה ויציבות הגנתית."
+    },
+    {
+      "name": "אנקה בורבה (Anneke Borbe)",
+      "name_en": "Anneke Borbe",
+      "position": "שוערת (GK)",
+      "from_club": "וולפסבורג (Wolfsburg)",
+      "role": "חיזוק ועומק לסגל השוערות מאחורי ואן דומסלאר וצינסברגר."
+    },
+    {
+      "name": "מישל אגיימאנג (Michelle Agyemang) - חזרה מפציעה/השאלה",
+      "name_en": "Michelle Agyemang",
+      "position": "חלוצה מרכזית (ST)",
+      "from_club": "רכש פנימי / אקדמיה",
+      "role": "הכישרון הכי מבטיח באנגליה שחוזרת לרוטציה להוסיף עוצמה ופיזיות מאחורי רוסו."
+    }
+  ],
+  "transfers_out": [
+    {
+      "name": "קייטי מקייב (Katie McCabe)",
+      "name_en": "Katie McCabe",
+      "position": "מגנה / כנף שמאל (LB/LW)",
+      "to_club": "לונדון סיטי ליונסס (London City Lionesses)",
+      "impact": "עזיבת סמל מנהיגותי, אגרסיביות ואיום קבוע ממצבים נייחים."
+    },
+    {
+      "name": "בת' מיד (Beth Mead)",
+      "name_en": "Beth Mead",
+      "position": "שחקנית כנף (RW)",
+      "to_club": "לונדון סיטי ליונסס (London City Lionesses)",
+      "impact": "עזיבה של אחת מספקיות המספרים וההזדמנויות הגדולות ביותר של המועדון בעשור האחרון."
+    },
+    {
+      "name": "לינה הורטיג (Lina Hurtig)",
+      "name_en": "Lina Hurtig",
+      "position": "שחקנית כנף / חלוצה (LW/FW)",
+      "to_club": "עזיבה / שחרור",
+      "impact": "פינוי מקום בסגל ההתקפי לאחר עונות רצופות פציעות."
+    }
+  ]
+}

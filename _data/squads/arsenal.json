@@ -1,266 +1,223 @@
-[
-  {
-    "player": "Stina Blackstenius",
-    "pos": "FW,MF",
-    "age": "29",
-    "nation": "se SWE",
-    "mp": "20",
-    "starts": "8",
-    "min": "868",
-    "gls": "10",
-    "ast": "3"
-  },
-  {
-    "player": "Anneke Borbe",
-    "pos": "GK",
-    "age": "24",
-    "nation": "de GER",
-    "mp": "8",
-    "starts": "8",
-    "min": "720",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Mariona Caldentey",
-    "pos": "MF",
-    "age": "29",
-    "nation": "es ESP",
-    "mp": "22",
-    "starts": "20",
-    "min": "1736",
-    "gls": "4",
-    "ast": "4"
-  },
-  {
-    "player": "Steph Catley",
-    "pos": "DF",
-    "age": "31",
-    "nation": "au AUS",
-    "mp": "16",
-    "starts": "15",
-    "min": "1330",
-    "gls": "0",
-    "ast": "2"
-  },
-  {
-    "player": "Laia Codina",
-    "pos": "DF",
-    "age": "25",
-    "nation": "es ESP",
-    "mp": "12",
-    "starts": "7",
-    "min": "645",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Kyra Cooney-Cross",
-    "pos": "MF",
-    "age": "23",
-    "nation": "au AUS",
-    "mp": "6",
-    "starts": "3",
-    "min": "306",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Daphne van Domselaar",
-    "pos": "GK",
-    "age": "25",
-    "nation": "nl NED",
-    "mp": "14",
-    "starts": "14",
-    "min": "1260",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Caitlin Foord",
-    "pos": "MF",
-    "age": "30",
-    "nation": "au AUS",
-    "mp": "20",
-    "starts": "12",
-    "min": "1207",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Emily Fox",
-    "pos": "DF",
-    "age": "27",
-    "nation": "us USA",
-    "mp": "20",
-    "starts": "18",
-    "min": "1603",
-    "gls": "0",
-    "ast": "2"
-  },
-  {
-    "player": "Sophie Harwood",
-    "pos": "DF",
-    "age": "17",
-    "nation": "eng ENG",
-    "mp": "2",
-    "starts": "0",
-    "min": "11",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Taylor Hinds",
-    "pos": "DF,MF",
-    "age": "25",
-    "nation": "eng ENG",
-    "mp": "16",
-    "starts": "6",
-    "min": "640",
-    "gls": "0",
-    "ast": "2"
-  },
-  {
-    "player": "Smilla Holmberg",
-    "pos": "DF",
-    "age": "18",
-    "nation": "se SWE",
-    "mp": "9",
-    "starts": "5",
-    "min": "473",
-    "gls": "2",
-    "ast": "4"
-  },
-  {
-    "player": "Chloe Kelly",
-    "pos": "MF",
-    "age": "27",
-    "nation": "eng ENG",
-    "mp": "16",
-    "starts": "4",
-    "min": "480",
-    "gls": "5",
-    "ast": "2"
-  },
-  {
-    "player": "Kim Little",
-    "pos": "MF",
-    "age": "35",
-    "nation": "sct SCO",
-    "mp": "18",
-    "starts": "17",
-    "min": "1379",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Frida Maanum",
-    "pos": "MF,FW",
-    "age": "26",
-    "nation": "no NOR",
-    "mp": "18",
-    "starts": "11",
-    "min": "937",
-    "gls": "6",
-    "ast": "4"
-  },
-  {
-    "player": "Katie McCabe",
-    "pos": "DF",
-    "age": "29",
-    "nation": "ie IRL",
-    "mp": "21",
-    "starts": "18",
-    "min": "1512",
-    "gls": "1",
-    "ast": "3"
-  },
-  {
-    "player": "Beth Mead",
-    "pos": "MF,FW",
-    "age": "30",
-    "nation": "eng ENG",
-    "mp": "21",
-    "starts": "12",
-    "min": "1014",
-    "gls": "2",
-    "ast": "5"
-  },
-  {
-    "player": "Jenna Nighswonger",
-    "pos": "DF",
-    "age": "24",
-    "nation": "us USA",
-    "mp": "1",
-    "starts": "0",
-    "min": "16",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Victoria Pelova",
-    "pos": "MF",
-    "age": "26",
-    "nation": "nl NED",
-    "mp": "17",
-    "starts": "7",
-    "min": "726",
-    "gls": "0",
-    "ast": "3"
-  },
-  {
-    "player": "Katie Reid",
-    "pos": "DF",
-    "age": "18",
-    "nation": "eng ENG",
-    "mp": "6",
-    "starts": "5",
-    "min": "453",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Alessia Russo",
-    "pos": "FW",
-    "age": "26",
-    "nation": "eng ENG",
-    "mp": "22",
-    "starts": "21",
-    "min": "1828",
-    "gls": "13",
-    "ast": "6"
-  },
-  {
-    "player": "Olivia Smith",
-    "pos": "MF,FW",
-    "age": "20",
-    "nation": "ca CAN",
-    "mp": "20",
-    "starts": "15",
-    "min": "1179",
-    "gls": "5",
-    "ast": "3"
-  },
-  {
-    "player": "Leah Williamson",
-    "pos": "DF",
-    "age": "28",
-    "nation": "eng ENG",
-    "mp": "6",
-    "starts": "2",
-    "min": "236",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Lotte Wubben-Moy",
-    "pos": "DF",
-    "age": "26",
-    "nation": "eng ENG",
-    "mp": "17",
-    "starts": "14",
-    "min": "1221",
-    "gls": "0",
-    "ast": "0"
-  }
-]
+{
+  "team": "Arsenal Women",
+  "season": "2025/26",
+  "players": [
+    {
+      "id": 1349489,
+      "name": "Renée Slegers",
+      "shirt_number": "Netherlands",
+      "role": "coach",
+      "position": "coach"
+    },
+    {
+      "id": 856537,
+      "name": "Manuela Zinsberger",
+      "shirt_number": "Austria",
+      "role": "keepers",
+      "position": "keeper_long"
+    },
+    {
+      "id": 1091599,
+      "name": "Daphne van Domselaar",
+      "shirt_number": "Netherlands",
+      "role": "keepers",
+      "position": "keeper_long"
+    },
+    {
+      "id": 898511,
+      "name": "Anneke Borbe",
+      "shirt_number": "Germany",
+      "role": "keepers",
+      "position": "keeper_long"
+    },
+    {
+      "id": 1415611,
+      "name": "Naomi Williams",
+      "shirt_number": "England",
+      "role": "keepers",
+      "position": "keeper_long"
+    },
+    {
+      "id": 1830964,
+      "name": "Amy Liddiard",
+      "shirt_number": "England",
+      "role": "keepers",
+      "position": "keeper_long"
+    },
+    {
+      "id": 1580415,
+      "name": "Vivienne Lia",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1266128,
+      "name": "Emily Fox",
+      "shirt_number": "USA",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1192394,
+      "name": "Lotte Wubben-Moy",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1083800,
+      "name": "Laia Codina",
+      "shirt_number": "Spain",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 941576,
+      "name": "Leah Williamson",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 645989,
+      "name": "Steph Catley",
+      "shirt_number": "Australia",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1082526,
+      "name": "Taylor Hinds",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1414898,
+      "name": "Katie Reid",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1357677,
+      "name": "Smilla Holmberg",
+      "shirt_number": "Sweden",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 1823059,
+      "name": "Sophie Harwood",
+      "shirt_number": "England",
+      "role": "defenders",
+      "position": "defender_long"
+    },
+    {
+      "id": 886706,
+      "name": "Georgia Stanway",
+      "shirt_number": "England",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 835903,
+      "name": "Mariona Caldentey",
+      "shirt_number": "Spain",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 324991,
+      "name": "Kim Little",
+      "shirt_number": "Scotland",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 809605,
+      "name": "Frida Maanum",
+      "shirt_number": "Norway",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 1055898,
+      "name": "Victoria Pelova",
+      "shirt_number": "Netherlands",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 1111984,
+      "name": "Kyra Cooney-Cross",
+      "shirt_number": "Australia",
+      "role": "midfielders",
+      "position": "midfielder_long"
+    },
+    {
+      "id": 1806106,
+      "name": "Jessie Gale",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 1417287,
+      "name": "Maddy Earl",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 1414896,
+      "name": "Michelle Agyemang",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 1514063,
+      "name": "Olivia Smith",
+      "shirt_number": "Canada",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 898060,
+      "name": "Chloe Kelly",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 271434,
+      "name": "Caitlin Foord",
+      "shirt_number": "Australia",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 1185212,
+      "name": "Alessia Russo",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 773402,
+      "name": "Stina Blackstenius",
+      "shirt_number": "Sweden",
+      "role": "attackers",
+      "position": "attacker_long"
+    },
+    {
+      "id": 1973305,
+      "name": "Mia Dixon",
+      "shirt_number": "England",
+      "role": "attackers",
+      "position": "attacker_long"
+    }
+  ]
+}
