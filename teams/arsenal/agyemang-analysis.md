@@ -4,7 +4,7 @@ title: "Arsenal - חלק ו': חידת מישל אג'ימאן"
 team_name: "Arsenal Women"
 team_slug: "arsenal"
 team_meta: "WSL 2026/27 · חלק ו': חידת מישל אג'ימאן והחזרה מ-ACL"
-sidebar: squad
+hide_sidebar: true
 permalink: /teams/arsenal/agyemang-analysis/
 prev_url: /teams/arsenal/transfers-analysis/
 prev_title: "חלק ה': קומבינציות טקטיות ועומק הסגל"
