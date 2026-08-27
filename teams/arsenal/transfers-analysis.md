@@ -8,8 +8,8 @@ sidebar: transfers
 permalink: /teams/arsenal/transfers-analysis/
 prev_url: /teams/arsenal/transfers-intro/
 prev_title: "חלק ד': חלון ההעברות ואונה באטייה"
-next_url: /teams/arsenal/projections/
-next_title: "חלק ו': תחזית העונה המורחבת"
+next_url: /teams/arsenal/agyemang-analysis/
+next_title: "חלק ו': חידת מישל אג'ימאן"
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
