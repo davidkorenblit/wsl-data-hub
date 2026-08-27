@@ -146,10 +146,10 @@ next_title: "חלק ג': אנומליית פתיחת העונה"
             </tr>
             <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c] bg-emerald-50/40 dark:bg-emerald-950/20 font-medium">
               <td class="py-2 px-3">שערי חובה (GA - ספיגה מועטת)</td>
-              <td class="py-2 px-3 text-center font-bold font-mono text-emerald-600 dark:text-emerald-400">12</td>
+              <td class="py-2 px-3 text-center font-bold font-mono text-emerald-600 dark:text-emerald-400">14</td>
               <td class="py-2 px-3 text-center font-mono font-bold">#1 🥇</td>
-              <td class="py-2 px-3 text-center font-mono text-neutral-500">31.2</td>
-              <td class="py-2 px-3 text-emerald-600 dark:text-emerald-400">ההגנה החזקה ביותר (0.55 למשחק)</td>
+              <td class="py-2 px-3 text-center font-mono text-neutral-500">32.7</td>
+              <td class="py-2 px-3 text-emerald-600 dark:text-emerald-400">ההגנה החזקה ביותר (0.64 למשחק)</td>
             </tr>
             <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c] bg-emerald-50/40 dark:bg-emerald-950/20 font-medium">
               <td class="py-2 px-3">בישולים (Assists)</td>
@@ -174,10 +174,10 @@ next_title: "חלק ג': אנומליית פתיחת העונה"
             </tr>
             <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
               <td class="py-2 px-3">שערים שהובקעו (GF)</td>
-              <td class="py-2 px-3 text-center font-mono font-semibold">51</td>
+              <td class="py-2 px-3 text-center font-mono font-semibold">53</td>
               <td class="py-2 px-3 text-center font-mono">#2</td>
-              <td class="py-2 px-3 text-center font-mono text-neutral-500">31.2</td>
-              <td class="py-2 px-3 text-neutral-500">שנייה למנצ'סטר סיטי (60)</td>
+              <td class="py-2 px-3 text-center font-mono text-neutral-500">32.7</td>
+              <td class="py-2 px-3 text-neutral-500">שנייה למנצ'סטר סיטי (62)</td>
             </tr>
             <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c]">
               <td class="py-2 px-3">שערים צפויים (xG)</td>
@@ -188,8 +188,8 @@ next_title: "חלק ג': אנומליית פתיחת העונה"
             </tr>
             <tr class="hover:bg-neutral-50 dark:hover:bg-[#18181c] bg-rose-50/30 dark:bg-rose-950/20">
               <td class="py-2 px-3">נקודות צפויות מול בפועל (xPTS Delta)</td>
-              <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">51 (מול 53.5)</td>
-              <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">2.5- נק'</td>
+              <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">51 (מול 53.0)</td>
+              <td class="py-2 px-3 text-center font-mono font-bold text-rose-600 dark:text-rose-400">2.0- נק'</td>
               <td class="py-2 px-3 text-center font-mono text-neutral-500">0.0</td>
               <td class="py-2 px-3 text-rose-600 dark:text-rose-400 font-semibold">Underperformance קריטי</td>
             </tr>

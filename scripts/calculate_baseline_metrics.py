@@ -19,7 +19,8 @@ from paths import (
     FOTMOB_LEAGUES_DIR,
     BASELINE_SUMMARY_JSON,
     ASSETS_DATA_DIR,
-    SITE_DATA_DIR
+    SITE_DATA_DIR,
+    LEAGUE_TABLE_RAW_CSV
 )
 
 # Mapping between FBref squad names and FotMob team names
@@ -122,8 +123,19 @@ def calculate_metrics():
     intercept = pd.to_numeric(misc['performance_int'], errors='coerce')
     df['tklw_plus_int'] = tklw + intercept
     
-    # 4. Macro Metrics (FBref)
-    df['gd'] = df['gf'] - df['ga']
+    # 4. Macro Metrics (FBref & Official Standings Table)
+    # Sync authoritative GF, GA, GD with official league standings
+    tbl_df = pd.read_csv(LEAGUE_TABLE_RAW_CSV)
+    tbl_map = tbl_df.set_index('Squad')
+    for idx, row in df.iterrows():
+        sq = row['squad']
+        if sq in tbl_map.index:
+            df.at[idx, 'gf'] = int(tbl_map.loc[sq, 'GF'])
+            df.at[idx, 'ga'] = int(tbl_map.loc[sq, 'GA'])
+            df.at[idx, 'gd'] = int(tbl_map.loc[sq, 'GD'])
+            df.at[idx, 'gf_per90'] = round(int(tbl_map.loc[sq, 'GF']) / 22.0, 2)
+            df.at[idx, 'ga_per90'] = round(int(tbl_map.loc[sq, 'GA']) / 22.0, 2)
+            
     df['poss_pct'] = pd.to_numeric(poss['poss'], errors='coerce')
     
     return df

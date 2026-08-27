@@ -16,14 +16,14 @@ metrics = [
     "Possession Won Final 3rd / 90 (7.9)",
     "Touches in Opposition Box (897)",
     "Shots per 90 (18.23)",
-    "Fewest Goals Conceded (12 GA)",
+    "Fewest Goals Conceded (14 GA)",
     "Assists (45 Ast)",
     "Accurate Passes / 90 (452.1)",
     "Shots on Target % (38.4%)",
     "Expected Goals (48.4 xG)",
     "Possession % (59.0%)",
-    "Total Goals Scored (51 GF)",
-    "Actual Points vs xPTS (51 vs 53.5)"
+    "Total Goals Scored (53 GF)",
+    "Actual Points vs xPTS (51 vs 53.0)"
 ]
 
 ranks = [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2]
