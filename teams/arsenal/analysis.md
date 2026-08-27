@@ -48,10 +48,10 @@ next_title: "חלק ג': אנומליית פתיחת העונה"
     <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-2">
       <div>
         <h3 class="text-sm sm:text-base font-bold text-white">
-          מודל הערכת ביצועים: ארסנל מול הבנצ'מרק הליגתי (2024/25)
+          מודל הערכת ביצועים: ארסנל מול הבנצ'מרק הליגתי (2025/26)
         </h3>
         <p class="text-xs text-slate-400 font-sans">
-          הגנה וסיומת מעל לציפיות מול אובדן של 2.5- נקודות צפויות (Underperformance)
+          הגנה וסיומת מעל לציפיות מול אובדן של 2.0- נקודות צפויות (Underperformance)
         </p>
       </div>
       <span class="text-[10px] font-mono border border-emerald-500/40 bg-emerald-950/40 text-emerald-400 px-2 py-0.5 rounded font-bold">
@@ -77,7 +77,7 @@ next_title: "חלק ג': אנומליית פתיחת העונה"
       <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-3">
         <div>
           <h3 class="text-sm sm:text-base font-bold text-white">
-            פרופיל הדומיננטיות של ארסנל ב-WSL (עונת 2024/25)
+            פרופיל הדומיננטיות של ארסנל ב-WSL (עונת 2025/26)
           </h3>
           <p class="text-xs text-slate-400 font-sans">
             דירוג מול 12 קבוצות הליגה: עליונות מוחלטת בלחץ, איומים, מסירות ומניעת ספיגה

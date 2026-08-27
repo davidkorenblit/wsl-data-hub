@@ -61,7 +61,7 @@ ax.set_xticklabels(['Bottom (12)', 'Mid-table (6)', 'Rank #2', 'Rank #1'], fonts
 ax.grid(axis='x', linestyle=':', alpha=0.2, color='#475569', zorder=1)
 ax.tick_params(colors='#94A3B8', length=0)
 
-ax.set_title("Arsenal Women · WSL 2024/25 League Dominance Profile", fontsize=13, fontweight='bold', color='#F8FAFC', pad=14, loc='left')
+ax.set_title("Arsenal Women · WSL 2025/26 League Dominance Profile", fontsize=13, fontweight='bold', color='#F8FAFC', pad=14, loc='left')
 fig.text(0.125, 0.91, "Rankings across 12 WSL clubs: League-leading in pressing, territorial dominance and defensive suppression", fontsize=8.5, color='#94A3B8', fontstyle='italic')
 
 plt.tight_layout()
