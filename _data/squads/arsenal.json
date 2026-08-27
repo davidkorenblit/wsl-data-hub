@@ -1,223 +1,35 @@
-{
-  "team": "Arsenal Women",
-  "season": "2025/26",
-  "players": [
-    {
-      "id": 1349489,
-      "name": "Renée Slegers",
-      "shirt_number": "Netherlands",
-      "role": "coach",
-      "position": "coach"
-    },
-    {
-      "id": 856537,
-      "name": "Manuela Zinsberger",
-      "shirt_number": "Austria",
-      "role": "keepers",
-      "position": "keeper_long"
-    },
-    {
-      "id": 1091599,
-      "name": "Daphne van Domselaar",
-      "shirt_number": "Netherlands",
-      "role": "keepers",
-      "position": "keeper_long"
-    },
-    {
-      "id": 898511,
-      "name": "Anneke Borbe",
-      "shirt_number": "Germany",
-      "role": "keepers",
-      "position": "keeper_long"
-    },
-    {
-      "id": 1415611,
-      "name": "Naomi Williams",
-      "shirt_number": "England",
-      "role": "keepers",
-      "position": "keeper_long"
-    },
-    {
-      "id": 1830964,
-      "name": "Amy Liddiard",
-      "shirt_number": "England",
-      "role": "keepers",
-      "position": "keeper_long"
-    },
-    {
-      "id": 1580415,
-      "name": "Vivienne Lia",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1266128,
-      "name": "Emily Fox",
-      "shirt_number": "USA",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1192394,
-      "name": "Lotte Wubben-Moy",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1083800,
-      "name": "Laia Codina",
-      "shirt_number": "Spain",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 941576,
-      "name": "Leah Williamson",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 645989,
-      "name": "Steph Catley",
-      "shirt_number": "Australia",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1082526,
-      "name": "Taylor Hinds",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1414898,
-      "name": "Katie Reid",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1357677,
-      "name": "Smilla Holmberg",
-      "shirt_number": "Sweden",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 1823059,
-      "name": "Sophie Harwood",
-      "shirt_number": "England",
-      "role": "defenders",
-      "position": "defender_long"
-    },
-    {
-      "id": 886706,
-      "name": "Georgia Stanway",
-      "shirt_number": "England",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 835903,
-      "name": "Mariona Caldentey",
-      "shirt_number": "Spain",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 324991,
-      "name": "Kim Little",
-      "shirt_number": "Scotland",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 809605,
-      "name": "Frida Maanum",
-      "shirt_number": "Norway",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 1055898,
-      "name": "Victoria Pelova",
-      "shirt_number": "Netherlands",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 1111984,
-      "name": "Kyra Cooney-Cross",
-      "shirt_number": "Australia",
-      "role": "midfielders",
-      "position": "midfielder_long"
-    },
-    {
-      "id": 1806106,
-      "name": "Jessie Gale",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 1417287,
-      "name": "Maddy Earl",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 1414896,
-      "name": "Michelle Agyemang",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 1514063,
-      "name": "Olivia Smith",
-      "shirt_number": "Canada",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 898060,
-      "name": "Chloe Kelly",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 271434,
-      "name": "Caitlin Foord",
-      "shirt_number": "Australia",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 1185212,
-      "name": "Alessia Russo",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 773402,
-      "name": "Stina Blackstenius",
-      "shirt_number": "Sweden",
-      "role": "attackers",
-      "position": "attacker_long"
-    },
-    {
-      "id": 1973305,
-      "name": "Mia Dixon",
-      "shirt_number": "England",
-      "role": "attackers",
-      "position": "attacker_long"
-    }
-  ]
-}
+[
+  {"player": "Daphne van Domselaar", "name_he": "דפנה ואן דומסלאר", "pos": "GK", "no": "1", "nation": "NED"},
+  {"player": "Misa Rodríguez", "name_he": "מיסה רודריגז", "pos": "GK", "no": "13", "nation": "ESP"},
+  {"player": "Anneke Borbe", "name_he": "אנקה בורבה", "pos": "GK", "no": "24", "nation": "GER"},
+  {"player": "Isabella Daam", "name_he": "איזבלה דאם", "pos": "GK", "no": null, "nation": "ENG"},
+  {"player": "Amy Liddiard", "name_he": "איימי לידיארד", "pos": "GK", "no": null, "nation": "ENG"},
+  {"player": "Emily Fox", "name_he": "אמילי פוקס", "pos": "DF", "no": "2", "nation": "USA"},
+  {"player": "Lotte Wubben-Moy", "name_he": "לוטה וובן-מוי", "pos": "DF", "no": "3", "nation": "ENG"},
+  {"player": "Leah Williamson", "name_he": "ליאה ויליאמסון", "pos": "DF", "no": "6", "nation": "ENG"},
+  {"player": "Steph Catley", "name_he": "סטפני קאטלי", "pos": "DF", "no": "7", "nation": "AUS"},
+  {"player": "Taylor Hinds", "name_he": "טיילור היינדס", "pos": "DF", "no": "12", "nation": "ENG"},
+  {"player": "Ona Batlle", "name_he": "אונה באטייה", "pos": "DF", "no": "22", "nation": "ESP"},
+  {"player": "Smilla Holmberg", "name_he": "סמילה הולמברג", "pos": "DF", "no": "25", "nation": "SWE"},
+  {"player": "Katie Reid", "name_he": "קייטי ריד", "pos": "DF", "no": "28", "nation": "ENG"},
+  {"player": "Niamh Lucy Peacock", "name_he": "ניאם לוסי פיקוק", "pos": "DF", "no": null, "nation": "ENG"},
+  {"player": "Georgia Stanway", "name_he": "ג'ורג'יה סטאנוויי ('G')", "pos": "MF", "no": "8", "nation": "ENG"},
+  {"player": "Kim Little", "name_he": "קים ליטל", "pos": "MF", "no": "10", "nation": "SCO"},
+  {"player": "Frida Maanum", "name_he": "פרידה מאנום", "pos": "MF", "no": "12", "nation": "NOR"},
+  {"player": "Géraldine Reuteler", "name_he": "ז'רלדין רויטלר", "pos": "MF", "no": "14", "nation": "SUI"},
+  {"player": "Lisa Baum", "name_he": "ליסה באום", "pos": "MF", "no": "19", "nation": "GER"},
+  {"player": "Kyra Cooney-Cross", "name_he": "קיירה קוני-קרוס", "pos": "MF", "no": "32", "nation": "AUS"},
+  {"player": "Sophie Harwood", "name_he": "סופי הארווד", "pos": "MF", "no": null, "nation": "ENG"},
+  {"player": "Bryony-Rose Brodie", "name_he": "בריאוני-רוז ברודי", "pos": "MF", "no": null, "nation": "ENG"},
+  {"player": "Mariona Caldentey", "name_he": "מריונה קלדנטיי", "pos": "FW", "no": "8", "nation": "ESP"},
+  {"player": "Selina Cerci", "name_he": "סלינה צ'רצ'י", "pos": "FW", "no": "9", "nation": "GER"},
+  {"player": "Rosa Kafaji", "name_he": "רוזה קפאג'י", "pos": "FW", "no": "16", "nation": "SWE"},
+  {"player": "Chloe Kelly", "name_he": "קלואי קלי", "pos": "FW", "no": "18", "nation": "ENG"},
+  {"player": "Caitlin Foord", "name_he": "קייטלין פורד", "pos": "FW", "no": "19", "nation": "AUS"},
+  {"player": "Olivia Smith", "name_he": "אוליביה סמית'", "pos": "FW", "no": "20", "nation": "CAN"},
+  {"player": "Alessia Russo", "name_he": "אלסיה רוסו", "pos": "FW", "no": "23", "nation": "ENG"},
+  {"player": "Stina Blackstenius", "name_he": "סטינה בלקסטניוס", "pos": "FW", "no": "25", "nation": "SWE"},
+  {"player": "Michelle Agyemang", "name_he": "מישל אג'ימאן ('מיש')", "pos": "FW", "no": "27", "nation": "ENG"},
+  {"player": "Mia Dixon", "name_he": "מיה דיקסון", "pos": "FW", "no": null, "nation": "ENG"},
+  {"player": "Vivienne Lia", "name_he": "ויויאן ליא", "pos": "FW", "no": null, "nation": "ENG"}
+]

@@ -1,0 +1,101 @@
+{
+  "team": "Arsenal Women",
+  "season": "2026/27",
+  "summary": {
+    "total_new_signings": 6,
+    "total_departures": 3,
+    "net_spend_estimate": "High Impact",
+    "headline": "חיזוק ממוקד ברמות העולמיות הגבוהות ביותר: באטייה מברצלונה וסטאנוויי מבאיירן"
+  },
+  "transfers_in": [
+    {
+      "player": "Ona Batlle",
+      "name_he": "אונה באטייה",
+      "pos": "DF",
+      "no": "22",
+      "nation": "ESP",
+      "from": "Barcelona",
+      "role": "מגנת-על בשני האגפים, שדרוג טכני וקידום כדור"
+    },
+    {
+      "player": "Georgia Stanway ('G')",
+      "name_he": "ג'ורג'יה סטאנוויי",
+      "pos": "MF",
+      "no": "8",
+      "nation": "ENG",
+      "from": "Bayern Munich",
+      "role": "מנוע הקישור, חילוצים בשליש ההתקפי ואיום מרחוק"
+    },
+    {
+      "player": "Lisa Baum",
+      "name_he": "ליסה באום",
+      "pos": "MF/FW",
+      "no": "19",
+      "nation": "GER",
+      "from": "Hamburger SV",
+      "role": "שחקנית כנף גרמנייה צעירה ונפיצה"
+    },
+    {
+      "player": "Misa Rodríguez",
+      "name_he": "מיסה רודריגז",
+      "pos": "GK",
+      "no": "13",
+      "nation": "ESP",
+      "from": "Real Madrid",
+      "role": "שוערת נבחרת ספרד"
+    },
+    {
+      "player": "Géraldine Reuteler",
+      "name_he": "ז'רלדין רויטלר",
+      "pos": "MF",
+      "no": "14",
+      "nation": "SUI",
+      "from": "Eintracht Frankfurt",
+      "role": "קשרית מרכזית אגרסיבית"
+    },
+    {
+      "player": "Selina Cerci",
+      "name_he": "סלינה צ'רצ'י",
+      "pos": "FW",
+      "no": "9",
+      "nation": "GER",
+      "from": "TSG Hoffenheim",
+      "role": "חלוצה מרכזית מסוכנת ברחבה"
+    },
+    {
+      "player": "Michelle Agyemang ('מיש')",
+      "name_he": "מישל אג'ימאן",
+      "pos": "FW",
+      "no": "27",
+      "nation": "ENG",
+      "from": "חזרה מפציעה / אקדמיה",
+      "role": "חלוצת 9 פיזית ועוצמתית מול בלוקים נמוכים"
+    }
+  ],
+  "transfers_out": [
+    {
+      "player": "Katie McCabe",
+      "name_he": "קייטי מקייב",
+      "pos": "DF/MF",
+      "min": 1512,
+      "to": "Chelsea",
+      "impact": "עזיבה דרמטית ליריבה המרה על התואר"
+    },
+    {
+      "player": "Beth Mead ('מידו')",
+      "name_he": "בת' מיד",
+      "pos": "FW",
+      "min": 1014,
+      "to": "Manchester City",
+      "impact": "מעבר ישיר לטוענת לכתר"
+    },
+    {
+      "player": "Victoria Pelova",
+      "name_he": "ויקטוריה פלובה",
+      "pos": "MF",
+      "min": 726,
+      "to": "עזיבה",
+      "impact": "קשרית יצירתית שפינתה מקום לסטאנוויי"
+    }
+  ]
+}
