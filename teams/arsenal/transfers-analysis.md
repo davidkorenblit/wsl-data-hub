@@ -283,7 +283,7 @@ next_title: "חלק ו': תחזית העונה המורחבת"
     { id: "hinds", name: "Taylor Hinds", nameHe: "היינדס", pos: "DF", no: "12" },
     { id: "holmberg", name: "Smilla Holmberg", nameHe: "הולמברג", pos: "DF", no: "25" },
     { id: "little", name: "Kim Little", nameHe: "ליטל", pos: "MF", no: "10" },
-    { id: "stanway", name: "Georgia Stanway", nameHe: "סטאנוויי", pos: "MF", no: "8" },
+    { id: "stanway", name: "Georgia Stanway", nameHe: "סטאנוויי", pos: "MF", no: "4" },
     { id: "maanum", name: "Frida Maanum", nameHe: "מאנום", pos: "MF", no: "12" },
     { id: "reuteler", name: "Géraldine Reuteler", nameHe: "רויטלר", pos: "MF", no: "14" },
     { id: "baum", name: "Lisa Baum", nameHe: "ליסה באום", pos: "MF", no: "19" },
