@@ -106,20 +106,26 @@
           <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] overflow-hidden space-y-4 p-4">
             <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-2">
               <span class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider">
-                תנועת שחקניות · קיץ 2025
+                תנועת שחקניות · חלון העברות
               </span>
               <span class="text-[10px] font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 px-1.5 py-0.5 rounded font-bold">
                 OFFICIAL
               </span>
             </div>
 
-            {% assign transfers = site.data.lcl_transfers_2025 %}
+            {% assign transfers = site.data.transfers[page.team_slug] %}
+            {% unless transfers %}
+              {% if page.team_slug == 'london-city-lionesses' %}
+                {% assign transfers = site.data.lcl_transfers_2025 %}
+              {% endif %}
+            {% endunless %}
+
             {% if transfers %}
             <!-- Transfers In -->
             <div class="space-y-2">
               <div class="flex items-center justify-between text-xs font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2.5 py-1 rounded border border-emerald-200 dark:border-emerald-800">
                 <span>📥 הצטרפו ({{ transfers.summary.total_new_signings }})</span>
-                <span class="text-[10px] font-mono font-normal">קיץ 2025</span>
+                <span class="text-[10px] font-mono font-normal">{{ transfers.season | default: '2026/27' }}</span>
               </div>
               <ul class="divide-y divide-neutral-100 dark:divide-neutral-800 text-xs font-sans">
                 {% for p in transfers.transfers_in %}
