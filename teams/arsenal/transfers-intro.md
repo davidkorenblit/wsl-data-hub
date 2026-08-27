@@ -63,7 +63,7 @@ next_title: "חלק ה': קומבינציות טקטיות ועומק"
           <tr class="bg-slate-900/80 border-b border-slate-800 text-slate-400 font-mono text-xs">
             <th class="py-2.5 px-3 font-semibold text-slate-300">מדד איכות (Per 90)</th>
             <th class="py-2.5 px-3 font-semibold text-center text-sky-400">אונה באטייה (ברצלונה)</th>
-            <th class="py-2.5 px-3 font-semibold text-center text-rose-400">קייטי מקייב (ארסנל $\rightarrow$ צ'לסי)</th>
+            <th class="py-2.5 px-3 font-semibold text-center text-rose-400">קייטי מקייב (ארסנל לעבר צ'לסי)</th>
             <th class="py-2.5 px-3 font-semibold text-slate-300">משמעות טקטית ויתרון יחסי</th>
           </tr>
         </thead>

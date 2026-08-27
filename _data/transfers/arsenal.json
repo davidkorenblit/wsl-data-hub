@@ -2,8 +2,8 @@
   "team": "Arsenal Women",
   "season": "2026/27",
   "summary": {
-    "total_new_signings": 6,
-    "total_departures": 3,
+    "total_new_signings": 7,
+    "total_departures": 6,
     "net_spend_estimate": "High Impact",
     "headline": "חיזוק ממוקד ברמות העולמיות הגבוהות ביותר: באטייה מברצלונה וסטאנוויי מבאיירן"
   },
@@ -96,6 +96,30 @@
       "min": 726,
       "to": "עזיבה",
       "impact": "קשרית יצירתית שפינתה מקום לסטאנוויי"
+    },
+    {
+      "player": "Laia Codina",
+      "name_he": "לאיה קודינה",
+      "pos": "DF",
+      "min": 645,
+      "to": "Atletico Madrid",
+      "impact": "בלמית רוטציה שעזבה לספרד"
+    },
+    {
+      "player": "Manuela Zinsberger",
+      "name_he": "מנואלה צינסברגר",
+      "pos": "GK",
+      "min": 540,
+      "to": "עזיבה",
+      "impact": "שוערת ותיקה שפינתה את מקומה למיסה רודריגז"
+    },
+    {
+      "player": "Lina Hurtig",
+      "name_he": "לינה הורטיג",
+      "pos": "FW",
+      "min": 210,
+      "to": "עזיבה",
+      "impact": "שחקנית כנף שעזבה"
     }
   ]
 }
