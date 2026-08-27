@@ -126,15 +126,7 @@ next_title: "חלק ה': קומבינציות טקטיות ועומק"
     וכפי שראינו בחלק הקודם – להתחיל לאט זה משהו שארסנל, יותר מכל קבוצה אחרת, לא יכולה להרשות לעצמה שוב.
   </p>
 
-  <!-- Bottom Navigation Callout -->
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-[#121215] p-4 my-6 flex items-center justify-between">
-    <div>
-      <div class="text-xs font-mono text-neutral-500 uppercase">הפרק הבא בסדרה</div>
-      <div class="text-sm font-bold text-neutral-900 dark:text-white">חלק ה': 3 הפרצופים של ארסנל – קומבינציות טקטיות, סטאנוויי ועומק ההתקפה</div>
-    </div>
-    <a href="{{ '/teams/arsenal/transfers-analysis/' | relative_url }}" class="text-xs font-bold text-primary-600 dark:text-primary-400 hover:underline">
-      קראו את חלק ה' ←
-    </a>
-  </div>
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>
