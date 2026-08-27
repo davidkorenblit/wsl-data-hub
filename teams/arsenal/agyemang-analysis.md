@@ -174,7 +174,7 @@ next_title: "חלק ז': תחזית העונה המורחבת"
       </div>
       <div class="p-3.5 rounded bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
         <strong class="text-sky-400 block mb-1">2. תקדים סלמה פאראיוואלו:</strong>
-        פאראיוואלו קרעה צולבת בגיל 17.5 בוויאריאל. שנתיים לאחר מכן, בברצלונה, היא רשמה 0.88 שערים ל-90 ושמרה על 100% ממהירות השיא שלה (מעל 32.5 קמ"ש).
+        פאראיוואלו קרעה צולבת בגיל 17.5 בוויאריאל. שנתיים לאחר מכן (בברצלונה, וכיום בליון) היא רשמה 0.88 שערים ל-90, הגיעה לטופ 5 בכדור הזהב ושמרה על 100% ממהירות השיא שלה (מעל 32.5 קמ"ש).
       </div>
       <div class="p-3.5 rounded bg-slate-900/60 border border-slate-800 text-xs text-slate-300">
         <strong class="text-sky-400 block mb-1">3. יעילות כמחליפת-על:</strong>
@@ -196,7 +196,7 @@ next_title: "חלק ז': תחזית העונה המורחבת"
         </thead>
         <tbody class="divide-y divide-neutral-200 dark:divide-neutral-800 text-neutral-800 dark:text-neutral-200">
           <tr>
-            <td class="p-2.5 font-bold text-sky-600 dark:text-sky-400">סלמה פאראיוואלו</td>
+            <td class="p-2.5 font-bold text-sky-600 dark:text-sky-400">סלמה פאראיוואלו (כיום בליון)</td>
             <td class="p-2.5 text-center font-mono">17.5</td>
             <td class="p-2.5 text-center font-mono">0.38</td>
             <td class="p-2.5 text-center font-mono text-emerald-600 dark:text-emerald-400 font-bold">0.88</td>
