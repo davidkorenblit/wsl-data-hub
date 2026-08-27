@@ -4,7 +4,7 @@ title: "Arsenal - חלק ה': קומבינציות טקטיות ועומק הס�
 team_name: "Arsenal Women"
 team_slug: "arsenal"
 team_meta: "WSL 2026/27 · חלק ה': לוח מגנטים טקטי וקומבינציות הסגל"
-sidebar: transfers
+hide_sidebar: true
 permalink: /teams/arsenal/transfers-analysis/
 prev_url: /teams/arsenal/transfers-intro/
 prev_title: "חלק ד': חלון ההעברות ואונה באטייה"

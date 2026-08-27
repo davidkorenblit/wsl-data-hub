@@ -23,34 +23,54 @@ next_title: "חזרה לדף הקבוצה הראשי"
       תחזית לעונת 2026/27: פחד אלוהים והדרך לכתר
     </h1>
     <p class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 font-sans">
-      שקלול הדלתות של באטייה, סטאנוויי והעומק של סלחרס מול בסיס 51 הנקודות — האם יש מי שתעצור אותן?
+      שקלול הדלתות של באטייה, סטאנוויי והעומק של רנה מול בסיס 51 הנקודות — האם יש מי שתעצור אותן?
     </p>
   </div>
 
   <!-- Main Narrative Section: Qualitative & Quantitative Projections -->
   <article class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-5 sm:p-7 space-y-6 text-neutral-900 dark:text-neutral-100 text-base sm:text-lg leading-relaxed">
     
-    <!-- Part 1: Quantitative Projection Model (26 Games) -->
+    <!-- Part 1: Quantitative Linear Regression Model (26 Games) -->
     <div class="space-y-3">
       <h3 class="text-lg font-bold text-neutral-900 dark:text-white border-r-4 border-emerald-500 pr-3">
-        1. התחזית המספרית (המודל הכמותי ל-26 מחזורים)
+        1. התחזית המספרית: מודל רגרסיה ליניארית (26 מחזורים)
       </h3>
       
       <p>
-        בעונה מורחבת של 14 קבוצות (26 מחזורים), ארסנל יוצאת מנקודת פתיחה של <strong>51 נקודות ב-22 מחזורים (2.32 נקודות למשחק)</strong> עם ההגנה הטובה בליגה (14 ספיגות בלבד).
+        בעונה מורחבת של 14 קבוצות (26 מחזורים), ארסנל יוצאת מנקודת פתיחה של <strong>51 נקודות ב-22 מחזורים (2.32 נקודות למשחק)</strong>, שמתורגמות לבסיס של <strong>60.3 נקודות ב-26 מחזורים</strong> עם 62.6 שערי זכות ו-16.5 שערי חובה.
+      </p>
+
+      <p>
+        מודל הרגרסיה משקלל את תוספת האיכות של חלון ההעברות ואת תיקון "גמגום הפתיחה":
       </p>
 
       <ul class="list-disc list-inside space-y-2 text-sm sm:text-base text-neutral-700 dark:text-neutral-300 pr-2">
         <li>
-          <strong>השדרוג במודולריות ועומס (באטייה + סטאנוויי + באום + אג'ימאן):</strong> מונע את איבודי הנקודות מול בונקרים צפופים (הבעיה הכרונית של ארסנל בעונות הקודמות).
+          <strong>השדרוג ההתקפי (באטייה + סטאנוויי + באום + אג'ימאן):</strong> תוספת נטו של <strong>5.5+ שערי זכות</strong> (הבקעה שעולה ל-<strong>68.1 שערים</strong>). שדרוג זה מניב תוספת ישירה של <strong>3.2+ נקודות</strong>.
         </li>
         <li>
-          <strong>תחזית כיבוש וספיגה:</strong> קצב ההבקעה הצפוי עולה ל-<strong>66–70 שערים</strong>, תוך שמירה על ספיגה של <strong>15–18 שערים ב-26 משחקים</strong> (הפרש שערים צפוי של <strong>50+</strong>).
+          <strong>השדרוג ההגנתי (באטייה בשמאל + סטאנוויי מונעת מעברים):</strong> חיסכון של <strong>2.0- שערי חובה</strong> (ספיגה של <strong>14.5 שערים בלבד ב-26 מחזורים</strong>). שדרוג זה מוסיף <strong>1.2+ נקודות</strong>.
         </li>
         <li>
-          <strong>סך נקודות חזוי (xPTS Ceiling):</strong> המודל מציב את ארסנל בטווח של <strong>64–68 נקודות</strong> – רף שמציב אותה באופן מובהק בתוך <strong>Title Winning Zone</strong> כפייבוריטית הראשית לזכייה בתואר.
+          <strong>תיקון פתיחת העונה (Bench Resilience):</strong> בעונה שעברה ארסנל איבדה 7 מתוך 15 הנקודות שלה בחמשת המחזורים הראשונים. עם סגל מוכן ומודולרי, המודל מחזיר <strong>1.8+ נקודות</strong> של מניעת איבודי נקודות מוקדמים מול יריבות קטנות.
+        </li>
+        <li>
+          <strong>השורה התחתונה במודל:</strong> סך הנקודות הצפוי עולה ל-<strong>66.5 נקודות (טווח של 64–68 נקודות)</strong> עם הפרש שערים אדיר של <strong>53.6+</strong>.
         </li>
       </ul>
+    </div>
+
+    <!-- Scenarios Matrix Graphic -->
+    <div class="rounded border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-[#0b1329] p-2 sm:p-4 my-4">
+      <img 
+        src="{{ '/assets/images/evaluations/arsenal_scenarios_matrix.png' | relative_url }}" 
+        alt="Arsenal 2026/27 3-Scenarios Title Forecast Matrix" 
+        class="w-full h-auto rounded shadow-lg"
+        loading="lazy"
+      />
+      <div class="text-[11px] font-mono text-neutral-400 text-center mt-2" dir="ltr">
+        WSL Empirical 26-Match Regression Model: Scenarios & Title Thresholds
+      </div>
     </div>
 
     <!-- Part 2: Qualitative Conclusions (User Narrative) -->
