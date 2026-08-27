@@ -52,21 +52,21 @@ next_title: "חלק ז': תחזית העונה המורחבת"
   <!-- Player Background Cards -->
   <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 my-6">
     <div class="p-4 rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/60">
-      <div class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mb-1 font-bold uppercase">נבחרות צעירות של אנגליה</div>
-      <div class="text-2xl font-bold font-mono text-primary-600 dark:text-primary-400">17 שערים ב-18 מש'</div>
-      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">11 ב-10 הופעות ב-U17, ו-6 ב-8 הופעות ב-U19</div>
+      <div class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mb-1 font-bold uppercase">נבחרת אנגליה הבוגרת ויורו 2025</div>
+      <div class="text-2xl font-bold font-mono text-primary-600 dark:text-primary-400">3 שערים ב-7 הופ'</div>
+      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1"><strong>2 שערים ביורו 2025 (שוויץ)</strong> כמחליפת-על + שער בליגת האומות</div>
     </div>
     
     <div class="p-4 rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/60">
-      <div class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mb-1 font-bold uppercase">השאלות בבוגרות (ווטפורד וברייטון)</div>
-      <div class="text-2xl font-bold font-mono text-emerald-600 dark:text-emerald-400">10 שערים ו-3 ביש'</div>
-      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">שער/בישול כל 97 דקות בצ'מפיונשיפ + 5 שערים ב-WSL</div>
+      <div class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mb-1 font-bold uppercase">נבחרות אנגליה הצעירות (U17–U23)</div>
+      <div class="text-2xl font-bold font-mono text-emerald-600 dark:text-emerald-400">20 שערים ב-27 מש'</div>
+      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">10 שערים ב-U17, 8 ב-U19 ו-2 בנבחרת U23</div>
     </div>
 
     <div class="p-4 rounded border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-900/60">
       <div class="text-xs font-mono text-neutral-500 dark:text-neutral-400 mb-1 font-bold uppercase">סחיטת עבירות ונוכחות</div>
       <div class="text-2xl font-bold font-mono text-amber-600 dark:text-amber-400">2.81 עבירות / 90</div>
-      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">אחוזון 72 באירופה – מגנט פיזי למשיכת בלמיות</div>
+      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1">אחוזון 72 באירופה – מגנט פיזי שמפרק בלמיות</div>
     </div>
   </div>
 
