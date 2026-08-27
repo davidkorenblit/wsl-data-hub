@@ -2,8 +2,8 @@
   "team": "Arsenal Women",
   "season": "2026/27",
   "summary": {
-    "total_new_signings": 7,
-    "total_departures": 6,
+    "total_new_signings": 6,
+    "total_departures": 4,
     "net_spend_estimate": "High Impact",
     "headline": "חיזוק ממוקד ברמות העולמיות הגבוהות ביותר: באטייה מברצלונה וסטאנוויי מבאיירן"
   },
@@ -18,7 +18,7 @@
       "role": "מגנת-על בשני האגפים, שדרוג טכני וקידום כדור"
     },
     {
-      "player": "Georgia Stanway ('G')",
+      "player": "Georgia Stanway",
       "name_he": "ג'ורג'יה סטאנוויי",
       "pos": "MF",
       "no": "8",
@@ -61,15 +61,6 @@
       "nation": "GER",
       "from": "TSG Hoffenheim",
       "role": "חלוצה מרכזית מסוכנת ברחבה"
-    },
-    {
-      "player": "Michelle Agyemang ('מיש')",
-      "name_he": "מישל אג'ימאן",
-      "pos": "FW",
-      "no": "27",
-      "nation": "ENG",
-      "from": "חזרה מפציעה / אקדמיה",
-      "role": "חלוצת 9 פיזית ועוצמתית מול בלוקים נמוכים"
     }
   ],
   "transfers_out": [
@@ -79,15 +70,15 @@
       "pos": "DF/MF",
       "min": 1512,
       "to": "Chelsea",
-      "impact": "עזיבה דרמטית ליריבה המרה על התואר"
+      "impact": "עזיבה ליריבה על התואר"
     },
     {
-      "player": "Beth Mead ('מידו')",
+      "player": "Beth Mead",
       "name_he": "בת' מיד",
       "pos": "FW",
       "min": 1014,
       "to": "Manchester City",
-      "impact": "מעבר ישיר לטוענת לכתר"
+      "impact": "מעבר למנצ'סטר סיטי"
     },
     {
       "player": "Victoria Pelova",
@@ -95,31 +86,15 @@
       "pos": "MF",
       "min": 726,
       "to": "עזיבה",
-      "impact": "קשרית יצירתית שפינתה מקום לסטאנוויי"
+      "impact": "קשרית יצירתית"
     },
     {
       "player": "Laia Codina",
       "name_he": "לאיה קודינה",
       "pos": "DF",
       "min": 645,
-      "to": "Atletico Madrid",
-      "impact": "בלמית רוטציה שעזבה לספרד"
-    },
-    {
-      "player": "Manuela Zinsberger",
-      "name_he": "מנואלה צינסברגר",
-      "pos": "GK",
-      "min": 540,
-      "to": "עזיבה",
-      "impact": "שוערת ותיקה שפינתה את מקומה למיסה רודריגז"
-    },
-    {
-      "player": "Lina Hurtig",
-      "name_he": "לינה הורטיג",
-      "pos": "FW",
-      "min": 210,
-      "to": "עזיבה",
-      "impact": "שחקנית כנף שעזבה"
+      "to": "Brighton & Hove Albion",
+      "impact": "בלמית שעזבה לברייטון"
     }
   ]
 }
