@@ -60,16 +60,16 @@ next_title: "חזרה לדף הקבוצה הראשי"
       </ul>
     </div>
 
-    <!-- Scenarios Matrix Graphic -->
-    <div class="rounded border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-[#0b1329] p-2 sm:p-4 my-4">
+    <!-- Radar Chart Graphic -->
+    <div class="rounded border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-[#0b1329] p-2 sm:p-4 my-4 flex flex-col items-center">
       <img 
-        src="{{ '/assets/images/evaluations/arsenal_scenarios_matrix.png' | relative_url }}" 
-        alt="Arsenal 2026/27 3-Scenarios Title Forecast Matrix" 
-        class="w-full h-auto rounded shadow-lg"
+        src="{{ '/assets/images/evaluations/arsenal_projection_radar.png' | relative_url }}" 
+        alt="Arsenal 2026/27 Title Projection Radar Chart" 
+        class="w-full max-w-lg h-auto rounded shadow-lg"
         loading="lazy"
       />
       <div class="text-[11px] font-mono text-neutral-400 text-center mt-2" dir="ltr">
-        WSL Empirical 26-Match Regression Model: Scenarios & Title Thresholds
+        WSL Empirical Projection Radar · Baseline 2025/26 vs 2026/27 Title Ceiling
       </div>
     </div>
 
