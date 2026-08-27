@@ -24,89 +24,103 @@ next_title: "חלק ו': תחזית העונה המורחבת"
     </h1>
   </div>
 
-  <!-- Opening Placeholder -->
+  <!-- Opening Narrative Section (User Drafting Area) -->
   <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
     כפרה עובדים (פסקת פתיחה על ורסטיליות, עומק ולוח המגנטים של סלחרס)
   </div>
 
-  <!-- Interactive Tactical Board Section -->
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-4 sm:p-6 my-6 shadow-xl select-none" id="tactical-board-app">
-    
-    <!-- Header & Controls -->
-    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-800 pb-4 mb-4">
-      <div>
-        <div class="flex items-center gap-2">
-          <span class="text-xl">📋</span>
-          <h3 class="text-base sm:text-lg font-bold text-white">לוח מגנטים טקטי חופשי (Tactical Board)</h3>
-          <span id="player-count-badge" class="text-[11px] font-mono px-2 py-0.5 rounded font-bold border border-emerald-500/40 bg-emerald-950/60 text-emerald-400">
-            11 / 11 שחקניות במגרש
-          </span>
-        </div>
-        <p class="text-xs text-slate-400 font-sans mt-0.5">
-          גררו מגנטים בחופשיות לכל נקודה במגרש, הוסיפו מהספסל או הסירו מגנט בלחיצה (✖)
+  <!-- Collapsible Interactive Tactical Lab -->
+  <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-4 sm:p-5 my-6 shadow-xl" open>
+    <summary class="cursor-pointer font-bold text-base text-neutral-900 dark:text-white flex items-center justify-between select-none list-none">
+      <div class="space-y-0.5">
+        <span class="flex items-center gap-2">
+          <span>🧪 מעבדה טקטית אינטראקטיבית: לוח המגנטים של ארסנל</span>
+          <span class="text-[10px] font-mono bg-sky-500/20 text-sky-400 px-2 py-0.5 rounded border border-sky-500/30">LAB</span>
+        </span>
+        <p class="text-xs text-slate-400 font-normal">
+          לחצו כאן כדי להציג/להסתיר את המגרש, להתנסות בהרכבים שונים ולגרור מגנטים בחופשיות
         </p>
       </div>
+      <span class="text-xs font-mono text-primary-600 dark:text-primary-400 px-2.5 py-1 rounded bg-neutral-100 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700">
+        הצג / הסתר מעבדה
+      </span>
+    </summary>
 
-      <!-- Presets & Reset Buttons -->
-      <div class="flex flex-wrap items-center gap-1.5 font-mono text-xs">
-        <button onclick="setFormation('combo1')" id="btn-combo1" class="px-2.5 py-1.5 rounded font-bold transition-all bg-sky-600 text-white shadow">
-          4-2-3-1 (בלוק נמוך)
-        </button>
-        <button onclick="setFormation('combo2')" id="btn-combo2" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
-          4-3-3 (מכבש לחץ)
-        </button>
-        <button onclick="setFormation('combo3')" id="btn-combo3" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
-          4-4-2 (צמד חלוצות)
-        </button>
-        <button onclick="clearPitch()" class="px-2 py-1.5 rounded font-bold transition-all bg-rose-950/40 text-rose-400 border border-rose-800/60 hover:bg-rose-900/60">
-          נקה לוח
-        </button>
+    <div class="pt-4 border-t border-slate-800 mt-4 select-none" id="tactical-board-app">
+      <!-- Header & Controls -->
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-3 mb-3 border-b border-slate-800/80">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="text-sm font-bold text-white">לוח מגנטים חופשי</span>
+            <span id="player-count-badge" class="text-[11px] font-mono px-2 py-0.5 rounded font-bold border border-emerald-500/40 bg-emerald-950/60 text-emerald-400">
+              11 / 11 שחקניות במגרש
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 font-sans mt-0.5">
+            גררו מגנטים בחופשיות לכל נקודה, הוסיפו מהספסל או מחקו מגנט בלחיצה (✖)
+          </p>
+        </div>
+
+        <!-- Presets & Reset Buttons -->
+        <div class="flex flex-wrap items-center gap-1.5 font-mono text-xs">
+          <button onclick="setFormation('combo1')" id="btn-combo1" class="px-2.5 py-1.5 rounded font-bold transition-all bg-sky-600 text-white shadow">
+            4-2-3-1 (בלוק נמוך)
+          </button>
+          <button onclick="setFormation('combo2')" id="btn-combo2" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
+            4-2-3-1 (קבוצות טופ)
+          </button>
+          <button onclick="setFormation('combo3')" id="btn-combo3" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
+            4-3-3 (אירופה ומעברים)
+          </button>
+          <button onclick="clearPitch()" class="px-2 py-1.5 rounded font-bold transition-all bg-rose-950/40 text-rose-400 border border-rose-800/60 hover:bg-rose-900/60">
+            נקה לוח
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Preset Description Box -->
+      <div id="preset-info-box" class="mb-4 p-3 rounded bg-slate-900/90 border border-slate-800 text-xs font-sans text-slate-300">
+        <strong class="text-sky-400">קומבינציה א' (4-2-3-1 אסימטרי):</strong> רוסו ב-10 חופשית, סטינה/מיש כ-9 פיזית. מריונה בימין נכנסת פנימה ומפנה את כל הקו לסמילה הולמברג שעולה בספרינטים, כשליטל וסטאנוויי סוגרות את האמצע.
+      </div>
+
+      <!-- The 2D Tactical Football Pitch (Free Drag Surface) -->
+      <div id="pitch-container" class="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden border-2 border-emerald-500/40 shadow-2xl touch-none" style="height: 520px; background: radial-gradient(circle at center, #064e3b 0%, #022c22 100%);">
+        
+        <!-- Pitch Markings -->
+        <div class="absolute inset-2 border-2 border-white/20 rounded pointer-events-none"></div>
+        <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-white/20 -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-white/20 rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white/40 rounded-full pointer-events-none"></div>
+
+        <!-- Top Goal Area (Opponent Box) -->
+        <div class="absolute top-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-t-0 pointer-events-none"></div>
+        <div class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-t-0 pointer-events-none"></div>
+
+        <!-- Bottom Goal Area (Arsenal Box) -->
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-b-0 pointer-events-none"></div>
+        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-b-0 pointer-events-none"></div>
+
+        <!-- Pitch Drop Target / Magnets Area -->
+        <div id="pitch-magnets-layer" class="absolute inset-0">
+          <!-- Draggable magnets injected here -->
+        </div>
+      </div>
+
+      <!-- Bench / Player Magnet Pool -->
+      <div class="mt-5 pt-4 border-t border-slate-800">
+        <div class="flex items-center justify-between mb-2.5">
+          <span class="text-xs font-mono font-bold text-slate-300 uppercase tracking-wider">
+            מאגר שחקניות (לחצו על שחקנית להוספה למגרש):
+          </span>
+          <span class="text-[11px] font-mono text-slate-400">ניתן להציב עד 11 שחקניות</span>
+        </div>
+        
+        <div class="flex flex-wrap gap-1.5" id="bench-container">
+          <!-- Rendered by JS -->
+        </div>
       </div>
     </div>
-
-    <!-- Active Preset Description Box -->
-    <div id="preset-info-box" class="mb-4 p-3 rounded bg-slate-900/90 border border-slate-800 text-xs font-sans text-slate-300">
-      <strong class="text-sky-400">קומבינציה א' (4-2-3-1 אסימטרי):</strong> רוסו ב-10 חופשית, סטינה/מיש כ-9 פיזית. מריונה בימין נכנסת פנימה ומפנה את כל הקו לסמילה הולמברג שעולה בספרינטים, כשליטל וסטאנוויי סוגרות את האמצע.
-    </div>
-
-    <!-- The 2D Tactical Football Pitch (Free Drag Surface) -->
-    <div id="pitch-container" class="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden border-2 border-emerald-500/40 shadow-2xl touch-none" style="height: 520px; background: radial-gradient(circle at center, #064e3b 0%, #022c22 100%);">
-      
-      <!-- Pitch Markings -->
-      <div class="absolute inset-2 border-2 border-white/20 rounded pointer-events-none"></div>
-      <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-white/20 -translate-y-1/2 pointer-events-none"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-white/20 rounded-full pointer-events-none"></div>
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white/40 rounded-full pointer-events-none"></div>
-
-      <!-- Top Goal Area (Opponent Box) -->
-      <div class="absolute top-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-t-0 pointer-events-none"></div>
-      <div class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-t-0 pointer-events-none"></div>
-
-      <!-- Bottom Goal Area (Arsenal Box) -->
-      <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-b-0 pointer-events-none"></div>
-      <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-b-0 pointer-events-none"></div>
-
-      <!-- Pitch Drop Target / Magnets Area -->
-      <div id="pitch-magnets-layer" class="absolute inset-0">
-        <!-- Draggable magnets injected here -->
-      </div>
-    </div>
-
-    <!-- Bench / Player Magnet Pool -->
-    <div class="mt-5 pt-4 border-t border-slate-800">
-      <div class="flex items-center justify-between mb-2.5">
-        <span class="text-xs font-mono font-bold text-slate-300 uppercase tracking-wider">
-          מאגר שחקניות (לחצו על שחקנית להוספה למגרש):
-        </span>
-        <span class="text-[11px] font-mono text-slate-400">ניתן להציב עד 11 שחקניות</span>
-      </div>
-      
-      <div class="flex flex-wrap gap-1.5" id="bench-container">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-
-  </div>
+  </details>
 
   <!-- Combination 1 Analysis Narrative -->
   <article class="space-y-3 pt-2">
@@ -121,20 +135,30 @@ next_title: "חלק ו': תחזית העונה המורחבת"
   <!-- Combination 2 Analysis Narrative -->
   <article class="space-y-3 pt-2">
     <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>2. קומבינציה ב': מכבש הלחץ הגבוה ומעברים מהירים (4-3-3)</span>
+      <span>2. קומבינציה ב': מול קבוצות הטופ ותקיפת שטחים פנויים (4-2-3-1)</span>
     </h2>
     <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים סבלנות (מריונה מנהלת מעברים, רוסו וסטינה לוחצות גבוה, סטאנוויי חונקת את הקישור מול צ'לסי וסיטי)
+      כפרה עובדים סבלנות (רוסו ב-10, סטינה/מיש בשפיץ, מריונה וסמית' באגפים, G וליטל בדאבל פיבוט של שליטה ועוצמה מול צ'לסי וסיטי)
     </div>
   </article>
 
   <!-- Combination 3 Analysis Narrative -->
   <article class="space-y-3 pt-2">
     <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>3. קומבינציה ג': שליטה סבלנית, הגנה וניהול קצב (4-3-3)</span>
+      <span>3. קומבינציה ג': מול אריות אירופה ומעברים מהירים (4-3-3)</span>
     </h2>
     <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים (קישור מעובה, משחקי חוץ בצ'מפיונס ליג ונעילת משחק)
+      כפרה עובדים (כשאין לארסנל את הכדור מול ברצלונה/אירופה – הגנה קומפקטית, סטאנוויי-רויטלר-ליטל באמצע, ויציאה מהירה לרוסו, סטינה וקלי)
+    </div>
+  </article>
+
+  <!-- Combination 4 Analysis Narrative (Chasing Goal / Edge Case) -->
+  <article class="space-y-3 pt-2">
+    <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+      <span>4. קומבינציה ד': מקרה קצה – "חייבים גול בדקה ה-80" (3-2-4-1 / 3-2-2-3)</span>
+    </h2>
+    <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
+      כפרה עובדים (באטייה נכנסת כפיבוט שני, סמילה וסמית' רוחב מקסימלי, דאבל 10 של רוסו ומריונה וצמד חלוצות ברחבה)
     </div>
   </article>
 
@@ -191,44 +215,42 @@ next_title: "חלק ו': תחזית העונה המורחבת"
       ]
     },
     combo2: {
-      name: "2. מכבש לחץ גבוה ומעברים מהירים (4-3-3)",
-      desc: "<strong>טקטיקת מפתח:</strong> רוסו מובילה את קו הלחץ הגבוה, מריונה מנהלת מעברים מהאגף השמאלי, קלואי קלי פותחת רוחב מימין וסטאנוויי מכסה את כל מרכז השדה.",
+      name: "2. מול קבוצות הטופ ותקיפת שטחים (4-2-3-1)",
+      desc: "<strong>טקטיקת מפתח:</strong> רוסו ב-10 מייצרת שטח, סטינה ב-9 מאיימת לעומק, מריונה וסמית' באגפים, וסטאנוויי (G) וליטל תוקפות שטח פנוי מקו שני ומאזנות את הקישור.",
       players: [
         { id: "vandomselaar", x: 50, y: 88, role: "GK" },
         { id: "fox", x: 80, y: 74, role: "RB" },
         { id: "williamson", x: 60, y: 76, role: "CB" },
         { id: "wubbenmoy", x: 40, y: 76, role: "CB" },
         { id: "batlle", x: 20, y: 74, role: "LB" },
-        { id: "little", x: 50, y: 58, role: "DM" },
-        { id: "stanway", x: 68, y: 48, role: "CM" },
-        { id: "maanum", x: 32, y: 48, role: "CM" },
-        { id: "kelly", x: 75, y: 24, role: "RW" },
-        { id: "mariona", x: 25, y: 24, role: "LW" },
-        { id: "russo", x: 50, y: 15, role: "ST" }
+        { id: "stanway", x: 62, y: 56, role: "DM (G)" },
+        { id: "little", x: 38, y: 56, role: "DM (C)" },
+        { id: "mariona", x: 75, y: 36, role: "RW" },
+        { id: "russo", x: 50, y: 35, role: "AM (#10)" },
+        { id: "smith", x: 25, y: 36, role: "LW" },
+        { id: "blackstenius", x: 50, y: 15, role: "ST (#9)" }
       ]
     },
     combo3: {
-      name: "3. צמד חלוצות עוצמתי (4-4-2)",
-      desc: "<strong>טקטיקת מפתח:</strong> שילוב כוח של רוסו ומישל אג'ימאן בשפיץ, כשאג'ימאן נועלת את הבלמיות ורוסו זזה לשטחים פתוחים. ליסה באום ומריונה מספקות כדורים מהאגפים.",
+      name: "3. מול אריות אירופה ומעברים מהירים (4-3-3)",
+      desc: "<strong>טקטיקת מפתח:</strong> כשאין לארסנל את הכדור מול ברצלונה/אירופה – הגנה קומפקטית, סטאנוויי-רויטלר-ליטל באמצע, ויציאה מהירה לרוסו, סטינה וקלי.",
       players: [
         { id: "misa", x: 50, y: 88, role: "GK" },
         { id: "fox", x: 80, y: 74, role: "RB" },
         { id: "williamson", x: 60, y: 76, role: "CB" },
         { id: "catley", x: 40, y: 76, role: "CB" },
         { id: "batlle", x: 20, y: 74, role: "LB" },
-        { id: "stanway", x: 62, y: 54, role: "CM" },
-        { id: "little", x: 38, y: 54, role: "CM" },
-        { id: "mariona", x: 80, y: 36, role: "RM" },
-        { id: "baum", x: 20, y: 36, role: "LM" },
-        { id: "russo", x: 62, y: 18, role: "ST" },
-        { id: "agyemang", x: 38, y: 18, role: "ST" }
+        { id: "stanway", x: 50, y: 60, role: "DM (Anchor)" },
+        { id: "little", x: 68, y: 48, role: "CM" },
+        { id: "reuteler", x: 32, y: 48, role: "CM" },
+        { id: "kelly", x: 75, y: 26, role: "RW" },
+        { id: "mariona", x: 25, y: 26, role: "LW" },
+        { id: "russo", x: 50, y: 16, role: "ST" }
       ]
     }
   };
 
   let pitchPlayers = JSON.parse(JSON.stringify(FORMATIONS.combo1.players));
-  let draggedPlayerId = null;
-  let activeDragEl = null;
 
   function renderPitch() {
     const layer = document.getElementById("pitch-magnets-layer");
