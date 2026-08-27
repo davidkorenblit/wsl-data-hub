@@ -20,14 +20,14 @@ next_title: "חלק ו': תחזית העונה המורחבת"
       חלק ה': ורסטיליות, קומבינציות ולוח מגנטים טקטי
     </div>
     <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white">
-      3 הפרצופים של ארסנל: הלוח הטקטי של רנה סלחרס
+      4 הפרצופים של ארסנל: הלוח הטקטי של רנה סלחרס
     </h1>
   </div>
 
-  <!-- Opening Narrative Section (User Drafting Area) -->
-  <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-    כפרה עובדים (פסקת פתיחה על ורסטיליות, עומק ולוח המגנטים של סלחרס)
-  </div>
+  <!-- Opening Narrative Section -->
+  <p>
+    הסיפור הגדול של חלון ההעברות בארסנל הוא לא שחקנית כזו או אחרת, אלא <strong>המעבר ממערך מקובע (4-3-3 סטטי) למבנה משתנה (Fluid Shapes)</strong>. ארסנל לא קנתה שחקניות כדי להרכיב 11 סגורים, אלא בנתה לוח מגנטים מודולרי שמאפשר לרנה סלחרס לשנות את פני הקבוצה בהתאם ליריבה, לשלב המשחק ולעומסים בליגת האלופות.
+  </p>
 
   <!-- Collapsible Interactive Tactical Lab -->
   <details class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-4 sm:p-5 my-6 shadow-xl" open>
@@ -64,13 +64,16 @@ next_title: "חלק ו': תחזית העונה המורחבת"
         <!-- Presets & Reset Buttons -->
         <div class="flex flex-wrap items-center gap-1.5 font-mono text-xs">
           <button onclick="setFormation('combo1')" id="btn-combo1" class="px-2.5 py-1.5 rounded font-bold transition-all bg-sky-600 text-white shadow">
-            4-2-3-1 (בלוק נמוך)
+            1. פיצוח בלוק (4-2-3-1)
           </button>
           <button onclick="setFormation('combo2')" id="btn-combo2" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
-            4-2-3-1 (קבוצות טופ)
+            2. קבוצות טופ (4-2-3-1)
           </button>
           <button onclick="setFormation('combo3')" id="btn-combo3" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
-            4-3-3 (אירופה ומעברים)
+            3. אירופה ומעברים (4-3-3)
+          </button>
+          <button onclick="setFormation('combo4')" id="btn-combo4" class="px-2.5 py-1.5 rounded font-bold transition-all bg-slate-800 hover:bg-slate-700 text-slate-300">
+            4. גול בדקה 80 (3-2-4-1)
           </button>
           <button onclick="clearPitch()" class="px-2 py-1.5 rounded font-bold transition-all bg-rose-950/40 text-rose-400 border border-rose-800/60 hover:bg-rose-900/60">
             נקה לוח
@@ -80,7 +83,7 @@ next_title: "חלק ו': תחזית העונה המורחבת"
 
       <!-- Active Preset Description Box -->
       <div id="preset-info-box" class="mb-4 p-3 rounded bg-slate-900/90 border border-slate-800 text-xs font-sans text-slate-300">
-        <strong class="text-sky-400">קומבינציה א' (4-2-3-1 אסימטרי):</strong> רוסו ב-10 חופשית, סטינה/מיש כ-9 פיזית. מריונה בימין נכנסת פנימה ומפנה את כל הקו לסמילה הולמברג שעולה בספרינטים, כשליטל וסטאנוויי סוגרות את האמצע.
+        <!-- Injected by JS -->
       </div>
 
       <!-- The 2D Tactical Football Pitch (Free Drag Surface) -->
@@ -124,42 +127,104 @@ next_title: "חלק ו': תחזית העונה המורחבת"
 
   <!-- Combination 1 Analysis Narrative -->
   <article class="space-y-3 pt-2">
-    <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>1. קומבינציה א': מפרקת הבלוקים והעומס האסימטרי (4-2-3-1)</span>
-    </h2>
-    <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים (אלסיה רוסו בעמדת ה-10 החופשית, סטינה בלקסטניוס / מישל אג'ימאן בשפיץ, מריונה בימין שנכנסת פנימה ומפנה את כל הקו לסמילה הולמברג, ליטל וסטאנוויי בשתי שישיות)
+    <div class="flex items-center gap-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+      <span class="text-lg">🛡️</span>
+      <h2 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white">
+        1. קומבינציה א': מפרקת הבלוקים והעומס האסימטרי (4-2-3-1)
+      </h2>
+    </div>
+    
+    <p>
+      <strong>התרחיש:</strong> כ-70% ממשחקי ה-WSL שבהם היריבה מתבצרת בבלוק נמוך וצפוף ברחבת ה-16 שלה.
+    </p>
+
+    <p>
+      <strong>המבנה הטקטי:</strong> במקום להיתקע בהגבהות סרק מאגף שמאל, ארסנל מפעילה <strong>עומס אסימטרי קטלני בימין</strong>: מריונה קלדנטיי חותכת מהכנף הימנית פנימה ל-Half-Space כפליימייקרית נוספת, ומפנה את כל מסדרון הקו לסמילה הולמברג שעולה בספרינטים. במרכז, אלסיה רוסו יורדת לקבל כדור בעמדת ה-10 החופשית, סטינה בלקסטניוס (או מישל אג'ימאן) מפעילה כוח פיזי ברחבה, ודאבל-פיבוט של קים ליטל וג'ורג'יה סטאנוויי (G) חוסם כל אופציה למתפרצת.
+    </p>
+
+    <!-- Supporting Data Callout -->
+    <div class="p-3.5 rounded bg-slate-900/60 border border-slate-800 text-xs font-sans text-slate-300 space-y-1.5">
+      <div class="font-bold text-sky-400 font-mono">📊 נתונים שתומכים בקומבינציה:</div>
+      <ul class="list-disc list-inside space-y-1 text-slate-300">
+        <li><strong>סטינה בלקסטניוס:</strong> מפלצת רחבה מול צפיפות – כבשה בעונה שעברה <strong>10 שערים ב-868 דקות בלבד (שער כל 86.8 דקות!)</strong>.</li>
+        <li><strong>אלסיה רוסו ב-10:</strong> רשמה <strong>6 בישולים ו-13 שערים</strong> כשירדה לקבל כדורים מאחורי החלוצה.</li>
+        <li><strong>סמילה הולמברג באגף:</strong> ב-473 דקות רשמה <strong>2 שערים ו-4 בישולים</strong> (מעורבות ישירה בשער כל 78.8 דקות).</li>
+        <li><strong>ארסנל ברחבה:</strong> מקום 1 בליגה עם <strong>897 נגיעות ברחבת היריב</strong>.</li>
+      </ul>
     </div>
   </article>
 
   <!-- Combination 2 Analysis Narrative -->
-  <article class="space-y-3 pt-2">
-    <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>2. קומבינציה ב': מול קבוצות הטופ ותקיפת שטחים פנויים (4-2-3-1)</span>
-    </h2>
-    <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים סבלנות (רוסו ב-10, סטינה/מיש בשפיץ, מריונה וסמית' באגפים, G וליטל בדאבל פיבוט של שליטה ועוצמה מול צ'לסי וסיטי)
+  <article class="space-y-3 pt-4">
+    <div class="flex items-center gap-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+      <span class="text-lg">⚔️</span>
+      <h2 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white">
+        2. קומבינציה ב': מול קבוצות הטופ ותקיפת שטחים פנויים (4-2-3-1 / 4-3-3)
+      </h2>
+    </div>
+
+    <p>
+      <strong>התרחיש:</strong> משחקי עונה שקולים (מנצ'סטר סיטי, צ'לסי, לונדון סיטי) שבהם החזקת הכדור מתחלקת שווה בשווה ויש שטחים פתוחים לשני הצדדים.
+    </p>
+
+    <p>
+      <strong>המבנה הטקטי:</strong> זהו המערך שבו <strong>ג'ורג'יה סטאנוויי (G)</strong> הופכת לנשק המרכזי. G תוקפת שטחים פנויים מקו שני ומהווה איום תמידי בבעיטה מחוץ לרחבה. רוסו משחקת בעמדת ה-10, מושכת את הבלמיות של היריבה החוצה ומפנה מסדרונות ריצה לסטינה בעומק, בעוד מריונה ואוליביה סמית' מבודדות באגפים באחד-על-אחד.
+    </p>
+
+    <!-- Supporting Data Callout -->
+    <div class="p-3.5 rounded bg-slate-900/60 border border-slate-800 text-xs font-sans text-slate-300 space-y-1.5">
+      <div class="font-bold text-sky-400 font-mono">📊 נתונים שתומכים בקומבינציה:</div>
+      <ul class="list-disc list-inside space-y-1 text-slate-300">
+        <li><strong>סטאנוויי תוקפת שטח:</strong> <strong>2.40 חילוצי כדור בשליש ההתקפי ל-90 (אחוזון 94 באירופה!)</strong> ו-1.85 בעיטות לשער מחוץ לרחבה למשחק.</li>
+        <li><strong>עליונות במאבקים:</strong> סטאנוויי מנצחת <strong>71.4% מהתיקולים שלה</strong> (שדרוג פיזי אדיר לקישור של ארסנל).</li>
+        <li><strong>שליטה בקצב:</strong> קים ליטל עם 88.4% דיוק מסירה מאזנת את האגרסיביות של G.</li>
+      </ul>
     </div>
   </article>
 
   <!-- Combination 3 Analysis Narrative -->
-  <article class="space-y-3 pt-2">
-    <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>3. קומבינציה ג': מול אריות אירופה ומעברים מהירים (4-3-3)</span>
-    </h2>
-    <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים (כשאין לארסנל את הכדור מול ברצלונה/אירופה – הגנה קומפקטית, סטאנוויי-רויטלר-ליטל באמצע, ויציאה מהירה לרוסו, סטינה וקלי)
+  <article class="space-y-3 pt-4">
+    <div class="flex items-center gap-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+      <span class="text-lg">🇪🇺</span>
+      <h2 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white">
+        3. קומבינציה ג': מול אריות אירופה, לחץ גבוה ומעברים מהירים (4-3-3)
+      </h2>
+    </div>
+
+    <p>
+      <strong>התרחיש:</strong> מפגשים בליגת האלופות (מול ברצלונה או ריאל מדריד) שבהם לארסנל אין שליטה בלעדית בכדור והיא נדרשת להגן קומפקטי ולעקוץ במעברים.
+    </p>
+
+    <p>
+      <strong>המבנה הטקטי:</strong> מערך הגנתי הרמטי עם אמילי פוקס בימין, אונה באטייה בשמאל, ויליאמסון וקאטלי באמצע. הקישור מעובה בשריר ואינטנסיביות (סטאנוויי, ז'רלדין רויטלר וקים ליטל) במטרה לחנוק את בניית המשחק של היריבה. בחלק הקדמי, אלסיה רוסו מובילה את קו הלחץ הראשון יחד עם המהירות של קלואי קלי ומריונה באגפים.
+    </p>
+
+    <!-- Supporting Data Callout -->
+    <div class="p-3.5 rounded bg-slate-900/60 border border-slate-800 text-xs font-sans text-slate-300 space-y-1.5">
+      <div class="font-bold text-sky-400 font-mono">📊 נתונים שתומכים בקומבינציה:</div>
+      <ul class="list-disc list-inside space-y-1 text-slate-300">
+        <li><strong>מכבש הלחץ הטוב בליגה:</strong> ארסנל ראשונה ב-WSL עם <strong>7.9 חילוצי כדור בשליש ההתקפי למשחק</strong>.</li>
+        <li><strong>חסימת המסגרת:</strong> מאפשרת רק <strong>2.41 בעיטות למסגרת ל-90 (הטובה בליגה)</strong> וספיגה של 0.64 שערים למשחק (14 שערים ב-22 מחזורים).</li>
+      </ul>
     </div>
   </article>
 
-  <!-- Combination 4 Analysis Narrative (Chasing Goal / Edge Case) -->
-  <article class="space-y-3 pt-2">
-    <h2 class="text-xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-      <span>4. קומבינציה ד': מקרה קצה – "חייבים גול בדקה ה-80" (3-2-4-1 / 3-2-2-3)</span>
-    </h2>
-    <div class="p-4 rounded border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 font-mono text-sm">
-      כפרה עובדים (באטייה נכנסת כפיבוט שני, סמילה וסמית' רוחב מקסימלי, דאבל 10 של רוסו ומריונה וצמד חלוצות ברחבה)
+  <!-- Combination 4 Analysis Narrative -->
+  <article class="space-y-3 pt-4">
+    <div class="flex items-center gap-2 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+      <span class="text-lg">🔥</span>
+      <h2 class="text-lg sm:text-xl font-bold text-neutral-900 dark:text-white">
+        4. קומבינציה ד': מקרה קצה – "חייבים גול בדקה ה-80" (3-2-4-1 / 3-2-2-3)
+      </h2>
     </div>
+
+    <p>
+      <strong>התרחיש:</strong> פיגור או שוויון מאוחר כשהיריבה שוכבת על הדשא וצריך לייצר כאוס מוחלט ברחבה.
+    </p>
+
+    <p>
+      <strong>המבנה הטקטי:</strong> מעבר לשלישיית הגנה (היינדס, וובן-מוי, ויליאמסון). אונה באטייה נכנסת פנימה לאמצע כפיבוט שני לצד ליטל (התפקיד שביצעה בברצלונה כשמעל 42% מהנגיעות שלה היו בערוצים המרכזיים). סמילה הולמברג ואוליביה סמית' נותנות רוחב מקסימלי, מריונה ורוסו פועלות כדאבל 10, וברחבה מוצבות שתי חלוצות 9 פיזיות (רוסו + מישל אג'ימאן או סטינה) שמרסקות את ההגנה בכדורי גובה ומאבקי כוח.
+    </p>
   </article>
 
   <!-- Standardized Post Pagination -->
@@ -246,6 +311,23 @@ next_title: "חלק ו': תחזית העונה המורחבת"
         { id: "kelly", x: 75, y: 26, role: "RW" },
         { id: "mariona", x: 25, y: 26, role: "LW" },
         { id: "russo", x: 50, y: 16, role: "ST" }
+      ]
+    },
+    combo4: {
+      name: "4. גול בדקה 80 ומקרה קצה (3-2-4-1)",
+      desc: "<strong>טקטיקת מפתח:</strong> מעבר לשלישיית הגנה (היינדס-וובן מוי-ויליאמסון), באטייה כפיבוט לצד ליטל, סמילה וסמית' רוחב מקסימלי, דאבל 10 של רוסו ומריונה וצמד חלוצות ברחבה.",
+      players: [
+        { id: "vandomselaar", x: 50, y: 88, role: "GK" },
+        { id: "williamson", x: 75, y: 76, role: "RCB" },
+        { id: "wubbenmoy", x: 50, y: 78, role: "CB" },
+        { id: "hinds", x: 25, y: 76, role: "LCB" },
+        { id: "little", x: 60, y: 58, role: "DM" },
+        { id: "batlle", x: 40, y: 58, role: "DM (Inv)" },
+        { id: "holmberg", x: 85, y: 35, role: "RW" },
+        { id: "mariona", x: 65, y: 35, role: "AM" },
+        { id: "russo", x: 35, y: 35, role: "AM" },
+        { id: "smith", x: 15, y: 35, role: "LW" },
+        { id: "blackstenius", x: 50, y: 14, role: "ST" }
       ]
     }
   };
@@ -393,7 +475,7 @@ next_title: "חלק ו': תחזית העונה המורחבת"
     if (!f) return;
     pitchPlayers = JSON.parse(JSON.stringify(f.players));
 
-    ['combo1', 'combo2', 'combo3'].forEach(k => {
+    ['combo1', 'combo2', 'combo3', 'combo4'].forEach(k => {
       const b = document.getElementById('btn-' + k);
       if (b) {
         if (k === comboKey) {
