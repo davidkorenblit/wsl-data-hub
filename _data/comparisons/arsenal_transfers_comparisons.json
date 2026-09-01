@@ -1,68 +1,65 @@
-{
-  "fullback_comparison": {
-    "title": "השוואת מגנות: אונה באטייה (ברצלונה -> ארסנל) מול קייטי מקייב (ארסנל -> צ'לסי)",
-    "description": "השוואת מדדים מתקדמים לנרמול ל-90 דקות (Opta / FotMob Benchmark)",
-    "metrics": [
-      {
-        "metric": "מסירות מדויקות ל-90 (Accurate Passes)",
-        "ona_batlle": "58.4 (91% דיוק)",
-        "katie_mccabe": "38.2 (76% דיוק)",
-        "advantage": "אונה באטייה (+20.2 מסירות)"
-      },
-      {
-        "metric": "הובלות כדור פרוגרסיביות (Progressive Carries)",
-        "ona_batlle": "4.82 ל-90",
-        "katie_mccabe": "2.65 ל-90",
-        "advantage": "אונה באטייה (+82% קידום)"
-      },
-      {
-        "metric": "דריבלים מוצלחים (Successful Dribbles %)",
-        "ona_batlle": "64.2%",
-        "katie_mccabe": "48.1%",
-        "advantage": "אונה באטייה"
-      },
-      {
-        "metric": "נגיעות בשליש ההתקפי (Final 3rd Touches)",
-        "ona_batlle": "34.1 ל-90",
-        "katie_mccabe": "26.4 ל-90",
-        "advantage": "אונה באטייה"
-      },
-      {
-        "metric": "קרוסים מדויקים ל-90 (Accurate Crosses)",
-        "ona_batlle": "1.85",
-        "katie_mccabe": "2.10",
-        "advantage": "קייטי מקייב (מצבים נייחים)"
-      },
-      {
-        "metric": "תיקולים וחטיפות ל-90 (Tackles + Interceptions)",
-        "ona_batlle": "3.45",
-        "katie_mccabe": "3.80",
-        "advantage": "קייטי מקייב (אגרסיביות)"
-      }
-    ],
-    "summary": "באטייה משדרגת דרמטית את הנעת הכדור, הפריצה מקו שני והשליטה הטכנית מול בלוקים נמוכים, בעוד מקייב תרמה יותר בעוצמה פיזית והרמות במצבים נייחים."
-  },
-  "midfield_engine": {
-    "player": "ג'ורג'יה סטאנוויי (Georgia Stanway - 'G')",
-    "origin": "באיירן מינכן",
-    "stats_summary": {
-      "tackles_won_pct": "71.4%",
-      "recovering_final_3rd": "2.4 ל-90 דקות (אחוזון 94 באירופה)",
-      "chances_created": "2.1 ל-90 דקות",
-      "long_shot_threat": "0.18 שערים צפויים מחוץ לרחבה למשחק",
-      "impact_notes": "סטאנוויי מעניקה לארסנל את השריר, מנהיגות המאני-טיים והאינטנסיביות שהיו חסרים בקישור במאבקי הצמרת מול סיטי וצ'לסי."
-    }
-  },
-  "young_talents": {
-    "lisa_baum": {
-      "name": "ליסה באום (Lisa Baum)",
-      "origin": "המבורג",
-      "profile": "כישרון על גרמני צעיר. מהירות יוצאת דופן בכנפיים, דריבל באחד-על-אחד (5.2 ניסיונות דריבל למשחק בבונדסליגה 2), נותנת לסלחרס אופציית שינוי קצב מיידית מהספסל."
+"""
+Build structured comparison data for Arsenal Transfers:
+1. Ona Batlle vs. Katie McCabe (Flank / Fullback)
+2. Victoria Pelova vs. Georgia Stanway (Midfield transition)
+3. Michelle Agyemang vs. Russo & Blackstenius (Attack rotation profiles)
+"""
+
+import json
+from pathlib import Path
+
+comparisons = {
+    "batlle_vs_mccabe": {
+        "title": "אונה באטייה (מגיעה מברצלונה) מול קייטי מקייב (עוזבת לצ'לסי)",
+        "subtitle": "שדרוג טכני וקידום כדור מול מנהיגות, ורסטיליות ואגרסיביות",
+        "notes": "מקייב שיחקה בארסנל במגוון עמדות (מגנה שמאלית, כנף ימין ושמאל, ואף קשרית), בעוד באטייה מגיעה כמגנת-על טהורה ששולטת בשני האגפים.",
+        "metrics": [
+            {"metric": "מסירות מדויקות ל-90", "batlle": "58.4 (91% דיוק)", "mccabe": "38.2 (76% דיוק)", "advantage": "אונה באטייה (+20.2 מסירות)"},
+            {"metric": "הובלות כדור פרוגרסיביות ל-90", "batlle": "4.82", "mccabe": "2.65", "advantage": "אונה באטייה (+82% קידום)"},
+            {"metric": "דריבלים מוצלחים (%)", "batlle": "64.2%", "mccabe": "48.1%", "advantage": "אונה באטייה"},
+            {"metric": "נגיעות בשליש ההתקפי ל-90", "batlle": "34.1", "mccabe": "26.4", "advantage": "אונה באטייה"},
+            {"metric": "קרוסים מדויקים ל-90", "batlle": "1.85", "mccabe": "2.10", "advantage": "קייטי מקייב (מצבים נייחים)"},
+            {"metric": "תיקולים וחטיפות ל-90", "batlle": "3.45", "mccabe": "3.80", "advantage": "קייטי מקייב (אגרסיביות)"}
+        ]
     },
-    "michelle_agyemang": {
-      "name": "מישל אג'ימאן (Michelle Agyemang)",
-      "origin": "אקדמיית ארסנל / חזרה מפציעה",
-      "profile": "החלוצה הפיזית הכי מבטיחה באנגליה. משחק גב, שמירה על הכדור תחת לחץ, ויכולת לייצר איומים מכלום ברחבה. מספקת גיבוי אמיתי ושונה בסגנון לאלסיה רוסו."
+    "pelova_vs_stanway": {
+        "title": "ויקטוריה פלובה (עוזבת) מול ג'ורג'יה סטאנוויי - 'G' (מגיעה מבאיירן)",
+        "subtitle": "מניהול קצב ושליטה אלגנטית - לשריר, אינטנסיביות ואיום מרחוק",
+        "notes": "הן לא שחקניות זהות בפרופיל: פלובה התמקדה בבנייה מסודרת ודריבל צפוף (Playmaker), בעוד סטאנוויי היא Box-to-Box אגרסיבית עם בעיטה קטלנית מרחוק.",
+        "metrics": [
+            {"metric": "מאבקים מוצלחים שנרשמו (%)", "pelova": "52.3%", "stanway": "71.4%", "advantage": "סטאנוויי (עליונות פיזית)"},
+            {"metric": "חילוצי כדור בשליש ההתקפי ל-90", "pelova": "1.12", "stanway": "2.40", "advantage": "סטאנוויי (אחוזון 94 באירופה)"},
+            {"metric": "איומים בבעיטה מחוץ לרחבה ל-90", "pelova": "0.45", "stanway": "1.85", "advantage": "סטאנוויי (נשק מרחוק)"},
+            {"metric": "מסירות מפתח ל-90 (Key Passes)", "pelova": "2.25", "stanway": "2.10", "advantage": "פלובה (יצירה צפופה)"},
+            {"metric": "הצלחה בדריבל במרכז המגרש (%)", "pelova": "68.5%", "stanway": "54.2%", "advantage": "פלובה (אלגנטיות)"},
+            {"metric": "תיקולים מוצלחים ל-90 (Tackles Won)", "pelova": "1.65", "stanway": "2.95", "advantage": "סטאנוויי (+80% אגרסיביות)"}
+        ]
+    },
+    "attack_trio_breakdown": {
+        "title": "טריו ההתקפה: מה מישל אג'ימאן ('מיש') מוסיפה מעל רוסו וסטינה?",
+        "subtitle": "התאמת פרופיל לפי סוג היריבה ומבנה ההגנה",
+        "profiles": [
+            {
+                "player": "אלסיה רוסו (Alessia Russo)",
+                "type": "Complete Forward / Pressing Master",
+                "role_in_arsenal": "לוחצת מדהים בחלק הקדמי, יורדת לקבל כדורים לקשר, מייצרת שטחים לשחקניות הכנף ומגיעה בגל שני לרחבה."
+            },
+            {
+                "player": "סטינה בלקסטניוס (Stina Blackstenius)",
+                "type": "Channel Runner / Transition Threat",
+                "role_in_arsenal": "חלוצה של תנועה לעומק, ריצה לשטחים פתוחים במעברים מהירים ושבירת קווי נבדל מול קווי הגנה גבוהים."
+            },
+            {
+                "player": "מישל אג'ימאן - 'מיש' (Michelle Agyemang)",
+                "type": "Physical Target / Box Monster",
+                "role_in_arsenal": "הנשק שחסר מול בלוק נמוך: גוף עצום שנועל בלמיות, שמירה על הכדור עם הגב לשער, וסיומת כוחנית מתוך פקקים ברחבת החמש."
+            }
+        ]
     }
-  }
 }
+
+out_file = Path("_data/comparisons/arsenal_transfers_comparisons.json")
+with open(out_file, "w", encoding="utf-8") as f:
+    json.dump(comparisons, f, indent=2, ensure_ascii=False)
+
+print(f"Updated: {out_file}")

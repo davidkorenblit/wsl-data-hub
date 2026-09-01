@@ -1,0 +1,66 @@
+{
+  "Georgia Stanway": {
+    "id": 886706,
+    "name": "Georgia Stanway",
+    "primary_team": "Arsenal",
+    "position": "Defensive Midfielder",
+    "traits": [
+      {
+        "trait": "Chances created",
+        "percentile": 80
+      },
+      {
+        "trait": "Aerial duels",
+        "percentile": 79
+      },
+      {
+        "trait": "Defensive actions",
+        "percentile": 51
+      },
+      {
+        "trait": "Goals",
+        "percentile": 89
+      },
+      {
+        "trait": "Shot attempts",
+        "percentile": 88
+      },
+      {
+        "trait": "Touches",
+        "percentile": 99
+      }
+    ]
+  },
+  "Michelle Agyemang": {
+    "id": 1414896,
+    "name": "Michelle Agyemang",
+    "primary_team": "Arsenal",
+    "position": "Striker",
+    "traits": [
+      {
+        "trait": "Chances created",
+        "percentile": 14
+      },
+      {
+        "trait": "Aerial duels",
+        "percentile": 37
+      },
+      {
+        "trait": "Defensive actions",
+        "percentile": 97
+      },
+      {
+        "trait": "Goals",
+        "percentile": 11
+      },
+      {
+        "trait": "Shot attempts",
+        "percentile": 41
+      },
+      {
+        "trait": "Touches",
+        "percentile": 25
+      }
+    ]
+  }
+}
