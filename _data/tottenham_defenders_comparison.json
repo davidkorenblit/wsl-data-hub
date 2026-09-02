@@ -1,0 +1,535 @@
+[
+  {
+    "id": 1214575,
+    "name": "Alice Sombath",
+    "name_he": "אליס סומבאת",
+    "primary_role": "CB / RB / LB (רכש מליון)",
+    "position_label": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 45
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 73
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 4
+      },
+      {
+        "title": "Goals",
+        "percentile": 1
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 66
+      },
+      {
+        "title": "Touches",
+        "percentile": 99
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 1.64,
+      "tackles_pct": 71.9,
+      "interceptions_per90": 1.02,
+      "interceptions_pct": 59.6,
+      "clearances_per90": 2.9,
+      "clearances_pct": 19.3,
+      "recoveries_per90": 5.71,
+      "recoveries_pct": 78.9,
+      "defensive_actions_per90": 5.56,
+      "defensive_actions_pct": 17.5,
+      "duels_won_pct": 68.25,
+      "duels_won_percentile": 89.5,
+      "aerials_won_pct": 72.73,
+      "aerials_won_percentile": 86.0,
+      "accurate_passes_per90": 78.57,
+      "pass_accuracy": 93.4,
+      "pass_accuracy_pct": 94.7,
+      "accurate_long_balls_per90": 6.34,
+      "accurate_long_balls_pct": 91.2,
+      "long_ball_accuracy": 78.64,
+      "long_ball_accuracy_pct": 96.5,
+      "chances_created_per90": 0.23,
+      "chances_created_pct": 57.9,
+      "successful_crosses_per90": 0.16,
+      "successful_crosses_pct": 80.7,
+      "touches_per90": 97.67,
+      "touches_pct": 93.0
+    }
+  },
+  {
+    "id": 1215012,
+    "name": "Caitlin Dijkstra",
+    "name_he": "קייטלין דייקסטרה",
+    "primary_role": "CB (רכש מוולפסבורג)",
+    "position_label": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 73
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 53
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 37
+      },
+      {
+        "title": "Goals",
+        "percentile": 55
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 43
+      },
+      {
+        "title": "Touches",
+        "percentile": 93
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 1.21,
+      "tackles_pct": 33.3,
+      "interceptions_per90": 0.8,
+      "interceptions_pct": 37.9,
+      "clearances_per90": 3.75,
+      "clearances_pct": 27.3,
+      "recoveries_per90": 5.09,
+      "recoveries_pct": 81.8,
+      "defensive_actions_per90": 6.36,
+      "defensive_actions_pct": 21.2,
+      "duels_won_pct": 55.42,
+      "duels_won_percentile": 36.4,
+      "aerials_won_pct": 45.0,
+      "aerials_won_percentile": 24.2,
+      "accurate_passes_per90": 72.32,
+      "pass_accuracy": 89.48,
+      "pass_accuracy_pct": 87.9,
+      "accurate_long_balls_per90": 6.09,
+      "accurate_long_balls_pct": 97.0,
+      "long_ball_accuracy": 56.17,
+      "long_ball_accuracy_pct": 90.9,
+      "chances_created_per90": 0.47,
+      "chances_created_pct": 78.8,
+      "successful_crosses_per90": 0.2,
+      "successful_crosses_pct": 83.3,
+      "touches_per90": 91.74,
+      "touches_pct": 86.4
+    }
+  },
+  {
+    "id": 1453078,
+    "name": "Clare Hunt",
+    "name_he": "קלייר האנט",
+    "primary_role": "CB",
+    "position_label": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 48
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 98
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 62
+      },
+      {
+        "title": "Goals",
+        "percentile": 1
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 81
+      },
+      {
+        "title": "Touches",
+        "percentile": 42
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": null,
+      "tackles_pct": null,
+      "interceptions_per90": null,
+      "interceptions_pct": null,
+      "clearances_per90": null,
+      "clearances_pct": null,
+      "recoveries_per90": null,
+      "recoveries_pct": null,
+      "defensive_actions_per90": null,
+      "defensive_actions_pct": null,
+      "duels_won_pct": null,
+      "duels_won_percentile": null,
+      "aerials_won_pct": null,
+      "aerials_won_percentile": null,
+      "accurate_passes_per90": null,
+      "pass_accuracy": null,
+      "pass_accuracy_pct": null,
+      "accurate_long_balls_per90": null,
+      "accurate_long_balls_pct": null,
+      "long_ball_accuracy": null,
+      "long_ball_accuracy_pct": null,
+      "chances_created_per90": null,
+      "chances_created_pct": null,
+      "successful_crosses_per90": null,
+      "successful_crosses_pct": null,
+      "touches_per90": null,
+      "touches_pct": null
+    }
+  },
+  {
+    "id": 1627765,
+    "name": "Tōko Koga",
+    "name_he": "טוקו קוגה",
+    "primary_role": "CB / Anchor",
+    "position_label": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 24
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 25
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 16
+      },
+      {
+        "title": "Goals",
+        "percentile": 84
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 23
+      },
+      {
+        "title": "Touches",
+        "percentile": 27
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": null,
+      "tackles_pct": null,
+      "interceptions_per90": null,
+      "interceptions_pct": null,
+      "clearances_per90": null,
+      "clearances_pct": null,
+      "recoveries_per90": null,
+      "recoveries_pct": null,
+      "defensive_actions_per90": null,
+      "defensive_actions_pct": null,
+      "duels_won_pct": null,
+      "duels_won_percentile": null,
+      "aerials_won_pct": null,
+      "aerials_won_percentile": null,
+      "accurate_passes_per90": null,
+      "pass_accuracy": null,
+      "pass_accuracy_pct": null,
+      "accurate_long_balls_per90": null,
+      "accurate_long_balls_pct": null,
+      "long_ball_accuracy": null,
+      "long_ball_accuracy_pct": null,
+      "chances_created_per90": null,
+      "chances_created_pct": null,
+      "successful_crosses_per90": null,
+      "successful_crosses_pct": null,
+      "touches_per90": null,
+      "touches_pct": null
+    }
+  },
+  {
+    "id": 1050882,
+    "name": "Amanda Nildén",
+    "name_he": "אמנדה נילדן",
+    "primary_role": "LB / LWB",
+    "position_label": "Left Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 66
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 83
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 52
+      },
+      {
+        "title": "Goals",
+        "percentile": 40
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 54
+      },
+      {
+        "title": "Touches",
+        "percentile": 41
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 2.63,
+      "tackles_pct": 58.0,
+      "interceptions_per90": 1.32,
+      "interceptions_pct": 70.0,
+      "clearances_per90": 3.24,
+      "clearances_pct": 78.0,
+      "recoveries_per90": 5.06,
+      "recoveries_pct": 58.0,
+      "defensive_actions_per90": 7.49,
+      "defensive_actions_pct": 82.0,
+      "duels_won_pct": 59.88,
+      "duels_won_percentile": 82.0,
+      "aerials_won_pct": 64.71,
+      "aerials_won_percentile": 76.0,
+      "accurate_passes_per90": 33.36,
+      "pass_accuracy": 77.99,
+      "pass_accuracy_pct": 40.0,
+      "accurate_long_balls_per90": 1.52,
+      "accurate_long_balls_pct": 58.0,
+      "long_ball_accuracy": 41.1,
+      "long_ball_accuracy_pct": 64.0,
+      "chances_created_per90": 1.06,
+      "chances_created_pct": 70.0,
+      "successful_crosses_per90": 1.11,
+      "successful_crosses_pct": 84.0,
+      "touches_per90": 68.59,
+      "touches_pct": 50.0
+    }
+  },
+  {
+    "id": 1257462,
+    "name": "Ella Morris",
+    "name_he": "אלה מוריס",
+    "primary_role": "RB / RWB",
+    "position_label": "Right Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 51
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 75
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 46
+      },
+      {
+        "title": "Goals",
+        "percentile": 97
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 96
+      },
+      {
+        "title": "Touches",
+        "percentile": 44
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 2.34,
+      "tackles_pct": 44.0,
+      "interceptions_per90": 1.0,
+      "interceptions_pct": 50.0,
+      "clearances_per90": 2.34,
+      "clearances_pct": 50.0,
+      "recoveries_per90": 6.02,
+      "recoveries_pct": 78.0,
+      "defensive_actions_per90": 5.69,
+      "defensive_actions_pct": 32.0,
+      "duels_won_pct": 68.18,
+      "duels_won_percentile": 96.0,
+      "aerials_won_pct": 40.0,
+      "aerials_won_percentile": 20.0,
+      "accurate_passes_per90": 24.09,
+      "pass_accuracy": 80.0,
+      "pass_accuracy_pct": 52.0,
+      "accurate_long_balls_per90": null,
+      "accurate_long_balls_pct": null,
+      "long_ball_accuracy": null,
+      "long_ball_accuracy_pct": null,
+      "chances_created_per90": 1.34,
+      "chances_created_pct": 76.0,
+      "successful_crosses_per90": 0.67,
+      "successful_crosses_pct": 68.0,
+      "touches_per90": 51.52,
+      "touches_pct": 10.0
+    }
+  },
+  {
+    "id": 1214582,
+    "name": "Hanna Wijk",
+    "name_he": "חנה וייק",
+    "primary_role": "RB / RWB (האקן/שוודיה)",
+    "position_label": "Left Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 26
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 23
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 22
+      },
+      {
+        "title": "Goals",
+        "percentile": 1
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 13
+      },
+      {
+        "title": "Touches",
+        "percentile": 1
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 2.28,
+      "tackles_pct": 42.0,
+      "interceptions_per90": 0.21,
+      "interceptions_pct": 2.0,
+      "clearances_per90": 1.87,
+      "clearances_pct": 28.0,
+      "recoveries_per90": 3.94,
+      "recoveries_pct": 14.0,
+      "defensive_actions_per90": 4.98,
+      "defensive_actions_pct": 24.0,
+      "duels_won_pct": 76.47,
+      "duels_won_percentile": 100.0,
+      "aerials_won_pct": 100.0,
+      "aerials_won_percentile": 100.0,
+      "accurate_passes_per90": 26.96,
+      "pass_accuracy": 79.75,
+      "pass_accuracy_pct": 48.0,
+      "accurate_long_balls_per90": 0.41,
+      "accurate_long_balls_pct": 6.0,
+      "long_ball_accuracy": 16.67,
+      "long_ball_accuracy_pct": 4.0,
+      "chances_created_per90": 0.83,
+      "chances_created_pct": 54.0,
+      "successful_crosses_per90": 0.41,
+      "successful_crosses_pct": 50.0,
+      "touches_per90": 53.5,
+      "touches_pct": 12.0
+    }
+  },
+  {
+    "id": 1031793,
+    "name": "Julie Blakstad",
+    "name_he": "ז'ולי בלקסטאד",
+    "primary_role": "LWB / LB / Winger",
+    "position_label": "Left Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 73
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 82
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 38
+      },
+      {
+        "title": "Goals",
+        "percentile": 95
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 87
+      },
+      {
+        "title": "Touches",
+        "percentile": 7
+      }
+    ],
+    "key_metrics": {
+      "tackles_per90": 3.0,
+      "tackles_pct": 80.0,
+      "interceptions_per90": 1.12,
+      "interceptions_pct": 56.0,
+      "clearances_per90": 2.62,
+      "clearances_pct": 64.0,
+      "recoveries_per90": 4.74,
+      "recoveries_pct": 44.0,
+      "defensive_actions_per90": 6.87,
+      "defensive_actions_pct": 60.0,
+      "duels_won_pct": 54.22,
+      "duels_won_percentile": 60.0,
+      "aerials_won_pct": 62.5,
+      "aerials_won_percentile": 70.0,
+      "accurate_passes_per90": 29.71,
+      "pass_accuracy": 80.95,
+      "pass_accuracy_pct": 60.0,
+      "accurate_long_balls_per90": 0.5,
+      "accurate_long_balls_pct": 8.0,
+      "long_ball_accuracy": 23.53,
+      "long_ball_accuracy_pct": 10.0,
+      "chances_created_per90": 2.0,
+      "chances_created_pct": 96.0,
+      "successful_crosses_per90": 0.5,
+      "successful_crosses_pct": 62.0,
+      "touches_per90": 63.79,
+      "touches_pct": 36.0
+    }
+  },
+  {
+    "id": 887268,
+    "name": "Josefine Rybrink",
+    "name_he": "יוזפין רייברינק",
+    "primary_role": "CB / RB",
+    "position_label": "defender",
+    "traits": [],
+    "key_metrics": {
+      "tackles_per90": null,
+      "tackles_pct": null,
+      "interceptions_per90": null,
+      "interceptions_pct": null,
+      "clearances_per90": null,
+      "clearances_pct": null,
+      "recoveries_per90": null,
+      "recoveries_pct": null,
+      "defensive_actions_per90": null,
+      "defensive_actions_pct": null,
+      "duels_won_pct": null,
+      "duels_won_percentile": null,
+      "aerials_won_pct": null,
+      "aerials_won_percentile": null,
+      "accurate_passes_per90": null,
+      "pass_accuracy": null,
+      "pass_accuracy_pct": null,
+      "accurate_long_balls_per90": null,
+      "accurate_long_balls_pct": null,
+      "long_ball_accuracy": null,
+      "long_ball_accuracy_pct": null,
+      "chances_created_per90": null,
+      "chances_created_pct": null,
+      "successful_crosses_per90": null,
+      "successful_crosses_pct": null,
+      "touches_per90": null,
+      "touches_pct": null
+    }
+  }
+]

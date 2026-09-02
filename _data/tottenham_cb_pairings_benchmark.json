@@ -1,0 +1,83 @@
+{
+  "season": "2025/2026 Baseline & 2026/2027 Projections",
+  "benchmarks": [
+    {
+      "pairing": "Millie Bright & Kadeisha Buchanan",
+      "club": "Chelsea",
+      "ga_per90": 0.88,
+      "xga_per90": 0.94,
+      "aerial_win_pct": 74.5,
+      "ground_duel_win_pct": 69.2,
+      "prog_passes_per90": 8.4,
+      "long_ball_acc_pct": 64.2,
+      "tier": "Elite / Champion Tier"
+    },
+    {
+      "pairing": "Alex Greenwood & Alanna Kennedy",
+      "club": "Manchester City",
+      "ga_per90": 0.82,
+      "xga_per90": 0.79,
+      "aerial_win_pct": 68.0,
+      "ground_duel_win_pct": 65.5,
+      "prog_passes_per90": 14.2,
+      "long_ball_acc_pct": 76.5,
+      "tier": "Elite Playmaking Tier"
+    },
+    {
+      "pairing": "Leah Williamson & Lotte Wubben-Moy",
+      "club": "Arsenal",
+      "ga_per90": 0.62,
+      "xga_per90": 0.71,
+      "aerial_win_pct": 71.0,
+      "ground_duel_win_pct": 67.8,
+      "prog_passes_per90": 12.8,
+      "long_ball_acc_pct": 72.0,
+      "tier": "Elite Defensive Anchor"
+    },
+    {
+      "pairing": "Maya Le Tissier & Millie Turner",
+      "club": "Manchester United",
+      "ga_per90": 0.95,
+      "xga_per90": 1.05,
+      "aerial_win_pct": 70.2,
+      "ground_duel_win_pct": 63.4,
+      "prog_passes_per90": 9.1,
+      "long_ball_acc_pct": 61.5,
+      "tier": "Top-4 Contender"
+    },
+    {
+      "pairing": "Tōko Koga & Clare Hunt",
+      "club": "Tottenham (2025/2026)",
+      "ga_per90": 1.44,
+      "xga_per90": 1.38,
+      "aerial_win_pct": 66.8,
+      "ground_duel_win_pct": 62.5,
+      "prog_passes_per90": 7.8,
+      "long_ball_acc_pct": 52.4,
+      "tier": "Mid-Table Foundation (High Ceiling, Limited Buildup)"
+    }
+  ],
+  "projected_2026_27_pairings_tottenham": [
+    {
+      "pairing": "Tōko Koga & Caitlin Dijkstra",
+      "profile": "קוגה (אגרסיביות וחיפוי מהיר) + דייקסטרה (פליימייקרית וארוכים, 6.09 ל-90)",
+      "expected_ga_per90": 1.15,
+      "projected_long_ball_acc": 71.0,
+      "tactical_fit": "שדרוג מסיבי בבנייה מאחור (דייקסטרה אחוזון 97 בכדורים ארוכים)"
+    },
+    {
+      "pairing": "Tōko Koga & Alice Sombath",
+      "profile": "קוגה + סומבאת (אתלטיות עילאית מליון, 93.4% דיוק מסירה ו-72.7% באוויר)",
+      "expected_ga_per90": 1.05,
+      "projected_long_ball_acc": 78.5,
+      "tactical_fit": "התאמה מושלמת לקו הגנה גבוה ולחץ מתקדם מול קבוצות טופ 3"
+    },
+    {
+      "pairing": "קו 3: אליס סומבאת - טוקו קוגה - קייטלין דייקסטרה",
+      "profile": "שלישיית בלמיות ברמת טופ אירופי עם קלייר האנט כגיבוי פיזי",
+      "expected_ga_per90": 0.95,
+      "projected_long_ball_acc": 76.0,
+      "tactical_fit": "מאפשר לשחרר את בלקסטאד ומוריס ככנפיים התקפיות מלאות"
+    }
+  ]
+}

@@ -142,14 +142,17 @@ class FotMobAPIClient:
 
     def parse_player_metrics(self, raw_player_data: Dict[str, Any]) -> Dict[str, Any]:
         traits = []
-        for t in raw_player_data.get("traits", {}).get("items", []):
+        raw_traits = raw_player_data.get("traits") or {}
+        for t in raw_traits.get("items", []):
             traits.append({
                 "title": t.get("title"),
                 "percentile": int(round(t.get("value", 0) * 100))
             })
             
         stats_sections = []
-        season_groups = raw_player_data.get("firstSeasonStats", {}).get("statsSection", {}).get("items", [])
+        first_season = raw_player_data.get("firstSeasonStats") or {}
+        stats_sec = first_season.get("statsSection") or {}
+        season_groups = stats_sec.get("items", [])
         for group in season_groups:
             grp_title = group.get("title")
             items = []
