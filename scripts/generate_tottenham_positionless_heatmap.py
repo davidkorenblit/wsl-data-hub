@@ -130,7 +130,9 @@ def build_unified_overlay():
 
     plt.tight_layout(rect=[0.02, 0.06, 0.98, 0.89])
     
-    out_file = Path("assets/images/tottenham_positionless_heatmap.png")
+    out_dir = Path("assets/images/evaluations")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out_file = out_dir / "tottenham_positionless_heatmap.png"
     plt.savefig(out_file, dpi=300, facecolor=fig.get_facecolor(), edgecolor='none')
     plt.close()
     print(f"Generated Unified Overlay Heatmap -> {out_file}")

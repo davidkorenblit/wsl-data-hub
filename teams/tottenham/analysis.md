@@ -101,7 +101,7 @@ next_title: "חלק ג': חוליית ההגנה והמשלימות לקוגה"
         מפת חום מרחבית: חפיפה מוחלטת והעמסת חצי-המרחב השמאלי (Direct Overlay)
       </h3>
       <div class="rounded-xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-[#06090E] p-2">
-        <img src="/assets/images/tottenham_positionless_heatmap.png" alt="Tottenham Positionless Attack Heatmap Overlay" class="w-full h-auto rounded-lg shadow-lg">
+        <img src="{{ '/assets/images/evaluations/tottenham_positionless_heatmap.png' | relative_url }}" alt="Tottenham Positionless Attack Heatmap Overlay" class="w-full h-auto rounded-lg shadow-lg">
       </div>
       <p class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 mt-2 italic text-center">
         שכבות חום חופפות של אוליב (כחול), סיגי (כתום), בלקסטאד (ירוק) וטנדברג (אדום/צהוב) על מגרש יחיד: 74.2% חפיפה מרחבית ו-58.6% נגיעות ברחבה משחקניות שאינן חלוצות חוד.
