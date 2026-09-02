@@ -1,218 +1,28 @@
 [
-  {
-    "id": 1247602,
-    "player": "Selma Panengstuen",
-    "pos": "GK",
-    "role_detailed": "Keeper",
-    "age": "23",
-    "nation": "nor Norway",
-    "cname": "Norway"
-  },
-  {
-    "id": 887265,
-    "player": "Lize Kop",
-    "pos": "GK",
-    "role_detailed": "Keeper",
-    "age": "28",
-    "nation": "ned Netherlands",
-    "cname": "Netherlands"
-  },
-  {
-    "id": 1214575,
-    "player": "Alice Sombath",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "22",
-    "nation": "fra France",
-    "cname": "France"
-  },
-  {
-    "id": 1215012,
-    "player": "Caitlin Dijkstra",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "27",
-    "nation": "ned Netherlands",
-    "cname": "Netherlands"
-  },
-  {
-    "id": 1257462,
-    "player": "Ellia Morris",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "23",
-    "nation": "eng England",
-    "cname": "England"
-  },
-  {
-    "id": 1050882,
-    "player": "Amanda Nildén",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "28",
-    "nation": "swe Sweden",
-    "cname": "Sweden"
-  },
-  {
-    "id": 1453078,
-    "player": "Clare Hunt",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "27",
-    "nation": "aus Australia",
-    "cname": "Australia"
-  },
-  {
-    "id": 1214582,
-    "player": "Hannah Wijk",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "22",
-    "nation": "swe Sweden",
-    "cname": "Sweden"
-  },
-  {
-    "id": 1627765,
-    "player": "Toko Koga",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "20",
-    "nation": "jpn Japan",
-    "cname": "Japan"
-  },
-  {
-    "id": 1031793,
-    "player": "Julie Blakstad",
-    "pos": "DF",
-    "role_detailed": "Defender",
-    "age": "25",
-    "nation": "nor Norway",
-    "cname": "Norway"
-  },
-  {
-    "id": 1285343,
-    "player": "Signe Gaupset",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "21",
-    "nation": "nor Norway",
-    "cname": "Norway"
-  },
-  {
-    "id": 1195380,
-    "player": "Maite Oroz",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "28",
-    "nation": "esp Spain",
-    "cname": "Spain"
-  },
-  {
-    "id": 1030313,
-    "player": "Olivia Holdt",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "25",
-    "nation": "den Denmark",
-    "cname": "Denmark"
-  },
-  {
-    "id": 874559,
-    "player": "Olga Ahtinen",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "29",
-    "nation": "fin Finland",
-    "cname": "Finland"
-  },
-  {
-    "id": 1055898,
-    "player": "Victoria Pelova",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "27",
-    "nation": "ned Netherlands",
-    "cname": "Netherlands"
-  },
-  {
-    "id": 884402,
-    "player": "Drew Spence",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "33",
-    "nation": "jam Jamaica",
-    "cname": "Jamaica"
-  },
-  {
-    "id": 943694,
-    "player": "Eveliina Summanen",
-    "pos": "MF",
-    "role_detailed": "Midfielder",
-    "age": "28",
-    "nation": "fin Finland",
-    "cname": "Finland"
-  },
-  {
-    "id": 1082582,
-    "player": "Jessica Naz",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "25",
-    "nation": "eng England",
-    "cname": "England"
-  },
-  {
-    "id": 1140227,
-    "player": "Cathinka Tandberg",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "22",
-    "nation": "nor Norway",
-    "cname": "Norway"
-  },
-  {
-    "id": 1241170,
-    "player": "Matilda Vinberg",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "23",
-    "nation": "swe Sweden",
-    "cname": "Sweden"
-  },
-  {
-    "id": 1349374,
-    "player": "Matilda Nildén",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "21",
-    "nation": "swe Sweden",
-    "cname": "Sweden"
-  },
-  {
-    "id": 1082557,
-    "player": "Kirsty Hanson",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "28",
-    "nation": "sco Scotland",
-    "cname": "Scotland"
-  },
-  {
-    "id": 1423814,
-    "player": "Lenna Gunning-Williams",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "21",
-    "nation": "eng England",
-    "cname": "England"
-  },
-  {
-    "id": 1023081,
-    "player": "Shekiera Martinez",
-    "pos": "MF",
-    "role_detailed": "Attacker",
-    "age": "25",
-    "nation": "ger Germany",
-    "cname": "Germany"
-  }
+  {"player": "Lize Kop", "name_he": "ליזה קופ", "pos": "GK", "no": "1", "nation": "NED"},
+  {"player": "Selma Panengstuen", "name_he": "סלמה פננגסטואן", "pos": "GK", "no": "21", "nation": "NOR"},
+  {"player": "Tōko Koga", "name_he": "טוקו קוגה", "pos": "DF", "no": "2", "nation": "JPN"},
+  {"player": "Amanda Nildén", "name_he": "אמנדה נילדן", "pos": "DF", "no": "3", "nation": "SWE"},
+  {"player": "Clare Hunt", "name_he": "קלייר האנט", "pos": "DF", "no": "5", "nation": "AUS"},
+  {"player": "Caitlin Dijkstra", "name_he": "קייטלין דייקסטרה", "pos": "DF", "no": "6", "nation": "NED"},
+  {"player": "Ella Morris", "name_he": "אלה מוריס", "pos": "DF", "no": "15", "nation": "ENG"},
+  {"player": "Alice Sombath", "name_he": "אליס סומבאת", "pos": "DF", "no": "12", "nation": "FRA"},
+  {"player": "Julie Blakstad", "name_he": "ז'ולי בלקסטאד", "pos": "DF", "no": "24", "nation": "NOR"},
+  {"player": "Josefine Rybrink", "name_he": "יוזפין רייברינק", "pos": "DF", "no": "4", "nation": "SWE"},
+  {"player": "Luana Bühler", "name_he": "לואנה ביהלר", "pos": "DF", "no": "13", "nation": "SUI"},
+  {"player": "Hanna Wijk", "name_he": "חנה וייק", "pos": "DF", "no": "29", "nation": "SWE"},
+  {"player": "Eveliina Summanen", "name_he": "אוולינה סומאנן", "pos": "MF", "no": "8", "nation": "FIN"},
+  {"player": "Signe Gaupset", "name_he": "סיגנה גאופסט ('סיגי')", "pos": "MF", "no": "10", "nation": "NOR"},
+  {"player": "Victoria Pelova", "name_he": "ויקטוריה פלובה ('ויק')", "pos": "MF", "no": "23", "nation": "NED"},
+  {"player": "Olga Ahtinen", "name_he": "אולגה אהטינן", "pos": "MF", "no": "20", "nation": "FIN"},
+  {"player": "Drew Spence", "name_he": "דרו ספנס", "pos": "MF", "no": "25", "nation": "JAM"},
+  {"player": "Maite Oroz", "name_he": "מאיטה אורוז", "pos": "MF", "no": "28", "nation": "ESP"},
+  {"player": "Jessica Naz", "name_he": "ג'סיקה נז", "pos": "FW", "no": "7", "nation": "ENG"},
+  {"player": "Cathinka Tandberg", "name_he": "קת'ינקה טנדברג", "pos": "FW", "no": "9", "nation": "NOR"},
+  {"player": "Olivia Holdt", "name_he": "אוליבה הולנדט ('אוליב')", "pos": "FW", "no": "11", "nation": "DEN"},
+  {"player": "Kirsty Hanson", "name_he": "קירסטי הנסון", "pos": "FW", "no": "16", "nation": "SCO"},
+  {"player": "Matilda Vinberg", "name_he": "מטילדה וינברג", "pos": "FW", "no": "17", "nation": "SWE"},
+  {"player": "Shekiera Martinez", "name_he": "שקירה מרטינז", "pos": "FW", "no": "19", "nation": "GER"},
+  {"player": "Matilda Nildén", "name_he": "מטילדה נילדן", "pos": "FW", "no": "26", "nation": "SWE"},
+  {"player": "Lenna Gunning-Williams", "name_he": "לנה גאנינג-וויליאמס", "pos": "FW", "no": "30", "nation": "ENG"}
 ]
