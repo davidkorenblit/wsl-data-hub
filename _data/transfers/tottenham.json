@@ -1,0 +1,97 @@
+{
+  "team": "Tottenham Hotspur Women",
+  "season_completed": "2025/26",
+  "season_new": "2026/27",
+  "summary": {
+    "total_new_signings": 6,
+    "total_departures": 5,
+    "headline": "עידן מרטין הו יוצא לדרך: מהפכת מנהיגות, קישור איכותי מארסנל וחיזוק צעיר ורב-גוני"
+  },
+  "transfers_in": [
+    {
+      "player": "Victoria Pelova",
+      "name_he": "ויקטוריה פלובה",
+      "pos": "MF",
+      "from": "Arsenal",
+      "nation": "NED",
+      "role": "קשרית התקפית יצירתית, מנהיגת קישור, שליטה בקצב וראיית משחק עילאית"
+    },
+    {
+      "player": "Caitlin Dijkstra",
+      "name_he": "קייטלין דייקסטרה",
+      "pos": "DF",
+      "from": "VfL Wolfsburg",
+      "nation": "NED",
+      "role": "בלמת נבחרת הולנד, ניסיון בינלאומי, יציבות ובנייה מאחור"
+    },
+    {
+      "player": "Alice Sombath",
+      "name_he": "אליס סומבאת",
+      "pos": "DF",
+      "from": "Lyon",
+      "nation": "FRA",
+      "role": "שחקנית הגנה פיזית ומהירה מליון, גמישות בכל עמדות ההגנה"
+    },
+    {
+      "player": "Kirsty Hanson",
+      "name_he": "קירסטי הנסון",
+      "pos": "FW/MF",
+      "from": "Aston Villa",
+      "nation": "SCO",
+      "role": "שחקנית כנף ישירה, דריבל מסוכן ואספקת כדורים לרחבה"
+    },
+    {
+      "player": "Selma Panengstuen",
+      "name_he": "סלמה פננגסטואן",
+      "pos": "GK",
+      "from": "Kolbotn",
+      "nation": "NOR",
+      "role": "שוערת נורווגית צעירה ומבטיחה לעיבוי עמדת השוערות לצד ליזה קופ"
+    },
+    {
+      "player": "Shekiera Martinez",
+      "name_he": "שקירה מרטינז",
+      "pos": "FW",
+      "from": "Eintracht Frankfurt / West Ham",
+      "nation": "GER",
+      "role": "חלוצה מרכזית בעלת נוכחות ומהירות ברחבה"
+    }
+  ],
+  "transfers_out": [
+    {
+      "player": "Bethany England",
+      "name_he": "בת' אנגלנד",
+      "pos": "FW",
+      "to": "Crystal Palace",
+      "impact": "קפטנית ומנהיגת הקבוצה בשנים האחרונות. עזיבה מסיבית שיוצרת חלל מנהיגותי"
+    },
+    {
+      "player": "Molly Bartrip",
+      "name_he": "מולי בארטריפ",
+      "pos": "DF",
+      "to": "Crystal Palace",
+      "impact": "עמוד התווך של ההגנה וסגנית הקפטנית, עברה יחד עם בת' לפאלאס"
+    },
+    {
+      "player": "Martha Thomas",
+      "name_he": "מרתה תומאס",
+      "pos": "FW/MF",
+      "to": "עזיבה / העברה",
+      "impact": "חלוצה/קשרית התקפית ורסטילית"
+    },
+    {
+      "player": "Kit Graham",
+      "name_he": "קיט גרהאם",
+      "pos": "MF",
+      "to": "עזיבה",
+      "impact": "קשרית ותיקה בסגל"
+    },
+    {
+      "player": "Charlotte Grant",
+      "name_he": "שרלוט גרנט",
+      "pos": "DF",
+      "to": "עזיבה",
+      "impact": "מגנת נבחרת אוסטרליה"
+    }
+  ]
+}

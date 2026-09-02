@@ -1,0 +1,51 @@
+{
+  "name": "Tōko Koga",
+  "age": 19,
+  "minutes": 1705,
+  "starts": 19,
+  "goals": 2,
+  "assists": 1,
+  "traits": [
+    {
+      "title": "Chances created",
+      "percentile": 24
+    },
+    {
+      "title": "Aerial duels",
+      "percentile": 25
+    },
+    {
+      "title": "Defensive actions",
+      "percentile": 16
+    },
+    {
+      "title": "Goals",
+      "percentile": 84
+    },
+    {
+      "title": "Shot attempts",
+      "percentile": 23
+    },
+    {
+      "title": "Touches",
+      "percentile": 27
+    }
+  ],
+  "key_stats": {},
+  "with_vs_without_koga": {
+    "with_koga": {
+      "matches": 19,
+      "goals_conceded_per90": 1.47,
+      "win_rate_pct": 52.6,
+      "clean_sheets": 6,
+      "shots_against_per90": 11.8
+    },
+    "without_koga": {
+      "matches": 3,
+      "goals_conceded_per90": 3.33,
+      "win_rate_pct": 0.0,
+      "clean_sheets": 0,
+      "shots_against_per90": 18.3
+    }
+  }
+}
