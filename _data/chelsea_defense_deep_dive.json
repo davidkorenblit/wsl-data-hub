@@ -1,0 +1,1237 @@
+[
+  {
+    "id": 1648650,
+    "name": "Veerle Buurman",
+    "role_desc": "בלמת צעירה (הולנד) / בילד-אפ וניהול מסירה",
+    "primary_position": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 93
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 90
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 33
+      },
+      {
+        "title": "Goals",
+        "percentile": 65
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 44
+      },
+      {
+        "title": "Touches",
+        "percentile": 94
+      }
+    ],
+    "stats_sections": [
+      {
+        "section": "Shooting",
+        "stats": [
+          {
+            "metric": "Goals",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "xG",
+            "stat_value": "0.36",
+            "per_90": 0.03,
+            "percentile_rank": 44.2
+          },
+          {
+            "metric": "xGOT",
+            "stat_value": "0.11",
+            "per_90": 0.01,
+            "percentile_rank": 51.9
+          },
+          {
+            "metric": "xG excl. penalty",
+            "stat_value": "0.36",
+            "per_90": 0.03,
+            "percentile_rank": 46.2
+          },
+          {
+            "metric": "Shots",
+            "stat_value": "4",
+            "per_90": 0.36,
+            "percentile_rank": 44.2
+          },
+          {
+            "metric": "Shots on target",
+            "stat_value": "1",
+            "per_90": 0.09,
+            "percentile_rank": 55.8
+          }
+        ]
+      },
+      {
+        "section": "Passing",
+        "stats": [
+          {
+            "metric": "Assists",
+            "stat_value": "1",
+            "per_90": 0.09,
+            "percentile_rank": 76.9
+          },
+          {
+            "metric": "xA",
+            "stat_value": "1.07",
+            "per_90": 0.1,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "Accurate passes",
+            "stat_value": "649",
+            "per_90": 58.59,
+            "percentile_rank": 76.9
+          },
+          {
+            "metric": "Pass accuracy",
+            "stat_value": "90.4",
+            "per_90": 90.39,
+            "percentile_rank": 78.8
+          },
+          {
+            "metric": "Accurate long balls",
+            "stat_value": "22",
+            "per_90": 1.99,
+            "percentile_rank": 23.1
+          },
+          {
+            "metric": "Long ball accuracy",
+            "stat_value": "46.8",
+            "per_90": 46.81,
+            "percentile_rank": 63.5
+          },
+          {
+            "metric": "Chances created",
+            "stat_value": "13",
+            "per_90": 1.17,
+            "percentile_rank": 94.2
+          }
+        ]
+      },
+      {
+        "section": "Possession",
+        "stats": [
+          {
+            "metric": "Dribbles",
+            "stat_value": "2",
+            "per_90": 0.18,
+            "percentile_rank": 40.4
+          },
+          {
+            "metric": "Dribbles success rate",
+            "stat_value": "50.0",
+            "per_90": 50.0,
+            "percentile_rank": 42.3
+          },
+          {
+            "metric": "Duels won",
+            "stat_value": "47",
+            "per_90": 4.24,
+            "percentile_rank": 69.2
+          },
+          {
+            "metric": "Duels won %",
+            "stat_value": "65.3",
+            "per_90": 65.28,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "Aerials won",
+            "stat_value": "18",
+            "per_90": 1.62,
+            "percentile_rank": 65.4
+          },
+          {
+            "metric": "Aerials won %",
+            "stat_value": "69.2",
+            "per_90": 69.23,
+            "percentile_rank": 84.6
+          },
+          {
+            "metric": "Touches",
+            "stat_value": "926",
+            "per_90": 83.59,
+            "percentile_rank": 80.8
+          },
+          {
+            "metric": "Touches in opposition box",
+            "stat_value": "9",
+            "per_90": 0.81,
+            "percentile_rank": 40.4
+          },
+          {
+            "metric": "Dispossessed",
+            "stat_value": "8",
+            "per_90": 0.72,
+            "percentile_rank": 9.6
+          },
+          {
+            "metric": "Fouls won",
+            "stat_value": "5",
+            "per_90": 0.45,
+            "percentile_rank": 61.5
+          }
+        ]
+      },
+      {
+        "section": "Defending",
+        "stats": [
+          {
+            "metric": "Defensive actions",
+            "stat_value": "78",
+            "per_90": 7.04,
+            "percentile_rank": 26.9
+          },
+          {
+            "metric": "Tackles",
+            "stat_value": "22",
+            "per_90": 1.99,
+            "percentile_rank": 73.1
+          },
+          {
+            "metric": "Interceptions",
+            "stat_value": "14",
+            "per_90": 1.26,
+            "percentile_rank": 61.5
+          },
+          {
+            "metric": "Blocked scoring attempt",
+            "stat_value": "8",
+            "per_90": 0.72,
+            "percentile_rank": 42.3
+          },
+          {
+            "metric": "Fouls committed",
+            "stat_value": "5",
+            "per_90": 0.45,
+            "percentile_rank": 71.2
+          },
+          {
+            "metric": "Recoveries",
+            "stat_value": "56",
+            "per_90": 5.06,
+            "percentile_rank": 71.2
+          },
+          {
+            "metric": "Possession won final 3rd",
+            "stat_value": "3",
+            "per_90": 0.27,
+            "percentile_rank": 84.6
+          },
+          {
+            "metric": "Dribbled past",
+            "stat_value": "2",
+            "per_90": 0.18,
+            "percentile_rank": 84.6
+          },
+          {
+            "metric": "Clearances",
+            "stat_value": "34",
+            "per_90": 3.07,
+            "percentile_rank": 15.4
+          },
+          {
+            "metric": "Clean sheets",
+            "stat_value": "5",
+            "per_90": 0.45,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "Goals conceded while on pitch",
+            "stat_value": "9",
+            "per_90": 0.81,
+            "percentile_rank": 82.7
+          },
+          {
+            "metric": "xG against while on pitch",
+            "stat_value": "12.83",
+            "per_90": 1.16,
+            "percentile_rank": 76.9
+          }
+        ]
+      },
+      {
+        "section": "Discipline",
+        "stats": [
+          {
+            "metric": "Yellow cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Red cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 646031,
+    "name": "Lucy Bronze",
+    "role_desc": "מגינה/בלמת שלישית / יציאה ללחץ ומסירה מקדמת",
+    "primary_position": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 26
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 98
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 92
+      },
+      {
+        "title": "Goals",
+        "percentile": 72
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 73
+      },
+      {
+        "title": "Touches",
+        "percentile": 99
+      }
+    ],
+    "stats_sections": [
+      {
+        "section": "Shooting",
+        "stats": [
+          {
+            "metric": "Goals",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "xG",
+            "stat_value": "1.00",
+            "per_90": 0.1,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "xGOT",
+            "stat_value": "0.05",
+            "per_90": 0.01,
+            "percentile_rank": 38.5
+          },
+          {
+            "metric": "xG excl. penalty",
+            "stat_value": "1.00",
+            "per_90": 0.1,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "Shots",
+            "stat_value": "8",
+            "per_90": 0.83,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "Shots on target",
+            "stat_value": "2",
+            "per_90": 0.21,
+            "percentile_rank": 76.9
+          },
+          {
+            "metric": "Headed shots",
+            "stat_value": "4",
+            "per_90": 0.41,
+            "percentile_rank": 75.0
+          }
+        ]
+      },
+      {
+        "section": "Passing",
+        "stats": [
+          {
+            "metric": "Assists",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "xA",
+            "stat_value": "0.56",
+            "per_90": 0.06,
+            "percentile_rank": 80.8
+          },
+          {
+            "metric": "Accurate passes",
+            "stat_value": "555",
+            "per_90": 57.35,
+            "percentile_rank": 73.1
+          },
+          {
+            "metric": "Pass accuracy",
+            "stat_value": "82.7",
+            "per_90": 82.71,
+            "percentile_rank": 38.5
+          },
+          {
+            "metric": "Accurate long balls",
+            "stat_value": "26",
+            "per_90": 2.69,
+            "percentile_rank": 55.8
+          },
+          {
+            "metric": "Long ball accuracy",
+            "stat_value": "35.6",
+            "per_90": 35.62,
+            "percentile_rank": 28.8
+          },
+          {
+            "metric": "Chances created",
+            "stat_value": "6",
+            "per_90": 0.62,
+            "percentile_rank": 88.5
+          },
+          {
+            "metric": "Big chances created",
+            "stat_value": "1",
+            "per_90": 0.1,
+            "percentile_rank": 82.7
+          },
+          {
+            "metric": "Successful crosses",
+            "stat_value": "2",
+            "per_90": 0.21,
+            "percentile_rank": 78.8
+          },
+          {
+            "metric": "Cross accuracy",
+            "stat_value": "18.2",
+            "per_90": 18.18,
+            "percentile_rank": 59.6
+          }
+        ]
+      },
+      {
+        "section": "Possession",
+        "stats": [
+          {
+            "metric": "Dribbles",
+            "stat_value": "4",
+            "per_90": 0.41,
+            "percentile_rank": 75.0
+          },
+          {
+            "metric": "Dribbles success rate",
+            "stat_value": "57.1",
+            "per_90": 57.14,
+            "percentile_rank": 59.6
+          },
+          {
+            "metric": "Duels won",
+            "stat_value": "59",
+            "per_90": 6.1,
+            "percentile_rank": 92.3
+          },
+          {
+            "metric": "Duels won %",
+            "stat_value": "59.0",
+            "per_90": 59.0,
+            "percentile_rank": 61.5
+          },
+          {
+            "metric": "Aerials won",
+            "stat_value": "28",
+            "per_90": 2.89,
+            "percentile_rank": 92.3
+          },
+          {
+            "metric": "Aerials won %",
+            "stat_value": "59.6",
+            "per_90": 59.57,
+            "percentile_rank": 57.7
+          },
+          {
+            "metric": "Touches",
+            "stat_value": "850",
+            "per_90": 87.83,
+            "percentile_rank": 88.5
+          },
+          {
+            "metric": "Touches in opposition box",
+            "stat_value": "16",
+            "per_90": 1.65,
+            "percentile_rank": 92.3
+          },
+          {
+            "metric": "Dispossessed",
+            "stat_value": "2",
+            "per_90": 0.21,
+            "percentile_rank": 55.8
+          },
+          {
+            "metric": "Fouls won",
+            "stat_value": "10",
+            "per_90": 1.03,
+            "percentile_rank": 92.3
+          }
+        ]
+      },
+      {
+        "section": "Defending",
+        "stats": [
+          {
+            "metric": "Defensive actions",
+            "stat_value": "73",
+            "per_90": 7.54,
+            "percentile_rank": 38.5
+          },
+          {
+            "metric": "Tackles",
+            "stat_value": "17",
+            "per_90": 1.76,
+            "percentile_rank": 53.8
+          },
+          {
+            "metric": "Interceptions",
+            "stat_value": "22",
+            "per_90": 2.27,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "Blocked scoring attempt",
+            "stat_value": "8",
+            "per_90": 0.83,
+            "percentile_rank": 55.8
+          },
+          {
+            "metric": "Fouls committed",
+            "stat_value": "11",
+            "per_90": 1.14,
+            "percentile_rank": 13.5
+          },
+          {
+            "metric": "Recoveries",
+            "stat_value": "54",
+            "per_90": 5.58,
+            "percentile_rank": 82.7
+          },
+          {
+            "metric": "Possession won final 3rd",
+            "stat_value": "5",
+            "per_90": 0.52,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "Dribbled past",
+            "stat_value": "6",
+            "per_90": 0.62,
+            "percentile_rank": 40.4
+          },
+          {
+            "metric": "Clearances",
+            "stat_value": "26",
+            "per_90": 2.69,
+            "percentile_rank": 11.5
+          },
+          {
+            "metric": "Clean sheets",
+            "stat_value": "1",
+            "per_90": 0.1,
+            "percentile_rank": 25.0
+          },
+          {
+            "metric": "Goals conceded while on pitch",
+            "stat_value": "10",
+            "per_90": 1.03,
+            "percentile_rank": 69.2
+          },
+          {
+            "metric": "xG against while on pitch",
+            "stat_value": "8.56",
+            "per_90": 0.88,
+            "percentile_rank": 86.5
+          }
+        ]
+      },
+      {
+        "section": "Discipline",
+        "stats": [
+          {
+            "metric": "Yellow cards",
+            "stat_value": "1",
+            "per_90": 0.1,
+            "percentile_rank": 48.1
+          },
+          {
+            "metric": "Red cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1356262,
+    "name": "Naomi Girma",
+    "role_desc": "בלמת מרכזית / קריאת משחק",
+    "primary_position": "Center Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 64
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 38
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 29
+      },
+      {
+        "title": "Goals",
+        "percentile": 96
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 68
+      },
+      {
+        "title": "Touches",
+        "percentile": 96
+      }
+    ],
+    "stats_sections": [
+      {
+        "section": "Shooting",
+        "stats": [
+          {
+            "metric": "Goals",
+            "stat_value": "1",
+            "per_90": 0.12,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "xG",
+            "stat_value": "1.06",
+            "per_90": 0.13,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "xGOT",
+            "stat_value": "1.24",
+            "per_90": 0.15,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "xG excl. penalty",
+            "stat_value": "1.06",
+            "per_90": 0.13,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "Shots",
+            "stat_value": "7",
+            "per_90": 0.83,
+            "percentile_rank": 88.5
+          },
+          {
+            "metric": "Shots on target",
+            "stat_value": "2",
+            "per_90": 0.24,
+            "percentile_rank": 82.7
+          },
+          {
+            "metric": "Headed shots",
+            "stat_value": "4",
+            "per_90": 0.48,
+            "percentile_rank": 82.7
+          }
+        ]
+      },
+      {
+        "section": "Passing",
+        "stats": [
+          {
+            "metric": "Assists",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "xA",
+            "stat_value": "0.56",
+            "per_90": 0.07,
+            "percentile_rank": 82.7
+          },
+          {
+            "metric": "Accurate passes",
+            "stat_value": "639",
+            "per_90": 76.07,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Pass accuracy",
+            "stat_value": "91.2",
+            "per_90": 91.16,
+            "percentile_rank": 90.4
+          },
+          {
+            "metric": "Accurate long balls",
+            "stat_value": "21",
+            "per_90": 2.5,
+            "percentile_rank": 40.4
+          },
+          {
+            "metric": "Long ball accuracy",
+            "stat_value": "46.7",
+            "per_90": 46.67,
+            "percentile_rank": 61.5
+          },
+          {
+            "metric": "Chances created",
+            "stat_value": "2",
+            "per_90": 0.24,
+            "percentile_rank": 44.2
+          },
+          {
+            "metric": "Big chances created",
+            "stat_value": "2",
+            "per_90": 0.24,
+            "percentile_rank": 94.2
+          },
+          {
+            "metric": "Successful crosses",
+            "stat_value": "1",
+            "per_90": 0.12,
+            "percentile_rank": 69.2
+          },
+          {
+            "metric": "Cross accuracy",
+            "stat_value": "50.0",
+            "per_90": 50.0,
+            "percentile_rank": 84.6
+          }
+        ]
+      },
+      {
+        "section": "Possession",
+        "stats": [
+          {
+            "metric": "Dribbles",
+            "stat_value": "2",
+            "per_90": 0.24,
+            "percentile_rank": 51.9
+          },
+          {
+            "metric": "Dribbles success rate",
+            "stat_value": "66.7",
+            "per_90": 66.67,
+            "percentile_rank": 67.3
+          },
+          {
+            "metric": "Duels won",
+            "stat_value": "24",
+            "per_90": 2.86,
+            "percentile_rank": 17.3
+          },
+          {
+            "metric": "Duels won %",
+            "stat_value": "53.3",
+            "per_90": 53.33,
+            "percentile_rank": 30.8
+          },
+          {
+            "metric": "Aerials won",
+            "stat_value": "8",
+            "per_90": 0.95,
+            "percentile_rank": 28.8
+          },
+          {
+            "metric": "Aerials won %",
+            "stat_value": "53.3",
+            "per_90": 53.33,
+            "percentile_rank": 46.2
+          },
+          {
+            "metric": "Touches",
+            "stat_value": "803",
+            "per_90": 95.6,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Touches in opposition box",
+            "stat_value": "9",
+            "per_90": 1.07,
+            "percentile_rank": 69.2
+          },
+          {
+            "metric": "Dispossessed",
+            "stat_value": "3",
+            "per_90": 0.36,
+            "percentile_rank": 32.7
+          },
+          {
+            "metric": "Fouls won",
+            "stat_value": "3",
+            "per_90": 0.36,
+            "percentile_rank": 46.2
+          }
+        ]
+      },
+      {
+        "section": "Defending",
+        "stats": [
+          {
+            "metric": "Defensive actions",
+            "stat_value": "54",
+            "per_90": 6.43,
+            "percentile_rank": 17.3
+          },
+          {
+            "metric": "Tackles",
+            "stat_value": "11",
+            "per_90": 1.31,
+            "percentile_rank": 25.0
+          },
+          {
+            "metric": "Interceptions",
+            "stat_value": "4",
+            "per_90": 0.48,
+            "percentile_rank": 11.5
+          },
+          {
+            "metric": "Blocked scoring attempt",
+            "stat_value": "5",
+            "per_90": 0.6,
+            "percentile_rank": 26.9
+          },
+          {
+            "metric": "Fouls committed",
+            "stat_value": "3",
+            "per_90": 0.36,
+            "percentile_rank": 86.5
+          },
+          {
+            "metric": "Recoveries",
+            "stat_value": "43",
+            "per_90": 5.12,
+            "percentile_rank": 73.1
+          },
+          {
+            "metric": "Possession won final 3rd",
+            "stat_value": "1",
+            "per_90": 0.12,
+            "percentile_rank": 63.5
+          },
+          {
+            "metric": "Dribbled past",
+            "stat_value": "7",
+            "per_90": 0.83,
+            "percentile_rank": 15.4
+          },
+          {
+            "metric": "Clearances",
+            "stat_value": "34",
+            "per_90": 4.05,
+            "percentile_rank": 40.4
+          },
+          {
+            "metric": "Clean sheets",
+            "stat_value": "4",
+            "per_90": 0.48,
+            "percentile_rank": 92.3
+          },
+          {
+            "metric": "Goals conceded while on pitch",
+            "stat_value": "12",
+            "per_90": 1.43,
+            "percentile_rank": 53.8
+          },
+          {
+            "metric": "xG against while on pitch",
+            "stat_value": "11.79",
+            "per_90": 1.4,
+            "percentile_rank": 51.9
+          }
+        ]
+      },
+      {
+        "section": "Discipline",
+        "stats": [
+          {
+            "metric": "Yellow cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Red cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 773361,
+    "name": "Ellie Carpenter",
+    "role_desc": "מגינת כנף ימין סילונית / שורפת קו",
+    "primary_position": "Right Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 68
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 42
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 30
+      },
+      {
+        "title": "Goals",
+        "percentile": 75
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 64
+      },
+      {
+        "title": "Touches",
+        "percentile": 93
+      }
+    ],
+    "stats_sections": []
+  },
+  {
+    "id": 851315,
+    "name": "Sandy Baltimore",
+    "role_desc": "שחקנית כנף/מגינת שמאל תוקפת",
+    "primary_position": "Left Back",
+    "traits": [
+      {
+        "title": "Chances created",
+        "percentile": 85
+      },
+      {
+        "title": "Aerial duels",
+        "percentile": 23
+      },
+      {
+        "title": "Defensive actions",
+        "percentile": 5
+      },
+      {
+        "title": "Goals",
+        "percentile": 94
+      },
+      {
+        "title": "Shot attempts",
+        "percentile": 96
+      },
+      {
+        "title": "Touches",
+        "percentile": 88
+      }
+    ],
+    "stats_sections": [
+      {
+        "section": "Shooting",
+        "stats": [
+          {
+            "metric": "Goals",
+            "stat_value": "3",
+            "per_90": 0.24,
+            "percentile_rank": 94.0
+          },
+          {
+            "metric": "xG",
+            "stat_value": "2.28",
+            "per_90": 0.18,
+            "percentile_rank": 92.0
+          },
+          {
+            "metric": "xGOT",
+            "stat_value": "2.26",
+            "per_90": 0.18,
+            "percentile_rank": 96.0
+          },
+          {
+            "metric": "Penalty goals",
+            "stat_value": "1",
+            "per_90": 0.08,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "xG excl. penalty",
+            "stat_value": "1.55",
+            "per_90": 0.13,
+            "percentile_rank": 90.0
+          },
+          {
+            "metric": "Shots",
+            "stat_value": "21",
+            "per_90": 1.7,
+            "percentile_rank": 96.0
+          },
+          {
+            "metric": "Shots on target",
+            "stat_value": "5",
+            "per_90": 0.41,
+            "percentile_rank": 92.0
+          },
+          {
+            "metric": "Headed shots",
+            "stat_value": "1",
+            "per_90": 0.08,
+            "percentile_rank": 64.0
+          }
+        ]
+      },
+      {
+        "section": "Passing",
+        "stats": [
+          {
+            "metric": "Assists",
+            "stat_value": "1",
+            "per_90": 0.08,
+            "percentile_rank": 52.0
+          },
+          {
+            "metric": "xA",
+            "stat_value": "2.70",
+            "per_90": 0.22,
+            "percentile_rank": 90.0
+          },
+          {
+            "metric": "Accurate passes",
+            "stat_value": "512",
+            "per_90": 41.51,
+            "percentile_rank": 78.0
+          },
+          {
+            "metric": "Pass accuracy",
+            "stat_value": "84.1",
+            "per_90": 84.07,
+            "percentile_rank": 80.0
+          },
+          {
+            "metric": "Accurate long balls",
+            "stat_value": "14",
+            "per_90": 1.14,
+            "percentile_rank": 34.0
+          },
+          {
+            "metric": "Long ball accuracy",
+            "stat_value": "60.9",
+            "per_90": 60.87,
+            "percentile_rank": 96.0
+          },
+          {
+            "metric": "Chances created",
+            "stat_value": "21",
+            "per_90": 1.7,
+            "percentile_rank": 92.0
+          },
+          {
+            "metric": "Big chances created",
+            "stat_value": "7",
+            "per_90": 0.57,
+            "percentile_rank": 92.0
+          },
+          {
+            "metric": "Successful crosses",
+            "stat_value": "21",
+            "per_90": 1.7,
+            "percentile_rank": 88.0
+          },
+          {
+            "metric": "Cross accuracy",
+            "stat_value": "17.2",
+            "per_90": 17.21,
+            "percentile_rank": 30.0
+          }
+        ]
+      },
+      {
+        "section": "Possession",
+        "stats": [
+          {
+            "metric": "Dribbles",
+            "stat_value": "21",
+            "per_90": 1.7,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Dribbles success rate",
+            "stat_value": "52.5",
+            "per_90": 52.5,
+            "percentile_rank": 66.0
+          },
+          {
+            "metric": "Duels won",
+            "stat_value": "42",
+            "per_90": 3.41,
+            "percentile_rank": 20.0
+          },
+          {
+            "metric": "Duels won %",
+            "stat_value": "40.8",
+            "per_90": 40.78,
+            "percentile_rank": 10.0
+          },
+          {
+            "metric": "Aerials won",
+            "stat_value": "4",
+            "per_90": 0.32,
+            "percentile_rank": 18.0
+          },
+          {
+            "metric": "Aerials won %",
+            "stat_value": "50.0",
+            "per_90": 50.0,
+            "percentile_rank": 34.0
+          },
+          {
+            "metric": "Touches",
+            "stat_value": "1005",
+            "per_90": 81.49,
+            "percentile_rank": 84.0
+          },
+          {
+            "metric": "Touches in opposition box",
+            "stat_value": "58",
+            "per_90": 4.7,
+            "percentile_rank": 100.0
+          },
+          {
+            "metric": "Dispossessed",
+            "stat_value": "21",
+            "per_90": 1.7,
+            "percentile_rank": 12.0
+          },
+          {
+            "metric": "Fouls won",
+            "stat_value": "9",
+            "per_90": 0.73,
+            "percentile_rank": 62.0
+          }
+        ]
+      },
+      {
+        "section": "Defending",
+        "stats": [
+          {
+            "metric": "Defensive actions",
+            "stat_value": "32",
+            "per_90": 2.59,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "Tackles",
+            "stat_value": "8",
+            "per_90": 0.65,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "Interceptions",
+            "stat_value": "14",
+            "per_90": 1.14,
+            "percentile_rank": 64.0
+          },
+          {
+            "metric": "Blocked scoring attempt",
+            "stat_value": "1",
+            "per_90": 0.08,
+            "percentile_rank": 20.0
+          },
+          {
+            "metric": "Fouls committed",
+            "stat_value": "12",
+            "per_90": 0.97,
+            "percentile_rank": 28.0
+          },
+          {
+            "metric": "Recoveries",
+            "stat_value": "57",
+            "per_90": 4.62,
+            "percentile_rank": 40.0
+          },
+          {
+            "metric": "Possession won final 3rd",
+            "stat_value": "6",
+            "per_90": 0.49,
+            "percentile_rank": 64.0
+          },
+          {
+            "metric": "Dribbled past",
+            "stat_value": "5",
+            "per_90": 0.41,
+            "percentile_rank": 76.0
+          },
+          {
+            "metric": "Clearances",
+            "stat_value": "9",
+            "per_90": 0.73,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "Clean sheets",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 0.0
+          },
+          {
+            "metric": "Goals conceded while on pitch",
+            "stat_value": "13",
+            "per_90": 1.05,
+            "percentile_rank": 72.0
+          },
+          {
+            "metric": "xG against while on pitch",
+            "stat_value": "15.03",
+            "per_90": 1.22,
+            "percentile_rank": 66.0
+          }
+        ]
+      },
+      {
+        "section": "Discipline",
+        "stats": [
+          {
+            "metric": "Yellow cards",
+            "stat_value": "2",
+            "per_90": 0.16,
+            "percentile_rank": 40.0
+          },
+          {
+            "metric": "Red cards",
+            "stat_value": "0",
+            "per_90": 0.0,
+            "percentile_rank": 100.0
+          }
+        ]
+      }
+    ]
+  }
+]

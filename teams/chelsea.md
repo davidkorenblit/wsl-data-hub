@@ -5,6 +5,8 @@ team_name: "Chelsea"
 team_slug: "chelsea"
 team_meta: "WSL 2025/26 · חובת ההוכחה והחלפת דורות"
 permalink: /teams/chelsea/
+next_url: /teams/chelsea/defense/
+next_title: "חלק ב': מלכודת הרסט-דיפנס והסדק של בומפסטור"
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
@@ -34,9 +36,8 @@ permalink: /teams/chelsea/
     בקצרה.
   </p>
 
-  <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-8 text-center mt-6">
-    <h2 class="font-bold text-xl text-neutral-900 dark:text-white mb-1">כפרה עובדים</h2>
-    <p class="text-neutral-500 dark:text-neutral-400 text-xs sm:text-sm">הניתוח המלא והנתונים של Chelsea יפורסמו בקרוב.</p>
-  </div>
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
 
 </div>
+
