@@ -3,7 +3,7 @@ layout: team
 title: "Tottenham - חלק א': מועדון, זהות ואהבה"
 team_name: "Tottenham Hotspur"
 team_slug: "tottenham"
-team_meta: "WSL 2025/26 · חלק א': מועדון, זהות ומנהיגות"
+team_meta: "WSL 2026/27 · חלק א': מועדון, זהות ומנהיגות"
 permalink: /teams/tottenham/
 next_url: /teams/tottenham/analysis/
 next_title: "חלק ב': ניתוח נתונים"

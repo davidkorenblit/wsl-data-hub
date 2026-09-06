@@ -3,7 +3,7 @@ layout: team
 title: "West Ham"
 team_name: "West Ham"
 team_slug: "west-ham"
-team_meta: "WSL 2025/26 · מיקום: 7"
+team_meta: "WSL 2026/27 · מיקום: 7"
 permalink: /teams/west-ham/
 ---
 

@@ -3,7 +3,7 @@ layout: team
 title: "Everton"
 team_name: "Everton"
 team_slug: "everton"
-team_meta: "WSL 2025/26 · מיקום: 6"
+team_meta: "WSL 2026/27 · מיקום: 6"
 permalink: /teams/everton/
 ---
 

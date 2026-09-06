@@ -3,7 +3,7 @@ layout: team
 title: "Arsenal - חלק ב': ניתוח נתונים ותמונת בסיס"
 team_name: "Arsenal Women"
 team_slug: "arsenal"
-team_meta: "WSL 2025/26 · חלק ב': תמונת בסיס ופרדוקס הביצועים"
+team_meta: "WSL 2026/27 · חלק ב': תמונת בסיס ופרדוקס הביצועים"
 hide_sidebar: true
 permalink: /teams/arsenal/analysis/
 prev_url: /teams/arsenal/

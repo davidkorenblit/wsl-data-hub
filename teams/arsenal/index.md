@@ -3,7 +3,7 @@ layout: team
 title: "Arsenal - חלק א': מועדון, זהות וצפון לונדון"
 team_name: "Arsenal Women"
 team_slug: "arsenal"
-team_meta: "WSL 2025/26 · חלק א': מועדון, זהות והיריבות של צפון לונדון"
+team_meta: "WSL 2026/27 · חלק א': מועדון, זהות והיריבות של צפון לונדון"
 permalink: /teams/arsenal/
 next_url: /teams/arsenal/analysis/
 next_title: "חלק ב': ניתוח נתונים ותמונת בסיס"

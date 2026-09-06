@@ -3,7 +3,7 @@ layout: team
 title: "Brighton - רקע ומבוא"
 team_name: "Brighton & Hove Albion"
 team_slug: "brighton"
-team_meta: "WSL 2025/26 · תרבות דאטא ומודלים"
+team_meta: "WSL 2026/27 · תרבות דאטא ומודלים"
 permalink: /teams/brighton/
 ---
 

@@ -3,7 +3,7 @@ layout: team
 title: "London City Lionesses"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק א': מועדון, קהילה וזהות"
+team_meta: "WSL 2026/27 · חלק א': מועדון, קהילה וזהות"
 permalink: /teams/london-city-lionesses/
 next_url: /teams/london-city-lionesses/analysis/
 next_title: "חלק ב': ניתוח נתונים"

@@ -1,13 +1,13 @@
 ---
 layout: default
-title: "WSL Data Hub | טבלת הליגה 2025/26"
-description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL עונת 2025/26"
+title: "WSL Data Hub | טבלת הליגה 2026/27"
+description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL עונת 2026/27"
 ---
 
 <!-- Page Title & Section Header -->
 <div class="mb-6">
   <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
-    WSL 2025/26 · STANDINGS
+    WSL 2026/27 · STANDINGS
   </div>
   <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2">
     טבלת הליגה
@@ -92,14 +92,14 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
 
   <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-5">
     <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-2">
-      מועדון במוקד
+      הטור השבועי
     </div>
-    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">London City Lionesses</h3>
+    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">סיכומי מחזור וטורי דעה</h3>
     <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-3">
-      קבוצת המיקוד הראשונה של הבלוג. בעמוד הקבוצה תוכלו למצוא את הסגל המלא וסדרת שאלות מחקר מבוססות דאטא.
+      מבט אישי ומעמיק על אירועי השבוע ב-WSL: תובנות טקטיות, סיפורי שחקניות, מגמות בולטות ודברים שלמדנו מהמחזור.
     </p>
-    <a href="{{ '/teams/london-city-lionesses/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
-      מעבר לניתוח LCL ←
+    <a href="{{ '/weekly/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
+      מעבר לטור השבועי ←
     </a>
   </div>
 </div>

@@ -3,7 +3,7 @@ layout: team
 title: "London City Lionesses - חלק ו': מודל התחזית וסיכום"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק ו': מודל התחזית, אימפקט הרכש וסיכום"
+team_meta: "WSL 2026/27 · חלק ו': מודל התחזית, אימפקט הרכש וסיכום"
 hide_sidebar: true
 permalink: /teams/london-city-lionesses/projections/
 prev_url: /teams/london-city-lionesses/transfers-attack/

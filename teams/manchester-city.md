@@ -3,7 +3,7 @@ layout: team
 title: "Manchester City - רקע ומבוא"
 team_name: "Manchester City"
 team_slug: "manchester-city"
-team_meta: "WSL 2025/26 · אלופות, באני שואו והצהרת כוונות"
+team_meta: "WSL 2026/27 · אלופות, באני שואו והצהרת כוונות"
 permalink: /teams/manchester-city/
 ---
 

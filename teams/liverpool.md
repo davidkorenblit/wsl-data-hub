@@ -3,7 +3,7 @@ layout: team
 title: "Liverpool"
 team_name: "Liverpool"
 team_slug: "liverpool"
-team_meta: "WSL 2025/26 · מיקום: 4"
+team_meta: "WSL 2026/27 · מיקום: 4"
 permalink: /teams/liverpool/
 ---
 

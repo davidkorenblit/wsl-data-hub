@@ -3,7 +3,7 @@ layout: team
 title: "Chelsea - רקע ומבוא"
 team_name: "Chelsea"
 team_slug: "chelsea"
-team_meta: "WSL 2025/26 · חובת ההוכחה והחלפת דורות"
+team_meta: "WSL 2026/27 · חובת ההוכחה והחלפת דורות"
 permalink: /teams/chelsea/
 next_url: /teams/chelsea/defense/
 next_title: "חלק ב': מלכודת הרסט-דיפנס והסדק של בומפסטור"

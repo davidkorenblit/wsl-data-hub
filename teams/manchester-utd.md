@@ -3,7 +3,7 @@ layout: team
 title: "Manchester Utd - רקע ומבוא"
 team_name: "Manchester United"
 team_slug: "manchester-utd"
-team_meta: "WSL 2025/26 · חלק א': רקע, אקדמיה ואי-ודאות"
+team_meta: "WSL 2026/27 · חלק א': רקע, אקדמיה ואי-ודאות"
 permalink: /teams/manchester-utd/
 ---
 

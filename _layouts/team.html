@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.team_name | default: page.title }} | WSL Data Hub</title>
-    <meta name="description" content="סטטיסטיקות וניתוחים עבור {{ page.team_name | default: page.title }} בעונת WSL 2025/26">
+    <meta name="description" content="סטטיסטיקות וניתוחים עבור {{ page.team_name | default: page.title }} בעונת WSL 2026/27">
 
     <!-- Immediate Theme Detection (Prevents FOUC) -->
     <script>
@@ -50,12 +50,13 @@
       <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
         <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
           <span class="text-lg font-bold tracking-tight text-neutral-900 dark:text-white">WSL Data Hub</span>
-          <span class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500">25/26</span>
+          <span class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500">26/27</span>
         </a>
 
         <div class="flex items-center gap-4 sm:gap-6">
           <nav class="flex items-center gap-4 sm:gap-5 text-xs sm:text-sm font-medium text-neutral-600 dark:text-neutral-300">
             <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">← חזרה לליגה</a>
+            <a href="{{ '/weekly/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">הטור השבועי</a>
             <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מתודולוגיה</a>
             <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מדדים</a>
             <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">אודות</a>
@@ -76,7 +77,7 @@
       <!-- Clean Minimal Header -->
       <div class="mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-4">
         <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-1">
-          WSL 2025/26 · SQUAD & ANALYSIS
+          WSL 2026/27 · SQUAD & ANALYSIS
         </div>
         <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white" dir="ltr" style="text-align: right;">
           {{ page.team_name | default: page.title }}
@@ -225,7 +226,7 @@
     <footer class="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-4 mt-auto text-xs text-neutral-500 dark:text-neutral-400 font-mono transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
         <div dir="rtl">
-          WSL Data Hub · עונת 2025/26 · מקור נתונים: FBref
+          WSL Data Hub · עונת 2026/27 · מקור נתונים: FBref / FotMob
         </div>
         <div class="flex items-center gap-3 text-neutral-400 dark:text-neutral-500">
           <a href="{{ '/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">ראשי</a>

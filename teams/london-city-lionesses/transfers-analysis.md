@@ -3,7 +3,7 @@ layout: team
 title: "London City Lionesses - חלק ד': ניתוח שדרוג העמדות (ארפס & מאפי)"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק ד': שדרוג עמדת השוערת והבלמית"
+team_meta: "WSL 2026/27 · חלק ד': שדרוג עמדת השוערת והבלמית"
 hide_sidebar: true
 permalink: /teams/london-city-lionesses/transfers-analysis/
 prev_url: /teams/london-city-lionesses/transfers-intro/

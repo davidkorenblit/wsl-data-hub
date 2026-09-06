@@ -3,7 +3,7 @@ layout: team
 title: "Birmingham City"
 team_name: "Birmingham City"
 team_slug: "birmingham-city"
-team_meta: "WSL 2025/26 · מיקום: 5"
+team_meta: "WSL 2026/27 · מיקום: 5"
 permalink: /teams/birmingham-city/
 ---
 

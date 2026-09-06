@@ -3,7 +3,7 @@ layout: team
 title: "Arsenal - חלק ג': אנומליית פתיחת העונה והרחבת הליגה"
 team_name: "Arsenal Women"
 team_slug: "arsenal"
-team_meta: "WSL 2025/26 · חלק ג': אנומליית פתיחת העונה ובנצ'מרק ההתרחבות"
+team_meta: "WSL 2026/27 · חלק ג': אנומליית פתיחת העונה ובנצ'מרק ההתרחבות"
 hide_sidebar: true
 permalink: /teams/arsenal/evaluation/
 prev_url: /teams/arsenal/analysis/

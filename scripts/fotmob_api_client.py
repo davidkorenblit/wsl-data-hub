@@ -23,6 +23,7 @@ from paths import (
     FOTMOB_LEAGUES_DIR,
     SITE_DATA_DIR,
     SITE_SQUADS_DIR,
+    ASSETS_DATA_DIR,
     ensure_all_directories
 )
 
@@ -37,6 +38,25 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Accept": "application/json",
     "Referer": "https://www.fotmob.com/"
+}
+
+# Standard Team ID to Slug Mapping for Jekyll Routing
+TEAM_ID_TO_SLUG = {
+    258661: "chelsea",
+    231488: "manchester-city",
+    258657: "arsenal",
+    258665: "liverpool",
+    258658: "birmingham-city",
+    258663: "everton",
+    231497: "west-ham",
+    231505: "brighton",
+    628117: "tottenham",
+    954396: "manchester-utd",
+    614828: "crystal-palace",
+    231494: "aston-villa",
+    231502: "charlton-athletic",
+    1075419: "london-city-lionesses",
+    231508: "leicester-city",
 }
 
 # Standard Team ID Registry
@@ -106,6 +126,136 @@ class FotMobAPIClient:
     def fetch_league_topstats(self, league_id: int, season_id: int) -> Optional[Dict[str, Any]]:
         url = f"https://data.fotmob.com/stats/{league_id}/season/{season_id}/topstats.json"
         return self._get(url)
+
+    def fetch_league_raw(self, league_id: int = 9227, season: Optional[str] = None) -> Optional[Dict[str, Any]]:
+        """Fetch raw league overview including standings, tabs, and matches/fixtures."""
+        url = f"https://www.fotmob.com/api/data/leagues?id={league_id}"
+        if season:
+            from urllib.parse import quote
+            url += f"&season={quote(season)}"
+        return self._get(url)
+
+    def parse_league_table(self, raw_league_data: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Extract and normalize league table standings for WSL Data Hub."""
+        table_list = []
+        raw_tables = raw_league_data.get("table", [])
+        if not raw_tables:
+            return table_list
+        
+        all_rows = raw_tables[0].get("data", {}).get("table", {}).get("all", [])
+        for row in all_rows:
+            team_id = row.get("id")
+            team_name = row.get("name", "")
+            slug = TEAM_ID_TO_SLUG.get(team_id, team_name.lower().replace(" ", "-"))
+
+            # Parse goals from scoresStr (e.g. "3-1") or fallback fields
+            scores_str = row.get("scoresStr", "0-0")
+            gf, ga = 0, 0
+            if scores_str and "-" in scores_str:
+                parts = scores_str.split("-")
+                try:
+                    gf = int(parts[0])
+                    ga = int(parts[1])
+                except (ValueError, IndexError):
+                    pass
+            elif "goalsScored" in row:
+                gf = int(row.get("goalsScored", 0))
+                ga = gf - int(row.get("goalConDiff", 0))
+
+            table_list.append({
+                "rk": row.get("idx"),
+                "squad": team_name,
+                "slug": slug,
+                "mp": int(row.get("played", 0)),
+                "w": int(row.get("wins", 0)),
+                "d": int(row.get("draws", 0)),
+                "l": int(row.get("losses", 0)),
+                "gf": gf,
+                "ga": ga,
+                "gd": int(row.get("goalConDiff", 0)),
+                "pts": int(row.get("pts", 0))
+            })
+        return table_list
+
+    def parse_league_matches(self, raw_league_data: Dict[str, Any], only_finished: bool = False) -> List[Dict[str, Any]]:
+        """Extract and normalize all matches and fixtures for WSL."""
+        matches_list = []
+        raw_matches = raw_league_data.get("matches", {}).get("allMatches", [])
+        for m in raw_matches:
+            status = m.get("status", {})
+            finished = status.get("finished", False)
+            if only_finished and not finished:
+                continue
+
+            home = m.get("home", {})
+            away = m.get("away", {})
+            score_str = status.get("scoreStr")
+            home_score = None
+            away_score = None
+            if score_str and "-" in score_str:
+                parts = score_str.split("-")
+                try:
+                    home_score = int(parts[0].strip())
+                    away_score = int(parts[1].strip())
+                except (ValueError, IndexError):
+                    pass
+
+            matches_list.append({
+                "id": m.get("id"),
+                "round": m.get("round"),
+                "date": status.get("utcTime"),
+                "home": home.get("name"),
+                "home_id": home.get("id"),
+                "home_score": home_score,
+                "away": away.get("name"),
+                "away_id": away.get("id"),
+                "away_score": away_score,
+                "score": score_str,
+                "finished": finished,
+                "started": status.get("started", False),
+                "reason": status.get("reason", {}).get("short") if status.get("reason") else None
+            })
+        return matches_list
+
+    def update_wsl_live_data(self, season: Optional[str] = None) -> Dict[str, Any]:
+        """
+        Pull latest WSL data from FotMob and update all Jekyll and Assets datasets:
+        1. Saves raw payload to data/raw/fotmob/leagues/league_9227_wsl_overview.json
+        2. Updates _data/league_table.json and assets/data/league_table.json
+        3. Saves all fixtures/matches to _data/wsl_matches.json
+        4. Saves completed match results to _data/wsl_recent_results.json
+        """
+        logger.info(f"Fetching latest WSL league data (Season: {season or 'current'})...")
+        raw_data = self.fetch_league_raw(league_id=9227, season=season)
+        if not raw_data:
+            logger.error("Failed to fetch WSL league data from FotMob.")
+            return {}
+
+        # 1. Save Raw Payload
+        raw_path = FOTMOB_LEAGUES_DIR / "league_9227_wsl_overview.json"
+        self.save_json(raw_data, raw_path)
+
+        # 2. Parse & Save Standings Table
+        table = self.parse_league_table(raw_data)
+        if table:
+            self.save_json(table, SITE_DATA_DIR / "league_table.json")
+            self.save_json(table, ASSETS_DATA_DIR / "league_table.json")
+            logger.info(f"Updated league standings table: {len(table)} teams. Leader: {table[0]['squad']} ({table[0]['pts']} pts)")
+
+        # 3. Parse & Save Matches
+        all_matches = self.parse_league_matches(raw_data)
+        finished_matches = [m for m in all_matches if m.get("finished")]
+        if all_matches:
+            self.save_json(all_matches, SITE_DATA_DIR / "wsl_matches.json")
+            self.save_json(finished_matches, SITE_DATA_DIR / "wsl_recent_results.json")
+            logger.info(f"Extracted {len(all_matches)} total matches ({len(finished_matches)} completed).")
+
+        return {
+            "teams_count": len(table),
+            "total_matches": len(all_matches),
+            "finished_matches": len(finished_matches),
+            "leader": table[0]["squad"] if table else None
+        }
 
     def parse_squad(self, raw_team_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         squad_list = []
@@ -192,10 +342,16 @@ def main():
     parser = argparse.ArgumentParser(description="FotMob Generic WSL Data Pipeline")
     parser.add_argument("--team", type=str, help="Team slug (e.g. tottenham, arsenal, chelsea)")
     parser.add_argument("--player-id", type=int, help="FotMob player ID")
-    parser.add_argument("--save-squad", action="store_true", help="Save squad to _data/squads/")
+    parser.add_argument("--update-wsl", action="store_true", help="Sync latest WSL standings and match results")
+    parser.add_argument("--season", type=str, help="Season string (e.g. 2026/2027)")
     args = parser.parse_args()
 
     client = FotMobAPIClient()
+
+    if args.update_wsl:
+        summary = client.update_wsl_live_data(season=args.season)
+        logger.info(f"WSL live data sync finished: {summary}")
+        return
 
     if args.team:
         slug = args.team.lower().replace("-", "_")

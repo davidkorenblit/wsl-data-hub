@@ -3,7 +3,7 @@ layout: team
 title: "Crystal Palace - רקע ומבוא"
 team_name: "Crystal Palace"
 team_slug: "crystal-palace"
-team_meta: "WSL 2025/26 · פתיחת עונה"
+team_meta: "WSL 2026/27 · פתיחת עונה"
 permalink: /teams/crystal-palace/
 ---
 

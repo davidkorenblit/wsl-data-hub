@@ -3,7 +3,7 @@ layout: team
 title: "Aston Villa"
 team_name: "Aston Villa"
 team_slug: "aston-villa"
-team_meta: "WSL 2025/26 · מיקום: 12"
+team_meta: "WSL 2026/27 · מיקום: 12"
 permalink: /teams/aston-villa/
 ---
 

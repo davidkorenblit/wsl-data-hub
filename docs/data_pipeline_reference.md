@@ -83,6 +83,9 @@ python scripts/fotmob_api_client.py --team tottenham --save-squad
 
 # 2. שליפת מדדים מתקדמים של שחקנית לפי ID
 python scripts/fotmob_api_client.py --player-id 1055898
+
+# 3. סינכרון שבועי מהיר של טבלת הליגה ותוצאות המשחקים
+python scripts/sync_matchweek.py
 ```
 
 או בייבוא ישיר בסקריפטים:
@@ -92,11 +95,31 @@ from fotmob_api_client import FotMobAPIClient, WSL_TEAMS
 client = FotMobAPIClient()
 team_data = client.fetch_team_raw(WSL_TEAMS["tottenham"]["id"])
 squad = client.parse_squad(team_data)
+
+# עדכון טבלה ותוצאות משחקים שבועי:
+summary = client.update_wsl_live_data(season="2026/2027")
 ```
 
 ---
 
-## 5. מיפוי קבצים ב-Jekyll (`_data/`)
+## 5. נוהל סינכרון סוף מחזור (Matchweek Sync Workflow)
+בסיום כל מחזור משחקים (בדרך כלל יום ראשון בערב), מריצים את סקריפט-העל:
+```bash
+python scripts/sync_matchweek.py
+```
+הסקריפט מבצע:
+1. שאיבת ה-JSON העדכני של הליגה מ-FotMob (`leagueId = 9227`).
+2. עדכון טבלת הליגה הראשית ב-`_data/league_table.json` וב-`assets/data/league_table.json`.
+3. עדכון מסד נתוני כל המשחקים ב-`_data/wsl_matches.json`.
+4. שמירת תוצאות המשחקים שהסתיימו במחזור החולף ב-`_data/wsl_recent_results.json`.
+5. הדפסת סיכום טרמינל נקי (תוצאות המחזור, תמונת צמרת הטבלה וזמן ריצה).
+
+---
+
+## 6. מיפוי קבצים ב-Jekyll (`_data/`)
+* טבלת הליגה הפעילה: `_data/league_table.json` ו-`assets/data/league_table.json`
+* תוצאות משחקים שבועיות: `_data/wsl_recent_results.json`
+* כלל משחקי העונה: `_data/wsl_matches.json`
 * סגלים מעודכנים: `_data/squads/{team_slug}_2026_27.json`
 * העברות: `_data/transfers/{team_slug}.json`
 * נתונים מתקדמים לניתוחים: `_data/{team_slug}_advanced_attack.json`

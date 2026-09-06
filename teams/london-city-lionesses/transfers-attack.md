@@ -3,7 +3,7 @@ layout: team
 title: "London City Lionesses - חלק ה': אלכסיה פוטלס וקדידיאטו דיאני"
 team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
-team_meta: "WSL 2025/26 · חלק ה': חוליית הקישור וההתקפה (פוטלס & דיאני)"
+team_meta: "WSL 2026/27 · חלק ה': חוליית הקישור וההתקפה (פוטלס & דיאני)"
 hide_sidebar: true
 permalink: /teams/london-city-lionesses/transfers-attack/
 prev_url: /teams/london-city-lionesses/transfers-analysis/

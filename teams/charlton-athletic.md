@@ -3,7 +3,7 @@ layout: team
 title: "Charlton Athletic"
 team_name: "Charlton Athletic"
 team_slug: "charlton-athletic"
-team_meta: "WSL 2025/26 · מיקום: 13"
+team_meta: "WSL 2026/27 · מיקום: 13"
 permalink: /teams/charlton-athletic/
 ---
 
