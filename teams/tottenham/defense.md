@@ -270,7 +270,7 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
         <span>4. מעבדת המערכים: 3 תרחישים טקטיים של מרטין הו</span>
       </h2>
       <span class="text-xs font-mono px-2.5 py-1 rounded bg-primary-500/10 text-primary-600 dark:text-primary-400 font-bold border border-primary-500/20">
-        INTERACTIVE LAB
+        TACTICAL SCENARIOS
       </span>
     </div>
 
@@ -290,10 +290,6 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
             חנה וייק ונילדן סוגרות את האגפים הרמטית ומנצחות כל מאבק 1 על 1, בזמן שדייקסטרה וקוגה מזינות בכדורים ארוכים ומדויקים ישירות מעל קו הלחץ.
           </p>
         </div>
-        <button onclick="openAndSetFormation('combo1')" class="w-full py-1.5 px-3 rounded text-xs font-bold font-mono transition-all bg-sky-500/10 hover:bg-sky-500/20 text-sky-600 dark:text-sky-400 border border-sky-500/30 flex items-center justify-center gap-1.5">
-          <span>הצג בלוח הטקטי</span>
-          <span>↗</span>
-        </button>
       </div>
 
       <!-- Scenario B (Asymmetric Hybrid) -->
@@ -310,10 +306,6 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
             סומבאת נסגרת פנימה כבלמת שלישית מימין ונועלת את ה-Rest Defense. בלקסטאד חופשייה לטוס קדימה על כל קו שמאל, כשאוליב/הנסון מפנות לה מסדרון נקי.
           </p>
         </div>
-        <button onclick="openAndSetFormation('combo2')" class="w-full py-1.5 px-3 rounded text-xs font-bold font-mono transition-all bg-primary-500/20 hover:bg-primary-500/30 text-primary-700 dark:text-primary-300 border border-primary-500/40 flex items-center justify-center gap-1.5">
-          <span>הצג בלוח הטקטי</span>
-          <span>↗</span>
-        </button>
       </div>
 
       <!-- Scenario C -->
@@ -330,16 +322,12 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
             שלישיית בלמיות אתלטית ומהירה שמסוגלת לעמוד בקו הגנה סופר-גבוה וללחוץ עד קו החצי מול קבוצות הצמרת, כשמוריס ובלקסטאד חורכות את שני האגפים.
           </p>
         </div>
-        <button onclick="openAndSetFormation('combo3')" class="w-full py-1.5 px-3 rounded text-xs font-bold font-mono transition-all bg-purple-500/10 hover:bg-purple-500/20 text-purple-600 dark:text-purple-400 border border-purple-500/30 flex items-center justify-center gap-1.5">
-          <span>הצג בלוח הטקטי</span>
-          <span>↗</span>
-        </button>
       </div>
     </div>
   </div>
 
-  <!-- Collapsible Interactive Tactical Lab -->
-  <details id="tactical-lab-details" class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-4 sm:p-5 my-8 shadow-xl" open>
+  <!-- Interactive Tactical Lab (Temporarily Suspended)
+  <details id="tactical-lab-details" class="group rounded-md border border-neutral-200 dark:border-neutral-800 bg-[#0b1329] p-4 sm:p-5 my-8 shadow-xl">
     <summary class="cursor-pointer font-bold text-base text-neutral-900 dark:text-white flex items-center justify-between select-none list-none">
       <div class="space-y-0.5">
         <span class="flex items-center gap-2">
@@ -390,35 +378,26 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
         </div>
       </div>
 
-      <!-- Active Preset Description Box -->
       <div id="preset-info-box" class="mb-4 p-3 rounded bg-slate-900/90 border border-slate-800 text-xs font-sans text-slate-300">
-        <!-- Injected by JS -->
       </div>
 
-      <!-- The 2D Tactical Football Pitch (Free Drag Surface) -->
       <div id="pitch-container" class="relative w-full max-w-2xl mx-auto rounded-lg overflow-hidden border-2 border-emerald-500/40 shadow-2xl touch-none" style="height: 520px; background: radial-gradient(circle at center, #064e3b 0%, #022c22 100%);">
         
-        <!-- Pitch Markings -->
         <div class="absolute inset-2 border-2 border-white/20 rounded pointer-events-none"></div>
         <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-white/20 -translate-y-1/2 pointer-events-none"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border-2 border-white/20 rounded-full pointer-events-none"></div>
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white/40 rounded-full pointer-events-none"></div>
 
-        <!-- Top Goal Area (Opponent Box) -->
         <div class="absolute top-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-t-0 pointer-events-none"></div>
         <div class="absolute top-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-t-0 pointer-events-none"></div>
 
-        <!-- Bottom Goal Area (Tottenham Box) -->
         <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-56 h-24 border-2 border-white/20 border-b-0 pointer-events-none"></div>
         <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-28 h-10 border-2 border-white/20 border-b-0 pointer-events-none"></div>
 
-        <!-- Pitch Drop Target / Magnets Area -->
         <div id="pitch-magnets-layer" class="absolute inset-0">
-          <!-- Draggable magnets injected here -->
         </div>
       </div>
 
-      <!-- Bench / Player Magnet Pool -->
       <div class="mt-5 pt-4 border-t border-slate-800">
         <div class="flex items-center justify-between mb-2.5">
           <span class="text-xs font-mono font-bold text-slate-300 uppercase tracking-wider">
@@ -428,18 +407,18 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
         </div>
         
         <div class="flex flex-wrap gap-1.5" id="bench-container">
-          <!-- Rendered by JS -->
         </div>
       </div>
     </div>
   </details>
+  -->
 
   <!-- Standardized Post Pagination -->
   {% include post_pagination.html %}
 
 </div>
 
-<!-- Free Drag-and-Drop Tactical Pitch Script -->
+<!-- Free Drag-and-Drop Tactical Pitch Script (Temporarily Suspended)
 <script>
 (function() {
   const SQUAD = [
@@ -740,4 +719,5 @@ next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיו�
   }
 })();
 </script>
+-->
 
