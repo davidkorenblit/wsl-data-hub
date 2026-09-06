@@ -96,7 +96,7 @@ description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL �
     </div>
     <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">סיכומי מחזור וטורי דעה</h3>
     <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-3">
-      מבט אישי ומעמיק על אירועי השבוע ב-WSL: תובנות טקטיות, סיפורי שחקניות, מגמות בולטות ודברים שלמדנו מהמחזור.
+      נבחן עבור חלק מהקבוצות את התיאוריות שדיברנו עליהן, נלמד להכיר את הקבוצות החדשות ועוד.
     </p>
     <a href="{{ '/weekly/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
       מעבר לטור השבועי ←
