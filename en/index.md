@@ -1,9 +1,10 @@
 ---
 layout: default
-title: "WSL Data Hub | טבלת הליגה 2026/27"
-description: "ניתוחי כדורגל נשים מבוססי דאטא – WSL עונת 2026/27"
-lang: he
-alt_url: /en/
+title: "WSL Data Hub | 2026/27 Standings"
+description: "Data-driven women's football analytics & deep dives – FA WSL 2026/27"
+permalink: /en/
+lang: en
+alt_url: /
 ---
 
 <!-- Page Title & Section Header -->
@@ -12,10 +13,10 @@ alt_url: /en/
     WSL 2026/27 · STANDINGS
   </div>
   <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2">
-    טבלת הליגה
+    League Table
   </h1>
   <p class="text-xs sm:text-sm text-neutral-500 dark:text-neutral-400 font-sans">
-    לחצו על שם מועדון לצפייה בסגל, מדדי ביצוע ומחקרי עומק.
+    Click on any club to view squad details, advanced metrics, and in-depth tactical analysis.
   </p>
 </div>
 
@@ -49,15 +50,21 @@ alt_url: /en/
         
         <!-- Team Name -->
         <td class="text-sm font-sans font-medium text-neutral-900 dark:text-white py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-left">
+          {% if team.slug == 'tottenham' %}
+          <a href="{{ '/en/teams/tottenham/' | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
+            <span>{{ team.squad }}</span>
+          </a>
+          {% else %}
           <a href="{{ '/teams/' | append: team.slug | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
             {% if is_lcl %}
             <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span>
             {% endif %}
             <span>{{ team.squad }}</span>
           </a>
+          {% endif %}
         </td>
         
-        <!-- Numeric Columns (Strictly Right Aligned, Monospace) -->
+        <!-- Numeric Columns -->
         <td class="text-sm font-mono tabular-nums text-neutral-500 dark:text-neutral-400 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{{ team.mp }}</td>
         <td class="text-sm font-mono tabular-nums text-neutral-800 dark:text-neutral-200 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{{ team.w }}</td>
         <td class="text-sm font-mono tabular-nums text-neutral-500 dark:text-neutral-400 py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-right">{{ team.d }}</td>
@@ -77,31 +84,31 @@ alt_url: /en/
   </table>
 </div>
 
-<!-- Strict Clean Editorial Cards -->
-<div class="grid md:grid-cols-2 gap-4" dir="rtl">
+<!-- Clean Editorial Cards -->
+<div class="grid md:grid-cols-2 gap-4" dir="ltr">
   <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-5">
     <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-2">
-      מתודולוגיה ומודלים
+      Methodology & Models
     </div>
-    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">מודלים וניתוחי עומק</h3>
+    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Data Science & Metrics</h3>
     <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-3">
-      מדדי xG, פעולות יצירת בעיטה (SCA), איכות מסירות וזמני משחק מ-FBref לניתוח ביצועי הקבוצות והשחקניות.
+      xG models, Shot-Creating Actions (SCA), passing progression quality, and possession metrics powered by FBref and FotMob data.
     </p>
     <a href="{{ '/methodology/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
-      מתודולוגיית הניתוח ←
+      Explore Methodology →
     </a>
   </div>
 
   <div class="rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-5">
     <div class="text-xs font-mono uppercase text-neutral-500 dark:text-neutral-400 font-bold tracking-wider mb-2">
-      הטור השבועי
+      Weekly Column
     </div>
-    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">סיכומי מחזור וטורי דעה</h3>
+    <h3 class="text-lg font-bold text-neutral-900 dark:text-white mb-2">Matchweek Reviews & Insights</h3>
     <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed mb-3">
-      נבחן עבור חלק מהקבוצות את התיאוריות שדיברנו עליהן, נלמד להכיר את הקבוצות החדשות ועוד.
+      Tactical takeaways, eye-test verifications, expected vs actual performance, and deep dives across the league.
     </p>
-    <a href="{{ '/weekly/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
-      מעבר לטור השבועי ←
+    <a href="{{ '/en/weekly/' | relative_url }}" class="text-xs font-mono font-medium text-neutral-900 dark:text-neutral-100 hover:underline">
+      Read MW1 Column →
     </a>
   </div>
 </div>

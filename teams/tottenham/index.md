@@ -7,6 +7,8 @@ team_meta: "WSL 2026/27 · חלק א': מועדון, זהות ומנהיגות"
 permalink: /teams/tottenham/
 next_url: /teams/tottenham/analysis/
 next_title: "חלק ב': ניתוח נתונים"
+lang: he
+alt_url: /en/teams/tottenham/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

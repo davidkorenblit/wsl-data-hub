@@ -1,5 +1,15 @@
+{% assign current_lang = page.lang | default: 'he' %}
+{% assign i18n = site.data.i18n[current_lang] %}
+{% if current_lang == 'en' %}
+  {% assign current_dir = 'ltr' %}
+  {% assign default_alt_url = '/' %}
+{% else %}
+  {% assign current_dir = 'rtl' %}
+  {% assign default_alt_url = '/en/' %}
+{% endif %}
+{% assign target_alt_url = page.alt_url | default: default_alt_url %}
 <!DOCTYPE html>
-<html lang="he" dir="rtl" class="h-full antialiased">
+<html lang="{{ current_lang }}" dir="{{ current_dir }}" class="h-full antialiased">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -48,25 +58,41 @@
     <!-- Minimalist Navigation Bar -->
     <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-3 sticky top-0 z-30 transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">
-        <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
-          <span class="text-lg font-bold tracking-tight text-neutral-900 dark:text-white">WSL Data Hub</span>
-          <span class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500">26/27</span>
+        <a href="{{ (current_lang == 'en' ? '/en/' : '/') | relative_url }}" class="flex items-center gap-2">
+          <span class="text-lg font-bold tracking-tight text-neutral-900 dark:text-white">{{ i18n.site_title }}</span>
+          <span class="text-[11px] font-mono text-neutral-400 dark:text-neutral-500">{{ i18n.season }}</span>
         </a>
 
-        <div class="flex items-center gap-4 sm:gap-6">
-          <nav class="flex items-center gap-4 sm:gap-5 text-xs sm:text-sm font-medium text-neutral-600 dark:text-neutral-300">
-            <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">טבלת הליגה</a>
-            <a href="{{ '/weekly/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">הטור השבועי</a>
-            <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מתודולוגיה</a>
-            <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">מדדים</a>
-            <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">אודות</a>
+        <div class="flex items-center gap-3 sm:gap-6">
+          <nav class="flex items-center gap-3 sm:gap-5 text-xs sm:text-sm font-medium text-neutral-600 dark:text-neutral-300">
+            {% if current_lang == 'en' %}
+            <a href="{{ '/en/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.league_table }}</a>
+            <a href="{{ '/en/weekly/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.weekly }}</a>
+            <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.methodology }}</a>
+            <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.metrics }}</a>
+            <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.about }}</a>
+            {% else %}
+            <a href="{{ '/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.league_table }}</a>
+            <a href="{{ '/weekly/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.weekly }}</a>
+            <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.methodology }}</a>
+            <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.metrics }}</a>
+            <a href="{{ '/about/' | relative_url }}" class="hover:text-neutral-950 dark:hover:text-white transition-colors">{{ i18n.nav.about }}</a>
+            {% endif %}
           </nav>
 
-          <!-- Theme Toggle Button -->
-          <button id="theme-toggle" type="button" aria-label="החלף מצב תצוגה (Light/Dark)" class="p-1.5 rounded border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-xs">
-            <span class="dark:hidden" title="מעבר למצב לילה">🌙</span>
-            <span class="hidden dark:inline" title="מעבר למצב יום">☀️</span>
-          </button>
+          <div class="flex items-center gap-2">
+            <!-- Language Toggle Button -->
+            <a href="{{ target_alt_url | relative_url }}" title="{{ i18n.lang_toggle.title }}" aria-label="{{ i18n.lang_toggle.title }}" class="p-1.5 px-2 rounded border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-xs font-mono font-bold flex items-center gap-1">
+              <span>🌐</span>
+              <span>{{ i18n.lang_toggle.label }}</span>
+            </a>
+
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle" type="button" aria-label="Toggle Theme" class="p-1.5 rounded border border-neutral-200 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-800 text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white transition-colors text-xs">
+              <span class="dark:hidden" title="{{ i18n.theme_toggle.dark_title }}">🌙</span>
+              <span class="hidden dark:inline" title="{{ i18n.theme_toggle.light_title }}">☀️</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -79,15 +105,15 @@
     <!-- Minimalist Editorial Footer -->
     <footer class="border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-4 mt-auto text-xs text-neutral-500 dark:text-neutral-400 font-mono transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-        <div dir="rtl">
-          WSL Data Hub · עונת 2026/27 · מקור נתונים: FBref / FotMob
+        <div dir="{{ current_dir }}">
+          {{ i18n.footer.credit }}
         </div>
         <div class="flex items-center gap-3 text-neutral-400 dark:text-neutral-500">
-          <a href="{{ '/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">ראשי</a>
+          <a href="{{ (current_lang == 'en' ? '/en/' : '/') | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">{{ i18n.footer.home }}</a>
           <span>/</span>
-          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">מתודולוגיה</a>
+          <a href="{{ '/methodology/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">{{ i18n.footer.methodology }}</a>
           <span>/</span>
-          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">מדדים</a>
+          <a href="{{ '/metrics/' | relative_url }}" class="hover:text-neutral-700 dark:hover:text-neutral-300">{{ i18n.footer.metrics }}</a>
         </div>
       </div>
     </footer>

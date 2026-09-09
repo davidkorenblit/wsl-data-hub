@@ -1,0 +1,67 @@
+he:
+  site_title: "WSL Data Hub"
+  season: "26/27"
+  nav:
+    league_table: "טבלת הליגה"
+    weekly: "הטור השבועי"
+    methodology: "מתודולוגיה"
+    metrics: "מדדים"
+    about: "אודות"
+    back_to_league: "← חזרה לליגה"
+  theme_toggle:
+    dark_title: "מעבר למצב לילה"
+    light_title: "מעבר למצב יום"
+  lang_toggle:
+    label: "EN"
+    title: "Switch to English"
+  footer:
+    credit: "WSL Data Hub · עונת 2026/27 · מקור נתונים: FBref / FotMob"
+    home: "ראשי"
+    methodology: "מתודולוגיה"
+    metrics: "מדדים"
+  table:
+    standings_subtitle: "WSL 2026/27 · STANDINGS"
+    standings_title: "טבלת הליגה"
+    standings_desc: "לחצו על שם מועדון לצפייה בסגל, מדדי ביצוע ומחקרי עומק."
+  sidebar:
+    squad_title: "סגל הקבוצה לעונת"
+    squad_official: "סגל רשמי (שחקניות נשארות ורכש חדש)"
+    squad_tbd: "נתוני סגל יפורסמו בהמשך"
+    transfers_title: "תנועת שחקניות · חלון העברות"
+    transfers_in: "📥 הצטרפו"
+    transfers_out: "📤 עזבו"
+    minutes_last_season: "דקות בעונה שעברה"
+
+en:
+  site_title: "WSL Data Hub"
+  season: "26/27"
+  nav:
+    league_table: "League Table"
+    weekly: "Weekly Column"
+    methodology: "Methodology"
+    metrics: "Metrics"
+    about: "About"
+    back_to_league: "← Back to League"
+  theme_toggle:
+    dark_title: "Switch to Dark Mode"
+    light_title: "Switch to Light Mode"
+  lang_toggle:
+    label: "עב"
+    title: "עבור לעברית"
+  footer:
+    credit: "WSL Data Hub · 2026/27 Season · Data: FBref / FotMob"
+    home: "Home"
+    methodology: "Methodology"
+    metrics: "Metrics"
+  table:
+    standings_subtitle: "WSL 2026/27 · STANDINGS"
+    standings_title: "League Table"
+    standings_desc: "Click on any club to view squad details, advanced metrics, and in-depth tactical analysis."
+  sidebar:
+    squad_title: "Squad for"
+    squad_official: "Official Squad (Returning Players & Signings)"
+    squad_tbd: "Squad details to be announced soon"
+    transfers_title: "Transfer Activity · Summer Window"
+    transfers_in: "📥 In"
+    transfers_out: "📤 Out"
+    minutes_last_season: "Minutes last season"
