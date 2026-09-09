@@ -117,6 +117,7 @@ def sync_matchweek(season: str = None, dry_run: bool = False):
             client.save_json(table, ASSETS_DATA_DIR / "league_table.json")
 
         # Save Matches & Recent Results
+        recent_output = []
         if all_matches:
             client.save_json(all_matches, SITE_DATA_DIR / "wsl_matches.json")
             recent_output = latest_round_matches if latest_round_matches else finished_matches

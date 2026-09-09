@@ -180,7 +180,12 @@ class FotMobAPIClient:
     def parse_league_matches(self, raw_league_data: Dict[str, Any], only_finished: bool = False) -> List[Dict[str, Any]]:
         """Extract and normalize all matches and fixtures for WSL."""
         matches_list = []
-        raw_matches = raw_league_data.get("matches", {}).get("allMatches", [])
+        # FotMob API returns matches under 'fixtures.allMatches'
+        fixtures = raw_league_data.get("fixtures", {})
+        raw_matches = fixtures.get("allMatches", [])
+        # Fallback: old structure used 'matches.allMatches'
+        if not raw_matches:
+            raw_matches = raw_league_data.get("matches", {}).get("allMatches", [])
         for m in raw_matches:
             status = m.get("status", {})
             finished = status.get("finished", False)
