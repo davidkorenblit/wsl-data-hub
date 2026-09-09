@@ -7,6 +7,8 @@ team_meta: "WSL 2025/2026 · חלק ב': קו הגנה גבוה, מעברים ו
 permalink: /teams/chelsea/defense/
 prev_url: /teams/chelsea/
 prev_title: "חלק א': רקע ומבוא"
+lang: he
+alt_url: /en/teams/chelsea/defense/
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

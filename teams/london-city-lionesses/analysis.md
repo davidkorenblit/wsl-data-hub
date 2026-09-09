@@ -10,6 +10,8 @@ prev_url: /teams/london-city-lionesses/
 prev_title: "חלק א': מבוא וזהות"
 next_url: /teams/london-city-lionesses/evaluation/
 next_title: "שלב ביניים: מודל הערכת ביצועים"
+lang: he
+alt_url: /en/teams/london-city-lionesses/analysis/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

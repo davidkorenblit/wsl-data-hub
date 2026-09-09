@@ -5,6 +5,8 @@ team_name: "London City Lionesses"
 team_slug: "london-city-lionesses"
 team_meta: "WSL 2026/27 · Part I: Club Culture, Identity & Michele Kang's Revolution"
 permalink: /en/teams/london-city-lionesses/
+next_url: /en/teams/london-city-lionesses/analysis/
+next_title: "Part II: Squad Baseline & Data Analysis"
 lang: en
 alt_url: /teams/london-city-lionesses/
 ---

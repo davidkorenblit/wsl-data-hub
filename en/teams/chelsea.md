@@ -5,6 +5,8 @@ team_name: "Chelsea"
 team_slug: "chelsea"
 team_meta: "WSL 2026/27 · The Burden of Proof & Generational Shift"
 permalink: /en/teams/chelsea/
+next_url: /en/teams/chelsea/defense/
+next_title: "Part II: The Rest-Defense Trap & Bompastor's Structural Crack"
 lang: en
 alt_url: /teams/chelsea/
 ---

@@ -2,6 +2,8 @@
 layout: default
 title: "הטור השבועי | WSL Data Hub"
 permalink: /weekly/
+lang: he
+alt_url: /en/weekly/
 ---
 
 <div class="space-y-6">

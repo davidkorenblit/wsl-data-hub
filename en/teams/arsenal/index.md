@@ -5,6 +5,8 @@ team_name: "Arsenal Women"
 team_slug: "arsenal"
 team_meta: "WSL 2026/27 · Part I: Club, Culture & The North London Rivalry"
 permalink: /en/teams/arsenal/
+next_url: /en/teams/arsenal/analysis/
+next_title: "Part II: Data Analysis & Performance Paradox"
 lang: en
 alt_url: /teams/arsenal/
 ---

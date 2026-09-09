@@ -1,29 +1,46 @@
-<nav class="pt-4 border-t border-neutral-200 dark:border-neutral-800 mt-8 transition-colors" aria-label="ניווט בין עמודים">
+{% assign is_en = (page.lang == 'en') %}
+<nav class="pt-4 border-t border-neutral-200 dark:border-neutral-800 mt-8 transition-colors" aria-label="{% if is_en %}Page Navigation{% else %}ניווט בין עמודים{% endif %}">
   <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs font-mono">
     
-    <!-- Previous Link (Right side in RTL) -->
+    <!-- Previous Link -->
     <div>
       {% if page.prev_url %}
       <a href="{{ page.prev_url | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+        {% if is_en %}
+        <span>←</span>
+        <span>{{ page.prev_title | default: "Previous Part" }}</span>
+        {% else %}
         <span>→</span>
         <span>{{ page.prev_title | default: "לחלק הקודם" }}</span>
+        {% endif %}
       </a>
       {% endif %}
     </div>
 
     <!-- Center / Home Link -->
     <div class="text-neutral-400 dark:text-neutral-500">
+      {% if is_en %}
+      <a href="{{ '/en/' | relative_url }}" class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
+        League Table
+      </a>
+      {% else %}
       <a href="{{ '/' | relative_url }}" class="text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white transition-colors">
         טבלת הליגה
       </a>
+      {% endif %}
     </div>
 
-    <!-- Next Link (Left side in RTL) -->
+    <!-- Next Link -->
     <div>
       {% if page.next_url %}
       <a href="{{ page.next_url | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+        {% if is_en %}
+        <span>{{ page.next_title | default: "Next Part" }}</span>
+        <span>→</span>
+        {% else %}
         <span>{{ page.next_title | default: "לחלק הבא" }}</span>
         <span>←</span>
+        {% endif %}
       </a>
       {% endif %}
     </div>

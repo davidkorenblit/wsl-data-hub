@@ -81,4 +81,7 @@ alt_url: /teams/tottenham/
     </a>
   </div>
 
+  <!-- Standardized Post Pagination -->
+  {% include post_pagination.html %}
+
 </div>
