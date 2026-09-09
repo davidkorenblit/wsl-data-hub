@@ -4,6 +4,8 @@ title: "מדריך ומילון המדדים | WSL Data Hub"
 permalink: /metrics/
 prev_url: /methodology/
 prev_title: "מתודולוגיה ושאלות מחקר"
+lang: he
+alt_url: /en/metrics/
 ---
 
 <div class="space-y-6">

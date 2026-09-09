@@ -9,6 +9,8 @@ prev_url: /teams/tottenham/
 prev_title: "חלק א': מועדון, זהות ומנהיגות"
 next_url: /teams/tottenham/defense/
 next_title: "חלק ג': חוליית ההגנה והמשלימות לקוגה"
+lang: he
+alt_url: /en/teams/tottenham/analysis/
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

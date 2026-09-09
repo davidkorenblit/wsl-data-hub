@@ -9,6 +9,8 @@ prev_url: /teams/tottenham/analysis/
 prev_title: "חלק ב': ניתוח נתונים ותמונת בסיס"
 next_url: /teams/tottenham/transfers/
 next_title: "חלק ד': רכש התקפי, פוזישנסלס 2.0 וציפיות"
+lang: he
+alt_url: /en/teams/tottenham/defense/
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

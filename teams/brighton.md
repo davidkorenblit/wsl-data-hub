@@ -5,6 +5,8 @@ team_name: "Brighton & Hove Albion"
 team_slug: "brighton"
 team_meta: "WSL 2026/27 · תרבות דאטא ומודלים"
 permalink: /teams/brighton/
+lang: he
+alt_url: /en/teams/brighton/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

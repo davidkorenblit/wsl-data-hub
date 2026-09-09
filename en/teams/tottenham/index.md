@@ -5,6 +5,8 @@ team_name: "Tottenham Hotspur"
 team_slug: "tottenham"
 team_meta: "WSL 2026/27 · Part I: Identity, Culture & Leadership"
 permalink: /en/teams/tottenham/
+next_url: /en/teams/tottenham/analysis/
+next_title: "Part II: Data Analysis & Tactical Baseline"
 lang: en
 alt_url: /teams/tottenham/
 ---

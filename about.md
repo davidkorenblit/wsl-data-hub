@@ -2,6 +2,8 @@
 layout: default
 title: "אודות | WSL Data Hub"
 permalink: /about/
+lang: he
+alt_url: /en/about/
 ---
 
 <div class="space-y-6">

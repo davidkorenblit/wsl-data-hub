@@ -5,6 +5,8 @@ team_name: "Manchester City"
 team_slug: "manchester-city"
 team_meta: "WSL 2026/27 · אלופות, באני שואו והצהרת כוונות"
 permalink: /teams/manchester-city/
+lang: he
+alt_url: /en/teams/manchester-city/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

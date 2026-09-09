@@ -7,6 +7,8 @@ team_meta: "WSL 2026/27 · חלק א': מועדון, קהילה וזהות"
 permalink: /teams/london-city-lionesses/
 next_url: /teams/london-city-lionesses/analysis/
 next_title: "חלק ב': ניתוח נתונים"
+lang: he
+alt_url: /en/teams/london-city-lionesses/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

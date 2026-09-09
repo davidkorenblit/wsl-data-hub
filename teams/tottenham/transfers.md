@@ -7,6 +7,8 @@ team_meta: "WSL 2026/2027 · חלק ד': רכש התקפי, פוזישנסלס 2
 permalink: /teams/tottenham/transfers/
 prev_url: /teams/tottenham/defense/
 prev_title: "חלק ג': חוליית ההגנה והמשלימות לקוגה"
+lang: he
+alt_url: /en/teams/tottenham/transfers/
 ---
 
 <div class="space-y-6 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

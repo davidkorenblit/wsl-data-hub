@@ -4,6 +4,8 @@ title: "מתודולוגיה ושאלות המחקר | WSL Data Hub"
 permalink: /methodology/
 next_url: /metrics/
 next_title: "ספריית המדדים"
+lang: he
+alt_url: /en/methodology/
 ---
 
 <div class="space-y-6">

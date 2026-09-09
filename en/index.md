@@ -50,8 +50,12 @@ alt_url: /
         
         <!-- Team Name -->
         <td class="text-sm font-sans font-medium text-neutral-900 dark:text-white py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-left">
-          {% if team.slug == 'tottenham' %}
-          <a href="{{ '/en/teams/tottenham/' | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
+          {% assign en_teams = "tottenham,chelsea,arsenal,manchester-city,manchester-utd,london-city-lionesses,brighton" | split: "," %}
+          {% if en_teams contains team.slug %}
+          <a href="{{ '/en/teams/' | append: team.slug | append: '/' | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
+            {% if is_lcl %}
+            <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span>
+            {% endif %}
             <span>{{ team.squad }}</span>
           </a>
           {% else %}

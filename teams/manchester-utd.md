@@ -5,6 +5,8 @@ team_name: "Manchester United"
 team_slug: "manchester-utd"
 team_meta: "WSL 2026/27 · חלק א': רקע, אקדמיה ואי-ודאות"
 permalink: /teams/manchester-utd/
+lang: he
+alt_url: /en/teams/manchester-utd/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

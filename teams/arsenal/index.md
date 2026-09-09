@@ -7,6 +7,8 @@ team_meta: "WSL 2026/27 · חלק א': מועדון, זהות והיריבות �
 permalink: /teams/arsenal/
 next_url: /teams/arsenal/analysis/
 next_title: "חלק ב': ניתוח נתונים ותמונת בסיס"
+lang: he
+alt_url: /en/teams/arsenal/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">

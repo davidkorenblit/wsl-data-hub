@@ -7,6 +7,8 @@ team_meta: "WSL 2026/27 · חובת ההוכחה והחלפת דורות"
 permalink: /teams/chelsea/
 next_url: /teams/chelsea/defense/
 next_title: "חלק ב': מלכודת הרסט-דיפנס והסדק של בומפסטור"
+lang: he
+alt_url: /en/teams/chelsea/
 ---
 
 <div class="space-y-5 text-neutral-800 dark:text-neutral-200 leading-relaxed text-base sm:text-lg font-sans">
