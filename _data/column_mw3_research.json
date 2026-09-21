@@ -1,0 +1,268 @@
+{
+  "generated_at": "2026-09-21",
+  "topic_1_arsenal_defense_comparison": {
+    "palace_vs_arsenal_mw2": {
+      "score": "0-0",
+      "possession": {
+        "arsenal": 79,
+        "palace": 21
+      },
+      "shots": {
+        "arsenal": 30,
+        "palace": 2
+      },
+      "shots_inside_box": {
+        "arsenal": 20,
+        "palace": 1
+      },
+      "shots_outside_box": {
+        "arsenal": 10,
+        "palace": 1
+      },
+      "xg": {
+        "arsenal": 2.56,
+        "palace": 0.34
+      },
+      "xg_per_shot_arsenal": 0.085,
+      "big_chances": {
+        "arsenal": 4,
+        "palace": 1
+      },
+      "big_chances_missed_arsenal": 4,
+      "touches_in_opp_box": {
+        "arsenal": 70,
+        "palace": 4
+      },
+      "accurate_passes": {
+        "arsenal": "632 (90%)",
+        "palace": "113 (61%)"
+      },
+      "opposition_half_passes": {
+        "arsenal": 469,
+        "palace": 23
+      },
+      "palace_defensive_actions": {
+        "clearances": 73,
+        "blocks": 10,
+        "tackles": 27,
+        "interceptions": 5,
+        "keeper_saves": 8
+      }
+    },
+    "united_vs_arsenal_mw3": {
+      "score": "1-1",
+      "possession": {
+        "arsenal": 59,
+        "united": 41
+      },
+      "shots": {
+        "arsenal": 17,
+        "united": 4
+      },
+      "shots_inside_box": {
+        "arsenal": 14,
+        "united": 3
+      },
+      "shots_outside_box": {
+        "arsenal": 3,
+        "united": 1
+      },
+      "xg": {
+        "arsenal": 1.96,
+        "united": 0.74
+      },
+      "xg_per_shot_arsenal": 0.115,
+      "big_chances": {
+        "arsenal": 4,
+        "united": 2
+      },
+      "big_chances_missed_arsenal": 3,
+      "touches_in_opp_box": {
+        "arsenal": 58,
+        "united": 3
+      },
+      "accurate_passes": {
+        "arsenal": "440 (85%)",
+        "united": "298 (77%)"
+      },
+      "opposition_half_passes": {
+        "arsenal": 278,
+        "united": 70
+      },
+      "united_defensive_actions": {
+        "clearances": 54,
+        "blocks": 4,
+        "tackles": 25,
+        "interceptions": 12,
+        "keeper_saves": 6
+      }
+    }
+  },
+  "topic_2_kirsty_hanson_position_history": {
+    "player": "Kirsty Hanson",
+    "current_team": "Tottenham Hotspur Women",
+    "career_summary_by_position": {
+      "left_winger_playmaker_profile": {
+        "peak_season": "2022/2023 (Aston Villa)",
+        "stats": "28 apps, 8 goals, 10 assists (9 in WSL - League Assist Leader)",
+        "role": "Pure wide winger, crosser, transition ball-carrier feeding Rachel Daly"
+      },
+      "striker_central_scorer_profile": {
+        "peak_season": "2025/2026 (Aston Villa)",
+        "stats": "26 apps, 12 goals, 1 assist (22 WSL matches, 12 goals)",
+        "role": "Central forward / mobile #9, finishing chances in the box, 87th percentile goals/90"
+      },
+      "spurs_role_2026_27": {
+        "stats": "3 apps, 2 goals, 7 shots, 0.52 xG, 0.60 xA",
+        "role": "Inside forward from the left cutting inside, 3 dribbles/game, high defensive work rate"
+      }
+    }
+  },
+  "topic_3_liverpool_press_mw1_3": {
+    "mw1_vs_charlton_4_0": {
+      "possession": 76,
+      "opp_passes_allowed": 147,
+      "opp_half_passes_liverpool": 326,
+      "recoveries": 45,
+      "shots_conceded": 2,
+      "xg_conceded": 0.08
+    },
+    "mw2_vs_spurs_1_1": {
+      "possession": 59,
+      "recoveries": 53,
+      "tackles": 17,
+      "shots_conceded": 10,
+      "xg_conceded": 0.62
+    },
+    "mw3_vs_man_city_2_4": {
+      "possession": 42,
+      "recoveries": 56,
+      "tackles": 12,
+      "shots_conceded": 18,
+      "xg_conceded": 4.27,
+      "verdict": "High line repeatedly exposed when City bypassed initial pressing wave"
+    }
+  },
+  "topic_4_man_city_japanese_axis": {
+    "ayaka_yamashita": {
+      "mw1_vs_birmingham": {
+        "rating": 6.01,
+        "goals_conceded": 1,
+        "goals_prevented": -0.63,
+        "pass_acc": "54/56 (96.4%)"
+      },
+      "mw2_vs_villa": {
+        "rating": 6.04,
+        "goals_conceded": 1,
+        "goals_prevented": -0.03,
+        "pass_acc": "31/33 (93.9%)"
+      },
+      "mw3_vs_liverpool": {
+        "rating": 6.26,
+        "goals_conceded": 2,
+        "goals_prevented": -0.79,
+        "pass_acc": "55/63 (87.3%)"
+      },
+      "cumulative_verdict": "Elite in buildup (93.5% pass accuracy, 140/152 passes), but vulnerable in shot-stopping with -1.45 Goals Prevented across 3 games (conceded in every match)"
+    },
+    "yui_hasegawa": {
+      "mw1_vs_birmingham": {
+        "rating": 8.34,
+        "touches": 91,
+        "pass_acc": "70/75 (93.3%)",
+        "ground_duels": "8/8 (100%)",
+        "recoveries": 7
+      },
+      "mw2_vs_villa": {
+        "rating": 7.16,
+        "touches": 107,
+        "pass_acc": "93/99 (93.9%)",
+        "ground_duels": "1/5 (20%)",
+        "recoveries": 4
+      },
+      "mw3_vs_liverpool": {
+        "rating": 7.27,
+        "touches": 65,
+        "pass_acc": "54/58 (93.1%)",
+        "ground_duels": "1/2 (50%)",
+        "recoveries": 9
+      },
+      "cumulative_verdict": "Passing efficiency remains exceptional (93.5%), but physical pressing by Villa and Liverpool reduced her touches from 107 to 65 and curbed her duel dominance"
+    }
+  },
+  "topic_5_arsenal_holmberg_right_back": {
+    "mw1_brighton": {
+      "fox_mins": 90,
+      "fox_crosses": "1/2",
+      "holmberg_mins": 2,
+      "holmberg_touches": 11,
+      "holmberg_box_touches": 2
+    },
+    "mw2_palace": {
+      "fox_mins": 90,
+      "fox_crosses": "0/3",
+      "fox_chances": 1,
+      "holmberg_mins": 0,
+      "result": "Arsenal struggled on right wing, 0-0"
+    },
+    "mw3_united": {
+      "fox_mins": 90,
+      "fox_crosses": "2/3",
+      "fox_chances": 0,
+      "holmberg_mins": 32,
+      "holmberg_rating": 7.65,
+      "holmberg_crosses": "4/9 (44%)",
+      "holmberg_chances": 2,
+      "holmberg_box_touches": 3,
+      "takeaway": "In 32 mins, Holmberg delivered 9 crosses (4 accurate) and created 2 chances - completely unlocking the right side compared to Fox static buildup"
+    }
+  },
+  "topic_6_spurs_7_0_palace": {
+    "final_score": "0-7",
+    "halftime_score": "0-0",
+    "key_incident": "Fuka Tsunoda (Palace) red card in minute 7",
+    "second_half_explosion": "7 goals in 41 minutes (49th to 90th min)",
+    "scorers": "Olivia Holdt (49, 61, 73 - Hat-trick), Victoria Pelova (76, 90 - Brace), Shekiera Martinez (79), Amanda Nilden (86)",
+    "shots": {
+      "spurs": 42,
+      "palace": 4
+    },
+    "touches_in_opp_box": {
+      "spurs": 82,
+      "palace": 3
+    },
+    "xg": {
+      "spurs": 4.69,
+      "palace": 0.14
+    },
+    "big_chances": {
+      "spurs": 8,
+      "palace": 0
+    },
+    "record": "Largest ever WSL margin of victory in Tottenham Hotspur history"
+  },
+  "topic_7_chelsea_strikerless_attack": {
+    "summary": "8 goals scored across 3 matches by 7 DIFFERENT goalscorers; only 2 goals from traditional attackers",
+    "scorers_breakdown": {
+      "midfielders_and_defenders_5_goals": [
+        "Sjoeke Nusken (MF)",
+        "Keira Walsh (DM)",
+        "Ellie Carpenter (RB/WB)",
+        "Lucy Bronze (DF)",
+        "Alexia Potter (MF)"
+      ],
+      "attackers_3_goals": [
+        "Lauren James (2)",
+        "Melvine Malard (1)"
+      ]
+    },
+    "ellie_carpenter_anomaly": {
+      "position": "Right-back / Right wingback",
+      "shots_in_3_games": 11,
+      "box_touches_in_3_games": 33,
+      "accumulated_xg": 3.47,
+      "goals": 1
+    },
+    "tactical_dynamic": "With no Mayra Ramirez or Sam Kerr, Chelsea overload the box with late runs from Carpenter, Nusken, and Walsh while James drops deep"
+  }
+}
