@@ -20,6 +20,10 @@ import time
 import argparse
 from pathlib import Path
 
+# Fix Windows console UTF-8 output
+if sys.platform == "win32" and hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+
 # Ensure scripts directory is in path for imports
 SCRIPTS_DIR = Path(__file__).resolve().parent
 if str(SCRIPTS_DIR) not in sys.path:
