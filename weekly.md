@@ -6,6 +6,8 @@ lang: he
 alt_url: /en/weekly/
 prev_url: /weekly/mw1/
 prev_title: "מחזור 1"
+next_url: /weekly/tactics/
+next_title: "הפינה הטקטית"
 ---
 
 <div class="space-y-6">
@@ -136,7 +138,7 @@ prev_title: "מחזור 1"
         </h2>
 
         <p>
-          בפינה הטקטית, אנסה לנתח ולחפש דמיון בין משחק ההגנה של יונייטד לבין אותו משחק של פאלאס, אבל אתחיל מריאיון סוף המשחק של לה טיסייר.
+          בפינה הטקטית (<a href="{{ '/weekly/tactics/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold hover:underline">לניתוח המלא והנתונים לחצו כאן</a>), אנסה לנתח ולחפש דמיון בין משחק ההגנה של יונייטד לבין אותו משחק של פאלאס, אבל אתחיל מריאיון סוף המשחק של לה טיסייר.
         </p>
 
         <p>
@@ -300,10 +302,21 @@ prev_title: "מחזור 1"
           ההתחברות של לסל (לונדון סיטי ליונסס) ואיזה בישולים של פוטייאס.
         </p>
 
-        <p class="text-sm text-neutral-500 dark:text-neutral-400 font-mono italic">
-          (המשך יבוא: שאר הנתונים והניתוחים הטקטיים יתווספו לקראת המחזור הבא).
-        </p>
-      </section>
+      <!-- Forward Banner to Tactical Corner -->
+      <div class="rounded-xl border border-primary-200 dark:border-primary-900 bg-primary-50/50 dark:bg-primary-950/20 p-5 flex flex-col sm:flex-row items-center justify-between gap-4 my-6">
+        <div>
+          <div class="text-xs font-mono font-bold uppercase text-primary-700 dark:text-primary-400 mb-1">
+            הפינה הטקטית המלאה
+          </div>
+          <div class="text-base font-bold text-neutral-900 dark:text-white">
+            רוצים לצלול לדאטה? השוואת ההגנות של יונייטד ופאלאס, קריסטי הנסן וצ'לסי כ-False 9
+          </div>
+        </div>
+        <a href="{{ '/weekly/tactics/' | relative_url }}" class="shrink-0 px-4 py-2 rounded-md bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-mono text-xs font-bold hover:opacity-90 transition-opacity flex items-center gap-1.5">
+          <span>מעבר לפינה הטקטית</span>
+          <span>←</span>
+        </a>
+      </div>
 
     </div>
   </article>
