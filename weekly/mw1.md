@@ -3,9 +3,8 @@ layout: default
 title: "הטור השבועי · מחזור 1 | WSL Data Hub"
 permalink: /weekly/mw1/
 lang: he
-alt_url: /en/weekly/
-next_url: /weekly/
-next_title: "מחזור 3 (הטור העדכני)"
+next_url: /weekly/mw2/
+next_title: "מחזור 2"
 ---
 
 <div class="space-y-6">
@@ -37,8 +36,8 @@ next_title: "מחזור 3 (הטור העדכני)"
 
       <!-- Arrow Navigation (Top) -->
       <div class="flex items-center gap-3 text-xs font-mono">
-        <a href="{{ '/weekly/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
-          <span>מחזור 3 (העדכני)</span>
+        <a href="{{ '/weekly/mw2/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+          <span>מחזור 2</span>
           <span>←</span>
         </a>
       </div>
@@ -172,5 +171,4 @@ next_title: "מחזור 3 (הטור העדכני)"
 
   <!-- Standardized Post Pagination -->
   {% include post_pagination.html %}
-
 </div>

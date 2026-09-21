@@ -224,11 +224,9 @@ prev_title: "חזרה לטור השבועי"
           </div>
         </div>
       </section>
-
     </div>
   </article>
 
   <!-- Standardized Post Pagination -->
   {% include post_pagination.html %}
-
 </div>

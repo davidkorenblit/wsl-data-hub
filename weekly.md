@@ -4,8 +4,8 @@ title: "הטור השבועי · מחזור 3 | WSL Data Hub"
 permalink: /weekly/
 lang: he
 alt_url: /en/weekly/
-prev_url: /weekly/mw1/
-prev_title: "מחזור 1"
+prev_url: /weekly/mw2/
+prev_title: "מחזור 2"
 next_url: /weekly/tactics/
 next_title: "הפינה הטקטית"
 ---
@@ -301,6 +301,7 @@ next_title: "הפינה הטקטית"
         <p>
           ההתחברות של לסל (לונדון סיטי ליונסס) ואיזה בישולים של פוטייאס.
         </p>
+      </section>
 
       <!-- Forward Banner to Tactical Corner -->
       <div class="rounded-xl border border-primary-200 dark:border-primary-900 bg-primary-50/50 dark:bg-primary-950/20 p-5 flex flex-col sm:flex-row items-center justify-between gap-4 my-6">
@@ -317,11 +318,9 @@ next_title: "הפינה הטקטית"
           <span>←</span>
         </a>
       </div>
-
     </div>
   </article>
 
   <!-- Standardized Post Pagination (Bottom) -->
   {% include post_pagination.html %}
-
 </div>
