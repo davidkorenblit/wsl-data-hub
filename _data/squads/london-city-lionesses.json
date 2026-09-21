@@ -1,205 +1,191 @@
 [
   {
     "player": "Mary Earps",
+    "name_he": "מרי ארפס",
     "pos": "GK",
-    "no": 27,
-    "nation": "ENG",
-    "min": "-"
-  },
-  {
-    "player": "Elene Lete",
-    "pos": "GK",
-    "no": 77,
-    "nation": "ESP",
-    "min": "1980"
+    "no": "27",
+    "nation": "ENG"
   },
   {
     "player": "Sophie Hillyerd",
+    "name_he": "סופי היליירד",
     "pos": "GK",
-    "no": 28,
-    "nation": "ENG",
-    "min": "-"
+    "no": "28",
+    "nation": "ENG"
   },
   {
     "player": "Sophia Poor",
+    "name_he": "סופיה פור",
     "pos": "GK",
-    "no": 35,
-    "nation": "ENG",
-    "min": "-"
+    "no": "35",
+    "nation": "ENG"
   },
   {
-    "player": "Mapi León",
-    "pos": "DF",
-    "no": 44,
-    "nation": "ESP",
-    "min": "-"
+    "player": "Elene Lete",
+    "name_he": "אלנה לטה",
+    "pos": "GK",
+    "no": "77",
+    "nation": "ESP"
   },
   {
     "player": "Jana Fernández",
+    "name_he": "יאנה פרננדז",
     "pos": "DF",
-    "no": 2,
-    "nation": "ESP",
-    "min": "1520"
-  },
-  {
-    "player": "Elena Linari",
-    "pos": "DF",
-    "no": 13,
-    "nation": "ITA",
-    "min": "1610"
+    "no": "2",
+    "nation": "ESP"
   },
   {
     "player": "Poppy Pattinson",
+    "name_he": "פופי פטינסון",
     "pos": "DF",
-    "no": 3,
-    "nation": "ENG",
-    "min": "1350"
-  },
-  {
-    "player": "Lucía Corrales",
-    "pos": "DF",
-    "no": 7,
-    "nation": "ESP",
-    "min": "1195"
-  },
-  {
-    "player": "Janni Thomsen",
-    "pos": "DF",
-    "no": 97,
-    "nation": "DEN",
-    "min": "-"
-  },
-  {
-    "player": "Corinne Henson",
-    "pos": "DF",
-    "no": 99,
-    "nation": "USA",
-    "min": "-"
-  },
-  {
-    "player": "Alanna Kennedy",
-    "pos": "DF",
-    "no": 33,
-    "nation": "AUS",
-    "min": "630"
+    "no": "3",
+    "nation": "ENG"
   },
   {
     "player": "Isa Kardinaal",
+    "name_he": "איסה קרדינאל",
     "pos": "DF",
-    "no": 4,
-    "nation": "NED",
-    "min": "410"
+    "no": "4",
+    "nation": "NED"
   },
   {
-    "player": "Saki Kumagai",
-    "pos": "DF,MF",
-    "no": 8,
-    "nation": "JPN",
-    "min": "1480"
-  },
-  {
-    "player": "Rofiat Imuran",
+    "player": "Lucía Corrales",
+    "name_he": "לוסיה קוראלס",
     "pos": "DF",
-    "no": 25,
-    "nation": "NGA",
-    "min": "320"
+    "no": "7",
+    "nation": "ESP"
   },
   {
-    "player": "Alexia Putellas",
-    "pos": "MF",
-    "no": 11,
-    "nation": "ESP",
-    "min": "-"
+    "player": "Elena Linari",
+    "name_he": "אלנה לינארי",
+    "pos": "DF",
+    "no": "13",
+    "nation": "ITA"
   },
   {
-    "player": "Grace Geyoro",
-    "pos": "MF",
-    "no": 88,
-    "nation": "FRA",
-    "min": "1540"
+    "player": "Alanna Kennedy",
+    "name_he": "אלאנה קנדי",
+    "pos": "DF",
+    "no": "33",
+    "nation": "AUS"
+  },
+  {
+    "player": "Mapi León",
+    "name_he": "מאפי לאון",
+    "pos": "DF",
+    "no": "44",
+    "nation": "ESP"
+  },
+  {
+    "player": "Janni Thomsen",
+    "name_he": "יאני תומסן",
+    "pos": "DF",
+    "no": "97",
+    "nation": "DEN"
+  },
+  {
+    "player": "Corrine Henson",
+    "name_he": "קורין הנסון",
+    "pos": "DF",
+    "no": "99",
+    "nation": "ENG"
   },
   {
     "player": "María Pérez",
+    "name_he": "מריה פרז",
     "pos": "MF",
-    "no": 6,
-    "nation": "ESP",
-    "min": "1280"
+    "no": "6",
+    "nation": "ESP"
   },
   {
     "player": "Daniëlle van de Donk",
+    "name_he": "דניאל ואן דה דונק",
     "pos": "MF",
-    "no": 10,
-    "nation": "NED",
-    "min": "248"
+    "no": "10",
+    "nation": "NED"
+  },
+  {
+    "player": "Alexia Putellas",
+    "name_he": "אלכסיה פוטלאס",
+    "pos": "MF",
+    "no": "11",
+    "nation": "ESP"
   },
   {
     "player": "Daniela Arques",
+    "name_he": "דניאלה ארקס",
     "pos": "MF",
-    "no": 16,
-    "nation": "ESP",
-    "min": "-"
+    "no": "16",
+    "nation": "ESP"
   },
   {
-    "player": "Malou Marcetto",
+    "player": "Malou Marcetto Rylov",
+    "name_he": "מאלו מארצ'טו רילוב",
     "pos": "MF",
-    "no": 30,
-    "nation": "DEN",
-    "min": "310"
+    "no": "18",
+    "nation": "DEN"
   },
   {
-    "player": "Kadidiatou Diani",
-    "pos": "FW",
-    "no": 21,
-    "nation": "FRA",
-    "min": "-"
-  },
-  {
-    "player": "Nikita Parris",
-    "pos": "FW",
-    "no": 17,
-    "nation": "ENG",
-    "min": "1590"
-  },
-  {
-    "player": "Delphine Cascarino",
-    "pos": "FW",
-    "no": 20,
-    "nation": "FRA",
-    "min": "292"
+    "player": "Grace Geyoro",
+    "name_he": "גרייס גיורו",
+    "pos": "MF",
+    "no": "88",
+    "nation": "FRA"
   },
   {
     "player": "Kosovare Asllani",
+    "name_he": "קוסובארה אסלאני",
     "pos": "FW",
-    "no": 9,
-    "nation": "SWE",
-    "min": "1457"
-  },
-  {
-    "player": "Nicole Anyomi",
-    "pos": "FW",
-    "no": 19,
-    "nation": "GER",
-    "min": "-"
-  },
-  {
-    "player": "Rosa Kafaji",
-    "pos": "FW",
-    "no": 76,
-    "nation": "SWE",
-    "min": "-"
-  },
-  {
-    "player": "Isobel Goodwin",
-    "pos": "FW",
-    "no": 23,
-    "nation": "ENG",
-    "min": "1380"
+    "no": "9",
+    "nation": "SWE"
   },
   {
     "player": "Freya Godfrey",
+    "name_he": "פריה גודפרי",
     "pos": "FW",
-    "no": 14,
-    "nation": "ENG",
-    "min": "210"
+    "no": "14",
+    "nation": "ENG"
+  },
+  {
+    "player": "Nikita Parris",
+    "name_he": "ניקיטה פאריס",
+    "pos": "FW",
+    "no": "17",
+    "nation": "ENG"
+  },
+  {
+    "player": "Nicole Anyomi",
+    "name_he": "ניקול אניומי",
+    "pos": "FW",
+    "no": "19",
+    "nation": "GER"
+  },
+  {
+    "player": "Delphine Cascarino",
+    "name_he": "דלפין קסקרינו",
+    "pos": "FW",
+    "no": "20",
+    "nation": "FRA"
+  },
+  {
+    "player": "Kadidiatou Diani",
+    "name_he": "קדידיאטו דיאני",
+    "pos": "FW",
+    "no": "21",
+    "nation": "FRA"
+  },
+  {
+    "player": "Isobel Goodwin",
+    "name_he": "איזובל גודווין",
+    "pos": "FW",
+    "no": "23",
+    "nation": "ENG"
+  },
+  {
+    "player": "Rosa Kafaji",
+    "name_he": "רוזה קפאג'י",
+    "pos": "FW",
+    "no": "76",
+    "nation": "SWE"
   }
 ]

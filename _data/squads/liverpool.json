@@ -1,321 +1,184 @@
 [
   {
-    "player": "Alice Bergström",
-    "pos": "MF,FW",
-    "age": "22",
-    "nation": "se SWE",
-    "mp": "8",
-    "starts": "6",
-    "min": "474",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Alejandra Bernabe",
-    "pos": "DF",
-    "age": "23",
-    "nation": "es ESP",
-    "mp": "13",
-    "starts": "9",
-    "min": "840",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Gemma Bonner",
-    "pos": "DF",
-    "age": "34",
-    "nation": "eng ENG",
-    "mp": "10",
-    "starts": "7",
-    "min": "622",
-    "gls": "0",
-    "ast": "2"
-  },
-  {
-    "player": "Rafaela Borggräfe",
+    "player": "Rachael Laws",
+    "name_he": "רייצ'ל לוז",
     "pos": "GK",
-    "age": "25",
-    "nation": "de GER",
-    "mp": "3",
-    "starts": "3",
-    "min": "270",
-    "gls": "0",
-    "ast": "0"
+    "no": "1",
+    "nation": "ENG"
   },
   {
-    "player": "Jenna Clark",
-    "pos": "DF,MF",
-    "age": "23",
-    "nation": "sct SCO",
-    "mp": "21",
-    "starts": "19",
-    "min": "1755",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Aurélie Csillag",
-    "pos": "FW",
-    "age": "22",
-    "nation": "ch SUI",
-    "mp": "9",
-    "starts": "2",
-    "min": "306",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Mia Enderby",
-    "pos": "MF,FW",
-    "age": "20",
-    "nation": "eng ENG",
-    "mp": "22",
-    "starts": "17",
-    "min": "1435",
-    "gls": "3",
-    "ast": "2"
-  },
-  {
-    "player": "Gemma Evans",
-    "pos": "DF,MF",
-    "age": "28",
-    "nation": "wls WAL",
-    "mp": "11",
-    "starts": "8",
-    "min": "797",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Jennifer Falk",
+    "player": "Khiara Keating",
+    "name_he": "קיארה קיטינג",
     "pos": "GK",
-    "age": "32",
-    "nation": "se SWE",
-    "mp": "11",
-    "starts": "11",
-    "min": "990",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Grace Fisk",
-    "pos": "DF",
-    "age": "27",
-    "nation": "eng ENG",
-    "mp": "19",
-    "starts": "19",
-    "min": "1685",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Marie Höbinger",
-    "pos": "MF",
-    "age": "24",
-    "nation": "at AUT",
-    "mp": "4",
-    "starts": "4",
-    "min": "285",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Ceri Holland",
-    "pos": "MF,FW",
-    "age": "27",
-    "nation": "wls WAL",
-    "mp": "21",
-    "starts": "18",
-    "min": "1697",
-    "gls": "3",
-    "ast": "2"
-  },
-  {
-    "player": "Anna Jøsendal",
-    "pos": "MF",
-    "age": "24",
-    "nation": "no NOR",
-    "mp": "4",
-    "starts": "1",
-    "min": "93",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Cornelia Kapocs",
-    "pos": "MF,FW",
-    "age": "25",
-    "nation": "se SWE",
-    "mp": "21",
-    "starts": "20",
-    "min": "1773",
-    "gls": "2",
-    "ast": "1"
-  },
-  {
-    "player": "Samantha Kerr",
-    "pos": "MF,FW",
-    "age": "26",
-    "nation": "sct SCO",
-    "mp": "8",
-    "starts": "8",
-    "min": "683",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Leanne Kiernan",
-    "pos": "FW",
-    "age": "26",
-    "nation": "ie IRL",
-    "mp": "5",
-    "starts": "1",
-    "min": "121",
-    "gls": "0",
-    "ast": "0"
+    "no": "12",
+    "nation": "ENG"
   },
   {
     "player": "Faye Kirby",
+    "name_he": "פיי קירבי",
     "pos": "GK",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "8",
-    "starts": "8",
-    "min": "720",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Sofie Lundgaard",
-    "pos": "MF",
-    "age": "23",
-    "nation": "dk DEN",
-    "mp": "3",
-    "starts": "0",
-    "min": "70",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Kirsty Maclean",
-    "pos": "MF,DF",
-    "age": "20",
-    "nation": "sct SCO",
-    "mp": "16",
-    "starts": "10",
-    "min": "896",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Fūka Nagano",
-    "pos": "MF,DF",
-    "age": "26",
-    "nation": "jp JPN",
-    "mp": "20",
-    "starts": "20",
-    "min": "1773",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Denise O'Sullivan",
-    "pos": "MF",
-    "age": "31",
-    "nation": "ie IRL",
-    "mp": "9",
-    "starts": "7",
-    "min": "653",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Beata Olsson",
-    "pos": "FW,MF",
-    "age": "24",
-    "nation": "se SWE",
-    "mp": "16",
-    "starts": "13",
-    "min": "1170",
-    "gls": "6",
-    "ast": "2"
+    "no": "22",
+    "nation": "ENG"
   },
   {
     "player": "Lucy Parry",
+    "name_he": "לוסי פארי",
     "pos": "DF",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "5",
-    "starts": "4",
-    "min": "235",
-    "gls": "0",
-    "ast": "0"
+    "no": "2",
+    "nation": "ENG"
   },
   {
-    "player": "Sophie Román Haug",
-    "pos": "FW",
-    "age": "26",
-    "nation": "no NOR",
-    "mp": "5",
-    "starts": "1",
-    "min": "73",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Zara Shaw",
+    "player": "Grace Fisk",
+    "name_he": "גרייס פיסק",
     "pos": "DF",
-    "age": "18",
-    "nation": "eng ENG",
-    "mp": "1",
-    "starts": "0",
-    "min": "19",
-    "gls": "1",
-    "ast": "0"
+    "no": "4",
+    "nation": "ENG"
   },
   {
-    "player": "Risa Shimizu",
+    "player": "Natalia Ramos",
+    "name_he": "נטליה ראמוס",
     "pos": "DF",
-    "age": "29",
-    "nation": "jp JPN",
-    "mp": "14",
-    "starts": "11",
-    "min": "1018",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Hannah Silcock",
-    "pos": "DF",
-    "age": "20",
-    "nation": "eng ENG",
-    "mp": "3",
-    "starts": "1",
-    "min": "115",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Martha Thomas",
-    "pos": "FW",
-    "age": "29",
-    "nation": "sct SCO",
-    "mp": "6",
-    "starts": "4",
-    "min": "347",
-    "gls": "1",
-    "ast": "0"
+    "no": "6",
+    "nation": "ESP"
   },
   {
     "player": "Lily Woodham",
+    "name_he": "לילי וודהאם",
     "pos": "DF",
-    "age": "24",
-    "nation": "wls WAL",
-    "mp": "12",
-    "starts": "10",
-    "min": "768",
-    "gls": "0",
-    "ast": "2"
+    "no": "16",
+    "nation": "WAL"
+  },
+  {
+    "player": "Jenna Clark",
+    "name_he": "ג'נה קלארק",
+    "pos": "DF",
+    "no": "17",
+    "nation": "SCO"
+  },
+  {
+    "player": "Sara Agrež",
+    "name_he": "שרה אגרז'",
+    "pos": "DF",
+    "no": "23",
+    "nation": "SVN"
+  },
+  {
+    "player": "Alice Bergström",
+    "name_he": "אליס ברגסטרום",
+    "pos": "DF",
+    "no": "25",
+    "nation": "SWE"
+  },
+  {
+    "player": "Mari Ward",
+    "name_he": "מארי וורד",
+    "pos": "DF",
+    "no": "28",
+    "nation": "ENG"
+  },
+  {
+    "player": "Alejandra Bernabé",
+    "name_he": "אלחנדרה ברנאבה",
+    "pos": "DF",
+    "no": "29",
+    "nation": "ESP"
+  },
+  {
+    "player": "Fūka Nagano",
+    "name_he": "פוקה נאגאנו",
+    "pos": "MF",
+    "no": "8",
+    "nation": "JPN"
+  },
+  {
+    "player": "Marie Höbinger",
+    "name_he": "מארי הבינגר",
+    "pos": "MF",
+    "no": "14",
+    "nation": "AUT"
+  },
+  {
+    "player": "Ceri Holland",
+    "name_he": "סרי הולנד",
+    "pos": "MF",
+    "no": "18",
+    "nation": "WAL"
+  },
+  {
+    "player": "Kirsty Maclean",
+    "name_he": "קירסטי מקלין",
+    "pos": "MF",
+    "no": "19",
+    "nation": "SCO"
+  },
+  {
+    "player": "Sam Kerr",
+    "name_he": "סם קר (סקוטלנד)",
+    "pos": "MF",
+    "no": "24",
+    "nation": "SCO"
+  },
+  {
+    "player": "Zara Shaw",
+    "name_he": "זארה שואו",
+    "pos": "MF",
+    "no": "36",
+    "nation": "ENG"
+  },
+  {
+    "player": "Cornelia Kapocs",
+    "name_he": "קורנליה קפוטש",
+    "pos": "FW",
+    "no": "7",
+    "nation": "SWE"
+  },
+  {
+    "player": "Vivien Endemann",
+    "name_he": "ויוויאן אנדמן",
+    "pos": "FW",
+    "no": "9",
+    "nation": "GER"
+  },
+  {
+    "player": "Sophie Román Haug",
+    "name_he": "סופי רומאן האוג",
+    "pos": "FW",
+    "no": "10",
+    "nation": "NOR"
+  },
+  {
+    "player": "Beata Olsson",
+    "name_he": "ביאטה אולסון",
+    "pos": "FW",
+    "no": "11",
+    "nation": "SWE"
+  },
+  {
+    "player": "Mia Enderby",
+    "name_he": "מיה אנדרבי",
+    "pos": "FW",
+    "no": "13",
+    "nation": "ENG"
+  },
+  {
+    "player": "Anna Jøsendal",
+    "name_he": "אנה יוסנדאל",
+    "pos": "FW",
+    "no": "21",
+    "nation": "NOR"
+  },
+  {
+    "player": "Mao Itamura",
+    "name_he": "מאו איטמורה",
+    "pos": "FW",
+    "no": "26",
+    "nation": "JPN"
+  },
+  {
+    "player": "Aurélie Csillag",
+    "name_he": "אורלי צ'ילאג",
+    "pos": "FW",
+    "no": "27",
+    "nation": "SUI"
   }
 ]

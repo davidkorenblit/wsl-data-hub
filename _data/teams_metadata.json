@@ -70,5 +70,23 @@
     "name_he": "ווסטהאם",
     "name_en": "West Ham United",
     "accent_color": "#7A263A"
+  },
+  "Crystal Palace": {
+    "slug": "crystal-palace",
+    "name_he": "קריסטל פאלאס",
+    "name_en": "Crystal Palace",
+    "accent_color": "#1B449C"
+  },
+  "Birmingham City": {
+    "slug": "birmingham-city",
+    "name_he": "ברמינגהאם סיטי",
+    "name_en": "Birmingham City",
+    "accent_color": "#0000FF"
+  },
+  "Charlton": {
+    "slug": "charlton-athletic",
+    "name_he": "צ'רלטון אתלטיק",
+    "name_en": "Charlton Athletic",
+    "accent_color": "#D40000"
   }
 }

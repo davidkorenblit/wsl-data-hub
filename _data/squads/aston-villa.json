@@ -1,277 +1,198 @@
 [
   {
-    "player": "Jill Baijings",
-    "pos": "MF",
-    "age": "24",
-    "nation": "nl NED",
-    "mp": "3",
-    "starts": "3",
-    "min": "225",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Missy Bo Kearns",
-    "pos": "MF",
-    "age": "24",
-    "nation": "eng ENG",
-    "mp": "11",
-    "starts": "8",
-    "min": "789",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Sabrina D'Angelo",
+    "player": "Emily Ramsey",
+    "name_he": "אמילי ראמזי",
     "pos": "GK",
-    "age": "32",
-    "nation": "ca CAN",
-    "mp": "16",
-    "starts": "15",
-    "min": "1277",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Rachel Daly",
-    "pos": "FW,MF",
-    "age": "33",
-    "nation": "eng ENG",
-    "mp": "15",
-    "starts": "11",
-    "min": "945",
-    "gls": "3",
-    "ast": "0"
-  },
-  {
-    "player": "Océane Deslandes",
-    "pos": "DF",
-    "age": "25",
-    "nation": "fr FRA",
-    "mp": "18",
-    "starts": "16",
-    "min": "1327",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Gabi Nunes",
-    "pos": "FW",
-    "age": "28",
-    "nation": "br BRA",
-    "mp": "2",
-    "starts": "0",
-    "min": "10",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Chasity Grant",
-    "pos": "MF,FW",
-    "age": "24",
-    "nation": "nl NED",
-    "mp": "16",
-    "starts": "14",
-    "min": "1223",
-    "gls": "1",
-    "ast": "2"
-  },
-  {
-    "player": "Kirsty Hanson",
-    "pos": "FW,MF",
-    "age": "27",
-    "nation": "sct SCO",
-    "mp": "22",
-    "starts": "20",
-    "min": "1674",
-    "gls": "12",
-    "ast": "1"
-  },
-  {
-    "player": "Maya Hijikata",
-    "pos": "MF,FW",
-    "age": "21",
-    "nation": "jp JPN",
-    "mp": "12",
-    "starts": "10",
-    "min": "854",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Oriane Jean-François",
-    "pos": "MF,DF",
-    "age": "23",
-    "nation": "fr FRA",
-    "mp": "10",
-    "starts": "9",
-    "min": "797",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Lucia Kendall",
-    "pos": "MF,FW",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "18",
-    "starts": "16",
-    "min": "1437",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Rachel Maltby",
-    "pos": "MF",
-    "age": "18",
-    "nation": "eng ENG",
-    "mp": "16",
-    "starts": "11",
-    "min": "940",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Noelle Maritz",
-    "pos": "DF,MF",
-    "age": "29",
-    "nation": "ch SUI",
-    "mp": "18",
-    "starts": "17",
-    "min": "1547",
-    "gls": "0",
-    "ast": "3"
-  },
-  {
-    "player": "Sarah Mayling",
-    "pos": "DF",
-    "age": "28",
-    "nation": "eng ENG",
-    "mp": "8",
-    "starts": "1",
-    "min": "182",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Georgia Mullett",
-    "pos": "FW,MF",
-    "age": "19",
-    "nation": "eng ENG",
-    "mp": "16",
-    "starts": "6",
-    "min": "603",
-    "gls": "1",
-    "ast": "1"
-  },
-  {
-    "player": "Jenna Nighswonger",
-    "pos": "DF,MF",
-    "age": "24",
-    "nation": "us USA",
-    "mp": "8",
-    "starts": "5",
-    "min": "510",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Lucy Parker",
-    "pos": "DF",
-    "age": "26",
-    "nation": "eng ENG",
-    "mp": "9",
-    "starts": "8",
-    "min": "688",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Anna Patten",
-    "pos": "DF,MF",
-    "age": "26",
-    "nation": "ie IRL",
-    "mp": "19",
-    "starts": "19",
-    "min": "1710",
-    "gls": "1",
-    "ast": "0"
+    "no": "1",
+    "nation": "ENG"
   },
   {
     "player": "Ellie Roebuck",
+    "name_he": "אלי רובאק",
     "pos": "GK",
-    "age": "25",
-    "nation": "eng ENG",
-    "mp": "9",
-    "starts": "7",
-    "min": "703",
-    "gls": "0",
-    "ast": "0"
+    "no": "26",
+    "nation": "ENG"
   },
   {
-    "player": "Milly Round",
-    "pos": "FW",
-    "age": "19",
-    "nation": "eng ENG",
-    "mp": "1",
-    "starts": "0",
-    "min": "5",
-    "gls": "0",
-    "ast": "0"
+    "player": "Soffia Kelly",
+    "name_he": "סופיה קלי",
+    "pos": "GK",
+    "no": "40",
+    "nation": "IRL"
   },
   {
-    "player": "Ebony Salmon",
-    "pos": "FW,MF",
-    "age": "24",
-    "nation": "eng ENG",
-    "mp": "21",
-    "starts": "10",
-    "min": "963",
-    "gls": "2",
-    "ast": "1"
-  },
-  {
-    "player": "Lucy Staniforth",
-    "pos": "MF,DF",
-    "age": "32",
-    "nation": "eng ENG",
-    "mp": "10",
-    "starts": "2",
-    "min": "216",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Miri Taylor",
-    "pos": "MF,DF",
-    "age": "25",
-    "nation": "sct SCO",
-    "mp": "21",
-    "starts": "17",
-    "min": "1465",
-    "gls": "2",
-    "ast": "1"
-  },
-  {
-    "player": "Paula Tomás",
+    "player": "Mathilde Harviken",
+    "name_he": "מתילדה הרוויקן",
     "pos": "DF",
-    "age": "23",
-    "nation": "es ESP",
-    "mp": "5",
-    "starts": "0",
-    "min": "134",
-    "gls": "0",
-    "ast": "0"
+    "no": "3",
+    "nation": "NOR"
+  },
+  {
+    "player": "Anna Patten",
+    "name_he": "אנה פאטן",
+    "pos": "DF",
+    "no": "4",
+    "nation": "IRL"
   },
   {
     "player": "Lynn Wilms",
-    "pos": "DF,MF",
-    "age": "24",
-    "nation": "nl NED",
-    "mp": "17",
-    "starts": "17",
-    "min": "1530",
-    "gls": "2",
-    "ast": "7"
+    "name_he": "לין וילמס",
+    "pos": "DF",
+    "no": "14",
+    "nation": "NED"
+  },
+  {
+    "player": "Lucy Parker",
+    "name_he": "לוסי פארקר",
+    "pos": "DF",
+    "no": "15",
+    "nation": "ENG"
+  },
+  {
+    "player": "Noelle Maritz",
+    "name_he": "נואל מאריץ",
+    "pos": "DF",
+    "no": "16",
+    "nation": "SUI"
+  },
+  {
+    "player": "Rofiat Imuran",
+    "name_he": "רופיאת אימוראן",
+    "pos": "DF",
+    "no": "22",
+    "nation": "NGA"
+  },
+  {
+    "player": "Akane Ōkuma",
+    "name_he": "אקאנה אוקומה",
+    "pos": "DF",
+    "no": "23",
+    "nation": "JPN"
+  },
+  {
+    "player": "Océane Deslandes",
+    "name_he": "אוסאן דסלאנד",
+    "pos": "DF",
+    "no": "24",
+    "nation": "FRA"
+  },
+  {
+    "player": "Lily Clark",
+    "name_he": "לילי קלארק",
+    "pos": "DF",
+    "no": "42",
+    "nation": "ENG"
+  },
+  {
+    "player": "Katie Scott",
+    "name_he": "קייטי סקוט",
+    "pos": "DF",
+    "no": "43",
+    "nation": "SCO"
+  },
+  {
+    "player": "Justine Kielland",
+    "name_he": "ז'וסטין צ'ילאנד",
+    "pos": "MF",
+    "no": "5",
+    "nation": "NOR"
+  },
+  {
+    "player": "Oriane Jean-François",
+    "name_he": "אוריאן ז'אן-פרנסואה",
+    "pos": "MF",
+    "no": "6",
+    "nation": "FRA"
+  },
+  {
+    "player": "Missy Bo Kearns",
+    "name_he": "מיסי בו קרנס",
+    "pos": "MF",
+    "no": "7",
+    "nation": "ENG"
+  },
+  {
+    "player": "Jill Baijings",
+    "name_he": "ג'יל בייאינגס",
+    "pos": "MF",
+    "no": "8",
+    "nation": "NED"
+  },
+  {
+    "player": "Lucia Kendall",
+    "name_he": "לוסיה קנדל",
+    "pos": "MF",
+    "no": "21",
+    "nation": "ENG"
+  },
+  {
+    "player": "Miri Taylor",
+    "name_he": "מירי טיילור",
+    "pos": "MF",
+    "no": "25",
+    "nation": "ENG"
+  },
+  {
+    "player": "Rachel Maltby",
+    "name_he": "רייצ'ל מולטבי",
+    "pos": "MF",
+    "no": "38",
+    "nation": "ENG"
+  },
+  {
+    "player": "Rachel Daly",
+    "name_he": "רייצ'ל דיילי",
+    "pos": "FW",
+    "no": "9",
+    "nation": "ENG"
+  },
+  {
+    "player": "Kamilla Melgård",
+    "name_he": "קמילה מלגורד",
+    "pos": "FW",
+    "no": "11",
+    "nation": "NOR"
+  },
+  {
+    "player": "Maya Hijikata",
+    "name_he": "מאיה היג'יקאטה",
+    "pos": "FW",
+    "no": "13",
+    "nation": "JPN"
+  },
+  {
+    "player": "Chasity Grant",
+    "name_he": "צ'אסיטי גרנט",
+    "pos": "FW",
+    "no": "17",
+    "nation": "NED"
+  },
+  {
+    "player": "Georgia Mullett",
+    "name_he": "ג'ורג'יה מולט",
+    "pos": "FW",
+    "no": "18",
+    "nation": "ENG"
+  },
+  {
+    "player": "Lily Murphy",
+    "name_he": "לילי מרפי",
+    "pos": "FW",
+    "no": "19",
+    "nation": "ENG"
+  },
+  {
+    "player": "Amalie Vangsgaard",
+    "name_he": "אמלי ואנגסגורד",
+    "pos": "FW",
+    "no": "20",
+    "nation": "DEN"
+  },
+  {
+    "player": "Mia McAulay",
+    "name_he": "מיה מקאוליי",
+    "pos": "FW",
+    "no": "27",
+    "nation": "SCO"
   }
 ]

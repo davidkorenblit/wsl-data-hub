@@ -1,0 +1,177 @@
+[
+  {
+    "player": "Sophie Whitehouse",
+    "name_he": "סופי וייטהאוס",
+    "pos": "GK",
+    "no": "1",
+    "nation": "IRL"
+  },
+  {
+    "player": "Anna Koivunen",
+    "name_he": "אנה קויווונן",
+    "pos": "GK",
+    "no": "24",
+    "nation": "FIN"
+  },
+  {
+    "player": "Ellie Mason",
+    "name_he": "אלי מייסון",
+    "pos": "DF",
+    "no": "2",
+    "nation": "NIR"
+  },
+  {
+    "player": "Charlotte Newsham",
+    "name_he": "שארלוט ניושאם",
+    "pos": "DF",
+    "no": "3",
+    "nation": "SCO"
+  },
+  {
+    "player": "Grace Johnston",
+    "name_he": "גרייס ג'ונסטון",
+    "pos": "DF",
+    "no": "4",
+    "nation": "SCO"
+  },
+  {
+    "player": "Elisha N'Dow",
+    "name_he": "אלישה אנדאו",
+    "pos": "DF",
+    "no": "5",
+    "nation": "ENG"
+  },
+  {
+    "player": "Jodie Hutton",
+    "name_he": "ג'ודי האטון",
+    "pos": "DF",
+    "no": "12",
+    "nation": "ENG"
+  },
+  {
+    "player": "Kiera Skeels",
+    "name_he": "קיירה סקילס",
+    "pos": "DF",
+    "no": "17",
+    "nation": "ENG"
+  },
+  {
+    "player": "Hawa Cissoko",
+    "name_he": "הוואה סיסוקו",
+    "pos": "DF",
+    "no": "19",
+    "nation": "FRA"
+  },
+  {
+    "player": "Anna Pederson",
+    "name_he": "אנה פדרסון",
+    "pos": "DF",
+    "no": "21",
+    "nation": "ENG"
+  },
+  {
+    "player": "Lucia Lobato",
+    "name_he": "לוסיה לובאטו",
+    "pos": "DF",
+    "no": "23",
+    "nation": "IRL"
+  },
+  {
+    "player": "Lizzie Waldie",
+    "name_he": "ליזי וולדי",
+    "pos": "DF",
+    "no": "25",
+    "nation": "ENG"
+  },
+  {
+    "player": "Ashleigh Neville",
+    "name_he": "אשלי נוויל",
+    "pos": "DF",
+    "no": "29",
+    "nation": "ENG"
+  },
+  {
+    "player": "Leah Davidson",
+    "name_he": "ליאה דייווידסון",
+    "pos": "MF",
+    "no": "6",
+    "nation": "AUS"
+  },
+  {
+    "player": "Carla Humphrey",
+    "name_he": "קרלה האמפרי",
+    "pos": "MF",
+    "no": "8",
+    "nation": "ENG"
+  },
+  {
+    "player": "Lucy Fitzgerald",
+    "name_he": "לוסי פיצג'רלד",
+    "pos": "MF",
+    "no": "11",
+    "nation": "ENG"
+  },
+  {
+    "player": "Keira Flannery",
+    "name_he": "קיירה פלאנרי",
+    "pos": "MF",
+    "no": "14",
+    "nation": "ENG"
+  },
+  {
+    "player": "Emily van Egmond",
+    "name_he": "אמילי ואן אגמונד",
+    "pos": "MF",
+    "no": "22",
+    "nation": "AUS"
+  },
+  {
+    "player": "Paula Partido",
+    "name_he": "פאולה פרטידו",
+    "pos": "FW",
+    "no": "7",
+    "nation": "ESP"
+  },
+  {
+    "player": "Lorena Azzaro",
+    "name_he": "לורנה אזארו",
+    "pos": "FW",
+    "no": "9",
+    "nation": "ALG"
+  },
+  {
+    "player": "Gillian Kenney",
+    "name_he": "ג'יליאן קני",
+    "pos": "FW",
+    "no": "10",
+    "nation": "ENG"
+  },
+  {
+    "player": "Linda Líf Boama",
+    "name_he": "לינדה ליף בואמה",
+    "pos": "FW",
+    "no": "13",
+    "nation": "ISL"
+  },
+  {
+    "player": "Katie Lockwood",
+    "name_he": "קייטי לוקווד",
+    "pos": "FW",
+    "no": "15",
+    "nation": "ENG"
+  },
+  {
+    "player": "Gloria Siber",
+    "name_he": "גלוריה סיבר",
+    "pos": "FW",
+    "no": "18",
+    "nation": "FRA"
+  },
+  {
+    "player": "Mary McAteer",
+    "name_he": "מרי מקאטיר",
+    "pos": "FW",
+    "no": "20",
+    "nation": "WAL"
+  }
+]

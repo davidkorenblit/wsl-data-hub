@@ -1,277 +1,191 @@
 [
   {
-    "player": "Iman Beney",
-    "pos": "FW,DF",
-    "age": "19",
-    "nation": "ch SUI",
-    "mp": "16",
-    "starts": "5",
-    "min": "512",
-    "gls": "2",
-    "ast": "2"
-  },
-  {
-    "player": "Laura Blindkilde",
-    "pos": "MF",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "20",
-    "starts": "18",
-    "min": "1371",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Kerstin Casparij",
-    "pos": "DF",
-    "age": "24",
-    "nation": "nl NED",
-    "mp": "21",
-    "starts": "21",
-    "min": "1844",
-    "gls": "3",
-    "ast": "7"
-  },
-  {
-    "player": "Grace Clinton",
-    "pos": "MF",
-    "age": "22",
-    "nation": "eng ENG",
-    "mp": "12",
-    "starts": "2",
-    "min": "318",
-    "gls": "1",
-    "ast": "1"
-  },
-  {
-    "player": "Sam Coffey",
-    "pos": "MF",
-    "age": "26",
-    "nation": "us USA",
-    "mp": "8",
-    "starts": "5",
-    "min": "523",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Laura Coombs",
-    "pos": "MF",
-    "age": "34",
-    "nation": "eng ENG",
-    "mp": "10",
-    "starts": "0",
-    "min": "167",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Eartha Cumings Budd",
+    "player": "Eartha Cumings",
+    "name_he": "ארת'ה קאמינגס",
     "pos": "GK",
-    "age": "26",
-    "nation": "sct SCO",
-    "mp": "1",
-    "starts": "1",
-    "min": "90",
-    "gls": "0",
-    "ast": "0"
+    "no": "1",
+    "nation": "SCO"
   },
   {
-    "player": "Mary Fowler",
-    "pos": "MF",
-    "age": "22",
-    "nation": "au AUS",
-    "mp": "5",
-    "starts": "1",
-    "min": "149",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Aoba Fujino",
-    "pos": "MF,FW",
-    "age": "21",
-    "nation": "jp JPN",
-    "mp": "16",
-    "starts": "13",
-    "min": "1172",
-    "gls": "5",
-    "ast": "3"
-  },
-  {
-    "player": "Alex Greenwood",
-    "pos": "DF",
-    "age": "31",
-    "nation": "eng ENG",
-    "mp": "18",
-    "starts": "17",
-    "min": "1440",
-    "gls": "0",
-    "ast": "5"
-  },
-  {
-    "player": "Yui Hasegawa",
-    "pos": "MF",
-    "age": "28",
-    "nation": "jp JPN",
-    "mp": "20",
-    "starts": "20",
-    "min": "1800",
-    "gls": "2",
-    "ast": "2"
-  },
-  {
-    "player": "Lauren Hemp",
-    "pos": "MF",
-    "age": "24",
-    "nation": "eng ENG",
-    "mp": "18",
-    "starts": "17",
-    "min": "1379",
-    "gls": "1",
-    "ast": "6"
-  },
-  {
-    "player": "Khiara Keating",
+    "player": "Anna Moorhouse",
+    "name_he": "אנה מורהאוס",
     "pos": "GK",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "4",
-    "starts": "4",
-    "min": "360",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Kerolin",
-    "pos": "MF",
-    "age": "25",
-    "nation": "br BRA",
-    "mp": "15",
-    "starts": "9",
-    "min": "896",
-    "gls": "9",
-    "ast": "5"
-  },
-  {
-    "player": "Rebecca Knaak",
-    "pos": "DF",
-    "age": "29",
-    "nation": "de GER",
-    "mp": "14",
-    "starts": "14",
-    "min": "1230",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Naomi Layzell",
-    "pos": "DF",
-    "age": "21",
-    "nation": "eng ENG",
-    "mp": "3",
-    "starts": "0",
-    "min": "28",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Sydney Lohmann",
-    "pos": "MF",
-    "age": "25",
-    "nation": "de GER",
-    "mp": "10",
-    "starts": "1",
-    "min": "225",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Vivianne Miedema",
-    "pos": "MF,FW",
-    "age": "29",
-    "nation": "nl NED",
-    "mp": "19",
-    "starts": "19",
-    "min": "1437",
-    "gls": "10",
-    "ast": "5"
-  },
-  {
-    "player": "Lily Murphy",
-    "pos": "MF",
-    "age": "19",
-    "nation": "eng ENG",
-    "mp": "1",
-    "starts": "1",
-    "min": "90",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Leila Ouahabi",
-    "pos": "DF",
-    "age": "32",
-    "nation": "es ESP",
-    "mp": "15",
-    "starts": "11",
-    "min": "1000",
-    "gls": "0",
-    "ast": "2"
-  },
-  {
-    "player": "Gracie Prior",
-    "pos": "DF",
-    "age": "20",
-    "nation": "eng ENG",
-    "mp": "7",
-    "starts": "5",
-    "min": "525",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Jade Rose",
-    "pos": "DF",
-    "age": "22",
-    "nation": "ca CAN",
-    "mp": "20",
-    "starts": "19",
-    "min": "1737",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Khadija Shaw",
-    "pos": "FW",
-    "age": "28",
-    "nation": "jm JAM",
-    "mp": "22",
-    "starts": "22",
-    "min": "1946",
-    "gls": "21",
-    "ast": "4"
-  },
-  {
-    "player": "Laura Wienroither",
-    "pos": "DF",
-    "age": "26",
-    "nation": "at AUT",
-    "mp": "1",
-    "starts": "0",
-    "min": "11",
-    "gls": "0",
-    "ast": "0"
+    "no": "14",
+    "nation": "ENG"
   },
   {
     "player": "Ayaka Yamashita",
+    "name_he": "איאקה יאמאשיטה",
     "pos": "GK",
-    "age": "29",
-    "nation": "jp JPN",
-    "mp": "17",
-    "starts": "17",
-    "min": "1530",
-    "gls": "0",
-    "ast": "0"
+    "no": "31",
+    "nation": "JPN"
+  },
+  {
+    "player": "Eve Annets",
+    "name_he": "איב אנטס",
+    "pos": "GK",
+    "no": "43",
+    "nation": "ENG"
+  },
+  {
+    "player": "Risa Shimizu",
+    "name_he": "ריסה שימיזו",
+    "pos": "DF",
+    "no": "2",
+    "nation": "JPN"
+  },
+  {
+    "player": "Jade Rose",
+    "name_he": "ג'ייד רוז",
+    "pos": "DF",
+    "no": "4",
+    "nation": "CAN"
+  },
+  {
+    "player": "Alex Greenwood",
+    "name_he": "אלכס גרינווד",
+    "pos": "DF",
+    "no": "5",
+    "nation": "ENG"
+  },
+  {
+    "player": "Laura Wienroither",
+    "name_he": "לאורה וינרויטר",
+    "pos": "DF",
+    "no": "13",
+    "nation": "AUT"
+  },
+  {
+    "player": "Kerstin Casparij",
+    "name_he": "קרסטין קספאריי",
+    "pos": "DF",
+    "no": "18",
+    "nation": "NED"
+  },
+  {
+    "player": "Niamh Charles",
+    "name_he": "ניאם צ'ארלס",
+    "pos": "DF",
+    "no": "21",
+    "nation": "ENG"
+  },
+  {
+    "player": "Rebecca Knaak",
+    "name_he": "רבקה קנאאק",
+    "pos": "DF",
+    "no": "27",
+    "nation": "GER"
+  },
+  {
+    "player": "Gracie Prior",
+    "name_he": "גרייסי פריור",
+    "pos": "DF",
+    "no": "28",
+    "nation": "ENG"
+  },
+  {
+    "player": "Mayzee Davies",
+    "name_he": "מייזי דייוויס",
+    "pos": "DF",
+    "no": "53",
+    "nation": "WAL"
+  },
+  {
+    "player": "Grace Clinton",
+    "name_he": "גרייס קלינטון",
+    "pos": "MF",
+    "no": "6",
+    "nation": "ENG"
+  },
+  {
+    "player": "Sam Coffey",
+    "name_he": "סם קופי",
+    "pos": "MF",
+    "no": "17",
+    "nation": "USA"
+  },
+  {
+    "player": "Laura Blindkilde Brown",
+    "name_he": "לאורה בלינדקילדה בראון",
+    "pos": "MF",
+    "no": "19",
+    "nation": "ENG"
+  },
+  {
+    "player": "Sydney Lohmann",
+    "name_he": "סידני לומאן",
+    "pos": "MF",
+    "no": "22",
+    "nation": "GER"
+  },
+  {
+    "player": "Yui Hasegawa",
+    "name_he": "יוי הסגאווה",
+    "pos": "MF",
+    "no": "25",
+    "nation": "JPN"
+  },
+  {
+    "player": "Eve O'Carroll",
+    "name_he": "איב או'קרול",
+    "pos": "MF",
+    "no": "52",
+    "nation": "ENG"
+  },
+  {
+    "player": "Beth Mead",
+    "name_he": "בת' מיד",
+    "pos": "FW",
+    "no": "7",
+    "nation": "ENG"
+  },
+  {
+    "player": "Mary Fowler",
+    "name_he": "מרי פאולר",
+    "pos": "FW",
+    "no": "8",
+    "nation": "AUS"
+  },
+  {
+    "player": "Khadija Shaw",
+    "name_he": "חדיג'ה ('באני') שואו",
+    "pos": "FW",
+    "no": "9",
+    "nation": "JAM"
+  },
+  {
+    "player": "Vivianne Miedema",
+    "name_he": "ויוויאן מידמה",
+    "pos": "FW",
+    "no": "10",
+    "nation": "NED"
+  },
+  {
+    "player": "Lauren Hemp",
+    "name_he": "לורן המפ",
+    "pos": "FW",
+    "no": "11",
+    "nation": "ENG"
+  },
+  {
+    "player": "Aoba Fujino",
+    "name_he": "אאובה פוג'ינו",
+    "pos": "FW",
+    "no": "20",
+    "nation": "JPN"
+  },
+  {
+    "player": "Iman Beney",
+    "name_he": "אימן בנאי",
+    "pos": "FW",
+    "no": "24",
+    "nation": "SUI"
+  },
+  {
+    "player": "Carlotta Wamser",
+    "name_he": "קרלוטה ואמזר",
+    "pos": "FW",
+    "no": "37",
+    "nation": "GER"
   }
 ]

@@ -1,0 +1,156 @@
+[
+  {
+    "player": "Lucy Thomas",
+    "name_he": "לוסי תומאס",
+    "pos": "GK",
+    "no": "1",
+    "nation": "ENG"
+  },
+  {
+    "player": "Sophie Baggaley",
+    "name_he": "סופי באגלי",
+    "pos": "GK",
+    "no": "32",
+    "nation": "ENG"
+  },
+  {
+    "player": "Katie Startup",
+    "name_he": "קייטי סטארט-אפ",
+    "pos": "GK",
+    "no": "40",
+    "nation": "ENG"
+  },
+  {
+    "player": "Martha Harris",
+    "name_he": "מרתה האריס",
+    "pos": "DF",
+    "no": "2",
+    "nation": "ENG"
+  },
+  {
+    "player": "Marie Levasseur",
+    "name_he": "מארי לבאסר",
+    "pos": "DF",
+    "no": "3",
+    "nation": "CAN"
+  },
+  {
+    "player": "Jade Rastocle",
+    "name_he": "ז'ייד רסטוקל",
+    "pos": "DF",
+    "no": "4",
+    "nation": "FRA"
+  },
+  {
+    "player": "Shannon Cooke",
+    "name_he": "שאנון קוק",
+    "pos": "DF",
+    "no": "6",
+    "nation": "ENG"
+  },
+  {
+    "player": "Rebecca Holloway",
+    "name_he": "רבקה הולוואי",
+    "pos": "DF",
+    "no": "15",
+    "nation": "NIR"
+  },
+  {
+    "player": "Rebecca McKenna",
+    "name_he": "רבקה מקנה",
+    "pos": "DF",
+    "no": "18",
+    "nation": "NIR"
+  },
+  {
+    "player": "Millie Turner",
+    "name_he": "מילי טרנר",
+    "pos": "DF",
+    "no": "21",
+    "nation": "ENG"
+  },
+  {
+    "player": "Neve Herron",
+    "name_he": "ניב הרון",
+    "pos": "DF",
+    "no": "30",
+    "nation": "ENG"
+  },
+  {
+    "player": "Lisa Naalsund",
+    "name_he": "ליסה נאלסונד",
+    "pos": "MF",
+    "no": "8",
+    "nation": "NOR"
+  },
+  {
+    "player": "Charlie Crosthwaite",
+    "name_he": "צ'ארלי קרוסתווייט",
+    "pos": "MF",
+    "no": "16",
+    "nation": "ENG"
+  },
+  {
+    "player": "Chelsea Cornet",
+    "name_he": "צ'לסי קורנט",
+    "pos": "MF",
+    "no": "19",
+    "nation": "SCO"
+  },
+  {
+    "player": "Océane Hurtré",
+    "name_he": "אוסאן הורטרה",
+    "pos": "MF",
+    "no": "22",
+    "nation": "FRA"
+  },
+  {
+    "player": "Asato Miyagawa",
+    "name_he": "אסאטו מיאגאווה",
+    "pos": "MF",
+    "no": "26",
+    "nation": "JPN"
+  },
+  {
+    "player": "Veatriki Sarri",
+    "name_he": "ויאטריקי סארי",
+    "pos": "MF",
+    "no": "27",
+    "nation": "GRE"
+  },
+  {
+    "player": "Lee Geum-min",
+    "name_he": "לי גום-מין",
+    "pos": "FW",
+    "no": "7",
+    "nation": "KOR"
+  },
+  {
+    "player": "Simone Magill",
+    "name_he": "סימון מאגיל",
+    "pos": "FW",
+    "no": "9",
+    "nation": "NIR"
+  },
+  {
+    "player": "Wilma Leidhammar",
+    "name_he": "וילמה ליידהאמר",
+    "pos": "FW",
+    "no": "10",
+    "nation": "SWE"
+  },
+  {
+    "player": "Chancelle Effa Effa",
+    "name_he": "שאנסל אפה אפה",
+    "pos": "FW",
+    "no": "20",
+    "nation": "GAB"
+  },
+  {
+    "player": "Batcheba Louis",
+    "name_he": "בטשבה לואיס",
+    "pos": "FW",
+    "no": "29",
+    "nation": "HAI"
+  }
+]

@@ -1,266 +1,205 @@
 [
   {
-    "player": "Michelle Agyemang",
-    "pos": "FW",
-    "age": "19",
-    "nation": "eng ENG",
-    "mp": "5",
-    "starts": "5",
-    "min": "448",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Marit Auée",
-    "pos": "DF",
-    "age": "23",
-    "nation": "nl NED",
-    "mp": "7",
-    "starts": "0",
-    "min": "77",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Sophie Baggaley",
-    "pos": "GK",
-    "age": "28",
-    "nation": "eng ENG",
-    "mp": "3",
-    "starts": "3",
-    "min": "270",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Jelena Čanković",
-    "pos": "MF",
-    "age": "29",
-    "nation": "rs SRB",
-    "mp": "18",
-    "starts": "18",
-    "min": "1585",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Carla Carrillo",
-    "pos": "FW,MF",
-    "age": "20",
-    "nation": "es ESP",
-    "mp": "18",
-    "starts": "5",
-    "min": "440",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Madison Haley",
-    "pos": "MF,FW",
-    "age": "26",
-    "nation": "us USA",
-    "mp": "17",
-    "starts": "15",
-    "min": "1323",
-    "gls": "4",
-    "ast": "3"
-  },
-  {
-    "player": "Caitlin Hayes",
-    "pos": "DF",
-    "age": "29",
-    "nation": "ie IRL",
-    "mp": "17",
-    "starts": "15",
-    "min": "1331",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Tahirah Heron",
-    "pos": NaN,
-    "age": NaN,
-    "nation": NaN,
-    "mp": "2",
-    "starts": "0",
-    "min": "2",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Fran Kirby",
-    "pos": "MF,FW",
-    "age": "32",
-    "nation": "eng ENG",
-    "mp": "17",
-    "starts": "14",
-    "min": "1186",
-    "gls": "2",
-    "ast": "3"
-  },
-  {
-    "player": "Elliana Martin",
-    "pos": NaN,
-    "age": "18",
-    "nation": "eng ENG",
-    "mp": "1",
-    "starts": "0",
-    "min": "1",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Rachel McLauchlan",
-    "pos": "DF,MF",
-    "age": "28",
-    "nation": "sct SCO",
-    "mp": "20",
-    "starts": "12",
-    "min": "1198",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Moeka Minami",
-    "pos": "DF",
-    "age": "26",
-    "nation": "jp JPN",
-    "mp": "18",
-    "starts": "18",
-    "min": "1596",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Maelys Mpomé",
-    "pos": "MF,DF",
-    "age": "22",
-    "nation": "fr FRA",
-    "mp": "10",
-    "starts": "2",
-    "min": "313",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
     "player": "Chiamaka Nnadozie",
+    "name_he": "צ'יאמקה ננאדוזי",
     "pos": "GK",
-    "age": "24",
-    "nation": "ng NGA",
-    "mp": "19",
-    "starts": "19",
-    "min": "1710",
-    "gls": "0",
-    "ast": "0"
+    "no": "16",
+    "nation": "NGA"
   },
   {
-    "player": "Nadine Noordam",
-    "pos": "MF,FW",
-    "age": "27",
-    "nation": "nl NED",
-    "mp": "22",
-    "starts": "9",
-    "min": "1017",
-    "gls": "0",
-    "ast": "5"
+    "player": "Hannah Poulter",
+    "name_he": "חנה פולטר",
+    "pos": "GK",
+    "no": "25",
+    "nation": "ENG"
   },
   {
-    "player": "Marisa Olislagers",
-    "pos": "DF,MF",
-    "age": "24",
-    "nation": "nl NED",
-    "mp": "22",
-    "starts": "21",
-    "min": "1881",
-    "gls": "2",
-    "ast": "1"
+    "player": "Melina Loeck",
+    "name_he": "מלינה לוק",
+    "pos": "GK",
+    "no": "28",
+    "nation": "GER"
   },
   {
-    "player": "Rebecca Rayner",
-    "pos": "MF,FW",
-    "age": "25",
-    "nation": "eng ENG",
-    "mp": "6",
-    "starts": "3",
-    "min": "255",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Rusul Rosa Kafaji",
-    "pos": "MF",
-    "age": "22",
-    "nation": "se SWE",
-    "mp": "19",
-    "starts": "13",
-    "min": "961",
-    "gls": "2",
-    "ast": "3"
-  },
-  {
-    "player": "Charlize Rule",
-    "pos": "DF",
-    "age": "22",
-    "nation": "au AUS",
-    "mp": "19",
-    "starts": "17",
-    "min": "1343",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Kiko Seike",
-    "pos": "MF,FW",
-    "age": "28",
-    "nation": "jp JPN",
-    "mp": "20",
-    "starts": "18",
-    "min": "1612",
-    "gls": "8",
-    "ast": "2"
-  },
-  {
-    "player": "Maisie Symonds",
-    "pos": "MF",
-    "age": "22",
-    "nation": "eng ENG",
-    "mp": "22",
-    "starts": "21",
-    "min": "1837",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Fūka Tsunoda",
-    "pos": "MF",
-    "age": "20",
-    "nation": "jp JPN",
-    "mp": "7",
-    "starts": "2",
-    "min": "206",
-    "gls": "2",
-    "ast": "0"
-  },
-  {
-    "player": "Olaug Tvedten",
-    "pos": "MF",
-    "age": "25",
-    "nation": "no NOR",
-    "mp": "7",
-    "starts": "1",
-    "min": "148",
-    "gls": "0",
-    "ast": "0"
+    "player": "Eleanor Heeps",
+    "name_he": "אלינור היפס",
+    "pos": "GK",
+    "no": "30",
+    "nation": "ENG"
   },
   {
     "player": "Manuela Vanegas",
+    "name_he": "מנואלה ונגאס",
     "pos": "DF",
-    "age": "24",
-    "nation": "co COL",
-    "mp": "14",
-    "starts": "11",
-    "min": "1040",
-    "gls": "1",
-    "ast": "0"
+    "no": "2",
+    "nation": "COL"
+  },
+  {
+    "player": "Moeka Minami",
+    "name_he": "מואקה מינאמי",
+    "pos": "DF",
+    "no": "3",
+    "nation": "JPN"
+  },
+  {
+    "player": "Maelys Mpomé",
+    "name_he": "מאיליס מפומה",
+    "pos": "DF",
+    "no": "5",
+    "nation": "FRA"
+  },
+  {
+    "player": "Gabby George",
+    "name_he": "גבי ג'ורג'",
+    "pos": "DF",
+    "no": "6",
+    "nation": "ENG"
+  },
+  {
+    "player": "Caitlin Hayes",
+    "name_he": "קייטלין הייז",
+    "pos": "DF",
+    "no": "18",
+    "nation": "IRL"
+  },
+  {
+    "player": "Marisa Olislagers",
+    "name_he": "מריסה אוליסלגרס",
+    "pos": "DF",
+    "no": "19",
+    "nation": "NED"
+  },
+  {
+    "player": "Marit Auée",
+    "name_he": "מאריט אווה",
+    "pos": "DF",
+    "no": "23",
+    "nation": "NED"
+  },
+  {
+    "player": "Grace McEwen",
+    "name_he": "גרייס מקיואן",
+    "pos": "DF",
+    "no": "24",
+    "nation": "ENG"
+  },
+  {
+    "player": "Charlize Rule",
+    "name_he": "שארליז רול",
+    "pos": "DF",
+    "no": "33",
+    "nation": "AUS"
+  },
+  {
+    "player": "Emilie Gay",
+    "name_he": "אמילי גיי",
+    "pos": "DF",
+    "no": "64",
+    "nation": "ENG"
+  },
+  {
+    "player": "Maisie Symonds",
+    "name_he": "מייזי סימונדס",
+    "pos": "MF",
+    "no": "8",
+    "nation": "ENG"
+  },
+  {
+    "player": "Jelena Čanković",
+    "name_he": "ילנה צ'אנקוביץ'",
+    "pos": "MF",
+    "no": "10",
+    "nation": "SRB"
+  },
+  {
+    "player": "Lia Wälti",
+    "name_he": "ליה ואלטי",
+    "pos": "MF",
+    "no": "13",
+    "nation": "SUI"
+  },
+  {
+    "player": "Emilie Joramo",
+    "name_he": "אמילי יוראמו",
+    "pos": "MF",
+    "no": "15",
+    "nation": "NOR"
+  },
+  {
+    "player": "Bex Rayner",
+    "name_he": "בק ריינר",
+    "pos": "MF",
+    "no": "17",
+    "nation": "ENG"
+  },
+  {
+    "player": "Olaug Tvedten",
+    "name_he": "אולאוג טוודטן",
+    "pos": "MF",
+    "no": "20",
+    "nation": "NOR"
+  },
+  {
+    "player": "Taylor Warren",
+    "name_he": "טיילור וורן",
+    "pos": "MF",
+    "no": "41",
+    "nation": "ENG"
+  },
+  {
+    "player": "Aisha Masaka",
+    "name_he": "עאישה מסאקה",
+    "pos": "FW",
+    "no": "7",
+    "nation": "TAN"
+  },
+  {
+    "player": "Madison Haley",
+    "name_he": "מדיסון היילי",
+    "pos": "FW",
+    "no": "9",
+    "nation": "USA"
+  },
+  {
+    "player": "Kiko Seike",
+    "name_he": "קיקו סייקה",
+    "pos": "FW",
+    "no": "11",
+    "nation": "JPN"
+  },
+  {
+    "player": "Fran Kirby",
+    "name_he": "פראן קירבי",
+    "pos": "FW",
+    "no": "14",
+    "nation": "ENG"
+  },
+  {
+    "player": "Olivia García",
+    "name_he": "אוליביה גרסיה",
+    "pos": "FW",
+    "no": "21",
+    "nation": "ESP"
+  },
+  {
+    "player": "Sophie Peskett",
+    "name_he": "סופי פסקט",
+    "pos": "FW",
+    "no": "27",
+    "nation": "ENG"
+  },
+  {
+    "player": "Emily Murphy",
+    "name_he": "אמילי מרפי",
+    "pos": "FW",
+    "no": "35",
+    "nation": "ENG"
+  },
+  {
+    "player": "Nadia Krezyman",
+    "name_he": "נדיה קז'ימאן",
+    "pos": "FW",
+    "no": "44",
+    "nation": "POL"
   }
 ]

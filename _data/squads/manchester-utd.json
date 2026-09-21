@@ -1,288 +1,191 @@
 [
   {
-    "player": "Jessica Anderson",
-    "pos": "MF",
-    "age": "17",
-    "nation": "eng ENG",
-    "mp": "1",
-    "starts": "0",
-    "min": "14",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Simi Awujo",
-    "pos": "DF,MF",
-    "age": "21",
-    "nation": "ca CAN",
-    "mp": "11",
-    "starts": "4",
-    "min": "408",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Hannah Blundell",
-    "pos": "DF",
-    "age": "31",
-    "nation": "eng ENG",
-    "mp": "3",
-    "starts": "0",
-    "min": "74",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Layla Drury",
-    "pos": "FW",
-    "age": "16",
-    "nation": "eng ENG",
-    "mp": "5",
-    "starts": "0",
-    "min": "51",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Leah Galton",
-    "pos": "MF",
-    "age": "31",
-    "nation": "eng ENG",
-    "mp": "5",
-    "starts": "1",
-    "min": "141",
-    "gls": "0",
-    "ast": "1"
-  },
-  {
-    "player": "Gabrielle George",
-    "pos": "DF",
-    "age": "28",
-    "nation": "eng ENG",
-    "mp": "13",
-    "starts": "4",
-    "min": "402",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Celin Ildhusøy",
-    "pos": "MF,FW",
-    "age": "23",
-    "nation": "no NOR",
-    "mp": "5",
-    "starts": "3",
-    "min": "260",
-    "gls": "0",
-    "ast": "0"
-  },
-  {
-    "player": "Dominique Janssen",
-    "pos": "DF,MF",
-    "age": "30",
-    "nation": "nl NED",
-    "mp": "18",
-    "starts": "15",
-    "min": "1373",
-    "gls": "1",
-    "ast": "1"
-  },
-  {
-    "player": "Maya Le Tissier",
-    "pos": "DF",
-    "age": "23",
-    "nation": "eng ENG",
-    "mp": "22",
-    "starts": "22",
-    "min": "1980",
-    "gls": "1",
-    "ast": "2"
-  },
-  {
-    "player": "Hanna Lundkvist",
-    "pos": "DF,MF",
-    "age": "23",
-    "nation": "se SWE",
-    "mp": "11",
-    "starts": "5",
-    "min": "600",
-    "gls": "1",
-    "ast": "1"
-  },
-  {
-    "player": "Melvine Malard",
-    "pos": "MF,FW",
-    "age": "25",
-    "nation": "fr FRA",
-    "mp": "21",
-    "starts": "16",
-    "min": "1516",
-    "gls": "6",
-    "ast": "3"
-  },
-  {
-    "player": "Safia Middleton",
+    "player": "Janina Leitzig",
+    "name_he": "יאנינה לייציג",
     "pos": "GK",
-    "age": "20",
-    "nation": "wls WAL",
-    "mp": "1",
-    "starts": "1",
-    "min": "90",
-    "gls": "0",
-    "ast": "0"
+    "no": "25",
+    "nation": "GER"
   },
   {
-    "player": "Hinata Miyazawa",
-    "pos": "MF,DF",
-    "age": "25",
-    "nation": "jp JPN",
-    "mp": "20",
-    "starts": "20",
-    "min": "1800",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Lisa Naalsund",
-    "pos": "MF",
-    "age": "30",
-    "nation": "no NOR",
-    "mp": "16",
-    "starts": "9",
-    "min": "826",
-    "gls": "3",
-    "ast": "0"
-  },
-  {
-    "player": "Jessica Park",
-    "pos": "MF,FW",
-    "age": "23",
-    "nation": "eng ENG",
-    "mp": "22",
-    "starts": "19",
-    "min": "1733",
-    "gls": "6",
-    "ast": "5"
-  },
-  {
-    "player": "Jayde Riviere",
-    "pos": "DF",
-    "age": "24",
-    "nation": "ca CAN",
-    "mp": "19",
-    "starts": "18",
-    "min": "1332",
-    "gls": "1",
-    "ast": "1"
-  },
-  {
-    "player": "Fridolina Rolfö",
-    "pos": "MF,DF",
-    "age": "31",
-    "nation": "se SWE",
-    "mp": "19",
-    "starts": "11",
-    "min": "1063",
-    "gls": "3",
-    "ast": "1"
-  },
-  {
-    "player": "Anna Sandberg",
-    "pos": "DF",
-    "age": "22",
-    "nation": "se SWE",
-    "mp": "17",
-    "starts": "15",
-    "min": "1282",
-    "gls": "1",
-    "ast": "2"
-  },
-  {
-    "player": "Lea Schüller",
-    "pos": "FW",
-    "age": "27",
-    "nation": "de GER",
-    "mp": "11",
-    "starts": "6",
-    "min": "471",
-    "gls": "1",
-    "ast": "0"
-  },
-  {
-    "player": "Elisabeth Terland",
-    "pos": "FW,MF",
-    "age": "24",
-    "nation": "no NOR",
-    "mp": "18",
-    "starts": "13",
-    "min": "957",
-    "gls": "6",
-    "ast": "2"
-  },
-  {
-    "player": "Ella Toone",
-    "pos": "MF,FW",
-    "age": "25",
-    "nation": "eng ENG",
-    "mp": "14",
-    "starts": "13",
-    "min": "1127",
-    "gls": "3",
-    "ast": "5"
+    "player": "Jessica Anderson",
+    "name_he": "ג'סיקה אנדרסון",
+    "pos": "GK",
+    "no": "47",
+    "nation": "ENG"
   },
   {
     "player": "Phallon Tullis-Joyce",
+    "name_he": "פאלון טוליס-ג'ויס",
     "pos": "GK",
-    "age": "28",
-    "nation": "us USA",
-    "mp": "21",
-    "starts": "21",
-    "min": "1890",
-    "gls": "0",
-    "ast": "0"
+    "no": "91",
+    "nation": "USA"
   },
   {
-    "player": "Millie Turner",
-    "pos": "DF,MF",
-    "age": "29",
-    "nation": "eng ENG",
-    "mp": "8",
-    "starts": "6",
-    "min": "520",
-    "gls": "1",
-    "ast": "1"
+    "player": "Anna Sandberg",
+    "name_he": "אנה סנדברג",
+    "pos": "DF",
+    "no": "2",
+    "nation": "SWE"
   },
   {
-    "player": "Ellen Wangerheim",
+    "player": "Maya Le Tissier",
+    "name_he": "מאיה לה טיסייה",
+    "pos": "DF",
+    "no": "4",
+    "nation": "ENG"
+  },
+  {
+    "player": "Hanna Lundkvist",
+    "name_he": "חנה לונדקוויסט",
+    "pos": "DF",
+    "no": "5",
+    "nation": "SWE"
+  },
+  {
+    "player": "Andrea Medina",
+    "name_he": "אנדראה מדינה",
+    "pos": "DF",
+    "no": "6",
+    "nation": "ESP"
+  },
+  {
+    "player": "Jayde Riviere",
+    "name_he": "ג'ייד ריבייר",
+    "pos": "DF",
+    "no": "14",
+    "nation": "CAN"
+  },
+  {
+    "player": "Dominique Janssen",
+    "name_he": "דומיניק יאנסן",
+    "pos": "DF",
+    "no": "17",
+    "nation": "NED"
+  },
+  {
+    "player": "Jess Simpson",
+    "name_he": "ג'ס סימפסון",
+    "pos": "DF",
+    "no": "26",
+    "nation": "ENG"
+  },
+  {
+    "player": "Lucy Newell",
+    "name_he": "לוסי ניואל",
+    "pos": "DF",
+    "no": "55",
+    "nation": "ENG"
+  },
+  {
+    "player": "Ella Toone",
+    "name_he": "אלה טון",
     "pos": "MF",
-    "age": "20",
-    "nation": "se SWE",
-    "mp": "8",
-    "starts": "3",
-    "min": "283",
-    "gls": "0",
-    "ast": "0"
+    "no": "7",
+    "nation": "ENG"
   },
   {
-    "player": "Rachel Williams",
-    "pos": "DF,FW",
-    "age": "37",
-    "nation": "eng ENG",
-    "mp": "6",
-    "starts": "0",
-    "min": "54",
-    "gls": "0",
-    "ast": "0"
+    "player": "Jess Park",
+    "name_he": "ג'ס פארק",
+    "pos": "MF",
+    "no": "8",
+    "nation": "ENG"
+  },
+  {
+    "player": "Simi Awujo",
+    "name_he": "סימי אווג'ו",
+    "pos": "MF",
+    "no": "13",
+    "nation": "CAN"
   },
   {
     "player": "Julia Zigiotti Olme",
+    "name_he": "יוליה זיגיוטי אולמה",
     "pos": "MF",
-    "age": "27",
-    "nation": "se SWE",
-    "mp": "20",
-    "starts": "17",
-    "min": "1507",
-    "gls": "2",
-    "ast": "2"
+    "no": "15",
+    "nation": "SWE"
+  },
+  {
+    "player": "Rebeca Bernal",
+    "name_he": "רבקה ברנאל",
+    "pos": "MF",
+    "no": "16",
+    "nation": "MEX"
+  },
+  {
+    "player": "Hinata Miyazawa",
+    "name_he": "הינאטה מיאזאווה",
+    "pos": "MF",
+    "no": "20",
+    "nation": "JPN"
+  },
+  {
+    "player": "Emma Watson",
+    "name_he": "אמה ווטסון",
+    "pos": "MF",
+    "no": "21",
+    "nation": "SCO"
+  },
+  {
+    "player": "Scarlett Hill",
+    "name_he": "סקרלט היל",
+    "pos": "MF",
+    "no": "22",
+    "nation": "ENG"
+  },
+  {
+    "player": "Mared Griffiths",
+    "name_he": "מאראד גריפית'ס",
+    "pos": "MF",
+    "no": "36",
+    "nation": "WAL"
+  },
+  {
+    "player": "Elisabeth Terland",
+    "name_he": "אליזבת טרלנד",
+    "pos": "FW",
+    "no": "10",
+    "nation": "NOR"
+  },
+  {
+    "player": "Celin Bizet Dønnum",
+    "name_he": "סלין ביזט דונם",
+    "pos": "FW",
+    "no": "11",
+    "nation": "NOR"
+  },
+  {
+    "player": "Fridolina Rolfö",
+    "name_he": "פרידולינה רולפו",
+    "pos": "FW",
+    "no": "12",
+    "nation": "SWE"
+  },
+  {
+    "player": "Ellen Wangerheim",
+    "name_he": "אלן ואנגרהיים",
+    "pos": "FW",
+    "no": "19",
+    "nation": "SWE"
+  },
+  {
+    "player": "Monica Jusu Bah",
+    "name_he": "מוניקה ג'וסו בה",
+    "pos": "FW",
+    "no": "23",
+    "nation": "SWE"
+  },
+  {
+    "player": "Lea Schüller",
+    "name_he": "ליאה שילר",
+    "pos": "FW",
+    "no": "24",
+    "nation": "GER"
+  },
+  {
+    "player": "Layla Drury",
+    "name_he": "ליילה דרורי",
+    "pos": "FW",
+    "no": "27",
+    "nation": "ENG"
   }
 ]

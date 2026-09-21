@@ -1,35 +1,198 @@
 [
-  {"player": "Daphne van Domselaar", "name_he": "דפנה ואן דומסלאר", "pos": "GK", "no": "1", "nation": "NED"},
-  {"player": "Misa Rodríguez", "name_he": "מיסה רודריגז", "pos": "GK", "no": "13", "nation": "ESP"},
-  {"player": "Anneke Borbe", "name_he": "אנקה בורבה", "pos": "GK", "no": "24", "nation": "GER"},
-  {"player": "Isabella Daam", "name_he": "איזבלה דאם", "pos": "GK", "no": null, "nation": "ENG"},
-  {"player": "Amy Liddiard", "name_he": "איימי לידיארד", "pos": "GK", "no": null, "nation": "ENG"},
-  {"player": "Emily Fox", "name_he": "אמילי פוקס", "pos": "DF", "no": "2", "nation": "USA"},
-  {"player": "Lotte Wubben-Moy", "name_he": "לוטה וובן-מוי", "pos": "DF", "no": "3", "nation": "ENG"},
-  {"player": "Leah Williamson", "name_he": "ליאה ויליאמסון", "pos": "DF", "no": "6", "nation": "ENG"},
-  {"player": "Steph Catley", "name_he": "סטפני קאטלי", "pos": "DF", "no": "7", "nation": "AUS"},
-  {"player": "Taylor Hinds", "name_he": "טיילור היינדס", "pos": "DF", "no": "12", "nation": "ENG"},
-  {"player": "Ona Batlle", "name_he": "אונה באטייה", "pos": "DF", "no": "22", "nation": "ESP"},
-  {"player": "Smilla Holmberg", "name_he": "סמילה הולמברג", "pos": "DF", "no": "25", "nation": "SWE"},
-  {"player": "Katie Reid", "name_he": "קייטי ריד", "pos": "DF", "no": "28", "nation": "ENG"},
-  {"player": "Niamh Lucy Peacock", "name_he": "ניאם לוסי פיקוק", "pos": "DF", "no": null, "nation": "ENG"},
-  {"player": "Georgia Stanway", "name_he": "ג'ורג'יה סטאנוויי ('G')", "pos": "MF", "no": "8", "nation": "ENG"},
-  {"player": "Kim Little", "name_he": "קים ליטל", "pos": "MF", "no": "10", "nation": "SCO"},
-  {"player": "Frida Maanum", "name_he": "פרידה מאנום", "pos": "MF", "no": "12", "nation": "NOR"},
-  {"player": "Géraldine Reuteler", "name_he": "ז'רלדין רויטלר", "pos": "MF", "no": "14", "nation": "SUI"},
-  {"player": "Lisa Baum", "name_he": "ליסה באום", "pos": "MF", "no": "19", "nation": "GER"},
-  {"player": "Kyra Cooney-Cross", "name_he": "קיירה קוני-קרוס", "pos": "MF", "no": "32", "nation": "AUS"},
-  {"player": "Sophie Harwood", "name_he": "סופי הארווד", "pos": "MF", "no": null, "nation": "ENG"},
-  {"player": "Bryony-Rose Brodie", "name_he": "בריאוני-רוז ברודי", "pos": "MF", "no": null, "nation": "ENG"},
-  {"player": "Mariona Caldentey", "name_he": "מריונה קלדנטיי", "pos": "FW", "no": "8", "nation": "ESP"},
-  {"player": "Selina Cerci", "name_he": "סלינה צ'רצ'י", "pos": "FW", "no": "9", "nation": "GER"},
-  {"player": "Rosa Kafaji", "name_he": "רוזה קפאג'י", "pos": "FW", "no": "16", "nation": "SWE"},
-  {"player": "Chloe Kelly", "name_he": "קלואי קלי", "pos": "FW", "no": "18", "nation": "ENG"},
-  {"player": "Caitlin Foord", "name_he": "קייטלין פורד", "pos": "FW", "no": "19", "nation": "AUS"},
-  {"player": "Olivia Smith", "name_he": "אוליביה סמית'", "pos": "FW", "no": "20", "nation": "CAN"},
-  {"player": "Alessia Russo", "name_he": "אלסיה רוסו", "pos": "FW", "no": "23", "nation": "ENG"},
-  {"player": "Stina Blackstenius", "name_he": "סטינה בלקסטניוס", "pos": "FW", "no": "25", "nation": "SWE"},
-  {"player": "Michelle Agyemang", "name_he": "מישל אג'ימאן ('מיש')", "pos": "FW", "no": "27", "nation": "ENG"},
-  {"player": "Mia Dixon", "name_he": "מיה דיקסון", "pos": "FW", "no": null, "nation": "ENG"},
-  {"player": "Vivienne Lia", "name_he": "ויויאן ליא", "pos": "FW", "no": null, "nation": "ENG"}
+  {
+    "player": "Daphne van Domselaar",
+    "name_he": "דפנה ואן דומסלאר",
+    "pos": "GK",
+    "no": "1",
+    "nation": "NED"
+  },
+  {
+    "player": "Misa Rodríguez",
+    "name_he": "מיסה רודריגז",
+    "pos": "GK",
+    "no": "16",
+    "nation": "ESP"
+  },
+  {
+    "player": "Anneke Borbe",
+    "name_he": "אנקה בורבה",
+    "pos": "GK",
+    "no": "28",
+    "nation": "GER"
+  },
+  {
+    "player": "Isabella Damm",
+    "name_he": "איזבלה דאם",
+    "pos": "GK",
+    "no": "40",
+    "nation": "ENG"
+  },
+  {
+    "player": "Emily Fox",
+    "name_he": "אמילי פוקס",
+    "pos": "DF",
+    "no": "2",
+    "nation": "USA"
+  },
+  {
+    "player": "Lotte Wubben-Moy",
+    "name_he": "לוטה וובן-מוי",
+    "pos": "DF",
+    "no": "3",
+    "nation": "ENG"
+  },
+  {
+    "player": "Élisa De Almeida",
+    "name_he": "אליסה דה אלמיידה",
+    "pos": "DF",
+    "no": "5",
+    "nation": "FRA"
+  },
+  {
+    "player": "Leah Williamson",
+    "name_he": "ליאה ויליאמסון",
+    "pos": "DF",
+    "no": "6",
+    "nation": "ENG"
+  },
+  {
+    "player": "Steph Catley",
+    "name_he": "סטפני קאטלי",
+    "pos": "DF",
+    "no": "7",
+    "nation": "AUS"
+  },
+  {
+    "player": "Ona Batlle",
+    "name_he": "אונה באטייה",
+    "pos": "DF",
+    "no": "22",
+    "nation": "ESP"
+  },
+  {
+    "player": "Taylor Hinds",
+    "name_he": "טיילור היינדס",
+    "pos": "DF",
+    "no": "24",
+    "nation": "ENG"
+  },
+  {
+    "player": "Katie Reid",
+    "name_he": "קייטי ריד",
+    "pos": "DF",
+    "no": "26",
+    "nation": "ENG"
+  },
+  {
+    "player": "Smilla Holmberg",
+    "name_he": "סמילה הולמברג",
+    "pos": "DF",
+    "no": "31",
+    "nation": "SWE"
+  },
+  {
+    "player": "Maddy Earl",
+    "name_he": "מאדי ארל",
+    "pos": "DF",
+    "no": "38",
+    "nation": "ENG"
+  },
+  {
+    "player": "Georgia Stanway",
+    "name_he": "ג'ורג'יה סטאנוויי ('G')",
+    "pos": "MF",
+    "no": "4",
+    "nation": "ENG"
+  },
+  {
+    "player": "Kim Little",
+    "name_he": "קים ליטל",
+    "pos": "MF",
+    "no": "10",
+    "nation": "SCO"
+  },
+  {
+    "player": "Frida Maanum",
+    "name_he": "פרידה מאנום",
+    "pos": "MF",
+    "no": "12",
+    "nation": "NOR"
+  },
+  {
+    "player": "Géraldine Reuteler",
+    "name_he": "ז'רלדין רויטלר",
+    "pos": "MF",
+    "no": "14",
+    "nation": "SUI"
+  },
+  {
+    "player": "Lisa Baum",
+    "name_he": "ליסה באום",
+    "pos": "MF",
+    "no": "19",
+    "nation": "GER"
+  },
+  {
+    "player": "Kyra Cooney-Cross",
+    "name_he": "קיירה קוני-קרוס",
+    "pos": "MF",
+    "no": "32",
+    "nation": "AUS"
+  },
+  {
+    "player": "Mariona Caldentey",
+    "name_he": "מריונה קלדנטיי",
+    "pos": "FW",
+    "no": "8",
+    "nation": "ESP"
+  },
+  {
+    "player": "Caitlin Foord",
+    "name_he": "קייטלין פורד",
+    "pos": "FW",
+    "no": "9",
+    "nation": "AUS"
+  },
+  {
+    "player": "Olivia Smith",
+    "name_he": "אוליביה סמית'",
+    "pos": "FW",
+    "no": "11",
+    "nation": "CAN"
+  },
+  {
+    "player": "Michelle Agyemang",
+    "name_he": "מישל אג'ימאן ('מיש')",
+    "pos": "FW",
+    "no": "17",
+    "nation": "ENG"
+  },
+  {
+    "player": "Chloe Kelly",
+    "name_he": "קלואי קלי",
+    "pos": "FW",
+    "no": "18",
+    "nation": "ENG"
+  },
+  {
+    "player": "Alessia Russo",
+    "name_he": "אלסיה רוסו",
+    "pos": "FW",
+    "no": "23",
+    "nation": "ENG"
+  },
+  {
+    "player": "Stina Blackstenius",
+    "name_he": "סטינה בלקסטניוס",
+    "pos": "FW",
+    "no": "25",
+    "nation": "SWE"
+  },
+  {
+    "player": "Selina Cerci",
+    "name_he": "סלינה צ'רצ'י",
+    "pos": "FW",
+    "no": "29",
+    "nation": "GER"
+  }
 ]
