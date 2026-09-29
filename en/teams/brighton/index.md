@@ -61,7 +61,7 @@ alt_url: /teams/brighton/
         Fran Kirby · via the 'Added Time' Podcast
       </div>
       <p class="text-lg italic text-neutral-800 dark:text-neutral-200 font-serif">
-        "The managers' styles are different, and we are still trying, together with me, to learn and see what we can do."
+        "The managers' styles are different, and as a squad, including myself, we are still trying to learn and adapt."
       </p>
     </div>
 

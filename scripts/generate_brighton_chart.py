@@ -93,14 +93,14 @@ def generate_brighton_chart():
     # Annotation Box
     text_box = (
         "Key Tactical Takeaways:\n"
-        "• Underperformance: -5.33 Goals below xG\n"
-        "• Total 10 Big Chances Missed in 4 matches\n"
-        "• Opponents scored 6 goals from just 3.96 xGA\n"
-        "• Conclusion: Tactical creation is elite, regression to mean is imminent."
+        "• Attack Deficit: -5.33 Goals below xG (10 Big Chances Missed)\n"
+        "• Defensive Variance: 6 Conceded from just 3.96 xGA\n"
+        "• Goalkeeping Slump: Nnadozie 60.0% save pct (3 conceded on last 4 SoT)\n"
+        "• Conclusion: Elite process + Double Variance; regression is imminent."
     )
-    ax2.text(0.05, 0.92, text_box, transform=ax2.transAxes,
-             fontsize=10, color=TEXT_COLOR, va="top",
-             bbox=dict(boxstyle="round,pad=0.6", facecolor=BG_COLOR, edgecolor=CYAN_ACCENT, alpha=0.95, lw=1.2))
+    ax2.text(0.05, 0.94, text_box, transform=ax2.transAxes,
+             fontsize=9.5, color=TEXT_COLOR, va="top",
+             bbox=dict(boxstyle="round,pad=0.55", facecolor=BG_COLOR, edgecolor=CYAN_ACCENT, alpha=0.95, lw=1.2))
 
     ax2.set_title("Cumulative Balance: 4-Match Aggregates", fontsize=13, fontweight="bold", color=TEXT_COLOR, pad=12)
     ax2.set_xticks(range(len(categories)))
