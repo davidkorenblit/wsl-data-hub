@@ -347,7 +347,7 @@
   {
     "id": "5981650",
     "round": "4",
-    "date": "2026-09-27T12:00:00.000Z",
+    "date": "2026-09-27T12:00:00Z",
     "home": "Manchester United (W)",
     "home_id": "954396",
     "home_score": 2,
@@ -362,7 +362,7 @@
   {
     "id": "5981651",
     "round": "4",
-    "date": "2026-09-27T13:00:00.000Z",
+    "date": "2026-09-27T13:00:00Z",
     "home": "Birmingham City (W)",
     "home_id": "258658",
     "home_score": 3,
@@ -377,7 +377,7 @@
   {
     "id": "5981652",
     "round": "4",
-    "date": "2026-09-27T13:00:00.000Z",
+    "date": "2026-09-27T13:00:00Z",
     "home": "Liverpool (W)",
     "home_id": "258665",
     "home_score": 2,
@@ -392,7 +392,7 @@
   {
     "id": "5981653",
     "round": "4",
-    "date": "2026-09-27T13:00:00.000Z",
+    "date": "2026-09-27T13:00:00Z",
     "home": "Tottenham Hotspur (W)",
     "home_id": "628117",
     "home_score": 4,
@@ -407,7 +407,7 @@
   {
     "id": "5981654",
     "round": "4",
-    "date": "2026-09-27T15:30:00.000Z",
+    "date": "2026-09-27T15:30:00Z",
     "home": "Chelsea (W)",
     "home_id": "258661",
     "home_score": 1,
@@ -425,14 +425,14 @@
     "date": "2026-10-03T12:30:00Z",
     "home": "Manchester United (W)",
     "home_id": "954396",
-    "home_score": null,
+    "home_score": 1,
     "away": "Liverpool (W)",
     "away_id": "258665",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 0,
+    "score": "1 - 0",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981657",
@@ -440,14 +440,14 @@
     "date": "2026-10-04T13:00:00Z",
     "home": "Aston Villa (W)",
     "home_id": "231494",
-    "home_score": null,
+    "home_score": 1,
     "away": "Crystal Palace (W)",
     "away_id": "614828",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 1,
+    "score": "1 - 1",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981658",
@@ -455,14 +455,14 @@
     "date": "2026-10-04T13:00:00Z",
     "home": "Brighton (W)",
     "home_id": "231505",
-    "home_score": null,
+    "home_score": 5,
     "away": "Charlton (W)",
     "away_id": "231502",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 1,
+    "score": "5 - 1",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981659",
@@ -470,14 +470,14 @@
     "date": "2026-10-04T13:00:00Z",
     "home": "Everton (W)",
     "home_id": "258663",
-    "home_score": null,
+    "home_score": 2,
     "away": "Birmingham City (W)",
     "away_id": "258658",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 1,
+    "score": "2 - 1",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981655",
@@ -485,14 +485,14 @@
     "date": "2026-10-04T13:00:00Z",
     "home": "Tottenham Hotspur (W)",
     "home_id": "628117",
-    "home_score": null,
+    "home_score": 1,
     "away": "London City Lionesses (W)",
     "away_id": "1075419",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 6,
+    "score": "1 - 6",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981660",
@@ -500,14 +500,14 @@
     "date": "2026-10-04T13:00:00Z",
     "home": "West Ham United (W)",
     "home_id": "231497",
-    "home_score": null,
+    "home_score": 0,
     "away": "Chelsea (W)",
     "away_id": "258661",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 3,
+    "score": "0 - 3",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981661",
@@ -515,14 +515,14 @@
     "date": "2026-10-04T15:30:00Z",
     "home": "Manchester City (W)",
     "home_id": "231488",
-    "home_score": null,
+    "home_score": 4,
     "away": "Arsenal (W)",
     "away_id": "258657",
-    "away_score": null,
-    "score": null,
-    "finished": false,
-    "started": false,
-    "reason": null
+    "away_score": 2,
+    "score": "4 - 2",
+    "finished": true,
+    "started": true,
+    "reason": "FT"
   },
   {
     "id": "5981663",
