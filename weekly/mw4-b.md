@@ -6,8 +6,8 @@ lang: he
 alt_url: /en/weekly/
 prev_url: /weekly/mw4-a/
 prev_title: "מחזור 4 (חלק א')"
-next_url: null
-next_title: null
+next_url: /weekly/mw5/
+next_title: "מחזור 5"
 ---
 
 <div class="space-y-6">

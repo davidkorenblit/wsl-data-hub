@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "הטור השבועי · מחזור 5: הצהרת כוונות, משבר דקה 60 והתיישרות הדאטא | WSL Data Hub"
-permalink: /weekly/
+permalink: /weekly/mw5/
 lang: he
 alt_url: /en/weekly/
 prev_url: /weekly/mw4-b/
@@ -252,7 +252,9 @@ next_title: null
         <span>→</span>
         <span>למחזור הקודם: מחזור 4 (חלק ב')</span>
       </a>
-      <span class="text-neutral-400">עונת 2026/27</span>
+      <a href="{{ '/weekly/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold hover:underline">
+        חזרה לאינדקס הטורים
+      </a>
     </div>
 
   </article>
