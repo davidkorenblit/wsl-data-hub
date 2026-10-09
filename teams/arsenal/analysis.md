@@ -6,7 +6,7 @@ team_slug: "arsenal"
 team_meta: "WSL 2026/27 · חלק ב': תמונת בסיס ופרדוקס הביצועים"
 hide_sidebar: true
 permalink: /teams/arsenal/analysis/
-prev_url: /teams/arsenal/
+prev_url: /teams/arsenal/intro/
 prev_title: "חלק א': מועדון וזהות"
 next_url: /teams/arsenal/evaluation/
 next_title: "חלק ג': אנומליית פתיחת העונה"
