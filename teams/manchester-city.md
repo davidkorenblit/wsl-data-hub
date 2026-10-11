@@ -15,7 +15,7 @@ alt_url: /en/teams/manchester-city/
   <div class="border-b border-neutral-200 dark:border-neutral-800 pb-3">
     <div class="flex items-center gap-2 mb-1.5">
       <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-sky-100 dark:bg-sky-950/40 text-sky-800 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
-        דוח מצב מעודכן · מחזור 5
+        דוח מצב מעודכן
       </span>
       <span class="text-xs font-mono text-neutral-400 dark:text-neutral-500">
         אוקטובר 2026
@@ -29,44 +29,18 @@ alt_url: /en/teams/manchester-city/
     </p>
   </div>
 
-  <!-- Part 1: Background & Summer Context -->
-  <div class="space-y-4">
-    <p class="font-bold text-xl sm:text-2xl text-primary-600 dark:text-primary-400 tracking-tight">
-      למנ' סיטי.
-    </p>
-
-    <p>
-      סיטי זכתה באליפות כי היא הייתה הכי טובה ביי פאר.<br>
-      סיטי היא מועדון שקשה לאכול אותו.<br>
-      כי הוא העמיד קבוצות על בקוביד וגם לפני (וואלש, סקוט ומיואס בקישור), ברונזי ועוד ועוד ועוד ועוד. חפשו שחקנית על קצת יותר מבוגרת, בטח באנגליה, והיא ביקרה בסיטי וגם זכתה שם באליפות.
-    </p>
-
-    <p>
-      בעונה הקודמת זה היה כיף לצפייה. מידאמה, המפו (הלא היא לורן המפ) ובאני שואו, היו השואו (חי חי חי) של הליגה. וקרולין שהלכה לבארסה קצת השתיקה את הביקורות האלה בקיץ הזה.
-    </p>
-
-    <p class="font-semibold text-neutral-900 dark:text-white">
-      ברכש, סיקרנו את בת' מיד וניאמה צ'ארלס, ודיברנו על מוכנות לצ'מפיונס, אם כי ההישג של הקיץ הוא ללא ספק השארת באני שואו.
-    </p>
-
-    <div class="border-r-2 border-primary-500 pr-4 my-4 py-1 text-neutral-700 dark:text-neutral-300 italic text-base">
-      מעבר למשכורת ולתקציב, זאת הצהרת כוונות. השחקנית הכי טובה בליגה, החלוצה הכי טובה בליגה, תישאר פה לעוד הרבה שנים טובות.<br>
-      זאת התנהגות צ'לסיאית במובן המחמיא ביותר. אף אחת לא תלך מפה למקום אחר לפרוח ולגדול (כאמור, קרולין לבארסה זה סיפור אחר).
+  <!-- Pre-Season Archive Navigation Link -->
+  <div class="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#141418] p-3 sm:p-4 text-xs font-mono flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+    <div class="text-[11px] uppercase tracking-wider text-neutral-500 font-bold">
+      📚 ארכיון טרום עונה (סיקור הקיץ והרקע):
     </div>
-
-    <p>
-      סיטי העמידה את עצמה הקיץ בפסגה יחד עם ארסנל וצ'לסי, מעט מתחת לבארסה וליון במעמד האירופי שלה. אה, וקספרייט שחקנית על, על. ושיטת המשחק שלהן כל כך כיפית לצפייה – הקבוצה הכי מהנה בליגה (ספרס לא יכולה להיות כזאת, כי כאוהד אתה תמיד חושש. תמיד).
-    </p>
+    <a href="{{ '/teams/manchester-city/intro/' | relative_url }}" class="inline-flex items-center gap-1 text-primary-600 dark:text-primary-400 hover:underline font-bold text-sm">
+      רקע וטרום העונה: אלופות והצהרת כוונות ←
+    </a>
   </div>
 
-  <hr class="border-neutral-200 dark:border-neutral-800 my-6">
-
-  <!-- Part 2: MW5 Deep Status & Tactical Breakdown -->
+  <!-- Deep Status & Tactical Breakdown -->
   <div class="space-y-4">
-    <div class="text-xs font-mono uppercase text-sky-600 dark:text-sky-400 font-bold tracking-wider mb-1">
-      חלק ב': דוח ביצועים, סגל קצר וכשלי ההגנה (אוקטובר 2026)
-    </div>
-    
     <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white">
       כשהליגה מסנוורת והצ'מפיונס חושף את האמת
     </h2>
