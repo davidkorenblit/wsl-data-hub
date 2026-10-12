@@ -1,0 +1,137 @@
+{
+  "historical_derbies_2025_26": [
+    {
+      "match": "Chelsea 1 - 0 Tottenham",
+      "round": "MW6 (2025-10-12)",
+      "venue": "Away",
+      "formation": "4-2-3-1",
+      "tactical_concept": "Low Block & Double Wingers",
+      "possession_spurs": 33,
+      "passes_spurs": "188 (67%)",
+      "xg_spurs": 0.64,
+      "xg_chelsea": 2.46,
+      "shots_chelsea": 27,
+      "sot_chelsea": 4,
+      "big_chances_chelsea": 1,
+      "clearances_spurs": 43,
+      "tackles_spurs": 31,
+      "interceptions_spurs": 12,
+      "touches_in_opp_box_spurs": 3,
+      "pivot": "Eveliina Summanen + Olga Ahtinen",
+      "goalkeeper_rating": 7.12,
+      "result": "L (Narrow battle)"
+    },
+    {
+      "match": "Tottenham 0 - 0 Arsenal",
+      "round": "MW9 (2025-11-16)",
+      "venue": "Home",
+      "formation": "4-2-3-1",
+      "tactical_concept": "Ultra Compact Low Block",
+      "possession_spurs": 45,
+      "passes_spurs": "366 (83%)",
+      "xg_spurs": 0.16,
+      "xg_arsenal": 1.76,
+      "shots_arsenal": 13,
+      "sot_arsenal": 4,
+      "big_chances_arsenal": 1,
+      "clearances_spurs": 40,
+      "tackles_spurs": 25,
+      "interceptions_spurs": 13,
+      "touches_in_opp_box_spurs": 7,
+      "pivot": "Eveliina Summanen + Drew Spence",
+      "goalkeeper_rating": 7.9,
+      "result": "D (Clean sheet draw)"
+    },
+    {
+      "match": "Arsenal 5 - 2 Tottenham",
+      "round": "MW19 (2026-03-28)",
+      "venue": "Away",
+      "formation": "3-4-2-1",
+      "tactical_concept": "High Line / Exposed Midfield (Collapse)",
+      "possession_spurs": 51,
+      "passes_spurs": "384 (85%)",
+      "xg_spurs": 0.61,
+      "xg_arsenal": 2.83,
+      "shots_arsenal": 16,
+      "sot_arsenal": 8,
+      "big_chances_arsenal": 5,
+      "clearances_spurs": 17,
+      "tackles_spurs": 24,
+      "interceptions_spurs": 13,
+      "touches_in_opp_box_spurs": 14,
+      "pivot": "Drew Spence + Signe Gaupset",
+      "goalkeeper_rating": 3.8,
+      "result": "L (Defensive collapse)"
+    }
+  ],
+  "historical_bounce_backs": [
+    {
+      "crisis_event": "הפסד 1:5 למנצ'סטר סיטי (מחזור 3)",
+      "reaction_matches": "ניצחון 1:2 בלסטר (מחזור 4), ניצחון 0:1 על ברייטון (מחזור 5)",
+      "points_return": "6 מתוך 6 נקודות",
+      "bounce_back_time": "משחק עוקב מיידי"
+    },
+    {
+      "crisis_event": "הפסד 1:0 לצ'לסי בקינגסמדואו (מחזור 6)",
+      "reaction_matches": "ניצחון 1:2 על ליברפול (מחזור 7)",
+      "points_return": "3 מתוך 3 נקודות",
+      "bounce_back_time": "משחק עוקב מיידי"
+    },
+    {
+      "crisis_event": "הפסד 4:2 ללונדון סיטי ליונסס (מחזור 8)",
+      "reaction_matches": "תיקו 0:0 הירואי בדרבי מול ארסנל (מחזור 9), ניצחון 1:2 על וילה (מחזור 10)",
+      "points_return": "4 מתוך 6 נקודות מול ארסנל ווילה",
+      "bounce_back_time": "משחק עוקב מיידי"
+    }
+  ],
+  "season_2026_27_opening": {
+    "played": 5,
+    "wins": 3,
+    "draws": 1,
+    "losses": 1,
+    "points": 10,
+    "goals_for": 16,
+    "goals_against": 8,
+    "recent_results": [
+      {
+        "round": "MW1",
+        "fixture": "Tottenham 3 - 1 West Ham",
+        "result": "W"
+      },
+      {
+        "round": "MW2",
+        "fixture": "Liverpool 1 - 1 Tottenham",
+        "result": "D"
+      },
+      {
+        "round": "MW3",
+        "fixture": "Crystal Palace 0 - 7 Tottenham",
+        "result": "W"
+      },
+      {
+        "round": "MW4",
+        "fixture": "Tottenham 4 - 0 Aston Villa",
+        "result": "W"
+      },
+      {
+        "round": "MW5",
+        "fixture": "Tottenham 1 - 6 London City Lionesses",
+        "result": "L"
+      }
+    ],
+    "upcoming_fixtures": [
+      {
+        "round": "MW6",
+        "fixture": "Chelsea (A)"
+      },
+      {
+        "round": "MW7",
+        "fixture": "Arsenal (H)"
+      },
+      {
+        "round": "MW8",
+        "fixture": "Manchester City (A)"
+      }
+    ]
+  }
+}
