@@ -115,142 +115,158 @@ alt_url: /en/teams/manchester-utd/
   <hr class="border-neutral-200 dark:border-neutral-800 my-6">
 
   <!-- Part 2: The Data Evidence Section (After Narrative) -->
-  <div class="space-y-5">
+  <div class="space-y-6">
     <div class="border-b border-neutral-200 dark:border-neutral-800 pb-2">
       <div class="text-xs font-mono uppercase text-red-600 dark:text-red-400 font-bold tracking-wider mb-1">
-        נתונים ומספרים · תמונת המהפך ההגנתי
+        נתונים ומספרים · המהפך הטקטי של מנצ'סטר יונייטד
       </div>
       <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white">
-        המספרים שמאחורי השיחה: מאסון צ'לסי ועד לחומה בדרבי
+        המהפך שמתחת לרדאר: מרכז השדה שנעל את השערים
       </h2>
+      <p class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-400 mt-1 font-sans">
+        ההגנה לא שינתה את פניה מעצמה — השינוי המבני בקישור והנעילה ההרמטית של אגף שמאל הם שמנעו את המשך ההפקרות.
+      </p>
     </div>
 
-    <!-- Chelsea Disaster Card -->
-    <div class="rounded-xl border border-rose-200 dark:border-rose-900/40 bg-rose-50/40 dark:bg-rose-950/20 p-4 sm:p-5">
-      <div class="text-xs font-mono font-bold text-rose-700 dark:text-rose-400 uppercase tracking-wider mb-2">
-        📊 אנטומיה של קריסה: מנ' יונייטד 0–5 צ'לסי (מחזור 2)
-      </div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
-        <div class="p-2.5 rounded bg-white dark:bg-[#16161c] border border-rose-200 dark:border-rose-900/30">
-          <div class="text-xs text-neutral-500">שערים שספגו</div>
-          <div class="text-xl font-bold text-rose-600">5</div>
-          <div class="text-[11px] text-neutral-400">2.94 xGA</div>
+    <!-- 3 Key Midfield Metric Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <!-- Card 1: Dribbled Past Drop -->
+      <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#15151c] flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="text-xs font-mono text-neutral-500 mb-1">עקיפות בכדרור במרכז השדה (Dribbled Past)</div>
+          <div class="text-2xl font-bold text-emerald-600 dark:text-emerald-400 font-mono">צניחה של 80%</div>
+          <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed font-sans">
+            מ-5.0 עקיפות למשחק (טיילת מול LCL וצ'לסי) ל-1.0 בלבד מאז השיחה.
+          </div>
         </div>
-        <div class="p-2.5 rounded bg-white dark:bg-[#16161c] border border-rose-200 dark:border-rose-900/30">
-          <div class="text-xs text-neutral-500">בעיטות של צ'לסי</div>
-          <div class="text-xl font-bold text-rose-600">25</div>
-          <div class="text-[11px] text-neutral-400">17 מתוך הרחבה!</div>
-        </div>
-        <div class="p-2.5 rounded bg-white dark:bg-[#16161c] border border-rose-200 dark:border-rose-900/30">
-          <div class="text-xs text-neutral-500">תיקולים מוצלחים</div>
-          <div class="text-xl font-bold text-neutral-700 dark:text-neutral-300">11 בלבד</div>
-          <div class="text-[11px] text-neutral-400">הפקרות במרכז השדה</div>
-        </div>
-        <div class="p-2.5 rounded bg-white dark:bg-[#16161c] border border-rose-200 dark:border-rose-900/30">
-          <div class="text-xs text-neutral-500">ציון לה טיסייה</div>
-          <div class="text-xl font-bold text-rose-500">4.63</div>
-          <div class="text-[11px] text-neutral-400">שפל הקריירה</div>
+        <div class="mt-3 pt-3 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-rose-500 font-semibold">צ'לסי: 8 עקיפות</span>
+          <span class="text-neutral-400">←</span>
+          <span class="text-emerald-500 font-semibold">ליברפול: 0 עקיפות!</span>
         </div>
       </div>
+
+      <!-- Card 2: Recoveries Surge -->
+      <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#15151c] flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="text-xs font-mono text-neutral-500 mb-1">חילוצי כדור שני (Recoveries)</div>
+          <div class="text-2xl font-bold text-blue-600 dark:text-blue-400 font-mono">42 חילוצים</div>
+          <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed font-sans">
+            רביעיית הקישור אוספת כל ריבאונד ומנקה סכנות לפני קו ה-16.
+          </div>
+        </div>
+        <div class="mt-3 pt-3 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-neutral-500">מחזורים 1–2: 12.5 למשחק</span>
+          <span class="text-neutral-400">←</span>
+          <span class="text-blue-500 font-semibold">מחזורים 3–5: 14.0 למשחק</span>
+        </div>
+      </div>
+
+      <!-- Card 3: The Emirates Pivot -->
+      <div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#15151c] flex flex-col justify-between shadow-sm">
+        <div>
+          <div class="text-xs font-mono text-neutral-500 mb-1">ההחלטה הטקטית באמירייטס</div>
+          <div class="text-2xl font-bold text-amber-600 dark:text-amber-400 font-mono">ספסול אלה טון</div>
+          <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-1.5 leading-relaxed font-sans">
+            שילוב סימי אווג'ו הפיזית לצד מיאזאווה וזיגיוטי לסגירת נתיבי מסירה.
+          </div>
+        </div>
+        <div class="mt-3 pt-3 border-t border-neutral-100 dark:border-neutral-800 flex items-center justify-between text-xs font-mono">
+          <span class="text-rose-500 font-semibold">MW2: 0 מאבקים לטון</span>
+          <span class="text-neutral-400">←</span>
+          <span class="text-amber-500 font-semibold">MW3: 5 מאבקים לאווג'ו</span>
+        </div>
+      </div>
     </div>
 
-    <!-- Comparative Turnaround Table (2 Columns: Before vs After) -->
-    <div class="overflow-x-auto my-3">
-      <table class="w-full text-sm text-right border-collapse font-sans">
-        <thead>
-          <tr class="border-b border-neutral-200 dark:border-neutral-800 text-neutral-500 font-mono text-xs">
-            <th class="py-2.5 pr-3">מדד הגנתי קבוצתי</th>
-            <th class="py-2.5 text-center text-rose-600 dark:text-rose-400">לפני השיחה (מחזורים 1–2)</th>
-            <th class="py-2.5 text-center text-emerald-600 dark:text-emerald-400 font-bold">מאז השיחה (מחזורים 3–5)</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-neutral-100 dark:divide-neutral-800 font-mono">
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">ספיגת שערים</td>
-            <td class="py-2.5 text-center text-rose-600 font-bold">7 שערים (3.5 למשחק)</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">2 שערים בלבד (0.67 למשחק)</td>
-          </tr>
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">נקודות שנצברו</td>
-            <td class="py-2.5 text-center text-rose-600">0 מתוך 6</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">7 מתוך 9 (תיקו בארסנל, ניצחונות על ווסטהאם וליברפול)</td>
-          </tr>
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">הרחקות כדור (Clearances)</td>
-            <td class="py-2.5 text-center">85 (42.5 למשחק)</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">103 (כולל 54 באמירייטס מול ארסנל!)</td>
-          </tr>
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">תיקולים מוצלחים (Tackles)</td>
-            <td class="py-2.5 text-center">43 (21.5 למשחק)</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">65 תיקולים מוצלחים (21.7 למשחק)</td>
-          </tr>
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">Interceptions וחסימות בעיטות</td>
-            <td class="py-2.5 text-center">19 itc, 5 blocks</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">26 itc, 6 blocks (הגנה שמקריבה בגופה)</td>
-          </tr>
-          <tr>
-            <td class="py-2.5 pr-3 font-sans font-semibold">רשתות נקיות (Clean Sheets)</td>
-            <td class="py-2.5 text-center text-rose-600">0 מתוך 2</td>
-            <td class="py-2.5 text-center text-emerald-600 font-bold">1 מתוך 3 (0:1 בדרבי מול ליברפול)</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <!-- Maya Le Tissier Captain Profile Card -->
-    <div class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#141418] p-4 sm:p-5">
+    <!-- Midfield Transformation Table -->
+    <div class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#141418] p-4 sm:p-5 shadow-sm">
       <div class="flex items-center justify-between mb-3 border-b border-neutral-100 dark:border-neutral-800 pb-2">
-        <span class="font-bold text-neutral-900 dark:text-white">
-          🛡️ מאיה לה טיסייה: המגדלור של הקו האחורי
+        <span class="font-bold text-sm sm:text-base text-neutral-900 dark:text-white">
+          📊 יחידת הקישור של מנצ'סטר יונייטד: לפני השיחה מול מאז השיחה
         </span>
-        <span class="text-xs font-mono text-neutral-500">450 דקות מלאות העונה (100%)</span>
+        <span class="text-xs font-mono text-neutral-400">מיאזאווה · זיגיוטי · טון · אווג'ו</span>
       </div>
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
-        <div class="p-2.5 rounded bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-          <div class="text-xs text-neutral-500">הרחקות כדור</div>
-          <div class="text-xl font-bold text-blue-600 dark:text-blue-400">37</div>
-          <div class="text-[11px] text-neutral-400">15 מול ארסנל לבד!</div>
-        </div>
-        <div class="p-2.5 rounded bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-          <div class="text-xs text-neutral-500">חילוצים (Recoveries)</div>
-          <div class="text-xl font-bold text-emerald-600 dark:text-emerald-400">23</div>
-          <div class="text-[11px] text-neutral-400">4.6 למשחק ברחבה</div>
-        </div>
-        <div class="p-2.5 rounded bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-          <div class="text-xs text-neutral-500">הצלחה במאבקים</div>
-          <div class="text-xl font-bold text-purple-600 dark:text-purple-400">73.5%</div>
-          <div class="text-[11px] text-neutral-400">36 מתוך 49 מאבקים</div>
-        </div>
-        <div class="p-2.5 rounded bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-          <div class="text-xs text-neutral-500">ציוני משחק (המהפך)</div>
-          <div class="text-xl font-bold text-amber-600 dark:text-amber-400">8.21</div>
-          <div class="text-[11px] text-neutral-400">4.63 ← 7.75 ← 8.21</div>
-        </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm text-right border-collapse font-sans">
+          <thead>
+            <tr class="border-b border-neutral-200 dark:border-neutral-800 text-neutral-500 font-mono text-xs">
+              <th class="py-2.5 pr-3">מדד קישור קולקטיבי</th>
+              <th class="py-2.5 text-center text-rose-600 dark:text-rose-400">לפני השיחה (מחזורים 1–2)</th>
+              <th class="py-2.5 text-center text-emerald-600 dark:text-emerald-400 font-bold">מאז השיחה (מחזורים 3–5)</th>
+              <th class="py-2.5 pr-3 text-neutral-400 hidden sm:table-cell">המשמעות הטקטית</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-neutral-100 dark:divide-neutral-800 font-mono text-xs sm:text-sm">
+            <tr>
+              <td class="py-2.5 pr-3 font-sans font-semibold">עקיפות בכדרור (Dribbled Past)</td>
+              <td class="py-2.5 text-center text-rose-600 font-bold">5.0 למשחק (10 סה"כ)</td>
+              <td class="py-2.5 text-center text-emerald-600 font-bold">1.0 למשחק (3 סה"כ)</td>
+              <td class="py-2.5 pr-3 font-sans text-neutral-500 text-xs hidden sm:table-cell">ירידה של 80% בפריצות היריבה דרך האמצע; 0 עקיפות בדרבי מול ליברפול</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-3 font-sans font-semibold">חילוצי כדור (Recoveries)</td>
+              <td class="py-2.5 text-center">12.5 למשחק (25)</td>
+              <td class="py-2.5 text-center text-emerald-600 font-bold">14.0 למשחק (42)</td>
+              <td class="py-2.5 pr-3 font-sans text-neutral-500 text-xs hidden sm:table-cell">שליטה מוחלטת בכדורים חוזרים ובניית מעברים מבוקרים</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-3 font-sans font-semibold">חטיפות ויירוטים (Interceptions)</td>
+              <td class="py-2.5 text-center">3.5 למשחק (7)</td>
+              <td class="py-2.5 text-center text-emerald-600 font-bold">4.3 למשחק (13)</td>
+              <td class="py-2.5 pr-3 font-sans text-neutral-500 text-xs hidden sm:table-cell">קריאת מהלכים מוקדמת וציפוף קווי מסירה ליד עיגול האמצע</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 pr-3 font-sans font-semibold">המאסטרפיס של זיגיוטי אולמה (מס' 6)</td>
+              <td class="py-2.5 text-center text-rose-600">6.38 מול צ'לסי (נעקפה 3 פעמים)</td>
+              <td class="py-2.5 text-center text-emerald-600 font-bold">8.17 מול ליברפול (11 מאבקים מוצלחים!)</td>
+              <td class="py-2.5 pr-3 font-sans text-neutral-500 text-xs hidden sm:table-cell">שער יתרון באמירייטס + משחק על בדרבי כעוגן בלתי עביר</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
-    <!-- Graphical Infographic: The Defensive Turnaround & Maya Le Tissier Effect -->
-    <div class="my-6 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-[#080B10] p-4 sm:p-5 shadow-xl">
-      <div class="flex items-center justify-between mb-3 border-b border-neutral-800 pb-2">
+    <!-- Andrea Medina Spotlight Card -->
+    <div class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#141418] p-4 sm:p-5 shadow-sm">
+      <div class="flex items-center justify-between mb-3 border-b border-neutral-100 dark:border-neutral-800 pb-2">
         <div class="flex items-center gap-2">
-          <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
-          <span class="text-xs font-mono font-bold uppercase tracking-wider text-neutral-300">
-            אינפוגרפיקה טקטית · המהפך ההגנתי ואפקט מאיה לה טיסייה
+          <span class="text-base sm:text-lg">⭐</span>
+          <span class="font-bold text-neutral-900 dark:text-white text-sm sm:text-base">
+            זרקור טקטי: אנדראה מדינה — הג'וקר של אגף שמאל
           </span>
         </div>
-        <span class="text-[11px] font-mono text-neutral-500">WSL Data Hub Research</span>
+        <span class="text-xs font-mono text-neutral-500">עמדת מוצא מול כליאת מגן</span>
       </div>
 
-      <div class="overflow-hidden rounded-lg border border-neutral-800/80">
-        <img src="{{ '/assets/images/manutd_defensive_turnaround.png' | relative_url }}" 
-             alt="אינפוגרפיקה: המהפך ההגנתי של מנצ'סטר יונייטד ואפקט מאיה לה טיסייה" 
-             class="w-full h-auto block">
+      <div class="text-xs sm:text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed font-sans mb-4">
+        כשמדינה תופקדה כמגן שמאלי בודד בקו 4 מול צ'לסי (מחזור 2), היא סורסה התקפית, הופקרה מול סופות הלחץ והוחלפה בדקה ה-56. השינוי הגדול הגיע כשצוות האימון החזיר אותה ל<strong>עמדת המוצא הטבעית כקשרית-כנף היברידית</strong> מעל אנה סנדברג: יונייטד קיבלה "מגן כפול" בלתי עביר באגף, ומדינה התפוצצה בשני צידי המגרש.
       </div>
 
-      <div class="mt-3 text-xs sm:text-sm text-neutral-400 leading-relaxed font-sans">
-        <strong class="text-neutral-200">הסבר לאינפוגרפיקה:</strong> משמאל – נתוני הקריסה הטוטאלית מול צ'לסי (5 שערים שספגו מתוך 25 בעיטות, 11 תיקולים בלבד וציון שפל 4.63 לקפטנית). מימין – תמונת המהפך מאז השיחה בחדר ההלבשה: 54 הרחקות כדור באמירייטס (15 של לה טיסייה לבד!), ספיגת 2 שערים בלבד ב-3 משחקים, ומופע מאסטרפיס של 13 מתוך 15 מאבקים מוצלחים וציון 8.21 בדרבי מול ליברפול.
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-mono">
+        <div class="p-3 rounded-lg bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
+          <div class="text-[11px] text-neutral-500 font-sans">ציון שיא עונתי</div>
+          <div class="text-xl sm:text-2xl font-bold text-amber-600 dark:text-amber-400">8.63</div>
+          <div class="text-[10px] text-neutral-400 font-sans mt-0.5">מצטיינת המשחק מול ווסטהאם</div>
+        </div>
+
+        <div class="p-3 rounded-lg bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
+          <div class="text-[11px] text-neutral-500 font-sans">יצירת מצבים מהאגף</div>
+          <div class="text-xl sm:text-2xl font-bold text-emerald-600 dark:text-emerald-400">4 מצבים</div>
+          <div class="text-[10px] text-neutral-400 font-sans mt-0.5">כולל 2 הגבהות מדויקות</div>
+        </div>
+
+        <div class="p-3 rounded-lg bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
+          <div class="text-[11px] text-neutral-500 font-sans">עבודה הגנתית כוללת</div>
+          <div class="text-xl sm:text-2xl font-bold text-blue-600 dark:text-blue-400">15 תיקולים</div>
+          <div class="text-[10px] text-neutral-400 font-sans mt-0.5">13 חטיפות ו-28 הרחקות כדור</div>
+        </div>
+
+        <div class="p-3 rounded-lg bg-neutral-50 dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
+          <div class="text-[11px] text-neutral-500 font-sans">נעילת האגף מאז השיחה</div>
+          <div class="text-xl sm:text-2xl font-bold text-purple-600 dark:text-purple-400">עקיפה 1 בלבד</div>
+          <div class="text-[10px] text-neutral-400 font-sans mt-0.5">ב-224 דקות (מחזורים 3–5)</div>
+        </div>
       </div>
     </div>
   </div>

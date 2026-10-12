@@ -311,5 +311,101 @@
       "Duels won": 13,
       "Duels lost": 2
     }
-  ]
+  ],
+  "andrea_medina": [
+    {
+      "round": "MW1",
+      "opponent": "London City Lionesses (A)",
+      "role": "Left Attacking Midfielder / Winger",
+      "minutes": 90,
+      "rating": 7.46,
+      "tackles": 8,
+      "interceptions": 4,
+      "recoveries": 2,
+      "clearances": 11,
+      "ground_duels_won": "10/14",
+      "chances_created": 0,
+      "dribbled_past": 2
+    },
+    {
+      "round": "MW2",
+      "opponent": "Chelsea (H)",
+      "role": "Left Back",
+      "minutes": 56,
+      "rating": 6.3,
+      "tackles": 1,
+      "interceptions": 3,
+      "recoveries": 1,
+      "clearances": 10,
+      "ground_duels_won": "2/5",
+      "chances_created": 0,
+      "dribbled_past": 0
+    },
+    {
+      "round": "MW3",
+      "opponent": "Arsenal (A)",
+      "role": "Hybrid Left Midfielder / Winger",
+      "minutes": 88,
+      "rating": 7.48,
+      "tackles": 2,
+      "interceptions": 4,
+      "recoveries": 6,
+      "clearances": 3,
+      "ground_duels_won": "6/10",
+      "chances_created": 1,
+      "dribbled_past": 0
+    },
+    {
+      "round": "MW4",
+      "opponent": "West Ham United (H)",
+      "role": "Hybrid Left Midfielder / Winger",
+      "minutes": 84,
+      "rating": 8.63,
+      "tackles": 4,
+      "interceptions": 2,
+      "recoveries": 2,
+      "clearances": 3,
+      "ground_duels_won": "8/13",
+      "chances_created": 4,
+      "dribbled_past": 1
+    },
+    {
+      "round": "MW5",
+      "opponent": "Liverpool (H)",
+      "role": "Hybrid Left Midfielder / Winger",
+      "minutes": 52,
+      "rating": 6.62,
+      "tackles": 0,
+      "interceptions": 0,
+      "recoveries": 1,
+      "clearances": 1,
+      "ground_duels_won": "2/4",
+      "chances_created": 0,
+      "dribbled_past": 0
+    }
+  ],
+  "midfield_unit_summary": {
+    "before_conversation": {
+      "rounds": "MW1-MW2",
+      "dribbled_past_per_game": 5.0,
+      "dribbled_past_total": 10,
+      "recoveries_per_game": 12.5,
+      "recoveries_total": 25,
+      "interceptions_per_game": 3.5,
+      "interceptions_total": 7,
+      "duels_won_per_game": 15.0,
+      "duels_won_total": 30
+    },
+    "after_conversation": {
+      "rounds": "MW3-MW5",
+      "dribbled_past_per_game": 1.0,
+      "dribbled_past_total": 3,
+      "recoveries_per_game": 14.0,
+      "recoveries_total": 42,
+      "interceptions_per_game": 4.3,
+      "interceptions_total": 13,
+      "duels_won_per_game": 15.3,
+      "duels_won_total": 46
+    }
+  }
 }
