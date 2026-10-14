@@ -44,7 +44,7 @@ alt_url: /en/teams/everton/
     </p>
 
     <p>
-      ברייטון של העונה הייתה צריכה להיות במקום גבוה יותר, הראיתי את המספרים וניתחתי את הסיבות שגרמו לכך <a href="{{ '/teams/brighton/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold underline hover:opacity-80">פה</a>, אברטון היא ההופכי המושלם.
+      ברייטון של העונה הייתה צריכה להיות במקום גבוה יותר, הראיתי את המספרים וניתחתי את הסיבות שגרמו לכך <a href="https://davidkorenblit.github.io/wsl-data-hub/teams/brighton/" class="text-primary-600 dark:text-primary-400 font-bold underline hover:opacity-80">פה</a>, אברטון היא ההופכי המושלם.
     </p>
 
     <p>
