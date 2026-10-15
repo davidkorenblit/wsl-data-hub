@@ -51,7 +51,7 @@ alt_url: /en/teams/tottenham/
     </p>
 
     <p>
-      כי אנחנו ממש יודעים להגיד מה שבור(בטור שמסכם את המחזור האחרון ניתחתי את זה די לעומק), השאלה למרטין היא "איך אתה מתקן את זה?" האם גם כשקבוצות לוחצות עליך בצורה כזאת אתה מצפה להמשיך להניע כדור ופשוט נתאמן טוב יותר על הנעת הכדור? או שאנחנו יודעים לשחק יותר על טנברג כמחזיקת כדור? ומה עושים כשאין טינקה? או שאין מישהי בקישור לקחת כדור שני? מה הפלאן c? האם צריך בכלל paln c? 
+      כי אנחנו ממש יודעים להגיד מה שבור (<a href="{{ '/weekly/mw5/#spurs-lcl' | relative_url }}" class="underline font-semibold text-primary-600 dark:text-primary-400 hover:opacity-80">בטור שמסכם את המחזור האחרון ניתחתי את זה די לעומק</a>), השאלה למרטין היא "איך אתה מתקן את זה?" האם גם כשקבוצות לוחצות עליך בצורה כזאת אתה מצפה להמשיך להניע כדור ופשוט נתאמן טוב יותר על הנעת הכדור? או שאנחנו יודעים לשחק יותר על טנברג כמחזיקת כדור? ומה עושים כשאין טינקה? או שאין מישהי בקישור לקחת כדור שני? מה הפלאן c? האם צריך בכלל paln c? 
     </p>
 
     <p>
@@ -141,26 +141,11 @@ alt_url: /en/teams/tottenham/
       </table>
     </div>
 
-    <!-- Key Tactical Takeaways Strip -->
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 text-xs font-sans">
-      <div class="p-3 rounded-lg bg-white dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-        <strong class="text-neutral-900 dark:text-white block mb-1">1. צמד גרזנים בפיבוט:</strong>
-        <span class="text-neutral-600 dark:text-neutral-400">
-          סומאנן ואהטינן (או ספנס) שימשו כבלמיות 3 ו-4 על סף ה-16, ללא יציאה להרפתקאות לחץ קדימה.
-        </span>
-      </div>
-      <div class="p-3 rounded-lg bg-white dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-        <strong class="text-neutral-900 dark:text-white block mb-1">2. מגנים כפולים באגפים:</strong>
-        <span class="text-neutral-600 dark:text-neutral-400">
-          ג'סיקה נאז ומטילדה וינברג רשמו 4 תיקולים והרחקות כ"א, ובילו בתוך הרחבה של קופ כדי לנעול את האגפים.
-        </span>
-      </div>
-      <div class="p-3 rounded-lg bg-white dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800">
-        <strong class="text-neutral-900 dark:text-white block mb-1">3. ויתור מודע על הכדור:</strong>
-        <span class="text-neutral-600 dark:text-neutral-400">
-          188 מסירות בלבד ב-67% דיוק מול צ'לסי — מעבר למשחק ישיר וכדורים ארוכים לטנדברג במקום הנעה מסוכנת מאחור.
-        </span>
-      </div>
+    <!-- Key Tactical Takeaways Paragraph -->
+    <div class="pt-3 border-t border-neutral-200 dark:border-neutral-800/80 text-xs sm:text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed font-sans">
+      <p>
+        מעבר למספרים האקוטיים שראינו, אפשר אולי להסביר את זה בכך ש: ראשית, <strong>צמד גרזנים בפיבוט</strong> — סומאנן ואהטינן (או ספנס) שימשו כבלמיות 3 ו-4 על סף ה-16, ללא יציאה להרפתקאות לחץ קדימה; שנית, <strong>מגנים כפולים באגפים</strong> — ג'סיקה נאז ומטילדה וינברג רשמו 4 תיקולים והרחקות כ"א, ובילו בתוך הרחבה של קופ כדי לנעול את האגפים; ושלישית, <strong>ויתור מודע על הכדור</strong> — 188 מסירות בלבד ב-67% דיוק מול צ'לסי, עם מעבר למשחק ישיר וכדורים ארוכים לטנדברג במקום הנעה מסוכנת מאחור.
+      </p>
     </div>
   </div>
 
