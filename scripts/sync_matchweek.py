@@ -30,6 +30,7 @@ if str(SCRIPTS_DIR) not in sys.path:
     sys.path.insert(0, str(SCRIPTS_DIR))
 
 from fotmob_api_client import FotMobAPIClient, TEAM_ID_TO_SLUG
+from enrich_recent_results import enrich_matchweek
 from paths import (
     SITE_DATA_DIR,
     ASSETS_DATA_DIR,
@@ -126,6 +127,11 @@ def sync_matchweek(season: str = None, dry_run: bool = False):
             client.save_json(all_matches, SITE_DATA_DIR / "wsl_matches.json")
             recent_output = latest_round_matches if latest_round_matches else finished_matches
             client.save_json(recent_output, SITE_DATA_DIR / "wsl_recent_results.json")
+            client.save_json(recent_output, ASSETS_DATA_DIR / "wsl_recent_results.json")
+            try:
+                enrich_matchweek()
+            except Exception as e:
+                print(f"[!] Warning: Could not enrich recent results: {e}")
 
         print_banner("💾 קבצים שעודכנו בהצלחה באתר", "-")
         print(f"   ✓ {SITE_DATA_DIR / 'league_table.json'}")
