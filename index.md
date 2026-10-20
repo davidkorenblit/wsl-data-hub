@@ -50,15 +50,12 @@ alt_url: /en/
     {% for match in site.data.wsl_recent_results %}
     {% assign is_home_win = (match.winner == 'home') %}
     {% assign is_away_win = (match.winner == 'away') %}
-    <div class="rounded-lg border {% if match.is_lcl %}border-pink-500/40 dark:border-pink-500/30 bg-gradient-to-b from-pink-500/[0.03] to-transparent shadow-sm{% else %}border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215]{% endif %} p-3.5 hover:border-neutral-300 dark:hover:border-neutral-700 hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
+    <div class="rounded-lg border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-3.5 hover:border-neutral-300 dark:hover:border-neutral-700 hover:shadow-md transition-all duration-200 flex flex-col justify-between group">
       
       <!-- Card Top: Date & FT Badge -->
       <div class="flex items-center justify-between text-[11px] font-mono text-neutral-400 dark:text-neutral-500 pb-2 mb-2 border-b border-neutral-100 dark:border-neutral-800/80">
         <span class="truncate">{{ match.date_formatted_he }}</span>
         <div class="flex items-center gap-1.5">
-          {% if match.is_lcl %}
-          <span class="text-[10px] font-bold text-pink-600 dark:text-pink-400 bg-pink-50 dark:bg-pink-950/40 px-1.5 py-0.2 rounded border border-pink-200 dark:border-pink-800/50">LCL</span>
-          {% endif %}
           <span class="font-bold text-neutral-600 dark:text-neutral-400 bg-neutral-100 dark:bg-neutral-800/60 px-1.5 py-0.2 rounded text-[10px]">FT</span>
         </div>
       </div>
