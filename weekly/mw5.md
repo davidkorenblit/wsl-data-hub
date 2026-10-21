@@ -6,8 +6,8 @@ lang: he
 alt_url: /en/weekly/
 prev_url: /weekly/mw4-b/
 prev_title: "מחזור 4 (חלק ב')"
-next_url: null
-next_title: null
+next_url: /weekly/mw6/
+next_title: "מחזור 6"
 ---
 
 <div class="space-y-6">
@@ -44,6 +44,11 @@ next_title: null
         <a href="{{ '/weekly/mw4-b/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
           <span>→</span>
           <span>מחזור 4 (חלק ב')</span>
+        </a>
+        <span class="text-neutral-300 dark:text-neutral-700">|</span>
+        <a href="{{ '/weekly/mw6/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+          <span>מחזור 6</span>
+          <span>←</span>
         </a>
       </div>
     </div>
@@ -250,10 +255,14 @@ next_title: null
     <div class="border-t border-neutral-100 dark:border-neutral-800 pt-6 mt-8 flex items-center justify-between font-mono text-xs">
       <a href="{{ '/weekly/mw4-b/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
         <span>→</span>
-        <span>למחזור הקודם: מחזור 4 (חלק ב')</span>
+        <span>מחזור 4 (חלק ב')</span>
       </a>
       <a href="{{ '/weekly/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold hover:underline">
-        חזרה לאינדקס הטורים
+        אינדקס הטורים
+      </a>
+      <a href="{{ '/weekly/mw6/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+        <span>מחזור 6</span>
+        <span>←</span>
       </a>
     </div>
 

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "הטור השבועי · מחזור 5: הצהרת כוונות, משבר דקה 60 והתיישרות הדאטא | WSL Data Hub"
+title: "הטור השבועי · מחזור 6: מבוא להתפרקות, הבליץ של יונייטד ושודדים בוילה | WSL Data Hub"
 permalink: /weekly/
 lang: he
 alt_url: /en/weekly/
-prev_url: /weekly/mw4-b/
-prev_title: "מחזור 4 (חלק ב')"
+prev_url: /weekly/mw5/
+prev_title: "מחזור 5"
 next_url: null
 next_title: null
 ---
@@ -18,21 +18,21 @@ next_title: null
       WEEKLY COLUMN · הטור השבועי
     </div>
     <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-neutral-900 dark:text-white mb-2">
-      הטור השבועי · מחזור 5
+      הטור השבועי · מחזור 6
     </h1>
     <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 leading-relaxed font-sans">
-      הצהרת הכוונות של LCL, משבר דקה 60 בארסנל, הדאטא של ברייטון מתיישר, ומעמד טון וקלי בליונסס.
+      טוטנהאם מול צ'לסי כמבוא קבוע להתפרקות, המעברים והחמצות הענק בארסנל, הבליץ של יונייטד, ושוד השבוע של אסטון וילה.
     </p>
   </div>
 
-  <!-- Featured Column Card: Matchweek 5 -->
+  <!-- Featured Column Card: Matchweek 6 -->
   <article class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] p-6 sm:p-8 space-y-6 shadow-sm">
     
     <!-- Header with Week-to-Week Navigation Arrows -->
     <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-3">
       <div class="flex items-center gap-2">
         <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-primary-100 dark:bg-primary-950/40 text-primary-800 dark:text-primary-300 border border-primary-200 dark:border-primary-800">
-          מחזור 5
+          מחזור 6 (נוכחי)
         </span>
         <span class="text-xs font-mono text-neutral-400 dark:text-neutral-500">
           עונת 2026/27
@@ -41,216 +41,277 @@ next_title: null
 
       <!-- Arrow Navigation (Top) -->
       <div class="flex items-center gap-3 text-xs font-mono">
-        <a href="{{ '/weekly/mw4-b/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+        <a href="{{ '/weekly/mw5/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
           <span>→</span>
-          <span>מחזור 4 (חלק ב')</span>
+          <span>מחזור 5</span>
         </a>
       </div>
     </div>
 
     <!-- Quick Navigation Anchor Links -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-sans my-2 text-xs">
-      <a href="#spurs-lcl" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
-        ספרס – לונדון סיטי
+      <a href="#spurs-chelsea" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+        ספרס – צ'לסי
       </a>
-      <a href="#mci-ars" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
-        סיטי – ארסנל
+      <a href="#arsenal-derby" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+        ארסנל לקראת הדרבי
       </a>
-      <a href="#league-wrap" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
-        יונייטד, ברייטון וצ'לסי
+      <a href="#man-united" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+        יונייטד וצ'רלטון
       </a>
-      <a href="#lionesses-debate" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
-        סוגיית הליונסס
+      <a href="#league-roundup" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+        מסביב למגרשים
       </a>
     </div>
 
     <!-- Column Content -->
     <div class="prose dark:prose-invert max-w-none text-neutral-800 dark:text-neutral-200 leading-relaxed space-y-8 font-sans text-base sm:text-lg">
 
-      <!-- ================= SECTION 1: SPURS vs LCL ================= -->
-      <section id="spurs-lcl" class="space-y-4 pt-2">
+      <!-- ================= SECTION 1: SPURS vs CHELSEA ================= -->
+      <section id="spurs-chelsea" class="space-y-4 pt-2">
         <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
           <span>⚡</span>
-          <span>טוטנהאם 1 – 6 לונדון סיטי ליונסס: הצהרת כוונות כואבת</span>
+          <span>טוטנהאם 2 – 6 צ'לסי: מבוא קבוע להתפרקות</span>
         </h2>
 
         <p>
-          בדקה ה-33 הורחק הכדור לקרן, נדמה לי שזאת הייתה נילדן שהרחיקה לקרן. 
-          ואן דה-דונק הייתה פנויה בקצה הרחבה הימנית, ובאותו הרגע ידעתי שיהיה 3:0. אולי זה כי אני אוהד טוטנהאם שכבר מכיר בדיוק את התסריט של המועדון הזה, או כי אני סתם חושב שהכול יהיה רע, או כי VDV הייתה פנויה לגמרי וההגנה לא עמדה בקצב כל המשחק, מהדקה הראשונה. משם, וואן-דה דונק הגביהה, ואלכסייה מפרקת את השער ומעלה את LCL ל-3:0 בדקה ה-34. השדר במשחק לא הפסיק להגיד שזה משחק של הצהרת כוונות של LCL, והוא ממש לא טעה.
+          יש משהו במשחקים מול צ'לסי שזה תמיד מבוא להתפרקות. לא רק בברידג' ולא רק קבוצת הנשים. בין אם זה בקינגסמדו, בטוטנהאם הוטספר סטדיום, בלייטון אוריינט או בברידג'; בין אם על הקווים נמצא אנג' שלא משנה את קו ההגנה הגבוה למרות 2 אדומים של שחקני הגנה, מרטין הו שמעמיד קבוצה הגנתית טובה, או קונטה עם שחקני וורלד קלאס בחוד ושוער אלוף עולם בשער – תמיד צ'לסי היא מבוא להתפרקות.
         </p>
 
         <p>
-          טרום שבוע המשחקים הזה, בין לבין שיחות על טעות פאטלית של ווילאמסון, רנה לא יוצאת להתראיין, תיקו מרשים של צ'לסי בחוץ ואי זימונים של טון וקלי לנבחרת (ארחיב על זה בהמשך), דיברו על המשחק הזה כמשחק המעניין יותר. הצמוד יותר, המסקרן ביותר. ספרס פתחה מדהים, פשוט מדהים את העונה, ו-LCL קצת יותר לאט. ניצחון מרשים על יונייטד שעוד שיחקה בקו 5 (זה לא יקרה יותר אף פעם), הפסד מווסט האם שגרם לזה שלא נראה יותר קו הגנה גבוה ואיטי מלונדון סיטי, ומשם ניצחונות נוחים מול ברייטון ועוד. פותאייס מתחילה להתחבר, ההגנה מתחילה לשמור על שער נקי, ומצ'אפ סופר מעניין ומסקרן.
+          אז נכון, ישנם פעמים בהם האשמה היא על ספרס. הדוגמה העדכנית ביותר היא אותו 4:1 באוקטובר 2023 (כן, גם לי, כישראלי, נצבט הלב), בו אנג' במופע חסר אחריות ואחרי 10 משחקים מפעימים ותיקו הירואי באמירויות, הפקיר את הקבוצה ונתן לצ'לסי רעה לחשוף את מערומיה. יש גם את הדוגמה ההופכית – אם תרצו, משחק ההולדה של טוקו קוגה. בעונה שעברה, בבית, הופעת הגנה אדירה של ספרס, עם גאוניג-וויליאמס ווינברג בכנפיים, אנייטנן וסומאנן במרכז המגרש; עבודה הגנתית קבוצתית שפשוט קרסה מול בעיטה מושלמת של קירה וולש. פעם היא הייתה כובשת רק נגד ספרס, אבל מאז שלקסי פוטר קיימת, היא מרשיתה הרבה יותר.
         </p>
 
         <p>
-          אבל כל זה נגמר בדקה השנייה.
+          ויש משחק שהוא קצת יותר מורכב, כמו המשחק השבוע. כי מצד אחד, אם הייתם פותחים את ה-Notes שלי בעודי צופה, הייתם רואים מילים כמו: <em>"היכולת של האמפטון להניע כדור ולשלוח כדור על 50 מטר, זה פחד אלוהים"</em>. זאת אגב הברקה של סוניה, שראתה שלהניע קצר מאחור זה לא הרעיון הכי מבריק. הייתם פוגשים גם את <em>"הלחץ הגבוה הוא מבוא להתקף לב"</em>, לצד <em>"הניסיון ואף ההצלחה ללחוץ אחרי איבוד כדור בצורה מהירה של ספרס, מנעו התקפות מעבר"</em>, וגם <em>"איזה בישול של בלקסטד לנגיחה מושלמת של טילי"</em>.
         </p>
 
         <p>
-          כי LCL לקחה את מה שוילה ניסתה לעשות באמצע השבוע, ליברפול לפני כמה שבועות, ושדרגה את זה משמעותית, ולא נתנה לספרס שטחים. וזה כל מה שהקבוצה שלנו אוהבת: משולשים בין אוליבה, גאפסוט ופלובה, מסירות קצרות של דרו ספנס, וריצה טובה של אחת המגינות או שחקניות הכנף שמרווחות את הדשא. אבל מה קורה שלוחצים שליש מרכזי? כשלוחצים על ההגנה אנחנו כבר יודעים שקוגה או דייקסטרה תנסה להשתחרר, אבל מה קורה כשלוחצים על שליש מרכזי? לוחצים את הבלמיות אבל לא כל הזמן, המאסיביות של הלחץ היא על מובילות הכדור (גאפסוט, פלובה, ספנס ואחת הבלמיות), ויש לנו בעיה מוכחת בלהשתחרר מלחץ בשטח קטן.
+          בזמן אמת זה הרגיש שוב כמו קריסה. קריסה שקרתה לנו מול LCL או הקריסה המסורתית מול צ'לסי, ואכן ישנם אלמנטים מדאיגים על הדרך בה הקבוצה לא יכולה להגן בהתקפות מעבר, על פתיחת העונה של קוגה, ועל השילוב, בטח במשחקים כאלה, של אוליב, סיגי וויק יחדיו. הן ייתנו 7 ו-4 במחצית לווילה ופאלאס בהתאמה, אבל הן תאבדנה גם מספר כדורים יפה מספיק בשביל ליצור הזדמנויות לליברפול, צ'לסי ו-LCL בהתאמה. אולי כדאי להיות לפעמים שמרנים קצת יותר.
         </p>
 
         <p>
-          דיברתי על זה בתחילת העונה, וזה עדיין נשאר. ספרס חייבת ללמוד איך משחקים בעוד צורות. כי הפתרון בדרך כלל הוא כדור ארוך לטנברג שמחזיקה את הכדור ומוסרת, אבל LCL ידעה לשמור ולחטוף את הכדור השני. <strong>גרייס גיורו</strong> עשתה את זה מדהים בכל מקום על המגרש. השדר אמר עליה "הופעה של אנגולו קנטה" בדיוק בכדור השני, והמספרים מוכיחים את זה: <strong>10 חילוצי כדור, 10 פעולות הגנה, ו-10 מ-13 במאבקי קרקע (77% הצלחה!)</strong>. דבר דומה קרה גם מול ליברפול, טנברג נפצעה ומרטינז לא יכולה לשחק את המשחק הזה, לפחות כרגע, ונשארנו פשוט תקועים.
+          ולצד זאת, עוד ציטוט מהפתקים: <em>"לך תגן מול פריים LJ. אי אפשר להגן מול פריים לורן ג'יימס. היא חזקה מאוד, מהירה מאוד, תכבוש ממצבים בלתי אפשריים, והיא פשוט תבעט לשער"</em>. צ'לסי הייתה טובה. לא טובה כמו LCL, אלא ממש שיחקה נכון על החולשות של ספרס: על השטחים מאחורי בלקסטד במשחק מעבר, על השטחים בקישור במשחק מסודר, וכמובן לחצה קשות על מובילות הכדור מבלי לתת להן להיכנס ל-rhythm של המשחק. השישייה הזאת, בעיניי, מייצגת הרבה יותר את הצמד של קארפנטר, השער השני של ג'יימס והשער של נוסקן, ופחות את השער של מאיקה והראשון של LJ.
         </p>
 
         <p>
-          האיכות ההתקפית של LCL היא בלתי נגמרת. פותייאס אולי לא הכי מהירה, אבל אלוהים, ראיית המשחק שלה והתנועות שלה. כשאתה מתמקד כמה דקות בצורה שהיא משחקת, המוח שלך נמס (צמד ו-12 חילוצי כדור). תוסיפו לזה את קאררס בשמאל (כמגינה) כביכול, את DVD שנעה לכל מקום (שער, 2 בישולים, 5 מצבים שיצרה ו-4 מ-4 בדריבלים), את גודפרי ואת דיאני שסיימה עם צמד, בישול ו-3.01 xG+xA – זה היה היום הכי טוב שלהן במשרד.
+          זה שלצ'לסי יש כישרון והגנה חזקה מאוד, ידענו. זה שמכל עמדה במגרש יש שחקנית חכמה שתעשה את הפעולה הנכונה, ידענו גם. זה שהיא קילרית, התחדד לנו; וזה שהיא תלויה אך ורק בעצמה, הובהר לנו היטב במשחק האחרון. שני המפגשים האלה, מול קבוצות שהיתרונות שלהן פוגשות כמו כפפה ליד של שוערת שהיא איננה ליז קופ, גרמו לנזק גדול לתחילת העונה ולתחושה סביב הקבוצה. אין באמור הסרת אחריות ממאמן הקבוצה – להפך, הוא ידע וראה את זה קורה, ועל כן חובתו הייתה לתקן זאת. וזאת עדיין חובתו לפני הדרבי הבא. האחד שחשוב באמת.
         </p>
 
-        <p>
-          כאוהד, כל פעם שהכדור היה בשליטת לס"ל התחושה הייתה שזה ייגמר בשער. כשהיה 4:1 הדבר היחיד שהתפללתי זה שנשאר על 4, אבל זה לא קרה. כי LCL ירדה אחורה (קצת כמו מול ברייטון), נתנה לנו את הכדור ויצרנו יופי של מצבים, וינברג נגחה החוצה, אבל כשהן רצות או פתאום מפעילות לחץ בקטנה, ליזה קופ בועטת על דיאני שפשוט מגלגלת לשער בדרך ל-5:1.
-        </p>
-
-        <p>
-          כרגע, וכמו שהיה גם צפוי טרום העונה, לס"ל יותר קרובה לאזורים של צ'לסי, סיטי וארסנל (על הנייר אמרתי!) מאשר לספרס. אתייחס להשלכות של התבוסה הזו לעומק יותר בסקירת חלק א' של העונה.
-        </p>
-
-        <!-- Stats Box: Spurs vs LCL -->
+        <!-- Stats Box: Chelsea vs Tottenham -->
         <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
             <span>📊</span>
-            <span>טוטנהאם 1 – 6 לונדון סיטי: המלכודת במספרים</span>
+            <span>צ'לסי 6 – 2 טוטנהאם: המספרים מאחורי הקריסה</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-sans">
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans mb-4">
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">גרייס גיורו (מאבקי קרקע)</div>
-              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">10 מ-13 (77%)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">10 חילוצים + 10 פעולות הגנה</div>
+              <div class="text-xs text-neutral-500 font-mono">מאזן שערים ו-xG</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">2.47 מול 1.01</div>
+              <div class="text-[11px] text-neutral-400 font-mono">17 (8 למסגרת) מול 13 (7)</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">ואן דה דונק (יצירת מצבים)</div>
-              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">5 מצבים · 2 בישולים</div>
-              <div class="text-[11px] text-neutral-400 font-mono">4 מ-4 דריבלים · שער</div>
+              <div class="text-xs text-neutral-500 font-mono">האנה המפטון (ארוכים)</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">10 מ-17 (59%)</div>
+              <div class="text-[11px] text-neutral-400 font-mono">32/39 מסירות · עקפה לחץ</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">דיאני (xG + xA משולב)</div>
-              <div class="text-lg font-bold text-amber-600 dark:text-amber-400">3.01</div>
-              <div class="text-[11px] text-neutral-400 font-mono">צמד שערים + בישול</div>
+              <div class="text-xs text-neutral-500 font-mono">אלי קארפנטר (מגן מודרני)</div>
+              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">צמד שערים (0.49 xG)</div>
+              <div class="text-[11px] text-neutral-400 font-mono">8 נגיעות ברחבה · 88% מסירה</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">אלכסיה פותייאס (חילוצי כדור)</div>
-              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">12 חילוצים</div>
-              <div class="text-[11px] text-neutral-400 font-mono">צמד שערים · 46 מסירות מדויקות</div>
+              <div class="text-xs text-neutral-500 font-mono">איבודי שלישיית ספרס</div>
+              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">6 נישולים (הולדט)</div>
+              <div class="text-[11px] text-neutral-400 font-mono">הולדט 5/12 במאבקים · קוגה 3/9</div>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-[#1f1f26] p-3 rounded border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 space-y-1.5 font-sans text-xs">
+            <div class="font-bold text-neutral-900 dark:text-white font-mono text-[11px] uppercase tracking-wider text-neutral-400">
+              חלוקת שערים: סיומת מובנית מול שערים מופרכים
+            </div>
+            <div class="flex flex-wrap gap-x-4 gap-y-1">
+              <span>🎯 <strong>מאיקה המאנו (86'):</strong> 0.049 xG (שער מופרך לחלוטין)</span>
+              <span>🎯 <strong>לורן ג'יימס (25'):</strong> 0.178 xG (מהלך אישי מחוץ לרחבה)</span>
+              <span>⚡ <strong>לורן ג'יימס (62'):</strong> 0.308 xG (התקפה מסודרת)</span>
+              <span>⚡ <strong>סיוקה נוסקן (67'):</strong> 0.312 xG (מצב נקי)</span>
+              <span>⚡ <strong>אלי קארפנטר (58', 90'):</strong> 0.234 ו-0.253 xG (הצטרפות קטלנית)</span>
+              <span>🛡️ <strong>אליסה תומפסון:</strong> 2 בישולים, 2 מצבים שיצרה, 3/4 במאבקי קרקע ו-0 טעויות ב-90 דקות שקטות.</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ================= SECTION 2: MCI vs ARS ================= -->
-      <section id="mci-ars" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
+      <!-- ================= SECTION 2: ARSENAL ================= -->
+      <section id="arsenal-derby" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
         <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-          <span>🔥</span>
-          <span>מנצ'סטר סיטי 4 – 2 ארסנל: שק החבטות ומשבר דקה 60</span>
+          <span>🎯</span>
+          <span>ארסנל לקראת הדרבי: כשהבחירה נכונה אבל המעברים מופקרים</span>
         </h2>
 
         <p>
-          המשחק המרכזי הפגיש בין ארסנל, שק החבטות של אירופה, לבין מנ' סיטי שקצת קצת על אדים. מספיק להסתכל על באני שואו ברוב חלקי המשחק שבקושי היה לה כוח ללחוץ ולהבין שמנ' סיטי פצועה ועייפה.
+          אין מה לחדש על ארסנל. היא עושה יותר דברים נכון. סמית', באום וסמילה בהרכב, ולי אין בעיה עם רוסו ב-10 כשאין קלדנטיי. אמנם באום הייתה קצת פחות טובה, ולמרות זאת, העובדה שיש שתי שחקניות שיכולות לעשות גול באמת מכלום, לקבוצה שיש לה עצירות שערים (סליחה על המטאפורה), זאת התחלה טובה. אנחנו עדיין לא רואים שיפור בהתקפה עצמה או ביכולת להגן מול התקפות מעבר (זאת תהיה תמה חוזרת היום), אבל לפחות בחירה נכונה יותר של הרכב וחילופים.
         </p>
 
         <p>
-          את המשחק עצמו התותחניות פתחו בסערה. לחץ מטורף על כל המגרש, חטיפות כדור, יצירת הזדמנויות בקצב סבבה, והן גם כבשו ראשונות. שער קצת מוזר, הרבה מנבדל. אבל השני של <strong>ליסה באום</strong>, שכרגע אין מגינה אחת בליגה שיכולה להתמודד עם המהירות והעוצמה שלה (לא מבין למה כל משחק היא יוצאת דקה 60 – שוב סיימה עם 1.01 xG לפני שהוחלפה). כמה דקות אחרי זה, המפו כובשת מזווית של אוליבה הולדט, ומשווה על הבאזר ל-1:1. 
+          ומילה לסיום: הסיבה שסלגס לא פוטרה היא כי בשבוע הבא היא תנצח בטוטנהאם הוטספר סטדיום. האם זה יפתור את הבעיות של ארסנל? לא. האם זה ינחם את אוהדיה? כנראה שכן. האם זה יעזור לה לטווח ארוך? לא. מאוד לא.
         </p>
 
-        <p>
-          אי אפשר לדבר מקצועית על המשחק הזה או על ארסנל הזאת, כי היא כביכול עושה הכול נכון, יחסית. היא לא אמורה להיות מקום 10 אחרי חמישה משחקים. זה תסריט בלהות שגם האויב הכי גדול, להלן: האויב הכי גדול, לא העז לפנטז עליו. ובמחצית השנייה היא מנסה להתרומם שוב: רוסו לוחצת מדהים את הסיגאווה, שלראשונה מאבדת כדור, הכדור מגיע לרוסו שמפציצה את הרשת העליונה (0.09 xG שהפך ל-0.72 xGOT). השדר הישראלי היה אומר ש"היא הוציאה את כל התסכול שלה על הרשת". וזה שוב הרגיש כאילו ארסנל באמת יכולה לנצח את המשחק.
-        </p>
-
-        <p>
-          אבל אז הגיעו החילופים.
-        </p>
-
-        <p>
-          בסיטי, קספרייט, פאולר ובניי עלו בדקה ה-62. דקה אחת אחרי, כדור שמגיע להמפו והיא לא משתלטת עליו, נשאר ל<strong>קספרייט</strong> שמסובבת לחיבור בצורה שכל זווית מכל שידור חוזר גורמת למוח לעלות באש – <strong>0.032 xG בלבד</strong>, שער של 3% סיכוי שפירק את המשחק.
-        </p>
-
-        <p>
-          ואז רנה מכניסה את סמית' על באום משום מה, והחילוף המוזר עוד יותר: <strong>G (ג'ורג'יה סטנוואי)</strong> בחוץ על בלקסטיינס. סטנוואי הייתה זו שניהלה את מרכז המגרש עם 56 מסירות מדויקות מתוך 62 (90%) ו-3 מצבים שיצרה. ההוצאה שלה הורידה את רוסו מדרגה וחצי אחורה ויצרה, שוב, בלבול וסיבוך יתר לקבוצה שמתוסבכת עם עצמה בכל מקרה. באני שואו סגרה סיפור וסגרה את הסיפור של ארסנל ואת השאיפה שלה לזכות באליפות, וכצפוי, פתחה את מבול השיחות על תפקודה ותפקידה של רנה בכישלון הזה (4:2 בסיום).
-        </p>
-
-        <p>
-          לורן המף כובשת (צמד), וזה מצריך מעקב מדאיג כי זה היה האזור היחיד בו היא התקשתה יחסית. ההתעקשות של סיטי להניע כדור כשארסנל לוחצת כזה טוב, כשיש לה את באני שואו בחוד, זאת בחירה מוזרה. מצד שני, כשהן משתחררות מהלחץ, המגרש פתוח לגמרי.
-        </p>
-
-        <!-- Stats Box: Man City vs Arsenal -->
+        <!-- Stats Box: Arsenal vs Birmingham -->
         <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
-            <span>⏱️</span>
-            <span>סיטי 4 – 2 ארסנל: נקודת המפנה בדקות 60–68</span>
+            <span>📊</span>
+            <span>ארסנל 1 – 1 ברמינגהאם סיטי: תסכול, החמצות ענק ופגיעות במעברים</span>
           </div>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-sans">
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans mb-3">
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">הגול של קספרייט (xG)</div>
-              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">0.032 xG</div>
-              <div class="text-[11px] text-neutral-400 font-mono">דקה 63 (דקה אחרי שנכנסה)</div>
+              <div class="text-xs text-neutral-500 font-mono">איומים והחזקה</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">27 בעיטות (76%)</div>
+              <div class="text-[11px] text-neutral-400 font-mono">רק 4 למסגרת מול 5 של היריבה</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">ליסה באום (עד דקה 68)</div>
-              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">1.01 xG · שער</div>
-              <div class="text-[11px] text-neutral-400 font-mono">3 בעיטות · הוחלפה שוב</div>
+              <div class="text-xs text-neutral-500 font-mono">מאזן xG כולל</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">2.73 מול 0.77</div>
+              <div class="text-[11px] text-neutral-400 font-mono">עליונות סטטיסטית ללא תרגום</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">G - ג'ורג'יה סטנוואי</div>
-              <div class="text-lg font-bold text-amber-600 dark:text-amber-400">56/62 מסירות (90%)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">3 מצבים שיצרה · הוחלפה ב-68'</div>
+              <div class="text-xs text-neutral-500 font-mono">החמצת מצבי ענק</div>
+              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">5 מ-5 (100% החמצה!)</div>
+              <div class="text-[11px] text-neutral-400 font-mono">0 המרה ממצבי Big Chance</div>
             </div>
             <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">מיקום ארסנל בטבלה</div>
-              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">מקום 10</div>
-              <div class="text-[11px] text-neutral-400 font-mono">3 מקומות מתחת ליונייטד</div>
+              <div class="text-xs text-neutral-500 font-mono">רוסו בעמדה 10</div>
+              <div class="text-lg font-bold text-amber-600 dark:text-amber-400">6 בעיטות · 0 שערים</div>
+              <div class="text-[11px] text-neutral-400 font-mono">3 מצבים שיצרה · 4 איבודי כדור</div>
+            </div>
+          </div>
+
+          <div class="text-xs font-sans text-neutral-600 dark:text-neutral-400 bg-white dark:bg-[#1f1f26] p-3 rounded border border-neutral-200 dark:border-neutral-700">
+            💡 <strong>הפרדוקס של ארסנל:</strong> השער שספגה הגיע במעבר בודד שחשף קו הגנה מופקר (הורטרה ב-0.592 xG), בעוד השער היחיד שכבשה נבע מהברקה של אוליביה סמית' מ-0.037 xG בלבד.
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SECTION 3: MAN UNITED ================= -->
+      <section id="man-united" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
+        <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
+          <span>🔴</span>
+          <span>מנצ'סטר יונייטד: הבליץ של סקינר, פארק וטון מתחילות להתחבר</span>
+        </h2>
+
+        <p>
+          קבוצה שמפתיעה לטובה היא מנצ'סטר יונייטד. אמנם זאת צ'רלטון שסופגת עוד לפני שריקת הפתיחה, ואמנם היא לא היוותה איום גדול מדי לא בהגנה ולא בהתקפה, ולמרות זאת – מזל טוב לאלה טון על שער בכורה, ועוד איזה שער! ג'ס פארק עם מהלכי רונאלדו 2003, ו-3 שערים בכלום זמן.
+        </p>
+
+        <p>
+          יונייטד שטפה את המגרש התקפית, והייתה יכולה בקלות לכבוש עוד שניים (ולספוג אולי עוד אחד). נכון, ספיגה עם סגירה לא משהו וגם תגובה לא משהו של השוערת, אבל ככה זה כשכל תשומת הלב שלך היא להתקפה – אתה תספוג לפעמים, כי כמו כל הליגה הזאת, יונייטד לא טובה בהגנה במעברים. אבל סמוך על צ'רלטון ועל ההגנה הרשלנית שלה שהיא תיתן לך ליהנות. טוני נהנתה, ג'סי P נהנתה מאוד, וגם הצופים בבית. סוף סוף ראינו מיונייטד רעיונות וביצועים התקפיים. אולי במחזורים הבאים ארחיב קצת על הדרך בה היא פרוסה כשהכדור ברגליים שלה, כי זאת נקודה טקטית יפה שסקינר הצליח להטמיע. מברוק ליונייטד, שמפה לשם מקום חמישי עם 10 נקודות, בדיוק כמו ספרס.
+        </p>
+
+        <!-- Stats Box: Man United vs Charlton -->
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+          <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
+            <span>📊</span>
+            <span>צ'רלטון 1 – 3 מנצ'סטר יונייטד: הבליץ והשליטה של פארק</span>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans">
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
+              <div class="text-xs text-neutral-500 font-mono">בליץ ההכרעה</div>
+              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">3 שערים ב-7 דקות</div>
+              <div class="text-[11px] text-neutral-400 font-mono">טון (6'), מדינה (10'), דוידסון (13')</div>
+            </div>
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
+              <div class="text-xs text-neutral-500 font-mono">ג'ס פארק (פליימייקינג)</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">6 מצבים שיצרה</div>
+              <div class="text-[11px] text-neutral-400 font-mono">68/74 מסירות (92%) · 84 נגיעות</div>
+            </div>
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
+              <div class="text-xs text-neutral-500 font-mono">אלה טון (שער בכורה)</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">0.072 ⬅ 0.510 xGOT</div>
+              <div class="text-[11px] text-neutral-400 font-mono">5 בעיטות · 76 נגיעות</div>
+            </div>
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
+              <div class="text-xs text-neutral-500 font-mono">פערי הרמות</div>
+              <div class="text-lg font-bold text-neutral-900 dark:text-white">2.21 מול 0.30 xG</div>
+              <div class="text-[11px] text-neutral-400 font-mono">18 בעיטות (76% החזקה) מול 3</div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ================= SECTION 3: LEAGUE ROUNDUP ================= -->
-      <section id="league-wrap" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
+      <!-- ================= SECTION 4: AROUND THE LEAGUE ================= -->
+      <section id="league-roundup" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
         <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-          <span>🌐</span>
-          <span>מסביב לליגה: יונייטד, ברייטון וצ'לסי</span>
+          <span>🌍</span>
+          <span>מסביב למגרשים: וילה שודדת נקודות, המפ וסיטי, והמופע של קלי גאגו</span>
         </h2>
 
         <p>
-          <strong>משהו טוב קורה ביונייטד הזאת:</strong> אמנם הזהות כרגע היא הגנתית, ואווה רוצה גם זהות התקפית. אבל היא הצליחה לבנות זהות הגנתית ממש ממש טובה. מול ליברפול (0:1) הן ספגו 15 בעיטות ו-1.47 xG אבל נעלו שער נקי ועקצו עם 0.47 xG משלהן. זה טוב יותר ממה שחשבתי בפתיחת העונה – הן אשכרה 3 מקומות מעל ארסנל. יש על מה לעבוד בהתקפה, יש את טוני בסגל וג'ס פארק, לא הייתי דואג הרבה יותר מידי, אבל היא והסגל הצליחו לעצור את כדור השלג שכולנו צפינו להן בתחילת העונה.
+          <strong>אסטון וילה – ליברפול (וילה שודדת ניצחון):</strong> ליברפול הייתה טובה יותר, אבל וילה כבשה יותר. יש בעיה עם קיארה קיטינג בשער – לא הפעם הראשונה העונה שהיא נתפסת מחוץ לשער או לא פיזית מספיק, אם כי לא הייתי דואג מהפסד נקודתי מטעות סטטיסטית.
         </p>
 
         <p>
-          <strong>ברייטון סוף סוף כובשת והדאטא מתחיל להתאזן:</strong> בטור של מחזור 4 עמדנו על האנומליה המטורפת שלהן – 8.33 xG בארבעה משחקים שהניבו 3 שערים בלבד, והערכנו שהמספרים חייבים להתיישר. ובכן, מול צ'רלטון הגיע הפיצוי: <strong>1:5 מוחץ מ-3.78 xG ולא פחות מ-25 איומים לשער (9 למסגרת)</strong>. צ'רלטון ממשיכה ליהנות מהגנה שערורייתית שכל קבוצות הליגה נהנות מולה (ספגה רביעייה מליברפול ועכשיו חמישייה מברייטון), אבל מבחינת ברייטון – החזרה לממוצע הגיעה בדיוק בזמן הנכון.
+          <strong>ברייטון – מנצ'סטר סיטי:</strong> כן הייתי מודאג אם אני ברייטון מהיכולת של נדוזי ובכלל מהיכולת של הקבוצה להבין ולבצע את מה שהמאמן שלה רוצה ממנה. ואם אני סיטי, הייתי מאוד מודאג מההגנה ומהסגל שמתקצר לו: מידמה נפצעה, קנאק אמנם חזרה וכבר ישבה על הספסל, אם כי נראה שיש שם עבודה. לורן המפ בכושר של לורן ג'יימס רק בבישולים – אי היכולת של ברייטון לצמצם עליה כשהיא עם הכדור זאת שורה במכתב הפיטורין של המאמן. קלינטון הייתה טובה כשקיבלה את ההזדמנות, ובאני שואו פשוט תכבוש – היא עושה את זה הכי טוב שיש.
         </p>
 
         <p>
-          <strong>על צ'לסי ארחיב בסיכום חלק א' גם כן:</strong> אבל כרגע היא לדעתי היחידה שמאיימת על סיטי (0:3 חלק ומשכנע על ווסט האם בחוץ). ואם אני סיטי, ומי שמאיימת עליי זאת צ'לסי, אני פורש מזמן מהמירוץ.
-        </p>
-      </section>
-
-      <!-- ================= SECTION 4: LIONESSES SQUAD ================= -->
-      <section id="lionesses-debate" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
-        <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
-          <span>🦁</span>
-          <span>מילה על אי הזימונים של טון וקלי (וההזזה של וואלש ל-8)</span>
-        </h2>
-
-        <p>
-          טוני לא משחקת בקבוצה, וכשהיא כן, בקבוצה שהזהות שלה היא כרגע לא יוזמת, היא לא טובה מספיק לנבחרת (מול ליברפול רשמה 18 מסירות בלבד ב-67 דקות, 0.05 xG, מצב אחד שיצרה ו-0 תיקולים). 
+          <strong>ווסטהאם:</strong> שורת הערכה לקלי גאגו – היחידה בווסטהאם ששווה אזכור ומסוגלת לעשות משהו.
         </p>
 
-        <p>
-          בטח כשפתאום ההזזה של <strong>קירה וואלש ל-8</strong>, אחרי שאלכסיה פוטר משחקת את ה-6, יוצרת אפשרות לקישור אנגלי של <strong>וואלש, פוטר וסטנוואי (G)</strong> – שזה קישור טוב בהרבה מוואלש, G וטוני. וואלש נדחפת מדרגה קדימה (בדיוק הציגה 90 דקות עם ציון 8.75 מול ווסט האם, 57 מסירות, 7 מסירות לשליש ההתקפי ו-3 יצירות מצב) והיא למעשה המתחרה הישירה של טוני על ההרכב כרגע.
-        </p>
+        <!-- Stats Box: Around the League -->
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+          <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
+            <span>📊</span>
+            <span>יתר משחקי המחזור: הדאטה שלא רואים בטבלה</span>
+          </div>
 
-        <p>
-          אי הזימון של קלי לדעתי הוא הגיוני מקצועית כרגע (אפילו לא נכללה בסגל סיטי מול ארסנל), אם כי קשה לי להאמין שהיא לא תהיה בסופו של דבר בברזיל.
-        </p>
+          <div class="space-y-3 font-sans text-xs">
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-bold text-amber-600 dark:text-amber-400 font-mono">שוד השבוע:</span>
+                <span class="font-bold text-neutral-900 dark:text-white mr-1">אסטון וילה 2 – 1 ליברפול</span>
+                <div class="text-neutral-500 text-[11px] mt-0.5">ליברפול בעטה 23 פעמים (9 למסגרת) עם 67% החזקה ו-0.97 xG; וילה כבשה פעמיים מ-7 בעיטות בלבד (0.38 xG) בזכות שערים של ראמוס (0.023 xG) וגרנט (0.065 xG) מול קיטינג.</div>
+              </div>
+              <div class="font-mono text-right sm:text-left text-neutral-400 font-bold shrink-0">
+                0.38 vs 0.97 xG
+              </div>
+            </div>
+
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-bold text-primary-600 dark:text-primary-400 font-mono">סיטי 3 – 2 ברייטון:</span>
+                <span class="font-bold text-neutral-900 dark:text-white mr-1">מופע של המפ ושואו</span>
+                <div class="text-neutral-500 text-[11px] mt-0.5">באני שואו עם צמד ב-16 דקות (1.23 xG, 11 נגיעות ברחבה); לורן המפ עם 2 בישולים, 0.76 xA ו-77 נגיעות; קלינטון עם 92% דיוק (23/25) ו-2 מצבים שיצרה; נדוזי ספגה 3 מתוך 2.50 xG של סיטי.</div>
+              </div>
+              <div class="font-mono text-right sm:text-left text-neutral-400 font-bold shrink-0">
+                2.50 vs 1.03 xG
+              </div>
+            </div>
+
+            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+              <div>
+                <span class="font-bold text-emerald-600 dark:text-emerald-400 font-mono">שחקנית המחזור:</span>
+                <span class="font-bold text-neutral-900 dark:text-white mr-1">קלי גאגו (פאלאס 0 – 1 ווסטהאם)</span>
+                <div class="text-neutral-500 text-[11px] mt-0.5">ניצחה את המשחק לפטישים לבדה: שער ניצחון יחיד, 5 בעיטות (0.76 xG, 1.29 xGOT), 3 מצבים שיצרה, 4/6 במאבקי גובה וציון של 8.07 ב-FotMob כשחקנית המשחק.</div>
+              </div>
+              <div class="font-mono text-right sm:text-left text-emerald-500 font-bold shrink-0">
+                ⭐ FotMob: 8.07
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
     </div>
 
     <!-- Navigation Footer -->
     <div class="border-t border-neutral-100 dark:border-neutral-800 pt-6 mt-8 flex items-center justify-between font-mono text-xs">
-      <a href="{{ '/weekly/mw4-b/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
+      <a href="{{ '/weekly/mw5/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
         <span>→</span>
-        <span>למחזור הקודם: מחזור 4 (חלק ב')</span>
+        <span>למחזור הקודם: מחזור 5</span>
       </a>
       <span class="text-neutral-400">עונת 2026/27</span>
     </div>
