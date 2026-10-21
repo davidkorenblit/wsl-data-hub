@@ -50,16 +50,16 @@ next_title: null
 
     <!-- Quick Navigation Anchor Links -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 font-sans my-2 text-xs">
-      <a href="#spurs-chelsea" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+      <a href="#spurs-chelsea" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold text-neutral-800 dark:text-neutral-200">
         ספרס – צ'לסי
       </a>
-      <a href="#arsenal-derby" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+      <a href="#arsenal-derby" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold text-neutral-800 dark:text-neutral-200">
         ארסנל לקראת הדרבי
       </a>
-      <a href="#man-united" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+      <a href="#man-united" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold text-neutral-800 dark:text-neutral-200">
         יונייטד וצ'רלטון
       </a>
-      <a href="#league-roundup" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold">
+      <a href="#league-roundup" class="p-2.5 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/60 dark:bg-[#16161a] hover:border-primary-400 transition-colors block text-center font-bold text-neutral-800 dark:text-neutral-200">
         מסביב למגרשים
       </a>
     </div>
@@ -91,7 +91,7 @@ next_title: null
         </p>
 
         <p>
-          ולצד זאת, עוד ציטוט מהפתקים: <em>"לך תגן מול פריים LJ. אי אפשר להגן מול פריים לורן ג'יימס. היא חזקה מאוד, מהירה מאוד, תכבוש ממצבים בלתי אפשריים, והיא פשוט תבעט לשער"</em>. צ'לסי הייתה טובה. לא טובה כמו LCL, אלא ממש שיחקה נכון על החולשות של ספרס: על השטחים מאחורי בלקסטד במשחק מעבר, על השטחים בקישור במשחק מסודר, וכמובן לחצה קשות על מובילות הכדור מבלי לתת להן להיכנס ל-rhythm של המשחק. השישייה הזאת, בעיניי, מייצגת הרבה יותר את הצמד של קארפנטר, השער השני של ג'יימס והשער של נוסקן, ופחות את השער של מאיקה והראשון של LJ.
+          ולצד זאת, עוד ציטוט מהפתקים: <em>"לך תגן מול פריים LJ. אי אפשר להגן מול פריים לורן ג'יימס. היא חזקה מאוד, מהירה מאוד, תכבוש ממצבים בלתי אפשריים, והיא פשוט תבעט לשער"</em>. צ'לסי הייתה טובה. לא טובה כמו LCL, אלא ממש שיחקה נכון על החולשות של ספרס: על השטחים מאחורי בלקסטד במשחק מעבר, על השטחים בקישור במשחק מסודר, וכמובן לחצה קשות על מובילות הכדור מבלי לתת להן להיכנס לקצב של המשחק. השישייה הזאת, בעיניי, מייצגת הרבה יותר את הצמד של קארפנטר, השער השני של ג'יימס והשער של נוסקן, ופחות את השער של מאיקה והראשון של LJ.
         </p>
 
         <p>
@@ -99,40 +99,40 @@ next_title: null
         </p>
 
         <!-- Stats Box: Chelsea vs Tottenham -->
-        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/80 dark:bg-[#16161c] p-5 font-mono text-xs sm:text-sm shadow-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
             <span>📊</span>
             <span>צ'לסי 6 – 2 טוטנהאם: המספרים מאחורי הקריסה</span>
           </div>
 
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans mb-4">
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">מאזן שערים ו-xG</div>
-              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">2.47 מול 1.01</div>
-              <div class="text-[11px] text-neutral-400 font-mono">17 (8 למסגרת) מול 13 (7)</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">מאזן שערים ו-xG</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400 mt-0.5">2.47 מול 1.01</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">17 (8 למסגרת) מול 13 (7)</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">האנה המפטון (ארוכים)</div>
-              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">10 מ-17 (59%)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">32/39 מסירות · עקפה לחץ</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">האנה המפטון (ארוכים)</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400 mt-0.5">10 מ-17 (59%)</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">32/39 מסירות · עקפה לחץ</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">אלי קארפנטר (מגן מודרני)</div>
-              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">צמד שערים (0.49 xG)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">8 נגיעות ברחבה · 88% מסירה</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">אלי קארפנטר (מגן מודרני)</div>
+              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">צמד שערים (0.49 xG)</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">8 נגיעות ברחבה · 88% מסירה</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">איבודי שלישיית ספרס</div>
-              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">6 נישולים (הולדט)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">הולדט 5/12 במאבקים · קוגה 3/9</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">איבודי שלישיית ספרס</div>
+              <div class="text-lg font-bold text-rose-600 dark:text-rose-400 mt-0.5">6 נישולים (הולדט)</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">הולדט 5/12 במאבקים · קוגה 3/9</div>
             </div>
           </div>
 
-          <div class="bg-white dark:bg-[#1f1f26] p-3 rounded border border-neutral-200 dark:border-neutral-700 text-neutral-700 dark:text-neutral-300 space-y-1.5 font-sans text-xs">
-            <div class="font-bold text-neutral-900 dark:text-white font-mono text-[11px] uppercase tracking-wider text-neutral-400">
+          <div class="bg-white dark:bg-[#202028] p-3.5 rounded-lg border border-neutral-200 dark:border-neutral-700/80 text-neutral-800 dark:text-neutral-200 space-y-2 font-sans text-xs">
+            <div class="font-bold text-neutral-900 dark:text-neutral-100 font-mono text-xs uppercase tracking-wider">
               חלוקת שערים: סיומת מובנית מול שערים מופרכים
             </div>
-            <div class="flex flex-wrap gap-x-4 gap-y-1">
+            <div class="flex flex-wrap gap-x-4 gap-y-1.5 leading-relaxed">
               <span>🎯 <strong>מאיקה המאנו (86'):</strong> 0.049 xG (שער מופרך לחלוטין)</span>
               <span>🎯 <strong>לורן ג'יימס (25'):</strong> 0.178 xG (מהלך אישי מחוץ לרחבה)</span>
               <span>⚡ <strong>לורן ג'יימס (62'):</strong> 0.308 xG (התקפה מסודרת)</span>
@@ -160,36 +160,36 @@ next_title: null
         </p>
 
         <!-- Stats Box: Arsenal vs Birmingham -->
-        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/80 dark:bg-[#16161c] p-5 font-mono text-xs sm:text-sm shadow-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
             <span>📊</span>
             <span>ארסנל 1 – 1 ברמינגהאם סיטי: תסכול, החמצות ענק ופגיעות במעברים</span>
           </div>
 
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans mb-3">
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">איומים והחזקה</div>
-              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">27 בעיטות (76%)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">רק 4 למסגרת מול 5 של היריבה</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">איומים והחזקה</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400 mt-0.5">27 בעיטות (76%)</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">רק 4 למסגרת מול 5 של היריבה</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">מאזן xG כולל</div>
-              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">2.73 מול 0.77</div>
-              <div class="text-[11px] text-neutral-400 font-mono">עליונות סטטיסטית ללא תרגום</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">מאזן xG כולל</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400 mt-0.5">2.73 מול 0.77</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">עליונות סטטיסטית ללא תרגום</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">החמצת מצבי ענק</div>
-              <div class="text-lg font-bold text-rose-600 dark:text-rose-400">5 מ-5 (100% החמצה!)</div>
-              <div class="text-[11px] text-neutral-400 font-mono">0 המרה ממצבי Big Chance</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">החמצת מצבי ענק</div>
+              <div class="text-lg font-bold text-rose-600 dark:text-rose-400 mt-0.5">5 מ-5 (100% החמצה!)</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">0 המרה ממצבי Big Chance</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">רוסו בעמדה 10</div>
-              <div class="text-lg font-bold text-amber-600 dark:text-amber-400">6 בעיטות · 0 שערים</div>
-              <div class="text-[11px] text-neutral-400 font-mono">3 מצבים שיצרה · 4 איבודי כדור</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">רוסו בעמדה 10</div>
+              <div class="text-lg font-bold text-amber-600 dark:text-amber-400 mt-0.5">6 בעיטות · 0 שערים</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">3 מצבים שיצרה · 4 איבודי כדור</div>
             </div>
           </div>
 
-          <div class="text-xs font-sans text-neutral-600 dark:text-neutral-400 bg-white dark:bg-[#1f1f26] p-3 rounded border border-neutral-200 dark:border-neutral-700">
+          <div class="text-xs font-sans text-neutral-800 dark:text-neutral-200 bg-white dark:bg-[#202028] p-3.5 rounded-lg border border-neutral-200 dark:border-neutral-700/80 leading-relaxed">
             💡 <strong>הפרדוקס של ארסנל:</strong> השער שספגה הגיע במעבר בודד שחשף קו הגנה מופקר (הורטרה ב-0.592 xG), בעוד השער היחיד שכבשה נבע מהברקה של אוליביה סמית' מ-0.037 xG בלבד.
           </div>
         </div>
@@ -207,36 +207,36 @@ next_title: null
         </p>
 
         <p>
-          יונייטד שטפה את המגרש התקפית, והייתה יכולה בקלות לכבוש עוד שניים (ולספוג אולי עוד אחד). נכון, ספיגה עם סגירה לא משהו וגם תגובה לא משהו של השוערת, אבל ככה זה כשכל תשומת הלב שלך היא להתקפה – אתה תספוג לפעמים, כי כמו כל הליגה הזאת, יונייטד לא טובה בהגנה במעברים. אבל סמוך על צ'רלטון ועל ההגנה הרשלנית שלה שהיא תיתן לך ליהנות. טוני נהנתה, ג'סי P נהנתה מאוד, וגם הצופים בבית. סוף סוף ראינו מיונייטד רעיונות וביצועים התקפיים. אולי במחזורים הבאים ארחיב קצת על הדרך בה היא פרוסה כשהכדור ברגליים שלה, כי זאת נקודה טקטית יפה שסקינר הצליח להטמיע. מברוק ליונייטד, שמפה לשם מקום חמישי עם 10 נקודות, בדיוק כמו ספרס.
+          יונייטד שטפה את המגרש התקפית, והייתה יכולה בקלות לכבוש עוד שניים (ולספוג אולי עוד אחד). נכון, ספיגה עם סגירה לא משהו וגם תגובה לא משהו של השוערת, אבל ככה זה כשכל תשומת הלב שלך היא להתקפה – אתה תספוג לפעמים, כי כמו כל הליגה הזאת, יונייטד לא טובה בהגנה במעברים. אבל סמוך על צ'רלטון ועל ההגנה הרשלנית שלה שהיא תיתן לך ליהנות. טוני נהנתה, ג'סי P נהנתה מאוד, וגם הצופים בבית. סוף סוף ראינו מיונייטד רעיונות וביצועים התקפיים. אולי במחזורים הבאים ארחיב קצת על הדרך בה היא פרוסה כשהכדור ברגליים שלה, כי זאת נקודה טקטית יפה שאווה הצליחה להטמיע. מברוק ליונייטד, שמפה לשם מקום חמישי עם 10 נקודות, בדיוק כמו ספרס.
         </p>
 
         <!-- Stats Box: Man United vs Charlton -->
-        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/80 dark:bg-[#16161c] p-5 font-mono text-xs sm:text-sm shadow-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
             <span>📊</span>
             <span>צ'רלטון 1 – 3 מנצ'סטר יונייטד: הבליץ והשליטה של פארק</span>
           </div>
 
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-sans">
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">בליץ ההכרעה</div>
-              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">3 שערים ב-7 דקות</div>
-              <div class="text-[11px] text-neutral-400 font-mono">טון (6'), מדינה (10'), דוידסון (13')</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">בליץ ההכרעה</div>
+              <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">3 שערים ב-7 דקות</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">טון (6'), מדינה (10'), דוידסון (13')</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">ג'ס פארק (פליימייקינג)</div>
-              <div class="text-lg font-bold text-primary-600 dark:text-primary-400">6 מצבים שיצרה</div>
-              <div class="text-[11px] text-neutral-400 font-mono">68/74 מסירות (92%) · 84 נגיעות</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">ג'ס פארק (פליימייקינג)</div>
+              <div class="text-lg font-bold text-primary-600 dark:text-primary-400 mt-0.5">6 מצבים שיצרה</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">68/74 מסירות (92%) · 84 נגיעות</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">אלה טון (שער בכורה)</div>
-              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400">0.072 ⬅ 0.510 xGOT</div>
-              <div class="text-[11px] text-neutral-400 font-mono">5 בעיטות · 76 נגיעות</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">אלה טון (שער בכורה)</div>
+              <div class="text-lg font-bold text-indigo-600 dark:text-indigo-400 mt-0.5">0.072 ⬅ 0.510 xGOT</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">5 בעיטות · 76 נגיעות</div>
             </div>
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700">
-              <div class="text-xs text-neutral-500 font-mono">פערי הרמות</div>
-              <div class="text-lg font-bold text-neutral-900 dark:text-white">2.21 מול 0.30 xG</div>
-              <div class="text-[11px] text-neutral-400 font-mono">18 בעיטות (76% החזקה) מול 3</div>
+            <div class="p-3 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs">
+              <div class="text-xs font-mono font-medium text-neutral-600 dark:text-neutral-300">פערי הרמות</div>
+              <div class="text-lg font-bold text-neutral-900 dark:text-white mt-0.5">2.21 מול 0.30 xG</div>
+              <div class="text-[11px] font-mono text-neutral-600 dark:text-neutral-300 mt-0.5">18 בעיטות (76% החזקה) מול 3</div>
             </div>
           </div>
         </div>
@@ -254,50 +254,65 @@ next_title: null
         </p>
 
         <p>
-          <strong>ברייטון – מנצ'סטר סיטי:</strong> כן הייתי מודאג אם אני ברייטון מהיכולת של נדוזי ובכלל מהיכולת של הקבוצה להבין ולבצע את מה שהמאמן שלה רוצה ממנה. ואם אני סיטי, הייתי מאוד מודאג מההגנה ומהסגל שמתקצר לו: מידמה נפצעה, קנאק אמנם חזרה וכבר ישבה על הספסל, אם כי נראה שיש שם עבודה. לורן המפ בכושר של לורן ג'יימס רק בבישולים – אי היכולת של ברייטון לצמצם עליה כשהיא עם הכדור זאת שורה במכתב הפיטורין של המאמן. קלינטון הייתה טובה כשקיבלה את ההזדמנות, ובאני שואו פשוט תכבוש – היא עושה את זה הכי טוב שיש.
+          <strong>ברייטון – מנצ'סטר סיטי:</strong> כן הייתי מודאג אם אני ברייטון מהיכולת של נדוזי ובכלל מהיכולת של הקבוצה להבין ולבצע את מה שהמאמן שלה רוצה ממנה. ואם אני סיטי, הייתי מאוד מודאג מההגנה ומהסגל שמתקצר לו: בת' מיד התווספה לרשימת הפצועות, קנאק אמנם חזרה וכבר ישבה על הספסל, אם כי נראה שיש שם עבודה. לורן המפ בכושר של לורן ג'יימס רק בבישולים – אי היכולת של ברייטון לצמצם עליה כשהיא עם הכדור זאת שורה במכתב הפיטורין של המאמן. קלינטון הייתה טובה כשקיבלה את ההזדמנות, ובאני שואו פשוט תכבוש – היא עושה את זה הכי טוב שיש.
         </p>
 
         <p>
           <strong>ווסטהאם:</strong> שורת הערכה לקלי גאגו – היחידה בווסטהאם ששווה אזכור ומסוגלת לעשות משהו.
         </p>
 
-        <!-- Stats Box: Around the League -->
-        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#16161a] p-5 font-mono text-xs sm:text-sm">
+        <!-- Stats Box: Around the League (High Contrast for Dark/Light Mode) -->
+        <div class="my-6 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50/80 dark:bg-[#16161c] p-5 font-mono text-xs sm:text-sm shadow-sm">
           <div class="font-bold text-neutral-900 dark:text-white mb-3 flex items-center gap-2">
             <span>📊</span>
             <span>יתר משחקי המחזור: הדאטה שלא רואים בטבלה</span>
           </div>
 
-          <div class="space-y-3 font-sans text-xs">
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div>
-                <span class="font-bold text-amber-600 dark:text-amber-400 font-mono">שוד השבוע:</span>
-                <span class="font-bold text-neutral-900 dark:text-white mr-1">אסטון וילה 2 – 1 ליברפול</span>
-                <div class="text-neutral-500 text-[11px] mt-0.5">ליברפול בעטה 23 פעמים (9 למסגרת) עם 67% החזקה ו-0.97 xG; וילה כבשה פעמיים מ-7 בעיטות בלבד (0.38 xG) בזכות שערים של ראמוס (0.023 xG) וגרנט (0.065 xG) מול קיטינג.</div>
+          <div class="space-y-3 font-sans">
+            <!-- Aston Villa vs Liverpool -->
+            <div class="p-3.5 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-bold text-amber-600 dark:text-amber-400 font-mono text-xs">שוד השבוע:</span>
+                  <span class="font-bold text-neutral-900 dark:text-white text-sm">אסטון וילה 2 – 1 ליברפול</span>
+                </div>
+                <p class="text-neutral-700 dark:text-neutral-200 text-xs sm:text-[13px] leading-relaxed">
+                  ליברפול בעטה 23 פעמים (9 למסגרת) עם 67% החזקה ו-0.97 xG; וילה כבשה פעמיים מ-7 בעיטות בלבד (0.38 xG) בזכות שערים של ראמוס (0.023 xG) וגרנט (0.065 xG) מול קיטינג.
+                </p>
               </div>
-              <div class="font-mono text-right sm:text-left text-neutral-400 font-bold shrink-0">
+              <div class="font-mono text-right sm:text-left text-neutral-600 dark:text-neutral-300 font-bold shrink-0 text-xs sm:text-sm bg-neutral-100 dark:bg-[#282834] px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700">
                 0.38 vs 0.97 xG
               </div>
             </div>
 
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div>
-                <span class="font-bold text-primary-600 dark:text-primary-400 font-mono">סיטי 3 – 2 ברייטון:</span>
-                <span class="font-bold text-neutral-900 dark:text-white mr-1">מופע של המפ ושואו</span>
-                <div class="text-neutral-500 text-[11px] mt-0.5">באני שואו עם צמד ב-16 דקות (1.23 xG, 11 נגיעות ברחבה); לורן המפ עם 2 בישולים, 0.76 xA ו-77 נגיעות; קלינטון עם 92% דיוק (23/25) ו-2 מצבים שיצרה; נדוזי ספגה 3 מתוך 2.50 xG של סיטי.</div>
+            <!-- Man City vs Brighton -->
+            <div class="p-3.5 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-bold text-primary-600 dark:text-primary-400 font-mono text-xs">סיטי 3 – 2 ברייטון:</span>
+                  <span class="font-bold text-neutral-900 dark:text-white text-sm">מופע של המפ ושואו</span>
+                </div>
+                <p class="text-neutral-700 dark:text-neutral-200 text-xs sm:text-[13px] leading-relaxed">
+                  באני שואו עם צמד ב-16 דקות (1.23 xG, 11 נגיעות ברחבה); לורן המפ עם 2 בישולים, 0.76 xA ו-77 נגיעות; קלינטון עם 92% דיוק (23/25) ו-2 מצבים שיצרה; נדוזי ספגה 3 מתוך 2.50 xG של סיטי.
+                </p>
               </div>
-              <div class="font-mono text-right sm:text-left text-neutral-400 font-bold shrink-0">
+              <div class="font-mono text-right sm:text-left text-neutral-600 dark:text-neutral-300 font-bold shrink-0 text-xs sm:text-sm bg-neutral-100 dark:bg-[#282834] px-2.5 py-1 rounded border border-neutral-200 dark:border-neutral-700">
                 2.50 vs 1.03 xG
               </div>
             </div>
 
-            <div class="p-3 bg-white dark:bg-[#1f1f26] rounded border border-neutral-200 dark:border-neutral-700 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-              <div>
-                <span class="font-bold text-emerald-600 dark:text-emerald-400 font-mono">שחקנית המחזור:</span>
-                <span class="font-bold text-neutral-900 dark:text-white mr-1">קלי גאגו (פאלאס 0 – 1 ווסטהאם)</span>
-                <div class="text-neutral-500 text-[11px] mt-0.5">ניצחה את המשחק לפטישים לבדה: שער ניצחון יחיד, 5 בעיטות (0.76 xG, 1.29 xGOT), 3 מצבים שיצרה, 4/6 במאבקי גובה וציון של 8.07 ב-FotMob כשחקנית המשחק.</div>
+            <!-- West Ham vs Crystal Palace -->
+            <div class="p-3.5 bg-white dark:bg-[#202028] rounded-lg border border-neutral-200 dark:border-neutral-700/80 shadow-xs flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 flex-wrap">
+                  <span class="font-bold text-emerald-600 dark:text-emerald-400 font-mono text-xs">שחקנית המחזור:</span>
+                  <span class="font-bold text-neutral-900 dark:text-white text-sm">קלי גאגו (פאלאס 0 – 1 ווסטהאם)</span>
+                </div>
+                <p class="text-neutral-700 dark:text-neutral-200 text-xs sm:text-[13px] leading-relaxed">
+                  ניצחה את המשחק לפטישים לבדה: שער ניצחון יחיד, 5 בעיטות (0.76 xG, 1.29 xGOT), 3 מצבים שיצרה, 4/6 במאבקי גובה וציון של 8.07 ב-FotMob כשחקנית המשחק.
+                </p>
               </div>
-              <div class="font-mono text-right sm:text-left text-emerald-500 font-bold shrink-0">
+              <div class="font-mono text-right sm:text-left text-emerald-600 dark:text-emerald-400 font-bold shrink-0 text-xs sm:text-sm bg-emerald-500/10 px-2.5 py-1 rounded border border-emerald-500/20">
                 ⭐ FotMob: 8.07
               </div>
             </div>
