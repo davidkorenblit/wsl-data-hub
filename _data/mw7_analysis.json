@@ -45,7 +45,13 @@
           "team": "Arsenal"
         }
       ],
-      "key_tactical_note": "שמרנות של ספרס הובילה לשיתוק התקפי (0.31 xG ובעיטה בודדת למסגרת), מול 2.27 xG של ארסנל"
+      "key_tactical_note": "שמרנות של ספרס הובילה לשיתוק התקפי (0.31 xG ובעיטה בודדת למסגרת), מול 2.27 xG של ארסנל",
+      "arsenal_tactics": {
+        "left_back": "Taylor Hinds started, Ona Batlle benched",
+        "attack_shape": "Olivia Smith at #9 (2 shots, 0.52 xG), Alessia Russo at #10 (penalty goal, 1.21 xG)",
+        "wing": "Caitlin Foord started on wing (traditional NLD success)",
+        "context": "Slegers testing combinations ahead of pivotal UWCL Benfica clash"
+      }
     },
     "manutd_mancity": {
       "title": "מנצ'סטר יונייטד 1 – 1 מנצ'סטר סיטי",
@@ -135,9 +141,9 @@
       },
       "goals": [
         {
-          "player": "Sandy Baltimore",
-          "min": "14'",
-          "team": "Chelsea"
+          "player": "Molly Bartrip",
+          "min": "20'",
+          "team": "Crystal Palace"
         },
         {
           "player": "Melvine Malard",
@@ -150,9 +156,9 @@
           "team": "Chelsea"
         },
         {
-          "player": "Annabel Blanchard",
-          "min": "88'",
-          "team": "Crystal Palace"
+          "player": "Sandy Baltimore",
+          "min": "90'",
+          "team": "Chelsea"
         }
       ],
       "key_player": {
