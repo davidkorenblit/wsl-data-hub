@@ -1,0 +1,330 @@
+{
+  "round": 7,
+  "season": "2026/27",
+  "matches": {
+    "tottenham_arsenal": {
+      "title": "טוטנהאם 1 – 2 ארסנל",
+      "score": "1 - 2",
+      "xg": {
+        "home": 0.31,
+        "away": 2.27
+      },
+      "shots": {
+        "home": 5,
+        "away": 17
+      },
+      "sot": {
+        "home": 1,
+        "away": 5
+      },
+      "possession": {
+        "home": 39,
+        "away": 61
+      },
+      "big_chances": {
+        "home": 1,
+        "away": 3
+      },
+      "goals": [
+        {
+          "player": "Cathinka Tandberg",
+          "min": "13'",
+          "xg": 0.08,
+          "team": "Tottenham"
+        },
+        {
+          "player": "Georgia Stanway",
+          "min": "17'",
+          "xg": 0.12,
+          "team": "Arsenal"
+        },
+        {
+          "player": "Alessia Russo",
+          "min": "56' (P)",
+          "xg": 0.79,
+          "team": "Arsenal"
+        }
+      ],
+      "key_tactical_note": "שמרנות של ספרס הובילה לשיתוק התקפי (0.31 xG ובעיטה בודדת למסגרת), מול 2.27 xG של ארסנל"
+    },
+    "manutd_mancity": {
+      "title": "מנצ'סטר יונייטד 1 – 1 מנצ'סטר סיטי",
+      "score": "1 - 1",
+      "xg": {
+        "home": 1.25,
+        "away": 1.34
+      },
+      "shots": {
+        "home": 11,
+        "away": 13
+      },
+      "sot": {
+        "home": 4,
+        "away": 4
+      },
+      "possession": {
+        "home": 44,
+        "away": 56
+      },
+      "big_chances": {
+        "home": 2,
+        "away": 2
+      },
+      "goals": [
+        {
+          "player": "Aoba Fujino",
+          "min": "34'",
+          "xg": 0.22,
+          "team": "Manchester City"
+        },
+        {
+          "player": "Elisabeth Terland",
+          "min": "89'",
+          "xg": 0.14,
+          "team": "Manchester United"
+        }
+      ],
+      "key_players": {
+        "miyazawa": {
+          "team": "Manchester United",
+          "ground_duels": "4/4 (100%)",
+          "dispossessed": 0,
+          "passes": "43/48 (90%)",
+          "interceptions": 3,
+          "recoveries": 4
+        },
+        "fujino": {
+          "team": "Manchester City",
+          "role": "Central Attacking Midfielder (#10)",
+          "tackles": 6,
+          "recoveries": 7,
+          "ground_duels": "11/15 (73%)",
+          "passes": "44/50 (88%)",
+          "passes_final_third": 6,
+          "rating": 7.67
+        },
+        "clinton_miss": {
+          "min": "86'",
+          "xg": 0.365,
+          "saved_by": "Phallon Tullis-Joyce"
+        }
+      }
+    },
+    "crystalpalace_chelsea": {
+      "title": "קריסטל פאלאס 1 – 3 צ'לסי",
+      "score": "1 - 3",
+      "xg": {
+        "home": 0.45,
+        "away": 3.7
+      },
+      "shots": {
+        "home": 4,
+        "away": 24
+      },
+      "sot": {
+        "home": 2,
+        "away": 11
+      },
+      "possession": {
+        "home": 34,
+        "away": 66
+      },
+      "big_chances": {
+        "home": 0,
+        "away": 6
+      },
+      "goals": [
+        {
+          "player": "Sandy Baltimore",
+          "min": "14'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Melvine Malard",
+          "min": "51'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Melvine Malard",
+          "min": "75'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Annabel Blanchard",
+          "min": "88'",
+          "team": "Crystal Palace"
+        }
+      ],
+      "key_player": {
+        "malard": {
+          "goals": 2,
+          "shots": 8,
+          "sot": 5,
+          "xg": 1.87,
+          "touches_in_box": 15
+        }
+      }
+    },
+    "everton_astonvilla": {
+      "title": "אברטון 2 – 3 אסטון וילה",
+      "score": "2 - 3",
+      "xg": {
+        "home": 0.84,
+        "away": 2.22
+      },
+      "shots": {
+        "home": 14,
+        "away": 11
+      },
+      "sot": {
+        "home": 5,
+        "away": 5
+      },
+      "big_chances": {
+        "home": 3,
+        "away": 6
+      },
+      "goals": [
+        {
+          "player": "Noëlle Maritz",
+          "min": "4'",
+          "team": "Aston Villa"
+        },
+        {
+          "player": "Amalie Vangsgaard",
+          "min": "32'",
+          "team": "Aston Villa"
+        },
+        {
+          "player": "Amalie Vangsgaard",
+          "min": "50'",
+          "team": "Aston Villa"
+        },
+        {
+          "player": "Holly McNamara",
+          "min": "79'",
+          "team": "Everton"
+        },
+        {
+          "player": "Noémie Mouchon",
+          "min": "90'",
+          "team": "Everton"
+        }
+      ],
+      "vangsgaard_stats": {
+        "goals": 2,
+        "shots": 8,
+        "sot": 6,
+        "xg": 1.29
+      },
+      "manager": "Brian Sørensen (former Everton manager)"
+    },
+    "liverpool_londoncity": {
+      "title": "ליברפול 2 – 2 לונדון סיטי ליונסס",
+      "score": "2 - 2",
+      "xg": {
+        "home": 1.68,
+        "away": 2.17
+      },
+      "shots": {
+        "home": 15,
+        "away": 12
+      },
+      "sot": {
+        "home": 6,
+        "away": 4
+      },
+      "big_chances": {
+        "home": 2,
+        "away": 4
+      },
+      "goals": [
+        {
+          "player": "Beata Olsson",
+          "min": "19'",
+          "team": "Liverpool"
+        },
+        {
+          "player": "Freya Godfrey",
+          "min": "22'",
+          "team": "London City Lionesses"
+        },
+        {
+          "player": "Kadidiatou Diani",
+          "min": "44'",
+          "team": "London City Lionesses"
+        },
+        {
+          "player": "Jana Fernández (OG)",
+          "min": "90+5'",
+          "team": "Liverpool"
+        }
+      ]
+    },
+    "brighton_westham": {
+      "title": "ברייטון 3 – 0 ווסטהאם",
+      "score": "3 - 0",
+      "xg": {
+        "home": 1.7,
+        "away": 1.2
+      },
+      "shots": {
+        "home": 8,
+        "away": 13
+      },
+      "sot": {
+        "home": 4,
+        "away": 2
+      },
+      "passes_acc": {
+        "home": "485 (85%)",
+        "away": "297 (80%)"
+      },
+      "goals": [
+        {
+          "player": "Maisie Symonds",
+          "min": "29'",
+          "team": "Brighton"
+        },
+        {
+          "player": "Fran Kirby",
+          "min": "63'",
+          "team": "Brighton"
+        },
+        {
+          "player": "Kiko Seike",
+          "min": "66'",
+          "team": "Brighton"
+        }
+      ]
+    },
+    "birmingham_charlton": {
+      "title": "ברמינגהאם 1 – 0 צ'רלטון",
+      "score": "1 - 0",
+      "xg": {
+        "home": 2.26,
+        "away": 0.39
+      },
+      "shots": {
+        "home": 20,
+        "away": 8
+      },
+      "sot": {
+        "home": 5,
+        "away": 3
+      },
+      "big_chances": {
+        "home": 3,
+        "away": 0
+      },
+      "goals": [
+        {
+          "player": "Wilma Leidhammar",
+          "min": "68'",
+          "team": "Birmingham City"
+        }
+      ],
+      "charlton_status": "7 matches, 7 losses, 0 points, GD -16 (3:19)"
+    }
+  }
+}
