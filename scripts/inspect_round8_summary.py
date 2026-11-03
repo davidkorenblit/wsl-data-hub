@@ -55,3 +55,4 @@ for key, title, final_score in matches:
         print(f"  Goals: {', '.join(goals)}")
 
 print("\n" + "=" * 70)
+

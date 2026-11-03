@@ -1,0 +1,349 @@
+{
+  "round": 8,
+  "season": "2026/27",
+  "matches": {
+    "lcl_mancity": {
+      "title": "London City Lionesses 1 - 2 Manchester City",
+      "home_team": "London City Lionesses",
+      "away_team": "Manchester City",
+      "score": "1 - 2",
+      "xg": {
+        "home": 3.47,
+        "away": 2.17
+      },
+      "shots": {
+        "home": 24,
+        "away": 7
+      },
+      "sot": {
+        "home": 6,
+        "away": 3
+      },
+      "possession": {
+        "home": 54,
+        "away": 46
+      },
+      "big_chances": {
+        "home": 4,
+        "away": 4
+      },
+      "touches_in_box": {
+        "home": 49,
+        "away": 13
+      },
+      "goals": [
+        {
+          "player": "Khadija Shaw",
+          "min": "53'",
+          "team": "Manchester City"
+        },
+        {
+          "player": "Jana Fernández",
+          "min": "72'",
+          "team": "London City Lionesses"
+        },
+        {
+          "player": "Lauren Hemp",
+          "min": "74'",
+          "team": "Manchester City"
+        }
+      ]
+    },
+    "charlton_chelsea": {
+      "title": "Charlton 0 - 6 Chelsea",
+      "home_team": "Charlton",
+      "away_team": "Chelsea",
+      "score": "0 - 6",
+      "xg": {
+        "home": 0.48,
+        "away": 6.37
+      },
+      "shots": {
+        "home": 6,
+        "away": 36
+      },
+      "sot": {
+        "home": 1,
+        "away": 11
+      },
+      "possession": {
+        "home": 29,
+        "away": 71
+      },
+      "big_chances": {
+        "home": 1,
+        "away": 11
+      },
+      "touches_in_box": {
+        "home": 10,
+        "away": 53
+      },
+      "goals": [
+        {
+          "player": "Nathalie Björn",
+          "min": "3'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Melvine Malard",
+          "min": "10'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Ellie Carpenter",
+          "min": "13'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Melvine Malard",
+          "min": "19'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Agnes Beever-Jones",
+          "min": "57'",
+          "team": "Chelsea"
+        },
+        {
+          "player": "Giulia Dragoni",
+          "min": "66'",
+          "team": "Chelsea"
+        }
+      ]
+    },
+    "arsenal_villa": {
+      "title": "Arsenal 1 - 1 Aston Villa",
+      "home_team": "Arsenal",
+      "away_team": "Aston Villa",
+      "score": "1 - 1",
+      "xg": {
+        "home": 2.61,
+        "away": 0.07
+      },
+      "shots": {
+        "home": 28,
+        "away": 1
+      },
+      "sot": {
+        "home": 8,
+        "away": 1
+      },
+      "possession": {
+        "home": 65,
+        "away": 35
+      },
+      "big_chances": {
+        "home": 2,
+        "away": 0
+      },
+      "touches_in_box": {
+        "home": 56,
+        "away": 4
+      },
+      "goals": [
+        {
+          "player": "Chasity Grant",
+          "min": "25'",
+          "team": "Aston Villa"
+        },
+        {
+          "player": "Alessia Russo",
+          "min": "85'",
+          "team": "Arsenal"
+        }
+      ]
+    },
+    "birmingham_tottenham": {
+      "title": "Birmingham City 1 - 4 Tottenham Hotspur",
+      "home_team": "Birmingham City",
+      "away_team": "Tottenham Hotspur",
+      "score": "1 - 4",
+      "xg": {
+        "home": 1.09,
+        "away": 2.81
+      },
+      "shots": {
+        "home": 14,
+        "away": 29
+      },
+      "sot": {
+        "home": 4,
+        "away": 11
+      },
+      "possession": {
+        "home": 35,
+        "away": 65
+      },
+      "big_chances": {
+        "home": 2,
+        "away": 3
+      },
+      "touches_in_box": {
+        "home": 12,
+        "away": 61
+      },
+      "goals": [
+        {
+          "player": "Julie Blakstad",
+          "min": "37'",
+          "team": "Tottenham Hotspur"
+        },
+        {
+          "player": "Olivia Holdt",
+          "min": "50'",
+          "team": "Tottenham Hotspur"
+        },
+        {
+          "player": "Signe Gaupset",
+          "min": "53'",
+          "team": "Tottenham Hotspur"
+        },
+        {
+          "player": "Neve Herron",
+          "min": "64'",
+          "team": "Birmingham City"
+        },
+        {
+          "player": "Victoria Pelova",
+          "min": "84'",
+          "team": "Tottenham Hotspur"
+        }
+      ]
+    },
+    "westham_liverpool": {
+      "title": "West Ham United 4 - 1 Liverpool",
+      "home_team": "West Ham United",
+      "away_team": "Liverpool",
+      "score": "4 - 1",
+      "xg": {
+        "home": 1.99,
+        "away": 0.65
+      },
+      "shots": {
+        "home": 16,
+        "away": 12
+      },
+      "sot": {
+        "home": 8,
+        "away": 4
+      },
+      "possession": {
+        "home": 40,
+        "away": 60
+      },
+      "big_chances": {
+        "home": 3,
+        "away": 0
+      },
+      "touches_in_box": {
+        "home": 16,
+        "away": 18
+      },
+      "goals": [
+        {
+          "player": "Viviane Asseyi",
+          "min": "7'",
+          "team": "West Ham United"
+        },
+        {
+          "player": "Leila Wandeler",
+          "min": "15'",
+          "team": "West Ham United"
+        },
+        {
+          "player": "Laia Codina",
+          "min": "44'",
+          "team": "West Ham United"
+        },
+        {
+          "player": "Viviane Asseyi",
+          "min": "62'",
+          "team": "West Ham United"
+        },
+        {
+          "player": "Vivien Endemann",
+          "min": "72'",
+          "team": "Liverpool"
+        }
+      ]
+    },
+    "brighton_palace": {
+      "title": "Brighton 2 - 1 Crystal Palace",
+      "home_team": "Brighton",
+      "away_team": "Crystal Palace",
+      "score": "2 - 1",
+      "xg": {
+        "home": 2.07,
+        "away": 0.33
+      },
+      "shots": {
+        "home": 20,
+        "away": 6
+      },
+      "sot": {
+        "home": 8,
+        "away": 2
+      },
+      "possession": {
+        "home": 65,
+        "away": 35
+      },
+      "big_chances": {
+        "home": 5,
+        "away": 0
+      },
+      "touches_in_box": {
+        "home": 34,
+        "away": 8
+      },
+      "goals": [
+        {
+          "player": "Annabel Blanchard",
+          "min": "34'",
+          "team": "Crystal Palace"
+        },
+        {
+          "player": "Caitlin Hayes",
+          "min": "59'",
+          "team": "Brighton"
+        },
+        {
+          "player": "Sophie Peskett",
+          "min": "64'",
+          "team": "Brighton"
+        }
+      ]
+    },
+    "everton_manutd": {
+      "title": "Everton 0 - 0 Manchester United",
+      "home_team": "Everton",
+      "away_team": "Manchester United",
+      "score": "0 - 0",
+      "xg": {
+        "home": 0.27,
+        "away": 0.46
+      },
+      "shots": {
+        "home": 6,
+        "away": 9
+      },
+      "sot": {
+        "home": 3,
+        "away": 4
+      },
+      "possession": {
+        "home": 49,
+        "away": 51
+      },
+      "big_chances": {
+        "home": 0,
+        "away": 0
+      },
+      "touches_in_box": {
+        "home": 10,
+        "away": 23
+      },
+      "goals": []
+    }
+  }
+}
