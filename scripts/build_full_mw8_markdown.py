@@ -419,93 +419,32 @@ def get_page_body():
           </div>
         </div>
 
-        <!-- ================= INTERACTIVE WIDGET: ARSENAL LINEUPS PITCH ================= -->
-        <div id="arsenal-tactical-screen" class="my-6 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-[#0e1117] text-white overflow-hidden shadow-lg">
-          <!-- Widget Header -->
-          <div class="p-4 bg-[#161b22] border-b border-neutral-800 flex flex-col md:flex-row md:items-center justify-between gap-3">
-            <div>
-              <div class="text-xs font-mono font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
-                <span>🔴</span>
-                <span>לוח טקטי אינטראקטיבי: 8 מחזורים – 8 הרכבים שונים של רנה סלגרס</span>
+        <!-- ================= HERO CTA: ARSENAL TACTICAL ROTATIONS BOARD ================= -->
+        <div class="my-6 rounded-2xl border border-red-500/30 bg-gradient-to-br from-red-950/40 via-[#161218] to-[#121622] p-5 sm:p-6 shadow-md transition-all hover:border-red-500/50">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-2">
+              <div class="flex items-center gap-2 flex-wrap">
+                <span class="px-2.5 py-0.5 rounded text-[11px] font-mono font-bold bg-red-600/25 text-red-300 border border-red-500/40 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+                  <span>לוח טקטי אינטראקטיבי ייעודי</span>
+                </span>
+                <span class="text-xs font-mono text-neutral-400">
+                  8 מחזורים · 8 הרכבים שונים · 0% המשכיות
+                </span>
               </div>
-              <div class="text-sm font-bold text-neutral-200 mt-0.5" id="ars-widget-subtitle">
-                0% המשכיות בהרכב · עקבו אחרי השינויים מעמדה לעמדה
-              </div>
+              <h3 class="text-lg sm:text-xl font-bold text-white tracking-tight">
+                סחרחרת ההרכבים של סלגרס: מפת התוהו ובוהו המלאה
+              </h3>
+              <p class="text-xs sm:text-sm text-neutral-300 max-w-2xl leading-relaxed font-sans">
+                הפיצול של אלסיה רוסו (4 בחוד ⟷ 4 בפליימייקר), סחרחרת המגינות של אונה באטייה, נדידת התפקידים של אוליביה סמית' ושני עוגני הברזל היחידים. פתחנו לוח מגרש מלא ונושם המאפשר לחקור את מפת הנדידה העונתית וכל אחד מ-8 המחזורים בנפרד.
+              </p>
             </div>
-
-            <!-- Round Navigation Pills -->
-            <div class="flex items-center gap-1.5 flex-wrap font-mono text-xs" id="ars-tabs-container">
-              <!-- Rendered by JS -->
-            </div>
-          </div>
-
-          <!-- Main Grid: Pitch + Tactical Report -->
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
             
-            <!-- Pitch Container (7 cols) -->
-            <div class="lg:col-span-7 p-4 bg-[#0a1f13] flex justify-center items-center relative overflow-hidden">
-              <div class="relative w-full max-w-[380px] h-[520px] rounded-lg border-2 border-emerald-500/40 shadow-inner overflow-hidden" 
-                   style="background: radial-gradient(circle at center, #0d381e 0%, #061d10 100%);">
-                
-                <!-- Pitch Markings -->
-                <div class="absolute inset-2 border-2 border-white/20 rounded pointer-events-none"></div>
-                <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-white/20 -translate-y-1/2 pointer-events-none"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 border-2 border-white/20 rounded-full pointer-events-none"></div>
-                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 bg-white/40 rounded-full pointer-events-none"></div>
-
-                <!-- Opponent Box (Top) -->
-                <div class="absolute top-2 left-1/2 -translate-x-1/2 w-48 h-20 border-2 border-white/20 border-t-0 pointer-events-none"></div>
-                <div class="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-8 border-2 border-white/20 border-t-0 pointer-events-none"></div>
-
-                <!-- Arsenal Box (Bottom) -->
-                <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-48 h-20 border-2 border-white/20 border-b-0 pointer-events-none"></div>
-                <div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-24 h-8 border-2 border-white/20 border-b-0 pointer-events-none"></div>
-
-                <!-- Player Nodes Layer -->
-                <div id="ars-pitch-nodes" class="absolute inset-0">
-                  <!-- Injected by JS -->
-                </div>
-              </div>
-            </div>
-
-            <!-- Tactical Details Panel (5 cols) -->
-            <div class="lg:col-span-5 p-5 bg-[#12161f] border-t lg:border-t-0 lg:border-r border-neutral-800 flex flex-col justify-between space-y-4">
-              <div class="space-y-3 font-sans">
-                <div class="flex items-center justify-between border-b border-neutral-700/60 pb-2">
-                  <span class="text-xs font-mono font-bold text-red-400" id="ars-panel-round">מחזור 8</span>
-                  <span class="text-xs font-mono px-2 py-0.5 rounded bg-neutral-800 text-neutral-300" id="ars-panel-formation">4-2-3-1</span>
-                </div>
-                
-                <h4 class="text-base font-bold text-white" id="ars-panel-match">ארסנל 1 – 1 אסטון וילה</h4>
-                
-                <div class="p-3 rounded-lg bg-neutral-800/60 border border-neutral-700/70 text-xs leading-relaxed text-neutral-300 font-sans" id="ars-panel-notes">
-                  <!-- Injected by JS -->
-                </div>
-
-                <!-- Key Carousel Indicators -->
-                <div class="space-y-2 pt-2 border-t border-neutral-800 text-xs">
-                  <div class="font-bold text-neutral-200">מוקדי הרוטציה בעמדות המפתח:</div>
-                  <div class="space-y-1.5 text-neutral-400 text-[11px] font-mono">
-                    <div class="p-1.5 rounded bg-neutral-900 border border-neutral-800">
-                      <span class="text-red-400 font-bold">עמדת המגן:</span> באטייה (6 בשמאל, 1 בימין), פוקס (סופסלה פעמיים), היינדס (פתחה 2 בשמאל), הולמברג (פתחה 1 בימין).
-                    </div>
-                    <div class="p-1.5 rounded bg-neutral-900 border border-neutral-800">
-                      <span class="text-amber-400 font-bold">הפיצול של רוסו:</span> 4 משחקים בחוד (9), 4 משחקים מאחורי החלוצה (10).
-                    </div>
-                    <div class="p-1.5 rounded bg-neutral-900 border border-neutral-800">
-                      <span class="text-emerald-400 font-bold">אוליביה סמית':</span> נדדה בין כנף ימין, כנף שמאל, וחלוצת חוד (9).
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Bottom Status -->
-              <div class="text-[11px] font-mono text-neutral-400 border-t border-neutral-800 pt-3 flex items-center justify-between">
-                <span>קבועות בכל 8 המחזורים:</span>
-                <span class="text-emerald-400 font-bold">וויליאמסון, פורד, זינסברגר</span>
-              </div>
-            </div>
-
+            <a href="{{ '/weekly/arsenal-rotations/' | relative_url }}" 
+               class="shrink-0 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-red-600 hover:bg-red-500 text-white font-mono text-xs sm:text-sm font-bold transition-all shadow-lg hover:shadow-red-600/30 group">
+              <span>לפתיחת הלוח הטקטי המלא</span>
+              <span class="transition-transform group-hover:-translate-x-1.5 font-bold text-base">←</span>
+            </a>
           </div>
         </div>
       </section>

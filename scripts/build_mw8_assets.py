@@ -120,17 +120,17 @@ js_code = f"""/**
   const SPURS_PLAYERS = {json.dumps(spurs_players, ensure_ascii=False)};
 
   const POS_COORDS = {{
-    "cf": {{ top: "13%", left: "50%" }},
-    "lw": {{ top: "30%", left: "18%" }},
-    "am": {{ top: "33%", left: "50%" }},
-    "rw": {{ top: "30%", left: "82%" }},
-    "dm1": {{ top: "52%", left: "34%" }},
-    "dm2": {{ top: "52%", left: "66%" }},
-    "lb": {{ top: "72%", left: "16%" }},
-    "cb_left": {{ top: "74%", left: "38%" }},
-    "cb_right": {{ top: "74%", left: "62%" }},
-    "rb": {{ top: "72%", left: "84%" }},
-    "gk": {{ top: "88%", left: "50%" }}
+    "cf": {{ top: "12%", left: "50%" }},
+    "lw": {{ top: "32%", left: "20%" }},
+    "am": {{ top: "32%", left: "50%" }},
+    "rw": {{ top: "32%", left: "80%" }},
+    "dm1": {{ top: "52%", left: "36%" }},
+    "dm2": {{ top: "52%", left: "64%" }},
+    "lb": {{ top: "74%", left: "18%" }},
+    "cb_left": {{ top: "76%", left: "38%" }},
+    "cb_right": {{ top: "76%", left: "62%" }},
+    "rb": {{ top: "74%", left: "82%" }},
+    "gk": {{ top: "89%", left: "50%" }}
   }};
 
   // 1. ARSENAL CONTROLLER
@@ -155,14 +155,14 @@ js_code = f"""/**
     const chaosCls = isChaos
       ? "bg-red-600 text-white font-bold border-red-500 shadow-md ring-2 ring-red-400"
       : "bg-neutral-800 text-red-300 hover:bg-neutral-700 border-neutral-700";
-    html += '<button type="button" onclick="setArsenalRound(\\'chaos\\')" class="px-2.5 py-1 rounded border transition-colors flex items-center gap-1 ' + chaosCls + '"><span>⚡</span><span>מפת התוהו ובוהו</span></button>';
+    html += '<button type="button" onclick="setArsenalRound(\\'chaos\\')" class="px-3 py-1.5 rounded-lg border transition-colors flex items-center gap-1.5 ' + chaosCls + '"><span>⚡</span><span>מפת התוהו ובוהו</span></button>';
 
     ARSENAL_ROUNDS.forEach((r, idx) => {{
       const isActive = currentArsenalMode === idx;
       const activeCls = isActive
         ? "bg-primary-600 text-white font-bold border-primary-500 shadow-xs"
         : "bg-neutral-800 text-neutral-300 hover:bg-neutral-700 border-neutral-700";
-      html += '<button type="button" onclick="setArsenalRound(' + idx + ')" class="px-2 py-1 rounded border transition-colors ' + activeCls + '">' + r.round + '</button>';
+      html += '<button type="button" onclick="setArsenalRound(' + idx + ')" class="px-2.5 py-1.5 rounded-lg border transition-colors ' + activeCls + '">' + r.round + '</button>';
     }});
 
     container.innerHTML = html;
@@ -177,125 +177,132 @@ js_code = f"""/**
     const pNotes = document.getElementById("ars-panel-notes");
     const subTitle = document.getElementById("ars-widget-subtitle");
 
-    if (!nodesLayer || !pRound) return;
+    if (!nodesLayer) return;
 
-    pRound.innerText = "עונת 2026/27 (מחזורים 1–8)";
-    pFormation.innerText = "מפת הפיצולים והנדידה";
-    pMatch.innerText = "סחרחרת ההרכבים: 0% המשכיות, 8 הרכבים שונים";
-    subTitle.innerText = "מפת התוהו ובוהו: רואים ממש על המגרש את השחקניות הנודדות והפיצולים";
+    if (pRound) pRound.innerText = "עונת 2026/27 (מחזורים 1–8)";
+    if (pFormation) pFormation.innerText = "מפת הפיצולים והנדידה";
+    if (pMatch) pMatch.innerText = "סחרחרת ההרכבים: 0% המשכיות, 8 הרכבים שונים";
+    if (subTitle) subTitle.innerText = "מפת התוהו ובוהו: רואים ממש על המגרש את השחקניות הנודדות והפיצולים";
 
-    pNotes.innerHTML = `
-      <div class="space-y-2 text-xs">
-        <div class="p-2 rounded bg-red-950/40 border border-red-800/60 text-red-200">
-          <strong class="text-red-400">⚡ פיצול רוסו (חוד ⟷ 10):</strong> 4 פעמים כחלוצה בודדת (מחזורים 1, 2, 4, 5), 4 פעמים כקשרית התקפית (מחזורים 3, 6, 7, 8).
+    if (pNotes) {{
+      pNotes.innerHTML = `
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+          <div class="p-3 rounded-lg bg-red-950/40 border border-red-800/60 text-red-200">
+            <strong class="text-red-400 block mb-1 font-bold text-sm">⚡ פיצול רוסו (חוד ⟷ 10):</strong>
+            4 פעמים כחלוצה בודדת (מחזורים 1, 2, 4, 5), 4 פעמים כקשרית התקפית (מחזורים 3, 6, 7, 8). מעבר מתמיד בין עמדת הסקוררית ליוצרת.
+          </div>
+          <div class="p-3 rounded-lg bg-blue-950/40 border border-blue-800/60 text-blue-200">
+            <strong class="text-blue-400 block mb-1 font-bold text-sm">🔄 סחרחרת המגינות (שמאל ⟷ ימין):</strong>
+            אונה באטייה שיחקה 6 פעמים בשמאל, והוסטה לימין מול וילה. היינדס פתחה בשמאל פעמיים. פוקס סופסלה והולמברג הוקפצה.
+          </div>
+          <div class="p-3 rounded-lg bg-purple-950/40 border border-purple-800/60 text-purple-200">
+            <strong class="text-purple-400 block mb-1 font-bold text-sm">🔀 אוליביה סמית' הנודדת:</strong>
+            נדדה בין כנף שמאל (3 פתיחות), כנף ימין וחלוצת חוד בודדת מול לסטר ואסטון וילה (2 פתיחות).
+          </div>
+          <div class="p-3 rounded-lg bg-emerald-950/40 border border-emerald-800/60 text-emerald-200">
+            <strong class="text-emerald-400 block mb-1 font-bold text-sm">🟢 עוגני ברזל יחידים (100%):</strong>
+            ליאה וויליאמסון (8/8) במרכז ההגנה, וג'ורג'יה סטאנוויי (8/8) במרכז המגרש. שתי היחידות שלא זזו מההרכב.
+          </div>
         </div>
-        <div class="p-2 rounded bg-blue-950/40 border border-blue-800/60 text-blue-200">
-          <strong class="text-blue-400">🔄 סחרחרת המגינות (שמאל ⟷ ימין):</strong> באטייה שיחקה 6 פעמים בשמאל, והוסטה לימין מול וילה. היינדס פתחה בשמאל פעמיים. פוקס סופסלה.
-        </div>
-        <div class="p-2 rounded bg-purple-950/40 border border-purple-800/60 text-purple-200">
-          <strong class="text-purple-400">🔀 אוליביה סמית' הנודדת:</strong> נדדה בין כנף שמאל (3), כנף ימין וחלוצת חוד מול לסטר ווילה (2).
-        </div>
-        <div class="p-2 rounded bg-emerald-950/40 border border-emerald-800/60 text-emerald-200">
-          <strong class="text-emerald-400">🟢 עוגני ברזל יחידים:</strong> ליאה וויליאמסון (8/8), ג'ורג'יה סטאנוויי (8/8) וקייטלין פורד.
-        </div>
-      </div>
-    `;
+      `;
+    }}
 
     // Visual nodes on pitch showing the chaos & split
     nodesLayer.innerHTML = `
       <!-- Connecting Migration Arrow: Russo between 9 and 10 -->
       <div class="absolute w-1 bg-gradient-to-b from-amber-400 via-red-500 to-amber-400 shadow-md pointer-events-none -translate-x-1/2"
-           style="top: 17%; bottom: 64%; left: 50%;"></div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-none px-2 py-0.5 rounded bg-amber-500 text-black font-mono font-bold text-[9px] shadow-lg border border-amber-300"
-           style="top: 23%; left: 50%;">
+           style="top: 15%; bottom: 67%; left: 50%;"></div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-none px-3 py-1 rounded-md bg-amber-500 text-black font-mono font-bold text-[10px] sm:text-xs shadow-lg border border-amber-300 z-10"
+           style="top: 22%; left: 50%;">
         רוסו (4 ב-9 ⟷ 4 ב-10)
       </div>
 
       <!-- Connecting Migration Arrow: Batlle crossing LB to RB -->
       <div class="absolute h-0.5 bg-gradient-to-r from-blue-400 via-indigo-500 to-blue-400 pointer-events-none"
-           style="top: 71%; left: 24%; right: 24%;"></div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-none px-2 py-0.5 rounded bg-blue-600 text-white font-mono font-bold text-[9px] shadow-lg border border-blue-400"
-           style="top: 67%; left: 50%;">
+           style="top: 65%; left: 20%; right: 20%;"></div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 pointer-events-none px-3 py-1 rounded-md bg-blue-600 text-white font-mono font-bold text-[10px] sm:text-xs shadow-lg border border-blue-400 z-10"
+           style="top: 65%; left: 50%;">
         באטייה (6 בשמאל ⟷ 1 בימין)
       </div>
 
       <!-- Position 9 (CF) Split -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 12%; left: 50%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-red-500 text-center shadow-lg">
-          <div class="text-[9px] font-mono text-red-400 font-bold uppercase">עמדה 9 (חוד)</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">רוסו (4) | סמית' (2) | בלקסטניוס (2)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 10%; left: 50%;">
+        <div class="px-3 py-1.5 rounded-lg bg-black/90 border border-red-500 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-red-400 font-bold uppercase">חוד (עמדה 9)</div>
+          <div class="text-[11px] font-bold text-white whitespace-nowrap">רוסו (4) · סמית' (2) · בלקסטניוס (2)</div>
         </div>
       </div>
 
       <!-- Position 10 (AM) Split -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 34%; left: 50%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-amber-500 text-center shadow-lg">
-          <div class="text-[9px] font-mono text-amber-400 font-bold uppercase">עמדה 10 (פליימייקר)</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">רוסו (4) | קלדנטיי (3) | ליטל (1)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 34%; left: 50%;">
+        <div class="px-3 py-1.5 rounded-lg bg-black/90 border border-amber-500 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-amber-400 font-bold uppercase">פליימייקר (עמדה 10)</div>
+          <div class="text-[11px] font-bold text-white whitespace-nowrap">רוסו (4) · קלדנטיי (3) · ליטל (1)</div>
         </div>
       </div>
 
       <!-- Wings: Left and Right -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 31%; left: 16%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-neutral-600 text-center shadow-lg">
-          <div class="text-[8px] font-mono text-purple-400 font-bold">כנף שמאל</div>
-          <div class="text-[9px] font-bold text-neutral-200 whitespace-nowrap">סמית' (3) | פורד (2) | קלדנטיי (1) | קלי (1)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 34%; left: 16%;">
+        <div class="px-2.5 py-1.5 rounded-lg bg-black/90 border border-purple-500/70 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-purple-400 font-bold">כנף שמאל</div>
+          <div class="text-[10px] font-bold text-neutral-100 whitespace-nowrap">סמית' (3) · פורד (2)</div>
+          <div class="text-[9px] text-neutral-400 whitespace-nowrap">קלדנטיי (1) · קלי (1)</div>
         </div>
       </div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 31%; left: 84%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-neutral-600 text-center shadow-lg">
-          <div class="text-[8px] font-mono text-neutral-400 font-bold">כנף ימין</div>
-          <div class="text-[10px] font-bold text-neutral-200 whitespace-nowrap">באום (7) | רויטלר (1)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 34%; left: 84%;">
+        <div class="px-2.5 py-1.5 rounded-lg bg-black/90 border border-neutral-600 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-neutral-400 font-bold">כנף ימין</div>
+          <div class="text-[10px] font-bold text-neutral-100 whitespace-nowrap">באום (7) · רויטלר (1)</div>
         </div>
       </div>
 
       <!-- Double Pivot -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 52%; left: 34%;">
-        <div class="px-2 py-1 rounded bg-black/90 border border-neutral-700 text-center shadow-md">
-          <div class="text-[8px] font-mono text-neutral-400">קישור</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">קוני-קרוס (6) | ליטל (2)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 51%; left: 34%;">
+        <div class="px-2.5 py-1.5 rounded bg-black/90 border border-neutral-700 text-center shadow-md">
+          <div class="text-[9px] font-mono text-neutral-400">קישור אמצע</div>
+          <div class="text-[10px] font-bold text-white whitespace-nowrap">קוני-קרוס (6) · ליטל (2)</div>
         </div>
       </div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 52%; left: 66%;">
-        <div class="px-2 py-1 rounded bg-emerald-950/90 border-2 border-emerald-400 text-center shadow-md">
-          <div class="text-[8px] font-mono text-emerald-400 font-bold">עוגן 100%</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 51%; left: 66%;">
+        <div class="px-3 py-1.5 rounded bg-emerald-950/90 border-2 border-emerald-400 text-center shadow-md">
+          <div class="text-[9px] font-mono text-emerald-400 font-bold">עוגן 100%</div>
           <div class="text-[10px] font-bold text-white whitespace-nowrap">סטאנוויי (8/8)</div>
         </div>
       </div>
 
       <!-- Fullbacks: LB & RB -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 74%; left: 16%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-blue-500 text-center shadow-lg">
-          <div class="text-[8px] font-mono text-blue-400 font-bold">מגן שמאל</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">באטייה (6) | היינדס (2)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 76%; left: 16%;">
+        <div class="px-2.5 py-1.5 rounded-lg bg-black/90 border border-blue-500 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-blue-400 font-bold">מגן שמאל</div>
+          <div class="text-[10px] font-bold text-white whitespace-nowrap">באטייה (6) · היינדס (2)</div>
         </div>
       </div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 74%; left: 84%;">
-        <div class="px-2 py-1 rounded-lg bg-black/90 border border-blue-500 text-center shadow-lg">
-          <div class="text-[8px] font-mono text-blue-400 font-bold">מגן ימין</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">פוקס (6) | באטייה (1) | הולמברג (1)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 76%; left: 84%;">
+        <div class="px-2.5 py-1.5 rounded-lg bg-black/90 border border-blue-500 text-center shadow-lg">
+          <div class="text-[9px] font-mono text-blue-400 font-bold">מגן ימין</div>
+          <div class="text-[10px] font-bold text-white whitespace-nowrap">פוקס (6) · באטייה (1) · הולמברג (1)</div>
         </div>
       </div>
 
       <!-- Center Backs -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 76%; left: 38%;">
-        <div class="px-2 py-1 rounded bg-black/90 border border-neutral-700 text-center shadow-md">
-          <div class="text-[8px] font-mono text-neutral-400">בלמית שמאל</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">קאטלי (5) | וובן-מוי (3)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 78%; left: 38%;">
+        <div class="px-2.5 py-1.5 rounded bg-black/90 border border-neutral-700 text-center shadow-md">
+          <div class="text-[9px] font-mono text-neutral-400">בלמית שמאל</div>
+          <div class="text-[10px] font-bold text-white whitespace-nowrap">קאטלי (5) · וובן-מוי (3)</div>
         </div>
       </div>
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 76%; left: 62%;">
-        <div class="px-2 py-1 rounded bg-emerald-950/90 border-2 border-emerald-400 text-center shadow-md">
-          <div class="text-[8px] font-mono text-emerald-400 font-bold">עוגן 100%</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 78%; left: 62%;">
+        <div class="px-3 py-1.5 rounded bg-emerald-950/90 border-2 border-emerald-400 text-center shadow-md">
+          <div class="text-[9px] font-mono text-emerald-400 font-bold">עוגן 100%</div>
           <div class="text-[10px] font-bold text-white whitespace-nowrap">וויליאמסון (8/8)</div>
         </div>
       </div>
 
       <!-- Goalkeeper -->
-      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none" style="top: 89%; left: 50%;">
-        <div class="px-2 py-1 rounded bg-black/90 border border-neutral-600 text-center shadow-md">
-          <div class="text-[8px] font-mono text-neutral-400">שוערת</div>
-          <div class="text-[10px] font-bold text-white whitespace-nowrap">מיסה (6) | בורבה (2)</div>
+      <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none z-10" style="top: 90%; left: 50%;">
+        <div class="px-3 py-1.5 rounded bg-black/90 border border-neutral-600 text-center shadow-md">
+          <div class="text-[9px] font-mono text-neutral-400">שוערת</div>
+          <div class="text-[10px] font-bold text-white whitespace-nowrap">מיסה (6) · בורבה (2)</div>
         </div>
       </div>
     `;
@@ -311,13 +318,15 @@ js_code = f"""/**
     const subTitle = document.getElementById("ars-widget-subtitle");
 
     const r = ARSENAL_ROUNDS[idx];
-    if (!r) return;
+    if (!r || !nodesLayer) return;
 
-    pRound.innerText = r.round;
-    pFormation.innerText = r.formation;
-    pMatch.innerText = r.match;
-    pNotes.innerText = ARSENAL_NOTES[r.round] || "";
-    subTitle.innerText = "הרכב פותח: " + r.match + " (מערך " + r.formation + ")";
+    if (pRound) pRound.innerText = r.round;
+    if (pFormation) pFormation.innerText = r.formation;
+    if (pMatch) pMatch.innerText = r.match;
+    if (pNotes) {{
+      pNotes.innerHTML = '<div class="p-3 rounded-lg bg-neutral-800/80 border border-neutral-700 text-sm leading-relaxed text-neutral-200">' + (ARSENAL_NOTES[r.round] || "") + '</div>';
+    }}
+    if (subTitle) subTitle.innerText = "הרכב פותח: " + r.match + " (מערך " + r.formation + ")";
 
     let nodesHtml = "";
     for (const [posKey, p] of Object.entries(r.players)) {{
@@ -326,19 +335,19 @@ js_code = f"""/**
       let tagBadge = "";
       if (p.raw === "Alessia Russo") {{
         tagBadge = posKey === "am" 
-          ? '<span class="text-[8px] font-mono bg-amber-500 text-black px-1 rounded font-bold">הוסטה ל-10</span>' 
-          : '<span class="text-[8px] font-mono bg-red-500 text-white px-1 rounded font-bold">חלוצה 9</span>';
+          ? '<span class="text-[9px] font-mono bg-amber-500 text-black px-1.5 py-0.5 rounded font-bold shadow-xs">הוסטה ל-10</span>' 
+          : '<span class="text-[9px] font-mono bg-red-500 text-white px-1.5 py-0.5 rounded font-bold shadow-xs">חלוצה 9</span>';
       }} else if (p.raw === "Ona Batlle") {{
         tagBadge = posKey === "rb"
-          ? '<span class="text-[8px] font-mono bg-blue-500 text-white px-1 rounded font-bold">הוסטה לימין</span>'
-          : '<span class="text-[8px] font-mono bg-neutral-700 text-neutral-200 px-1 rounded">מגן שמאל</span>';
+          ? '<span class="text-[9px] font-mono bg-blue-500 text-white px-1.5 py-0.5 rounded font-bold shadow-xs">הוסטה לימין</span>'
+          : '<span class="text-[9px] font-mono bg-neutral-700 text-neutral-200 px-1 rounded">מגן שמאל</span>';
       }} else if (p.raw === "Taylor Hinds") {{
-        tagBadge = '<span class="text-[8px] font-mono bg-emerald-500 text-white px-1 rounded font-bold">פתיחה בשמאל</span>';
+        tagBadge = '<span class="text-[9px] font-mono bg-emerald-500 text-white px-1.5 py-0.5 rounded font-bold shadow-xs">פתיחה בשמאל</span>';
       }} else if (p.raw === "Olivia Smith" && posKey === "cf") {{
-        tagBadge = '<span class="text-[8px] font-mono bg-purple-500 text-white px-1 rounded font-bold">הוקפצה ל-9</span>';
+        tagBadge = '<span class="text-[9px] font-mono bg-purple-500 text-white px-1.5 py-0.5 rounded font-bold shadow-xs">הוקפצה ל-9</span>';
       }}
 
-      nodesHtml += '<div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none transition-all duration-300" style="top: ' + coords.top + '; left: ' + coords.left + ';"><div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-red-600 border border-white/80 shadow-md flex items-center justify-center text-[10px] font-mono font-bold text-white">' + p.pos + '</div><div class="mt-1 px-1.5 py-0.5 rounded bg-black/85 text-white font-sans text-[10px] sm:text-[11px] font-bold whitespace-nowrap shadow-xs border border-white/10">' + p.name + '</div>' + (tagBadge ? '<div class="mt-0.5">' + tagBadge + '</div>' : '') + '</div>';
+      nodesHtml += '<div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center pointer-events-none transition-all duration-300 z-10" style="top: ' + coords.top + '; left: ' + coords.left + ';"><div class="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-red-600 border-2 border-white/90 shadow-md flex items-center justify-center text-[10px] sm:text-xs font-mono font-bold text-white">' + p.pos + '</div><div class="mt-1 px-2 py-0.5 rounded bg-black/90 text-white font-sans text-[11px] font-bold whitespace-nowrap shadow-xs border border-white/10">' + p.name + '</div>' + (tagBadge ? '<div class="mt-1">' + tagBadge + '</div>' : '') + '</div>';
     }}
     nodesLayer.innerHTML = nodesHtml;
   }}
@@ -454,9 +463,15 @@ js_code = f"""/**
 
   // INITIALIZE ON LOAD
   function init() {{
-    setArsenalRound("chaos");
-    renderSpursTable();
-    setWestHamView("compare");
+    if (document.getElementById("ars-pitch-nodes")) {{
+      setArsenalRound("chaos");
+    }}
+    if (document.getElementById("spurs-table-body")) {{
+      renderSpursTable();
+    }}
+    if (document.getElementById("whu-dynamic-content")) {{
+      setWestHamView("compare");
+    }}
   }}
 
   if (document.readyState === "loading") {{
