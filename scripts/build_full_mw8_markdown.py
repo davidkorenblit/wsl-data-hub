@@ -681,6 +681,22 @@ def get_page_body():
             <p>
               ברייטון ממשיכה לעשות את מה שהיא צריכה לעשות ולנצח כצפוי. שליטה מלאה (2.07 מול 0.33 xG, 5 מצבי ענק ו-65% החזקה בכדור), כששערים של קייטלין הייז וסופי פסקט במחצית השנייה מחקו יתרון מוקדם ומפתיע של שאניס בלנצ'ארד. השחפים ממשיכים לתקוע יתד בצמרת הגבוהה.
             </p>
+            <!-- Callout linking to the deep dive article -->
+            <div class="mt-3 p-3.5 rounded-lg border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/20 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs">
+              <div class="space-y-1">
+                <div class="font-bold text-amber-900 dark:text-amber-200 flex items-center gap-1.5 text-xs sm:text-sm">
+                  <span>🧠</span>
+                  <span>"בלי חמצן במוח": מדוע שחקניות ההתקפה של פאלאס סובלות?</span>
+                </div>
+                <p class="text-neutral-700 dark:text-neutral-300 text-[11px] sm:text-xs">
+                  בת' אנגלנד דיברה בפודקאסט על המחיר הפיזי השוחק של משחק ההגנה מול ברייטון. הצלבנו את האמירה שלה עם נתוני אופטה ומחקרים ממדעי הספורט.
+                </p>
+              </div>
+              <a href="/weekly/palace-defensive-tax/" class="shrink-0 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md font-mono font-bold text-xs bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 shadow-xs transition-colors">
+                <span>לקריאת המאמר באנגלית</span>
+                <span dir="ltr">→</span>
+              </a>
+            </div>
           </div>
 
           <!-- Everton vs Man United -->
