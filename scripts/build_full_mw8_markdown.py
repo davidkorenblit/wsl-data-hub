@@ -692,7 +692,7 @@ def get_page_body():
                   בת' אנגלנד דיברה בפודקאסט על המחיר הפיזי השוחק של משחק ההגנה מול ברייטון. הצלבנו את האמירה שלה עם נתוני אופטה ומחקרים ממדעי הספורט.
                 </p>
               </div>
-              <a href="/weekly/palace-defensive-tax/" class="shrink-0 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md font-mono font-bold text-xs bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 shadow-xs transition-colors">
+              <a href="{{ '/weekly/palace-defensive-tax/' | relative_url }}" class="shrink-0 inline-flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-md font-mono font-bold text-xs bg-amber-600 hover:bg-amber-700 text-white dark:bg-amber-500 dark:hover:bg-amber-600 shadow-xs transition-colors">
                 <span>לקריאת המאמר באנגלית</span>
                 <span dir="ltr">→</span>
               </a>

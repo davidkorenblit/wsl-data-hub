@@ -23,7 +23,7 @@ next_title: null
           Barclays WSL 2024/25 · Matchweek 8
         </span>
       </div>
-      <a href="/weekly/mw8/" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
+      <a href="{{ '/weekly/mw8/' | relative_url }}" class="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
         ← Back to Matchweek 8 Column
       </a>
     </div>
@@ -308,10 +308,10 @@ next_title: null
 
   <!-- Footer Navigation -->
   <div class="border-t border-neutral-200 dark:border-neutral-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-    <a href="/weekly/mw8/" class="inline-flex items-center gap-2 text-sm font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
+    <a href="{{ '/weekly/mw8/' | relative_url }}" class="inline-flex items-center gap-2 text-sm font-mono font-medium text-emerald-600 dark:text-emerald-400 hover:underline">
       ← Return to Matchweek 8 Weekly Column
     </a>
-    <a href="/weekly/arsenal-rotations/" class="inline-flex items-center gap-2 text-sm font-mono font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white">
+    <a href="{{ '/weekly/arsenal-rotations/' | relative_url }}" class="inline-flex items-center gap-2 text-sm font-mono font-medium text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white">
       Explore Arsenal's Tactical Chaos Board →
     </a>
   </div>
