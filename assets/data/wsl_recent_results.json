@@ -1,22 +1,121 @@
 [
   {
-    "id": 5981676,
-    "round": "8",
-    "date": "2026-10-31T12:45:00Z",
-    "date_formatted_he": "יום שבת, 31 באוקטובר",
-    "date_formatted_en": "Saturday, Oct 31",
+    "id": 5981686,
+    "round": "9",
+    "date": "2026-11-07T12:45:00Z",
+    "date_formatted_he": "יום שבת, 7 בנובמבר",
+    "date_formatted_en": "Saturday, Nov 07",
     "time": "12:45",
-    "score": "0 - 0",
+    "score": "1 - 1",
     "finished": true,
     "reason": "FT",
     "winner": "draw",
     "is_lcl": false,
-    "home_id": 258663,
-    "home_name": "Everton",
-    "home_name_he": "אברטון",
-    "home_slug": "everton",
-    "home_color": "#003399",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258663_small.png",
+    "home_id": 258661,
+    "home_name": "Chelsea",
+    "home_name_he": "צ'לסי",
+    "home_slug": "chelsea",
+    "home_color": "#034694",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258661_small.png",
+    "home_score": 1,
+    "away_id": 258663,
+    "away_name": "Everton",
+    "away_name_he": "אברטון",
+    "away_slug": "everton",
+    "away_color": "#003399",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258663_small.png",
+    "away_score": 1,
+    "home_xg": "2.23",
+    "away_xg": "0.39",
+    "home_shots": 20,
+    "away_shots": 3,
+    "home_sot": 8,
+    "away_sot": 0,
+    "home_possession": 65,
+    "away_possession": 35,
+    "home_scorers": [
+      {
+        "name": "Sandy Baltimore",
+        "minute": "28'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Lucy Bronze (ע\"ע)",
+        "minute": "33'"
+      }
+    ],
+    "has_deep_stats": true
+  },
+  {
+    "id": 5981687,
+    "round": "9",
+    "date": "2026-11-07T12:45:00Z",
+    "date_formatted_he": "יום שבת, 7 בנובמבר",
+    "date_formatted_en": "Saturday, Nov 07",
+    "time": "12:45",
+    "score": "5 - 0",
+    "finished": true,
+    "reason": "FT",
+    "winner": "home",
+    "is_lcl": false,
+    "home_id": 231488,
+    "home_name": "Manchester City",
+    "home_name_he": "מנצ'סטר סיטי",
+    "home_slug": "manchester-city",
+    "home_color": "#6CABDD",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231488_small.png",
+    "home_score": 5,
+    "away_id": 231497,
+    "away_name": "West Ham United",
+    "away_name_he": "ווסטהאם",
+    "away_slug": "west-ham",
+    "away_color": "#7A263A",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231497_small.png",
+    "away_score": 0,
+    "home_xg": "2.06",
+    "away_xg": "0.96",
+    "home_shots": 20,
+    "away_shots": 13,
+    "home_sot": 10,
+    "away_sot": 2,
+    "home_possession": 54,
+    "away_possession": 46,
+    "home_scorers": [
+      {
+        "name": "Khadija Shaw",
+        "minute": "38', 53', 74'"
+      },
+      {
+        "name": "Aoba Fujino",
+        "minute": "60'"
+      },
+      {
+        "name": "Iman Beney",
+        "minute": "68'"
+      }
+    ],
+    "away_scorers": [],
+    "has_deep_stats": true
+  },
+  {
+    "id": 5981685,
+    "round": "9",
+    "date": "2026-11-08T12:00:00Z",
+    "date_formatted_he": "יום ראשון, 8 בנובמבר",
+    "date_formatted_en": "Sunday, Nov 08",
+    "time": "12:00",
+    "score": "0 - 1",
+    "finished": true,
+    "reason": "FT",
+    "winner": "away",
+    "is_lcl": false,
+    "home_id": 231494,
+    "home_name": "Aston Villa",
+    "home_name_he": "אסטון וילה",
+    "home_slug": "aston-villa",
+    "home_color": "#670E36",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231494_small.png",
     "home_score": 0,
     "away_id": 954396,
     "away_name": "Manchester United",
@@ -24,78 +123,195 @@
     "away_slug": "manchester-utd",
     "away_color": "#DA291C",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/954396_small.png",
-    "away_score": 0,
-    "home_xg": "0.27",
-    "away_xg": "0.46",
-    "home_shots": 6,
-    "away_shots": 9,
-    "home_sot": 3,
-    "away_sot": 4,
-    "home_possession": 49,
-    "away_possession": 51,
-    "home_scorers": [],
-    "away_scorers": [],
-    "has_deep_stats": true
-  },
-  {
-    "id": 5981677,
-    "round": "8",
-    "date": "2026-11-01T12:00:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
-    "time": "12:00",
-    "score": "1 - 1",
-    "finished": true,
-    "reason": "FT",
-    "winner": "draw",
-    "is_lcl": false,
-    "home_id": 258657,
-    "home_name": "Arsenal",
-    "home_name_he": "ארסנל",
-    "home_slug": "arsenal",
-    "home_color": "#EF0107",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258657_small.png",
-    "home_score": 1,
-    "away_id": 231494,
-    "away_name": "Aston Villa",
-    "away_name_he": "אסטון וילה",
-    "away_slug": "aston-villa",
-    "away_color": "#670E36",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231494_small.png",
     "away_score": 1,
-    "home_xg": "2.61",
-    "away_xg": "0.07",
-    "home_shots": 28,
-    "away_shots": 1,
-    "home_sot": 8,
-    "away_sot": 1,
-    "home_possession": 65,
-    "away_possession": 35,
-    "home_scorers": [
-      {
-        "name": "Alessia Russo",
-        "minute": "85'"
-      }
-    ],
+    "home_xg": "0.35",
+    "away_xg": "1.94",
+    "home_shots": 6,
+    "away_shots": 18,
+    "home_sot": 4,
+    "away_sot": 7,
+    "home_possession": 44,
+    "away_possession": 56,
+    "home_scorers": [],
     "away_scorers": [
       {
-        "name": "Chasity Grant",
-        "minute": "25'"
+        "name": "Julia Zigiotti Olme",
+        "minute": "72'"
       }
     ],
     "has_deep_stats": true
   },
   {
-    "id": 5981681,
-    "round": "8",
-    "date": "2026-11-01T12:00:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
+    "id": 5981683,
+    "round": "9",
+    "date": "2026-11-08T12:00:00Z",
+    "date_formatted_he": "יום ראשון, 8 בנובמבר",
+    "date_formatted_en": "Sunday, Nov 08",
     "time": "12:00",
     "score": "1 - 2",
     "finished": true,
     "reason": "FT",
     "winner": "away",
+    "is_lcl": false,
+    "home_id": 258665,
+    "home_name": "Liverpool",
+    "home_name_he": "ליברפול",
+    "home_slug": "liverpool",
+    "home_color": "#C8102E",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258665_small.png",
+    "home_score": 1,
+    "away_id": 258657,
+    "away_name": "Arsenal",
+    "away_name_he": "ארסנל",
+    "away_slug": "arsenal",
+    "away_color": "#EF0107",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258657_small.png",
+    "away_score": 2,
+    "home_xg": "1.68",
+    "away_xg": "2.17",
+    "home_shots": 14,
+    "away_shots": 19,
+    "home_sot": 4,
+    "away_sot": 6,
+    "home_possession": 47,
+    "away_possession": 53,
+    "home_scorers": [
+      {
+        "name": "Beata Olsson",
+        "minute": "15'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Alessia Russo",
+        "minute": "9', 45'"
+      }
+    ],
+    "has_deep_stats": true
+  },
+  {
+    "id": 5981688,
+    "round": "9",
+    "date": "2026-11-08T14:00:00Z",
+    "date_formatted_he": "יום ראשון, 8 בנובמבר",
+    "date_formatted_en": "Sunday, Nov 08",
+    "time": "14:00",
+    "score": "3 - 2",
+    "finished": true,
+    "reason": "FT",
+    "winner": "home",
+    "is_lcl": false,
+    "home_id": 614828,
+    "home_name": "Crystal Palace",
+    "home_name_he": "קריסטל פאלאס",
+    "home_slug": "crystal-palace",
+    "home_color": "#1B449C",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/614828_small.png",
+    "home_score": 3,
+    "away_id": 231502,
+    "away_name": "Charlton Athletic",
+    "away_name_he": "צ'רלטון אתלטיק",
+    "away_slug": "charlton-athletic",
+    "away_color": "#D40000",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231502_small.png",
+    "away_score": 2,
+    "home_xg": "1.75",
+    "away_xg": "2.00",
+    "home_shots": 15,
+    "away_shots": 10,
+    "home_sot": 2,
+    "away_sot": 6,
+    "home_possession": 56,
+    "away_possession": 44,
+    "home_scorers": [
+      {
+        "name": "Lexi Lloyd-Smith",
+        "minute": "57'"
+      },
+      {
+        "name": "Aimee Everett",
+        "minute": "81'"
+      },
+      {
+        "name": "Bethany England",
+        "minute": "90'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Elisha N'Dow",
+        "minute": "73'"
+      },
+      {
+        "name": "Leah Davidson",
+        "minute": "74'"
+      }
+    ],
+    "has_deep_stats": true
+  },
+  {
+    "id": 5981689,
+    "round": "9",
+    "date": "2026-11-08T14:00:00Z",
+    "date_formatted_he": "יום ראשון, 8 בנובמבר",
+    "date_formatted_en": "Sunday, Nov 08",
+    "time": "14:00",
+    "score": "2 - 1",
+    "finished": true,
+    "reason": "FT",
+    "winner": "home",
+    "is_lcl": false,
+    "home_id": 628117,
+    "home_name": "Tottenham Hotspur",
+    "home_name_he": "טוטנהאם",
+    "home_slug": "tottenham",
+    "home_color": "#132257",
+    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/628117_small.png",
+    "home_score": 2,
+    "away_id": 231505,
+    "away_name": "Brighton & Hove Albion",
+    "away_name_he": "ברייטון",
+    "away_slug": "brighton",
+    "away_color": "#0057B8",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231505_small.png",
+    "away_score": 1,
+    "home_xg": "1.22",
+    "away_xg": "0.43",
+    "home_shots": 10,
+    "away_shots": 3,
+    "home_sot": 6,
+    "away_sot": 1,
+    "home_possession": 54,
+    "away_possession": 46,
+    "home_scorers": [
+      {
+        "name": "Signe Gaupset",
+        "minute": "51'"
+      },
+      {
+        "name": "Olivia Holdt",
+        "minute": "53'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Fran Kirby",
+        "minute": "2'"
+      }
+    ],
+    "has_deep_stats": true
+  },
+  {
+    "id": 5981684,
+    "round": "9",
+    "date": "2026-11-08T14:30:00Z",
+    "date_formatted_he": "יום ראשון, 8 בנובמבר",
+    "date_formatted_en": "Sunday, Nov 08",
+    "time": "14:30",
+    "score": "4 - 1",
+    "finished": true,
+    "reason": "FT",
+    "winner": "home",
     "is_lcl": true,
     "home_id": 1075419,
     "home_name": "London City Lionesses",
@@ -103,263 +319,44 @@
     "home_slug": "london-city-lionesses",
     "home_color": "#E91E63",
     "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/1075419_small.png",
-    "home_score": 1,
-    "away_id": 231488,
-    "away_name": "Manchester City",
-    "away_name_he": "מנצ'סטר סיטי",
-    "away_slug": "manchester-city",
-    "away_color": "#6CABDD",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231488_small.png",
-    "away_score": 2,
-    "home_xg": "3.47",
-    "away_xg": "2.17",
-    "home_shots": 24,
-    "away_shots": 7,
-    "home_sot": 6,
-    "away_sot": 3,
-    "home_possession": 54,
-    "away_possession": 46,
-    "home_scorers": [
-      {
-        "name": "Jana Fernández",
-        "minute": "72'"
-      }
-    ],
-    "away_scorers": [
-      {
-        "name": "Khadija Shaw",
-        "minute": "53'"
-      },
-      {
-        "name": "Lauren Hemp",
-        "minute": "74'"
-      }
-    ],
-    "has_deep_stats": true
-  },
-  {
-    "id": 5981678,
-    "round": "8",
-    "date": "2026-11-01T14:00:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
-    "time": "14:00",
-    "score": "1 - 4",
-    "finished": true,
-    "reason": "FT",
-    "winner": "away",
-    "is_lcl": false,
-    "home_id": 258658,
-    "home_name": "Birmingham City",
-    "home_name_he": "ברמינגהאם סיטי",
-    "home_slug": "birmingham-city",
-    "home_color": "#0000FF",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258658_small.png",
-    "home_score": 1,
-    "away_id": 628117,
-    "away_name": "Tottenham Hotspur",
-    "away_name_he": "טוטנהאם",
-    "away_slug": "tottenham",
-    "away_color": "#132257",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/628117_small.png",
-    "away_score": 4,
-    "home_xg": "1.09",
-    "away_xg": "2.81",
-    "home_shots": 14,
-    "away_shots": 29,
-    "home_sot": 4,
-    "away_sot": 11,
-    "home_possession": 35,
-    "away_possession": 65,
-    "home_scorers": [
-      {
-        "name": "Neve Herron",
-        "minute": "64'"
-      }
-    ],
-    "away_scorers": [
-      {
-        "name": "Julie Blakstad",
-        "minute": "37'"
-      },
-      {
-        "name": "Olivia Holdt",
-        "minute": "50'"
-      },
-      {
-        "name": "Signe Gaupset",
-        "minute": "53'"
-      },
-      {
-        "name": "Victoria Pelova",
-        "minute": "84'"
-      }
-    ],
-    "has_deep_stats": true
-  },
-  {
-    "id": 5981679,
-    "round": "8",
-    "date": "2026-11-01T14:00:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
-    "time": "14:00",
-    "score": "2 - 1",
-    "finished": true,
-    "reason": "FT",
-    "winner": "home",
-    "is_lcl": false,
-    "home_id": 231505,
-    "home_name": "Brighton & Hove Albion",
-    "home_name_he": "ברייטון",
-    "home_slug": "brighton",
-    "home_color": "#0057B8",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231505_small.png",
-    "home_score": 2,
-    "away_id": 614828,
-    "away_name": "Crystal Palace",
-    "away_name_he": "קריסטל פאלאס",
-    "away_slug": "crystal-palace",
-    "away_color": "#1B449C",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/614828_small.png",
-    "away_score": 1,
-    "home_xg": "2.07",
-    "away_xg": "0.33",
-    "home_shots": 20,
-    "away_shots": 6,
-    "home_sot": 8,
-    "away_sot": 2,
-    "home_possession": 65,
-    "away_possession": 35,
-    "home_scorers": [
-      {
-        "name": "Caitlin Hayes",
-        "minute": "59'"
-      },
-      {
-        "name": "Sophie Peskett",
-        "minute": "64'"
-      }
-    ],
-    "away_scorers": [
-      {
-        "name": "Annabel Blanchard",
-        "minute": "34'"
-      }
-    ],
-    "has_deep_stats": true
-  },
-  {
-    "id": 5981682,
-    "round": "8",
-    "date": "2026-11-01T14:00:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
-    "time": "14:00",
-    "score": "4 - 1",
-    "finished": true,
-    "reason": "FT",
-    "winner": "home",
-    "is_lcl": false,
-    "home_id": 231497,
-    "home_name": "West Ham United",
-    "home_name_he": "ווסטהאם",
-    "home_slug": "west-ham",
-    "home_color": "#7A263A",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231497_small.png",
     "home_score": 4,
-    "away_id": 258665,
-    "away_name": "Liverpool",
-    "away_name_he": "ליברפול",
-    "away_slug": "liverpool",
-    "away_color": "#C8102E",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258665_small.png",
+    "away_id": 258658,
+    "away_name": "Birmingham City",
+    "away_name_he": "ברמינגהאם סיטי",
+    "away_slug": "birmingham-city",
+    "away_color": "#0000FF",
+    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258658_small.png",
     "away_score": 1,
-    "home_xg": "1.99",
-    "away_xg": "0.65",
-    "home_shots": 16,
-    "away_shots": 12,
+    "home_xg": "1.49",
+    "away_xg": "0.17",
+    "home_shots": 20,
+    "away_shots": 4,
     "home_sot": 8,
-    "away_sot": 4,
-    "home_possession": 40,
-    "away_possession": 60,
+    "away_sot": 1,
+    "home_possession": 67,
+    "away_possession": 33,
     "home_scorers": [
       {
-        "name": "Viviane Asseyi",
-        "minute": "7', 62'"
+        "name": "Poppy Pattinson",
+        "minute": "10'"
       },
       {
-        "name": "Leila Wandeler",
-        "minute": "15'"
+        "name": "Delphine Cascarino",
+        "minute": "16'"
       },
       {
-        "name": "Laia Codina",
-        "minute": "44'"
+        "name": "Grace Geyoro",
+        "minute": "74'"
+      },
+      {
+        "name": "Kadidiatou Diani",
+        "minute": "90'"
       }
     ],
     "away_scorers": [
       {
-        "name": "Vivien Endemann",
-        "minute": "72'"
-      }
-    ],
-    "has_deep_stats": true
-  },
-  {
-    "id": 5981680,
-    "round": "8",
-    "date": "2026-11-01T14:30:00Z",
-    "date_formatted_he": "יום ראשון, 1 בנובמבר",
-    "date_formatted_en": "Sunday, Nov 01",
-    "time": "14:30",
-    "score": "0 - 6",
-    "finished": true,
-    "reason": "FT",
-    "winner": "away",
-    "is_lcl": false,
-    "home_id": 231502,
-    "home_name": "Charlton Athletic",
-    "home_name_he": "צ'רלטון אתלטיק",
-    "home_slug": "charlton-athletic",
-    "home_color": "#D40000",
-    "home_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231502_small.png",
-    "home_score": 0,
-    "away_id": 258661,
-    "away_name": "Chelsea",
-    "away_name_he": "צ'לסי",
-    "away_slug": "chelsea",
-    "away_color": "#034694",
-    "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258661_small.png",
-    "away_score": 6,
-    "home_xg": "0.48",
-    "away_xg": "6.37",
-    "home_shots": 6,
-    "away_shots": 36,
-    "home_sot": 1,
-    "away_sot": 11,
-    "home_possession": 29,
-    "away_possession": 71,
-    "home_scorers": [],
-    "away_scorers": [
-      {
-        "name": "Nathalie Björn",
-        "minute": "3'"
-      },
-      {
-        "name": "Melvine Malard",
-        "minute": "10', 19'"
-      },
-      {
-        "name": "Ellie Carpenter",
-        "minute": "13'"
-      },
-      {
-        "name": "Agnes Beever-Jones",
-        "minute": "57'"
-      },
-      {
-        "name": "Giulia Dragoni",
-        "minute": "66'"
+        "name": "Océane Hurtré",
+        "minute": "50'"
       }
     ],
     "has_deep_stats": true
