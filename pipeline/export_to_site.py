@@ -29,6 +29,10 @@ def export_gold_to_site():
         raise ValueError("DATABASE_URL is missing in .env")
 
     clean_db_url = db_url.replace("?pgbouncer=true", "").replace("&pgbouncer=true", "")
+    if clean_db_url.startswith("postgres://"):
+        clean_db_url = clean_db_url.replace("postgres://", "postgresql+psycopg2://", 1)
+    elif clean_db_url.startswith("postgresql://"):
+        clean_db_url = clean_db_url.replace("postgresql://", "postgresql+psycopg2://", 1)
     if "sslmode" not in clean_db_url:
         separator = "&" if "?" in clean_db_url else "?"
         clean_db_url += f"{separator}sslmode=require"
