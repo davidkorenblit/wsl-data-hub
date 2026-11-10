@@ -1,0 +1,32 @@
+version: 2
+
+models:
+  - name: stg_matches
+    description: "Staged raw match fixtures."
+    columns:
+      - name: match_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_teams
+    description: "Dimension table for all competing WSL clubs."
+    columns:
+      - name: team_slug
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_league_standings
+    description: "Final Gold analytics table for WSL standings."
+    columns:
+      - name: league_rank
+        tests:
+          - not_null
+      - name: team_name
+        tests:
+          - unique
+          - not_null
+      - name: points
+        tests:
+          - not_null

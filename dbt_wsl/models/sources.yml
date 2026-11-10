@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw ingested data from the WSL Data Lake."
+    tables:
+      - name: matches
+        description: "Raw match fixtures and scores."
+      - name: standings
+        description: "Raw team standings rows."

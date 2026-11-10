@@ -31,3 +31,10 @@ Thumbs.db
 # Scratch temp files
 scratch_*.json
 scratch/
+
+# dbt artifacts and generated secrets
+dbt_wsl/profiles.yml
+dbt_wsl/target/
+dbt_wsl/logs/
+dbt_wsl/dbt_packages/
+dbt_wsl/.user.yml
