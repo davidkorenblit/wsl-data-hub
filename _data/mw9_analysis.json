@@ -1,0 +1,127 @@
+{
+  "round": 9,
+  "season": "2026/27",
+  "matches": {
+    "mci_whu": {
+      "title": "Manchester City 5 - 0 West Ham United",
+      "home_team": "Manchester City",
+      "away_team": "West Ham United",
+      "score": "5 - 0",
+      "xg": {
+        "home": 4.12,
+        "away": 0.38
+      },
+      "shots": {
+        "home": 26,
+        "away": 4
+      },
+      "sot": {
+        "home": 11,
+        "away": 1
+      },
+      "possession": {
+        "home": 68,
+        "away": 32
+      },
+      "key_players": {
+        "Khadija Shaw": {
+          "goals": 12,
+          "matches": 8,
+          "rate_per_game": 1.5,
+          "historic_pace": "On pace for 33 goals"
+        },
+        "Viviane Asseyi": {
+          "touches": 34,
+          "accurate_passes": 10,
+          "dispossessed": 4
+        },
+        "Aoba Fujino": {
+          "role": "10",
+          "recoveries": 6,
+          "rating": 8.4
+        },
+        "Yui Hasegawa": {
+          "role": "6",
+          "recoveries": 6,
+          "passes": 72
+        }
+      }
+    },
+    "liv_ars": {
+      "title": "Liverpool 1 - 2 Arsenal",
+      "home_team": "Liverpool",
+      "away_team": "Arsenal",
+      "score": "1 - 2",
+      "xg": {
+        "home": 0.95,
+        "away": 2.14
+      },
+      "conceded_goal_template": {
+        "scorer": "Olivia Olsson (15')",
+        "xg": 0.48,
+        "defender_isolated": "Leah Williamson",
+        "season_total_template_goals": 6,
+        "pct_of_all_conceded": 60.0
+      }
+    },
+    "che_eve": {
+      "title": "Chelsea 1 - 1 Everton",
+      "home_team": "Chelsea",
+      "away_team": "Everton",
+      "score": "1 - 1",
+      "xg": {
+        "home": 2.85,
+        "away": 0.39
+      },
+      "shots": {
+        "home": 24,
+        "away": 3
+      },
+      "sot": {
+        "home": 8,
+        "away": 0
+      },
+      "chance_creators": {
+        "Erin Cuthbert": {
+          "chances_per_90": 5.22,
+          "total_chances": 17
+        },
+        "Katie McCabe": {
+          "chances_per_90": 4.09,
+          "total_chances": 21
+        },
+        "Keira Walsh": {
+          "chances_per_90": 2.11,
+          "total_chances": 12,
+          "assists": 3
+        }
+      }
+    },
+    "tot_bha": {
+      "title": "Tottenham Hotspur 2 - 1 Brighton",
+      "home_team": "Tottenham Hotspur",
+      "away_team": "Brighton",
+      "score": "2 - 1",
+      "pelova_radar": {
+        "minutes": 90,
+        "touches": 42,
+        "passes": 22,
+        "chances_created": 0,
+        "open_games_avg_touches": 77.7,
+        "intense_games_avg_touches": 43.2
+      }
+    },
+    "cry_cha": {
+      "title": "Crystal Palace 3 - 2 Charlton",
+      "home_team": "Crystal Palace",
+      "away_team": "Charlton",
+      "score": "3 - 2",
+      "beth_england": {
+        "minutes": 26,
+        "touches_in_box": 4,
+        "xg": 0.32,
+        "winner_min": "90'"
+      }
+    }
+  }
+}
