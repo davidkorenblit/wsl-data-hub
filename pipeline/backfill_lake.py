@@ -4,6 +4,7 @@ WSL Data Platform - Historical Data Lake Backfill
 Scans all existing local raw JSON and CSV datasets across the project
 and migrates them into organized columnar Parquet and JSON partitions
 in the Supabase S3 Data Lake (Bronze & Silver Layers).
+Includes idempotency checks to skip files already uploaded.
 """
 import os
 import sys
@@ -30,17 +31,30 @@ def backfill_all_local_data():
     lake = DataLakeStorage()
     raw_dir = PROJECT_ROOT / "data" / "raw"
 
+    # Pre-fetch all existing keys in the Data Lake to prevent redundant re-uploads
+    try:
+        existing_keys = set(lake.list_objects())
+        logger.info(f"🔍 Found {len(existing_keys)} existing objects already in the Data Lake.")
+    except Exception as e:
+        logger.warning(f"Could not retrieve existing keys list: {e}. Proceeding without skip cache.")
+        existing_keys = set()
+
     uploaded_count = 0
+    skipped_count = 0
 
     # 1. Backfill Squad Stats (CSVs -> Parquet in Lake)
     squads_dir = raw_dir / "squads"
     if squads_dir.exists():
         for csv_file in squads_dir.glob("*.csv"):
+            key = f"bronze/squad_stats/{csv_file.stem}.parquet"
+            if key in existing_keys:
+                skipped_count += 1
+                continue
             try:
                 df = pd.read_csv(csv_file)
-                key = f"bronze/squad_stats/{csv_file.stem}.parquet"
                 lake.upload_parquet(df, key=key)
                 uploaded_count += 1
+                existing_keys.add(key)
             except Exception as e:
                 logger.warning(f"Failed to backfill {csv_file.name}: {e}")
 
@@ -48,11 +62,15 @@ def backfill_all_local_data():
     players_dir = raw_dir / "players"
     if players_dir.exists():
         for csv_file in players_dir.glob("*.csv"):
+            key = f"bronze/player_stats/{csv_file.stem}.parquet"
+            if key in existing_keys:
+                skipped_count += 1
+                continue
             try:
                 df = pd.read_csv(csv_file)
-                key = f"bronze/player_stats/{csv_file.stem}.parquet"
                 lake.upload_parquet(df, key=key)
                 uploaded_count += 1
+                existing_keys.add(key)
             except Exception as e:
                 logger.warning(f"Failed to backfill {csv_file.name}: {e}")
 
@@ -60,12 +78,16 @@ def backfill_all_local_data():
     fotmob_teams_dir = raw_dir / "fotmob" / "teams"
     if fotmob_teams_dir.exists():
         for json_file in fotmob_teams_dir.glob("*.json"):
+            key = f"bronze/fotmob/teams/{json_file.name}"
+            if key in existing_keys:
+                skipped_count += 1
+                continue
             try:
                 with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                key = f"bronze/fotmob/teams/{json_file.name}"
                 lake.upload_json(data, key=key)
                 uploaded_count += 1
+                existing_keys.add(key)
             except Exception as e:
                 logger.warning(f"Failed to backfill {json_file.name}: {e}")
 
@@ -73,12 +95,16 @@ def backfill_all_local_data():
     fotmob_players_dir = raw_dir / "fotmob" / "players" / "cache"
     if fotmob_players_dir.exists():
         for json_file in fotmob_players_dir.glob("*.json"):
+            key = f"bronze/fotmob/players/{json_file.name}"
+            if key in existing_keys:
+                skipped_count += 1
+                continue
             try:
                 with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                key = f"bronze/fotmob/players/{json_file.name}"
                 lake.upload_json(data, key=key)
                 uploaded_count += 1
+                existing_keys.add(key)
             except Exception as e:
                 logger.warning(f"Failed to backfill {json_file.name}: {e}")
 
@@ -86,16 +112,23 @@ def backfill_all_local_data():
     site_squads_dir = PROJECT_ROOT / "_data" / "squads"
     if site_squads_dir.exists():
         for json_file in site_squads_dir.glob("*.json"):
+            key = f"bronze/squads_registry/{json_file.name}"
+            if key in existing_keys:
+                skipped_count += 1
+                continue
             try:
                 with open(json_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
-                key = f"bronze/squads_registry/{json_file.name}"
                 lake.upload_json(data, key=key)
                 uploaded_count += 1
+                existing_keys.add(key)
             except Exception as e:
                 logger.warning(f"Failed to backfill {json_file.name}: {e}")
 
-    logger.info(f"🎉 Backfill Complete! Successfully migrated {uploaded_count} datasets into the Cloud Data Lake.")
+    logger.info(
+        f"🎉 Backfill Complete! Uploaded {uploaded_count} new datasets, "
+        f"skipped {skipped_count} already existing in the Cloud Data Lake."
+    )
     return uploaded_count
 
 
