@@ -30,8 +30,13 @@
       defender: "ליאה וויליאמסון",
       distance: "38 מטרים בשטח פתוח",
       oppTeam: "ליברפול",
-      oppColor: "#DC2626", // Red
+      oppColor: "#DC2626", // Liverpool Red
       oppTextColor: "#FFFFFF",
+      oppStroke: "#FFFFFF",
+      arsenalColor: "#CCFF00", // Arsenal away fluorescent neon/lime kit
+      arsenalTextColor: "#09090B",
+      arsenalStroke: "#18181B",
+      kitNote: "ליברפול באדום מלא · ארסנל במדי חוץ (ניאון-ליים)",
       desc: "ארסנל לוחצת גבוה באנפילד, קו ההגנה עומד 40 מטר מהשער שלה. איבוד כדור במעבר מוביל להקשת כדור ישירה מעל וויליאמסון. אולסון רצה קדימה כשוויליאמסון רצה לאחור ללא חיפוי, 1 על 1 נקי מול מיסה וסיומת מדויקת לרשת.",
       // 2D Pitch coordinates (0..800, 0..520) - Arsenal defends LEFT (x: 20..150)
       turnover: { x: 490, y: 190 },
@@ -85,6 +90,11 @@
       oppTeam: "אסטון וילה",
       oppColor: "#0284C7", // Villa sky blue
       oppTextColor: "#FFFFFF",
+      oppStroke: "#FFFFFF",
+      arsenalColor: "#DC2626",
+      arsenalTextColor: "#FFFFFF",
+      arsenalStroke: "#FFFFFF",
+      kitNote: "ארסנל באדום-לבן · וילה בתכלת/בורדו",
       desc: "ארסנל שלחה 8 שחקניות קדימה לחצי של וילה. חילוץ כדור סמוך לרחבה, כדור ארוך אחד מוצא את גרנט בספרינט מסחרר באגף הימני. וויליאמסון וקאטלי מנסות לרדוף אך נמצאות בפיגור מובנה של 6–7 מטרים, גרנט חודרת ובועטת פנימה.",
       turnover: { x: 570, y: 350 },
       passTarget: { x: 260, y: 370 },
@@ -136,6 +146,11 @@
       oppTeam: "ברמינגהאם סיטי",
       oppColor: "#2563EB", // Royal blue
       oppTextColor: "#FFFFFF",
+      oppStroke: "#FFFFFF",
+      arsenalColor: "#DC2626",
+      arsenalTextColor: "#FFFFFF",
+      arsenalStroke: "#FFFFFF",
+      kitNote: "ארסנל באדום-לבן · ברמינגהאם בכחול",
       desc: "מתפרצת מהסרטים של ברמינגהאם (מוגדרת רשמית כ-Fast Break על פי אופטה). וויליאמסון נשארת בלמית אחרונה סביב קו האמצע, הרטרה עוקפת אותה בריצה חיצונית ונשארת לבדה לחלוטין מול מיסה רודריגז.",
       turnover: { x: 600, y: 140 },
       passTarget: { x: 270, y: 150 },
@@ -187,6 +202,11 @@
       oppTeam: "מנצ'סטר סיטי",
       oppColor: "#38BDF8", // City blue
       oppTextColor: "#0F172A",
+      oppStroke: "#0F172A",
+      arsenalColor: "#DC2626",
+      arsenalTextColor: "#FFFFFF",
+      arsenalStroke: "#FFFFFF",
+      kitNote: "ארסנל באדום-לבן · סיטי בתכלת",
       desc: "דקה 84, ארסנל בפיגור שולחת את כל הקבוצה קדימה לנסות להשוות ומפקירה את קו האמצע. פוג'ינו חוטפת ומשגרת את שאו באחד-על-אחד פיזי מול וויליאמסון. שאו גוברת על ליאה בכוח ובמהירות וסוגרת עניין.",
       turnover: { x: 460, y: 250 },
       passTarget: { x: 220, y: 255 },
@@ -237,8 +257,13 @@
       defender: "וויליאמסון וקאטלי",
       distance: "32 מטרים חדירה ישירה",
       oppTeam: "מנצ'סטר יונייטד",
-      oppColor: "#B91C1C", // United red
-      oppTextColor: "#FFFFFF",
+      oppColor: "#F5F2EB", // United off-white / cream / linen kit ("חום-לבן קרמי")
+      oppTextColor: "#451A03", // Deep rich brown text
+      oppStroke: "#78350F", // Warm brown border
+      arsenalColor: "#DC2626", // Arsenal Red
+      arsenalTextColor: "#FFFFFF",
+      arsenalStroke: "#FFFFFF",
+      kitNote: "יונייטד במדי חוץ (חום-לבן קרמי) · ארסנל באדום-לבן",
       desc: "איבוד כדור של ארסנל במעבר לאחר עלייה של כל הקישור קדימה. כדור עומק שמבתר את קו ההגנה מגיע לזיגיוטי בריצה מקו שני, חודרת מול שער חשוף (מצב ענק של 0.50 xG) וקובעת 1:1 באמירויות.",
       turnover: { x: 500, y: 230 },
       passTarget: { x: 240, y: 250 },
@@ -634,6 +659,16 @@
     if (elDefender) elDefender.innerText = g.defender;
     if (elDistance) elDistance.innerText = g.distance;
     if (elDesc) elDesc.innerText = g.desc;
+
+    const elKit = document.getElementById("sim-detail-kit");
+    if (elKit) {
+      if (g.kitNote) {
+        elKit.style.display = "inline-flex";
+        elKit.innerText = "👕 " + g.kitNote;
+      } else {
+        elKit.style.display = "none";
+      }
+    }
   }
 
   function drawPitchFrame(t) {
@@ -709,14 +744,28 @@
       strikerPos = g.strikerFinish;
     }
 
+    const oppColor = g.oppColor;
+    const oppStroke = g.oppStroke || "#FFFFFF";
+    const oppTxtColor = g.oppTextColor || "#FFFFFF";
+    const arsColor = g.arsenalColor || "#DC2626";
+    const arsStroke = g.arsenalStroke || "#FFFFFF";
+    const arsTxtColor = g.arsenalTextColor || "#FFFFFF";
+
     if (strikerEl) {
       strikerEl.setAttribute("transform", "translate(" + strikerPos.x + "," + strikerPos.y + ")");
       const circle = strikerEl.querySelector("circle");
-      if (circle) circle.setAttribute("fill", g.oppColor);
+      if (circle) {
+        circle.setAttribute("fill", oppColor);
+        circle.setAttribute("stroke", oppStroke);
+      }
       const txt = strikerEl.querySelector("text");
       if (txt) {
-        txt.setAttribute("fill", g.oppTextColor);
+        txt.setAttribute("fill", oppTxtColor);
         txt.textContent = g.scorer.split(" ")[0];
+      }
+      const subtxt = strikerEl.querySelectorAll("text")[1];
+      if (subtxt) {
+        subtxt.setAttribute("fill", oppColor === "#F5F2EB" ? "#FBBF24" : (oppColor === "#DC2626" ? "#FCA5A5" : "#93C5FD"));
       }
     }
 
@@ -735,6 +784,13 @@
 
     if (defenderEl) {
       defenderEl.setAttribute("transform", "translate(" + defPos.x + "," + defPos.y + ")");
+      const defCirc = defenderEl.querySelector("circle");
+      if (defCirc) {
+        defCirc.setAttribute("fill", arsColor);
+        defCirc.setAttribute("stroke", arsStroke);
+      }
+      const defTxt = defenderEl.querySelector("text");
+      if (defTxt) defTxt.setAttribute("fill", arsTxtColor);
     }
 
     // 4b. Animate Full Team Structure (Backline, Midfield, Attackers)
@@ -748,10 +804,37 @@
     const elFwd3 = document.getElementById("sim-elem-fwd3");
     const elOppSupp = document.getElementById("sim-elem-opp-support");
 
-    // Color opponent supporter with team color
+    // Dynamic Kit Colors: Color all Arsenal outfield teammates
+    [elLb, elLcb, elRb, elDm1, elDm2, elFwd1, elFwd2, elFwd3].forEach(function(el) {
+      if (!el) return;
+      const c = el.querySelector("circle");
+      if (c) {
+        c.setAttribute("fill", arsColor);
+        c.setAttribute("stroke", arsStroke);
+      }
+      const tx = el.querySelector("text");
+      if (tx) tx.setAttribute("fill", arsTxtColor);
+    });
+
+    // Dynamic Kit Colors: Color opponent supporter and passer
     if (elOppSupp) {
       const oppCirc = elOppSupp.querySelector("circle");
-      if (oppCirc) oppCirc.setAttribute("fill", g.oppColor);
+      if (oppCirc) {
+        oppCirc.setAttribute("fill", oppColor);
+        oppCirc.setAttribute("stroke", oppStroke);
+      }
+      const oppTxt = elOppSupp.querySelector("text");
+      if (oppTxt) oppTxt.setAttribute("fill", oppTxtColor);
+    }
+
+    if (passerEl) {
+      const passerCirc = passerEl.querySelector("circle");
+      if (passerCirc) {
+        passerCirc.setAttribute("fill", oppColor);
+        passerCirc.setAttribute("stroke", oppStroke);
+      }
+      const passerTxt = passerEl.querySelector("text");
+      if (passerTxt) passerTxt.setAttribute("fill", oppTxtColor);
     }
 
     if (t < 0.20) {

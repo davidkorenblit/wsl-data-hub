@@ -398,6 +398,7 @@ next_title: null
               <div class="font-bold text-white text-sm flex items-center gap-2">
                 <span class="text-primary-400">📌</span>
                 <span id="sim-detail-match">ליברפול 1 – 2 ארסנל (מחזור 9)</span>
+                <span id="sim-detail-kit" class="text-[10px] font-mono px-2 py-0.5 rounded border border-neutral-700 text-neutral-300 bg-neutral-900/90 inline-flex items-center gap-1 shadow-sm">👕 ליברפול באדום מלא · ארסנל במדי חוץ (ניאון-ליים)</span>
               </div>
               <div class="flex items-center gap-2">
                 <span class="px-2 py-0.5 rounded bg-red-950/80 text-red-300 font-mono font-bold border border-red-800/60" id="sim-detail-scorer">אוליביה אולסון (דקה 15')</span>
