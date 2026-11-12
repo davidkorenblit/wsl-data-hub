@@ -30,3 +30,28 @@ models:
       - name: points
         tests:
           - not_null
+
+  - name: fct_match_player_stats
+    description: "Gold fact table for per-player match micro-statistics."
+    columns:
+      - name: player_match_key
+        tests:
+          - unique
+          - not_null
+      - name: match_id
+        tests:
+          - not_null
+      - name: player_id
+        tests:
+          - not_null
+
+  - name: fct_shots
+    description: "Gold fact table for all shotmap events with coordinates and xG."
+    columns:
+      - name: shot_id
+        tests:
+          - unique
+          - not_null
+      - name: match_id
+        tests:
+          - not_null

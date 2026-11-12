@@ -9,3 +9,7 @@ sources:
         description: "Raw match fixtures and scores."
       - name: standings
         description: "Raw team standings rows."
+      - name: match_player_stats
+        description: "Raw per-player match micro-statistics extracted from FotMob matchDetails."
+      - name: shots
+        description: "Raw shotmap events extracted from FotMob matchDetails."

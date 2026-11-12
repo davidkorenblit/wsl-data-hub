@@ -23,6 +23,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from pipeline.ingest import run_ingest
+from pipeline.ingest_match_details import run_match_details_ingest
 from pipeline.load_raw import load_lake_to_raw_db
 from pipeline.export_to_site import export_gold_to_site
 from pipeline.setup_dbt_profile import *
@@ -37,6 +38,7 @@ def main():
     # 1. Ingestion Engine (Extract & Load to Data Lake)
     print("\n[Step 1/4] Ingesting live data from FotMob API into Data Lake...")
     run_ingest(season="2026/2027", upload_lake=True, sync_local_site=True)
+    run_match_details_ingest(season="2026/2027", upload_lake=True)
 
     # 2. Raw Loader (Data Lake -> Postgres raw schema)
     print("\n[Step 2/4] Loading Lake Parquet datasets into Supabase PostgreSQL 'raw'...")

@@ -44,14 +44,22 @@ def load_lake_to_raw_db(season: str = "2026/2027"):
     lake = DataLakeStorage()
 
     # 1. Download Parquet from Data Lake
-    standings_key = f"bronze/standings/season={season_safe}/standings.parquet"
-    matches_key = f"bronze/matches/season={season_safe}/matches.parquet"
+    datasets = [
+        ("standings", f"bronze/standings/season={season_safe}/standings.parquet", True),
+        ("matches", f"bronze/matches/season={season_safe}/matches.parquet", True),
+        ("match_player_stats", f"bronze/match_player_stats/season={season_safe}/match_player_stats.parquet", False),
+        ("shots", f"bronze/shots/season={season_safe}/shots.parquet", False),
+    ]
 
-    logger.info(f"Downloading {standings_key} from Data Lake...")
-    df_standings = lake.download_parquet(key=standings_key)
-
-    logger.info(f"Downloading {matches_key} from Data Lake...")
-    df_matches = lake.download_parquet(key=matches_key)
+    loaded_dfs = {}
+    for table_name, key, required in datasets:
+        logger.info(f"Downloading {key} from Data Lake...")
+        try:
+            loaded_dfs[table_name] = lake.download_parquet(key=key)
+        except Exception as e:
+            if required:
+                raise
+            logger.warning(f"Optional dataset {key} not found in Lake yet ({e}); skipping.")
 
     # 2. Connect to Supabase Postgres
     logger.info("Connecting to Supabase PostgreSQL...")
@@ -60,25 +68,21 @@ def load_lake_to_raw_db(season: str = "2026/2027"):
     with engine.begin() as conn:
         conn.execute(text("CREATE SCHEMA IF NOT EXISTS raw;"))
         conn.execute(text("CREATE SCHEMA IF NOT EXISTS analytics;"))
-        # Truncate existing tables so dependent views (dbt staging) aren't dropped
-        conn.execute(text("""
-            DO $$
-            BEGIN
-                IF EXISTS (SELECT FROM pg_tables WHERE schemaname = 'raw' AND tablename = 'standings') THEN
-                    TRUNCATE TABLE raw.standings;
-                END IF;
-                IF EXISTS (SELECT FROM pg_tables WHERE schemaname = 'raw' AND tablename = 'matches') THEN
-                    TRUNCATE TABLE raw.matches;
-                END IF;
-            END $$;
-        """))
+        for table_name in loaded_dfs:
+            # Truncate existing tables so dependent views (dbt staging) aren't dropped
+            conn.execute(text(f"""
+                DO $$
+                BEGIN
+                    IF EXISTS (SELECT FROM pg_tables WHERE schemaname = 'raw' AND tablename = '{table_name}') THEN
+                        TRUNCATE TABLE raw.{table_name};
+                    END IF;
+                END $$;
+            """))
 
     # 3. Load into 'raw' schema
-    logger.info(f"Writing {len(df_standings)} rows to raw.standings...")
-    df_standings.to_sql("standings", engine, schema="raw", if_exists="append", index=False)
-
-    logger.info(f"Writing {len(df_matches)} rows to raw.matches...")
-    df_matches.to_sql("matches", engine, schema="raw", if_exists="append", index=False)
+    for table_name, df in loaded_dfs.items():
+        logger.info(f"Writing {len(df)} rows to raw.{table_name}...")
+        df.to_sql(table_name, engine, schema="raw", if_exists="append", index=False)
 
     logger.info("🎉 Raw data successfully placed onto the 'raw' shelf in PostgreSQL!")
 

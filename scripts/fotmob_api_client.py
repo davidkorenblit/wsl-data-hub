@@ -123,6 +123,11 @@ class FotMobAPIClient:
         url = f"https://www.fotmob.com/api/data/playerData?id={player_id}"
         return self._get(url)
 
+    def fetch_match_details(self, match_id: int) -> Optional[Dict[str, Any]]:
+        """Fetch full matchDetails JSON (playerStats, shotmap, lineups, events)."""
+        url = f"https://www.fotmob.com/api/data/matchDetails?matchId={match_id}"
+        return self._get(url)
+
     def fetch_league_topstats(self, league_id: int, season_id: int) -> Optional[Dict[str, Any]]:
         url = f"https://data.fotmob.com/stats/{league_id}/season/{season_id}/topstats.json"
         return self._get(url)
