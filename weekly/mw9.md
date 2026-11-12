@@ -219,6 +219,12 @@ next_title: null
               </svg>
             </div>
 
+            <!-- Broadcast Image Credit -->
+            <div class="flex items-center justify-between text-[11px] font-mono text-neutral-400 px-1 pt-0.5">
+              <span>קרדיט צילום ומקור: <strong>Barclays Women's Super League (WSL)</strong> / ערוצי השידור והיוטיוב הרשמיים</span>
+              <span class="text-neutral-500 font-sans">תמונת סטילס טקטית (1080p HD)</span>
+            </div>
+
             <!-- Telestrator Dynamic Description -->
             <div id="tele-step-desc" class="p-3 bg-neutral-950/80 rounded-lg border border-neutral-800 text-xs sm:text-sm text-neutral-300 font-sans leading-relaxed">
               שחרור המסירה: קו ההגנה של ארסנל עומד סביב קו האמצע באנפילד. כדור ארוך מוקפץ מעל הראש של ליאה וויליאמסון לתוך 38 מטרים של דשא פנוי לחלוטין.
@@ -283,6 +289,53 @@ next_title: null
 
                 <path id="sim-elem-passline" d="" fill="none" stroke="#FBBF24" stroke-width="2.5" stroke-dasharray="5 3" marker-end="url(#arrow-pass)" />
                 <circle id="sim-elem-turnover" cx="0" cy="0" r="10" fill="#EF4444" stroke="#FFFFFF" stroke-width="2" filter="url(#glow)" style="display:none;" />
+
+                <!-- Full Team Overlay Layer: Outfield players in high block -->
+                <g id="sim-team-layer">
+                  <!-- Arsenal Backline partners -->
+                  <g id="sim-elem-lb" transform="translate(340,90)">
+                    <circle r="11" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text y="3" fill="#FFFFFF" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">LB</text>
+                  </g>
+                  <g id="sim-elem-lcb" transform="translate(330,190)">
+                    <circle r="11" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text y="3" fill="#FFFFFF" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">בלמית</text>
+                  </g>
+                  <g id="sim-elem-rb" transform="translate(350,430)">
+                    <circle r="11" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text y="3" fill="#FFFFFF" font-size="7" font-family="sans-serif" font-weight="bold" text-anchor="middle">RB</text>
+                  </g>
+
+                  <!-- Arsenal Midfielders caught high -->
+                  <g id="sim-elem-dm1" transform="translate(460,200)">
+                    <circle r="10" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">DM</text>
+                  </g>
+                  <g id="sim-elem-dm2" transform="translate(470,320)">
+                    <circle r="10" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">DM</text>
+                  </g>
+
+                  <!-- Arsenal Attackers deep in opponent half -->
+                  <g id="sim-elem-fwd1" transform="translate(580,140)">
+                    <circle r="10" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" opacity="0.85" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">LW</text>
+                  </g>
+                  <g id="sim-elem-fwd2" transform="translate(630,260)">
+                    <circle r="10" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" opacity="0.85" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">CF</text>
+                  </g>
+                  <g id="sim-elem-fwd3" transform="translate(580,390)">
+                    <circle r="10" fill="#DC2626" stroke="#FFFFFF" stroke-width="1.5" opacity="0.85" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">RW</text>
+                  </g>
+
+                  <!-- Opponent Supporting Player -->
+                  <g id="sim-elem-opp-support" transform="translate(430,340)">
+                    <circle r="10" fill="#3B82F6" stroke="#FFFFFF" stroke-width="1.5" opacity="0.8" />
+                    <text y="3" fill="#FFFFFF" font-size="6.5" font-family="sans-serif" font-weight="bold" text-anchor="middle">יריבה</text>
+                  </g>
+                </g>
 
                 <g id="sim-elem-striker" transform="translate(0,0)">
                   <circle r="14" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2" filter="url(#glow)" />

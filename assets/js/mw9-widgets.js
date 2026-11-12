@@ -737,6 +737,71 @@
       defenderEl.setAttribute("transform", "translate(" + defPos.x + "," + defPos.y + ")");
     }
 
+    // 4b. Animate Full Team Structure (Backline, Midfield, Attackers)
+    const elLb = document.getElementById("sim-elem-lb");
+    const elLcb = document.getElementById("sim-elem-lcb");
+    const elRb = document.getElementById("sim-elem-rb");
+    const elDm1 = document.getElementById("sim-elem-dm1");
+    const elDm2 = document.getElementById("sim-elem-dm2");
+    const elFwd1 = document.getElementById("sim-elem-fwd1");
+    const elFwd2 = document.getElementById("sim-elem-fwd2");
+    const elFwd3 = document.getElementById("sim-elem-fwd3");
+    const elOppSupp = document.getElementById("sim-elem-opp-support");
+
+    // Color opponent supporter with team color
+    if (elOppSupp) {
+      const oppCirc = elOppSupp.querySelector("circle");
+      if (oppCirc) oppCirc.setAttribute("fill", g.oppColor);
+    }
+
+    if (t < 0.20) {
+      // High block structure
+      if (elLb) elLb.setAttribute("transform", "translate(340,90)");
+      if (elLcb) elLcb.setAttribute("transform", "translate(330,190)");
+      if (elRb) elRb.setAttribute("transform", "translate(350,430)");
+      if (elDm1) elDm1.setAttribute("transform", "translate(460,200)");
+      if (elDm2) elDm2.setAttribute("transform", "translate(470,320)");
+      if (elFwd1) elFwd1.setAttribute("transform", "translate(580,140)");
+      if (elFwd2) elFwd2.setAttribute("transform", "translate(630,260)");
+      if (elFwd3) elFwd3.setAttribute("transform", "translate(580,390)");
+      if (elOppSupp) elOppSupp.setAttribute("transform", "translate(430,340)");
+    } else if (t < 0.50) {
+      // Reaction & Backpedal phase
+      const pT = (t - 0.20) / 0.30;
+      if (elLb) elLb.setAttribute("transform", "translate(" + lerp(340, 270, pT) + "," + lerp(90, 110, pT) + ")");
+      if (elLcb) elLcb.setAttribute("transform", "translate(" + lerp(330, 240, pT) + "," + lerp(190, 205, pT) + ")");
+      if (elRb) elRb.setAttribute("transform", "translate(" + lerp(350, 280, pT) + "," + lerp(430, 410, pT) + ")");
+      if (elDm1) elDm1.setAttribute("transform", "translate(" + lerp(460, 410, pT) + ",200)");
+      if (elDm2) elDm2.setAttribute("transform", "translate(" + lerp(470, 420, pT) + ",320)");
+      if (elFwd1) elFwd1.setAttribute("transform", "translate(" + lerp(580, 560, pT) + ",140)");
+      if (elFwd2) elFwd2.setAttribute("transform", "translate(" + lerp(630, 600, pT) + ",260)");
+      if (elFwd3) elFwd3.setAttribute("transform", "translate(" + lerp(580, 560, pT) + ",390)");
+      if (elOppSupp) elOppSupp.setAttribute("transform", "translate(" + lerp(430, 360, pT) + ",340)");
+    } else if (t < 0.85) {
+      // Desperate Recovery Sprint
+      const sT = (t - 0.50) / 0.35;
+      if (elLb) elLb.setAttribute("transform", "translate(" + lerp(270, 170, sT) + "," + lerp(110, 140, sT) + ")");
+      if (elLcb) elLcb.setAttribute("transform", "translate(" + lerp(240, 140, sT) + "," + lerp(205, 220, sT) + ")");
+      if (elRb) elRb.setAttribute("transform", "translate(" + lerp(280, 190, sT) + "," + lerp(410, 370, sT) + ")");
+      if (elDm1) elDm1.setAttribute("transform", "translate(" + lerp(410, 310, sT) + ",210)");
+      if (elDm2) elDm2.setAttribute("transform", "translate(" + lerp(420, 330, sT) + ",310)");
+      if (elFwd1) elFwd1.setAttribute("transform", "translate(" + lerp(560, 510, sT) + ",150)");
+      if (elFwd2) elFwd2.setAttribute("transform", "translate(" + lerp(600, 540, sT) + ",260)");
+      if (elFwd3) elFwd3.setAttribute("transform", "translate(" + lerp(560, 510, sT) + ",380)");
+      if (elOppSupp) elOppSupp.setAttribute("transform", "translate(" + lerp(360, 240, sT) + ",330)");
+    } else {
+      // Conceded phase - frozen in recovery
+      if (elLb) elLb.setAttribute("transform", "translate(170,140)");
+      if (elLcb) elLcb.setAttribute("transform", "translate(140,220)");
+      if (elRb) elRb.setAttribute("transform", "translate(190,370)");
+      if (elDm1) elDm1.setAttribute("transform", "translate(310,210)");
+      if (elDm2) elDm2.setAttribute("transform", "translate(330,310)");
+      if (elFwd1) elFwd1.setAttribute("transform", "translate(510,150)");
+      if (elFwd2) elFwd2.setAttribute("transform", "translate(540,260)");
+      if (elFwd3) elFwd3.setAttribute("transform", "translate(510,380)");
+      if (elOppSupp) elOppSupp.setAttribute("transform", "translate(240,330)");
+    }
+
     let gkPos = g.gkStart;
     if (t > 0.60) {
       const gkT = Math.min(1.0, (t - 0.60) / 0.35);
