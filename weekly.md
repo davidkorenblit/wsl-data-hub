@@ -138,11 +138,11 @@ next_title: null
       <section id="arsenal-liverpool" class="space-y-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
         <h2 class="text-xl sm:text-2xl font-bold text-neutral-900 dark:text-white flex items-center gap-2">
           <span>🔴</span>
-          <span>ליברפול 1 – 2 ארסנל: 3 נקודות באנפילד/פרנטון פארק, ואותה השבלונה בהגנה</span>
+          <span>ליברפול 1 – 2 ארסנל: 3 נקודות באנפילד, ואותה השבלונה בהגנה</span>
         </h2>
 
         <p>
-          ארסנל ניצחה. על הנייר, זה כל מה שחשוב. 3 נקודות באנפילד/פרנטון פארק, להתקרב למאבק על מקום לאירופה, ניצחון שלישי ברציפות בכל המסגרות, על הנייר זה כל מה שחשוב.  
+          ארסנל ניצחה. על הנייר, זה כל מה שחשוב. 3 נקודות באנפילד, להתקרב למאבק על מקום לאירופה, ניצחון שלישי ברציפות בכל המסגרות, על הנייר זה כל מה שחשוב.  
           אבל לא באמת. כי למרות שניצחון של ארסנל זה לא מובן מאליו בליגה שלנו ולמרות שארסנל שיחקה די טוב ברוב שלבי המשחק, בכל זאת יש להעיר שתי הערות קריטיות להמשך.
         </p>
 
@@ -436,20 +436,20 @@ next_title: null
           <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-3 flex-wrap gap-2">
             <div>
               <div class="text-xs font-mono uppercase text-primary-600 dark:text-primary-400 font-bold tracking-wider">
-                TACTICAL RADAR · מעורבות תחת לחץ
+                CARTESIAN GRAPH · גרף ציר קרטזי
               </div>
               <h3 class="text-base sm:text-lg font-bold text-neutral-900 dark:text-white mt-0.5">
-                צניחת המעורבות של ויקטוריה פאלובה: משחקים פתוחים מול יריבות לוחצות
+                עקומת התפקוד של ויקטוריה פאלובה לאורך העונה: צניחה חדה מול יריבות לוחצות
               </h3>
             </div>
             <div class="flex items-center gap-3 text-xs font-mono">
-              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>משחק פתוח</span>
-              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>לחץ אינטנסיבי</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>משחק פתוח (מעל 70)</span>
+              <span class="flex items-center gap-1.5"><span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>לחץ אינטנסיבי (צניחה)</span>
             </div>
           </div>
 
-          <!-- The Dynamic Bar Chart -->
-          <div id="pelova-chart-container" class="space-y-2.5">
+          <!-- The Dynamic Cartesian Line Graph -->
+          <div id="pelova-chart-container" class="space-y-4">
             <!-- Rendered by JS -->
           </div>
 
@@ -504,7 +504,7 @@ next_title: null
               <span class="text-xs font-mono text-indigo-600 dark:text-indigo-400 font-bold">אופי ושיניים</span>
             </div>
             <p class="text-xs text-neutral-600 dark:text-neutral-300 leading-relaxed">
-              משחק קשה ומסורבל בווילה פארק, אבל יונייטד של מאיה לה טיסייה וגרייס קלינטון ידעה לקחת את שלוש הנקודות בציפורניים. שער בודד במחצית הראשונה הספיק כדי לשמור על מרחק נגיעה מהכרטיס לליגת האלופות.
+              לא אכביר במילים על הניצחון של יונייטד, רק אגיד שלקבוצה שיש את מדינה, ג'ס פארק ואלה טון, מותר לשחק כדורגל קצת יותר טוב. מצד שני, הייתה יריבה, וילה, שלא התבטלה לגמרי ובמקרה של יונייטד התוצאה כן חשובה יותר מהיכולת, אבל אנחנו ממש בקצה של האשראי והסבלנות כלפי אווה והשחקניות, כי אנחנו ראינו אותן משחקות טוב יותר בדרבי ואנחנו יודעים שיש להן אופי.
             </p>
             <div class="text-[11px] font-mono text-neutral-500 pt-1">
               0.84 מול 1.22 xG · קרב חפירות טקטי

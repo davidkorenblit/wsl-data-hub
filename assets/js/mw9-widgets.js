@@ -15,7 +15,7 @@
     {
       id: "olsson",
       tabLabel: "אולסון (ליברפול, מ' 9)",
-      round: "מחזור 9 · אנפילד / פרנטון פארק",
+      round: "מחזור 9 · אנפילד",
       match: "ליברפול 1 – 2 ארסנל",
       scorer: "אוליביה אולסון (דקה 15')",
       xg: "0.48 xG",
@@ -411,7 +411,7 @@
 
 
   // =========================================================================
-  // 2. VICTORIA PELOVA INVOLVEMENT COLLAPSE CHART
+  // 2. VICTORIA PELOVA INVOLVEMENT COLLAPSE CHART (CARTESIAN COORDINATE GRAPH)
   // =========================================================================
   const PELOVA_DATA = [
     {
@@ -424,7 +424,7 @@
       passes: 47,
       chances: 4,
       rating: 9.44,
-      desc: "משחק פתוח לחלוטין מול קו הגנה מפורק. פאלובה שולטת לחלוטין בקצב ומחלקת כדורים בחופשיות."
+      desc: "משחק פתוח לחלוטין מול קו הגנה מפורק. פאלובה שולטת לחלוטין בקצב ומחלקת כדורים בחופשיות ללא כל לחץ על מובילת הכדור."
     },
     {
       round: "MW4",
@@ -436,31 +436,19 @@
       passes: 58,
       chances: 2,
       rating: 9.25,
-      desc: "שיא עונתי של נגיעות ומסירות מדויקות. ספרס שולטת ב-65% בכדור ופאלובה מנהלת את כל מרכז השדה."
+      desc: "שיא עונתי של נגיעות (86) ומסירות מדויקות (58). ספרס שולטת ב-65% בכדור ופאלובה מנהלת את כל מרכז השדה מעמדה קדמית."
     },
     {
-      round: "MW8",
-      match: "ברמינגהאם (חוץ)",
-      score: "1–4 ניצחון",
-      type: "open",
-      minutes: 90,
-      touches: 74,
-      passes: 46,
-      chances: 5,
-      rating: 9.08,
-      desc: "5 מצבים שיוצרו (שיא משחק) מול יריבה שמתגוננת עמוק ומאפשרת לפאלובה לקבל כדור עם הפנים לשער."
-    },
-    {
-      round: "MW7",
-      match: "ארסנל (בית)",
-      score: "2–1 הפסד",
+      round: "MW5",
+      match: "לס\"ל (בית)",
+      score: "6–1 תבוסה",
       type: "tight",
-      minutes: 90,
-      touches: 54,
-      passes: 18,
-      chances: 2,
-      rating: 8.05,
-      desc: "הדרבי של צפון לונדון: ארסנל מפעילה לחץ אגרסיבי, פאלובה מוגבלת ל-18 מסירות בלבד ב-90 דקות."
+      minutes: 68,
+      touches: 30,
+      passes: 8,
+      chances: 1,
+      rating: 6.84,
+      desc: "קריסה מוחלטת תחת לחץ: 30 נגיעות ב-68 דקות, 8 מסירות בלבד ו-5 איבודי כדור תחת מכבש הלחץ האגרסיבי של לונדון סיטי ליונסס."
     },
     {
       round: "MW6",
@@ -472,7 +460,31 @@
       passes: 22,
       chances: 3,
       rating: 7.28,
-      desc: "צ'לסי חונקת את הקישור. פאלובה מאבדת 3 כדורים מסוכנים ומוחלפת בדקה ה-71."
+      desc: "צ'לסי חונקת את הקישור וסוגרת נתיבי מסירה. פאלובה מאבדת 3 כדורים מסוכנים בחצי שלה ומוחלפת בדקה ה-71."
+    },
+    {
+      round: "MW7",
+      match: "ארסנל (בית)",
+      score: "2–1 הפסד",
+      type: "tight",
+      minutes: 90,
+      touches: 54,
+      passes: 18,
+      chances: 2,
+      rating: 8.05,
+      desc: "הדרבי של צפון לונדון: ארסנל לוחצת גבוה ואגרסיבי. למרות בישול קרן לטנדברג, פאלובה מוגבלת ל-18 מסירות בלבד ב-90 דקות שלמות."
+    },
+    {
+      round: "MW8",
+      match: "ברמינגהאם (חוץ)",
+      score: "1–4 ניצחון",
+      type: "open",
+      minutes: 90,
+      touches: 74,
+      passes: 46,
+      chances: 5,
+      rating: 9.08,
+      desc: "שיא יצירה עונתי של 5 מצבים שהסתיימו בבעיטה מול יריבה מתגוננת עמוק, שמאפשרת לפאלובה לקבל כדור חופשי עם הפנים לשער."
     },
     {
       round: "MW9",
@@ -484,63 +496,308 @@
       passes: 22,
       chances: 0,
       rating: 6.91,
-      desc: "נורת אזהרה בוהקת: 90 דקות מלאות, ופאלובה עם 42 נגיעות בלבד ו-0 מצבים שייצרה! ברייטון ניטרלה אותה."
-    },
-    {
-      round: "MW5",
-      match: "ליונסס (בית)",
-      score: "6–1 תבוסה",
-      type: "tight",
-      minutes: 68,
-      touches: 30,
-      passes: 8,
-      chances: 1,
-      rating: 6.84,
-      desc: "קריסה מוחלטת: 30 נגיעות ב-68 דקות, 8 מסירות בלבד ו-5 איבודי כדור תחת מכבש הלחץ של לס\"ל."
+      desc: "נורת אזהרה בוהקת: 90 דקות מלאות על הדשא, ופאלובה עם 42 נגיעות בלבד ו-0 מצבים שייצרה! ברייטון חנקה אותה וספרס ניצחה בשיניים."
     }
   ];
+
+  let activePelovaMatchIdx = 6; // default to MW9 (Brighton)
+
+  window.selectPelovaMatch = function(idx) {
+    activePelovaMatchIdx = idx;
+    renderPelovaChart();
+  };
+
+  function computeMonotoneSpline(pts) {
+    const n = pts.length;
+    if (n < 2) return '';
+    const x = pts.map(p => p.x);
+    const y = pts.map(p => p.y);
+    const dx = [], dy = [], m = [];
+    for (let i = 0; i < n - 1; i++) {
+      dx.push(x[i+1] - x[i]);
+      dy.push(y[i+1] - y[i]);
+      m.push(dy[i] / dx[i]);
+    }
+    const tangents = [m[0]];
+    for (let i = 1; i < n - 1; i++) {
+      if (m[i-1] * m[i] <= 0) {
+        tangents.push(0);
+      } else {
+        tangents.push((dx[i-1] * m[i] + dx[i] * m[i-1]) / (dx[i-1] + dx[i]));
+      }
+    }
+    tangents.push(m[n - 2]);
+
+    for (let i = 0; i < n - 1; i++) {
+      if (dy[i] === 0) {
+        tangents[i] = 0;
+        tangents[i+1] = 0;
+      } else {
+        const alpha = tangents[i] / m[i];
+        const beta = tangents[i+1] / m[i];
+        const h = Math.hypot(alpha, beta);
+        if (h > 3) {
+          tangents[i] = (3 / h) * alpha * m[i];
+          tangents[i+1] = (3 / h) * beta * m[i];
+        }
+      }
+    }
+
+    let curveD = 'M ' + x[0].toFixed(1) + ' ' + y[0].toFixed(1);
+    for (let i = 0; i < n - 1; i++) {
+      const cp1x = x[i] + dx[i] / 3;
+      const cp1y = y[i] + tangents[i] * dx[i] / 3;
+      const cp2x = x[i+1] - dx[i] / 3;
+      const cp2y = y[i+1] - tangents[i+1] * dx[i] / 3;
+      curveD += ' C ' + cp1x.toFixed(1) + ',' + cp1y.toFixed(1) + ' ' + cp2x.toFixed(1) + ',' + cp2y.toFixed(1) + ' ' + x[i+1].toFixed(1) + ',' + y[i+1].toFixed(1);
+    }
+    return curveD;
+  }
 
   function renderPelovaChart() {
     const container = document.getElementById("pelova-chart-container");
     if (!container) return;
 
-    const maxTouches = 100;
-    let html = "";
+    const width = 800;
+    const height = 370;
+    const padLeft = 70;
+    const padRight = 45;
+    const padTop = 50;
+    const padBottom = 65;
+    const plotW = width - padLeft - padRight;
+    const plotH = height - padTop - padBottom;
 
-    PELOVA_DATA.forEach((item, idx) => {
-      const isOpen = item.type === "open";
-      const barColor = isOpen 
-        ? "bg-gradient-to-r from-emerald-500 to-teal-400" 
-        : (item.round === "MW9" ? "bg-gradient-to-r from-red-600 to-rose-500 ring-2 ring-red-400" : "bg-gradient-to-r from-rose-500 to-red-400");
-      const badgeCls = isOpen 
-        ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800" 
-        : "bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300 border-rose-300 dark:border-rose-800";
-      const widthPct = (item.touches / maxTouches) * 100;
+    const pts = PELOVA_DATA.map((d, i) => ({
+      x: padLeft + i * (plotW / (PELOVA_DATA.length - 1)),
+      y: padTop + (100 - d.touches) * (plotH / 100),
+      data: d,
+      idx: i
+    }));
 
-      html += '<div class="space-y-1.5 p-3 rounded-lg bg-white dark:bg-[#181820] border border-neutral-200 dark:border-neutral-800/80 hover:border-primary-400 dark:hover:border-primary-600 transition-colors shadow-2xs">';
-      html += '  <div class="flex items-center justify-between text-xs sm:text-sm font-sans flex-wrap gap-2">';
-      html += '    <div class="flex items-center gap-2">';
-      html += '      <span class="font-mono font-bold text-neutral-900 dark:text-white px-2 py-0.5 rounded bg-neutral-100 dark:bg-[#252530] border border-neutral-200 dark:border-neutral-700">' + item.round + '</span>';
-      html += '      <span class="font-bold text-neutral-800 dark:text-neutral-100">' + item.match + '</span>';
-      html += '      <span class="text-xs text-neutral-500 font-mono">(' + item.minutes + " דק')</span>";
-      html += '    </div>';
-      html += '    <div class="flex items-center gap-3 font-mono text-xs">';
-      html += '      <span class="px-2 py-0.5 rounded text-[11px] font-bold border ' + badgeCls + '">' + (isOpen ? "משחק פתוח / נחותה" : "לחץ אינטנסיבי / צמרת") + '</span>';
-      html += '      <span class="font-bold text-neutral-900 dark:text-white">' + item.touches + ' נגיעות</span>';
-      html += '      <span class="text-neutral-500 dark:text-neutral-400">(' + item.chances + ' מצבים)</span>';
-      html += '    </div>';
-      html += '  </div>';
+    const curveD = computeMonotoneSpline(pts);
+    const baselineY = padTop + plotH;
+    const areaD = curveD + ' L ' + pts[pts.length - 1].x.toFixed(1) + ' ' + baselineY.toFixed(1) + ' L ' + pts[0].x.toFixed(1) + ' ' + baselineY.toFixed(1) + ' Z';
+    const benchY = padTop + (100 - 50) * (plotH / 100);
 
-      // Bar
-      html += '  <div class="w-full bg-neutral-100 dark:bg-[#22222c] h-3.5 rounded-full overflow-hidden flex items-center relative">';
-      html += '    <div class="h-full rounded-full transition-all duration-700 ' + barColor + '" style="width: ' + widthPct + '%"></div>';
-      html += '    <span class="absolute left-3 text-[10px] font-mono font-bold text-white drop-shadow-xs">' + item.touches + '</span>';
-      html += '  </div>';
+    let html = '';
 
-      // Explanation
-      html += '  <p class="text-[11px] sm:text-xs text-neutral-600 dark:text-neutral-400 font-sans leading-relaxed pt-0.5">' + item.desc + '</p>';
-      html += '</div>';
+    // Summary comparison cards
+    html += '<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2 font-sans">';
+    html += '  <div class="p-3 rounded-lg bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/60 flex items-center justify-between">';
+    html += '    <div>';
+    html += '      <div class="text-[11px] font-mono text-emerald-800 dark:text-emerald-300 font-bold">משחקים פתוחים (פאלאס, וילה, ברמינגהאם)</div>';
+    html += '      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-0.5">ספרס שולטת בקצב ללא לחץ</div>';
+    html += '    </div>';
+    html += '    <div class="text-left font-mono">';
+    html += '      <div class="text-base font-bold text-emerald-600 dark:text-emerald-400">77.7 נגיעות</div>';
+    html += '      <div class="text-[11px] text-emerald-700 dark:text-emerald-300">3.7 מצבים שיוצרו</div>';
+    html += '    </div>';
+    html += '  </div>';
+
+    html += '  <div class="p-3 rounded-lg bg-rose-50/70 dark:bg-rose-950/20 border border-rose-200 dark:border-rose-800/60 flex items-center justify-between">';
+    html += '    <div>';
+    html += '      <div class="text-[11px] font-mono text-rose-800 dark:text-rose-300 font-bold">לחץ אינטנסיבי (לס"ל, צ\'לסי, ארסנל, ברייטון)</div>';
+    html += '      <div class="text-xs text-neutral-600 dark:text-neutral-400 mt-0.5">צניחה של 45% בנגיעות ו-59% ביצירה</div>';
+    html += '    </div>';
+    html += '    <div class="text-left font-mono">';
+    html += '      <div class="text-base font-bold text-rose-600 dark:text-rose-400">43.2 נגיעות</div>';
+    html += '      <div class="text-[11px] text-rose-700 dark:text-rose-300">1.5 מצבים שיוצרו</div>';
+    html += '    </div>';
+    html += '  </div>';
+    html += '</div>';
+
+    // SVG Cartesian Graph Container
+    html += '<div class="relative w-full overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#16161f] shadow-inner p-2 sm:p-4">';
+    html += '  <svg viewBox="0 0 800 370" class="w-full h-auto block select-none font-sans" xmlns="http://www.w3.org/2000/svg">';
+    html += '    <defs>';
+    html += '      <linearGradient id="pelova-area-grad" x1="0" y1="0" x2="0" y2="1">';
+    html += '        <stop offset="0%" stop-color="#6366F1" stop-opacity="0.30" />';
+    html += '        <stop offset="70%" stop-color="#6366F1" stop-opacity="0.06" />';
+    html += '        <stop offset="100%" stop-color="#6366F1" stop-opacity="0.0" />';
+    html += '      </linearGradient>';
+    html += '      <marker id="axis-arrow-y" viewBox="0 0 10 10" refX="5" refY="3" markerWidth="6" markerHeight="6" orient="auto">';
+    html += '        <path d="M 1 9 L 5 1 L 9 9 z" fill="#64748B" />';
+    html += '      </marker>';
+    html += '      <marker id="axis-arrow-x" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">';
+    html += '        <path d="M 1 1 L 9 5 L 1 9 z" fill="#64748B" />';
+    html += '      </marker>';
+    html += '      <filter id="pelova-glow" x="-30%" y="-30%" width="160%" height="160%">';
+    html += '        <feDropShadow dx="0" dy="1.5" stdDeviation="2.5" flood-opacity="0.3" />';
+    html += '      </filter>';
+    html += '    </defs>';
+
+    // Zone Shading
+    html += '    <!-- Zone 1: Control & Dominance (>50) -->';
+    html += '    <rect x="' + padLeft + '" y="' + padTop + '" width="' + plotW + '" height="' + (benchY - padTop) + '" fill="#10B981" fill-opacity="0.05" rx="3" />';
+    html += '    <text x="' + (padLeft + plotW - 8) + '" y="' + (padTop + 18) + '" text-anchor="end" font-size="10.5" font-weight="bold" fill="#10B981" opacity="0.85">▲ אזור שליטה ודומיננטיות (משחקים פתוחים · 50–100 נגיעות)</text>';
+
+    html += '    <!-- Zone 2: Suffocation & Drop (<50) -->';
+    html += '    <rect x="' + padLeft + '" y="' + benchY + '" width="' + plotW + '" height="' + (baselineY - benchY) + '" fill="#F43F5E" fill-opacity="0.05" rx="3" />';
+    html += '    <text x="' + (padLeft + plotW - 8) + '" y="' + (baselineY - 12) + '" text-anchor="end" font-size="10.5" font-weight="bold" fill="#F43F5E" opacity="0.85">▼ אזור חנק וצניחה תחת לחץ (קבוצות אגרסיביות · 0–50 נגיעות)</text>';
+
+    // Horizontal Grid Lines at 100, 80, 60, 40, 20
+    [100, 80, 60, 40, 20].forEach(v => {
+      const gy = padTop + (100 - v) * (plotH / 100);
+      html += '    <line x1="' + padLeft + '" y1="' + gy + '" x2="' + (padLeft + plotW) + '" y2="' + gy + '" stroke="rgba(148, 163, 184, 0.22)" stroke-dasharray="3,3" stroke-width="1" />';
+      html += '    <text x="' + (padLeft - 10) + '" y="' + (gy + 4) + '" text-anchor="end" font-family="monospace" font-size="11" font-weight="600" fill="#64748B">' + v + '</text>';
     });
+
+    // Benchmark Line at 50
+    html += '    <!-- Benchmark Line 50 Touches -->';
+    html += '    <line x1="' + padLeft + '" y1="' + benchY + '" x2="' + (padLeft + plotW) + '" y2="' + benchY + '" stroke="#F59E0B" stroke-width="1.8" stroke-dasharray="6,4" />';
+    html += '    <g transform="translate(' + (padLeft + 6) + ', ' + (benchY - 12) + ')">';
+    html += '      <rect width="162" height="23" rx="5" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />';
+    html += '      <text x="81" y="15" text-anchor="middle" font-size="11" font-weight="bold" fill="#B45309">סף שליטה ומעורבות (50 נגיעות)</text>';
+    html += '    </g>';
+
+    // Axes
+    html += '    <!-- Cartesian Axes -->';
+    html += '    <line x1="' + padLeft + '" y1="' + (baselineY + 6) + '" x2="' + padLeft + '" y2="' + (padTop - 25) + '" stroke="#64748B" stroke-width="2" marker-end="url(#axis-arrow-y)" />';
+    html += '    <text x="' + (padLeft + 6) + '" y="' + (padTop - 20) + '" text-anchor="start" font-size="11" font-weight="bold" fill="#64748B">נגיעות בכדור (ציר Y)</text>';
+
+    html += '    <line x1="' + (padLeft - 5) + '" y1="' + baselineY + '" x2="' + (padLeft + plotW + 24) + '" y2="' + baselineY + '" stroke="#64748B" stroke-width="2" marker-end="url(#axis-arrow-x)" />';
+    html += '    <text x="' + (padLeft + plotW + 20) + '" y="' + (baselineY + 22) + '" text-anchor="end" font-size="11" font-weight="bold" fill="#64748B">רצף מחזורים (ציר X) →</text>';
+
+    // Curve and Area
+    html += '    <!-- Continuous Smooth Curve -->';
+    html += '    <path d="' + areaD + '" fill="url(#pelova-area-grad)" />';
+    html += '    <path d="' + curveD + '" fill="none" stroke="#6366F1" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />';
+
+    // Points & Labels
+    pts.forEach((p, i) => {
+      const isSel = (i === activePelovaMatchIdx);
+      const isOpen = (p.data.type === "open");
+      const color = isOpen ? "#10B981" : (p.data.round === "MW9" ? "#DC2626" : "#F43F5E");
+      const textColor = isOpen ? "#059669" : (p.data.round === "MW9" ? "#991B1B" : "#E11D48");
+
+      // X Axis ticks & texts
+      html += '    <!-- Point ' + p.data.round + ' -->';
+      html += '    <line x1="' + p.x.toFixed(1) + '" y1="' + baselineY + '" x2="' + p.x.toFixed(1) + '" y2="' + (baselineY + 6) + '" stroke="#64748B" stroke-width="1.5" />';
+      html += '    <text x="' + p.x.toFixed(1) + '" y="' + (baselineY + 20) + '" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="12" fill="' + (isSel ? "#6366F1" : "#0F172A") + '">' + p.data.round + '</text>';
+      html += '    <text x="' + p.x.toFixed(1) + '" y="' + (baselineY + 34) + '" text-anchor="middle" font-size="10.5" fill="#475569">' + p.data.match.split(" ")[0] + '</text>';
+      html += '    <text x="' + p.x.toFixed(1) + '" y="' + (baselineY + 47) + '" text-anchor="middle" font-family="monospace" font-size="9.5" fill="#94A3B8">' + p.data.score.split(" ")[0] + '</text>';
+
+      // Point Halo and Core
+      html += '    <circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + (isSel ? 11 : 8.5) + '" fill="' + color + '" fill-opacity="0.25" stroke="' + color + '" stroke-width="' + (isSel ? 2.5 : 1.5) + '" filter="url(#pelova-glow)" />';
+      html += '    <circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + (isSel ? 5.5 : 4) + '" fill="' + color + '" stroke="#FFFFFF" stroke-width="1.8" />';
+
+      // Point direct labels
+      let badgeX = p.x;
+      let badgeY = p.y - 28;
+      let badgeW = 76;
+      let badgeH = 28;
+      let titleText = p.data.touches + " נגיעות";
+      let subText = p.data.chances + (p.data.chances === 1 ? " מצב" : " מצבים");
+
+      if (p.data.round === "MW3") {
+        badgeX = p.x + 18;
+        badgeY = p.y - 34;
+      } else if (p.data.round === "MW4") {
+        badgeW = 86;
+        badgeH = 30;
+        badgeY = p.y - 36;
+        titleText = p.data.touches + " · שיא ⭐";
+      } else if (p.data.round === "MW5") {
+        badgeW = 88;
+        badgeH = 30;
+        badgeY = p.y + 12;
+        titleText = p.data.touches + " · שפל ⚠️";
+      } else if (p.data.round === "MW6") {
+        badgeY = p.y + 12;
+      } else if (p.data.round === "MW7") {
+        badgeY = p.y - 34;
+      } else if (p.data.round === "MW8") {
+        badgeW = 90;
+        badgeH = 30;
+        badgeY = p.y - 36;
+        titleText = p.data.touches + " · יצירה ⭐";
+      } else if (p.data.round === "MW9") {
+        badgeX = p.x - 38;
+        badgeY = p.y + 10;
+        badgeW = 98;
+        badgeH = 32;
+        titleText = p.data.touches + " · צניחה ⚠️";
+        subText = "0 מצבים ב-90'!";
+      }
+
+      html += '    <g transform="translate(' + (badgeX - badgeW / 2).toFixed(1) + ', ' + badgeY.toFixed(1) + ')" style="cursor: pointer;" onclick="window.selectPelovaMatch(' + i + ')">';
+      html += '      <rect width="' + badgeW + '" height="' + badgeH + '" rx="5" fill="' + color + '" fill-opacity="0.14" stroke="' + color + '" stroke-width="' + (isSel ? 1.8 : 1) + '" />';
+      html += '      <text x="' + (badgeW / 2) + '" y="13" text-anchor="middle" font-family="monospace" font-weight="bold" font-size="11" fill="' + textColor + '">' + titleText + '</text>';
+      html += '      <text x="' + (badgeW / 2) + '" y="' + (badgeH - 4) + '" text-anchor="middle" font-size="9.5" font-weight="' + (p.data.round === "MW9" ? "bold" : "normal") + '" fill="' + textColor + '">' + subText + '</text>';
+      html += '    </g>';
+
+      // Click hitbox
+      html += '    <circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + 22 + '" fill="transparent" style="cursor: pointer;" onclick="window.selectPelovaMatch(' + i + ')">';
+      html += '      <title>' + p.data.round + ': ' + p.data.match + ' - ' + p.data.touches + ' נגיעות, ' + p.data.chances + ' מצבים</title>';
+      html += '    </circle>';
+    });
+
+    html += '  </svg>';
+    html += '</div>';
+
+    // Interactive Round Switcher Buttons
+    html += '<div class="pt-2">';
+    html += '  <div class="text-xs font-sans text-neutral-500 dark:text-neutral-400 mb-2 font-medium">בחר מחזור לבחינת הנתונים והניתוח הטקטי:</div>';
+    html += '  <div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">';
+    PELOVA_DATA.forEach((item, idx) => {
+      const isSel = (idx === activePelovaMatchIdx);
+      const isOpen = (item.type === "open");
+      const btnBorder = isSel 
+        ? "border-primary-600 bg-primary-50 dark:bg-primary-950/40 text-primary-700 dark:text-primary-300 font-bold shadow-xs" 
+        : "border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#181820] text-neutral-700 dark:text-neutral-300 hover:border-neutral-300 dark:hover:border-neutral-700";
+      const dotColor = isOpen ? "bg-emerald-500" : (item.round === "MW9" ? "bg-red-600" : "bg-rose-500");
+
+      html += '    <button type="button" onclick="window.selectPelovaMatch(' + idx + ')" class="px-2.5 py-1.5 rounded-lg border text-xs font-mono transition-all flex items-center gap-1.5 whitespace-nowrap ' + btnBorder + '">';
+      html += '      <span class="w-2 h-2 rounded-full ' + dotColor + '"></span>';
+      html += '      <span>' + item.round + '</span>';
+      html += '      <span class="text-[11px] font-sans opacity-80">(' + item.touches + ' נג\')</span>';
+      html += '    </button>';
+    });
+    html += '  </div>';
+    html += '</div>';
+
+    // Active Match Detail Card
+    const activeItem = PELOVA_DATA[activePelovaMatchIdx];
+    const isOpen = activeItem.type === "open";
+    const badgeCls = isOpen 
+      ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border-emerald-300 dark:border-emerald-800" 
+      : "bg-rose-100 text-rose-800 dark:bg-rose-950/60 dark:text-rose-300 border-rose-300 dark:border-rose-800";
+
+    html += '<div class="p-4 rounded-xl border border-neutral-200 dark:border-neutral-800 bg-neutral-50/70 dark:bg-[#181822] space-y-3 font-sans shadow-2xs">';
+    html += '  <div class="flex items-center justify-between flex-wrap gap-2 border-b border-neutral-200/70 dark:border-neutral-800 pb-2.5">';
+    html += '    <div class="flex items-center gap-2">';
+    html += '      <span class="px-2 py-0.5 rounded font-mono font-bold text-xs bg-neutral-200/80 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200">' + activeItem.round + '</span>';
+    html += '      <span class="font-bold text-neutral-900 dark:text-white text-sm sm:text-base">' + activeItem.match + ' (' + activeItem.score + ')</span>';
+    html += '    </div>';
+    html += '    <div class="flex items-center gap-2">';
+    html += '      <span class="px-2 py-0.5 rounded text-[11px] font-bold border ' + badgeCls + '">' + (isOpen ? "משחק פתוח / נחותה" : "לחץ אינטנסיבי / יריבה אגרסיבית") + '</span>';
+    html += '      <span class="text-xs font-mono font-bold px-2 py-0.5 rounded bg-primary-100 dark:bg-primary-950/60 text-primary-800 dark:text-primary-300">ציון ' + activeItem.rating + '</span>';
+    html += '    </div>';
+    html += '  </div>';
+
+    // 4 Stats Grid
+    html += '  <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-center font-mono">';
+    html += '    <div class="p-2 rounded-lg bg-white dark:bg-[#121218] border border-neutral-200/80 dark:border-neutral-800">';
+    html += '      <div class="text-[10px] text-neutral-500 uppercase">נגיעות בכדור</div>';
+    html += '      <div class="text-base sm:text-lg font-bold ' + (activeItem.touches >= 50 ? 'text-emerald-600 dark:text-emerald-400' : 'text-rose-600 dark:text-rose-400') + '">' + activeItem.touches + '</div>';
+    html += '    </div>';
+    html += '    <div class="p-2 rounded-lg bg-white dark:bg-[#121218] border border-neutral-200/80 dark:border-neutral-800">';
+    html += '      <div class="text-[10px] text-neutral-500 uppercase">מצבים שיוצרו</div>';
+    html += '      <div class="text-base sm:text-lg font-bold ' + (activeItem.chances > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-neutral-400') + '">' + activeItem.chances + '</div>';
+    html += '    </div>';
+    html += '    <div class="p-2 rounded-lg bg-white dark:bg-[#121218] border border-neutral-200/80 dark:border-neutral-800">';
+    html += '      <div class="text-[10px] text-neutral-500 uppercase">מסירות מדויקות</div>';
+    html += '      <div class="text-base sm:text-lg font-bold text-neutral-900 dark:text-white">' + activeItem.passes + '</div>';
+    html += '    </div>';
+    html += '    <div class="p-2 rounded-lg bg-white dark:bg-[#121218] border border-neutral-200/80 dark:border-neutral-800">';
+    html += '      <div class="text-[10px] text-neutral-500 uppercase">דקות משחק</div>';
+    html += '      <div class="text-base sm:text-lg font-bold text-neutral-900 dark:text-white">' + activeItem.minutes + '\'</div>';
+    html += '    </div>';
+    html += '  </div>';
+
+    // Description
+    html += '  <p class="text-xs sm:text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed pt-1">' + activeItem.desc + '</p>';
+    html += '</div>';
 
     container.innerHTML = html;
   }
