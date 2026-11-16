@@ -2,8 +2,8 @@ name: WSL Data Platform - Automated Weekly ELT Pipeline
 
 on:
   schedule:
-    # Test schedule: Monday at 10:20 UTC (12:20 Israel Time)
-    - cron: '20 10 * * 1'
+    # Test schedule: Monday at 10:55 UTC (12:55 Israel Time)
+    - cron: '55 10 * * 1'
   workflow_dispatch:
 
 permissions:
