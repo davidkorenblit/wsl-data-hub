@@ -64,6 +64,9 @@ lang: he
         <p id="user-badge" class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5"></p>
       </div>
       <div class="flex items-center gap-2">
+        <button id="toggle-writer-btn" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white transition-colors">
+          📝 פתח עורך טור
+        </button>
         <button id="refresh-btn" class="px-3 py-1.5 text-xs font-medium rounded-lg border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
           רענן נתונים
         </button>
@@ -94,6 +97,51 @@ lang: he
         <div id="kpi-avg-label" class="text-xs text-neutral-500 dark:text-neutral-400">ממוצע דירוג</div>
         <div id="kpi-avg" class="text-2xl font-mono font-bold mt-1 text-neutral-900 dark:text-white">-</div>
       </div>
+    </div>
+
+    <!-- LAYER 2: WRITING STUDIO PANEL -->
+    <div id="writer-panel" class="hidden bg-white dark:bg-[#121215] border border-emerald-500/40 rounded-xl p-4 space-y-3 shadow-sm">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-2 border-b border-neutral-200 dark:border-neutral-800">
+        <div class="flex items-center gap-2">
+          <span class="text-sm font-bold text-neutral-900 dark:text-white">📝 סביבת כתיבת טור (Layer 2)</span>
+          <span id="writer-word-count" class="text-[11px] font-mono text-neutral-500">0 מילים</span>
+          <span id="writer-save-badge" class="text-[11px] text-emerald-500 hidden">נשמר מקומית ✓</span>
+        </div>
+        <div class="flex flex-wrap items-center gap-1.5">
+          <button id="insert-top5-btn" type="button" class="px-2.5 py-1 text-xs rounded-md bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 hover:bg-emerald-500/25">
+            + הכנס Top-5 מהטבלה
+          </button>
+          <button id="toggle-preview-btn" type="button" class="px-2.5 py-1 text-xs rounded-md border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+            תצוגה מקדימה
+          </button>
+          <button id="copy-md-btn" type="button" class="px-2.5 py-1 text-xs rounded-md border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+            העתק Markdown
+          </button>
+          <button id="download-md-btn" type="button" class="px-2.5 py-1 text-xs rounded-md bg-neutral-900 dark:bg-white text-white dark:text-neutral-900 font-semibold hover:opacity-90">
+            הורד קובץ .md
+          </button>
+          <button id="clear-md-btn" type="button" class="px-2 py-1 text-xs rounded-md text-neutral-400 hover:text-red-500">
+            נקה
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-4 gap-3">
+        <div class="sm:col-span-3">
+          <input id="writer-title" type="text" placeholder="כותרת הטור (למשל: מחזור 10: מה מספרים הנתונים על צ'לסי וארסנל)"
+            class="w-full px-3 py-2 text-sm font-semibold rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+        </div>
+        <div>
+          <input id="writer-round" type="number" min="1" max="26" placeholder="מספר מחזור (למשל 10)"
+            class="w-full px-3 py-2 text-sm font-mono rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+        </div>
+      </div>
+
+      <textarea id="writer-editor" rows="10" dir="rtl"
+        placeholder="התחל לכתוב את שלד הטור כאן ב-Markdown...&#10;&#10;## 1. כותרת משנה&#10;- תובנה מהדשבורד&#10;- לחץ על '+ הכנס Top-5 מהטבלה' כדי להזריק נתונים ישר לכאן"
+        class="w-full p-3 text-sm leading-relaxed rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white font-sans focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+
+      <div id="writer-preview" class="hidden p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-neutral-50 dark:bg-[#09090B] prose dark:prose-invert max-w-none text-sm leading-relaxed space-y-2"></div>
     </div>
 
     <!-- Tabs + Filters Card -->
@@ -986,6 +1034,129 @@ lang: he
   ["filter-search", "filter-action-min"].forEach(id => {
     document.getElementById(id).addEventListener("input", render);
   });
+
+  // --- LAYER 2: WRITING STUDIO LOGIC ---
+  const writerPanel = document.getElementById("writer-panel");
+  const writerTitle = document.getElementById("writer-title");
+  const writerRound = document.getElementById("writer-round");
+  const writerEditor = document.getElementById("writer-editor");
+  const writerPreview = document.getElementById("writer-preview");
+  const writerWordCount = document.getElementById("writer-word-count");
+  const writerSaveBadge = document.getElementById("writer-save-badge");
+  let isPreviewMode = false;
+
+  function updateWriterStats() {
+    const words = writerEditor.value.trim().split(/\s+/).filter(Boolean).length;
+    writerWordCount.textContent = `${words} מילים`;
+  }
+
+  function saveDraftLocal() {
+    localStorage.setItem("wsl_admin_draft_title", writerTitle.value);
+    localStorage.setItem("wsl_admin_draft_round", writerRound.value);
+    localStorage.setItem("wsl_admin_draft_body", writerEditor.value);
+    updateWriterStats();
+    writerSaveBadge.classList.remove("hidden");
+    setTimeout(() => writerSaveBadge.classList.add("hidden"), 1500);
+  }
+
+  function loadDraftLocal() {
+    writerTitle.value = localStorage.getItem("wsl_admin_draft_title") || "";
+    writerRound.value = localStorage.getItem("wsl_admin_draft_round") || "";
+    writerEditor.value = localStorage.getItem("wsl_admin_draft_body") || "";
+    updateWriterStats();
+  }
+
+  function buildFullMarkdown() {
+    const round = writerRound.value.trim() || "10";
+    const title = writerTitle.value.trim() || `סיכום מחזור ${round} | WSL 2026/27`;
+    const frontMatter = [
+      "---",
+      "layout: default",
+      `title: "${title.replace(/"/g, '\\"')}"`,
+      `permalink: /weekly/mw${round}/`,
+      "lang: he",
+      "---",
+      ""
+    ].join("\n");
+    return frontMatter + "\n" + writerEditor.value;
+  }
+
+  function renderSimpleMarkdown(md) {
+    const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return esc(md)
+      .replace(/^### (.+)$/gm, '<h3 class="text-base font-bold mt-3">$1</h3>')
+      .replace(/^## (.+)$/gm, '<h2 class="text-lg font-bold mt-4 text-emerald-500">$1</h2>')
+      .replace(/^# (.+)$/gm, '<h1 class="text-xl font-bold mt-4">$1</h1>')
+      .replace(/^&gt; (.+)$/gm, '<blockquote class="border-r-2 border-emerald-500 pr-3 text-neutral-400 italic">$1</blockquote>')
+      .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+      .replace(/^- (.+)$/gm, '<div class="pr-3">• $1</div>')
+      .replace(/\n/g, "<br>");
+  }
+
+  document.getElementById("toggle-writer-btn").addEventListener("click", () => {
+    const hidden = writerPanel.classList.toggle("hidden");
+    document.getElementById("toggle-writer-btn").textContent = hidden ? "📝 פתח עורך טור" : "📝 סגור עורך טור";
+  });
+
+  [writerTitle, writerRound, writerEditor].forEach(el => {
+    el.addEventListener("input", () => {
+      saveDraftLocal();
+      if (isPreviewMode) writerPreview.innerHTML = renderSimpleMarkdown(writerEditor.value);
+    });
+  });
+
+  document.getElementById("toggle-preview-btn").addEventListener("click", () => {
+    isPreviewMode = !isPreviewMode;
+    writerEditor.classList.toggle("hidden", isPreviewMode);
+    writerPreview.classList.toggle("hidden", !isPreviewMode);
+    document.getElementById("toggle-preview-btn").textContent = isPreviewMode ? "חזור לעריכה" : "תצוגה מקדימה";
+    if (isPreviewMode) writerPreview.innerHTML = renderSimpleMarkdown(writerEditor.value);
+  });
+
+  document.getElementById("insert-top5-btn").addEventListener("click", () => {
+    if (!filteredRows.length) return;
+    const cols = activeTab === "shots"
+      ? SHOT_COLS.slice(0, 7)
+      : PRESETS[activePreset].filter(c => !(aggMode === "match" && c.aggOnly) && !(aggMode !== "match" && c.matchOnly)).slice(0, 8);
+    const top5 = filteredRows.slice(0, 5);
+    const header = "| " + cols.map(c => c.label).join(" | ") + " |";
+    const sep = "| " + cols.map(() => "---").join(" | ") + " |";
+    const body = top5.map(r => "| " + cols.map(c => {
+      let v = r[c.key];
+      if (v == null) return "-";
+      if (typeof v === "number" && !Number.isInteger(v)) return v.toFixed(2);
+      return v;
+    }).join(" | ") + " |").join("\n");
+    const snippet = `\n${header}\n${sep}\n${body}\n`;
+    const pos = writerEditor.selectionStart ?? writerEditor.value.length;
+    writerEditor.value = writerEditor.value.slice(0, pos) + snippet + writerEditor.value.slice(pos);
+    saveDraftLocal();
+  });
+
+  document.getElementById("copy-md-btn").addEventListener("click", async () => {
+    await navigator.clipboard.writeText(buildFullMarkdown());
+    const btn = document.getElementById("copy-md-btn");
+    btn.textContent = "הועתק! ✓";
+    setTimeout(() => btn.textContent = "העתק Markdown", 1500);
+  });
+
+  document.getElementById("download-md-btn").addEventListener("click", () => {
+    const round = writerRound.value.trim() || "draft";
+    const blob = new Blob([buildFullMarkdown()], { type: "text/markdown;charset=utf-8;" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `mw${round}.md`;
+    a.click();
+  });
+
+  document.getElementById("clear-md-btn").addEventListener("click", () => {
+    if (!confirm("לנקות את טיוטת הטור הנוכחית?")) return;
+    writerTitle.value = "";
+    writerEditor.value = "";
+    saveDraftLocal();
+  });
+
+  loadDraftLocal();
 
   // Boot
   (async function boot() {
