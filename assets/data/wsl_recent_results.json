@@ -25,17 +25,26 @@
     "away_color": "#1B449C",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/614828_small.png",
     "away_score": 0,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
-    "home_scorers": [],
+    "home_xg": "1.79",
+    "away_xg": "0.39",
+    "home_shots": 22,
+    "away_shots": 5,
+    "home_sot": 3,
+    "away_sot": 0,
+    "home_possession": 75,
+    "away_possession": 25,
+    "home_scorers": [
+      {
+        "name": "Maya Le Tissier",
+        "minute": "18'"
+      },
+      {
+        "name": "Elisabeth Terland",
+        "minute": "65'"
+      }
+    ],
     "away_scorers": [],
-    "has_deep_stats": false
+    "has_deep_stats": true
   },
   {
     "id": 5981690,
@@ -63,17 +72,22 @@
     "away_color": "#6CABDD",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231488_small.png",
     "away_score": 0,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
-    "home_scorers": [],
+    "home_xg": "1.92",
+    "away_xg": "1.15",
+    "home_shots": 13,
+    "away_shots": 13,
+    "home_sot": 2,
+    "away_sot": 1,
+    "home_possession": 54,
+    "away_possession": 46,
+    "home_scorers": [
+      {
+        "name": "Sandy Baltimore",
+        "minute": "45'"
+      }
+    ],
     "away_scorers": [],
-    "has_deep_stats": false
+    "has_deep_stats": true
   },
   {
     "id": 5981694,
@@ -101,17 +115,17 @@
     "away_color": "#003399",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258663_small.png",
     "away_score": 0,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
+    "home_xg": "1.66",
+    "away_xg": "0.46",
+    "home_shots": 17,
+    "away_shots": 10,
+    "home_sot": 3,
+    "away_sot": 4,
+    "home_possession": 60,
+    "away_possession": 40,
     "home_scorers": [],
     "away_scorers": [],
-    "has_deep_stats": false
+    "has_deep_stats": true
   },
   {
     "id": 5981693,
@@ -139,17 +153,26 @@
     "away_color": "#C8102E",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258665_small.png",
     "away_score": 3,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
+    "home_xg": "0.67",
+    "away_xg": "1.83",
+    "home_shots": 7,
+    "away_shots": 11,
+    "home_sot": 2,
+    "away_sot": 7,
+    "home_possession": 53,
+    "away_possession": 47,
     "home_scorers": [],
-    "away_scorers": [],
-    "has_deep_stats": false
+    "away_scorers": [
+      {
+        "name": "Beata Olsson",
+        "minute": "4', 78'"
+      },
+      {
+        "name": "Cornelia Kapocs",
+        "minute": "48'"
+      }
+    ],
+    "has_deep_stats": true
   },
   {
     "id": 5981696,
@@ -177,17 +200,22 @@
     "away_color": "#0000FF",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/258658_small.png",
     "away_score": 0,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
-    "home_scorers": [],
+    "home_xg": "1.88",
+    "away_xg": "1.84",
+    "home_shots": 13,
+    "away_shots": 24,
+    "home_sot": 5,
+    "away_sot": 6,
+    "home_possession": 58,
+    "away_possession": 42,
+    "home_scorers": [
+      {
+        "name": "Mathilde Harviken",
+        "minute": "76'"
+      }
+    ],
     "away_scorers": [],
-    "has_deep_stats": false
+    "has_deep_stats": true
   },
   {
     "id": 5981695,
@@ -215,17 +243,22 @@
     "away_color": "#D40000",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/231502_small.png",
     "away_score": 0,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
-    "home_scorers": [],
+    "home_xg": "1.98",
+    "away_xg": "0.08",
+    "home_shots": 17,
+    "away_shots": 3,
+    "home_sot": 6,
+    "away_sot": 1,
+    "home_possession": 54,
+    "away_possession": 46,
+    "home_scorers": [
+      {
+        "name": "Viviane Asseyi",
+        "minute": "43', 53'"
+      }
+    ],
     "away_scorers": [],
-    "has_deep_stats": false
+    "has_deep_stats": true
   },
   {
     "id": 5981691,
@@ -253,16 +286,26 @@
     "away_color": "#E91E63",
     "away_crest": "https://images.fotmob.com/image_resources/logo/teamlogo/1075419_small.png",
     "away_score": 1,
-    "home_xg": null,
-    "away_xg": null,
-    "home_shots": null,
-    "away_shots": null,
-    "home_sot": null,
-    "away_sot": null,
-    "home_possession": null,
-    "away_possession": null,
-    "home_scorers": [],
-    "away_scorers": [],
-    "has_deep_stats": false
+    "home_xg": "1.14",
+    "away_xg": "0.62",
+    "home_shots": 17,
+    "away_shots": 14,
+    "home_sot": 9,
+    "away_sot": 2,
+    "home_possession": 44,
+    "away_possession": 56,
+    "home_scorers": [
+      {
+        "name": "Frida Maanum",
+        "minute": "10'"
+      }
+    ],
+    "away_scorers": [
+      {
+        "name": "Isobel Goodwin",
+        "minute": "11'"
+      }
+    ],
+    "has_deep_stats": true
   }
 ]

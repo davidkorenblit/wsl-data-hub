@@ -50,6 +50,80 @@ HEBREW_DAYS = ["שני", "שלישי", "רביעי", "חמישי", "שישי", "
 HEBREW_MONTHS = ["", "בינואר", "בפברואר", "במרץ", "באפריל", "במאי", "ביוני", "ביולי", "באוגוסט", "בספטמבר", "באוקטובר", "בנובמבר", "בדצמבר"]
 
 
+def parse_match_deep_stats(raw_detail: dict) -> Dict[str, Any]:
+    """Parses xG, shots, possession, and scorers from matchDetails payload."""
+    content = raw_detail.get("content", {})
+    facts = content.get("matchFacts", {})
+    events = facts.get("events", {}).get("events", [])
+
+    home_scorers_dict = {}
+    away_scorers_dict = {}
+
+    for e in events:
+        if e.get("type") == "Goal":
+            scorer = e.get("player", {}).get("name", "Unknown")
+            minute = str(e.get("time", "")) + "'"
+            if e.get("ownGoal", False):
+                scorer += " (ע\"ע)"
+
+            is_home = e.get("isHome", True)
+            target_dict = home_scorers_dict if is_home else away_scorers_dict
+            target_dict.setdefault(scorer, []).append(minute)
+
+    home_scorers = [{"name": name, "minute": ", ".join(mins)} for name, mins in home_scorers_dict.items()]
+    away_scorers = [{"name": name, "minute": ", ".join(mins)} for name, mins in away_scorers_dict.items()]
+
+    stats_map = {}
+    for grp in content.get("stats", {}).get("Periods", {}).get("All", {}).get("stats", []):
+        for s in grp.get("stats", []):
+            stats_map[s.get("title") or s.get("key")] = s.get("stats")
+
+    xg = stats_map.get("Expected goals (xG)", [None, None])
+    shots = stats_map.get("Total shots", [None, None])
+    sot = stats_map.get("Shots on target", [None, None])
+    poss = stats_map.get("Ball possession", [None, None])
+
+    has_stats = any(v is not None for v in [xg[0], shots[0], sot[0]]) or bool(home_scorers or away_scorers)
+
+    return {
+        "home_xg": str(xg[0]) if xg[0] is not None else None,
+        "away_xg": str(xg[1]) if xg[1] is not None else None,
+        "home_shots": shots[0] if shots[0] is not None else None,
+        "away_shots": shots[1] if shots[1] is not None else None,
+        "home_sot": sot[0] if sot[0] is not None else None,
+        "away_sot": sot[1] if sot[1] is not None else None,
+        "home_possession": poss[0] if poss[0] is not None else None,
+        "away_possession": poss[1] if poss[1] is not None else None,
+        "home_scorers": home_scorers,
+        "away_scorers": away_scorers,
+        "has_deep_stats": has_stats,
+    }
+
+
+def fetch_match_details_payload(match_id: int) -> Optional[dict]:
+    """Retrieves matchDetails JSON from local cache or Data Lake without redundant network calls."""
+    # 1. Local raw match cache
+    matches_dir = PROJECT_ROOT / "data" / "raw" / "fotmob" / "matches"
+    if matches_dir.exists():
+        for p in matches_dir.glob(f"*{match_id}*.json"):
+            try:
+                with open(p, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+
+    # 2. Data Lake fallback (S3 bronze)
+    try:
+        from wsl_lake.storage import DataLakeStorage
+        lake = DataLakeStorage()
+        key = f"bronze/fotmob/matches/season=2026_2027/match_{match_id}.json"
+        return lake.download_json(key=key)
+    except Exception as e:
+        logger.debug(f"Could not load match_{match_id} from Data Lake: {e}")
+
+    return None
+
+
 def export_recent_results_to_site() -> List[Dict[str, Any]]:
     """Extracts and formats recent matches from latest finished round for the homepage widget."""
     matches_file = SITE_DATA_DIR / "wsl_matches.json"
@@ -73,11 +147,28 @@ def export_recent_results_to_site() -> List[Dict[str, Any]]:
     round_matches = [m for m in matches if str(m.get("round")) == str(latest_round) and m.get("finished")]
     logger.info(f"Exporting recent results for Round {latest_round} ({len(round_matches)} matches)...")
 
+    dest_site = SITE_DATA_DIR / "wsl_recent_results.json"
+    existing_items: Dict[int, Dict[str, Any]] = {}
+    if dest_site.exists():
+        try:
+            with open(dest_site, "r", encoding="utf-8") as f:
+                for row in json.load(f):
+                    if isinstance(row, dict) and "id" in row:
+                        existing_items[int(row["id"])] = row
+        except Exception as e:
+            logger.debug(f"Could not parse existing {dest_site}: {e}")
+
     enriched = []
     for m in round_matches:
         mid = int(m.get("id"))
         home_id = int(m.get("home_id", 0))
         away_id = int(m.get("away_id", 0))
+
+        # Check if already present on site with deep stats (avoid duplicate lookups)
+        cached_match = existing_items.get(mid)
+        if cached_match and cached_match.get("has_deep_stats"):
+            enriched.append(cached_match)
+            continue
 
         home_meta = TEAMS_META.get(home_id, {
             "slug": m.get("home", "").lower().replace(" (w)", "").replace(" ", "-"),
@@ -119,6 +210,22 @@ def export_recent_results_to_site() -> List[Dict[str, Any]]:
 
         is_lcl = (home_meta["slug"] == "london-city-lionesses" or away_meta["slug"] == "london-city-lionesses")
 
+        # Fetch deep details (xG, scorers, shots) from cache / Data Lake only if needed
+        raw_detail = fetch_match_details_payload(mid)
+        deep_stats = parse_match_deep_stats(raw_detail) if raw_detail else {
+            "home_xg": None,
+            "away_xg": None,
+            "home_shots": None,
+            "away_shots": None,
+            "home_sot": None,
+            "away_sot": None,
+            "home_possession": None,
+            "away_possession": None,
+            "home_scorers": [],
+            "away_scorers": [],
+            "has_deep_stats": False,
+        }
+
         item = {
             "id": mid,
             "round": str(latest_round),
@@ -148,17 +255,7 @@ def export_recent_results_to_site() -> List[Dict[str, Any]]:
             "away_crest": away_meta.get("crest"),
             "away_score": a_score,
 
-            "home_xg": None,
-            "away_xg": None,
-            "home_shots": None,
-            "away_shots": None,
-            "home_sot": None,
-            "away_sot": None,
-            "home_possession": None,
-            "away_possession": None,
-            "home_scorers": [],
-            "away_scorers": [],
-            "has_deep_stats": False,
+            **deep_stats,
         }
         enriched.append(item)
 
