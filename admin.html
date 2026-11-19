@@ -1,0 +1,553 @@
+---
+layout: default
+title: "Admin BI Studio | WSL Data Hub"
+permalink: /admin/
+lang: he
+---
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<div id="admin-app" class="max-w-7xl mx-auto px-4 py-6">
+
+  <!-- LOGIN VIEW -->
+  <div id="login-section" class="max-w-md mx-auto mt-12 bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-6 shadow-sm">
+    <div class="mb-5">
+      <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400 mb-1">
+        <span>WSL Data Hub</span>
+        <span>•</span>
+        <span>Admin BI Studio</span>
+      </div>
+      <h1 class="text-xl font-bold text-neutral-900 dark:text-white">התחברות לאזור הניהול</h1>
+      <p class="text-xs text-neutral-500 dark:text-neutral-400 mt-1">גישה מאובטחת לטבלאות ה-Gold ב-Supabase (שחקניות ובעיטות).</p>
+    </div>
+
+    <form id="login-form" class="space-y-4">
+      <div id="key-config-box" class="hidden">
+        <label class="block text-xs font-medium text-neutral-700 dark:text-neutral-300 mb-1">
+          Supabase Publishable Key <span class="text-neutral-400">(נשמר מקומית בדפדפן)</span>
+        </label>
+        <input id="sb-key-input" type="text" placeholder="sb_publishable_..."
+          class="w-full px-3 py-2 text-xs font-mono rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+      </div>
+
+      <div>
+        <label class="block text-xs font-medium text-neutral-700 dark:text-neutral-300 mb-1">אימייל</label>
+        <input id="email-input" type="email" required autocomplete="username"
+          class="w-full px-3 py-2 text-sm rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+      </div>
+
+      <div>
+        <label class="block text-xs font-medium text-neutral-700 dark:text-neutral-300 mb-1">סיסמה</label>
+        <input id="password-input" type="password" required autocomplete="current-password"
+          class="w-full px-3 py-2 text-sm rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B] text-neutral-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500" />
+      </div>
+
+      <div id="login-error" class="hidden text-xs text-red-500 bg-red-500/10 border border-red-500/20 rounded-lg px-3 py-2"></div>
+
+      <button id="login-btn" type="submit"
+        class="w-full py-2.5 px-4 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-colors">
+        התחבר לדשבורד
+      </button>
+    </form>
+  </div>
+
+  <!-- DASHBOARD VIEW -->
+  <div id="dashboard-section" class="hidden space-y-5">
+
+    <!-- Top Header Bar -->
+    <div class="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-neutral-200 dark:border-neutral-800">
+      <div>
+        <div class="flex items-center gap-2">
+          <h1 class="text-2xl font-bold text-neutral-900 dark:text-white">WSL Admin BI Studio</h1>
+          <span class="px-2 py-0.5 text-[11px] font-mono rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">Gold Layer</span>
+        </div>
+        <p id="user-badge" class="text-xs text-neutral-500 dark:text-neutral-400 mt-0.5"></p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="refresh-btn" class="px-3 py-1.5 text-xs font-medium rounded-lg border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+          רענן נתונים
+        </button>
+        <button id="export-csv-btn" class="px-3 py-1.5 text-xs font-medium rounded-lg border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors">
+          ייצוא CSV
+        </button>
+        <button id="logout-btn" class="px-3 py-1.5 text-xs font-medium rounded-lg bg-neutral-200 dark:bg-neutral-800 hover:bg-red-500/20 hover:text-red-500 transition-colors">
+          התנתק
+        </button>
+      </div>
+    </div>
+
+    <!-- KPI Cards -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4">
+        <div class="text-xs text-neutral-500 dark:text-neutral-400">רשומות בסינון</div>
+        <div id="kpi-rows" class="text-2xl font-mono font-bold mt-1 text-neutral-900 dark:text-white">-</div>
+      </div>
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4">
+        <div class="text-xs text-neutral-500 dark:text-neutral-400">שערים</div>
+        <div id="kpi-goals" class="text-2xl font-mono font-bold mt-1 text-emerald-600 dark:text-emerald-400">-</div>
+      </div>
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4">
+        <div class="text-xs text-neutral-500 dark:text-neutral-400">סה"כ xG</div>
+        <div id="kpi-xg" class="text-2xl font-mono font-bold mt-1 text-neutral-900 dark:text-white">-</div>
+      </div>
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4">
+        <div class="text-xs text-neutral-500 dark:text-neutral-400">ממוצע דירוג / xG לבעיטה</div>
+        <div id="kpi-avg" class="text-2xl font-mono font-bold mt-1 text-neutral-900 dark:text-white">-</div>
+      </div>
+    </div>
+
+    <!-- Tabs + Filters -->
+    <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4 space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="inline-flex rounded-lg bg-neutral-100 dark:bg-[#09090B] p-1 border border-neutral-200 dark:border-neutral-800">
+          <button data-tab="players" class="tab-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-white dark:bg-[#1c1c21] text-neutral-900 dark:text-white shadow-sm">
+            סטטיסטיקות שחקניות
+          </button>
+          <button data-tab="shots" class="tab-btn px-3 py-1.5 text-xs font-semibold rounded-md text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">
+            מפת בעיטות (Shotmap)
+          </button>
+        </div>
+
+        <!-- Preset View Switcher (Players tab only) -->
+        <div id="preset-bar" class="flex flex-wrap items-center gap-1.5">
+          <button data-preset="attack" class="preset-btn px-2.5 py-1 text-xs rounded-md bg-emerald-600 text-white font-medium">התקפה ויצירה</button>
+          <button data-preset="defense" class="preset-btn px-2.5 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">הגנה ומאבקים</button>
+          <button data-preset="passing" class="preset-btn px-2.5 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300">מסירות ושליטה</button>
+        </div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3">
+        <div>
+          <label class="block text-[11px] text-neutral-500 mb-1">מחזור</label>
+          <select id="filter-round" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B]">
+            <option value="all">כל המחזורים</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-neutral-500 mb-1">קבוצה</label>
+          <select id="filter-team" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B]">
+            <option value="all">כל הקבוצות</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-[11px] text-neutral-500 mb-1">חיפוש שחקנית</label>
+          <input id="filter-search" type="text" placeholder="למשל Russo, Shaw..."
+            class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B]" />
+        </div>
+        <div id="min-minutes-wrap">
+          <label class="block text-[11px] text-neutral-500 mb-1">מינימום דקות</label>
+          <select id="filter-mins" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B]">
+            <option value="0">הכל (0+)</option>
+            <option value="30">30+ דקות</option>
+            <option value="60">60+ דקות</option>
+          </select>
+        </div>
+        <div id="goals-only-wrap" class="hidden flex items-end pb-1.5">
+          <label class="inline-flex items-center gap-2 text-xs cursor-pointer">
+            <input id="filter-goals-only" type="checkbox" class="rounded border-neutral-400 text-emerald-600 focus:ring-emerald-500" />
+            <span>הצג שערים בלבד</span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <!-- SHOTMAP SVG PANEL (Shots tab only) -->
+    <div id="shotmap-panel" class="hidden bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl p-4">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-sm font-bold text-neutral-900 dark:text-white">מפת בעיטות (חצי מגרש התקפי)</h2>
+        <div class="flex items-center gap-3 text-[11px] text-neutral-500">
+          <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-emerald-500 inline-block"></span> שער</span>
+          <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400 inline-block"></span> למסגרת</span>
+          <span class="inline-flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-neutral-400 inline-block"></span> החוצה / נחסמה</span>
+        </div>
+      </div>
+      <div class="max-w-xl mx-auto">
+        <svg id="shotmap-svg" viewBox="0 0 105 68" class="w-full h-auto rounded-lg bg-[#0d1f16] border border-emerald-900/60"></svg>
+      </div>
+    </div>
+
+    <!-- DATA TABLE -->
+    <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden">
+      <div id="table-status" class="px-4 py-2 text-xs text-neutral-500 border-b border-neutral-200 dark:border-neutral-800">
+        טוען נתונים...
+      </div>
+      <div class="overflow-x-auto max-h-[600px]">
+        <table class="w-full text-xs text-right border-collapse">
+          <thead id="data-thead" class="sticky top-0 z-10 bg-neutral-100 dark:bg-[#18181c] text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-800"></thead>
+          <tbody id="data-tbody" class="divide-y divide-neutral-200 dark:divide-neutral-800/70"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+(function() {
+  const SUPABASE_URL = "https://gvaeqxzzvvsfchkwokvj.supabase.co";
+  const CONFIG_PUB_KEY = "{{ site.supabase_publishable_key | default: '' }}".trim();
+
+  let sbClient = null;
+  let activeTab = "players";
+  let activePreset = "attack";
+  let sortCol = "fotmob_rating";
+  let sortDir = "desc";
+
+  let rawPlayers = [];
+  let rawShots = [];
+  let filteredRows = [];
+
+  const PRESETS = {
+    attack: [
+      { key: "matchweek_round", label: "מחזור" },
+      { key: "player_name", label: "שחקנית" },
+      { key: "team_name", label: "קבוצה" },
+      { key: "opponent_team", label: "יריבה" },
+      { key: "minutes_played", label: "דק'" },
+      { key: "fotmob_rating", label: "דירוג" },
+      { key: "goals", label: "שערים" },
+      { key: "assists", label: "בישולים" },
+      { key: "xg", label: "xG" },
+      { key: "xa", label: "xA" },
+      { key: "total_shots", label: "בעיטות" },
+      { key: "touches_opp_box", label: "נג' ברחבה" },
+      { key: "chances_created", label: "מצבים" },
+      { key: "dribbles_succeeded", label: "דריבלים" }
+    ],
+    defense: [
+      { key: "matchweek_round", label: "מחזור" },
+      { key: "player_name", label: "שחקנית" },
+      { key: "team_name", label: "קבוצה" },
+      { key: "opponent_team", label: "יריבה" },
+      { key: "minutes_played", label: "דק'" },
+      { key: "fotmob_rating", label: "דירוג" },
+      { key: "defensive_actions", label: "פע' הגנה" },
+      { key: "tackles", label: "תיקולים" },
+      { key: "interceptions", label: "יירוטים" },
+      { key: "recoveries", label: "חילוצים" },
+      { key: "clearances", label: "הרחקות" },
+      { key: "dribbled_past", label: "נעברה" },
+      { key: "ground_duels_won", label: "מאבקי קרקע" },
+      { key: "aerial_duels_won", label: "מאבקי אוויר" }
+    ],
+    passing: [
+      { key: "matchweek_round", label: "מחזור" },
+      { key: "player_name", label: "שחקנית" },
+      { key: "team_name", label: "קבוצה" },
+      { key: "opponent_team", label: "יריבה" },
+      { key: "minutes_played", label: "דק'" },
+      { key: "fotmob_rating", label: "דירוג" },
+      { key: "touches", label: "נגיעות" },
+      { key: "accurate_passes", label: "מסירות מד'" },
+      { key: "passes_attempted", label: "ניסיונות" },
+      { key: "pass_accuracy_pct", label: "% דיוק" },
+      { key: "passes_final_third", label: "לשליש אחרון" },
+      { key: "accurate_long_balls", label: "כדורים ארוכים" },
+      { key: "dispossessed", label: "איבודים" }
+    ]
+  };
+
+  const SHOT_COLS = [
+    { key: "matchweek_round", label: "מחזור" },
+    { key: "minute", label: "דקה" },
+    { key: "player_name", label: "שחקנית" },
+    { key: "team_name", label: "קבוצה" },
+    { key: "opponent_team", label: "יריבה" },
+    { key: "event_type", label: "תוצאה" },
+    { key: "xg", label: "xG" },
+    { key: "xgot", label: "xGOT" },
+    { key: "situation", label: "מצב" },
+    { key: "shot_type", label: "סוג בעיטה" }
+  ];
+
+  function getPublishableKey() {
+    return CONFIG_PUB_KEY || localStorage.getItem("wsl_sb_pub_key") || "";
+  }
+
+  function initClient(key) {
+    if (!key) return null;
+    sbClient = window.supabase.createClient(SUPABASE_URL, key);
+    return sbClient;
+  }
+
+  async function fetchAllRows(viewName) {
+    let all = [];
+    let from = 0;
+    const step = 1000;
+    while (true) {
+      const { data, error } = await sbClient
+        .from(viewName)
+        .select("*")
+        .range(from, from + step - 1);
+      if (error) throw error;
+      if (!data || data.length === 0) break;
+      all = all.concat(data);
+      if (data.length < step) break;
+      from += step;
+    }
+    return all;
+  }
+
+  async function loadData() {
+    document.getElementById("table-status").textContent = "טוען נתונים מ-Supabase Gold...";
+    try {
+      const [players, shots] = await Promise.all([
+        fetchAllRows("v_match_player_stats"),
+        fetchAllRows("v_shots")
+      ]);
+      rawPlayers = players;
+      rawShots = shots;
+      populateFilters();
+      render();
+    } catch (err) {
+      document.getElementById("table-status").textContent = "שגיאה בטעינת נתונים: " + (err.message || err);
+    }
+  }
+
+  function populateFilters() {
+    const roundSel = document.getElementById("filter-round");
+    const teamSel = document.getElementById("filter-team");
+    const rounds = [...new Set(rawPlayers.map(r => r.matchweek_round).filter(Boolean))].sort((a, b) => b - a);
+    const teams = [...new Set(rawPlayers.map(r => r.team_name).filter(Boolean))].sort();
+
+    roundSel.innerHTML = '<option value="all">כל המחזורים</option>' +
+      rounds.map(r => `<option value="${r}">מחזור ${r}</option>`).join("");
+    if (rounds.length > 0) roundSel.value = String(rounds[0]);
+
+    teamSel.innerHTML = '<option value="all">כל הקבוצות</option>' +
+      teams.map(t => `<option value="${t}">${t}</option>`).join("");
+  }
+
+  function render() {
+    const roundVal = document.getElementById("filter-round").value;
+    const teamVal = document.getElementById("filter-team").value;
+    const searchVal = document.getElementById("filter-search").value.trim().toLowerCase();
+    const minMins = Number(document.getElementById("filter-mins").value || 0);
+    const goalsOnly = document.getElementById("filter-goals-only").checked;
+
+    const source = activeTab === "players" ? rawPlayers : rawShots;
+    filteredRows = source.filter(r => {
+      if (roundVal !== "all" && String(r.matchweek_round) !== roundVal) return false;
+      if (teamVal !== "all" && r.team_name !== teamVal) return false;
+      if (searchVal && !(r.player_name || "").toLowerCase().includes(searchVal)) return false;
+      if (activeTab === "players" && (r.minutes_played || 0) < minMins) return false;
+      if (activeTab === "shots" && goalsOnly && !r.is_goal) return false;
+      return true;
+    });
+
+    // Sort
+    filteredRows.sort((a, b) => {
+      const av = a[sortCol] ?? -999999;
+      const bv = b[sortCol] ?? -999999;
+      if (typeof av === "string" || typeof bv === "string") {
+        return sortDir === "asc"
+          ? String(av).localeCompare(String(bv))
+          : String(bv).localeCompare(String(av));
+      }
+      return sortDir === "asc" ? Number(av) - Number(bv) : Number(bv) - Number(av);
+    });
+
+    // KPIs
+    document.getElementById("kpi-rows").textContent = filteredRows.length.toLocaleString();
+    const totalGoals = activeTab === "players"
+      ? filteredRows.reduce((s, r) => s + (Number(r.goals) || 0), 0)
+      : filteredRows.filter(r => r.is_goal).length;
+    const totalXg = filteredRows.reduce((s, r) => s + (Number(r.xg) || 0), 0);
+    document.getElementById("kpi-goals").textContent = totalGoals;
+    document.getElementById("kpi-xg").textContent = totalXg.toFixed(2);
+
+    if (activeTab === "players") {
+      const rated = filteredRows.filter(r => r.fotmob_rating != null);
+      const avgRating = rated.length ? rated.reduce((s, r) => s + Number(r.fotmob_rating), 0) / rated.length : 0;
+      document.getElementById("kpi-avg").textContent = avgRating ? avgRating.toFixed(2) : "-";
+    } else {
+      const xgPerShot = filteredRows.length ? totalXg / filteredRows.length : 0;
+      document.getElementById("kpi-avg").textContent = xgPerShot.toFixed(3);
+      renderShotmap(filteredRows);
+    }
+
+    // Table
+    const cols = activeTab === "players" ? PRESETS[activePreset] : SHOT_COLS;
+    const thead = document.getElementById("data-thead");
+    thead.innerHTML = "<tr>" + cols.map(c => {
+      const arrow = sortCol === c.key ? (sortDir === "desc" ? " ↓" : " ↑") : "";
+      return `<th data-col="${c.key}" class="px-3 py-2.5 font-semibold cursor-pointer hover:text-emerald-500 whitespace-nowrap select-none">${c.label}${arrow}</th>`;
+    }).join("") + "</tr>";
+
+    thead.querySelectorAll("th").forEach(th => {
+      th.addEventListener("click", () => {
+        const col = th.dataset.col;
+        if (sortCol === col) sortDir = sortDir === "desc" ? "asc" : "desc";
+        else { sortCol = col; sortDir = "desc"; }
+        render();
+      });
+    });
+
+    const displayRows = filteredRows.slice(0, 300);
+    document.getElementById("table-status").textContent =
+      `מציג ${displayRows.length} מתוך ${filteredRows.length} רשומות (לחץ על כותרת עמודה למיון)`;
+
+    const tbody = document.getElementById("data-tbody");
+    tbody.innerHTML = displayRows.map(r => {
+      return '<tr class="hover:bg-neutral-50 dark:hover:bg-neutral-800/40">' + cols.map(c => {
+        let val = r[c.key];
+        if (val == null) val = "-";
+        else if (c.key === "xg" || c.key === "xa" || c.key === "xgot" || c.key === "fotmob_rating") {
+          val = Number(val).toFixed(2);
+        }
+        const cls = (c.key === "player_name") ? "font-semibold text-neutral-900 dark:text-white" : "font-mono";
+        return `<td class="px-3 py-2 whitespace-nowrap ${cls}">${val}</td>`;
+      }).join("") + "</tr>";
+    }).join("");
+  }
+
+  function renderShotmap(shots) {
+    const svg = document.getElementById("shotmap-svg");
+    let html = `
+      <rect x="0" y="0" width="105" height="68" fill="#0d1f16" />
+      <line x1="52.5" y1="0" x2="52.5" y2="68" stroke="#1f4d36" stroke-width="0.4" />
+      <circle cx="52.5" cy="34" r="9.15" fill="none" stroke="#1f4d36" stroke-width="0.4" />
+      <rect x="88.5" y="13.84" width="16.5" height="40.32" fill="none" stroke="#2d6a4f" stroke-width="0.5" />
+      <rect x="99.5" y="24.84" width="5.5" height="18.32" fill="none" stroke="#2d6a4f" stroke-width="0.5" />
+      <rect x="104.2" y="30.34" width="0.8" height="7.32" fill="#34d399" />
+    `;
+    shots.slice(0, 400).forEach(s => {
+      const cx = Number(s.x) || 0;
+      const cy = 68 - (Number(s.y) || 0);
+      const r = Math.max(0.9, Math.min(3.2, Math.sqrt((Number(s.xg) || 0.03) * 14)));
+      const fill = s.is_goal ? "#10b981" : (s.is_on_target ? "#fbbf24" : "#9ca3af");
+      const opacity = s.is_goal ? "0.95" : "0.6";
+      const tip = `${s.player_name} (${s.team_name}, ${s.minute}') • ${s.event_type} • xG: ${(Number(s.xg)||0).toFixed(2)}`;
+      html += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="${fill}" fill-opacity="${opacity}" stroke="#09090B" stroke-width="0.25"><title>${tip}</title></circle>`;
+    });
+    svg.innerHTML = html;
+  }
+
+  function exportCSV() {
+    if (!filteredRows.length) return;
+    const cols = activeTab === "players" ? PRESETS[activePreset] : SHOT_COLS;
+    const header = cols.map(c => c.key).join(",");
+    const lines = filteredRows.map(r => cols.map(c => `"${String(r[c.key] ?? "").replace(/"/g, '""')}"`).join(","));
+    const blob = new Blob(["\uFEFF" + [header, ...lines].join("\n")], { type: "text/csv;charset=utf-8;" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = `wsl_${activeTab}_${new Date().toISOString().slice(0,10)}.csv`;
+    a.click();
+  }
+
+  async function showDashboard(user) {
+    document.getElementById("login-section").classList.add("hidden");
+    document.getElementById("dashboard-section").classList.remove("hidden");
+    document.getElementById("user-badge").textContent = `מחובר כ-${user.email}`;
+    await loadData();
+  }
+
+  function showLogin() {
+    document.getElementById("dashboard-section").classList.add("hidden");
+    document.getElementById("login-section").classList.remove("hidden");
+    if (!getPublishableKey()) {
+      document.getElementById("key-config-box").classList.remove("hidden");
+    }
+  }
+
+  // Event listeners
+  document.getElementById("login-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const errEl = document.getElementById("login-error");
+    errEl.classList.add("hidden");
+
+    let key = getPublishableKey();
+    const keyInput = document.getElementById("sb-key-input").value.trim();
+    if (!key && keyInput) {
+      localStorage.setItem("wsl_sb_pub_key", keyInput);
+      key = keyInput;
+    }
+    if (!key) {
+      errEl.textContent = "נא להזין את ה-Supabase Publishable Key.";
+      errEl.classList.remove("hidden");
+      return;
+    }
+
+    initClient(key);
+    const email = document.getElementById("email-input").value.trim();
+    const password = document.getElementById("password-input").value;
+
+    const btn = document.getElementById("login-btn");
+    btn.disabled = true;
+    btn.textContent = "מתחבר...";
+
+    const { data, error } = await sbClient.auth.signInWithPassword({ email, password });
+    btn.disabled = false;
+    btn.textContent = "התחבר לדשבורד";
+
+    if (error) {
+      errEl.textContent = "שגיאת התחברות: " + error.message;
+      errEl.classList.remove("hidden");
+      return;
+    }
+    showDashboard(data.user);
+  });
+
+  document.getElementById("logout-btn").addEventListener("click", async () => {
+    if (sbClient) await sbClient.auth.signOut();
+    showLogin();
+  });
+
+  document.getElementById("refresh-btn").addEventListener("click", loadData);
+  document.getElementById("export-csv-btn").addEventListener("click", exportCSV);
+
+  document.querySelectorAll(".tab-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activeTab = btn.dataset.tab;
+      sortCol = activeTab === "players" ? "fotmob_rating" : "xg";
+      sortDir = "desc";
+      document.querySelectorAll(".tab-btn").forEach(b => {
+        const active = b.dataset.tab === activeTab;
+        b.className = active
+          ? "tab-btn px-3 py-1.5 text-xs font-semibold rounded-md bg-white dark:bg-[#1c1c21] text-neutral-900 dark:text-white shadow-sm"
+          : "tab-btn px-3 py-1.5 text-xs font-semibold rounded-md text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white";
+      });
+      document.getElementById("preset-bar").classList.toggle("hidden", activeTab !== "players");
+      document.getElementById("min-minutes-wrap").classList.toggle("hidden", activeTab !== "players");
+      document.getElementById("goals-only-wrap").classList.toggle("hidden", activeTab !== "shots");
+      document.getElementById("shotmap-panel").classList.toggle("hidden", activeTab !== "shots");
+      render();
+    });
+  });
+
+  document.querySelectorAll(".preset-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      activePreset = btn.dataset.preset;
+      document.querySelectorAll(".preset-btn").forEach(b => {
+        const active = b.dataset.preset === activePreset;
+        b.className = active
+          ? "preset-btn px-2.5 py-1 text-xs rounded-md bg-emerald-600 text-white font-medium"
+          : "preset-btn px-2.5 py-1 text-xs rounded-md bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-300";
+      });
+      render();
+    });
+  });
+
+  ["filter-round", "filter-team", "filter-mins", "filter-goals-only"].forEach(id => {
+    document.getElementById(id).addEventListener("change", render);
+  });
+  document.getElementById("filter-search").addEventListener("input", render);
+
+  // Boot
+  (async function boot() {
+    const key = getPublishableKey();
+    if (!key) {
+      showLogin();
+      return;
+    }
+    initClient(key);
+    const { data } = await sbClient.auth.getSession();
+    if (data && data.session && data.session.user) {
+      showDashboard(data.session.user);
+    } else {
+      showLogin();
+    }
+  })();
+})();
+</script>

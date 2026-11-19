@@ -26,6 +26,7 @@ from pipeline.ingest import run_ingest
 from pipeline.ingest_match_details import run_match_details_ingest
 from pipeline.load_raw import load_lake_to_raw_db
 from pipeline.export_to_site import export_gold_to_site
+from pipeline.setup_admin_views import ensure_admin_views
 from pipeline.setup_dbt_profile import *
 
 
@@ -53,8 +54,9 @@ def main():
         print("❌ dbt build failed. Halting pipeline.")
         sys.exit(result.returncode)
 
-    # 4. Serving Layer (Gold Database -> Jekyll Site)
-    print("\n[Step 4/4] Refreshing Jekyll site datasets from Gold analytics...")
+    # 4. Serving Layer (Gold Database -> Jekyll Site & Admin BI Views)
+    print("\n[Step 4/4] Refreshing Jekyll site datasets & Admin BI views from Gold analytics...")
+    ensure_admin_views()
     export_gold_to_site()
 
     elapsed = round(time.time() - start_time, 2)
