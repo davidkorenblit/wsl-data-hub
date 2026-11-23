@@ -14,7 +14,7 @@ import json
 import logging
 from pathlib import Path
 from datetime import datetime
-from typing import Dict, Any, List
+from typing import Dict, Any, List, Optional
 import pandas as pd
 from sqlalchemy import create_engine
 from dotenv import load_dotenv
