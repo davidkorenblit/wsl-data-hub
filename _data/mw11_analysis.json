@@ -102,10 +102,10 @@
       }
     },
     "ars_whu": {
-      "title": "Arsenal 1 - 1 West Ham United",
+      "title": "Arsenal 0 - 0 West Ham United",
       "home_team": "Arsenal",
       "away_team": "West Ham United",
-      "score": "1 - 1",
+      "score": "0 - 0",
       "xg": {
         "home": 0.88,
         "away": 0.59
