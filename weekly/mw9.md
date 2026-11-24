@@ -6,8 +6,8 @@ lang: he
 alt_url: /en/weekly/
 prev_url: /weekly/mw8/
 prev_title: "מחזור 8"
-next_url: null
-next_title: null
+next_url: /weekly/mw11/
+next_title: "מחזור 10–11"
 ---
 
 <div class="space-y-6">
@@ -32,7 +32,7 @@ next_title: null
     <div class="flex items-center justify-between border-b border-neutral-100 dark:border-neutral-800 pb-3">
       <div class="flex items-center gap-2">
         <span class="text-xs font-mono font-bold px-2.5 py-0.5 rounded bg-primary-100 dark:bg-primary-950/40 text-primary-800 dark:text-primary-300 border border-primary-200 dark:border-primary-800">
-          מחזור 9 (נוכחי)
+          מחזור 9
         </span>
         <span class="text-xs font-mono text-neutral-400 dark:text-neutral-500">
           עונת 2026/27
@@ -44,6 +44,11 @@ next_title: null
         <a href="{{ '/weekly/mw8/' | relative_url }}" class="text-neutral-700 dark:text-neutral-300 hover:text-neutral-950 dark:hover:text-white font-medium flex items-center gap-1.5 transition-colors">
           <span>→</span>
           <span>מחזור 8</span>
+        </a>
+        <span class="text-neutral-300 dark:text-neutral-700">|</span>
+        <a href="{{ '/weekly/mw11/' | relative_url }}" class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-bold flex items-center gap-1.5 transition-colors">
+          <span>מחזור 10–11</span>
+          <span>←</span>
         </a>
       </div>
     </div>
@@ -603,8 +608,9 @@ next_title: null
         <span>→</span>
         <span>למחזור הקודם: מחזור 8</span>
       </a>
-      <a href="{{ '/weekly/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold hover:underline">
-        חזרה לאינדקס הטורים
+      <a href="{{ '/weekly/mw11/' | relative_url }}" class="text-primary-600 dark:text-primary-400 font-bold hover:underline flex items-center gap-1.5">
+        <span>למחזור הבא: מחזור 10–11</span>
+        <span>←</span>
       </a>
     </div>
 

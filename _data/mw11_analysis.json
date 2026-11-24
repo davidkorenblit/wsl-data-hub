@@ -1,0 +1,169 @@
+{
+  "round": "10-11",
+  "season": "2026/27",
+  "matches": {
+    "tot_mci": {
+      "title": "Tottenham Hotspur 3 - 1 Manchester City",
+      "home_team": "Tottenham Hotspur",
+      "away_team": "Manchester City",
+      "score": "3 - 1",
+      "xg": {
+        "home": 1.67,
+        "away": 0.92
+      },
+      "shots": {
+        "home": 17,
+        "away": 12
+      },
+      "sot": {
+        "home": 8,
+        "away": 3
+      },
+      "key_players": {
+        "Matilda Vinberg": {
+          "minutes": 85,
+          "goals": 1,
+          "assists": 1,
+          "xg": 0.35,
+          "chances_created": 2,
+          "touches": 41,
+          "dribbles": "3/4"
+        },
+        "Kirsty Hanson": {
+          "minutes": 71,
+          "assists": 1,
+          "dribbles": "5/6",
+          "dribble_success_pct": 83.3,
+          "box_touches": 5,
+          "chances_created": 2
+        },
+        "Drew Spence": {
+          "minutes": 90,
+          "assists": 1,
+          "chances_created": 2,
+          "season_chances_rank": 6,
+          "season_total_chances": 26,
+          "open_play_creation_rank": 2
+        },
+        "Jessica Naz": {
+          "minutes": 19,
+          "goals": 1,
+          "shots": 2,
+          "xg": 0.27
+        },
+        "Khadija Shaw": {
+          "minutes": 90,
+          "goals": 1,
+          "career_goals_vs_spurs": 11,
+          "career_hattricks_vs_spurs": 3
+        },
+        "Vivianne Miedema": {
+          "minutes": 45,
+          "shots": 0,
+          "chances_created": 0,
+          "touches": 23
+        }
+      }
+    },
+    "che_liv": {
+      "title": "Chelsea 0 - 0 Liverpool",
+      "home_team": "Chelsea",
+      "away_team": "Liverpool",
+      "score": "0 - 0",
+      "xg": {
+        "home": 2.27,
+        "away": 0.99
+      },
+      "shots": {
+        "home": 19,
+        "away": 13
+      },
+      "sot": {
+        "home": 12,
+        "away": 5
+      },
+      "key_players": {
+        "Khiara Keating": {
+          "saves": 12,
+          "xg_prevented": 2.27,
+          "clean_sheet": true
+        },
+        "Alyssa Thompson": {
+          "minutes": 83,
+          "touches": 47,
+          "chances_created": 2
+        },
+        "Aggie Beever-Jones": {
+          "minutes": 7
+        },
+        "Maika Hamano": {
+          "minutes": 0
+        }
+      }
+    },
+    "ars_whu": {
+      "title": "Arsenal 1 - 1 West Ham United",
+      "home_team": "Arsenal",
+      "away_team": "West Ham United",
+      "score": "1 - 1",
+      "xg": {
+        "home": 0.88,
+        "away": 0.59
+      },
+      "shots": {
+        "home": 22,
+        "away": 11
+      },
+      "xg_per_shot": {
+        "home": 0.04,
+        "away": 0.05
+      }
+    },
+    "lcl_cry": {
+      "title": "London City Lionesses 6 - 2 Crystal Palace",
+      "home_team": "London City Lionesses",
+      "away_team": "Crystal Palace",
+      "score": "6 - 2",
+      "key_players": {
+        "Alexia Putellas": {
+          "goals": 2,
+          "xg": 0.34,
+          "box_touches": 5,
+          "touches": 63
+        },
+        "Danielle van de Donk": {
+          "goals": 2,
+          "xg": 0.79,
+          "box_touches": 3,
+          "touches": 37
+        },
+        "Isobel Goodwin": {
+          "goals": 1,
+          "assists": 1,
+          "shots": 6,
+          "box_touches": 9
+        }
+      }
+    },
+    "roundup": {
+      "cha_avl": {
+        "home": "Charlton",
+        "away": "Aston Villa",
+        "score": "1 - 1",
+        "note": "First point of the season for Charlton (Flannery 17', Parker 71')"
+      },
+      "eve_bha": {
+        "home": "Everton",
+        "away": "Brighton",
+        "score": "0 - 1",
+        "note": "Pacheco 6' own goal"
+      },
+      "bir_mun": {
+        "home": "Birmingham",
+        "away": "Manchester United",
+        "score": "1 - 2",
+        "note": "Ella Toone 2 assists off bench (Terland 80', Awujo 90')"
+      }
+    }
+  }
+}
