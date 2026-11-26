@@ -161,6 +161,9 @@ lang: he
           <button data-tab="insights" class="tab-btn px-3 py-1.5 text-xs font-semibold rounded-md text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white">
             חריגות &amp; השוואה (H2H)
           </button>
+          <button data-tab="spotlights" class="tab-btn px-3 py-1.5 text-xs font-semibold rounded-md text-amber-700 dark:text-amber-300/90 hover:text-amber-900 dark:hover:text-amber-200">
+            ✦ טורים מיוחדים
+          </button>
         </div>
 
         <!-- Aggregation Mode (Players / Scatter / Insights) -->
@@ -180,7 +183,7 @@ lang: he
       </div>
 
       <!-- Filter Controls -->
-      <div class="grid grid-cols-2 sm:grid-cols-6 gap-3">
+      <div id="filter-controls-grid" class="grid grid-cols-2 sm:grid-cols-6 gap-3">
         <div>
           <label class="block text-[11px] text-neutral-500 mb-1">מחזור</label>
           <select id="filter-round" class="w-full px-2.5 py-1.5 text-xs rounded-lg border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-[#09090B]">
@@ -300,6 +303,117 @@ lang: he
           </div>
         </div>
         <div id="h2h-bars" class="space-y-2.5 max-w-3xl mx-auto"></div>
+      </div>
+    </div>
+
+    <!-- SPECIAL SPOTLIGHT COLUMNS PANEL (Spotlights tab only) -->
+    <div id="spotlights-panel" class="hidden space-y-5">
+      <!-- Spotlight Selector Header -->
+      <div class="bg-white dark:bg-[#121215] border border-amber-500/30 rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
+        <div>
+          <div class="text-[11px] font-mono uppercase tracking-wider text-amber-700 dark:text-amber-300">✦ Year-End Player Spotlights · BI Workspace</div>
+          <h2 class="text-base font-bold text-neutral-900 dark:text-white mt-0.5">טורים מיוחדים — מאגר טבלאות וממצאים</h2>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button type="button" class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-emerald-600 text-white shadow-sm">
+            #1 טוטנהאם · אמנדה נילדן
+          </button>
+          <span class="px-2.5 py-1.5 text-[11px] font-mono rounded-lg bg-neutral-100 dark:bg-neutral-800/80 text-neutral-500 dark:text-neutral-400">
+            +13 קבוצות בהכנה
+          </span>
+        </div>
+      </div>
+
+      <!-- Narrative & Visual Notes Card -->
+      <div class="bg-emerald-50/60 dark:bg-[#0e1f1a]/60 border border-emerald-500/25 rounded-xl p-4 text-xs leading-relaxed text-neutral-700 dark:text-emerald-100/85 space-y-1.5">
+        <div class="font-bold text-emerald-900 dark:text-emerald-300">זווית הטור ורעיון ויזואלי (טוטנהאם · אמנדה נילדן):</div>
+        <p>• <strong>האבולוציה:</strong> מעבר מ־LB ב־25/26 (15 פתיחות, 7.01) ל־100% LCB ב־26/27 (10 פתיחות, 899 דק') — צניחה באיבודי כדור (`0.76` ← `0.10` ל־90, איבוד אחד בכל העונה!), קפיצה בדיוק מסירות (`74.8%` ← `88.8%`) והכפלת מסירות לשליש אחרון (`3.20` ← `8.01` / `9.01` בלי צ'לסי ו־LCL).</p>
+        <p>• <strong>חיבור טקטי לויזואליזציה:</strong> הפינוי של <strong>ג'ולי בלקסטאד</strong> לעמדת המגנה השמאלית ההתקפית — כיסוי של אמנדה כ"חצי מגנה" כשג'ולי עולה למעלה ודייקסטרה נשארת למטה.</p>
+      </div>
+
+      <!-- Table 1: Nilden Evolution & Lucy Bronze Comparison -->
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden">
+        <div class="px-4 py-3 border-b border-neutral-200 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-2">
+          <div>
+            <h3 class="text-sm font-bold text-neutral-900 dark:text-white">1. השוואת עונות ותפקוד: נילדן 25/26 מול 26/27 + לוסי ברונז</h3>
+            <p class="text-[11px] text-neutral-500">מדדים מנורמלים ל־90 דק' ואחוזי הצלחה (כולל איבודי כדור `dispossessed`)</p>
+          </div>
+          <button id="copy-nilden-evo-md" type="button" class="px-2.5 py-1 text-xs rounded-md border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+            📋 העתק כ-Markdown
+          </button>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs text-right border-collapse">
+            <thead class="bg-neutral-100 dark:bg-[#18181c] text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-800">
+              <tr>
+                <th class="py-2.5 px-3 font-semibold">פילוח / שחקנית</th>
+                <th class="py-2.5 px-2 font-mono">מש'</th>
+                <th class="py-2.5 px-2 font-mono">דק'</th>
+                <th class="py-2.5 px-2 font-mono">דירוג</th>
+                <th class="py-2.5 px-2 font-mono">פע' הגנה</th>
+                <th class="py-2.5 px-2 font-mono">תיקולים</th>
+                <th class="py-2.5 px-2 font-mono">חטיפות</th>
+                <th class="py-2.5 px-2 font-mono">הרחקות</th>
+                <th class="py-2.5 px-2 font-mono">חילוצים</th>
+                <th class="py-2.5 px-2 font-mono">עברו בדריבל</th>
+                <th class="py-2.5 px-2 font-mono">איבודים</th>
+                <th class="py-2.5 px-2 font-mono">דו-קרב%</th>
+                <th class="py-2.5 px-2 font-mono">אוויר%</th>
+                <th class="py-2.5 px-2 font-mono">מסירות%</th>
+                <th class="py-2.5 px-2 font-mono">שליש אחרון</th>
+              </tr>
+            </thead>
+            <tbody id="spotlight-evo-tbody" class="divide-y divide-neutral-200 dark:divide-neutral-800/70"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Table 2: League Defenders Leaderboard (With / Without Blowouts) -->
+      <div class="bg-white dark:bg-[#121215] border border-neutral-200 dark:border-neutral-800 rounded-xl overflow-hidden">
+        <div class="px-4 py-3 border-b border-neutral-200 dark:border-neutral-800 flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2 flex-wrap">
+              <h3 class="text-sm font-bold text-neutral-900 dark:text-white">2. דירוג מול שחקניות ההגנה הבולטות בליגה (2026/27)</h3>
+              <span id="spotlight-rank-badge" class="px-2 py-0.5 text-[11px] font-mono font-bold rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-300 border border-emerald-500/30"></span>
+            </div>
+            <p class="text-[11px] text-neutral-500 mt-0.5">החלף בין "עם שתי התבוסות" (צ'לסי + LCL) לבין "בלי שתי התבוסות" (החרגה הוגנת לכלל הליגה)</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="inline-flex rounded-lg bg-neutral-100 dark:bg-[#09090B] p-0.5 border border-neutral-200 dark:border-neutral-800 gap-0.5">
+              <button data-sl-group="cb" class="sl-group-btn px-2.5 py-1 text-xs rounded-md bg-emerald-600 text-white font-medium">בלמיות (CB)</button>
+              <button data-sl-group="all" class="sl-group-btn px-2.5 py-1 text-xs rounded-md text-neutral-600 dark:text-neutral-400">כל ההגנה</button>
+            </div>
+            <div class="inline-flex rounded-lg bg-neutral-100 dark:bg-[#09090B] p-0.5 border border-neutral-200 dark:border-neutral-800 gap-0.5">
+              <button data-sl-split="without" class="sl-split-btn px-2.5 py-1 text-xs rounded-md bg-amber-600 text-white font-medium">בלי צ'לסי ו-LCL</button>
+              <button data-sl-split="with" class="sl-split-btn px-2.5 py-1 text-xs rounded-md text-neutral-600 dark:text-neutral-400">עם התבוסות</button>
+            </div>
+            <button id="copy-nilden-board-md" type="button" class="px-2.5 py-1 text-xs rounded-md border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-100 dark:hover:bg-neutral-800">
+              📋 העתק כ-Markdown
+            </button>
+          </div>
+        </div>
+        <div class="overflow-x-auto max-h-[520px]">
+          <table class="w-full text-xs text-right border-collapse">
+            <thead class="sticky top-0 z-10 bg-neutral-100 dark:bg-[#18181c] text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-800">
+              <tr>
+                <th class="py-2.5 px-3 font-mono">#</th>
+                <th class="py-2.5 px-3 font-semibold">שחקנית</th>
+                <th class="py-2.5 px-3 font-semibold">קבוצה</th>
+                <th class="py-2.5 px-2 font-mono">דק'</th>
+                <th class="py-2.5 px-2 font-mono">דירוג</th>
+                <th class="py-2.5 px-2 font-mono">פע' הגנה</th>
+                <th class="py-2.5 px-2 font-mono">תיקולים</th>
+                <th class="py-2.5 px-2 font-mono">חטיפות</th>
+                <th class="py-2.5 px-2 font-mono">חילוצים</th>
+                <th class="py-2.5 px-2 font-mono">איבודים</th>
+                <th class="py-2.5 px-2 font-mono">דו-קרב%</th>
+                <th class="py-2.5 px-2 font-mono">מסירות%</th>
+                <th class="py-2.5 px-2 font-mono">שליש אחרון</th>
+              </tr>
+            </thead>
+            <tbody id="spotlight-board-tbody" class="divide-y divide-neutral-200 dark:divide-neutral-800/70"></tbody>
+          </table>
+        </div>
       </div>
     </div>
 
@@ -983,8 +1097,10 @@ lang: he
           : "tab-btn px-3 py-1.5 text-xs font-semibold rounded-md text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-white";
       });
       const isShots = activeTab === "shots";
-      document.getElementById("agg-bar").classList.toggle("hidden", isShots);
+      const isSpotlights = activeTab === "spotlights";
+      document.getElementById("agg-bar").classList.toggle("hidden", isShots || isSpotlights);
       document.getElementById("preset-bar").classList.toggle("hidden", activeTab !== "players");
+      document.getElementById("filter-controls-grid").classList.toggle("hidden", isSpotlights);
       document.getElementById("min-minutes-wrap").classList.toggle("hidden", isShots);
       document.getElementById("action-metric-wrap").classList.toggle("hidden", isShots);
       document.getElementById("action-min-wrap").classList.toggle("hidden", isShots);
@@ -993,8 +1109,13 @@ lang: he
       document.getElementById("shotmap-panel").classList.toggle("hidden", !isShots);
       document.getElementById("scatter-panel").classList.toggle("hidden", activeTab !== "scatter");
       document.getElementById("insights-panel").classList.toggle("hidden", activeTab !== "insights");
-      document.getElementById("table-panel").classList.toggle("hidden", activeTab === "scatter" || activeTab === "insights");
-      render();
+      document.getElementById("spotlights-panel").classList.toggle("hidden", !isSpotlights);
+      document.getElementById("table-panel").classList.toggle("hidden", activeTab === "scatter" || activeTab === "insights" || isSpotlights);
+      if (isSpotlights) {
+        renderSpotlights();
+      } else {
+        render();
+      }
     });
   });
 
@@ -1154,6 +1275,155 @@ lang: he
     writerTitle.value = "";
     writerEditor.value = "";
     saveDraftLocal();
+  });
+
+  // --- SPECIAL SPOTLIGHT COLUMNS DATA & RENDERER ---
+  const NILDEN_SPOTLIGHT = {{ site.data.amanda_nilden_analysis | jsonify }};
+  let slGroup = "cb";      // cb | all
+  let slSplit = "without"; // without | with
+
+  function fmtVal(v, suffix = "") {
+    return (v === null || v === undefined) ? "-" : `${v}${suffix}`;
+  }
+
+  function getEvoRows() {
+    if (!NILDEN_SPOTLIGHT) return [];
+    return [
+      { label: "נילדן 25/26 — מגנה שמאלית (LB)", d: NILDEN_SPOTLIGHT.nilden_25_26_lb || NILDEN_SPOTLIGHT.nilden_2025_26?.lb, hl: "" },
+      { label: "נילדן 25/26 — בלמית שמאלית (LCB)", d: NILDEN_SPOTLIGHT.nilden_2025_26?.lcb, hl: "" },
+      { label: "נילדן 26/27 — כל המשחקים (עם התבוסות)", d: NILDEN_SPOTLIGHT.nilden_2026_27?.all_matches, hl: "bg-emerald-500/5 font-semibold" },
+      { label: "נילדן 26/27 — בלי צ'לסי ו-LCL", d: NILDEN_SPOTLIGHT.nilden_2026_27?.excl_chelsea_lcl, hl: "bg-emerald-500/15 font-bold" },
+      { label: "לוסי ברונז 26/27 — צ'לסי", d: NILDEN_SPOTLIGHT.lucy_bronze_2026_27?.all_matches, hl: "bg-sky-500/10 font-semibold" }
+    ].filter(x => x.d);
+  }
+
+  function getBoardRows() {
+    if (!NILDEN_SPOTLIGHT || !NILDEN_SPOTLIGHT.leaderboards) return [];
+    const lb = NILDEN_SPOTLIGHT.leaderboards;
+    if (slGroup === "cb" && slSplit === "without") return lb.cbs_excl_chelsea_lcl_min360 || [];
+    if (slGroup === "cb" && slSplit === "with") return lb.cbs_with_all_min450 || [];
+    if (slGroup === "all" && slSplit === "without") return lb.all_defenders_excl_chelsea_lcl_min360 || [];
+    return lb.all_defenders_with_all_min450 || [];
+  }
+
+  function renderSpotlights() {
+    const evoTbody = document.getElementById("spotlight-evo-tbody");
+    const boardTbody = document.getElementById("spotlight-board-tbody");
+    const rankBadge = document.getElementById("spotlight-rank-badge");
+    if (!evoTbody || !boardTbody || !NILDEN_SPOTLIGHT) return;
+
+    const evoRows = getEvoRows();
+    evoTbody.innerHTML = evoRows.map(({ label, d, hl }) => `
+      <tr class="${hl} hover:bg-neutral-50 dark:hover:bg-neutral-800/40">
+        <td class="py-2.5 px-3 text-neutral-900 dark:text-white whitespace-nowrap">${label}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.apps)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.minutes)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums font-bold text-emerald-600 dark:text-emerald-400">${fmtVal(d.avg_rating)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.defensive_actions_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.tackles_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.interceptions_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.clearances_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.recoveries_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.dribbled_past_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums font-semibold text-amber-700 dark:text-amber-300">${fmtVal(d.dispossessed_p90)}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.duel_win_pct, "%")}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.aerial_duel_pct, "%")}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.pass_accuracy_pct, "%")}</td>
+        <td class="py-2.5 px-2 font-mono tabular-nums">${fmtVal(d.passes_final_third_p90)}</td>
+      </tr>
+    `).join("");
+
+    const r = NILDEN_SPOTLIGHT.nilden_ranks || {};
+    let rankText = "";
+    if (slGroup === "cb" && slSplit === "without") rankText = `נילדן: מקום ${r.cb_without} מתוך ${r.cb_without_total} בלמיות (360+ דק')`;
+    else if (slGroup === "cb" && slSplit === "with") rankText = `נילדן: מקום ${r.cb_with} מתוך ${r.cb_with_total} בלמיות (450+ דק')`;
+    else if (slGroup === "all" && slSplit === "without") rankText = `נילדן: מקום ${r.all_def_without} מתוך ${r.all_def_without_total} שחקניות הגנה (360+ דק')`;
+    else rankText = `נילדן: מקום ${r.all_def_with} מתוך ${r.all_def_with_total} שחקניות הגנה (450+ דק')`;
+    if (rankBadge) rankBadge.textContent = rankText;
+
+    const boardRows = getBoardRows();
+    boardTbody.innerHTML = boardRows.map((x, idx) => {
+      const nameL = (x.player_name || "").toLowerCase();
+      const isNilden = nameL.includes("amanda nild");
+      const isBronze = nameL.includes("lucy bronze");
+      const isSpurs = (x.team_name || "").toLowerCase().includes("tottenham") && !isNilden;
+      const rowCls = isNilden
+        ? "bg-emerald-500/15 font-bold"
+        : isBronze
+          ? "bg-sky-500/10 font-semibold"
+          : isSpurs
+            ? "bg-amber-500/10"
+            : "hover:bg-neutral-50 dark:hover:bg-neutral-800/40";
+      return `
+        <tr class="${rowCls}">
+          <td class="py-2 px-3 font-mono text-neutral-400">${idx + 1}</td>
+          <td class="py-2 px-3 text-neutral-900 dark:text-white whitespace-nowrap">${x.player_name}</td>
+          <td class="py-2 px-3 text-neutral-500 dark:text-neutral-400 whitespace-nowrap">${x.team_name}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.minutes)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums font-bold text-emerald-600 dark:text-emerald-400">${fmtVal(x.avg_rating)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.defensive_actions_p90)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.tackles_p90)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.interceptions_p90)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.recoveries_p90)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.dispossessed_p90)}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.duel_win_pct, "%")}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.pass_accuracy_pct, "%")}</td>
+          <td class="py-2 px-2 font-mono tabular-nums">${fmtVal(x.passes_final_third_p90)}</td>
+        </tr>
+      `;
+    }).join("");
+  }
+
+  document.querySelectorAll(".sl-group-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      slGroup = btn.dataset.slGroup;
+      document.querySelectorAll(".sl-group-btn").forEach(b => {
+        const active = b.dataset.slGroup === slGroup;
+        b.className = active
+          ? "sl-group-btn px-2.5 py-1 text-xs rounded-md bg-emerald-600 text-white font-medium"
+          : "sl-group-btn px-2.5 py-1 text-xs rounded-md text-neutral-600 dark:text-neutral-400";
+      });
+      renderSpotlights();
+    });
+  });
+
+  document.querySelectorAll(".sl-split-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      slSplit = btn.dataset.slSplit;
+      document.querySelectorAll(".sl-split-btn").forEach(b => {
+        const active = b.dataset.slSplit === slSplit;
+        b.className = active
+          ? "sl-split-btn px-2.5 py-1 text-xs rounded-md bg-amber-600 text-white font-medium"
+          : "sl-split-btn px-2.5 py-1 text-xs rounded-md text-neutral-600 dark:text-neutral-400";
+      });
+      renderSpotlights();
+    });
+  });
+
+  document.getElementById("copy-nilden-evo-md")?.addEventListener("click", async () => {
+    const rows = getEvoRows();
+    const header = "| פילוח | מש' | דק' | דירוג | פע' הגנה | תיקולים | חטיפות | הרחקות | חילוצים | דריבל נגדה | איבודים | דו-קרב% | אוויר% | מסירות% | שליש אחרון |";
+    const sep = "|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|";
+    const body = rows.map(({ label, d }) =>
+      `| ${label} | ${d.apps} | ${d.minutes} | ${d.avg_rating} | ${d.defensive_actions_p90} | ${d.tackles_p90} | ${d.interceptions_p90} | ${d.clearances_p90} | ${d.recoveries_p90} | ${d.dribbled_past_p90} | ${d.dispossessed_p90} | ${d.duel_win_pct}% | ${d.aerial_duel_pct}% | ${d.pass_accuracy_pct}% | ${d.passes_final_third_p90} |`
+    ).join("\n");
+    await navigator.clipboard.writeText(`${header}\n${sep}\n${body}`);
+    const btn = document.getElementById("copy-nilden-evo-md");
+    btn.textContent = "הועתק! ✓";
+    setTimeout(() => btn.textContent = "📋 העתק כ-Markdown", 1500);
+  });
+
+  document.getElementById("copy-nilden-board-md")?.addEventListener("click", async () => {
+    const rows = getBoardRows().slice(0, 12);
+    const header = "| # | שחקנית | קבוצה | דק' | דירוג | פע' הגנה | חילוצים | איבודים | דו-קרב% | מסירות% | שליש אחרון |";
+    const sep = "|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|";
+    const body = rows.map((x, i) =>
+      `| ${i + 1} | ${x.player_name} | ${x.team_name} | ${x.minutes} | ${x.avg_rating} | ${x.defensive_actions_p90} | ${x.recoveries_p90} | ${x.dispossessed_p90} | ${x.duel_win_pct}% | ${x.pass_accuracy_pct}% | ${x.passes_final_third_p90} |`
+    ).join("\n");
+    await navigator.clipboard.writeText(`${header}\n${sep}\n${body}`);
+    const btn = document.getElementById("copy-nilden-board-md");
+    btn.textContent = "הועתק! ✓";
+    setTimeout(() => btn.textContent = "📋 העתק כ-Markdown", 1500);
   });
 
   loadDraftLocal();
