@@ -134,3 +134,56 @@ html {
   border-radius: 0.375rem;
   padding: 1.25rem;
 }
+
+/* Year-End Special Teaser Banner (Adaptive Light Frosted Pine / Dark Deep Winter Pine & Champagne Gold) */
+.year-end-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #eef6f2 0%, #e5f0ea 52%, #f6f2e7 100%);
+  border: 1px solid rgba(176, 138, 62, 0.34);
+  box-shadow: 0 8px 24px -14px rgba(15, 41, 34, 0.16);
+}
+
+html.dark .year-end-banner {
+  background: linear-gradient(135deg, #0b1f1a 0%, #102a23 52%, #142621 100%);
+  border-color: rgba(217, 185, 118, 0.24);
+  box-shadow: 0 12px 32px -12px rgba(0, 0, 0, 0.75);
+}
+
+.year-end-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(202, 160, 74, 0.16), transparent 46%),
+    radial-gradient(circle at 88% 85%, rgba(16, 115, 86, 0.09), transparent 48%);
+  pointer-events: none;
+}
+
+html.dark .year-end-banner::before {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(217, 185, 118, 0.14), transparent 44%),
+    radial-gradient(circle at 88% 85%, rgba(52, 211, 153, 0.10), transparent 46%);
+}
+
+.year-end-slot {
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px dashed rgba(154, 118, 48, 0.35);
+  transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.year-end-slot:hover {
+  background: rgba(217, 185, 118, 0.16);
+  border-color: rgba(154, 118, 48, 0.68);
+  transform: translateY(-1px);
+}
+
+html.dark .year-end-slot {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(217, 185, 118, 0.26);
+}
+
+html.dark .year-end-slot:hover {
+  background: rgba(217, 185, 118, 0.10);
+  border-color: rgba(217, 185, 118, 0.55);
+}

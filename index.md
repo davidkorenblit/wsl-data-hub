@@ -158,6 +158,56 @@ alt_url: /en/
   });
 </script>
 
+<!-- Year-End Special Teaser Banner (מוצר חדש בהכנה · סוף שנה) -->
+<section class="year-end-banner rounded-xl p-5 sm:p-6 mb-8 text-[#0f2922] dark:text-neutral-100" dir="rtl" aria-label="מהדורת סוף השנה בהכנה">
+  <div class="relative z-10">
+    <!-- Top Row: Eyebrow & Status -->
+    <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+      <span class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-mono font-semibold bg-[#b48e42]/15 dark:bg-[#d9b976]/15 text-[#7c5d1f] dark:text-[#ecd59f] border border-[#b48e42]/30 dark:border-[#d9b976]/30">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#b48e42] dark:bg-[#ecd59f] animate-pulse"></span>
+        <span>✦ מהדורת סוף השנה · 2026</span>
+      </span>
+      <span class="inline-flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider text-[#2d5a4b] dark:text-emerald-200/75">
+        <span>בהכנה</span>
+        <span class="text-[#b48e42]/70 dark:text-[#d9b976]/60">·</span>
+        <span>נפתח בקרוב</span>
+      </span>
+    </div>
+
+    <!-- Main Copy -->
+    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-5">
+      <div class="max-w-2xl">
+        <h2 class="text-xl sm:text-2xl font-bold tracking-tight text-[#0f2922] dark:text-white mb-1.5">
+          משהו חדש מתבשל לפגרות החורף של ה־WSL
+        </h2>
+        <p class="text-xs sm:text-sm text-[#284b40] dark:text-emerald-100/80 leading-relaxed font-sans">
+          החל מהפגרה הבינלאומית ועד סוף השנה — סקשן עומק חדש שייחשף בהדרגה.
+          14 מועדונים, 14 זוויות מפתיעות, וסיפור אחד שנפתח בכל פעם.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-2 self-start lg:self-end shrink-0">
+        <div class="px-3 py-1.5 rounded-lg bg-white/75 dark:bg-black/25 border border-[#b48e42]/30 dark:border-[#d9b976]/25 text-xs font-mono text-[#7c5d1f] dark:text-[#ecd59f] tabular-nums">
+          <span class="text-[#0f2922] dark:text-white font-bold">0</span>
+          <span class="text-[#2d5a4b]/60 dark:text-emerald-200/60 mx-0.5">/</span>
+          <span>14</span>
+          <span class="text-[#284b40] dark:text-emerald-100/75 font-sans mr-1.5">נחשפו</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 14 Mystery Club Slots Strip -->
+    <div class="grid grid-cols-7 sm:grid-cols-[repeat(14,minmax(0,1fr))] gap-1.5 sm:gap-2" dir="ltr" aria-label="14 פרופילים בהכנה">
+      {% for i in (1..14) %}
+      <div class="year-end-slot rounded-md py-2 px-1 flex flex-col items-center justify-center text-center select-none" title="ייחשף בקרוב #{{ i }}">
+        <span class="text-[10px] font-mono text-[#8a6823] dark:text-[#d9b976]/70 leading-none mb-1">{% if i < 10 %}0{% endif %}{{ i }}</span>
+        <span class="text-[11px] text-[#2d5a4b]/50 dark:text-emerald-100/45 leading-none">✦</span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
 <!-- Strict Clean Editorial League Table Container -->
 <div class="overflow-x-auto rounded-md border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] mb-8" dir="ltr">
   <table class="w-full text-left border-collapse">
