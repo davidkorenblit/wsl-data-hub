@@ -187,3 +187,43 @@ html.dark .year-end-slot:hover {
   background: rgba(217, 185, 118, 0.10);
   border-color: rgba(217, 185, 118, 0.55);
 }
+
+/* Top News Ticker (Seamless RTL & LTR Marquee) */
+.news-ticker-viewport {
+  overflow: hidden;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
+}
+
+.news-ticker-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: ticker-scroll-ltr 38s linear infinite;
+}
+
+html[dir="rtl"] .news-ticker-track {
+  animation-name: ticker-scroll-rtl;
+}
+
+.news-ticker-viewport:hover .news-ticker-track,
+.news-ticker-viewport:focus-within .news-ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes ticker-scroll-ltr {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes ticker-scroll-rtl {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .news-ticker-track {
+    animation: none;
+  }
+}

@@ -55,6 +55,41 @@
 
   <body class="h-full bg-[#F9FAFB] dark:bg-[#09090B] text-[#111827] dark:text-[#F4F4F5] font-sans flex flex-col min-h-screen transition-colors duration-150">
 
+    <!-- Breaking News Ticker Strip (Above Header, All Pages) -->
+    {% assign ticker_data = site.data.ticker[current_lang] %}
+    {% if ticker_data and ticker_data.items.size > 0 %}
+    <div class="border-b border-neutral-200 dark:border-neutral-800/90 bg-neutral-100/95 dark:bg-[#0c0c0f] text-xs transition-colors duration-150" role="region" aria-label="{{ ticker_data.label }}">
+      <div class="max-w-5xl mx-auto px-4 h-8 flex items-center gap-3">
+        <!-- Fixed Label Pill -->
+        <span class="shrink-0 inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-600/12 dark:bg-emerald-500/15 border border-emerald-600/25 dark:border-emerald-500/30 text-[10px] font-mono font-bold tracking-wider text-emerald-700 dark:text-emerald-400">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>{{ ticker_data.label }}</span>
+        </span>
+
+        <!-- Scrolling Viewport -->
+        <div class="news-ticker-viewport flex-1 min-w-0">
+          <div class="news-ticker-track">
+            {% for pass in (1..2) %}
+            <div class="flex items-center shrink-0" {% if pass == 2 %}aria-hidden="true"{% endif %}>
+              {% for item in ticker_data.items %}
+              <div class="inline-flex items-center gap-2 whitespace-nowrap px-4">
+                <span class="font-mono text-[10px] font-bold uppercase text-amber-700 dark:text-amber-300/90">{{ item.tag }}</span>
+                {% if item.url %}
+                <a href="{{ item.url | relative_url }}" class="text-neutral-700 dark:text-neutral-200 hover:text-neutral-950 dark:hover:text-white hover:underline transition-colors">{{ item.text }}</a>
+                {% else %}
+                <span class="text-neutral-700 dark:text-neutral-200">{{ item.text }}</span>
+                {% endif %}
+                <span class="text-neutral-300 dark:text-neutral-700 mx-2 select-none">•</span>
+              </div>
+              {% endfor %}
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
     <!-- Minimalist Navigation Bar -->
     <header class="border-b border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#121215] py-3 sticky top-0 z-30 transition-colors duration-150">
       <div class="max-w-5xl mx-auto px-4 flex items-center justify-between">

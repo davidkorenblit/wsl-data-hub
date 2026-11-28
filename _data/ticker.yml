@@ -1,0 +1,32 @@
+# News Ticker items shown at the top of all pages (HE & EN).
+# Add, edit, or reorder items here — optional `url` makes an item clickable.
+
+he:
+  label: "מבזקים"
+  items:
+    - tag: "ארסנל"
+      text: "רשמי: ארסנל נפרדת מהמאמנת רנה סלגרס בהסכמה הדדית — מליסה קלארק־ריד מונתה למאמנת זמנית"
+      url: "/teams/arsenal/"
+    - tag: "נבחרת אנגליה"
+      text: "לורן המפ (פציעה קלה) וג'ס קרטר (סיבות משפחתיות) שוחררו מסגל אנגליה לפלייאוף מול אוקראינה — לוטה וובן־מוי זומנה במקום"
+    - tag: "מונדיאל 2027"
+      text: "ארה\"ב מביסה 0–8 את אל סלבדור (שלושער לאשלי סאנצ'ז) ומבטיחה רשמית את הכרטיס לגביע העולם בברזיל"
+    - tag: "העברות"
+      text: "השוערת אן־קתרין ברגר חותמת באוניון ברלין כשחקנית חופשית ותצטרף בינואר 2027 אחרי גות'אם FC"
+    - tag: "מונדיאל 2035"
+      text: "היסטוריה: הוכרז רשמית שבריטניה תארח את גביע העולם לנשים ב־2035"
+
+en:
+  label: "NEWS"
+  items:
+    - tag: "ARSENAL"
+      text: "Official: Arsenal part ways with head coach Renée Slegers by mutual consent — Melissa Clarke-Reed named interim"
+      url: "/en/teams/arsenal/"
+    - tag: "ENGLAND"
+      text: "Lauren Hemp (minor injury) and Jess Carter (family reasons) withdraw from Lionesses squad vs Ukraine — Lotte Wubben-Moy called up"
+    - tag: "WWC 2027"
+      text: "USWNT cruise past El Salvador 8–0 (Ashley Sanchez hat-trick) to officially book their ticket to the 2027 Women's World Cup in Brazil"
+    - tag: "TRANSFERS"
+      text: "Goalkeeper Ann-Katrin Berger signs with 1. FC Union Berlin on a free transfer from Gotham FC, joining in January 2027"
+    - tag: "WWC 2035"
+      text: "Historic news: The UK is officially confirmed as host of the 2035 FIFA Women's World Cup"

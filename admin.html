@@ -345,22 +345,22 @@ lang: he
         <div class="overflow-x-auto">
           <table class="w-full text-xs text-right border-collapse">
             <thead class="bg-neutral-100 dark:bg-[#18181c] text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-800">
-              <tr>
-                <th class="py-2.5 px-3 font-semibold">פילוח / שחקנית</th>
-                <th class="py-2.5 px-2 font-mono">מש'</th>
-                <th class="py-2.5 px-2 font-mono">דק'</th>
-                <th class="py-2.5 px-2 font-mono">דירוג</th>
-                <th class="py-2.5 px-2 font-mono">פע' הגנה</th>
-                <th class="py-2.5 px-2 font-mono">תיקולים</th>
-                <th class="py-2.5 px-2 font-mono">חטיפות</th>
-                <th class="py-2.5 px-2 font-mono">הרחקות</th>
-                <th class="py-2.5 px-2 font-mono">חילוצים</th>
-                <th class="py-2.5 px-2 font-mono">עברו בדריבל</th>
-                <th class="py-2.5 px-2 font-mono">איבודים</th>
-                <th class="py-2.5 px-2 font-mono">דו-קרב%</th>
-                <th class="py-2.5 px-2 font-mono">אוויר%</th>
-                <th class="py-2.5 px-2 font-mono">מסירות%</th>
-                <th class="py-2.5 px-2 font-mono">שליש אחרון</th>
+              <tr id="spotlight-evo-head">
+                <th data-evo-sort="label" class="py-2.5 px-3 font-semibold cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">פילוח / שחקנית</th>
+                <th data-evo-sort="apps" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">מש'</th>
+                <th data-evo-sort="minutes" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דק'</th>
+                <th data-evo-sort="avg_rating" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דירוג</th>
+                <th data-evo-sort="defensive_actions_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">פע' הגנה</th>
+                <th data-evo-sort="tackles_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">תיקולים</th>
+                <th data-evo-sort="interceptions_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">חטיפות</th>
+                <th data-evo-sort="clearances_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">הרחקות</th>
+                <th data-evo-sort="recoveries_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">חילוצים</th>
+                <th data-evo-sort="dribbled_past_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap" title="נמוך יותר = טוב יותר">עברו בדריבל</th>
+                <th data-evo-sort="dispossessed_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap" title="נמוך יותר = טוב יותר">איבודים</th>
+                <th data-evo-sort="duel_win_pct" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דו-קרב%</th>
+                <th data-evo-sort="aerial_duel_pct" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">אוויר%</th>
+                <th data-evo-sort="pass_accuracy_pct" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">מסירות%</th>
+                <th data-evo-sort="passes_final_third_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">שליש אחרון</th>
               </tr>
             </thead>
             <tbody id="spotlight-evo-tbody" class="divide-y divide-neutral-200 dark:divide-neutral-800/70"></tbody>
@@ -395,20 +395,20 @@ lang: he
         <div class="overflow-x-auto max-h-[520px]">
           <table class="w-full text-xs text-right border-collapse">
             <thead class="sticky top-0 z-10 bg-neutral-100 dark:bg-[#18181c] text-neutral-600 dark:text-neutral-300 border-b border-neutral-200 dark:border-neutral-800">
-              <tr>
+              <tr id="spotlight-board-head">
                 <th class="py-2.5 px-3 font-mono">#</th>
-                <th class="py-2.5 px-3 font-semibold">שחקנית</th>
-                <th class="py-2.5 px-3 font-semibold">קבוצה</th>
-                <th class="py-2.5 px-2 font-mono">דק'</th>
-                <th class="py-2.5 px-2 font-mono">דירוג</th>
-                <th class="py-2.5 px-2 font-mono">פע' הגנה</th>
-                <th class="py-2.5 px-2 font-mono">תיקולים</th>
-                <th class="py-2.5 px-2 font-mono">חטיפות</th>
-                <th class="py-2.5 px-2 font-mono">חילוצים</th>
-                <th class="py-2.5 px-2 font-mono">איבודים</th>
-                <th class="py-2.5 px-2 font-mono">דו-קרב%</th>
-                <th class="py-2.5 px-2 font-mono">מסירות%</th>
-                <th class="py-2.5 px-2 font-mono">שליש אחרון</th>
+                <th data-board-sort="player_name" class="py-2.5 px-3 font-semibold cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">שחקנית</th>
+                <th data-board-sort="team_name" class="py-2.5 px-3 font-semibold cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">קבוצה</th>
+                <th data-board-sort="minutes" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דק'</th>
+                <th data-board-sort="avg_rating" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דירוג</th>
+                <th data-board-sort="defensive_actions_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">פע' הגנה</th>
+                <th data-board-sort="tackles_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">תיקולים</th>
+                <th data-board-sort="interceptions_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">חטיפות</th>
+                <th data-board-sort="recoveries_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">חילוצים</th>
+                <th data-board-sort="dispossessed_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap" title="נמוך יותר = טוב יותר">איבודים</th>
+                <th data-board-sort="duel_win_pct" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">דו-קרב%</th>
+                <th data-board-sort="pass_accuracy_pct" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">מסירות%</th>
+                <th data-board-sort="passes_final_third_p90" class="py-2.5 px-2 font-mono cursor-pointer select-none hover:text-emerald-600 dark:hover:text-emerald-400 whitespace-nowrap">שליש אחרון</th>
               </tr>
             </thead>
             <tbody id="spotlight-board-tbody" class="divide-y divide-neutral-200 dark:divide-neutral-800/70"></tbody>
@@ -1281,29 +1281,66 @@ lang: he
   const NILDEN_SPOTLIGHT = {{ site.data.amanda_nilden_analysis | jsonify }};
   let slGroup = "cb";      // cb | all
   let slSplit = "without"; // without | with
+  const LOWER_IS_BETTER = new Set(["dispossessed_p90", "dribbled_past_p90"]);
+  let evoSortCol = null;
+  let evoSortDir = "desc";
+  let boardSortCol = "avg_rating";
+  let boardSortDir = "desc";
 
   function fmtVal(v, suffix = "") {
     return (v === null || v === undefined) ? "-" : `${v}${suffix}`;
   }
 
+  function sortListByCol(list, col, dir, getter) {
+    if (!col) return list;
+    return [...list].sort((a, b) => {
+      const va = getter(a, col);
+      const vb = getter(b, col);
+      if (va == null && vb == null) return 0;
+      if (va == null) return 1;
+      if (vb == null) return -1;
+      if (typeof va === "string" && typeof vb === "string") {
+        return dir === "asc" ? va.localeCompare(vb) : vb.localeCompare(va);
+      }
+      return dir === "asc" ? (va - vb) : (vb - va);
+    });
+  }
+
+  function updateSortHeaders(rowId, attr, activeCol, activeDir) {
+    document.querySelectorAll(`#${rowId} [${attr}]`).forEach(th => {
+      const base = th.dataset.baseLabel || th.textContent.replace(/\s*[▲▼]$/, "");
+      th.dataset.baseLabel = base;
+      if (th.getAttribute(attr) === activeCol) {
+        th.textContent = `${base} ${activeDir === "desc" ? "▼" : "▲"}`;
+        th.classList.add("text-emerald-600", "dark:text-emerald-400");
+      } else {
+        th.textContent = base;
+        th.classList.remove("text-emerald-600", "dark:text-emerald-400");
+      }
+    });
+  }
+
   function getEvoRows() {
     if (!NILDEN_SPOTLIGHT) return [];
-    return [
+    const base = [
       { label: "נילדן 25/26 — מגנה שמאלית (LB)", d: NILDEN_SPOTLIGHT.nilden_25_26_lb || NILDEN_SPOTLIGHT.nilden_2025_26?.lb, hl: "" },
       { label: "נילדן 25/26 — בלמית שמאלית (LCB)", d: NILDEN_SPOTLIGHT.nilden_2025_26?.lcb, hl: "" },
       { label: "נילדן 26/27 — כל המשחקים (עם התבוסות)", d: NILDEN_SPOTLIGHT.nilden_2026_27?.all_matches, hl: "bg-emerald-500/5 font-semibold" },
       { label: "נילדן 26/27 — בלי צ'לסי ו-LCL", d: NILDEN_SPOTLIGHT.nilden_2026_27?.excl_chelsea_lcl, hl: "bg-emerald-500/15 font-bold" },
       { label: "לוסי ברונז 26/27 — צ'לסי", d: NILDEN_SPOTLIGHT.lucy_bronze_2026_27?.all_matches, hl: "bg-sky-500/10 font-semibold" }
     ].filter(x => x.d);
+    return sortListByCol(base, evoSortCol, evoSortDir, (row, c) => c === "label" ? row.label : row.d[c]);
   }
 
   function getBoardRows() {
     if (!NILDEN_SPOTLIGHT || !NILDEN_SPOTLIGHT.leaderboards) return [];
     const lb = NILDEN_SPOTLIGHT.leaderboards;
-    if (slGroup === "cb" && slSplit === "without") return lb.cbs_excl_chelsea_lcl_min360 || [];
-    if (slGroup === "cb" && slSplit === "with") return lb.cbs_with_all_min450 || [];
-    if (slGroup === "all" && slSplit === "without") return lb.all_defenders_excl_chelsea_lcl_min360 || [];
-    return lb.all_defenders_with_all_min450 || [];
+    let base = [];
+    if (slGroup === "cb" && slSplit === "without") base = lb.cbs_excl_chelsea_lcl_min360 || [];
+    else if (slGroup === "cb" && slSplit === "with") base = lb.cbs_with_all_min450 || [];
+    else if (slGroup === "all" && slSplit === "without") base = lb.all_defenders_excl_chelsea_lcl_min360 || [];
+    else base = lb.all_defenders_with_all_min450 || [];
+    return sortListByCol(base, boardSortCol, boardSortDir, (row, c) => row[c]);
   }
 
   function renderSpotlights() {
@@ -1311,6 +1348,9 @@ lang: he
     const boardTbody = document.getElementById("spotlight-board-tbody");
     const rankBadge = document.getElementById("spotlight-rank-badge");
     if (!evoTbody || !boardTbody || !NILDEN_SPOTLIGHT) return;
+
+    updateSortHeaders("spotlight-evo-head", "data-evo-sort", evoSortCol, evoSortDir);
+    updateSortHeaders("spotlight-board-head", "data-board-sort", boardSortCol, boardSortDir);
 
     const evoRows = getEvoRows();
     evoTbody.innerHTML = evoRows.map(({ label, d, hl }) => `
@@ -1396,6 +1436,32 @@ lang: he
           ? "sl-split-btn px-2.5 py-1 text-xs rounded-md bg-amber-600 text-white font-medium"
           : "sl-split-btn px-2.5 py-1 text-xs rounded-md text-neutral-600 dark:text-neutral-400";
       });
+      renderSpotlights();
+    });
+  });
+
+  document.querySelectorAll("#spotlight-evo-head [data-evo-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const col = th.getAttribute("data-evo-sort");
+      if (evoSortCol === col) {
+        evoSortDir = evoSortDir === "desc" ? "asc" : "desc";
+      } else {
+        evoSortCol = col;
+        evoSortDir = (LOWER_IS_BETTER.has(col) || col === "label") ? "asc" : "desc";
+      }
+      renderSpotlights();
+    });
+  });
+
+  document.querySelectorAll("#spotlight-board-head [data-board-sort]").forEach(th => {
+    th.addEventListener("click", () => {
+      const col = th.getAttribute("data-board-sort");
+      if (boardSortCol === col) {
+        boardSortDir = boardSortDir === "desc" ? "asc" : "desc";
+      } else {
+        boardSortCol = col;
+        boardSortDir = (LOWER_IS_BETTER.has(col) || col === "player_name" || col === "team_name") ? "asc" : "desc";
+      }
       renderSpotlights();
     });
   });
