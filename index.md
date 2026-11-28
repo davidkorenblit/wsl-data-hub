@@ -238,12 +238,19 @@ alt_url: /en/
         
         <!-- Team Name -->
         <td class="text-sm font-sans font-medium text-neutral-900 dark:text-white py-2 px-3 border-b border-neutral-100 dark:border-neutral-800 text-left">
-          <a href="{{ '/teams/' | append: team.slug | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
-            {% if is_lcl %}
-            <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span>
+          <div class="flex items-center gap-2">
+            <a href="{{ '/teams/' | append: team.slug | relative_url }}" class="hover:underline hover:text-neutral-950 dark:hover:text-neutral-200 flex items-center gap-2">
+              {% if is_lcl %}
+              <span class="w-1.5 h-1.5 rounded-full bg-neutral-900 dark:bg-white"></span>
+              {% endif %}
+              <span>{{ team.squad }}</span>
+            </a>
+            {% if team.slug == 'crystal-palace' %}
+            <span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-[10px] font-mono leading-none cursor-help" title="הפחתת 3 נקודות (פסיקת בית דין — חריגה ממספר חלונות החילופים מול אברטון)">
+              <span aria-hidden="true">🔨</span><span>-3</span>
+            </span>
             {% endif %}
-            <span>{{ team.squad }}</span>
-          </a>
+          </div>
         </td>
         
         <!-- Numeric Columns (Strictly Right Aligned, Monospace) -->
